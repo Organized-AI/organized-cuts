@@ -1,0 +1,16 @@
+{
+  "name": "session-2-ct",
+  "speaker": "CT",
+  "index_name": "session-2-ct",
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 2 CT/JORDAN_S001_S001_T004_ISO1.MOV",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 2 CT/JORDAN_S001_S001_T004_ISO2.MOV"
+  },
+  "proxy": "proxy/session-2-ct_ISO1_720p.mp4",
+  "caption_color": [
+    55,
+    200,
+    232
+  ],
+  "upload_folder": "Vol 2 Workshop/Session 2 CT \u2014 Reels"
+}

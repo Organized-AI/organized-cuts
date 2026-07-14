@@ -1,0 +1,16 @@
+{
+  "name": "session-3a-rohit",
+  "speaker": "Rohit",
+  "index_name": "session-3a-rohit",
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 3A Rohit/JORDAN_S001_S001_T002_ISO1.MOV",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 3A Rohit/JORDAN_S001_S001_T002_ISO2.MOV"
+  },
+  "proxy": "proxy/session-3a-rohit_ISO1_720p.mp4",
+  "caption_color": [
+    126,
+    217,
+    87
+  ],
+  "upload_folder": "Vol 2 Workshop/Session 3A Rohit \u2014 Reels"
+}

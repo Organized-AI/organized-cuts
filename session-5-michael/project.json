@@ -1,0 +1,16 @@
+{
+  "name": "session-5-michael",
+  "speaker": "Michael",
+  "index_name": "session-5-michael",
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 5 Michael/JORDAN_S001_S001_T007_ISO1.MOV",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 5 Michael/JORDAN_S001_S001_T007_ISO2.MOV"
+  },
+  "proxy": "proxy/session-5-michael_ISO1_720p.mp4",
+  "caption_color": [
+    185,
+    140,
+    255
+  ],
+  "upload_folder": "Vol 2 Workshop/Session 5 Michael \u2014 Reels"
+}

@@ -1,0 +1,37 @@
+# --- Secrets / local config (NEVER commit) ---
+**/.env
+**/.env.*
+!**/.env.example
+**/.infisical.json
+**/.credentials.json
+**/rclone.conf
+
+# --- Python ---
+**/.venv/
+**/__pycache__/
+*.pyc
+
+# --- Node (hyperframes project) ---
+**/node_modules/
+**/package-lock.json
+
+# --- Media: masters, proxies, renders, audio, stills ---
+*.mp4
+*.mov
+*.MOV
+*.wav
+*.jpg
+*.jpeg
+*.png
+*.ttf
+
+# --- Generated / client content (transcripts, clips, manifests, logs) ---
+**/analysis/
+**/proxy/
+**/reels/
+animated/hf/assets/
+animated/hf/renders/
+animated/hf/index.html
+animated/selection.json
+*.log
+*.bak

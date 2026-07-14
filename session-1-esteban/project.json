@@ -1,0 +1,16 @@
+{
+  "name": "session-1-esteban",
+  "speaker": "Esteban",
+  "index_name": "session-1-esteban",
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 1 Esteban/JORDAN_S001_S001_T002_ISO1.MOV",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 1 Esteban/JORDAN_S001_S001_T002_ISO2.MOV"
+  },
+  "proxy": "proxy/session-1-esteban_ISO1_720p.mp4",
+  "caption_color": [
+    255,
+    122,
+    61
+  ],
+  "upload_folder": "Vol 2 Workshop/Session 1 Esteban \u2014 Reels"
+}

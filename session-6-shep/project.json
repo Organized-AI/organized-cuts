@@ -1,0 +1,15 @@
+{
+  "name": "session-6-shep",
+  "speaker": "Shep",
+  "index_name": "session-6-shep",
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 6 Shep/JORDAN_S001_S001_T001_ISO1.MOV"
+  },
+  "proxy": "proxy/session-6-shep_ISO1_720p.mp4",
+  "caption_color": [
+    255,
+    93,
+    143
+  ],
+  "upload_folder": "Vol 2 Workshop/Session 6 Shep \u2014 Reels"
+}

@@ -1,0 +1,13 @@
+# Secrets
+.env
+# Python
+.venv/
+__pycache__/
+*.pyc
+# Large media — never commit
+proxy/*.mp4
+reels/*.mp4
+reels/compare/*.jpg
+*.MOV
+# Local pipeline state (keep clips.json / manifest.json in-tree if desired)
+analysis/state.json

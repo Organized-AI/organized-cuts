@@ -1,0 +1,12 @@
+{
+  "name": "studio-jordan",
+  "speaker": "Jordan",
+  "index_name": "studio-jordan",
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Studio Jordaaan/ISO 2.mp4",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Studio Jordaaan/ISO 3.mp4"
+  },
+  "proxy": "proxy/studio-jordan_ISO1_720p.mp4",
+  "caption_color": [238, 209, 27],
+  "upload_folder": "Vol 2 Workshop/Studio Jordan — Reels"
+}
