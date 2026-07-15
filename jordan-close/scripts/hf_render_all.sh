@@ -9,8 +9,13 @@ PYDIR=$OC/jordan-close
 PY=$PYDIR/.venv/bin/python
 OUT=$HF/renders/final; mkdir -p "$OUT"
 SEL=$OC/animated/selection.json
-# Motion variants to render per clip (env-overridable): whip | pip | split
-read -ra VARIANTS <<< "${HF_VARIANTS:-pip split whip}"
+# Versions to render per clip (env-overridable). Two generators:
+#   motion arcs (hf_build.py):   whip | pip | split | punch | reveal
+#   look treatments (hf_style.py): editorial | kinetic | cinematic | hud
+# Default prioritises the fresher looks beyond the original pip/split.
+read -ra VARIANTS <<< "${HF_VARIANTS:-whip punch reveal cinematic kinetic hud}"
+STYLES=" editorial kinetic cinematic hud "   # dispatched to hf_style.py
+gen_script() { case "$STYLES" in *" $1 "*) echo hf_style.py;; *) echo hf_build.py;; esac; }
 
 # NOTE: loop input via process substitution (not a pipe) and each render gets
 # its own stdin (</dev/null) — node/npm otherwise drain the loop's stdin.
@@ -23,7 +28,7 @@ while read -r key session id speaker; do
   for v in "${VARIANTS[@]}"; do
     out="$OUT/${key}_${v}.mp4"
     [ -f "$out" ] && { echo "  skip $(basename "$out")"; continue; }
-    $PY $PYDIR/scripts/hf_build.py "assets/$key" "$HF/index.html" "$v" </dev/null >/dev/null \
+    $PY $PYDIR/scripts/$(gen_script "$v") "assets/$key" "$HF/index.html" "$v" </dev/null >/dev/null \
       || { echo "!! build $key $v"; continue; }
     (cd "$HF" && npm run render >"/tmp/hfr_${key}_${v}.log" 2>&1 </dev/null) \
       || { echo "!! render $key $v (see /tmp/hfr_${key}_${v}.log)"; continue; }

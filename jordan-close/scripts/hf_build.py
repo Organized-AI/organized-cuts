@@ -32,6 +32,19 @@ def scenes(variant, D):
                 dict(kind="split", s=f(0.13), e=f(0.6), tin="split"),
                 dict(kind="iso2", s=f(0.6), e=f(0.82), tin="zoom"),
                 dict(kind="pip", s=f(0.82), e=D, tin="spring")]
+    if variant == "punch":
+        # rhythmic zoom-punch cuts (snappier, no horizontal whips)
+        return [dict(kind="iso1", s=0, e=f(0.12), tin="none"),
+                dict(kind="iso2", s=f(0.12), e=f(0.30), tin="punch"),
+                dict(kind="iso1", s=f(0.30), e=f(0.46), tin="punch"),
+                dict(kind="iso2", s=f(0.46), e=f(0.66), tin="punch"),
+                dict(kind="pip", s=f(0.66), e=f(0.84), tin="spring"),
+                dict(kind="split", s=f(0.84), e=D, tin="split")]
+    if variant == "reveal":
+        # slow cinematic build: long presenter hold -> reveal screen -> pip
+        return [dict(kind="iso1", s=0, e=f(0.34), tin="none"),
+                dict(kind="iso2", s=f(0.34), e=f(0.66), tin="zoom"),
+                dict(kind="pip", s=f(0.66), e=D, tin="spring")]
     # whip (default)
     return [dict(kind="iso1", s=0, e=f(0.15), tin="none"),
             dict(kind="iso2", s=f(0.15), e=f(0.33), tin="whipL"),
@@ -94,6 +107,8 @@ def _trans(eid, tin, t):
         return f'tl.fromTo("#{eid}",{{xPercent:-100,scale:1.08}},{{xPercent:0,scale:1,duration:0.3,ease:"expo.out"}},{t});'
     if tin == "zoom":
         return f'tl.fromTo("#{eid}",{{scale:1.35,opacity:0}},{{scale:1,opacity:1,duration:0.4,ease:"expo.out"}},{t});'
+    if tin == "punch":
+        return f'tl.fromTo("#{eid}",{{scale:1.28,opacity:0}},{{scale:1,opacity:1,duration:0.32,ease:"back.out(1.6)"}},{t});'
     if tin == "none":
         return f'tl.set("#{eid}",{{opacity:1}},0);'
     return f'tl.fromTo("#{eid}",{{opacity:0}},{{opacity:1,duration:0.3}},{t});'
