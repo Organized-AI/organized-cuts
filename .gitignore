@@ -17,6 +17,7 @@
 
 # --- Media: masters, proxies, renders, audio, stills ---
 *.mp4
+*.MP4
 *.mov
 *.MOV
 *.wav
