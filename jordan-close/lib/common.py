@@ -40,12 +40,26 @@ SPEAKER = CFG.get("speaker", "Jordan")
 UPLOAD_FOLDER = CFG.get("upload_folder", "Vol 2 Workshop/Jordan Close — Reels")
 CAPTION_COLOR = tuple(CFG.get("caption_color", [238, 209, 27]))   # RGB; per-speaker
 
+# --- Variant (short vs long reels) ------------------------------------------
+# OC_VARIANT lets a session produce a SECOND, longer set of reels alongside the
+# default short ones without clobbering them. "" = default 20-45s short reels;
+# "long" = 45-90s (0:45-1:30). Clip outputs are suffixed (clips_long.json,
+# reels_long/) while the index + transcript (state.json, transcript.json) are
+# shared, so the long run reuses the existing ingest and Whisper pass.
+VARIANT = os.environ.get("OC_VARIANT", "").strip().lower()
+_VSUF = f"_{VARIANT}" if VARIANT else ""
+_VARIANT_CLIP = {
+    "":     (20.0, 45.0, (6, 10)),   # default short reels
+    "long": (45.0, 90.0, (4, 7)),    # 0:45-1:30 long-form reels
+}
+_vmin, _vmax, _vcount = _VARIANT_CLIP.get(VARIANT, _VARIANT_CLIP[""])
+
 # --- Outputs ----------------------------------------------------------------
-ANALYSIS = ROOT / "analysis"
-REELS = ROOT / "reels"
+ANALYSIS = ROOT / "analysis"                    # shared across variants
+REELS = ROOT / f"reels{_VSUF}"                  # reels/ or reels_long/
 COMPARE = REELS / "compare"
-STATE_PATH = ANALYSIS / "state.json"
-CLIPS_PATH = ANALYSIS / "clips.json"
+STATE_PATH = ANALYSIS / "state.json"            # shared (index/video ids)
+CLIPS_PATH = ANALYSIS / f"clips{_VSUF}.json"    # clips.json or clips_long.json
 MANIFEST_PATH = REELS / "manifest.json"
 
 # --- TwelveLabs config ------------------------------------------------------
@@ -60,10 +74,10 @@ INDEX_MODELS = [
 ]
 INDEX_ADDONS = ["thumbnail"]
 
-# Clip targeting
-CLIP_MIN_S = 20.0
-CLIP_MAX_S = 45.0
-CLIP_TARGET_COUNT = (6, 10)
+# Clip targeting (variant-driven; override the length with OC_CLIP_MIN_S / _MAX_S)
+CLIP_MIN_S = float(os.environ.get("OC_CLIP_MIN_S", _vmin))
+CLIP_MAX_S = float(os.environ.get("OC_CLIP_MAX_S", _vmax))
+CLIP_TARGET_COUNT = _vcount
 
 # --- Reframing / editing ----------------------------------------------------
 # Defaults assume a 1920x1080 master (a 9:16 crop of the 1080-tall frame is

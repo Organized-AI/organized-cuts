@@ -113,12 +113,15 @@ def classify_kind(clip, transcript_txt):
 
 # --- Candidate sources ------------------------------------------------------
 def generative_candidates():
+    lo, hi = int(C.CLIP_MIN_S), int(C.CLIP_MAX_S)
     prompt = (
         "You are a short-form video editor. From this talk, identify the most "
         "shareable moments. Return ONLY JSON of the form "
         '{"highlights":[{"start":<sec>,"end":<sec>,"title":"...","reason":"..."}],'
         '"chapters":[{"start":<sec>,"end":<sec>,"title":"..."}]}. '
-        "Give 8-12 highlights, each 15-60s, using real timestamps in seconds."
+        f"Give 8-12 self-contained highlights, each {lo}-{hi}s long (aim for the "
+        f"full {lo}-{hi}s — a complete thought with setup and payoff), using real "
+        "timestamps in seconds."
     )
     data = analyze_text(prompt, max_tokens=4000)
     parsed = extract_json(data) or {}
