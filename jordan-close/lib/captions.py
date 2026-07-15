@@ -7,20 +7,58 @@ sentence breaks). Times are rebased to the reel's local timeline.
 from __future__ import annotations
 import json
 import pathlib
+import re
 
 MAX_WORDS = 5
 MAX_DUR = 2.6          # seconds per cue
 PAUSE_GAP = 0.7        # split a cue on a spoken pause this long
 MIN_CUE = 0.7          # floor on cue display time
 
+# Known speech-to-text mishearings → canonical spelling. Whisper routinely renders
+# "Claude" as "Clod"/"Claud"/etc. Matched case-insensitively on word boundaries,
+# so "Clod's" → "Claude's" and "clod." → "Claude.". Extend per-project via
+# add_corrections() (project.json "caption_corrections").
+# NOTE: "cloud" is deliberately NOT here — it's a real word. Only enable it for a
+# specific talk via add_corrections({"cloud": "Claude"}).
+CORRECTIONS = {
+    "clod": "Claude",
+    "claud": "Claude",
+    "clode": "Claude",
+    "clawed": "Claude",
+}
+_correct_re = None
+
+
+def _build_correct_re():
+    global _correct_re
+    keys = sorted((re.escape(k) for k in CORRECTIONS), key=len, reverse=True)
+    _correct_re = re.compile(r"\b(" + "|".join(keys) + r")\b", re.IGNORECASE) if keys else None
+
+
+def add_corrections(mapping: dict):
+    """Merge extra {heard: canonical} fixes (e.g. from project.json) and rebuild."""
+    if mapping:
+        CORRECTIONS.update({k.lower(): v for k, v in mapping.items()})
+        _build_correct_re()
+
+
+def correct_text(text: str) -> str:
+    if not _correct_re or not text:
+        return text
+    return _correct_re.sub(lambda m: CORRECTIONS[m.group(1).lower()], text)
+
+
+_build_correct_re()
+
 
 def load_words(path: pathlib.Path):
     words = []
     prev = None
     for s in json.loads(path.read_text()):
-        key = (round(s["start"], 2), s["text"])
-        if s["text"] and key != prev:            # drop exact duplicates
-            words.append(s)
+        text = correct_text(s["text"])           # fix mis-transcribed names (Clod → Claude)
+        key = (round(s["start"], 2), text)
+        if text and key != prev:                 # drop exact duplicates
+            words.append({**s, "text": text})
             prev = key
     return words
 

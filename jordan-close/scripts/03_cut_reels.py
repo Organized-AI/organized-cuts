@@ -27,6 +27,8 @@ WORDS = None  # loaded in main()
 
 # Per-speaker caption colour (Playfair font stays constant across speakers).
 CAP.CAP_COLOR = tuple(list(C.CAPTION_COLOR) + [255])
+# Fix mis-transcribed names in captions (default: Clod→Claude; extend per project).
+CAP.add_corrections(C.CFG.get("caption_corrections", {}))
 
 PH = round(C.PIP_W * C.MASTER_H / C.CROP_W)          # presenter PiP height (keeps aspect)
 BW, BH = C.PIP_W + 2 * C.PIP_BORDER, PH + 2 * C.PIP_BORDER
