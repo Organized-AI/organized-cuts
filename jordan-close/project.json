@@ -1,0 +1,12 @@
+{
+  "name": "jordan-close",
+  "speaker": "Jordan",
+  "index_name": "jordan-close-workshop",
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Jordan Close/JORDAN_S001_S001_T011_ISO1.MOV",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Jordan Close/JORDAN_S001_S001_T011_ISO2.MOV"
+  },
+  "proxy": "proxy/jordan_close_ISO1_720p.mp4",
+  "caption_color": [238, 209, 27],
+  "upload_folder": "Vol 2 Workshop/Jordan Close — Reels"
+}

@@ -9,7 +9,8 @@ PYDIR=$OC/jordan-close
 PY=$PYDIR/.venv/bin/python
 OUT=$HF/renders/final; mkdir -p "$OUT"
 SEL=$OC/animated/selection.json
-VARIANTS=(pip split)
+# Motion variants to render per clip (env-overridable): whip | pip | split
+read -ra VARIANTS <<< "${HF_VARIANTS:-pip split whip}"
 
 # NOTE: loop input via process substitution (not a pipe) and each render gets
 # its own stdin (</dev/null) — node/npm otherwise drain the loop's stdin.

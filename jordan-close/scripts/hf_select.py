@@ -2,11 +2,14 @@
 """Pick 5 clips per speaker for the animated series (demo-tagged first, then
 highest-score, chronological). Writes animated/selection.json."""
 import json
+import os
 import pathlib
 
-OC = pathlib.Path("/Users/supabowl/organized-cuts")
+OC = pathlib.Path(os.environ.get("OC_ROOT", "/Users/supabowl/organized-cuts"))
+# How many clips per speaker to animate (env-overridable).
+PER_SPEAKER = int(os.environ.get("HF_CLIPS_PER_SPEAKER", "8"))
 SPEAKERS = {
-    "Jordan": ["jordan-close"],
+    "Jordan": ["jordan-close", "studio-jordan"],
     "Rohit": ["session-3-rohit", "session-3a-rohit"],
     "CT": ["session-2-ct"],
     "Michael": ["session-4-michael", "session-4a-michael", "session-5-michael", "session-5a-michael"],
@@ -35,9 +38,9 @@ def main():
                     pass
                 pool.append({"session": sess, "id": c["id"], "kind": c["kind"],
                              "score": c.get("score", 0), "start": c["start"], "hook": c.get("hook", "")})
-        # demo first, then by score; take 5; then chronological
+        # demo first, then by score; take PER_SPEAKER; then chronological
         pool.sort(key=lambda x: (0 if x["kind"] == "demo" else 1, -x["score"]))
-        pick = pool[:5]
+        pick = pool[:PER_SPEAKER]
         pick.sort(key=lambda x: (x["session"], x["start"]))
         for p in pick:
             p["speaker"] = spk
