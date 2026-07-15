@@ -8,9 +8,11 @@ re-encode) into the project's ISO1 master before prepare_media / ingest run.
 
 Config (project.json):
     dji_source   directory holding the DJI_*.MP4 segments (absolute path)
+    dji_segments optional list of segment numbers to join, in order
+                 (e.g. [149, 150, 151]). Omit to join every segment in the dir.
     masters.ISO1 absolute path to write the joined master to
 
-    OC_PROJECT_DIR=../event-vertical ./.venv/bin/python scripts/prepare_dji.py
+    OC_PROJECT_DIR=../henry ./.venv/bin/python scripts/prepare_dji.py
 """
 import pathlib
 import subprocess
@@ -21,12 +23,39 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from lib import common as C
 
 
+def _seq(p: pathlib.Path) -> str | None:
+    """Segment number from DJI_<ts>_<seq>_D.MP4 (the token before _D)."""
+    parts = p.stem.split("_")   # ["DJI", "<ts>", "<seq>", "D"]
+    return parts[2] if len(parts) >= 3 else None
+
+
 def segments(src: pathlib.Path) -> list[pathlib.Path]:
-    """DJI_*.MP4 segments, ordered. The timestamp+sequence in the filename is
-    chronological, so a plain lexical sort is the recording order."""
+    """The DJI_*.MP4 segments to join, in order.
+
+    If project.json lists `dji_segments`, join exactly those, in the order given
+    (Jordan controls the sequence explicitly). Otherwise join every segment in
+    the folder — the timestamp+sequence in the filename is chronological, so a
+    plain lexical sort is the recording order."""
     files = [p for p in src.iterdir()
              if p.is_file() and p.suffix.lower() == ".mp4" and p.name.upper().startswith("DJI_")]
-    return sorted(files, key=lambda p: p.name)
+
+    want = C.CFG.get("dji_segments")
+    if not want:
+        return sorted(files, key=lambda p: p.name)
+
+    by_seq = {}
+    for p in files:
+        s = _seq(p)
+        if s is not None:
+            by_seq[int(s)] = p            # normalize "0149" / "149" → 149
+    ordered, missing = [], []
+    for w in want:
+        n = int(str(w).lstrip("0") or "0")
+        (ordered.append(by_seq[n]) if n in by_seq else missing.append(w))
+    if missing:
+        have = ", ".join(str(k) for k in sorted(by_seq))
+        C.die(f"dji_segments {missing} not found in {src} (available: {have})")
+    return ordered
 
 
 def main():

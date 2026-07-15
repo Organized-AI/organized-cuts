@@ -1,0 +1,13 @@
+{
+  "name": "henry",
+  "speaker": "Henry",
+  "index_name": "henry-talk",
+  "dji_source": "/Volumes/T7/Vol 2 Workshop/Event/DJI",
+  "dji_segments": [149, 150, 151],
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Event/henry_master_ISO1.MP4"
+  },
+  "proxy": "proxy/henry_ISO1_720p.mp4",
+  "caption_color": [255, 122, 61],
+  "upload_folder": "Vol 2 Workshop/Henry — Reels"
+}
