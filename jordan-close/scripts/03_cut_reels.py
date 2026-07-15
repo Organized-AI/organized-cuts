@@ -48,6 +48,39 @@ def run(cmd):
         raise RuntimeError(f"ffmpeg failed ({p.returncode}):\n{tail}")
 
 
+def probe_dims(path):
+    """(width, height) of the first video stream, or None if ffprobe fails."""
+    p = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0",
+         "-show_entries", "stream=width,height", "-of", "csv=s=x:p=0", path],
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    line = p.stdout.strip().splitlines()[0] if p.stdout.strip() else ""
+    if p.returncode != 0 or "x" not in line:
+        return None
+    w, h = line.split("x")[:2]
+    return int(w), int(h)
+
+
+def apply_master_dims():
+    """Derive the 9:16 crop from the ISO1 master's real resolution so the crop
+    is correct for 1080p, 4K, or anything else. Overrides the common.py 1080p
+    defaults and recomputes the demo-PiP geometry. No-op if ffprobe fails."""
+    global PH, BW, BH, OX, OY
+    dims = probe_dims(C.MASTERS["ISO1"])
+    if not dims:
+        print(f"• ffprobe failed — using default {C.MASTER_W}x{C.MASTER_H} crop {C.CROP_W}")
+        return
+    w, h = dims
+    cw = int(round(h * 9 / 16))
+    cw -= cw % 2                       # keep even for yuv420
+    cw = min(cw, w - (w % 2))          # never wider than the frame
+    C.MASTER_W, C.MASTER_H, C.CROP_W = w, h, cw
+    PH = round(C.PIP_W * C.MASTER_H / C.CROP_W)
+    BW, BH = C.PIP_W + 2 * C.PIP_BORDER, PH + 2 * C.PIP_BORDER
+    OX, OY = 1080 - BW - C.PIP_MARGIN, C.PIP_MARGIN
+    print(f"• master {w}x{h} → 9:16 crop {cw}x{h} (cx fallback {C.DEFAULT_CX})")
+
+
 def make_caption_pngs(cid, start, dur):
     """Render transcript captions as transparent PNGs for a reel that starts at
     `start` (source time) and lasts `dur`. Returns [(png, s_rel, e_rel)]."""
@@ -172,6 +205,7 @@ def main():
     for angle, path in C.MASTERS.items():
         if not os.path.exists(path):
             C.die(f"Master not found ({angle}): {path}")
+    apply_master_dims()
     tpath = C.ANALYSIS / "transcript.json"
     if C.CAPTIONS and tpath.exists():
         WORDS = CAP.load_words(tpath)

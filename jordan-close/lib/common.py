@@ -66,12 +66,14 @@ CLIP_MAX_S = 45.0
 CLIP_TARGET_COUNT = (6, 10)
 
 # --- Reframing / editing ----------------------------------------------------
-# Masters are 1920x1080. A 9:16 crop from the 1080-tall frame is 607.5px wide;
-# round to an even 608. The subject sits right-of-centre in ISO1, so the crop
-# is centred on a per-clip, face-tracked x (falls back to DEFAULT_CX).
+# Defaults assume a 1920x1080 master (a 9:16 crop of the 1080-tall frame is
+# 607.5px wide → even 608). These are OVERRIDDEN at cut time by probing the
+# actual ISO1 master (03_cut_reels.py), so 4K/other resolutions crop correctly.
+# The subject crop is centred on a per-clip, face-tracked x, falling back to
+# DEFAULT_CX (per-project via project.json "default_cx"; 0=left, 1=right).
 MASTER_W, MASTER_H = 1920, 1080
 CROP_W = 608
-DEFAULT_CX = 0.58           # measured subject centre (0=left, 1=right)
+DEFAULT_CX = float(CFG.get("default_cx", 0.58))   # subject centre fallback
 PAD = 0.3                   # lead/tail seconds around each clip
 DEMO_LEAD_S = 2.0           # presenter full-frame hold before the PiP layout
 REEL_OUT = REELS            # single reel per clip -> reels/reel_<id>.mp4

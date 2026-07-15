@@ -7,6 +7,7 @@
   "masters": {
     "ISO1": "/Volumes/T7/Vol 2 Workshop/Event/henry_master_ISO1.MP4"
   },
+  "default_cx": 0.5,
   "proxy": "proxy/henry_ISO1_720p.mp4",
   "caption_color": [255, 122, 61],
   "upload_folder": "Vol 2 Workshop/Henry — Reels"
