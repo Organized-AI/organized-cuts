@@ -5,7 +5,8 @@ import json
 import os
 import pathlib
 
-OC = pathlib.Path(os.environ.get("OC_ROOT", "/Users/supabowl/organized-cuts"))
+# Repo root: derived from this file's location (portable), override with OC_ROOT.
+OC = pathlib.Path(os.environ.get("OC_ROOT", str(pathlib.Path(__file__).resolve().parents[2])))
 # How many clips per speaker to animate (env-overridable).
 PER_SPEAKER = int(os.environ.get("HF_CLIPS_PER_SPEAKER", "8"))
 SPEAKERS = {

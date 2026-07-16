@@ -3,9 +3,11 @@
 # render each variant (pip, split). Idempotent (skips finished outputs).
 set -uo pipefail
 export PATH="$HOME/.local/bin:$PATH"
-OC=/Users/supabowl/organized-cuts
+# Repo root derived from this script's location (portable across users/paths);
+# override with OC_ROOT if the repo lives elsewhere.
+PYDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"   # jordan-close/
+OC="${OC_ROOT:-$(cd "$PYDIR/.." && pwd)}"                  # repo root
 HF=$OC/animated/hf
-PYDIR=$OC/jordan-close
 PY=$PYDIR/.venv/bin/python
 OUT=$HF/renders/final; mkdir -p "$OUT"
 SEL=$OC/animated/selection.json
