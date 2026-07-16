@@ -133,7 +133,7 @@ fonts = '@font-face{font-family:"Playfair";src:url("__A__/../PlayfairDisplay-Ita
 TPL = """<!doctype html><html lang="en"><head>
 <meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
 <title>Style __STYLE__</title>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="gsap.min.js"></script>
 <style>
   __FONTS__
   * { margin:0; padding:0; box-sizing:border-box; }
