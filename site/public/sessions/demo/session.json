@@ -1,0 +1,67 @@
+{
+  "name": "demo",
+  "title": "Attention & softmax, from scratch (demo)",
+  "speaker": "Michael",
+  "media_url": null,
+  "duration": 2537.0,
+  "chapters": [
+    { "id": 1, "title": "Softmax and why temperature matters", "kind": "talk", "start": 462.0, "end": 497.0, "caption": "Raw scores into probabilities" },
+    { "id": 2, "title": "Scaled dot-product attention", "kind": "demo", "start": 1085.0, "end": 1123.0, "caption": "Every query dots every key" },
+    { "id": 3, "title": "Why GELU beats ReLU here", "kind": "talk", "start": 1600.0, "end": 1638.0, "caption": "The smooth gate near zero" },
+    { "id": 4, "title": "Coding it live in NumPy", "kind": "demo", "start": 1872.0, "end": 1915.0, "caption": "Ten lines, no framework" }
+  ],
+  "transcript": [
+    { "start": 460.0, "end": 468.2, "text": "Raw scores don't sum to one, so we push them through a softmax." },
+    { "start": 468.4, "end": 476.0, "text": "Watch the temperature term — high T flattens the distribution, low T sharpens it." },
+    { "start": 1083.0, "end": 1092.5, "text": "Each query dots against every key. We divide by root d-k so the variance doesn't blow up." },
+    { "start": 1598.0, "end": 1607.0, "text": "People ask why GELU and not ReLU — it's that smooth gate near zero." },
+    { "start": 1870.0, "end": 1880.0, "text": "Let's write the stabilized softmax in NumPy — subtract the max before you exponentiate." }
+  ],
+  "widgets": [
+    {
+      "type": "softmax",
+      "kind": "concept · softmax",
+      "title": "Softmax & temperature",
+      "caption": "Logits for 4 tokens. Raise T to flatten the distribution, lower it to sharpen toward the argmax.",
+      "clip": 1,
+      "t": 462.0,
+      "props": {
+        "labels": ["cat", "sat", "mat", "hat"],
+        "logits": [3.1, 1.4, 0.6, -0.8]
+      }
+    },
+    {
+      "type": "matrix",
+      "kind": "concept · attention",
+      "title": "Scaled dot-product attention",
+      "caption": "Raw Q·Kᵀ scores, scaled by 1/√dₖ then row-softmaxed. Slide dₖ to see why scaling keeps gradients alive.",
+      "clip": 2,
+      "t": 1085.0,
+      "props": {
+        "rows": [[8, 2, 1, 0], [2, 9, 3, 1], [1, 4, 7, 2], [0, 1, 2, 6]],
+        "rowSoftmax": true,
+        "scaleControl": { "label": "key dim dₖ", "min": 1, "max": 64, "init": 8 }
+      }
+    },
+    {
+      "type": "plot",
+      "kind": "concept · plot",
+      "title": "Activation functions",
+      "caption": "Compare non-linearities on the same axes. GELU is the transformer default — note its smooth negative tail.",
+      "clip": 3,
+      "t": 1600.0,
+      "props": { "fns": ["gelu", "relu", "tanh", "sigmoid", "silu"] }
+    },
+    {
+      "type": "notebook",
+      "kind": "concept · notebook",
+      "title": "Softmax in NumPy",
+      "clip": 4,
+      "t": 1872.0,
+      "props": {
+        "code": "# stabilized softmax — subtract the max\nimport numpy as np\n\ndef softmax(z, T=1.0):\n    z = np.asarray(z) / T\n    e = np.exp(z - z.max())\n    return e / e.sum()\n\nlogits = [3.1, 1.4, 0.6, -0.8]\nprint(softmax(logits).round(3))",
+        "output": "[0.78  0.142 0.064 0.016]\n# argmax → token 0 (0.780)"
+      }
+    }
+  ]
+}

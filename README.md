@@ -15,6 +15,7 @@ Everything runs locally; nothing is published without you asking.
 | Project | What it is |
 |---------|-----------|
 | [`jordan-close/`](jordan-close/) | First pipeline: the Jordan Close workshop talk (presenter ISO1 + screen-recording ISO2 → 15 reels) |
+| [`site/`](site/) | Session viewer for [recordings.organizedai.vip](https://recordings.organizedai.vip) — chapters, transcript, and interactive widgets per session |
 
 ## Pipeline (per project)
 
@@ -27,6 +28,7 @@ Everything runs locally; nothing is published without you asking.
 04 contact     QA contact sheet
 05 loudnorm    Normalize every reel to -14 LUFS
 06 report      INDEX.md + summary table
+07 session     site/public/sessions/<name>/session.json for the web viewer
 ```
 
 See [`jordan-close/README.md`](jordan-close/README.md) for the full run guide.
