@@ -5,15 +5,1072 @@
   "media_url": null,
   "twelvelabs": {
     "index_name": "session-3a-rohit",
-    "index_id": null,
-    "video_id": null
+    "index_id": "6a55836a03d291c7a1a926f8",
+    "video_id": "6a55837ca79abae34f96c25e"
   },
   "masters": {
     "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 3A Rohit/JORDAN_S001_S001_T002_ISO1.MOV",
     "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 3A Rohit/JORDAN_S001_S001_T002_ISO2.MOV"
   },
-  "clips": [],
-  "transcript": [],
+  "clips": [
+    {
+      "id": "01",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 12,
+      "hook": "Open-source AI secrets revealed",
+      "caption": "The core techniques behind top models have been public for years—what’s changing is how fast everyone’s adopting them. #AI #OpenSource #LocalAI",
+      "start": 132.96,
+      "end": 153.04,
+      "duration": 20.08,
+      "crop_cx": 0.603,
+      "crop_x0": 854,
+      "demo_lead_s": null,
+      "reel": "reels/reel_01.mp4",
+      "still_person": "reels/compare/01_person.jpg",
+      "still_screen": null,
+      "transcript": "models models use, use and and they they have have been been open open for for years, years, and and recently recently people people are are adopting adopting them, them, and and this this definitely definitely isn't isn't a a gated gated knowledge knowledge and and just just there there might might be be a couple a couple of of tricks tricks that that the the labs labs like like Copenha Copenha or or Anthropic Anthropic might might be be using using on on top top of of the the existing existing ones ones which which",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "The Truth About Open-Source AI Models"
+    },
+    {
+      "id": "02",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 12,
+      "hook": "4-bit models: fast & smart",
+      "caption": "The secret to blazing-fast local AI? 4-bit quantization—minimal quality loss, maximum speed. Perfect for everyday tasks. #LocalAI #ModelSize #TechTips",
+      "start": 173.92,
+      "end": 194.12,
+      "duration": 20.2,
+      "crop_cx": 0.605,
+      "crop_x0": 856,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_02.mp4",
+      "still_person": "reels/compare/02_person.jpg",
+      "still_screen": "reels/compare/02_screen.jpg",
+      "transcript": "model model size size and and the the best best one one is is the the four four bit bit that that is is faster enough with minimum loss of always the walk that does the job. So. yeah. just a little bit of technical details on the page detention when this it basically focuses on how the memory is organized",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Why 4-Bit Quantization is a Game-Changer"
+    },
+    {
+      "id": "03",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 12,
+      "hook": "Mac vs Windows: The Memory Edge",
+      "caption": "How OS-like paging and smart caching make Macs shine with multiple tabs—no lag, just speed. #LocalAI #MacTips #TechInsights",
+      "start": 194.04,
+      "end": 214.12,
+      "duration": 20.08,
+      "crop_cx": 0.606,
+      "crop_x0": 858,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_03.mp4",
+      "still_person": "reels/compare/03_person.jpg",
+      "still_screen": "reels/compare/03_screen.jpg",
+      "transcript": "is organized and how your cache is split into small fixed pages just like OS paging your RAM, and that's where essentially Mac shines even though if you have multiple Chrome types open, you can definitely get the job done, and I definitely do not have the same experience with the Windows laptops, and the radics attention is",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "How MOE Models Work in Practice"
+    },
+    {
+      "id": "04",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 11,
+      "hook": "Speed Hack: Cache as a Tree",
+      "caption": "By storing token prefixes in a tree structure, SGLAN avoids recomputing shared context—boosting speed for agentic and RAG workflows. #AI #LocalAI #Efficiency",
+      "start": 225.08,
+      "end": 245.24,
+      "duration": 20.16,
+      "crop_cx": 0.609,
+      "crop_x0": 864,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_04.mp4",
+      "still_person": "reels/compare/04_person.jpg",
+      "still_screen": "reels/compare/04_screen.jpg",
+      "transcript": "the KV cache as a tree with all the token prefixes and the shared prefix basically the system from the rules. The skills that you are defining will not be recomputed, and this basically wins the speed, and that's why STLN shines on the agentic or rag",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Gemma 4: 26B Parameters, 4B Active"
+    },
+    {
+      "id": "05",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 13,
+      "hook": "Stop Wasting Compute Power",
+      "caption": "Efficient caching and paging keep your system running smooth—no redundant work, no wasted resources. #AIoptimization #LocalAI #TechTips",
+      "start": 266.04,
+      "end": 286.04,
+      "duration": 20.0,
+      "crop_cx": 0.61,
+      "crop_x0": 866,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_05.mp4",
+      "still_person": "reels/compare/05_person.jpg",
+      "still_screen": "reels/compare/05_screen.jpg",
+      "transcript": "wasted within your system. Another one is the paging where you manage the memory like an OS that manages a RAM. Nothing is wasted more users, and the prefix caching is you stop rereading the same context every call. That's the caching the CTA has previously mentioned. Like the caching is the more you",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "MOE vs Dense Models: Speed Comparison"
+    },
+    {
+      "id": "06",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 11,
+      "hook": "Open Source AI Secrets Revealed",
+      "caption": "The real power of AI isn't in hidden tricks—it's in public fundamentals anyone can use. #AI #OpenSource #LocalAI",
+      "start": 308.12,
+      "end": 328.12,
+      "duration": 20.0,
+      "crop_cx": 0.603,
+      "crop_x0": 852,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_06.mp4",
+      "still_person": "reels/compare/06_person.jpg",
+      "still_screen": "reels/compare/06_screen.jpg",
+      "transcript": "knowledge and just there might be a couple of tricks that the labs like Copenha or Anthropic might be using on top of the existing ones which they didn't definitely open source, but the fundamentals still remain the same and they are public all along the time and coming to the",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "What Speed Feels Like in Daily Use"
+    },
+    {
+      "id": "07",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 13,
+      "hook": "Speed Up Local AI with Smart Memory",
+      "caption": "Gemma 4's 6B model shines locally with 4-bit quantization—just 13GB RAM needed. Smarter caching = faster, smoother performance. #LocalAI #Gemma4 #EfficientAI",
+      "start": 371.08,
+      "end": 391.08,
+      "duration": 20.0,
+      "crop_cx": 0.603,
+      "crop_x0": 854,
+      "demo_lead_s": null,
+      "reel": "reels/reel_07.mp4",
+      "still_person": "reels/compare/07_person.jpg",
+      "still_screen": null,
+      "transcript": "in the it transformer, basically focuses on which will essentially how the memory is organized increase the and how speed your for cache the largest is split model into that you have, small fixed pages so if you just see like the example, OS paging your there is RAM, Gemma Four, which and is that's twenty where six billion essentially parameter Mac model, shines even though if you have and for a multiple four bit Chrome it types roughly open, need around thirteen you can definitely GB get of the job done, and I definitely do not have the RAM, same experience with the Windows and in",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "The Real Cost of Fast Mode"
+    },
+    {
+      "id": "08",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 15,
+      "hook": "Speed Meets Smarter: MOE Wins",
+      "caption": "MOE models keep blazing fast even as size grows—thanks to smart batching and efficient memory. #LocalAI #MixtureOfExperts #FastInference",
+      "start": 422.04,
+      "end": 442.04,
+      "duration": 20.0,
+      "crop_cx": 0.608,
+      "crop_x0": 864,
+      "demo_lead_s": null,
+      "reel": "reels/reel_08.mp4",
+      "still_person": "reels/compare/08_person.jpg",
+      "still_screen": null,
+      "transcript": "speed, increasing the and size that's why STLN shines for a given on machine, the agentic speed keeps or rag getting slower, or shade context kind but of the workflows, MOE they tend to keep stay fast and a couple of tricks and in comparison that made it cheap with the equal or fastest and dense is models basically the continuous like batching, here, if you see which is basically a shared bus which one yeah as Quin one request two point five finishes, thirty two B another which is joins a dense model and here GPU stays full and throughout",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "MacBooks: A One-Time Investment"
+    },
+    {
+      "id": "09",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 14,
+      "hook": "Local AI Speeds Up Your Day",
+      "caption": "From reading to coding, local AI models like 7B-8B parameter systems deliver smooth performance—40-50 TPS is already fast enough for daily tasks. #LocalAI #AISpeed #Productivity",
+      "start": 485.96,
+      "end": 505.96,
+      "duration": 20.0,
+      "crop_cx": 0.608,
+      "crop_x0": 862,
+      "demo_lead_s": null,
+      "reel": "reels/reel_09.mp4",
+      "still_person": "reels/compare/09_person.jpg",
+      "still_screen": null,
+      "transcript": "them, billion and to eight billion this definitely parameter isn't model a gated that knowledge already does like and just forty to fifty pps there might be a couple of right in tricks that band that so the labs for everyday like reading Copenha tasks email or Anthropic summaries chat might be using on top local of the is existing fast ones enough that you can't dazzle which the difference they didn't definitely open and source, the horn but and the nuance fundamentals is about the still remain eyes the same that you're using to and read they are public all along the time and for coding or",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Local Speech-to-Text with Whisper"
+    },
+    {
+      "id": "10",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 19,
+      "hook": "Meet the Future of Local AI",
+      "caption": "How MOE models run smarter with fewer active parameters—efficiency meets power. #LocalAI #MachineLearning #TechInnovation",
+      "start": 537.24,
+      "end": 557.4,
+      "duration": 20.16,
+      "crop_cx": 0.616,
+      "crop_x0": 878,
+      "demo_lead_s": null,
+      "reel": "reels/reel_10.mp4",
+      "still_person": "reels/compare/10_person.jpg",
+      "still_screen": null,
+      "transcript": "you load the entire memory but there are only small set of parameters that keep running at always any the given walk point that does of the time job. as there are multiple So. experts yeah. just a little bit of technical details on the page detention when this it basically focuses on how the memory is organized and how your cache is split into small",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Lightweight, Optimized Open-Source Models"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 4.26,
+      "text": "Page retention is basically how your memory is. Oops."
+    },
+    {
+      "start": 11.06,
+      "end": 11.54,
+      "text": "No!"
+    },
+    {
+      "start": 14.48,
+      "end": 19.28,
+      "text": "Watch this, guys. Oh yeah, right. It's always the walk that does"
+    },
+    {
+      "start": 19.28,
+      "end": 19.66,
+      "text": "the job."
+    },
+    {
+      "start": 21.22,
+      "end": 24.86,
+      "text": "So yeah, just a little bit of technical details on the page"
+    },
+    {
+      "start": 24.86,
+      "end": 30.0,
+      "text": "retention. In this, it basically focuses on how the memories are organized"
+    },
+    {
+      "start": 30.0,
+      "end": 35.36,
+      "text": "and how your cache is split into small fixed pages, just like"
+    },
+    {
+      "start": 35.36,
+      "end": 39.9,
+      "text": "OS paging your RAM. And that's where essentially Mac shines, even though"
+    },
+    {
+      "start": 39.9,
+      "end": 43.42,
+      "text": "if you have multiple Chrome tabs open, you can definitely get the"
+    },
+    {
+      "start": 43.42,
+      "end": 46.38,
+      "text": "job done. And I definitely do not have the same experience with"
+    },
+    {
+      "start": 46.38,
+      "end": 51.14,
+      "text": "the Windows laptops. And the Redux retention is primarily with the SGLAN."
+    },
+    {
+      "start": 51.34,
+      "end": 53.52,
+      "text": "It is focused on primarily"
+    },
+    {
+      "start": 56.66,
+      "end": 61.46,
+      "text": "increasing the reuse. And in this, it's primarily storing the KV cache"
+    },
+    {
+      "start": 61.46,
+      "end": 66.38,
+      "text": "as a tree with all the token prefixes. And the shared prefix,"
+    },
+    {
+      "start": 66.66,
+      "end": 71.76,
+      "text": "basically the system prompt, the rules, the skills that you are defining"
+    },
+    {
+      "start": 72.42,
+      "end": 78.36,
+      "text": "will not be recomputed. And this basically wins the speed. And that's"
+    },
+    {
+      "start": 78.36,
+      "end": 81.94,
+      "text": "why SGLAN shines on the agentic or RAG or shared context kind"
+    },
+    {
+      "start": 81.94,
+      "end": 82.42,
+      "text": "of workflows."
+    },
+    {
+      "start": 83.96,
+      "end": 88.18,
+      "text": "And a couple of tricks that made it cheap or fastest is"
+    },
+    {
+      "start": 88.18,
+      "end": 93.62,
+      "text": "basically the continuous batching, which is basically a shared bus. As one"
+    },
+    {
+      "start": 93.62,
+      "end": 98.82,
+      "text": "request finishes, another joins, and GPU stays full throughout the execution time,"
+    },
+    {
+      "start": 98.96,
+      "end": 102.68,
+      "text": "and you definitely do not have any compute wasted within your system."
+    },
+    {
+      "start": 103.32,
+      "end": 106.9,
+      "text": "Another one is the paging, where you manage the memory, like an"
+    },
+    {
+      "start": 106.9,
+      "end": 111.74,
+      "text": "OS that manages the RAM. Nothing is wasted, more users. And the"
+    },
+    {
+      "start": 111.74,
+      "end": 116.34,
+      "text": "prefix caching is you stop rereading the same context every call, that's"
+    },
+    {
+      "start": 116.34,
+      "end": 119.8,
+      "text": "the caching that CTA has, as previously mentioned. Like the caching is,"
+    },
+    {
+      "start": 119.96,
+      "end": 123.96,
+      "text": "the more you use the caching, the less cost that you'll be"
+    },
+    {
+      "start": 123.96,
+      "end": 126.98,
+      "text": "paying, as you definitely do not need to compute all the tokens"
+    },
+    {
+      "start": 127.52,
+      "end": 131.72,
+      "text": "and do the tokenization and create embeddings for everything. And these are"
+    },
+    {
+      "start": 131.72,
+      "end": 135.02,
+      "text": "the same techniques that hosted models use, and they have been open"
+    },
+    {
+      "start": 135.02,
+      "end": 142.9,
+      "text": "for years. And recently people are adopting them, and this definitely is"
+    },
+    {
+      "start": 142.9,
+      "end": 147.52,
+      "text": "integrated knowledge. And just, there might be a couple of tricks that"
+    },
+    {
+      "start": 147.52,
+      "end": 152.14,
+      "text": "the labs like OpenAI or Anthropic might be using on top of"
+    },
+    {
+      "start": 152.14,
+      "end": 156.8,
+      "text": "the existing ones, which they didn't definitely open source. But the fundamentals"
+    },
+    {
+      "start": 156.8,
+      "end": 160.94,
+      "text": "still remain the same, and they are public all along the time."
+    },
+    {
+      "start": 162.78,
+      "end": 166.92,
+      "text": "And coming to the model size, since I start talking about local"
+    },
+    {
+      "start": 166.92,
+      "end": 169.82,
+      "text": "AI, and what's the point if I do not talk anything about"
+    },
+    {
+      "start": 169.82,
+      "end": 170.22,
+      "text": "the models."
+    },
+    {
+      "start": 171.64,
+      "end": 175.68,
+      "text": "So quantization is basically where you shrink the model size, and the"
+    },
+    {
+      "start": 175.68,
+      "end": 179.46,
+      "text": "best one is the 4 -bit. That is faster enough with minimal"
+    },
+    {
+      "start": 179.46,
+      "end": 180.14,
+      "text": "loss of quality."
+    },
+    {
+      "start": 181.9,
+      "end": 185.68,
+      "text": "And have you ever heard of MoE based models, mixture of expert"
+    },
+    {
+      "start": 185.68,
+      "end": 186.1,
+      "text": "models?"
+    },
+    {
+      "start": 188.38,
+      "end": 193.22,
+      "text": "Okay, so basically those are the kind of models where you load"
+    },
+    {
+      "start": 193.22,
+      "end": 196.94,
+      "text": "the entire memory, but there are only small set of parameters that"
+    },
+    {
+      "start": 196.94,
+      "end": 201.14,
+      "text": "keep running at any given point of time. As there are multiple"
+    },
+    {
+      "start": 201.14,
+      "end": 206.52,
+      "text": "experts that keep routing the requests across the heads, attention heads, and"
+    },
+    {
+      "start": 206.52,
+      "end": 212.58,
+      "text": "the transformers, which will essentially increase the speed for the largest model"
+    },
+    {
+      "start": 212.58,
+      "end": 217.2,
+      "text": "that you have. So if you see the example, there is Gemma"
+    },
+    {
+      "start": 217.2,
+      "end": 220.94,
+      "text": "4, which is 26 billion parameter model. And for a 4 -bit,"
+    },
+    {
+      "start": 221.0,
+      "end": 224.1,
+      "text": "it would roughly need around 13 GB of RAM."
+    },
+    {
+      "start": 226.06,
+      "end": 229.96,
+      "text": "And in that, they only have four billion parameters active, which essentially"
+    },
+    {
+      "start": 229.96,
+      "end": 231.92,
+      "text": "means it's as good as loading,"
+    },
+    {
+      "start": 233.38,
+      "end": 237.88,
+      "text": "it's as good as experiencing the speed, we have speeds of four"
+    },
+    {
+      "start": 237.88,
+      "end": 243.84,
+      "text": "billion parameter model. Although, in case of MOEs, we'll need all the"
+    },
+    {
+      "start": 243.84,
+      "end": 247.34,
+      "text": "model, like the entire 13 GB that needs to be loaded. But"
+    },
+    {
+      "start": 247.34,
+      "end": 251.54,
+      "text": "at any point of time, only four billion parameters are computed. And"
+    },
+    {
+      "start": 251.54,
+      "end": 257.3,
+      "text": "the speed charts, as it shows here, like the dense models, as"
+    },
+    {
+      "start": 257.3,
+      "end": 260.94,
+      "text": "you keep increasing the size, for a given machine, speed keeps getting"
+    },
+    {
+      "start": 260.94,
+      "end": 266.36,
+      "text": "slower. But the MoE, they tend to stay fast and incomplete. comparison"
+    },
+    {
+      "start": 266.36,
+      "end": 272.86,
+      "text": "with the equivalent dense models. Like here if you see, which one?"
+    },
+    {
+      "start": 273.14,
+      "end": 276.14,
+      "text": "Yeah, QEN 2 .5 32B, which is a dense model here,"
+    },
+    {
+      "start": 278.06,
+      "end": 282.94,
+      "text": "and Gemma 4 26B. Like even though QEN 3 .5 is larger"
+    },
+    {
+      "start": 282.94,
+      "end": 286.9,
+      "text": "and Gemma 4 is very enclosed, just because of the active parameters"
+    },
+    {
+      "start": 286.9,
+      "end": 290.18,
+      "text": "that it has. I think the best comparison is, yeah, QEN 3"
+    },
+    {
+      "start": 290.18,
+      "end": 293.52,
+      "text": "30B. They're almost close in size, they take almost the same RAM,"
+    },
+    {
+      "start": 293.52,
+      "end": 297.68,
+      "text": "but due to the MoE, you will get more speed in the"
+    },
+    {
+      "start": 297.68,
+      "end": 301.72,
+      "text": "QEN 3. 30B, where there are only three billion parameters active."
+    },
+    {
+      "start": 304.68,
+      "end": 308.86,
+      "text": "And how will it translate it into your lifestyle or daily speeds?"
+    },
+    {
+      "start": 309.2,
+      "end": 314.4,
+      "text": "You usually read about like five tokens per second, and 30 might"
+    },
+    {
+      "start": 314.4,
+      "end": 318.94,
+      "text": "feel smooth, and anything above 60 is faster than what you can"
+    },
+    {
+      "start": 318.94,
+      "end": 324.18,
+      "text": "follow. And any seven billion to eight billion parameter model that already"
+    },
+    {
+      "start": 324.18,
+      "end": 328.36,
+      "text": "does like 40 to 50 TPS, right in that band, so for"
+    },
+    {
+      "start": 328.36,
+      "end": 333.28,
+      "text": "everyday reading tasks, emails, summaries, chat, Local is fast enough that you"
+    },
+    {
+      "start": 333.28,
+      "end": 338.5,
+      "text": "can't tell the difference, and the harness nuances about the eyes that"
+    },
+    {
+      "start": 338.5,
+      "end": 343.8,
+      "text": "you're using to read. And for coding or file execution, most of"
+    },
+    {
+      "start": 343.8,
+      "end": 347.52,
+      "text": "the cases, nobody's definitely reading what everything that the model is doing."
+    },
+    {
+      "start": 347.86,
+      "end": 351.54,
+      "text": "The machine just keeps on consuming tokens, and the Rop throughput genuinely"
+    },
+    {
+      "start": 351.54,
+      "end": 356.58,
+      "text": "helps, and the more that the ADR, TPS helps in those situations"
+    },
+    {
+      "start": 356.58,
+      "end": 362.24,
+      "text": "where you are effectively not monitoring anything. And that's exactly the point."
+    },
+    {
+      "start": 362.4,
+      "end": 366.5,
+      "text": "You need to match the tool to the job. And reading tasks"
+    },
+    {
+      "start": 366.5,
+      "end": 376.38,
+      "text": "don't need high -speed models. And a couple of personal experiences. Given"
+    },
+    {
+      "start": 376.38,
+      "end": 380.94,
+      "text": "the usage of Opus 4 .8, it's crazy. Many people are using"
+    },
+    {
+      "start": 380.94,
+      "end": 384.5,
+      "text": "it, and I tend to use it mostly. And in that case,"
+    },
+    {
+      "start": 384.78,
+      "end": 390.02,
+      "text": "especially for the coding task, I tend to have to keep waiting"
+    },
+    {
+      "start": 390.02,
+      "end": 393.92,
+      "text": "for longer times, especially during the peak hours, unless and until I"
+    },
+    {
+      "start": 393.92,
+      "end": 398.28,
+      "text": "enable the fast mode. And you definitely do not have any kind"
+    },
+    {
+      "start": 398.28,
+      "end": 402.98,
+      "text": "of such blockers when you're doing the regular day -to -day tasks."
+    },
+    {
+      "start": 404.26,
+      "end": 407.5,
+      "text": "And you definitely do not have to pay the 2x cost for"
+    },
+    {
+      "start": 407.5,
+      "end": 413.9,
+      "text": "the fast mode. And this is the general representation that you might"
+    },
+    {
+      "start": 413.9,
+      "end": 418.74,
+      "text": "already be aware of, like the Local. One laptop, I see most"
+    },
+    {
+      "start": 418.74,
+      "end": 422.36,
+      "text": "of the morning Macs here, that's just the onetime cost that you'll"
+    },
+    {
+      "start": 422.36,
+      "end": 427.52,
+      "text": "be spending for like four to five years, potentially. And due to"
+    },
+    {
+      "start": 427.52,
+      "end": 430.68,
+      "text": "the unified memory that it provides, you definitely do not need additional"
+    },
+    {
+      "start": 430.68,
+      "end": 434.26,
+      "text": "GPUs that you need to purchase or keep attached to your laptop,"
+    },
+    {
+      "start": 434.48,
+      "end": 439.0,
+      "text": "and you can definitely keep running on your laptop. laptop and the"
+    },
+    {
+      "start": 439.0,
+      "end": 441.5,
+      "text": "more you use it, the more benefit you will get out of"
+    },
+    {
+      "start": 441.5,
+      "end": 441.86,
+      "text": "the laptop."
+    },
+    {
+      "start": 444.36,
+      "end": 448.24,
+      "text": "During my early days of Masters, I bought an M1 Pro laptop"
+    },
+    {
+      "start": 448.24,
+      "end": 452.14,
+      "text": "and I still have it. I felt like I wasn't using it"
+    },
+    {
+      "start": 452.14,
+      "end": 459.4,
+      "text": "to the extent that I should be using it. These days, now"
+    },
+    {
+      "start": 459.4,
+      "end": 462.5,
+      "text": "I tend to use it a lot more. And another one, I"
+    },
+    {
+      "start": 462.5,
+      "end": 466.48,
+      "text": "can, yeah, I think we are almost reaching the end. So,"
+    },
+    {
+      "start": 468.16,
+      "end": 473.08,
+      "text": "like, now everyone is talking about local AI, Apple intelligence, they keep"
+    },
+    {
+      "start": 473.08,
+      "end": 477.36,
+      "text": "talking about everything that's running on your iPhone, iPad and MacBooks, Google"
+    },
+    {
+      "start": 477.36,
+      "end": 481.76,
+      "text": "plus Samsung, they have all the Gemini nano based models that runs"
+    },
+    {
+      "start": 481.76,
+      "end": 485.38,
+      "text": "on the Pixel and Galaxy phones. And one set up for myself"
+    },
+    {
+      "start": 485.38,
+      "end": 489.48,
+      "text": "that I keep using on a very daily basis is I initially"
+    },
+    {
+      "start": 489.48,
+      "end": 490.78,
+      "text": "thought about the Google search. I thought of building it on my"
+    },
+    {
+      "start": 490.78,
+      "end": 493.5,
+      "text": "own for the speech to text, but just a quick Google search"
+    },
+    {
+      "start": 493.5,
+      "end": 499.44,
+      "text": "revealed that there is one which already people have implemented and that's"
+    },
+    {
+      "start": 499.44,
+      "end": 504.78,
+      "text": "handy, basically, which is a speech to text app that keeps running"
+    },
+    {
+      "start": 504.78,
+      "end": 509.28,
+      "text": "on your laptop and you do not need internet. And that's something"
+    },
+    {
+      "start": 509.28,
+      "end": 512.96,
+      "text": "which I really use a lot these days. More often than I"
+    },
+    {
+      "start": 512.96,
+      "end": 518.94,
+      "text": "realized. And the idea for that is I noticed people using Whisper"
+    },
+    {
+      "start": 518.94,
+      "end": 519.9,
+      "text": "and I asked them, like, what is this app? What is this"
+    },
+    {
+      "start": 519.9,
+      "end": 521.48,
+      "text": "app? What is this app? What is this app? What is that?"
+    },
+    {
+      "start": 523.68,
+      "end": 530.06,
+      "text": "Just like that. Just like that. Just like that. Just like that."
+    },
+    {
+      "start": 530.06,
+      "end": 530.9,
+      "text": "Just like that. Just Just like that. Just like that. Just like"
+    },
+    {
+      "start": 530.9,
+      "end": 531.54,
+      "text": "that. Just like that. Just like that. Just like that. Just like"
+    },
+    {
+      "start": 531.54,
+      "end": 532.14,
+      "text": "that. Just like that. Just like that. Just like that. Just like"
+    },
+    {
+      "start": 532.14,
+      "end": 534.92,
+      "text": "that. Just like that. Just like that. Just like that. Just like"
+    },
+    {
+      "start": 534.92,
+      "end": 536.74,
+      "text": "that. Just like that. Just like that. Just like that. Just like"
+    },
+    {
+      "start": 536.74,
+      "end": 536.84,
+      "text": "that. Just like that. Just like that. Just like that. Just like"
+    },
+    {
+      "start": 536.84,
+      "end": 537.74,
+      "text": "that. Just like that. Just Just like that. Just like that. Just"
+    },
+    {
+      "start": 537.74,
+      "end": 538.12,
+      "text": "like that. Just like that. Just like that. Just like that. Just"
+    },
+    {
+      "start": 538.12,
+      "end": 539.74,
+      "text": "Just like that. Just like that. Just like that. Just like that."
+    },
+    {
+      "start": 540.74,
+      "end": 543.26,
+      "text": "Just like that. Just like that."
+    },
+    {
+      "start": 549.46,
+      "end": 553.14,
+      "text": "Just five minutes and it will barely take two to three seconds"
+    },
+    {
+      "start": 553.14,
+      "end": 556.34,
+      "text": "for it to load it back. So you will definitely not see"
+    },
+    {
+      "start": 556.34,
+      "end": 559.76,
+      "text": "any kind of impact on your day -to -day usage except for"
+    },
+    {
+      "start": 559.76,
+      "end": 561.12,
+      "text": "the optimizations that it is providing."
+    },
+    {
+      "start": 562.32,
+      "end": 567.9,
+      "text": "And definitely, like, open source devs are also converging on this where"
+    },
+    {
+      "start": 567.9,
+      "end": 571.4,
+      "text": "they are using the bigger models to plan and the base models"
+    },
+    {
+      "start": 571.4,
+      "end": 575.96,
+      "text": "to execute. And Christopher has given you a straight forward setup for"
+    },
+    {
+      "start": 575.96,
+      "end": 583.5,
+      "text": "you to even include it. And yeah, that concludes my talk. And"
+    },
+    {
+      "start": 583.5,
+      "end": 585.72,
+      "text": "any kind of questions?"
+    },
+    {
+      "start": 587.68,
+      "end": 592.8,
+      "text": "Do you think that China uses a lot of local products? Yeah."
+    },
+    {
+      "start": 594.18,
+      "end": 601.78,
+      "text": "Do you think that as a sort of prototype will take off"
+    },
+    {
+      "start": 601.78,
+      "end": 603.8,
+      "text": "here as well? Like people will switch over to local products?"
+    },
+    {
+      "start": 607.2,
+      "end": 611.74,
+      "text": "Yeah. Here if you see, Google has been making multiple strides in"
+    },
+    {
+      "start": 611.74,
+      "end": 614.68,
+      "text": "recent times as they started releasing the Gemma 3 and Gemma 4"
+    },
+    {
+      "start": 614.68,
+      "end": 618.52,
+      "text": "models which are very well competing in that space. And"
+    },
+    {
+      "start": 620.1,
+      "end": 623.6,
+      "text": "like, even though if you want to use the Chinese models, I,"
+    },
+    {
+      "start": 623.96,
+      "end": 628.8,
+      "text": "like, it's running on your local, there's nothing for you to worry"
+    },
+    {
+      "start": 628.8,
+      "end": 632.42,
+      "text": "about in terms of the data security, but there will be your"
+    },
+    {
+      "start": 632.42,
+      "end": 639.26,
+      "text": "own concerns in terms of the data security. Just on the AD"
+    },
+    {
+      "start": 639.26,
+      "end": 646.36,
+      "text": "AD AD AD AD AD AD AD AD AD AD AD AD"
+    },
+    {
+      "start": 646.36,
+      "end": 646.78,
+      "text": "AD AD AD AD AD AD AD AD AD AD AD AD"
+    },
+    {
+      "start": 646.78,
+      "end": 646.8,
+      "text": "AD AD AD AD AD AD AD AD AD AD AD AD"
+    },
+    {
+      "start": 646.8,
+      "end": 646.8,
+      "text": "AD AD AD AD AD AD AD AD AD AD AD AD"
+    },
+    {
+      "start": 646.8,
+      "end": 646.8,
+      "text": "AD AD AD AD AD AD AD AD AD AD AD AD"
+    },
+    {
+      "start": 646.8,
+      "end": 646.9,
+      "text": "AD AD AD AD AD AD AD AD AD AD AD AD"
+    },
+    {
+      "start": 646.9,
+      "end": 648.32,
+      "text": "AD AD AD AD AD AD AD AD AD AD AD AD"
+    },
+    {
+      "start": 648.32,
+      "end": 648.42,
+      "text": "AD AD AD AD AD AD AD AD AD AD AD AD"
+    },
+    {
+      "start": 648.42,
+      "end": 648.42,
+      "text": "AD AD AD AD AD AD AD AD AD AD AD AD"
+    },
+    {
+      "start": 648.42,
+      "end": 648.42,
+      "text": "AD AD AD AD AD AD AD AD AD AD AD AD"
+    },
+    {
+      "start": 648.42,
+      "end": 648.42,
+      "text": "AD AD AD AD AD AD AD AD AD AD AD AD"
+    },
+    {
+      "start": 648.42,
+      "end": 648.46,
+      "text": "AD AD AD AD AD AD AD AD AD AD AD AD"
+    },
+    {
+      "start": 648.46,
+      "end": 657.74,
+      "text": "AD AD AD AD AD AD AD AD AD AD compute resources"
+    },
+    {
+      "start": 657.74,
+      "end": 659.62,
+      "text": "or your restrictions that you're already facing."
+    },
+    {
+      "start": 661.1,
+      "end": 661.7,
+      "text": "Yes."
+    }
+  ],
   "widgets": [],
   "assets": {
     "reels_dir": "session-3a-rohit/reels",

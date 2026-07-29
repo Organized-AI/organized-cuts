@@ -1,0 +1,1998 @@
+{
+  "name": "vault-michael-real-time-web-data-for-agents",
+  "title": "Michael - Real-Time Web Data for Agents",
+  "speaker": "Michael - Real-Time Web Data for Agents",
+  "media_url": null,
+  "vault_key": "01 - Michael - Real-Time Web Data for Agents.mp4",
+  "duration": 2267.6,
+  "twelvelabs": {
+    "index_name": null,
+    "index_id": null,
+    "video_id": null
+  },
+  "twelvelabs_parts": [
+    {
+      "label": "Session 4",
+      "offset": 0.0,
+      "index_id": "6a559364a79abae34f975b5b",
+      "video_id": "6a5593756ca01e685ca2d769"
+    },
+    {
+      "label": "Session 4A",
+      "offset": 688.87,
+      "index_id": "6a558f8c2ca158187cd663be",
+      "video_id": "6a558f99b4e567cd48016003"
+    },
+    {
+      "label": "Session 5",
+      "offset": 1283.93,
+      "index_id": "6a558c512ca158187cd64a26",
+      "video_id": "6a558c62177f1b1871dec2e8"
+    },
+    {
+      "label": "Session 5A",
+      "offset": 1801.13,
+      "index_id": "6a55879d03d291c7a1a9484b",
+      "video_id": "6a5587aa2ca158187cd6247c"
+    }
+  ],
+  "masters": {},
+  "clips": [
+    {
+      "id": "Session 4-1",
+      "hook": "Introduction",
+      "kind": "chapter",
+      "start": 0.0,
+      "end": 25.0,
+      "caption": "The speaker welcomes the audience and introduces Michael Daigler as a key figure in his journey into hackathons and event hosting."
+    },
+    {
+      "id": "Session 4-2",
+      "hook": "Personal Journey",
+      "kind": "chapter",
+      "start": 25.0,
+      "end": 60.0,
+      "caption": "The speaker shares how meeting Michael Daigler at a meta hackathon led to mentorship and connections with the AITX community."
+    },
+    {
+      "id": "Session 4-3",
+      "hook": "Appify and MCP",
+      "kind": "chapter",
+      "start": 60.0,
+      "end": 127.0,
+      "caption": "Michael Daigler discusses his shift from relying on MCP to using Appify Actors for reliable, repeatable web data workflows."
+    },
+    {
+      "id": "Session 4-4",
+      "hook": "The Problem",
+      "kind": "chapter",
+      "start": 127.0,
+      "end": 250.0,
+      "caption": "The speaker identifies challenges in using native web tools for scraping data from sites like LinkedIn and Reddit, and the lack of consistency in results."
+    },
+    {
+      "id": "Session 4-5",
+      "hook": "Tool as Hammer",
+      "kind": "chapter",
+      "start": 250.0,
+      "end": 341.0,
+      "caption": "He introduces the concept of creating reusable 'tools' like a hammer—pre-built, reliable, and efficient for repeated tasks."
+    },
+    {
+      "id": "Session 4-6",
+      "hook": "Workflow & Workers",
+      "kind": "chapter",
+      "start": 341.0,
+      "end": 425.0,
+      "caption": "The speaker explains how he applies the workflow and worker paradigm to structure repeatable, auditable, and consistent data workflows."
+    },
+    {
+      "id": "Session 4-7",
+      "hook": "Appify Platform",
+      "kind": "chapter",
+      "start": 425.0,
+      "end": 456.0,
+      "caption": "He highlights Appify as a platform that provides reliable web scraping tools with anti-bot bypass capabilities for real-time data access."
+    },
+    {
+      "id": "Session 4-8",
+      "hook": "Sponsorship Workflow",
+      "kind": "chapter",
+      "start": 456.0,
+      "end": 588.0,
+      "caption": "A detailed example of a workflow to find ideal sponsorship contacts on LinkedIn using AI-driven search, fuzzy matching, and profile scraping."
+    },
+    {
+      "id": "Session 4-9",
+      "hook": "Global Toolbox",
+      "kind": "chapter",
+      "start": 588.0,
+      "end": 630.0,
+      "caption": "The speaker frames his approach as building a personal 'toolbox'—a centralized library of reusable tools for AI agents."
+    },
+    {
+      "id": "Session 4-10",
+      "hook": "Live Demo",
+      "kind": "chapter",
+      "start": 630.0,
+      "end": 689.0,
+      "caption": "He demonstrates the workflow in action using Cloud Code, showing how to initiate a search and scrape LinkedIn profiles for sponsorship leads."
+    },
+    {
+      "id": "Session 4A-1",
+      "hook": "Introduction to Workflow",
+      "kind": "chapter",
+      "start": 688.87,
+      "end": 728.87,
+      "caption": "The speaker introduces a workflow using AI actors to automate tasks like finding relevant contacts on LinkedIn for event sponsorships."
+    },
+    {
+      "id": "Session 4A-2",
+      "hook": "LinkedIn Data Scraping",
+      "kind": "chapter",
+      "start": 728.87,
+      "end": 778.87,
+      "caption": "The speaker demonstrates how a custom skill scrapes LinkedIn data to identify key personnel for hackathon sponsorships."
+    },
+    {
+      "id": "Session 4A-3",
+      "hook": "Skill and Actor Architecture",
+      "kind": "chapter",
+      "start": 778.87,
+      "end": 828.87,
+      "caption": "The speaker explains the separation between the skill (in Claude) and the actor (cloud-based), emphasizing lightweight, modular design."
+    },
+    {
+      "id": "Session 4A-4",
+      "hook": "Abstraction and Automation",
+      "kind": "chapter",
+      "start": 828.87,
+      "end": 878.87,
+      "caption": "The speaker highlights the importance of abstracting business logic into reusable tools to streamline agent-driven workflows."
+    },
+    {
+      "id": "Session 4A-5",
+      "hook": "Targeting Key Contacts",
+      "kind": "chapter",
+      "start": 878.87,
+      "end": 938.87,
+      "caption": "The speaker identifies and validates a high-potential contact at Google Cloud, emphasizing relevance and background for outreach."
+    },
+    {
+      "id": "Session 4A-6",
+      "hook": "Personalized Outreach Strategy",
+      "kind": "chapter",
+      "start": 938.87,
+      "end": 988.87,
+      "caption": "The speaker suggests tailoring outreach messages by aligning with the target’s professional identity and emotional motivations."
+    },
+    {
+      "id": "Session 4A-7",
+      "hook": "Introducing AgentMail",
+      "kind": "chapter",
+      "start": 988.87,
+      "end": 1038.87,
+      "caption": "The speaker presents AgentMail.2 as an API-first email tool for automating outreach with tested, high-performing templates."
+    },
+    {
+      "id": "Session 4A-8",
+      "hook": "Platform Incentives",
+      "kind": "chapter",
+      "start": 1038.87,
+      "end": 1088.87,
+      "caption": "The speaker shares a $100 credit for Appify platform usage, restricted to Appify-maintained actors to support community creators."
+    },
+    {
+      "id": "Session 4A-9",
+      "hook": "Scraping Ethics and Limits",
+      "kind": "chapter",
+      "start": 1088.87,
+      "end": 1158.87,
+      "caption": "The speaker clarifies that only publicly accessible data is scraped, and private accounts are excluded, with proxy systems ensuring human-like behavior."
+    },
+    {
+      "id": "Session 4A-10",
+      "hook": "Workshop and Q&A",
+      "kind": "chapter",
+      "start": 1158.87,
+      "end": 1283.87,
+      "caption": "The speaker concludes with a self-paced workshop plan, inviting participants to replicate the workflow and offering support during checkpoints."
+    },
+    {
+      "id": "Session 5-1",
+      "hook": "Introduction",
+      "kind": "chapter",
+      "start": 1283.93,
+      "end": 1293.93,
+      "caption": "The speaker begins the workshop by outlining the structure and goals of the session."
+    },
+    {
+      "id": "Session 5-2",
+      "hook": "Setup and Engagement",
+      "kind": "chapter",
+      "start": 1293.93,
+      "end": 1313.93,
+      "caption": "The speaker encourages participants to get ready, sets up background music, and energizes the audience."
+    },
+    {
+      "id": "Session 5-3",
+      "hook": "Workshop Context",
+      "kind": "chapter",
+      "start": 1313.93,
+      "end": 1349.93,
+      "caption": "The speaker explains the purpose of the workshop, emphasizing the importance of reading the readme for setup."
+    },
+    {
+      "id": "Session 5-4",
+      "hook": "Project Initialization",
+      "kind": "chapter",
+      "start": 1349.93,
+      "end": 1390.93,
+      "caption": "The speaker starts cloning the repository and setting up the project environment."
+    },
+    {
+      "id": "Session 5-5",
+      "hook": "Core Concept",
+      "kind": "chapter",
+      "start": 1390.93,
+      "end": 1424.93,
+      "caption": "The speaker introduces the main idea: building custom tools for AI agents using local workflows."
+    },
+    {
+      "id": "Session 5-6",
+      "hook": "API Key Requirement",
+      "kind": "chapter",
+      "start": 1424.93,
+      "end": 1464.93,
+      "caption": "The speaker discusses the need for an Anthropic API key and alternatives like Gemini."
+    },
+    {
+      "id": "Session 5-7",
+      "hook": "Tool Organization",
+      "kind": "chapter",
+      "start": 1464.93,
+      "end": 1536.93,
+      "caption": "The speaker explains creating a modular toolbox for organizing reusable workflows."
+    },
+    {
+      "id": "Session 5-8",
+      "hook": "Workflow Demonstration",
+      "kind": "chapter",
+      "start": 1536.93,
+      "end": 1623.93,
+      "caption": "The speaker walks through a real example of scraping LinkedIn profiles and analyzing data."
+    },
+    {
+      "id": "Session 5-9",
+      "hook": "Strategic Outreach",
+      "kind": "chapter",
+      "start": 1623.93,
+      "end": 1705.93,
+      "caption": "The speaker shares insights on effective outreach, prioritizing experienced professionals."
+    },
+    {
+      "id": "Session 5-10",
+      "hook": "Final Notes",
+      "kind": "chapter",
+      "start": 1705.93,
+      "end": 1800.93,
+      "caption": "The speaker concludes by summarizing the workflow, sharing code, and discussing API key handling."
+    },
+    {
+      "id": "Session 5A-1",
+      "hook": "Introduction & Setup",
+      "kind": "chapter",
+      "start": 1801.13,
+      "end": 1846.13,
+      "caption": "The speaker begins by introducing the workflow and setting up the environment, emphasizing the importance of dependencies and inputs like company URL and prompt."
+    },
+    {
+      "id": "Session 5A-2",
+      "hook": "Workflow Overview",
+      "kind": "chapter",
+      "start": 1846.13,
+      "end": 1907.13,
+      "caption": "The speaker outlines the main workflow structure, explaining the entry point and the three key inputs required for the process."
+    },
+    {
+      "id": "Session 5A-3",
+      "hook": "Workshop Context",
+      "kind": "chapter",
+      "start": 1907.13,
+      "end": 1959.13,
+      "caption": "The speaker discusses the time constraints and audience familiarity, clarifying that the session is meant as a demonstration rather than a hands-on build."
+    },
+    {
+      "id": "Session 5A-4",
+      "hook": "Search Query Worker",
+      "kind": "chapter",
+      "start": 1959.13,
+      "end": 2010.13,
+      "caption": "The speaker explains the first worker, 'make search query,' which generates job titles based on intent from the initial question."
+    },
+    {
+      "id": "Session 5A-5",
+      "hook": "Employee & Profile Scraping",
+      "kind": "chapter",
+      "start": 2010.13,
+      "end": 2043.13,
+      "caption": "The speaker details how employee data is scraped from LinkedIn and passed to the profile worker for further processing."
+    },
+    {
+      "id": "Session 5A-6",
+      "hook": "Workflow Automation",
+      "kind": "chapter",
+      "start": 2043.13,
+      "end": 2074.13,
+      "caption": "The speaker suggests automating the workflow by running it repeatedly until desired output standards are met."
+    },
+    {
+      "id": "Session 5A-7",
+      "hook": "Configuration & Deployment",
+      "kind": "chapter",
+      "start": 2074.13,
+      "end": 2115.13,
+      "caption": "The speaker guides through setting API keys, running the workflow, and moving it to a global directory for accessibility."
+    },
+    {
+      "id": "Session 5A-8",
+      "hook": "Skill Generation",
+      "kind": "chapter",
+      "start": 2115.13,
+      "end": 2156.13,
+      "caption": "The speaker explains how to generate a skill for the agent using the workflow, ensuring it knows where to run the process."
+    },
+    {
+      "id": "Session 5A-9",
+      "hook": "Final Steps & Tools",
+      "kind": "chapter",
+      "start": 2156.13,
+      "end": 2238.13,
+      "caption": "The speaker wraps up with key actions: setting tokens, running the workflow, and mentions useful tools like 'understand anything' and 'Git ingest'."
+    },
+    {
+      "id": "Session 5A-10",
+      "hook": "Closing & Appreciation",
+      "kind": "chapter",
+      "start": 2238.13,
+      "end": 2265.13,
+      "caption": "The speaker concludes by encouraging practical use of Appify in daily work and thanks the audience for their attention."
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 9.84,
+      "text": "Can you guys? Go"
+    },
+    {
+      "start": 0.2,
+      "end": 10.2,
+      "text": "you guys? Go up"
+    },
+    {
+      "start": 0.22,
+      "end": 10.44,
+      "text": "guys? Go up there."
+    },
+    {
+      "start": 9.32,
+      "end": 19.28,
+      "text": "Go up there. Go up there. Yeah, yeah, yeah. Alrighty. Alrighty. Moving"
+    },
+    {
+      "start": 16.12,
+      "end": 29.56,
+      "text": "Alrighty. Alrighty. Moving right along. So. I'm"
+    },
+    {
+      "start": 19.8,
+      "end": 29.76,
+      "text": "along. So. I'm waiting."
+    },
+    {
+      "start": 23.84,
+      "end": 33.2,
+      "text": "So. I'm waiting. Just a little bit. You're"
+    },
+    {
+      "start": 31.12,
+      "end": 40.64,
+      "text": "little bit. You're good. You're good. Yeah, we're back. We're back. We're back. We're back. Okay. So, guys. When"
+    },
+    {
+      "start": 36.96,
+      "end": 46.1,
+      "text": "So, guys. When it comes to folks that have done this a million, gajillion freaking"
+    },
+    {
+      "start": 44.58,
+      "end": 54.36,
+      "text": "million, gajillion freaking times. And can give you a real good hands -on representation. Michael"
+    },
+    {
+      "start": 50.52,
+      "end": 59.68,
+      "text": "-on representation. Michael Deigler is up there at the top. So. So, he is"
+    },
+    {
+      "start": 58.2,
+      "end": 68.76,
+      "text": "So, he is the guy who helped me even gain the courage to go to my first hackathon. I met him. God."
+    },
+    {
+      "start": 66.08,
+      "end": 75.34,
+      "text": "met him. God. What was that? Two and a half years ago? Something like that? It was a meta hackathon. And I was just going to, like, the meet"
+    },
+    {
+      "start": 74.26,
+      "end": 81.22,
+      "text": "like, the meet and greet event. And he was like, hey, they actually have open spots if you want to go to the actual hackathon. And I was like, bro,"
+    },
+    {
+      "start": 80.28,
+      "end": 89.32,
+      "text": "was like, bro, I don't even know what that means. But, yes, I will show up and be very shy. While I look around"
+    },
+    {
+      "start": 88.64,
+      "end": 97.44,
+      "text": "I look around and try to figure out what the hell this even is. But it was a Lama hackathon that Meta was putting on. So, super dope. Ended up"
+    },
+    {
+      "start": 96.72,
+      "end": 105.72,
+      "text": "dope. Ended up meeting some people that ended up going through YC. And he was a mentor of mine for a bit. And"
+    },
+    {
+      "start": 103.14,
+      "end": 112.34,
+      "text": "a bit. And it just led to this awesome crew of folks, including the AITX crew. Which is what Michael"
+    },
+    {
+      "start": 110.7,
+      "end": 119.94,
+      "text": "is what Michael is a part of. And that's how I even got my start in the event space. Co -hosting events. And other stuff. You"
+    },
+    {
+      "start": 118.32,
+      "end": 127.86,
+      "text": "other stuff. You guys don't care about that. Michael is the man. And he works for Apify. And he will"
+    },
+    {
+      "start": 126.4,
+      "end": 135.46,
+      "text": "And he will show you guys some really cool things. Anybody familiar with MCP? Or have used MCP servers? So, around the time"
+    },
+    {
+      "start": 134.88,
+      "end": 142.98,
+      "text": "around the time that that was extremely hot, I was like, oh, this is the end all, be all. This is how we do the things with tool calls from"
+    },
+    {
+      "start": 142.18,
+      "end": 151.38,
+      "text": "tool calls from now on. And then he showed me Apify Actors. And I was like, holy crap. I can do tool calling at"
+    },
+    {
+      "start": 149.26,
+      "end": 158.26,
+      "text": "tool calling at a very, very, very, very cheap way with reliability. Because MCP, if you know, you know that connectivity is"
+    },
+    {
+      "start": 156.34,
+      "end": 165.68,
+      "text": "that connectivity is a bitch. Anyways, probably shouldn't say that live on stage. All right. So, Michael Daigler."
+    },
+    {
+      "start": 162.96,
+      "end": 172.92,
+      "text": "So, Michael Daigler. Is it on? All right. What's up, everyone? Yeah. So, today"
+    },
+    {
+      "start": 171.1,
+      "end": 179.28,
+      "text": "Yeah. So, today I'm going to be talking about giving real -time web data for your agents. And like Jordan said, I'm a developer advocate. I'm also the co -founder"
+    },
+    {
+      "start": 178.7,
+      "end": 185.9,
+      "text": "the co -founder of the ITX community. So, you might know me from the ITX or maybe you've seen me at the Apify events I'm doing here. And this is"
+    },
+    {
+      "start": 185.14,
+      "end": 191.72,
+      "text": "And this is going to be kind of an interactive portion, too, at the end. I did make like a workshop to help you sort of copy a workflow that"
+    },
+    {
+      "start": 190.44,
+      "end": 199.56,
+      "text": "a workflow that I created. So, if you have GitHub, you have Node installed, you can probably follow along. But I'll get right into"
+    },
+    {
+      "start": 199.16,
+      "end": 207.28,
+      "text": "get right into it. So, what I kind of want to show you today, I was kind of inspired by what Jordan was putting together for this weekend. And kind"
+    },
+    {
+      "start": 206.5,
+      "end": 212.24,
+      "text": "weekend. And kind of talking about, like, the web. And kind of talking about, like, the workflow and worker paradigm. And so, I was thinking about how I could start"
+    },
+    {
+      "start": 211.8,
+      "end": 219.74,
+      "text": "I could start to apply that into my day -to -day use. And I use Claude Code and Codex a lot for, like, my daily activities. And I'm also a"
+    },
+    {
+      "start": 219.12,
+      "end": 225.9,
+      "text": "I'm also a big fan of Apify because it gives me access to all these different sources on the Internet. And so, what I was thinking of was, like, why"
+    },
+    {
+      "start": 225.38,
+      "end": 233.78,
+      "text": "was, like, why not try to create, like, a I'm going to call it, like, a spell book. Like, a global directory on my device because I just need Claude"
+    },
+    {
+      "start": 233.3,
+      "end": 239.84,
+      "text": "just need Claude Code to have access to it of repeatable tools and workflows that I can use. And I find it very useful to me. So, my goal is"
+    },
+    {
+      "start": 239.46,
+      "end": 245.5,
+      "text": "my goal is that by the end of this, you have some idea of how you can do this in the way that I did it. If you like it,"
+    },
+    {
+      "start": 245.06,
+      "end": 254.2,
+      "text": "you like it, please let me know. But first, I want to talk about the problem. So, the main problem that I want to talk about is, like,"
+    },
+    {
+      "start": 253.62,
+      "end": 262.74,
+      "text": "about is, like, getting the web data to your agent. How many people have used Claude Code or Codex or Cloud for, like, searching the Internet before? So, it does"
+    },
+    {
+      "start": 261.94,
+      "end": 271.1,
+      "text": "So, it does work. But its native web fetch tool is not as powerful to get by certain sites. Like, LinkedIn or Reddit or things where there's"
+    },
+    {
+      "start": 270.12,
+      "end": 277.88,
+      "text": "things where there's a lot of very valuable information that we'd like to get. And that usually ends up in, like, this where it's, like, let me in. And it"
+    },
+    {
+      "start": 275.9,
+      "end": 286.16,
+      "text": "in. And it can't get in there. So, I'm just going to it's kind of distracting. So, I'll take it off for a second. But"
+    },
+    {
+      "start": 282.62,
+      "end": 291.34,
+      "text": "a second. But the other problem is that it's, like, when it does search on the Internet, it's also not doing it in the same way every time. And there's"
+    },
+    {
+      "start": 290.32,
+      "end": 297.92,
+      "text": "time. And there's no way for me to actually, like, audit what it's doing. And I want these workflows to actually be there. And I want them to be the"
+    },
+    {
+      "start": 297.92,
+      "end": 304.74,
+      "text": "to be the same. Or I'm just going to keep, like, reinventing the wheel every time. And that's wasting my mental energy. It's wasting tokens. And so, what I'm looking"
+    },
+    {
+      "start": 304.42,
+      "end": 310.56,
+      "text": "what I'm looking for is, like, a repeatable task that I can just tell Cloud to do or Claude Code to do. And so, that's what we're going to be"
+    },
+    {
+      "start": 310.28,
+      "end": 316.84,
+      "text": "going to be solving with the idea. And I've kind of talked about this before with making tools. I think of it as, like, a hammer. You can think of"
+    },
+    {
+      "start": 316.66,
+      "end": 322.22,
+      "text": "can think of it like a car, too. Like, if somebody told me hammer this nail, they gave me the hammer and they said all you have to do is"
+    },
+    {
+      "start": 321.92,
+      "end": 327.9,
+      "text": "to do is just hit the nail, that's how I think about tools and why they're useful. Because I'm not going to rebuild a hammer from scratch to a tool."
+    },
+    {
+      "start": 327.64,
+      "end": 333.64,
+      "text": "to a tool. I'm going to have to, like, hammer the nail every time. And so, in the same way, I want to make these repeatable workflows that are saved"
+    },
+    {
+      "start": 332.36,
+      "end": 343.78,
+      "text": "that are saved on my device that Claude Code and Codex have access to to be the hammers so it doesn't need to remake them every time ad hoc. And"
+    },
+    {
+      "start": 340.14,
+      "end": 349.68,
+      "text": "ad hoc. And that's kind of the solution that I've come up with applying Jordan's workflow and worker paradigm. And"
+    },
+    {
+      "start": 347.82,
+      "end": 356.32,
+      "text": "worker paradigm. And so, did you guys kind of get the gist of it from yesterday where you hear yesterday, like, the workflow is essentially, like, your start to end."
+    },
+    {
+      "start": 355.18,
+      "end": 359.92,
+      "text": "start to end. And then the workers are going to be doing the same thing. And then the end is going to be the subcomponents that define, like, a tighter"
+    },
+    {
+      "start": 359.48,
+      "end": 367.06,
+      "text": "like, a tighter contract between the input and the output so that there's more reliability with the agent actually knowing what it needs to give to the tool for it"
+    },
+    {
+      "start": 366.54,
+      "end": 375.64,
+      "text": "tool for it to work. And I did also want to ‑‑ I know Jordan talked about MCP as well. I have this thought a lot because Apple 5, we"
+    },
+    {
+      "start": 374.88,
+      "end": 382.42,
+      "text": "Apple 5, we also have ‑‑ we're in, like, the top five connectors on Cloud for MCP. People really love us for that. And so my first question is, like,"
+    },
+    {
+      "start": 381.94,
+      "end": 388.64,
+      "text": "question is, like, why wouldn't I not just use the MCP for getting access to this? And I will say the use and the value that I've come to appreciate"
+    },
+    {
+      "start": 388.04,
+      "end": 396.5,
+      "text": "come to appreciate for the MCP because I was a big MCP hater was that if you're, like, a developer and you're just trying to get experimentation done or you're"
+    },
+    {
+      "start": 395.42,
+      "end": 402.6,
+      "text": "done or you're just, like, doing a one‑off task, MCP is probably fine. But if you're trying to do something over and over again and you know the way you"
+    },
+    {
+      "start": 402.2,
+      "end": 408.62,
+      "text": "the way you want it to be done, reprompting it and saying, like, use the MCP this way, use it this way is going to get very tedious and it's"
+    },
+    {
+      "start": 407.76,
+      "end": 415.06,
+      "text": "tedious and it's also wasting a lot of context. So when you actually have, like, a repeatable task that you know you're going to want to use again, that's going"
+    },
+    {
+      "start": 414.06,
+      "end": 421.68,
+      "text": "again, that's going to be a lot of work. So that's when I think it's time to take it away from the MCP and create a tool for it. Just"
+    },
+    {
+      "start": 418.24,
+      "end": 427.72,
+      "text": "for it. Just really quickly, I wanted to, like, tell everybody what Apify is because I kind of mentioned it. But we"
+    },
+    {
+      "start": 426.88,
+      "end": 435.78,
+      "text": "it. But we are essentially a platform and marketplace of tools for web scraping and automation to get realtime data to your application or agents and use cases span across,"
+    },
+    {
+      "start": 434.92,
+      "end": 444.46,
+      "text": "cases span across, like, social media, real estate, e‑commerce, things like that. So we do have tools already on the platform that get by those anti‑bot"
+    },
+    {
+      "start": 443.16,
+      "end": 445.56,
+      "text": "by those anti‑bot protections. So we're not going to be able to do that. We're going to be able to do that. And we're going to be able to do"
+    },
+    {
+      "start": 445.56,
+      "end": 452.28,
+      "text": "able to do that with the solutions and that would allow your agent to also get that valuable data. So that is why ‑‑ Yes. So that's why I'm using"
+    },
+    {
+      "start": 451.9,
+      "end": 459.36,
+      "text": "why I'm using Apify as the solution. And so the example of the workflow that I came up with, this is ‑‑ I like to always, like, come up with"
+    },
+    {
+      "start": 459.06,
+      "end": 466.34,
+      "text": "come up with something that I actually do, like, use and I want to find it useful. And so for me, aside from Apify, I also run AITX and we're"
+    },
+    {
+      "start": 465.56,
+      "end": 475.04,
+      "text": "AITX and we're always looking for sponsors for hackathons and other events because that's really, like, the lifeline of, like, the business and community to actually make it function. And"
+    },
+    {
+      "start": 474.08,
+      "end": 478.58,
+      "text": "it function. And so that's why I'm using Apify as the solution. And I spent a lot of time on LinkedIn trying to find the right person to reach. I"
+    },
+    {
+      "start": 478.0,
+      "end": 484.56,
+      "text": "to reach. I know the company is in my head. But I don't know who I should be talking to or have enough context on them. And so I thought,"
+    },
+    {
+      "start": 484.02,
+      "end": 492.9,
+      "text": "so I thought, why not just give Claude Code or Codex access to actually be able to scrape the company's profile with what I'm looking for. So, like, hey, could"
+    },
+    {
+      "start": 492.36,
+      "end": 501.0,
+      "text": "like, hey, could you find people that are best to talk about ‑‑ like, talk to about doing workshops or talk to about doing hackathon sponsorship or speaking at a"
+    },
+    {
+      "start": 500.32,
+      "end": 507.8,
+      "text": "speaking at a conference or something like that. And then carrying it through this workflow. And so I did what I wanted. Interpret the goal that I have. And then"
+    },
+    {
+      "start": 507.3,
+      "end": 515.7,
+      "text": "have. And then generate, like, a search query, like a fuzzy search for the titles. Pass that into the next step, which is, like, searching the employees on the LinkedIn"
+    },
+    {
+      "start": 515.08,
+      "end": 523.6,
+      "text": "on the LinkedIn company's profile. And then scraping each of those employees that we get back with more context so Claude Code can tell me, like, you know, this person"
+    },
+    {
+      "start": 523.04,
+      "end": 530.74,
+      "text": "know, this person has been in DevRel for so long they'll understand the value immediately versus, like, this person just joined this role. They might not be the best person"
+    },
+    {
+      "start": 530.22,
+      "end": 539.22,
+      "text": "the best person to reach out to. So that is kind of the workflow. It's broken down into the three workers, which are ‑‑ the first one is creating"
+    },
+    {
+      "start": 538.0,
+      "end": 547.06,
+      "text": "one is creating the, like, the search query for the second worker. So I'll say, hey, can you find me people that I want to talk to about, like, sponsors"
+    },
+    {
+      "start": 545.94,
+      "end": 555.0,
+      "text": "about, like, sponsors at a hackathon. We're just going to send a prompt to Anthropic and say, oh, return back a search query for titles at a company that"
+    },
+    {
+      "start": 554.5,
+      "end": 561.4,
+      "text": "a company that would be most relevant to this. And then it's going to take that and pass it on to the second worker, which is going to be around"
+    },
+    {
+      "start": 560.46,
+      "end": 569.48,
+      "text": "to be around wrapping the LinkedIn company employee scraper. And so it's just going to take that search query and it's going to fuzzy search all the people up to,"
+    },
+    {
+      "start": 568.84,
+      "end": 576.22,
+      "text": "people up to, like, a certain amount, like, whatever you want to clamp it to, like, 10 or 20. And then we're going to pass all of those people, all"
+    },
+    {
+      "start": 575.36,
+      "end": 583.56,
+      "text": "those people, all those profiles we get back to the scrape profiles worker to scrape their entire LinkedIn profile so I can see, like, their work history to see how"
+    },
+    {
+      "start": 582.92,
+      "end": 589.3,
+      "text": "to see how long they've been at the company. Are they very familiar with the space or are they new? Because that also does make a difference when you're reaching"
+    },
+    {
+      "start": 588.32,
+      "end": 597.38,
+      "text": "when you're reaching out to people. And like I said, the way that I'm doing this, because it's for my personal use, I also find it very applicable or"
+    },
+    {
+      "start": 596.34,
+      "end": 603.9,
+      "text": "very applicable or probably approachable to do as a workshop because you don't have to host it anywhere. Just make a global directory that I'm going to call, like, your"
+    },
+    {
+      "start": 603.48,
+      "end": 610.62,
+      "text": "call, like, your special toolbox or I don't know if you ever watched Harry Potter where Hermione had that bag and it was just, like, everything she pulled out. I"
+    },
+    {
+      "start": 609.06,
+      "end": 616.84,
+      "text": "pulled out. I don't know if that's too niche of a reference. But essentially making that the one place where you can start to build up this entire library. And"
+    },
+    {
+      "start": 615.9,
+      "end": 619.8,
+      "text": "entire library. And then any time you make a new tool, you just have to create a skill that's going to be able to do that. And then you can"
+    },
+    {
+      "start": 619.8,
+      "end": 624.48,
+      "text": "then you can just go to the tool and point the agent to that directory and say, like, all you have to do is run this workflow when I have"
+    },
+    {
+      "start": 623.38,
+      "end": 632.56,
+      "text": "when I have this scenario. It's kind of the same thing. So this is kind of redundant. But I do just want to show you what it looks like here."
+    },
+    {
+      "start": 630.78,
+      "end": 639.82,
+      "text": "looks like here. So I'm just going to I'm in Claude Code. I also have been a big fan of the Claude Code chat interface now. Like, I"
+    },
+    {
+      "start": 638.46,
+      "end": 647.54,
+      "text": "now. Like, I used to do the terminal. But I feel like I don't know. It's just like, oh, it's so cool. It's a terminal. But this just feels better."
+    },
+    {
+      "start": 646.76,
+      "end": 655.86,
+      "text": "just feels better. So, like, I can read everything. So I hope I have this. Nope. I'm just going to type, like, let's say, like, I"
+    },
+    {
+      "start": 655.4,
+      "end": 662.1,
+      "text": "say, like, I want to, like, what's a good company that's like an AI company I want to find sponsors for a hackathon? Like, does anybody have an idea of"
+    },
+    {
+      "start": 661.0,
+      "end": 670.86,
+      "text": "an idea of one that we could scrape? Yeah, we could do Google. Yeah. Let's see. Let me go"
+    },
+    {
+      "start": 668.24,
+      "end": 678.52,
+      "text": "Let me go on my LinkedIn. No,"
+    },
+    {
+      "start": 671.0,
+      "end": 680.2,
+      "text": "my LinkedIn. No, no, no. It's"
+    },
+    {
+      "start": 678.62,
+      "end": 687.82,
+      "text": "no, no. It's actually. So the actors that I'm using, we don't maintain those as Apify. We have a policy where we'll only"
+    },
+    {
+      "start": 687.14,
+      "end": 688.84,
+      "text": "where we'll only scrape, like, publicly. ."
+    },
+    {
+      "start": 688.87,
+      "end": 698.31,
+      "text": "data, but there are creators on the... Hold on. There are creators,"
+    },
+    {
+      "start": 697.25,
+      "end": 706.83,
+      "text": "There are creators, like community developers, that are able to publish and monetize their own actors, and so some of them have found workarounds to get past LinkedIn, and"
+    },
+    {
+      "start": 704.39,
+      "end": 713.35,
+      "text": "past LinkedIn, and our stance on it, again, I'm not the lawyer at the company, but all I want to say is we are hands -off, but if there's like"
+    },
+    {
+      "start": 712.87,
+      "end": 721.21,
+      "text": "if there's like a DMCA, or there's somebody who's like, hey, there's a problem, you guys have this tool on your platform, we will address it then, but we don't"
+    },
+    {
+      "start": 719.37,
+      "end": 728.47,
+      "text": "but we don't necessarily, I want to say, like preemptively take down actors if they're not causing an issue"
+    },
+    {
+      "start": 727.83,
+      "end": 736.87,
+      "text": "causing an issue for the company that they're getting data from. So the way I do this, like in the workflow that I"
+    },
+    {
+      "start": 736.19,
+      "end": 743.55,
+      "text": "workflow that I have, because I know the companies, like I'll be on LinkedIn, I just want to go and grab the company and say, like, I want to find"
+    },
+    {
+      "start": 741.79,
+      "end": 752.15,
+      "text": "want to find people that... Would be relevant to talk to about sponsoring a"
+    },
+    {
+      "start": 749.13,
+      "end": 758.35,
+      "text": "about sponsoring a hackathon or conference at Google, and I'll say, like, you know, could you find"
+    },
+    {
+      "start": 757.63,
+      "end": 766.77,
+      "text": "could you find them for me? And so I have the skill created already, so it should pick up on the intent"
+    },
+    {
+      "start": 766.19,
+      "end": 775.71,
+      "text": "on the intent and run the skill. Yes. Yep."
+    },
+    {
+      "start": 769.41,
+      "end": 778.43,
+      "text": "skill. Yes. Yep. A"
+    },
+    {
+      "start": 772.01,
+      "end": 781.87,
+      "text": "Yes. Yep. A little bit more. So"
+    },
+    {
+      "start": 778.55,
+      "end": 788.09,
+      "text": "bit more. So as you can see, it's like going to that actual, like, directory where I have the workflow already created, and"
+    },
+    {
+      "start": 785.87,
+      "end": 794.95,
+      "text": "already created, and all it knows to do is it just has to run npm start and then pass it in the LinkedIn URL with the thing that I"
+    },
+    {
+      "start": 794.59,
+      "end": 803.23,
+      "text": "thing that I asked for, and then it will go through the entire workflow by, like, understanding the goals of who I'm trying to find, and then it will generate"
+    },
+    {
+      "start": 801.89,
+      "end": 808.93,
+      "text": "it will generate a search query for the fuzzy search. So it's like, I'm going to do a search on the LinkedIn company scraper actor, and then be able to"
+    },
+    {
+      "start": 808.51,
+      "end": 816.53,
+      "text": "be able to scrape the employees, and then it will scrape the employees' individual LinkedIns, and then it should give me, like, a list of maybe, like, five to six"
+    },
+    {
+      "start": 816.09,
+      "end": 821.97,
+      "text": "five to six people that are, you know, these are the top people you should talk to for x, y, z reason. Give me their link and stuff like that."
+    },
+    {
+      "start": 821.37,
+      "end": 831.05,
+      "text": "stuff like that. Yeah, what's up? Can I give you a question while that's running? So from what I'm understanding, the skill invokes"
+    },
+    {
+      "start": 829.17,
+      "end": 838.29,
+      "text": "the skill invokes the actor in this case. Yeah. And so the... The significance I want to point out for the crowd in that"
+    },
+    {
+      "start": 837.23,
+      "end": 846.43,
+      "text": "crowd in that is that the skill lives inside of Claude, and the actor lives on the cloud with Apify."
+    },
+    {
+      "start": 845.19,
+      "end": 854.75,
+      "text": "cloud with Apify. Yes. And so if I was using Claude Code, which you are using Claude Code, my code base owns the skill, but"
+    },
+    {
+      "start": 853.21,
+      "end": 862.87,
+      "text": "the skill, but the actual actor is outside of my code base, which means my code base won't be freaking huge, and you"
+    },
+    {
+      "start": 860.35,
+      "end": 869.85,
+      "text": "huge, and you can run a really lean situation. If you wanted to. Yeah, I think so. I mean, like, the way it's set up now, too, like, the"
+    },
+    {
+      "start": 868.95,
+      "end": 878.07,
+      "text": "too, like, the workflow is local, and that's so, like, the way that it's calling the actors is the same every time. And so I always try"
+    },
+    {
+      "start": 877.47,
+      "end": 886.23,
+      "text": "I always try to think about how much I can abstract away from the agent actually needing to, like, make a decision aside from just running the tool. So, like,"
+    },
+    {
+      "start": 884.53,
+      "end": 893.17,
+      "text": "tool. So, like, I'm a big fan of, like, just abstracting all the business logic of everything I know I want as much as possible, and then just telling the"
+    },
+    {
+      "start": 892.77,
+      "end": 899.37,
+      "text": "just telling the agent, here you go. And just running the tool. Run it. Because at the end of the day, the usefulness for me is that it's able to"
+    },
+    {
+      "start": 898.15,
+      "end": 907.01,
+      "text": "it's able to do this for me now, because I've given it this tool that has all the business logic, and I don't have to do it myself. Like, that's"
+    },
+    {
+      "start": 906.17,
+      "end": 912.87,
+      "text": "myself. Like, that's kind of the... But yeah, aside from that, you could just make a skill to call actors and just say, like, call this actor, and it would"
+    },
+    {
+      "start": 912.61,
+      "end": 919.87,
+      "text": "and it would be able to call the actor. As long as you have the API key for Apify in your environment somewhere or export it globally, you'd be able"
+    },
+    {
+      "start": 919.35,
+      "end": 929.49,
+      "text": "you'd be able to do that. So, yeah, right here. So we've got Eric Dong, engineer. Developer advocate at Google Cloud. Most relevant of the three. He's also"
+    },
+    {
+      "start": 927.55,
+      "end": 936.71,
+      "text": "three. He's also a mentor for Google for Startups, so he's close to the developer events world where hackathon sponsorships are champion. And I'll show"
+    },
+    {
+      "start": 935.53,
+      "end": 945.15,
+      "text": "And I'll show you just to... You know, I'll give you proof, like, he actually... This guy works at Google. And"
+    },
+    {
+      "start": 940.35,
+      "end": 949.37,
+      "text": "at Google. And maybe, like, I could, in the skill, make it a bit more, like... Like, I could say,"
+    },
+    {
+      "start": 949.13,
+      "end": 957.53,
+      "text": "I could say, from the output, could you go into more detail about the person's background to really, like, understand their psychology? Of, like, how I should approach them? You"
+    },
+    {
+      "start": 956.05,
+      "end": 962.49,
+      "text": "approach them? You know, like, hey, you're on the go -to -market team. Like, you guys are trying to get new users. Like, we're doing a hackathon. Would you love"
+    },
+    {
+      "start": 962.23,
+      "end": 968.39,
+      "text": "Would you love to do a product? Like, get your product in the hands of developers versus, hey, I see you've been in the hackathon space for a while. You"
+    },
+    {
+      "start": 968.09,
+      "end": 973.51,
+      "text": "a while. You got a passion, a love for the game. Like, kind of play into the, like, the emotional side of it. And that does make a difference when"
+    },
+    {
+      "start": 973.03,
+      "end": 982.23,
+      "text": "a difference when you're reaching out to people. So that is something I could add to the skill just as a, like, an aside. Even better if. Huh? Even"
+    },
+    {
+      "start": 980.51,
+      "end": 991.71,
+      "text": "if. Huh? Even better if. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "start": 984.05,
+      "end": 993.15,
+      "text": "Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "start": 984.47,
+      "end": 998.75,
+      "text": "Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "start": 991.19,
+      "end": 1000.97,
+      "text": "Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "start": 998.45,
+      "end": 1008.33,
+      "text": "Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "start": 1000.45,
+      "end": 1010.23,
+      "text": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "start": 1009.33,
+      "end": 1018.39,
+      "text": "Yeah. Yeah. Yeah. Yeah. So I would be a little careful. Send it to your personal first."
+    },
+    {
+      "start": 1017.59,
+      "end": 1026.63,
+      "text": "your personal first. But yeah, so now this will be the opportunity for everybody to try it themselves. First, I do want to give everybody here, this"
+    },
+    {
+      "start": 1024.25,
+      "end": 1033.69,
+      "text": "everybody here, this is $100 in platform usage for Apify. I will say that the coupon that"
+    },
+    {
+      "start": 1032.23,
+      "end": 1040.07,
+      "text": "the coupon that you apply, I'll also show you how to apply it here on the screen as well. It only works for Apify -maintained actors. And when I say"
+    },
+    {
+      "start": 1039.73,
+      "end": 1047.61,
+      "text": "when I say that, like I mentioned, we have a lot of community developers. And we paid out like $1 .2 million to creators on the platform last month. So"
+    },
+    {
+      "start": 1046.87,
+      "end": 1055.33,
+      "text": "last month. So if we took away any of their money, they would be very upset. And I'm also technically on the community team, so I would be receiving the"
+    },
+    {
+      "start": 1054.05,
+      "end": 1060.19,
+      "text": "be receiving the brunt of that. So I do want to just explain it a little bit because people might get a little upset, like why does it not work"
+    },
+    {
+      "start": 1059.85,
+      "end": 1067.23,
+      "text": "it not work for all actors? But there's a lot of people that make their livelihoods off of this and support their families. So it's just for the Apify -maintained"
+    },
+    {
+      "start": 1066.33,
+      "end": 1074.83,
+      "text": "the Apify -maintained actors. That being said, though, we have plenty of actors who are going to be able to apply it to their community. That you should be able"
+    },
+    {
+      "start": 1073.97,
+      "end": 1088.75,
+      "text": "should be able to use. So if I go over to the store and I show you like, I got to find one that's Apify. No."
+    },
+    {
+      "start": 1081.45,
+      "end": 1096.19,
+      "text": "that's Apify. No. So"
+    },
+    {
+      "start": 1081.69,
+      "end": 1096.51,
+      "text": "Apify. No. So most"
+    },
+    {
+      "start": 1088.43,
+      "end": 1097.91,
+      "text": "No. So most of the, so this is"
+    },
+    {
+      "start": 1096.85,
+      "end": 1104.13,
+      "text": "so this is all, again, these are like Apify where you do like Facebook ads, scrape like Amazon. We have like a generic, like website content crawler, which is like"
+    },
+    {
+      "start": 1103.73,
+      "end": 1112.93,
+      "text": "which is like very robust. We have like an AI stagehand actor. The reason that you don't need to log into your accounts for the social media"
+    },
+    {
+      "start": 1111.07,
+      "end": 1118.97,
+      "text": "the social media stuff, it's like a pro, but also could be a limitation depending on what you're trying to do. Like somebody was saying, would I be able to"
+    },
+    {
+      "start": 1118.47,
+      "end": 1125.35,
+      "text": "be able to scrape like my mutuals or other people that follow a company? And it's like, you'd have to log into your account probably to be able to see"
+    },
+    {
+      "start": 1124.93,
+      "end": 1133.93,
+      "text": "able to see that. But we only focus on scraping data that's accessible to the public. So if it was a private, private Instagram account, we wouldn't scrape"
+    },
+    {
+      "start": 1133.05,
+      "end": 1144.55,
+      "text": "we wouldn't scrape it. We can't scrape it. Like we probably could, but we won't is the idea. I"
+    },
+    {
+      "start": 1138.01,
+      "end": 1147.25,
+      "text": "the idea. I thought that was true, but again, the"
+    },
+    {
+      "start": 1146.37,
+      "end": 1155.41,
+      "text": "but again, the actor that I'm using is not maintained by us. I don't know how Harvest API did that. We could maybe do like an interview with him."
+    },
+    {
+      "start": 1154.87,
+      "end": 1163.01,
+      "text": "interview with him. I feel like that'd be interesting because LinkedIn is very hard to get by. And then aside from that, we also manage like the proxies. So like"
+    },
+    {
+      "start": 1161.37,
+      "end": 1168.61,
+      "text": "proxies. So like when you're making a request to the site, you know, you have your IP address and it's like, this is coming from this person. If you send"
+    },
+    {
+      "start": 1168.01,
+      "end": 1175.79,
+      "text": "If you send a thousand of those, they're probably going to say you're blocked. And we have a really cool proxy called the residential proxies where we'll route the requests"
+    },
+    {
+      "start": 1174.49,
+      "end": 1182.83,
+      "text": "route the requests through different residential IP addresses to make it look even more human. So that's usually what people will use for getting to like the social media stuff"
+    },
+    {
+      "start": 1182.19,
+      "end": 1191.79,
+      "text": "social media stuff without triggering. I just want to give you guys the goods. Like that's what we do. So the way to apply the code, I"
+    },
+    {
+      "start": 1190.15,
+      "end": 1198.95,
+      "text": "the code, I just want to say, I just want to show you because it is a bit sneaky. It's in billing. And then you want to go to subscription"
+    },
+    {
+      "start": 1196.85,
+      "end": 1205.95,
+      "text": "go to subscription and you add, you apply the promo code just like that. So you will need to sign up"
+    },
+    {
+      "start": 1205.53,
+      "end": 1212.83,
+      "text": "to sign up for Apify. That is the only gotcha. If you like don't want to sign up, you won't be able to follow the workshop, but it's a good"
+    },
+    {
+      "start": 1211.15,
+      "end": 1220.61,
+      "text": "it's a good platform. Like I used Apify before I even joined. So that was like one of the reasons I was excited to join them. And then I,"
+    },
+    {
+      "start": 1219.09,
+      "end": 1228.17,
+      "text": "And then I, everybody's gotten a picture of the coupon. Okay. This is the QR code for the GitHub repo. The"
+    },
+    {
+      "start": 1226.73,
+      "end": 1235.09,
+      "text": "GitHub repo. The way it's going to work, this is going to be self -paced. Each lesson is just like a step in the process. I will be basically doing"
+    },
+    {
+      "start": 1233.85,
+      "end": 1242.83,
+      "text": "be basically doing it from scratch with you guys on the big screen. And when I hit like a certain checkpoint, I will ask people if they are running into"
+    },
+    {
+      "start": 1241.81,
+      "end": 1249.69,
+      "text": "are running into any issues or if they have any questions. And then we'll just keep going from there. But the goal is you should be able to recreate the"
+    },
+    {
+      "start": 1248.83,
+      "end": 1257.87,
+      "text": "to recreate the workflow that I made. If you would like to try to find Apify actors yourself and come up with your own workflow, feel free."
+    },
+    {
+      "start": 1255.97,
+      "end": 1263.97,
+      "text": "workflow, feel free. I will just give you a warning that you'll be maybe more in the deep end because if you use an actor I have never used before,"
+    },
+    {
+      "start": 1263.27,
+      "end": 1272.35,
+      "text": "never used before, I may not know how to debug it as much. There's like 40 ,000 different actors. But that's up to you. So that is like the"
+    },
+    {
+      "start": 1271.83,
+      "end": 1281.43,
+      "text": "is like the presentation part. Maybe do we want to do Q &A before the workshop or after the workshop? Let's do a quick Q &A. Then"
+    },
+    {
+      "start": 1279.53,
+      "end": 1283.63,
+      "text": "Q &A. Then the workshop. What's up?"
+    },
+    {
+      "start": 1283.93,
+      "end": 1294.15,
+      "text": "I'm just going to start if I go here. And I'm just going to go along with you guys. And then I think I'll probably, at step three"
+    },
+    {
+      "start": 1291.47,
+      "end": 1302.65,
+      "text": "at step three or four, probably just check in with people. And if you have questions, I'll walk around the room a little bit. All"
+    },
+    {
+      "start": 1297.99,
+      "end": 1307.39,
+      "text": "little bit. All right. Get some background music going, maybe. Everybody excited?"
+    },
+    {
+      "start": 1306.07,
+      "end": 1316.51,
+      "text": "maybe. Everybody excited? Give me a heck yeah. Let's go. It's"
+    },
+    {
+      "start": 1310.97,
+      "end": 1320.15,
+      "text": "Let's go. It's funny because I made the workshop, so I might be speed running it. I know exactly"
+    },
+    {
+      "start": 1319.05,
+      "end": 1328.13,
+      "text": "I know exactly what I'm doing. But you just follow along. Please read the read me. The read me is very important for the setup."
+    },
+    {
+      "start": 1326.43,
+      "end": 1335.73,
+      "text": "for the setup. Sometimes people miss the read me. Okay. Hey,"
+    },
+    {
+      "start": 1330.13,
+      "end": 1339.23,
+      "text": "me. Okay. Hey, Michael. Do you mind just, as you're going around, talking"
+    },
+    {
+      "start": 1338.51,
+      "end": 1349.65,
+      "text": "going around, talking to me what you're doing? Yeah. I have to see what you're doing. Yeah. Okay. Sweet. Yeah."
+    },
+    {
+      "start": 1346.37,
+      "end": 1355.57,
+      "text": "Okay. Sweet. Yeah. I'm just setting up everything. So I'm like, I'm here right now. Oh."
+    },
+    {
+      "start": 1353.85,
+      "end": 1365.15,
+      "text": "right now. Oh. Well, I'm going to have to probably actually delete my, because I ran through this already. So I have to. Let's"
+    },
+    {
+      "start": 1361.95,
+      "end": 1371.15,
+      "text": "have to. Let's just delete that. And"
+    },
+    {
+      "start": 1365.23,
+      "end": 1375.61,
+      "text": "delete that. And just new terminal, bro. All right. So"
+    },
+    {
+      "start": 1372.41,
+      "end": 1381.55,
+      "text": "All right. So I'm just going to start by cloning the repo. And so now"
+    },
+    {
+      "start": 1380.81,
+      "end": 1389.89,
+      "text": "And so now I'm in the project. Yeah. Like the lesson one is really"
+    },
+    {
+      "start": 1389.57,
+      "end": 1396.37,
+      "text": "one is really just talking through kind of like what the preface of the presentation was about to where the big idea here is just to give you a solution"
+    },
+    {
+      "start": 1395.65,
+      "end": 1404.81,
+      "text": "you a solution for setting up custom tools for agents that are very widely used, like Codex. Or Claude Code as your daily driver"
+    },
+    {
+      "start": 1404.15,
+      "end": 1414.55,
+      "text": "your daily driver and just giving you a way to set up workflows on your device and build up this library. So that's kind of the big idea. It"
+    },
+    {
+      "start": 1410.29,
+      "end": 1419.63,
+      "text": "big idea. It will require an anthropic API key, I believe. So if you don't have anthropic"
+    },
+    {
+      "start": 1418.65,
+      "end": 1427.59,
+      "text": "don't have anthropic API key, I apologize. I'll walk through this. You still have the example. And if you want to go and try this later, really, like you could"
+    },
+    {
+      "start": 1426.89,
+      "end": 1435.09,
+      "text": "like you could honestly just ask like, like Claude Code or Codex. If I don't want to use the anthropic API key, can you just like switch it out for"
+    },
+    {
+      "start": 1434.67,
+      "end": 1443.53,
+      "text": "it out for Gemini or something like that? So next thing I'm doing is I'm creating I'm just calling it the toolbox. If anybody has a better name for it,"
+    },
+    {
+      "start": 1442.91,
+      "end": 1451.03,
+      "text": "name for it, this is what I'm calling it. So this is going to be the like the global directory of like all the tools that I start to build"
+    },
+    {
+      "start": 1450.41,
+      "end": 1459.27,
+      "text": "start to build for my workflows. And now my agent will have access to it because it's just on my device. All right. It's going to get might give me"
+    },
+    {
+      "start": 1458.85,
+      "end": 1465.81,
+      "text": "might give me the same issue. It did not give me the same issue. Love it. Lovely. Okay. So that's just creating like the parent and the one I'm building"
+    },
+    {
+      "start": 1465.39,
+      "end": 1475.67,
+      "text": "one I'm building right now is going to be the find people at company, which I already have built, but I will rebuild it again. And"
+    },
+    {
+      "start": 1471.69,
+      "end": 1481.47,
+      "text": "it again. And so lesson three is like I guess like the mindset of this, like I do"
+    },
+    {
+      "start": 1480.31,
+      "end": 1489.29,
+      "text": "like I do find it helpful, at least for the way I think about it with the workflow plus the worker paradigm. I do like it because it really helps"
+    },
+    {
+      "start": 1487.61,
+      "end": 1496.85,
+      "text": "it really helps me. Like I'm less overwhelmed by it. Because I know let me just write out the process I want and then I can start to identify where"
+    },
+    {
+      "start": 1495.83,
+      "end": 1504.79,
+      "text": "to identify where a good chunk of this I will consider like a step and I'll make that a worker. And so then it's just going to be like this"
+    },
+    {
+      "start": 1504.35,
+      "end": 1512.85,
+      "text": "be like this file of the workflow where it's like boom, boom, boom, boom. And each of the steps I can actually go in and inspect if something is going"
+    },
+    {
+      "start": 1512.41,
+      "end": 1518.59,
+      "text": "something is going wrong. And so I do kind of like making it modular like that because I've had that experience in the past where you just write this huge"
+    },
+    {
+      "start": 1518.01,
+      "end": 1527.17,
+      "text": "write this huge spaghetti file. And it's like this big thing. And you don't know where it's going wrong. So this is just like talking you through"
+    },
+    {
+      "start": 1525.27,
+      "end": 1534.31,
+      "text": "talking you through the mindset of like creating the workflow. And for this workflow, we will be using these two actors, which I can probably"
+    },
+    {
+      "start": 1533.59,
+      "end": 1544.23,
+      "text": "I can probably also show you if I go to my runs because I just ran it. We have the LinkedIn company profile"
+    },
+    {
+      "start": 1540.73,
+      "end": 1550.49,
+      "text": "LinkedIn company profile scraper. So scraping the employees. Um. Okay."
+    },
+    {
+      "start": 1546.27,
+      "end": 1555.37,
+      "text": "employees. Um. Okay. So. I guess I do kind of want to show you how cheap it is. So like it would be"
+    },
+    {
+      "start": 1554.85,
+      "end": 1563.41,
+      "text": "it would be $3 for like a thousand results. Like if you're a business and you're trying to get people really fast. Like I think there's a bigger premium on"
+    },
+    {
+      "start": 1562.55,
+      "end": 1570.31,
+      "text": "bigger premium on time, especially with AI now. Like money loves speed. So if I have to pay three bucks to get a thousand people, but it's going to help"
+    },
+    {
+      "start": 1570.03,
+      "end": 1578.77,
+      "text": "going to help me get there faster. I also work for Apify, so you don't have to take my word for it. But that's my opinion. So we'll be using"
+    },
+    {
+      "start": 1578.23,
+      "end": 1589.85,
+      "text": "we'll be using this one. And then we'll also be using. The LinkedIn profile scraper. So if I go back to this run. This"
+    },
+    {
+      "start": 1586.13,
+      "end": 1595.19,
+      "text": "this run. This was like the input that was generated. So when from the first step, when we actually like said, like, I"
+    },
+    {
+      "start": 1594.81,
+      "end": 1604.41,
+      "text": "said, like, I want to find people to talk about for sponsors for hackathons. The first worker was in charge of just creating like these like these job titles. And"
+    },
+    {
+      "start": 1601.61,
+      "end": 1610.75,
+      "text": "job titles. And using that as part of the input for when we're scraping their profile. And then in the output. These are"
+    },
+    {
+      "start": 1609.97,
+      "end": 1618.73,
+      "text": "output. These are like the three profiles we got. And you can see here. Each of them have a LinkedIn URL. And so we are taking that. And we're going"
+    },
+    {
+      "start": 1618.03,
+      "end": 1631.87,
+      "text": "And we're going to pass it into the LinkedIn profile scraper. So for example, we were scraping. I don't know what his name is. Victor."
+    },
+    {
+      "start": 1626.33,
+      "end": 1635.51,
+      "text": "name is. Victor. We were scraping Victor. And that gives us"
+    },
+    {
+      "start": 1634.71,
+      "end": 1644.29,
+      "text": "that gives us like his like. It's probably easier to read in JSON. Like, you know. His headline. His location. His current position. Then"
+    },
+    {
+      "start": 1642.09,
+      "end": 1652.45,
+      "text": "current position. Then also like his education. I believe it shows your past. Your"
+    },
+    {
+      "start": 1649.99,
+      "end": 1658.31,
+      "text": "your past. Your experience. So like, again, this would be useful. Like, oh, you've been doing this a while. So I maybe want to approach you a different way versus"
+    },
+    {
+      "start": 1657.57,
+      "end": 1666.79,
+      "text": "different way versus somebody that's like super fresh. No. No. Like super fresh."
+    },
+    {
+      "start": 1665.79,
+      "end": 1674.87,
+      "text": "Like super fresh. Like, let's say like you're a. It's like your first role is like a go to market person. I found in my experience like"
+    },
+    {
+      "start": 1673.93,
+      "end": 1683.19,
+      "text": "my experience like it's easier to have a conversation, but they generally have like less authority or know the right person to like connect to. So"
+    },
+    {
+      "start": 1681.75,
+      "end": 1689.15,
+      "text": "connect to. So I'm trying to find somebody that like if I'm going to spend my time reaching out to someone, I want to make sure that they're like they've"
+    },
+    {
+      "start": 1687.91,
+      "end": 1695.93,
+      "text": "they're like they've been in the business and they understand it much more than somebody that just joined. Because that's not going to waste my time. And I can get"
+    },
+    {
+      "start": 1694.99,
+      "end": 1702.45,
+      "text": "I can get a faster answer of like, are you interested? Instead of going through like three layers and I feel like it's like pseudo productive because I'm like, yeah,"
+    },
+    {
+      "start": 1702.05,
+      "end": 1707.25,
+      "text": "I'm like, yeah, like I'm getting to this conversation. I'm almost to the person. But then that person was going to say no anyway. So might as well just go"
+    },
+    {
+      "start": 1706.99,
+      "end": 1716.15,
+      "text": "well just go straight to the person. That's not about AI. That's just like my like rambling is about like my how I think"
+    },
+    {
+      "start": 1715.29,
+      "end": 1724.47,
+      "text": "how I think about the outreach. So those are the two actions we'll be building. And for defining workers, again, this is a workshop. And"
+    },
+    {
+      "start": 1723.09,
+      "end": 1728.01,
+      "text": "a workshop. And I wanted to do this for the sake of time. The entire exam. I'm going to do this. I want to give you an example of what"
+    },
+    {
+      "start": 1727.71,
+      "end": 1734.73,
+      "text": "example of what I made is here already. And the goal was really just for you guys to copy and just like read through the the workflow to get a"
+    },
+    {
+      "start": 1733.93,
+      "end": 1743.61,
+      "text": "to get a better understanding. So I can kind of go through the code of that because that would probably be more helpful. So"
+    },
+    {
+      "start": 1738.93,
+      "end": 1748.51,
+      "text": "more helpful. So first, I'm just creating like a working directory so I can copy"
+    },
+    {
+      "start": 1745.97,
+      "end": 1755.87,
+      "text": "I can copy this example. You can do the whole process. Yeah. Yeah."
+    },
+    {
+      "start": 1753.67,
+      "end": 1763.31,
+      "text": "process. Yeah. Yeah. What's that movie where they're like Zoom? Do you know that movie? No,"
+    },
+    {
+      "start": 1761.53,
+      "end": 1769.87,
+      "text": "that movie? No, there's like a movie that are like Zoom, Zoom. And they're like keep going. Do you need an Anthropo key to use Amplify in general or is"
+    },
+    {
+      "start": 1769.31,
+      "end": 1778.39,
+      "text": "general or is this? Just for the workflow. Like for the workshop, yeah. The only thing you need for Amplify is"
+    },
+    {
+      "start": 1777.77,
+      "end": 1786.77,
+      "text": "for Amplify is the API key. And sometimes depending, there may be an actor that will say like oh, we'll do this for you, but you"
+    },
+    {
+      "start": 1786.33,
+      "end": 1793.35,
+      "text": "you, but you also need to put your, like it's a self -service, like bring your own API key type actor, which is fine. We do allow you to pass"
+    },
+    {
+      "start": 1792.81,
+      "end": 1801.11,
+      "text": "you to pass in secrets and it's stored in a trusted way. But I would generally just, I think you could probably like remade."
+    },
+    {
+      "start": 1801.13,
+      "end": 1815.27,
+      "text": "your own actor at that point. Okay, so. I"
+    },
+    {
+      "start": 1802.79,
+      "end": 1815.81,
+      "text": "Okay, so. I think"
+    },
+    {
+      "start": 1803.43,
+      "end": 1815.87,
+      "text": "so. I think it"
+    },
+    {
+      "start": 1814.73,
+      "end": 1826.03,
+      "text": "I think it turned on and off. All right. We"
+    },
+    {
+      "start": 1822.59,
+      "end": 1834.41,
+      "text": "All right. We get comfy here. Just"
+    },
+    {
+      "start": 1826.19,
+      "end": 1835.27,
+      "text": "comfy here. Just installing the dependencies."
+    },
+    {
+      "start": 1834.41,
+      "end": 1843.43,
+      "text": "installing the dependencies. That's not super important right now, but now I'll just kind of go through what I created in the workflow itself. So"
+    },
+    {
+      "start": 1842.49,
+      "end": 1852.43,
+      "text": "workflow itself. So I'll start with the workflow. So this is kind of the main entry point where it's like find people. And"
+    },
+    {
+      "start": 1850.53,
+      "end": 1859.75,
+      "text": "find people. And so this is like the main, like what the two inputs will be are like the, it'll be the company URL"
+    },
+    {
+      "start": 1859.09,
+      "end": 1863.29,
+      "text": "the company URL and the prompt and the link and the link and the link and the link. And then the max number of profiles that you want to find."
+    },
+    {
+      "start": 1862.79,
+      "end": 1871.91,
+      "text": "want to find. So these are like the three inputs that you're going to be passing in at the beginning of the workflow. And"
+    },
+    {
+      "start": 1867.53,
+      "end": 1877.45,
+      "text": "the workflow. And then you see I'm defining each of my workers here. So, yes."
+    },
+    {
+      "start": 1875.01,
+      "end": 1885.45,
+      "text": "here. So, yes. Yes. Yeah,"
+    },
+    {
+      "start": 1875.81,
+      "end": 1887.73,
+      "text": "yes. Yes. Yeah, it's"
+    },
+    {
+      "start": 1878.29,
+      "end": 1888.03,
+      "text": "Yes. Yeah, it's like"
+    },
+    {
+      "start": 1885.01,
+      "end": 1894.11,
+      "text": "Yeah, it's like the, literally like the goal, like the goal of the workshop, like I wasn't sure if this was how hands -on, if it was like let's"
+    },
+    {
+      "start": 1893.57,
+      "end": 1900.27,
+      "text": "was like let's build something from scratch. And in my experience, given the time I had, I feel like we would have wanted like at least like probably like two"
+    },
+    {
+      "start": 1899.39,
+      "end": 1908.93,
+      "text": "probably like two or three hours to like have a good session. So it's just more of an example of like me showing you what I did and then giving"
+    },
+    {
+      "start": 1907.43,
+      "end": 1914.81,
+      "text": "and then giving you the example of like how I built it. So you can put this into your Claude Code later and say, hey, like just kind of copy"
+    },
+    {
+      "start": 1914.23,
+      "end": 1926.93,
+      "text": "kind of copy this setup for this use case that I want and just really understand like why we're doing it. And then you can see it this way. No,"
+    },
+    {
+      "start": 1921.01,
+      "end": 1930.15,
+      "text": "this way. No, I think it would, it depends, it kind of depends on like your familiarity with"
+    },
+    {
+      "start": 1929.29,
+      "end": 1936.97,
+      "text": "your familiarity with Apify and stuff. I just meant more for like the workshop. Generally, there's like people have issues and it takes longer like during like a group setting."
+    },
+    {
+      "start": 1935.77,
+      "end": 1944.83,
+      "text": "a group setting. Yeah, it's like some inside ball knowledge. Okay,"
+    },
+    {
+      "start": 1940.33,
+      "end": 1949.33,
+      "text": "ball knowledge. Okay, okay. So just for the sake of time, I'll go through as quickly"
+    },
+    {
+      "start": 1947.99,
+      "end": 1957.45,
+      "text": "through as quickly as possible just to explain. So the first worker here is the make search query. So"
+    },
+    {
+      "start": 1954.95,
+      "end": 1964.21,
+      "text": "search query. So this is like when I'm saying, hey, I'm looking for like people at this company, like find people that are relevant to hackathon sponsorships."
+    },
+    {
+      "start": 1962.77,
+      "end": 1971.83,
+      "text": "to hackathon sponsorships. I just have a prompt in here that is going to ask Anthropic to return me job titles"
+    },
+    {
+      "start": 1970.95,
+      "end": 1979.23,
+      "text": "me job titles based on like what it thinks my intent is from that question. So we're taking the actual like question I asked, putting it into this prompt and"
+    },
+    {
+      "start": 1978.05,
+      "end": 1982.89,
+      "text": "this prompt and it will be returned. And then the next thing I'm going to do is I'm going to ask and that is going to be passed later into"
+    },
+    {
+      "start": 1981.53,
+      "end": 1990.91,
+      "text": "passed later into the search employee worker, which is where we're actually calling the LinkedIn company scraper."
+    },
+    {
+      "start": 1988.73,
+      "end": 1997.75,
+      "text": "LinkedIn company scraper. And then once we get the employees from the"
+    },
+    {
+      "start": 1995.97,
+      "end": 2006.41,
+      "text": "employees from the scrape from the company, we're going to pass it into the profile worker, which is going to be in charge of just calling the"
+    },
+    {
+      "start": 2004.39,
+      "end": 2010.95,
+      "text": "just calling the LinkedIn profile scraper. So basically, I think at a high level, I want to call out like the way I'm thinking about, like the way I'm thinking"
+    },
+    {
+      "start": 2010.95,
+      "end": 2019.97,
+      "text": "way I'm thinking about workers with Apify specifically is that each worker will probably wrap like two actors max, but I would just keep it as like one."
+    },
+    {
+      "start": 2019.39,
+      "end": 2027.79,
+      "text": "as like one. And then I have like specific logic around the actor inside of the worker, if that makes sense. So it's like the raw call to the actor,"
+    },
+    {
+      "start": 2027.11,
+      "end": 2034.77,
+      "text": "to the actor, then there's like the little extra logic I want to have on top. And that is all within a worker, which is going to be in the"
+    },
+    {
+      "start": 2033.97,
+      "end": 2043.01,
+      "text": "be in the workflow. Could you add loops to this as well? Like for recursion? I guess you"
+    },
+    {
+      "start": 2042.15,
+      "end": 2051.17,
+      "text": "I guess you could. Yeah, like you could probably just say like, hey, run this workflow and improve the output, like just if the output isn't"
+    },
+    {
+      "start": 2050.55,
+      "end": 2059.23,
+      "text": "the output isn't to like some standard. I don't know how I would define the standard yet. I think SMI gave a talk about that. I was over there. No,"
+    },
+    {
+      "start": 2057.77,
+      "end": 2065.25,
+      "text": "over there. No, it's all good. It's all good. I apologize. That was more for the crowd. Yeah. But yeah, so you could definitely do something like that. Like if"
+    },
+    {
+      "start": 2064.75,
+      "end": 2073.85,
+      "text": "that. Like if you have a place to store the outputs and then you just point your Claude Code or codex somewhere and say, hey, here's the workflow, keep running"
+    },
+    {
+      "start": 2072.59,
+      "end": 2084.45,
+      "text": "workflow, keep running it, check the outputs until it reaches some sort of standard that you want, and then just update the code. I"
+    },
+    {
+      "start": 2078.17,
+      "end": 2088.49,
+      "text": "the code. I mean, that's pretty much like the, how"
+    },
+    {
+      "start": 2085.81,
+      "end": 2094.99,
+      "text": "like the, how much time do we have? Done? Five more minutes."
+    },
+    {
+      "start": 2093.89,
+      "end": 2102.59,
+      "text": "Five more minutes. Okay, okay. So let me just go through what next to do after that then as quickly as possible. Make sure that you're setting your Apify token"
+    },
+    {
+      "start": 2101.49,
+      "end": 2110.49,
+      "text": "your Apify token and your Anthropic API key, and then you'll want to make sure that it's actually running. And then I'm just going to keep going through because I"
+    },
+    {
+      "start": 2110.07,
+      "end": 2117.05,
+      "text": "through because I know we have five minutes. You'll want to move that to your toolbox. You could just like go straight to the directory, that parent directory, and build"
+    },
+    {
+      "start": 2116.29,
+      "end": 2121.99,
+      "text": "directory, and build it within there if you wanted to. But just for the sake of it, like if you're building this somewhere on your device, you're creating the workflow,"
+    },
+    {
+      "start": 2121.47,
+      "end": 2131.15,
+      "text": "creating the workflow, just make sure you're moving it to that global directory later. And then inside of, like you'll probably want to like go into your"
+    },
+    {
+      "start": 2129.29,
+      "end": 2138.77,
+      "text": "go into your like toolbox directory and go into that specific workflow, open up Claude Code or something and say, hey, I"
+    },
+    {
+      "start": 2137.47,
+      "end": 2146.01,
+      "text": "say, hey, I need a skill for this. Like I don't write skills by hand. I would just say like, please just look through the workflow and instruct the, like"
+    },
+    {
+      "start": 2144.57,
+      "end": 2154.03,
+      "text": "instruct the, like make a skill that instructs the agent to, on like what it does. And then also to make sure that it's going to this directory path to"
+    },
+    {
+      "start": 2152.55,
+      "end": 2161.79,
+      "text": "directory path to be able to run the workflow. And that is like it in a nutshell. I know we only have five minutes, so I don't know if"
+    },
+    {
+      "start": 2160.37,
+      "end": 2169.49,
+      "text": "don't know if I want to, that's pretty much it though. So one thing to just add on to this, the GitHub repo is"
+    },
+    {
+      "start": 2168.53,
+      "end": 2177.67,
+      "text": "GitHub repo is available to you guys. So you can just get in there, grab that link at the very top that he provided earlier, and drop that"
+    },
+    {
+      "start": 2176.63,
+      "end": 2185.83,
+      "text": "and drop that into Claude Code and say, hey, Chad, tell me about this repo and how you use it. I"
+    },
+    {
+      "start": 2181.77,
+      "end": 2190.87,
+      "text": "use it. I do that all the time, yeah. You're doing that right now. Yeah. Yeah. Yeah, there's also, again, the call"
+    },
+    {
+      "start": 2190.05,
+      "end": 2199.61,
+      "text": "again, the call to understand anything. It'll take any repo you put into it and like make graphs and like, it's called understand"
+    },
+    {
+      "start": 2195.01,
+      "end": 2206.01,
+      "text": "it's called understand anything. Understand dash anything, yeah. Understand dash anything. I mean, I've"
+    },
+    {
+      "start": 2203.47,
+      "end": 2212.61,
+      "text": "I mean, I've seen clues I haven't personally yet, but I was, but it gives you all these like visuals and graphs"
+    },
+    {
+      "start": 2211.91,
+      "end": 2221.65,
+      "text": "visuals and graphs and stuff and like shows dependencies and all this stuff. That's a good one. Yeah. Yeah. Get"
+    },
+    {
+      "start": 2219.03,
+      "end": 2228.05,
+      "text": "Yeah. Yeah. Get in jest is like O .G. for that as well. Anyways. This is my"
+    },
+    {
+      "start": 2227.59,
+      "end": 2236.53,
+      "text": "This is my LinkedIn. If you guys want to scan my QR code for LinkedIn. But yeah, I know we're out of time. So apologies if we didn't get to"
+    },
+    {
+      "start": 2236.19,
+      "end": 2242.13,
+      "text": "didn't get to go through the entire workshop, but I hope that you walked away with this, at least learning a bit about how you could use Apify in your"
+    },
+    {
+      "start": 2241.17,
+      "end": 2249.17,
+      "text": "Apify in your own day -to -day work with the agents that you already have accessible. Like this doesn't need to be on OpenClaw or Hermes. Like you can literally"
+    },
+    {
+      "start": 2248.71,
+      "end": 2257.11,
+      "text": "you can literally just do this with, with the Claude Code or Codex, and I'll personally say I find that more useful because I think those harnesses tend to just"
+    },
+    {
+      "start": 2256.71,
+      "end": 2265.37,
+      "text": "tend to just get better over time, and it works for me, so. Awesome, give it up for Michael, guys."
+    }
+  ],
+  "widgets": [],
+  "assets": {
+    "stream": "https://recordings.organizedai.vip/media/01%20-%20Michael%20-%20Real-Time%20Web%20Data%20for%20Agents.mp4"
+  }
+}

@@ -5,15 +5,872 @@
   "media_url": null,
   "twelvelabs": {
     "index_name": "session-5a-michael",
-    "index_id": null,
-    "video_id": null
+    "index_id": "6a55879d03d291c7a1a9484b",
+    "video_id": "6a5587aa2ca158187cd6247c"
   },
   "masters": {
     "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 5A Michael/JORDAN_S001_S001_T008_ISO1.MOV",
     "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 5A Michael/JORDAN_S001_S001_T008_ISO2.MOV"
   },
-  "clips": [],
-  "transcript": [],
+  "clips": [
+    {
+      "id": "01",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 5,
+      "hook": "Code magic in 60 seconds",
+      "caption": "Watch how I quickly set up a workflow with Appify and cloud code—no fluff, just results. #Automation #Appify #DeveloperTips",
+      "start": 14.0,
+      "end": 34.08,
+      "duration": 20.08,
+      "crop_cx": 0.552,
+      "crop_x0": 756,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_01.mp4",
+      "still_person": "reels/compare/01_person.jpg",
+      "still_screen": "reels/compare/01_screen.jpg",
+      "transcript": "I I think think it it turned turned on on and and off off all all right right yet yet comfy comfy here here just just installing installing the the dependencies dependencies that's that's",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Turning On the Workflow"
+    },
+    {
+      "id": "02",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 19,
+      "hook": "Master the Workflow in 3 Steps",
+      "caption": "Learn how to set up your workflow with just 3 key inputs—company URL, prompt, and max profiles. Perfect for automating LinkedIn searches! #Automation #Appify #WorkflowTips",
+      "start": 45.76,
+      "end": 65.92,
+      "duration": 20.16,
+      "crop_cx": 0.559,
+      "crop_x0": 770,
+      "demo_lead_s": null,
+      "reel": "reels/reel_02.mp4",
+      "still_person": "reels/compare/02_person.jpg",
+      "still_screen": null,
+      "transcript": "the the workflow workflow like like so so this this is is like like kind kind of of the the main main entry entry point point where where it's it's like like find find people people and and so so this this is is like like the the main main like like what what the the two two inputs inputs will will be be are are like like the the it'll it'll be be the the company company URL URL and and the the prompt prompt and and then then the the max max number number of of profiles profiles that that you you want want to to find. find. So So these these are are like like the the three three inputs inputs that that you're you're going going to to be be passing passing in in at at the the beginning beginning of of this this of of",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Introducing the Main Entry Point"
+    },
+    {
+      "id": "03",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 17,
+      "hook": "Need more time to master Appify?",
+      "caption": "This tutorial is just a snapshot—imagine what we could’ve covered in 2-3 hours. Learn how to build workflows with Appify and cloud code for real-world agent tasks. #Appify #WorkflowAutomation #CloudCode",
+      "start": 96.0,
+      "end": 116.08,
+      "duration": 20.08,
+      "crop_cx": 0.563,
+      "crop_x0": 776,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_03.mp4",
+      "still_person": "reels/compare/03_person.jpg",
+      "still_screen": "reels/compare/03_screen.jpg",
+      "transcript": "feel feel like like we we would would have have wanted wanted like like at at least least like like probably probably like like two two or or three three hours hours to to like like have have a a good good a a good good session session so so it's it's just just more more of of an an example example of of like like me me showing showing you you what what I I did did and and then then giving giving you you the the example example of of like like how how I I built built it it so so you you can can put put this this into into your your claud claud code code later later and and say say like like just just kind kind of of copy copy this this setup setup for for this this use use case case that that I I",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Workshop Time Realities"
+    },
+    {
+      "id": "04",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 15,
+      "hook": "Unlock Hackathon Sponsorship Secrets",
+      "caption": "Learn how to use AI to find the right people at companies for hackathon sponsorships—just by asking the right prompt. #AItools #HackathonTips #TechInnovation",
+      "start": 158.08,
+      "end": 178.88,
+      "duration": 20.8,
+      "crop_cx": 0.567,
+      "crop_x0": 784,
+      "demo_lead_s": null,
+      "reel": "reels/reel_04.mp4",
+      "still_person": "reels/compare/04_person.jpg",
+      "still_screen": null,
+      "transcript": "like like people people at at this this company company like like find find people people that that are are relevant relevant to to hackathon hackathon sponsorships sponsorships I I just just have have a a prompt prompt in in here here that that is is going going to to ask ask anthropic anthropic to to return return me me job job titles titles based based on on like like what what it it thinks thinks my my intent intent is is from from that that question question so so we're we're taking taking the the actual actual like like question question I I asked asked putting putting it it into into this this prompt prompt and and it it will be returned and",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Defining the Search Query"
+    },
+    {
+      "id": "05",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 15,
+      "hook": "Building Workflows Like a Pro",
+      "caption": "Just walked through setting up a seamless workflow—dependencies installed, logic locked in, and the real magic begins. #Automation #Appify #WorkflowTips",
+      "start": 189.32,
+      "end": 210.84,
+      "duration": 21.52,
+      "crop_cx": 0.562,
+      "crop_x0": 774,
+      "demo_lead_s": null,
+      "reel": "reels/reel_05.mp4",
+      "still_person": "reels/compare/05_person.jpg",
+      "still_screen": null,
+      "transcript": "yet comfy here just installing the dependencies that's uh not super important right now but now I'll just kind of go through like what I created in the workflow itself I'll start with the",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Calling the LinkedIn Scraper"
+    },
+    {
+      "id": "06",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 16,
+      "hook": "Master the Workflow in 3 Inputs",
+      "caption": "Learn how to set up your Appify workflow with just 3 key inputs—company URL, prompt, and max profiles. Perfect for automating LinkedIn searches! #Automation #Appify #WorkflowTips",
+      "start": 208.76,
+      "end": 228.84,
+      "duration": 20.08,
+      "crop_cx": 0.571,
+      "crop_x0": 792,
+      "demo_lead_s": null,
+      "reel": "reels/reel_06.mp4",
+      "still_person": "reels/compare/06_person.jpg",
+      "still_screen": null,
+      "transcript": "with the workflow like so this is like kind of the main entry point where it's like find people and so this is like the main like what the two inputs will be are like the it'll be the company URL and the prompt and then the max number of profiles that you want to find. So these are like the three inputs that you're going to be passing",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Worker Design Philosophy"
+    },
+    {
+      "id": "07",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 15,
+      "hook": "Hands-on workshop? Let’s build it together.",
+      "caption": "Michael walks through building a workflow with Appify, showing how to automate LinkedIn scraping for hackathon sponsorships. Perfect for devs using cloud code or codex. #Appify #WorkflowAutomation #DevTools",
+      "start": 238.28,
+      "end": 258.28,
+      "duration": 20.0,
+      "crop_cx": 0.573,
+      "crop_x0": 796,
+      "demo_lead_s": null,
+      "reel": "reels/reel_07.mp4",
+      "still_person": "reels/compare/07_person.jpg",
+      "still_screen": null,
+      "transcript": "here it's like the literally like the the goal of the workshop like I wasn't sure if this was how hands on if it was like let's build something from scratch",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Iterative Improvement Strategy"
+    },
+    {
+      "id": "08",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 22,
+      "hook": "Speed-run your workflow setup",
+      "caption": "Learn how to quickly build a smart search workflow for finding key people at companies—perfect for sponsorships or outreach. #Automation #WorkflowTips #Appify",
+      "start": 304.12,
+      "end": 324.36,
+      "duration": 20.24,
+      "crop_cx": 0.562,
+      "crop_x0": 776,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_08.mp4",
+      "still_person": "reels/compare/08_person.jpg",
+      "still_screen": "reels/compare/08_screen.jpg",
+      "transcript": "knowledge okay so uh just for the sake of time I'll go through as quickly as possible just to explain uh so the first worker here is the make cer make search query so this is like when I'm saying hey I'm looking for like people at this company",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Setting Up API Keys"
+    },
+    {
+      "id": "09",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 14,
+      "hook": "Build workflows that scale with LinkedIn data",
+      "caption": "Learn how to automate LinkedIn company scraping and employee data extraction in just a few steps. #Automation #Appify #WorkflowDesign",
+      "start": 345.0,
+      "end": 365.0,
+      "duration": 20.0,
+      "crop_cx": 0.569,
+      "crop_x0": 788,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_09.mp4",
+      "still_person": "reels/compare/09_person.jpg",
+      "still_screen": "reels/compare/09_screen.jpg",
+      "transcript": "passed later later into into the the search search employee employee worker, worker which which is is where where we're we're actually actually calling calling the the LinkedIn LinkedIn company company scraper, scraper and and then then once once we we get get the the employees employees from from the the scrape scrape from from the the from from the the company company, we're we're going going to to pass pass it into it into the the",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Automating Skill Generation"
+    },
+    {
+      "id": "10",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 16,
+      "hook": "Mastering Appify Workflows in 5 Min",
+      "caption": "Learn how to structure smart, reusable workflows with Appify—perfect for automating LinkedIn scraping and agent tasks. #Automation #Appify #WorkflowDesign",
+      "start": 383.96,
+      "end": 403.96,
+      "duration": 20.0,
+      "crop_cx": 0.565,
+      "crop_x0": 780,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_10.mp4",
+      "still_person": "reels/compare/10_person.jpg",
+      "still_screen": "reels/compare/10_screen.jpg",
+      "transcript": "and then like I'm what I have like I created specific in logic the workflow itself around the actor inside of the worker if that I'll makes start sense with so it's like the raw call to the actor the workflow like then so there's this is like like kind the of little the extra main entry logic I point want where to have it's on like top find people and that is all within a and so this worker is like the main which is going to be like what in the the two inputs workflow will be are like the it'll be the company URL like for recursive and the prompt",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Confident Closing Line"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 2.62,
+      "text": "your own actor at that point. Okay, so."
+    },
+    {
+      "start": 13.6,
+      "end": 15.44,
+      "text": "I think it turned on and off."
+    },
+    {
+      "start": 21.46,
+      "end": 22.54,
+      "text": "All right."
+    },
+    {
+      "start": 24.36,
+      "end": 25.7,
+      "text": "We get comfy here."
+    },
+    {
+      "start": 32.84,
+      "end": 39.02,
+      "text": "Just installing the dependencies. That's not super important right now, but now"
+    },
+    {
+      "start": 39.02,
+      "end": 41.64,
+      "text": "I'll just kind of go through what I created in the workflow"
+    },
+    {
+      "start": 41.64,
+      "end": 48.24,
+      "text": "itself. So I'll start with the workflow. So this is kind of"
+    },
+    {
+      "start": 48.24,
+      "end": 51.56,
+      "text": "the main entry point where it's like find people. And so this"
+    },
+    {
+      "start": 51.56,
+      "end": 54.18,
+      "text": "is like the main, like what the two inputs will be are"
+    },
+    {
+      "start": 54.18,
+      "end": 54.66,
+      "text": "like the,"
+    },
+    {
+      "start": 57.44,
+      "end": 59.98,
+      "text": "it'll be the company URL and the prompt and the link and"
+    },
+    {
+      "start": 59.98,
+      "end": 60.68,
+      "text": "the link and the link and the link. And then the max"
+    },
+    {
+      "start": 60.68,
+      "end": 63.18,
+      "text": "number of profiles that you want to find. So these are like"
+    },
+    {
+      "start": 63.18,
+      "end": 65.96,
+      "text": "the three inputs that you're going to be passing in at the"
+    },
+    {
+      "start": 65.96,
+      "end": 67.02,
+      "text": "beginning of the workflow."
+    },
+    {
+      "start": 70.34,
+      "end": 74.68,
+      "text": "And then you see I'm defining each of my workers here. So,"
+    },
+    {
+      "start": 74.68,
+      "end": 77.6,
+      "text": "yes. Yes."
+    },
+    {
+      "start": 83.88,
+      "end": 84.32,
+      "text": "Yeah,"
+    },
+    {
+      "start": 86.2,
+      "end": 90.14,
+      "text": "it's like the, literally like the goal, like the goal of the"
+    },
+    {
+      "start": 90.14,
+      "end": 92.36,
+      "text": "workshop, like I wasn't sure if this was how hands -on, if"
+    },
+    {
+      "start": 92.36,
+      "end": 95.02,
+      "text": "it was like let's build something from scratch. And in my experience,"
+    },
+    {
+      "start": 95.58,
+      "end": 97.58,
+      "text": "given the time I had, I feel like we would have wanted"
+    },
+    {
+      "start": 97.58,
+      "end": 100.02,
+      "text": "like at least like probably like two or three hours to like"
+    },
+    {
+      "start": 100.02,
+      "end": 104.4,
+      "text": "have a good session. So it's just more of an example of"
+    },
+    {
+      "start": 104.4,
+      "end": 108.0,
+      "text": "like me showing you what I did and then giving you the"
+    },
+    {
+      "start": 108.0,
+      "end": 110.56,
+      "text": "example of like how I built it. So you can put this"
+    },
+    {
+      "start": 110.56,
+      "end": 113.4,
+      "text": "into your Claude Code later and say, hey, like just kind of"
+    },
+    {
+      "start": 113.4,
+      "end": 117.92,
+      "text": "copy this setup for this use case that I want and just"
+    },
+    {
+      "start": 117.92,
+      "end": 119.88,
+      "text": "really understand like why we're doing it. And then you can see"
+    },
+    {
+      "start": 119.88,
+      "end": 120.22,
+      "text": "it this way."
+    },
+    {
+      "start": 125.4,
+      "end": 128.06,
+      "text": "No, I think it would, it depends, it kind of depends on"
+    },
+    {
+      "start": 128.06,
+      "end": 130.5,
+      "text": "like your familiarity with Apify and stuff. I just meant more for"
+    },
+    {
+      "start": 130.5,
+      "end": 133.66,
+      "text": "like the workshop. Generally, there's like people have issues and it takes"
+    },
+    {
+      "start": 133.66,
+      "end": 135.84,
+      "text": "longer like during like a group setting."
+    },
+    {
+      "start": 137.66,
+      "end": 139.88,
+      "text": "Yeah, it's like some inside ball knowledge."
+    },
+    {
+      "start": 143.3,
+      "end": 147.16,
+      "text": "Okay, okay. So just for the sake of time, I'll go through"
+    },
+    {
+      "start": 147.16,
+      "end": 152.88,
+      "text": "as quickly as possible just to explain. So the first worker here"
+    },
+    {
+      "start": 152.88,
+      "end": 157.14,
+      "text": "is the make search query. So this is like when I'm saying,"
+    },
+    {
+      "start": 157.24,
+      "end": 161.04,
+      "text": "hey, I'm looking for like people at this company, like find people"
+    },
+    {
+      "start": 161.04,
+      "end": 164.4,
+      "text": "that are relevant to hackathon sponsorships. I just have a prompt in"
+    },
+    {
+      "start": 164.4,
+      "end": 170.7,
+      "text": "here that is going to ask Anthropic to return me job titles"
+    },
+    {
+      "start": 170.7,
+      "end": 173.78,
+      "text": "based on like what it thinks my intent is from that question."
+    },
+    {
+      "start": 173.9,
+      "end": 176.92,
+      "text": "So we're taking the actual like question I asked, putting it into"
+    },
+    {
+      "start": 176.92,
+      "end": 179.86,
+      "text": "this prompt and it will be returned. And then the next thing"
+    },
+    {
+      "start": 179.86,
+      "end": 180.1,
+      "text": "I'm going to do is I'm going to ask and that is"
+    },
+    {
+      "start": 180.1,
+      "end": 184.2,
+      "text": "going to be passed later into the search employee worker,"
+    },
+    {
+      "start": 185.78,
+      "end": 189.78,
+      "text": "which is where we're actually calling the LinkedIn company scraper."
+    },
+    {
+      "start": 191.82,
+      "end": 197.44,
+      "text": "And then once we get the employees from the scrape from the"
+    },
+    {
+      "start": 197.44,
+      "end": 202.3,
+      "text": "company, we're going to pass it into the profile worker, which is"
+    },
+    {
+      "start": 202.3,
+      "end": 206.24,
+      "text": "going to be in charge of just calling the LinkedIn profile scraper."
+    },
+    {
+      "start": 206.3,
+      "end": 208.34,
+      "text": "So basically, I think at a high level, I want to call"
+    },
+    {
+      "start": 208.34,
+      "end": 209.82,
+      "text": "out like the way I'm thinking about, like the way I'm thinking"
+    },
+    {
+      "start": 209.82,
+      "end": 215.12,
+      "text": "about workers with Apify specifically is that each worker will probably wrap"
+    },
+    {
+      "start": 215.12,
+      "end": 218.48,
+      "text": "like two actors max, but I would just keep it as like"
+    },
+    {
+      "start": 218.48,
+      "end": 223.18,
+      "text": "one. And then I have like specific logic around the actor inside"
+    },
+    {
+      "start": 223.18,
+      "end": 225.76,
+      "text": "of the worker, if that makes sense. So it's like the raw"
+    },
+    {
+      "start": 225.76,
+      "end": 229.04,
+      "text": "call to the actor, then there's like the little extra logic I"
+    },
+    {
+      "start": 229.04,
+      "end": 231.7,
+      "text": "want to have on top. And that is all within a worker,"
+    },
+    {
+      "start": 231.86,
+      "end": 236.16,
+      "text": "which is going to be in the workflow. Could you add loops"
+    },
+    {
+      "start": 236.16,
+      "end": 239.72,
+      "text": "to this as well? Like for recursion?"
+    },
+    {
+      "start": 241.02,
+      "end": 243.9,
+      "text": "I guess you could. Yeah, like you could probably just say like,"
+    },
+    {
+      "start": 244.0,
+      "end": 249.52,
+      "text": "hey, run this workflow and improve the output, like just if the"
+    },
+    {
+      "start": 249.52,
+      "end": 251.72,
+      "text": "output isn't to like some standard. I don't know how I would"
+    },
+    {
+      "start": 251.72,
+      "end": 255.9,
+      "text": "define the standard yet. I think SMI gave a talk about that."
+    },
+    {
+      "start": 256.16,
+      "end": 259.42,
+      "text": "I was over there. No, it's all good. It's all good. I"
+    },
+    {
+      "start": 259.42,
+      "end": 262.76,
+      "text": "apologize. That was more for the crowd. Yeah. But yeah, so you"
+    },
+    {
+      "start": 262.76,
+      "end": 264.62,
+      "text": "could definitely do something like that. Like if you have a place"
+    },
+    {
+      "start": 264.62,
+      "end": 268.52,
+      "text": "to store the outputs and then you just point your Claude Code"
+    },
+    {
+      "start": 268.52,
+      "end": 272.98,
+      "text": "or codex somewhere and say, hey, here's the workflow, keep running it,"
+    },
+    {
+      "start": 273.1,
+      "end": 276.0,
+      "text": "check the outputs until it reaches some sort of standard that you"
+    },
+    {
+      "start": 276.0,
+      "end": 277.36,
+      "text": "want, and then just update the code."
+    },
+    {
+      "start": 282.88,
+      "end": 285.04,
+      "text": "I mean, that's pretty much like the,"
+    },
+    {
+      "start": 286.92,
+      "end": 288.22,
+      "text": "how much time do we have?"
+    },
+    {
+      "start": 289.72,
+      "end": 290.16,
+      "text": "Done?"
+    },
+    {
+      "start": 292.76,
+      "end": 296.72,
+      "text": "Five more minutes. Okay, okay. So let me just go through what"
+    },
+    {
+      "start": 296.72,
+      "end": 299.74,
+      "text": "next to do after that then as quickly as possible. Make sure"
+    },
+    {
+      "start": 299.74,
+      "end": 303.84,
+      "text": "that you're setting your Apify token and your Anthropic API key, and"
+    },
+    {
+      "start": 303.84,
+      "end": 307.74,
+      "text": "then you'll want to make sure that it's actually running. And then"
+    },
+    {
+      "start": 307.74,
+      "end": 309.68,
+      "text": "I'm just going to keep going through because I know we have"
+    },
+    {
+      "start": 309.68,
+      "end": 313.4,
+      "text": "five minutes. You'll want to move that to your toolbox. You could"
+    },
+    {
+      "start": 313.4,
+      "end": 315.92,
+      "text": "just like go straight to the directory, that parent directory, and build"
+    },
+    {
+      "start": 315.92,
+      "end": 318.16,
+      "text": "it within there if you wanted to. But just for the sake"
+    },
+    {
+      "start": 318.16,
+      "end": 320.34,
+      "text": "of it, like if you're building this somewhere on your device, you're"
+    },
+    {
+      "start": 320.34,
+      "end": 323.0,
+      "text": "creating the workflow, just make sure you're moving it to that global"
+    },
+    {
+      "start": 323.0,
+      "end": 328.16,
+      "text": "directory later. And then inside of, like you'll probably want to like"
+    },
+    {
+      "start": 328.16,
+      "end": 333.9,
+      "text": "go into your like toolbox directory and go into that specific workflow,"
+    },
+    {
+      "start": 334.38,
+      "end": 337.92,
+      "text": "open up Claude Code or something and say, hey, I need a"
+    },
+    {
+      "start": 337.92,
+      "end": 340.74,
+      "text": "skill for this. Like I don't write skills by hand. I would"
+    },
+    {
+      "start": 340.74,
+      "end": 344.3,
+      "text": "just say like, please just look through the workflow and instruct the,"
+    },
+    {
+      "start": 344.46,
+      "end": 348.44,
+      "text": "like make a skill that instructs the agent to, on like what"
+    },
+    {
+      "start": 348.44,
+      "end": 351.12,
+      "text": "it does. And then also to make sure that it's going to"
+    },
+    {
+      "start": 351.12,
+      "end": 356.12,
+      "text": "this directory path to be able to run the workflow. And that"
+    },
+    {
+      "start": 356.12,
+      "end": 358.66,
+      "text": "is like it in a nutshell. I know we only have five"
+    },
+    {
+      "start": 358.66,
+      "end": 361.68,
+      "text": "minutes, so I don't know if I want to, that's pretty much"
+    },
+    {
+      "start": 361.68,
+      "end": 362.0,
+      "text": "it though."
+    },
+    {
+      "start": 363.76,
+      "end": 367.98,
+      "text": "So one thing to just add on to this, the GitHub repo"
+    },
+    {
+      "start": 367.98,
+      "end": 371.16,
+      "text": "is available to you guys. So you can just get in there,"
+    },
+    {
+      "start": 371.32,
+      "end": 375.94,
+      "text": "grab that link at the very top that he provided earlier, and"
+    },
+    {
+      "start": 375.94,
+      "end": 379.12,
+      "text": "drop that into Claude Code and say, hey, Chad, tell me about"
+    },
+    {
+      "start": 379.12,
+      "end": 380.88,
+      "text": "this repo and how you use it."
+    },
+    {
+      "start": 384.26,
+      "end": 386.44,
+      "text": "I do that all the time, yeah. You're doing that right now."
+    },
+    {
+      "start": 386.66,
+      "end": 391.04,
+      "text": "Yeah. Yeah. Yeah, there's also, again, the call to understand anything. It'll"
+    },
+    {
+      "start": 391.04,
+      "end": 393.58,
+      "text": "take any repo you put into it and like make graphs and"
+    },
+    {
+      "start": 393.58,
+      "end": 401.98,
+      "text": "like, it's called understand anything. Understand dash anything, yeah. Understand dash anything."
+    },
+    {
+      "start": 402.34,
+      "end": 402.86,
+      "text": "I mean,"
+    },
+    {
+      "start": 404.36,
+      "end": 409.38,
+      "text": "I've seen clues I haven't personally yet, but I was, but it"
+    },
+    {
+      "start": 409.38,
+      "end": 412.38,
+      "text": "gives you all these like visuals and graphs and stuff and like"
+    },
+    {
+      "start": 412.38,
+      "end": 416.18,
+      "text": "shows dependencies and all this stuff. That's a good one."
+    },
+    {
+      "start": 417.9,
+      "end": 418.9,
+      "text": "Yeah. Yeah."
+    },
+    {
+      "start": 420.2,
+      "end": 425.52,
+      "text": "Get in jest is like O .G. for that as well. Anyways."
+    },
+    {
+      "start": 426.46,
+      "end": 429.0,
+      "text": "This is my LinkedIn. If you guys want to scan my QR"
+    },
+    {
+      "start": 429.0,
+      "end": 432.54,
+      "text": "code for LinkedIn. But yeah, I know we're out of time. So"
+    },
+    {
+      "start": 432.54,
+      "end": 436.68,
+      "text": "apologies if we didn't get to go through the entire workshop, but"
+    },
+    {
+      "start": 436.68,
+      "end": 439.32,
+      "text": "I hope that you walked away with this, at least learning a"
+    },
+    {
+      "start": 439.32,
+      "end": 441.42,
+      "text": "bit about how you could use Apify in your own day -to"
+    },
+    {
+      "start": 441.42,
+      "end": 445.08,
+      "text": "-day work with the agents that you already have accessible. Like this"
+    },
+    {
+      "start": 445.08,
+      "end": 448.04,
+      "text": "doesn't need to be on OpenClaw or Hermes. Like you can literally"
+    },
+    {
+      "start": 448.04,
+      "end": 451.14,
+      "text": "just do this with, with the Claude Code or Codex, and I'll"
+    },
+    {
+      "start": 451.14,
+      "end": 455.58,
+      "text": "personally say I find that more useful because I think those harnesses"
+    },
+    {
+      "start": 455.58,
+      "end": 456.74,
+      "text": "tend to just get better over time,"
+    },
+    {
+      "start": 458.16,
+      "end": 459.7,
+      "text": "and it works for me, so."
+    },
+    {
+      "start": 462.6,
+      "end": 464.24,
+      "text": "Awesome, give it up for Michael, guys."
+    }
+  ],
   "widgets": [],
   "assets": {
     "reels_dir": "session-5a-michael/reels",

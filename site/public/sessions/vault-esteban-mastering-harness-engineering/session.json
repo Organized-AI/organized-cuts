@@ -1,0 +1,2269 @@
+{
+  "name": "vault-esteban-mastering-harness-engineering",
+  "title": "Esteban - Mastering Harness Engineering",
+  "speaker": "Esteban - Mastering Harness Engineering",
+  "media_url": "https://recordings.organizedai.vip/media/02%20-%20Esteban%20-%20Mastering%20Harness%20Engineering.mp4",
+  "duration": 3062.8,
+  "chapters": [
+    {
+      "id": "Session 1-1",
+      "title": "Opening Remarks",
+      "kind": "chapter",
+      "start": 0.0,
+      "end": 42.0,
+      "caption": "Host introduces the event and welcomes attendees, setting the stage for a packed day of talks."
+    },
+    {
+      "id": "Session 1-2",
+      "title": "Introducing Esteban",
+      "kind": "chapter",
+      "start": 42.0,
+      "end": 131.0,
+      "caption": "Host introduces Esteban, a former Antler cohort member and current engineering lead, highlighting his expertise in AI and cloud infrastructure."
+    },
+    {
+      "id": "Session 1-3",
+      "title": "Talk Overview",
+      "kind": "chapter",
+      "start": 131.0,
+      "end": 234.0,
+      "caption": "Esteban outlines the focus of his talk: evolving AI agent harnesses using reinforcement learning principles and practical engineering."
+    },
+    {
+      "id": "Session 1-4",
+      "title": "Harness Engineering Basics",
+      "kind": "chapter",
+      "start": 234.0,
+      "end": 347.0,
+      "caption": "Esteban defines harnesses as the runtime components that enhance agent performance beyond basic prompts, including memory, skills, and tool management."
+    },
+    {
+      "id": "Session 1-5",
+      "title": "Benchmarking Importance",
+      "kind": "chapter",
+      "start": 347.0,
+      "end": 432.0,
+      "caption": "Esteban emphasizes that designing domain-specific benchmarks is crucial for measuring and improving agent performance over time."
+    },
+    {
+      "id": "Session 1-6",
+      "title": "Production vs. Demo",
+      "kind": "chapter",
+      "start": 432.0,
+      "end": 522.0,
+      "caption": "Esteban discusses the gap between demo-ready and production-ready AI agents, stressing the need for tailored harnesses."
+    },
+    {
+      "id": "Session 1-7",
+      "title": "Closed-Loop Systems",
+      "kind": "chapter",
+      "start": 522.0,
+      "end": 619.0,
+      "caption": "Esteban explains the value of closed-loop systems using tracing tools like Langfuse to monitor agent behavior and guide improvements."
+    },
+    {
+      "id": "Session 1-8",
+      "title": "Reinforcement Learning Levers",
+      "kind": "chapter",
+      "start": 619.0,
+      "end": 753.0,
+      "caption": "Esteban maps RL concepts—state, action, policy, reward, update—to agent harness engineering, showing how each can be tuned."
+    },
+    {
+      "id": "Session 1-9",
+      "title": "Workshop Experiment",
+      "kind": "chapter",
+      "start": 753.0,
+      "end": 856.0,
+      "caption": "Esteban shares results from a workshop using QIN models, showing how adding tools and skills improved performance on benchmarks."
+    },
+    {
+      "id": "Session 1-10",
+      "title": "Benchmark Design",
+      "kind": "chapter",
+      "start": 856.0,
+      "end": 993.0,
+      "caption": "Esteban details how to design effective benchmarks with multiple dimensions and gradients to measure agent progress accurately."
+    },
+    {
+      "id": "Session 1-11",
+      "title": "Non-Determinism & Testing",
+      "kind": "chapter",
+      "start": 993.0,
+      "end": 1126.0,
+      "caption": "Esteban addresses the inherent unpredictability of AI agents and stresses the need for rigorous, repeatable testing to build trust."
+    },
+    {
+      "id": "Session 1-12",
+      "title": "Domain-Specific Customization",
+      "kind": "chapter",
+      "start": 1126.0,
+      "end": 1301.0,
+      "caption": "Esteban illustrates the need for customizing agents for specific domains, using healthcare SOAP notes as a case study."
+    },
+    {
+      "id": "Session 1-13",
+      "title": "Skills as Key Leverage",
+      "kind": "chapter",
+      "start": 1301.0,
+      "end": 1497.0,
+      "caption": "Esteban argues that runtime-injected skills provide the highest leverage for improving agent performance in real-world use cases."
+    },
+    {
+      "id": "Session 1-14",
+      "title": "Verifier & Evolving Agent",
+      "kind": "chapter",
+      "start": 1497.0,
+      "end": 1688.0,
+      "caption": "Esteban explains the need for a smarter, more capable agent to judge and evolve the task agent, using Claude as a verifier."
+    },
+    {
+      "id": "Session 1-15",
+      "title": "Gradient & Artifact Tracking",
+      "kind": "chapter",
+      "start": 1688.0,
+      "end": 1888.0,
+      "caption": "Esteban highlights the importance of tracking performance gradients and rich artifacts like cost, pass rate, and trace details over time."
+    },
+    {
+      "id": "Session 1-16",
+      "title": "Lab vs. Production",
+      "kind": "chapter",
+      "start": 1888.0,
+      "end": 2052.0,
+      "caption": "Esteban contrasts research frameworks like HarnessX with production-ready tools, advocating for custom or highly configurable harnesses."
+    },
+    {
+      "id": "Session 1-17",
+      "title": "Choosing the Right Harness",
+      "kind": "chapter",
+      "start": 2052.0,
+      "end": 2216.0,
+      "caption": "Esteban evaluates open-source harnesses like DeepAgents.js and Cloud Code SDK, emphasizing flexibility and testability."
+    },
+    {
+      "id": "Session 1-18",
+      "title": "Workflow vs. Agent",
+      "kind": "chapter",
+      "start": 2216.0,
+      "end": 2322.0,
+      "caption": "Esteban reflects on viewing AI systems as workflows with agentic elements, blending deterministic steps with intelligent decision-making."
+    },
+    {
+      "id": "Session 1-19",
+      "title": "Real-World Application",
+      "kind": "chapter",
+      "start": 2322.0,
+      "end": 2470.0,
+      "caption": "Esteban shares how he used sandboxing and dynamic code generation to handle messy, variable data in a healthcare use case."
+    },
+    {
+      "id": "Session 1-20",
+      "title": "Non-Deterministic Use Cases",
+      "kind": "chapter",
+      "start": 2470.0,
+      "end": 2686.0,
+      "caption": "Esteban discusses how agentic behavior is essential when dealing with unpredictable inputs, such as patient symptoms or unstructured data."
+    },
+    {
+      "id": "Session 1-21",
+      "title": "Code Generation as Benchmark",
+      "kind": "chapter",
+      "start": 2686.0,
+      "end": 2803.0,
+      "caption": "Esteban proposes using code generation quality as a benchmark, ensuring agents write correct, reliable code for data processing."
+    },
+    {
+      "id": "Session 1-22",
+      "title": "Learning Path for Beginners",
+      "kind": "chapter",
+      "start": 2803.0,
+      "end": 2908.0,
+      "caption": "Esteban recommends reading white papers, using tools like ChatGPT to simplify complex concepts, and leveraging well-documented harnesses."
+    },
+    {
+      "id": "Session 1-23",
+      "title": "Business Value of Harness Engineering",
+      "kind": "chapter",
+      "start": 2908.0,
+      "end": 3001.0,
+      "caption": "Esteban advises business leaders to prioritize benchmarking and measurable progress to gain confidence in AI agent deployment."
+    },
+    {
+      "id": "Session 1-24",
+      "title": "Closing & Q&A",
+      "kind": "chapter",
+      "start": 3001.0,
+      "end": 3062.8,
+      "caption": "Esteban concludes with a call to move beyond intuition and embrace data-driven evaluation of AI agents, followed by audience questions."
+    }
+  ],
+  "transcript": [
+    {
+      "start": 3.72,
+      "end": 17.58,
+      "text": "We have a mic. We have a mic. Hi,"
+    },
+    {
+      "start": 6.1,
+      "end": 17.86,
+      "text": "a mic. Hi, hi."
+    },
+    {
+      "start": 6.3,
+      "end": 24.42,
+      "text": "mic. Hi, hi. All"
+    },
+    {
+      "start": 17.02,
+      "end": 26.38,
+      "text": "Hi, hi. All right, so we got some folks"
+    },
+    {
+      "start": 25.6,
+      "end": 36.92,
+      "text": "got some folks finishing up an interview. We're going to let that. All right. Anyways,"
+    },
+    {
+      "start": 33.52,
+      "end": 45.26,
+      "text": "All right. Anyways, how's it going, everybody? Everybody, thank you so much for being here Saturday morning, day number two. Really,"
+    },
+    {
+      "start": 41.78,
+      "end": 50.94,
+      "text": "number two. Really, really excited for today. We've got five speakers, so we've got this jam -packed."
+    },
+    {
+      "start": 49.16,
+      "end": 58.84,
+      "text": "this jam -packed. We will be getting out of here 4, 4 .30. Promise, that's the goal. And I'm going to keep that promise. So"
+    },
+    {
+      "start": 57.54,
+      "end": 67.04,
+      "text": "that promise. So we're going to run through it pretty good here. Anyways, I wanted to bring Esteban in here."
+    },
+    {
+      "start": 64.8,
+      "end": 74.0,
+      "text": "Esteban in here. He's a guy I met here at Antler, has went through the cohort, and"
+    },
+    {
+      "start": 71.32,
+      "end": 80.72,
+      "text": "the cohort, and he's one of the first guys that stood out to me whenever I heard one of his talks about cloud"
+    },
+    {
+      "start": 78.98,
+      "end": 88.18,
+      "text": "talks about cloud engineering and infra stuff. And he's actually the guy who introduced me to Telescale. And so when it was time for me to put together a speaker,"
+    },
+    {
+      "start": 87.6,
+      "end": 90.66,
+      "text": "together a speaker, we were able to do it. And so when it was time for me to put together a speaker, I was like, man, let me see if"
+    },
+    {
+      "start": 89.68,
+      "end": 98.22,
+      "text": "me see if I can get him and have him talk about harness engineering. This one's going to be a deep one. Most of the talks today are going to"
+    },
+    {
+      "start": 97.9,
+      "end": 106.92,
+      "text": "are going to be, like, really high level. And the idea is have your laptop out, have your phone out, Google things, find these"
+    },
+    {
+      "start": 105.88,
+      "end": 114.96,
+      "text": "things, find these buzzwords, these things that you keep hearing, pull it up, find out about it, find a starting place. The best way to get the most"
+    },
+    {
+      "start": 114.38,
+      "end": 121.66,
+      "text": "get the most out of these things is finding a starting place. So that you can ask questions at the end of the talk. So this is going to be"
+    },
+    {
+      "start": 121.36,
+      "end": 130.56,
+      "text": "going to be one of those ones. Anyways, I'm talking a lot. Without further ado, here's Esteban. All right. Testing, testing. Can"
+    },
+    {
+      "start": 129.52,
+      "end": 138.62,
+      "text": "Testing, testing. Can you guys hear me? All right. Okay, well, so my name's Esteban. Like Jordan mentioned, you know, I went through this cohort,"
+    },
+    {
+      "start": 138.12,
+      "end": 147.2,
+      "text": "through this cohort, so I was previously a founder. Was building some dev tools. I was trying to build agents for infrastructure specifically. Combining some of my previous"
+    },
+    {
+      "start": 146.68,
+      "end": 156.08,
+      "text": "of my previous projects. Background and all of the new jazz that was happening in AI. Now I'm leading engineering at a startup called Standard Electron. Trying"
+    },
+    {
+      "start": 154.66,
+      "end": 164.26,
+      "text": "Standard Electron. Trying to bring the same skills like applied AI and cloud infra mesh together in there. So what this talk is about is around"
+    },
+    {
+      "start": 162.64,
+      "end": 171.76,
+      "text": "about is around evolving harnesses. So there's a lot of different strategies for evolving models, right? Like reinforcement"
+    },
+    {
+      "start": 171.18,
+      "end": 179.04,
+      "text": "right? Like reinforcement learning is like a really hot topic. And it's trying to bring some of those same strategies into some of the. Engineering flows like being able to"
+    },
+    {
+      "start": 178.2,
+      "end": 189.3,
+      "text": "being able to like what levers can I pull from an engineering side that I could make my agent better and smarter and perform better work. So"
+    },
+    {
+      "start": 186.48,
+      "end": 195.52,
+      "text": "better work. So this is also part of that GitHub repo. If you guys are like looking at it, there's"
+    },
+    {
+      "start": 194.84,
+      "end": 203.84,
+      "text": "at it, there's a workshop. It's reproducible. And like the way the way this workshop I reproduced was I grabbed like"
+    },
+    {
+      "start": 202.32,
+      "end": 211.48,
+      "text": "I grabbed like a Qwen eight billion parameter model and a 32. And you know, decided to improve the harness"
+    },
+    {
+      "start": 210.04,
+      "end": 219.18,
+      "text": "improve the harness to get better results. So this is based off of this paper. It's called harness X. And they're doing a lot of really good work on"
+    },
+    {
+      "start": 218.62,
+      "end": 227.9,
+      "text": "good work on trying to combine some of the same strategies between model reinforcement learning and then harness engineering and what"
+    },
+    {
+      "start": 225.78,
+      "end": 235.02,
+      "text": "engineering and what that actually all means. So I think you guys had a talk yesterday around like looping and loop engineering. I"
+    },
+    {
+      "start": 233.48,
+      "end": 242.36,
+      "text": "loop engineering. I think some of the same principles are going to spill over. Where what you really want is to find this closed loop system that can actually, you"
+    },
+    {
+      "start": 240.84,
+      "end": 250.1,
+      "text": "can actually, you know, see the output of an agent and then tweak the right levers and then benchmark and test again. And then until you start getting better results."
+    },
+    {
+      "start": 248.98,
+      "end": 258.4,
+      "text": "getting better results. And the reason why this is kind of important is because every vertical has very specific needs. You know, like if you're designing"
+    },
+    {
+      "start": 257.26,
+      "end": 265.18,
+      "text": "if you're designing something for a product that's in health care, like, you know, off the shelf models and harnesses are probably going to get you demo ready, but maybe"
+    },
+    {
+      "start": 264.34,
+      "end": 272.06,
+      "text": "ready, but maybe not production ready. So. It's trying to find this like balance of how do you make it your own and get the results that you kind of"
+    },
+    {
+      "start": 271.68,
+      "end": 281.02,
+      "text": "you kind of want. So. Yeah, this is me, my background. So for 10 years"
+    },
+    {
+      "start": 279.3,
+      "end": 288.64,
+      "text": "for 10 years I've been pretty much in DevOps infrastructure, large scale and for last two and a half years, mainly all related."
+    },
+    {
+      "start": 287.0,
+      "end": 296.12,
+      "text": "mainly all related. Now I'm leading the charge for cloud and applied. So in order"
+    },
+    {
+      "start": 295.02,
+      "end": 305.36,
+      "text": "So in order to reproduce this. Here's some of the specs. If you guys have an available laptop, you guys can reproduce it. I"
+    },
+    {
+      "start": 301.28,
+      "end": 310.9,
+      "text": "reproduce it. I used Qwen 3B, but feel free to use whatever other model you want. OK."
+    },
+    {
+      "start": 307.9,
+      "end": 317.2,
+      "text": "you want. OK. And there's"
+    },
+    {
+      "start": 310.42,
+      "end": 319.56,
+      "text": "OK. And there's some finicky stuff with like running this lab"
+    },
+    {
+      "start": 318.26,
+      "end": 327.58,
+      "text": "running this lab locally. So there's a few gotchas that kind of got me. Maybe this will help. I used Olamada to run the models on my laptop. They"
+    },
+    {
+      "start": 326.44,
+      "end": 334.1,
+      "text": "my laptop. They each take around like 20 minutes to run. So I'm not going to do it live right now or else we're just going to be staring at"
+    },
+    {
+      "start": 333.46,
+      "end": 342.78,
+      "text": "be staring at a screen for 20 minutes waiting for waiting for it to finish. OK. So like vanilla harnesses"
+    },
+    {
+      "start": 340.22,
+      "end": 349.74,
+      "text": "like vanilla harnesses I think are good and like when I mean one who's who's kind of been building agents. Everyone."
+    },
+    {
+      "start": 346.34,
+      "end": 355.56,
+      "text": "building agents. Everyone. Some people. OK. Everyone. And then how many of you guys have been playing with like harnesses"
+    },
+    {
+      "start": 354.16,
+      "end": 362.04,
+      "text": "with like harnesses in a product and like. If anyone knows the distinction between the two or like I think in my head I kind of think of them as"
+    },
+    {
+      "start": 361.76,
+      "end": 371.18,
+      "text": "of them as different things. Cool. Yeah. So"
+    },
+    {
+      "start": 367.5,
+      "end": 376.68,
+      "text": "Cool. Yeah. So the harness is more around like the you have the agent loop that calls tools and calls the model"
+    },
+    {
+      "start": 376.16,
+      "end": 385.56,
+      "text": "calls the model and keeps going around and around. And then the harness is more around the other things that can improve it. So like compaction memory skills things"
+    },
+    {
+      "start": 383.54,
+      "end": 392.7,
+      "text": "memory skills things that you can inject at runtime that. Actually. You know not just tweaking the system prompt like back in. You know a year ago."
+    },
+    {
+      "start": 392.0,
+      "end": 401.56,
+      "text": "a year ago. So this is what I'm referring to when I say a harness where it's like the other parts of the agent that's that can manage"
+    },
+    {
+      "start": 399.9,
+      "end": 408.92,
+      "text": "that can manage maybe like long running horizons. The memory the skills all that other stuff. Now the"
+    },
+    {
+      "start": 406.34,
+      "end": 415.7,
+      "text": "stuff. Now the more vertical that your use case like the more you have to actually evolve this harness so that the big takeaway"
+    },
+    {
+      "start": 414.04,
+      "end": 423.34,
+      "text": "the big takeaway here is like while some of these times. Are going to be. Very like obvious I think that there's some good interesting things that you"
+    },
+    {
+      "start": 422.18,
+      "end": 429.44,
+      "text": "things that you can pull out of this like designing the right benchmark is going to be very crucial to like knowing what your domain is and what your vertical"
+    },
+    {
+      "start": 428.9,
+      "end": 437.94,
+      "text": "what your vertical use cases. And then how to get that running in a loop. So your coding agent which I'm sure"
+    },
+    {
+      "start": 436.66,
+      "end": 445.74,
+      "text": "which I'm sure you guys all use like a lot code open code pie like there they're technically a vertical harness like they're just very vertical for coding"
+    },
+    {
+      "start": 444.64,
+      "end": 453.68,
+      "text": "vertical for coding right. So now. You know. The question is like how do I get that into my product or if I'm running it in the"
+    },
+    {
+      "start": 452.64,
+      "end": 461.36,
+      "text": "it in the background like like how can I design my harness that makes it feel my way for you know if it's in health care whether it's you know"
+    },
+    {
+      "start": 460.2,
+      "end": 469.6,
+      "text": "it's you know doing taxes if you're bold enough. But. Yeah"
+    },
+    {
+      "start": 464.98,
+      "end": 474.0,
+      "text": "enough. But. Yeah I'll stop right there. So off the shelf"
+    },
+    {
+      "start": 473.18,
+      "end": 480.58,
+      "text": "off the shelf plateaus like who's ran into the issue with you know. You. It's very easy to spin up an agent for a demo but then like when you"
+    },
+    {
+      "start": 480.08,
+      "end": 489.16,
+      "text": "like when you actually start putting it in production becomes harder and harder and maybe it doesn't quite hit the demo. Expectation if anybody's felt that pain OK that"
+    },
+    {
+      "start": 487.86,
+      "end": 494.94,
+      "text": "pain OK that that's a very common pain and I think this is where this kind of talk dives into where it's like how to take it to the next"
+    },
+    {
+      "start": 494.62,
+      "end": 503.12,
+      "text": "to the next level of like OK this is actually working exactly the way that I want. And so off the shelf harnesses are a good starting point but they're"
+    },
+    {
+      "start": 502.18,
+      "end": 511.22,
+      "text": "point but they're really not going to get you something that is like 10 X better. Or you know very noticeably different. And"
+    },
+    {
+      "start": 508.54,
+      "end": 517.82,
+      "text": "noticeably different. And again there's the agent that are the harness that you're using to code it and there's a harness that you put in production so"
+    },
+    {
+      "start": 516.58,
+      "end": 527.7,
+      "text": "in production so like this is like tied into your application that your users are like interfacing with. So. Part"
+    },
+    {
+      "start": 521.66,
+      "end": 531.46,
+      "text": "with. So. Part of what I miss I'm interested in this is because for"
+    },
+    {
+      "start": 529.48,
+      "end": 538.52,
+      "text": "is because for a while while I was developing these agents I would have this closed loop kind of pattern where I. Would. Wired up to Lang"
+    },
+    {
+      "start": 538.04,
+      "end": 545.14,
+      "text": "up to Langfuse if you guys know where that is it's just like a tracing it's a it's a place that the harness can emit traces and then I"
+    },
+    {
+      "start": 544.56,
+      "end": 551.2,
+      "text": "and then I can see and then just say OK if all of this kind of trajectory it looked at use these tools you know I called this at this"
+    },
+    {
+      "start": 550.74,
+      "end": 559.32,
+      "text": "this at this time and for a while I think that that works pretty well and so the I'll talk about like what I was doing and then what I'm"
+    },
+    {
+      "start": 558.38,
+      "end": 567.28,
+      "text": "then what I'm thinking about now so the closed loop is the idea of you know you have the harness that is on your product. And so the I'll talk"
+    },
+    {
+      "start": 567.28,
+      "end": 567.28,
+      "text": "the I'll talk about like what I was doing and then what I'm thinking about now so the closed loop is the idea of you know you have the harness"
+    },
+    {
+      "start": 567.28,
+      "end": 573.86,
+      "text": "have the harness that is on your product. And then you have your Claude Code and what I would do is like you know pick you know any kind of"
+    },
+    {
+      "start": 573.28,
+      "end": 583.06,
+      "text": "any kind of framework out there like deep agents J .S. or. Claude Code SDK or any one of those and I would start iterating with you know feeding"
+    },
+    {
+      "start": 581.6,
+      "end": 590.68,
+      "text": "you know feeding it. Like use cases as a user would and then it would emit traces to Langfuse and then I would go and have Claude"
+    },
+    {
+      "start": 589.66,
+      "end": 597.1,
+      "text": "and have Claude look at the traces and then you know see if it can improve where went wrong maybe we need to add a tool maybe we got to"
+    },
+    {
+      "start": 596.76,
+      "end": 605.82,
+      "text": "we got to remove it. Like the the efficiency of it and so this is the basis of you know this kind of next set of engineering"
+    },
+    {
+      "start": 604.58,
+      "end": 611.64,
+      "text": "set of engineering where you want to find these like closed loop systems but it's a very naive way of looking at it because I at the time like I"
+    },
+    {
+      "start": 611.1,
+      "end": 620.18,
+      "text": "time like I didn't create the right benchmarks so like maybe there's certain type of benchmarks that are much more specific and we can see this too"
+    },
+    {
+      "start": 619.54,
+      "end": 628.66,
+      "text": "see this too and. And whenever a new model comes out it's like oh in this benchmark open software engineer you know it. Reached like this you"
+    },
+    {
+      "start": 627.58,
+      "end": 636.94,
+      "text": "like this you know point eighty eight percent right and the thing is those benchmarks are specific to that specific domain so. I"
+    },
+    {
+      "start": 634.76,
+      "end": 646.22,
+      "text": "domain so. I think in the next evolution of this designing the right benchmark will make that loop in this trace better. So"
+    },
+    {
+      "start": 641.72,
+      "end": 651.02,
+      "text": "trace better. So I'll just go over this very briefly but the idea is that you would run tasks"
+    },
+    {
+      "start": 650.3,
+      "end": 659.52,
+      "text": "would run tasks you would ask your agent to go perform a certain task that you're building whether it's for your product or not. Those will emit traces then your"
+    },
+    {
+      "start": 657.96,
+      "end": 667.22,
+      "text": "traces then your Claude can like read and judge and evaluate based off of what those traces were then it can start writing code to start evolving that"
+    },
+    {
+      "start": 666.32,
+      "end": 675.42,
+      "text": "start evolving that agent right and that that works pretty well especially the smarter models that you go. And this is pretty. This is pretty"
+    },
+    {
+      "start": 674.5,
+      "end": 683.5,
+      "text": "This is pretty solid as a good state so. Some. Some different like verbiage here. In"
+    },
+    {
+      "start": 681.3,
+      "end": 690.48,
+      "text": "verbiage here. In specifically to this paper. They use some of the same vocabulary. As reinforcement learning does which is somewhat"
+    },
+    {
+      "start": 688.8,
+      "end": 698.1,
+      "text": "which is somewhat confusing because it kind of doesn't but you can imagine as like a certain set of levers that you have access to when you're"
+    },
+    {
+      "start": 697.28,
+      "end": 706.84,
+      "text": "to when you're creating an agent right so you have like the state like you know the config that is static as soon as it boots up. You"
+    },
+    {
+      "start": 705.58,
+      "end": 715.48,
+      "text": "boots up. You have like the action statements are like anything that involves tools anything that can perform action so this is like your tool list. Your"
+    },
+    {
+      "start": 713.46,
+      "end": 722.8,
+      "text": "tool list. Your policy which in. This case it's like skills something that you can inject that runtime that can actually do it. The"
+    },
+    {
+      "start": 720.76,
+      "end": 729.88,
+      "text": "do it. The reward function is taken from our L but it's the idea that you have a benchmark score and some"
+    },
+    {
+      "start": 728.0,
+      "end": 737.48,
+      "text": "score and some of these rewards could be a combination of different. Like things"
+    },
+    {
+      "start": 733.92,
+      "end": 742.92,
+      "text": "different. Like things that's like the worst word to use for that but it's. So"
+    },
+    {
+      "start": 740.28,
+      "end": 749.48,
+      "text": "but it's. So like a word you might be looking at like the database. Action that it created plus the"
+    },
+    {
+      "start": 748.1,
+      "end": 757.1,
+      "text": "created plus the tool that it used plus another dimension and so it's like multi dimensional. Thing can provide like a very good reward for your judging agent"
+    },
+    {
+      "start": 756.28,
+      "end": 765.28,
+      "text": "your judging agent to say oh it actually did the test exactly how I wanted to or maybe you didn't. And so I'll talk a little bit in depth"
+    },
+    {
+      "start": 764.24,
+      "end": 773.38,
+      "text": "bit in depth into that. And then just like the update like how how often you want to see as"
+    },
+    {
+      "start": 772.12,
+      "end": 781.52,
+      "text": "to see as you're of all your. Your main agent is evolving. This task agent you want to see the trajectory of like the improvement so"
+    },
+    {
+      "start": 780.46,
+      "end": 788.12,
+      "text": "the improvement so like maybe on the first run it tweak like. A system prompt maybe it added a skill but then you want to see the next time when"
+    },
+    {
+      "start": 787.2,
+      "end": 794.14,
+      "text": "next time when it looked at the trajectory said actually we need to we need to add another tool or we need to add another skill you could see the"
+    },
+    {
+      "start": 793.64,
+      "end": 803.38,
+      "text": "could see the diff you know the diff of that trajectory for your task. And let me let me know if. You"
+    },
+    {
+      "start": 801.58,
+      "end": 815.6,
+      "text": "know if. You slow down here. Yeah."
+    },
+    {
+      "start": 803.64,
+      "end": 815.88,
+      "text": "down here. Yeah. Yeah"
+    },
+    {
+      "start": 803.88,
+      "end": 815.88,
+      "text": "here. Yeah. Yeah and"
+    },
+    {
+      "start": 815.16,
+      "end": 824.06,
+      "text": "Yeah. Yeah and I kind of jump ahead but these are like the four levers that you can tweak so harness engineering is really just a combination of getting these"
+    },
+    {
+      "start": 822.92,
+      "end": 831.76,
+      "text": "of getting these knobs right specifically for whatever it is you guys are trying to do. And this is different from the Claude Code right because Claude Code is already"
+    },
+    {
+      "start": 831.2,
+      "end": 839.88,
+      "text": "Code is already tuned like that's your driver but you want whatever agent is trying to do. to be as part of your product, it wants to do an action,"
+    },
+    {
+      "start": 839.24,
+      "end": 846.94,
+      "text": "do an action, maybe it's internal, maybe it's customer facing, these are the things that you should be on the lookout for, and these are the things that you want"
+    },
+    {
+      "start": 845.96,
+      "end": 855.14,
+      "text": "that you want to have a benchmark against. And I can also share these slides"
+    },
+    {
+      "start": 854.0,
+      "end": 864.02,
+      "text": "share these slides afterwards as well. So what did this workshop experiment"
+    },
+    {
+      "start": 860.68,
+      "end": 869.78,
+      "text": "this workshop experiment kind of do with these basic QN models and a basic harness? So you"
+    },
+    {
+      "start": 868.38,
+      "end": 877.44,
+      "text": "harness? So you could see by just adding another tool that it needed off these benchmarks, I was able to evolve it clearly from zero because"
+    },
+    {
+      "start": 876.44,
+      "end": 885.48,
+      "text": "from zero because it did not understand this to it now adds a new capability and then it can actually perform the query search. So this is a very"
+    },
+    {
+      "start": 885.06,
+      "end": 893.82,
+      "text": "is a very basic. Clearly, like if you give it a tool and it needs a tool, then it will work. But this is a good metric of seeing the"
+    },
+    {
+      "start": 892.24,
+      "end": 901.38,
+      "text": "of seeing the curve of improvement. And this is kind of what you want to show too, like in order to as new versions start rolling out, as new use"
+    },
+    {
+      "start": 900.76,
+      "end": 909.42,
+      "text": "as new use cases are coming out, you have something to point against to say, look, here's the baseline. It was horrible. And then here's how much it's improving for"
+    },
+    {
+      "start": 908.5,
+      "end": 918.54,
+      "text": "it's improving for every iteration of what I'm trying to do. There's other type of benchmarks that I also added in there. Like GSM 8K. These"
+    },
+    {
+      "start": 915.8,
+      "end": 925.98,
+      "text": "GSM 8K. These are all off the shelf. Some are specific to like telecom. Some are specific for different use cases. And"
+    },
+    {
+      "start": 923.94,
+      "end": 932.42,
+      "text": "use cases. And the second half of this is like how you should be designing your benchmark. And this is like the big takeaway that I got from the paper"
+    },
+    {
+      "start": 931.64,
+      "end": 940.64,
+      "text": "from the paper itself. So adding like better reasoning, tuning the system prompt, adding like the right skill"
+    },
+    {
+      "start": 939.54,
+      "end": 951.9,
+      "text": "the right skill or policy. Improve this model's baseline from 0 .65. And then I added a new model. 0 .95 to 0 .97. Okay."
+    },
+    {
+      "start": 945.76,
+      "end": 954.92,
+      "text": "0 .97. Okay. So like T2, like Tau2, the telecom"
+    },
+    {
+      "start": 953.24,
+      "end": 963.2,
+      "text": "Tau2, the telecom benchmark with tool use went from 0 .50 to 0 .75. And this is on a QN32. And"
+    },
+    {
+      "start": 960.78,
+      "end": 970.48,
+      "text": "a QN32. And a QN, yeah, QN32. So one thing to note on all of these numbers is that there's"
+    },
+    {
+      "start": 969.1,
+      "end": 978.14,
+      "text": "is that there's a lot of variation on the amount of times that you run the actual like process. So the more that your lab"
+    },
+    {
+      "start": 977.3,
+      "end": 986.06,
+      "text": "that your lab can be more tightly closed, then you can run as many iterations as you want. And you want to like move that variation number from like, you"
+    },
+    {
+      "start": 984.94,
+      "end": 993.98,
+      "text": "from like, you know, a variation of five to like two standard deviations away from what you actually want. And yeah, because if you run it like five"
+    },
+    {
+      "start": 993.5,
+      "end": 1000.98,
+      "text": "it like five times, like you might get false signals. So that's something to also look out for. Where it's like, you know, if you run a loop against a"
+    },
+    {
+      "start": 1000.0,
+      "end": 1010.36,
+      "text": "loop against a benchmark, you know, 100 times or 1 ,000 times. You're going to get much more accurate numbers as to like the actual capabilities"
+    },
+    {
+      "start": 1007.62,
+      "end": 1019.3,
+      "text": "the actual capabilities of the agents that you're designing. Yeah. Yeah."
+    },
+    {
+      "start": 1011.56,
+      "end": 1024.92,
+      "text": "designing. Yeah. Yeah. So"
+    },
+    {
+      "start": 1013.54,
+      "end": 1025.12,
+      "text": "Yeah. Yeah. So that"
+    },
+    {
+      "start": 1018.9,
+      "end": 1028.14,
+      "text": "Yeah. So that would be like a very specific use case for a benchmark. The"
+    },
+    {
+      "start": 1027.48,
+      "end": 1035.52,
+      "text": "a benchmark. The T2 telecom one is one that's off the shelf. It's used to like as like a. Yeah. I mean, I think it's a baseline benchmark for testing"
+    },
+    {
+      "start": 1033.92,
+      "end": 1042.5,
+      "text": "benchmark for testing some of these models. And I just grabbed the ones that are most standard. So it's easy to reproduce. I didn't go into designing my own benchmark."
+    },
+    {
+      "start": 1041.8,
+      "end": 1050.82,
+      "text": "my own benchmark. But exactly to your point, like if you wanted to create a benchmark that tests like certain configurations of telecom and"
+    },
+    {
+      "start": 1049.98,
+      "end": 1059.02,
+      "text": "of telecom and stuff like that, the key here is like being able to design it with like, you know, the right rewards. And this is the part that's probably"
+    },
+    {
+      "start": 1058.44,
+      "end": 1067.52,
+      "text": "part that's probably the most manual and the most intent driven. Like, you have to know the domain. Right? Like, so these are off the shelf"
+    },
+    {
+      "start": 1066.8,
+      "end": 1076.34,
+      "text": "off the shelf for example purposes to recreate the lab to just show that, you know, by adding different policies, tweaking the system prompt, tweaking this, even"
+    },
+    {
+      "start": 1075.02,
+      "end": 1084.18,
+      "text": "tweaking this, even a very basic small model can improve. At this stage, we have specific benchmarks for each industry, right? Yeah."
+    },
+    {
+      "start": 1082.94,
+      "end": 1092.32,
+      "text": "industry, right? Yeah. Which is some theoretical mathematics or physics kind of benchmark. But specific industries. Yes. You"
+    },
+    {
+      "start": 1090.44,
+      "end": 1099.5,
+      "text": "industries. Yes. You mean like the telecom, financial, all the different industries. Yeah. There's definitely benchmarks"
+    },
+    {
+      "start": 1098.44,
+      "end": 1106.82,
+      "text": "There's definitely benchmarks out there for a lot of the different industries. I don't know if all of them. But even within each industry, depending on what you want your"
+    },
+    {
+      "start": 1106.42,
+      "end": 1115.14,
+      "text": "you want your agent to do, it's going to change. Because an agent might be good at broad telecom stuff. But maybe you want to put an agent that can"
+    },
+    {
+      "start": 1114.56,
+      "end": 1124.2,
+      "text": "agent that can look at the triaging errors of telecom equipment. Which could produce totally different results. So I think, yeah."
+    },
+    {
+      "start": 1123.12,
+      "end": 1132.58,
+      "text": "I think, yeah. Yeah. Go ahead. So for someone who is just taking a very specific, like eighth"
+    },
+    {
+      "start": 1130.22,
+      "end": 1139.52,
+      "text": "specific, like eighth grade version. Yeah. So can you give me an example of like a very not smart"
+    },
+    {
+      "start": 1138.04,
+      "end": 1148.02,
+      "text": "very not smart person who's under the ban? Yeah. Fifth grade. Okay. Yeah. Second grade. Let's go lower. Yeah. Yeah."
+    },
+    {
+      "start": 1145.76,
+      "end": 1154.84,
+      "text": "lower. Yeah. Yeah. So these topics are pretty abstract. But so I was doing some consulting work earlier this year for"
+    },
+    {
+      "start": 1153.9,
+      "end": 1163.12,
+      "text": "this year for a startup that was doing like an EHR. So like they were in healthcare. Yeah. So they were doing like they wanted to make an agent"
+    },
+    {
+      "start": 1162.26,
+      "end": 1171.44,
+      "text": "make an agent that was tailored to like medical stuff. And while the models are really good, there's like specific use cases around like, you know,"
+    },
+    {
+      "start": 1170.46,
+      "end": 1180.06,
+      "text": "like, you know, turning things into soap notes. Like how good those things actually can be. Yeah. Sorry. So many acronyms. Like,"
+    },
+    {
+      "start": 1177.96,
+      "end": 1187.04,
+      "text": "many acronyms. Like, yeah. Soap notes in the healthcare world is just like the notes that a doctor might do after they meet with"
+    },
+    {
+      "start": 1186.54,
+      "end": 1193.94,
+      "text": "they meet with you. And so they want to they have they're very particular on like how they want that to be done. It can't hallucinate. So it has to"
+    },
+    {
+      "start": 1193.52,
+      "end": 1202.74,
+      "text": "it has to be grounded on something. So it when you say like, you know, I want an agent to go do the soap notes like it. There's"
+    },
+    {
+      "start": 1201.0,
+      "end": 1206.8,
+      "text": "like it. There's a lot of variability on what the output could be. And it's like, you know, I want an agent to go do the soap notes. And it's"
+    },
+    {
+      "start": 1206.8,
+      "end": 1215.94,
+      "text": "notes. And it's like, when I say about being able to design benchmarks, you know, grabbing like some maybe real use cases, being able to like, trying to mimic that"
+    },
+    {
+      "start": 1215.42,
+      "end": 1224.72,
+      "text": "to mimic that situation as close to as possible, and then seeing how that agent, you know, maybe there's a skill of like, there's this specific soap note version thing"
+    },
+    {
+      "start": 1223.88,
+      "end": 1230.56,
+      "text": "note version thing that you want. And before you do this, you have to ground yourself, use this tool for this kind of thing. And it's almost like narrowing the"
+    },
+    {
+      "start": 1229.86,
+      "end": 1238.96,
+      "text": "like narrowing the scope of capability for this agent to just do be really good at this one thing. So, yeah, like,"
+    },
+    {
+      "start": 1237.76,
+      "end": 1245.98,
+      "text": "So, yeah, like, if you ask Claude to give you a soap note, it will give you a soap note. But it might not be exactly how your product works"
+    },
+    {
+      "start": 1244.66,
+      "end": 1253.84,
+      "text": "your product works or how your customers are expecting it. Yeah."
+    },
+    {
+      "start": 1247.2,
+      "end": 1257.42,
+      "text": "expecting it. Yeah. Yeah. Yeah."
+    },
+    {
+      "start": 1253.36,
+      "end": 1262.48,
+      "text": "Yeah. Yeah. Yeah. Yeah. And there's always,"
+    },
+    {
+      "start": 1261.52,
+      "end": 1270.1,
+      "text": "And there's always, I think the hard part with, you know, with the tools that we're using, all of this engineering and this area of the field is that it's"
+    },
+    {
+      "start": 1268.62,
+      "end": 1277.2,
+      "text": "is that it's by nature like non -deterministic. So like, your guess is as good as mine what this thing is going to do. Like, we're just trying to put"
+    },
+    {
+      "start": 1276.68,
+      "end": 1285.88,
+      "text": "trying to put it as good in a lab as possible to produce the best outcome. And then we're testing against it. So there is by nature like non"
+    },
+    {
+      "start": 1285.02,
+      "end": 1294.26,
+      "text": "nature like non -determinism throughout the whole process. But then it's our job to like point back to these metrics and say, look, on this benchmark, it's"
+    },
+    {
+      "start": 1292.52,
+      "end": 1301.6,
+      "text": "this benchmark, it's getting 87%. And maybe that's good enough to pass like certain things that are non -critical. But maybe not like"
+    },
+    {
+      "start": 1299.56,
+      "end": 1309.08,
+      "text": "maybe not like surgery level. So here's another snapshot"
+    },
+    {
+      "start": 1307.42,
+      "end": 1316.42,
+      "text": "here's another snapshot view of like the improvement. From a basic model on GSM 8K. And the interesting part between"
+    },
+    {
+      "start": 1314.92,
+      "end": 1324.04,
+      "text": "interesting part between the different between the different benchmarks is that I leverage different controls in order to get the better output. So"
+    },
+    {
+      "start": 1323.42,
+      "end": 1332.78,
+      "text": "better output. So some I needed better resources. Some I needed better reasoning. Some I needed extra tools. Some I needed something else. But ultimately, every this"
+    },
+    {
+      "start": 1331.2,
+      "end": 1340.54,
+      "text": "ultimately, every this kind of illustrates that every benchmark is slightly different than the next. And so if there's one big takeaway is that designing"
+    },
+    {
+      "start": 1339.14,
+      "end": 1352.1,
+      "text": "is that designing like the test and understanding the domain is probably like 70 to 80 % of the actual work. I"
+    },
+    {
+      "start": 1346.02,
+      "end": 1355.7,
+      "text": "actual work. I mean, this is very obvious. But obvious"
+    },
+    {
+      "start": 1353.2,
+      "end": 1362.52,
+      "text": "obvious. But obvious might not be so obvious where agents might be throttling because you're just flat"
+    },
+    {
+      "start": 1361.5,
+      "end": 1371.16,
+      "text": "you're just flat out missing a tool that they need. Right? So I think that there's a bottom layer to all of this where it's like understanding the semantic things"
+    },
+    {
+      "start": 1369.64,
+      "end": 1378.66,
+      "text": "the semantic things that the agent can access. So another big part of this is like, again, just understanding your product well enough. Understanding like what you"
+    },
+    {
+      "start": 1378.08,
+      "end": 1387.52,
+      "text": "like what you have available to play with. And then does the agent or can AI like actually grab for the things that it needs at the right time? So"
+    },
+    {
+      "start": 1386.22,
+      "end": 1395.26,
+      "text": "right time? So this is like a very subjective art at this point. But it's, you know, understanding. Like, do I have all of the pieces"
+    },
+    {
+      "start": 1394.78,
+      "end": 1404.58,
+      "text": "of the pieces that I need in order to give this model the best opportunity it can to produce the best result? So"
+    },
+    {
+      "start": 1399.86,
+      "end": 1409.08,
+      "text": "best result? So which components kind of make the most difference based off of my tests?"
+    },
+    {
+      "start": 1408.48,
+      "end": 1417.62,
+      "text": "of my tests? I think it the answer to almost all of these is like it depends. But I"
+    },
+    {
+      "start": 1415.48,
+      "end": 1424.78,
+      "text": "depends. But I think that using better models, like these are very not great. Like, the smaller they"
+    },
+    {
+      "start": 1423.58,
+      "end": 1432.86,
+      "text": "the smaller they are, like, the more chance they hallucinate, they choose the wrong tool. But I think if you're talking about like building something for"
+    },
+    {
+      "start": 1430.86,
+      "end": 1439.94,
+      "text": "building something for a product and in the wild, and even anecdotally, I think that skills are probably like the one"
+    },
+    {
+      "start": 1439.26,
+      "end": 1448.44,
+      "text": "like the one that drives the most lever on being better. Because they can be ingested at run time for specific use cases."
+    },
+    {
+      "start": 1447.18,
+      "end": 1456.24,
+      "text": "specific use cases. And they actually steer the model in like a better way. So, yeah. So, just completely anecdotally, but some of it supports it."
+    },
+    {
+      "start": 1455.62,
+      "end": 1464.7,
+      "text": "it supports it. I think skills or anything that can be injected at run time as the agent is working give it a better and I'm"
+    },
+    {
+      "start": 1463.8,
+      "end": 1471.68,
+      "text": "better and I'm sure you guys have also felt this with like Claude skills. You know, like the more Claude skills that you create, the better, like the more it"
+    },
+    {
+      "start": 1471.2,
+      "end": 1480.3,
+      "text": "the more it feels like it knows your workflow, it might create tickets in a certain way. Like it knows how to progress in your style and your taste. So,"
+    },
+    {
+      "start": 1479.32,
+      "end": 1487.22,
+      "text": "your taste. So, both anecdotally and in the wild, it's a good thing. But anecdotally and in some benchmarks, being able to inject something at run time for a certain"
+    },
+    {
+      "start": 1485.78,
+      "end": 1495.0,
+      "text": "for a certain use case produces, I think, the highest leverage result. Okay."
+    },
+    {
+      "start": 1489.78,
+      "end": 1500.42,
+      "text": "leverage result. Okay. So, now to the benchmark piece. So,"
+    },
+    {
+      "start": 1495.76,
+      "end": 1504.98,
+      "text": "benchmark piece. So, designing the benchmark is really like most of the work in order to grab like a baseline of"
+    },
+    {
+      "start": 1504.28,
+      "end": 1513.52,
+      "text": "a baseline of here's where it is right now with vanilla off the shelf stuff. And then here is where it's working. It's just getting better over"
+    },
+    {
+      "start": 1512.24,
+      "end": 1522.0,
+      "text": "getting better over time. It's just getting"
+    },
+    {
+      "start": 1518.18,
+      "end": 1522.98,
+      "text": "It's just getting better over time. It's just getting better over time. It's just getting better over time. It's just getting better over time. It's just getting better over time."
+    },
+    {
+      "start": 1522.88,
+      "end": 1529.74,
+      "text": "better over time. It's just getting better over time. It's just getting better over time. It's just getting better over time. It's just getting better over time. It's just getting"
+    },
+    {
+      "start": 1528.52,
+      "end": 1538.84,
+      "text": "It's just getting better over time. It's just getting better over"
+    },
+    {
+      "start": 1531.66,
+      "end": 1541.3,
+      "text": "getting better over time. And I found"
+    },
+    {
+      "start": 1539.28,
+      "end": 1548.34,
+      "text": "And I found it pretty interesting that one thing that really helps the benchmark is if you can create like some dimensions"
+    },
+    {
+      "start": 1547.1,
+      "end": 1556.24,
+      "text": "like some dimensions that aggregate it, aggregated produces like a good, they call this like a reward function. So like not only"
+    },
+    {
+      "start": 1555.22,
+      "end": 1563.76,
+      "text": "like not only are the traces good, but like maybe a reward function is calling these three tools for this use case at this time. And so now when Claude"
+    },
+    {
+      "start": 1562.68,
+      "end": 1570.44,
+      "text": "now when Claude is looking at it, it can actually grade it upon many different things, not just the output. So like the naive way is just looking at the"
+    },
+    {
+      "start": 1569.88,
+      "end": 1578.96,
+      "text": "looking at the output and being like, that looks good, right? But the next version of this is being able to grade it against, you know, did"
+    },
+    {
+      "start": 1578.08,
+      "end": 1587.38,
+      "text": "you know, did it call this tool at the right time as I'm expecting? Did it, you know, produce like these assertions? Did it do this? And"
+    },
+    {
+      "start": 1585.58,
+      "end": 1596.24,
+      "text": "do this? And every benchmark is different because as it depends, there's certain things that you might just want an exact match, right?"
+    },
+    {
+      "start": 1593.98,
+      "end": 1603.72,
+      "text": "exact match, right? Where? You want an agent to just do something and then it should exactly reproduce the same thing. So"
+    },
+    {
+      "start": 1602.56,
+      "end": 1611.74,
+      "text": "same thing. So deciding on what benchmark you want to create and design is pretty much all of it. But creating multiple"
+    },
+    {
+      "start": 1610.26,
+      "end": 1619.3,
+      "text": "But creating multiple dimensions of something that's a little bit more complicated is going to take you further. So"
+    },
+    {
+      "start": 1614.88,
+      "end": 1624.16,
+      "text": "you further. So another thing with like creating a good benchmark that I took away from this"
+    },
+    {
+      "start": 1623.38,
+      "end": 1632.4,
+      "text": "away from this paper, and I could also just quickly show you like it was this paper. If anybody wants to take a"
+    },
+    {
+      "start": 1630.72,
+      "end": 1639.72,
+      "text": "to take a look. Sorry. And this HarnessX, also a little bit"
+    },
+    {
+      "start": 1639.26,
+      "end": 1647.84,
+      "text": "a little bit about this, is that they also have a GitHub repo. So you can actually try to reproduce their thing. The difference that I did for this paper"
+    },
+    {
+      "start": 1646.82,
+      "end": 1655.96,
+      "text": "for this paper is that they, HarnessX uses, you need, you technically need two agents to produce all of this. Which is one, you need one that is like"
+    },
+    {
+      "start": 1655.28,
+      "end": 1664.06,
+      "text": "that is like the verifier, the LLM judge. And the one that's going to tweak the task agent. And then the task agent is the one that is doing the"
+    },
+    {
+      "start": 1662.28,
+      "end": 1671.5,
+      "text": "is doing the actual work. So by nature, you need to have a smarter like verifier and LLM. Or else they're both going to get confused."
+    },
+    {
+      "start": 1671.06,
+      "end": 1680.82,
+      "text": "to get confused. So in this, instead of burning tokens, I switched it to my clod being the verifier, the source"
+    },
+    {
+      "start": 1677.94,
+      "end": 1687.08,
+      "text": "verifier, the source of truth, like the evolving agent. So that's one thing that I deviated a little bit from in"
+    },
+    {
+      "start": 1686.48,
+      "end": 1697.3,
+      "text": "bit from in this paper. Purely because I didn't want to waste tokens and pay for API cost. Yeah. Yeah."
+    },
+    {
+      "start": 1691.08,
+      "end": 1700.68,
+      "text": "cost. Yeah. Yeah. Yeah."
+    },
+    {
+      "start": 1693.04,
+      "end": 1705.68,
+      "text": "Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "start": 1696.76,
+      "end": 1709.82,
+      "text": "Yeah. Yeah. Yeah. So"
+    },
+    {
+      "start": 1700.14,
+      "end": 1710.36,
+      "text": "Yeah. Yeah. So you"
+    },
+    {
+      "start": 1705.14,
+      "end": 1714.58,
+      "text": "Yeah. So you can. I think like whoever's observing and whoever's like evolving"
+    },
+    {
+      "start": 1713.6,
+      "end": 1722.78,
+      "text": "whoever's like evolving has to be, you have to, it has to be better. Than. Than whatever. Or at the same par. I used the same one. So I used,"
+    },
+    {
+      "start": 1722.32,
+      "end": 1731.18,
+      "text": "So I used, I shifted it to where my clod code with Opus 4 .8 or maybe Fable 5 is like the smartest thing I can have. So that's, that"
+    },
+    {
+      "start": 1730.12,
+      "end": 1739.6,
+      "text": "So that's, that was what I used for my evolving agent and my judge agent, things like that. Looking at a Qwen 3 .32b. So"
+    },
+    {
+      "start": 1737.52,
+      "end": 1746.62,
+      "text": "3 .32b. So it's like night and day. But yeah, that's, that's kind of like the, the setup for"
+    },
+    {
+      "start": 1745.72,
+      "end": 1751.52,
+      "text": "the setup for like the actual lab of how you do it. And how you kind of evolve. You need, you need one that's really smart. One that's driving it."
+    },
+    {
+      "start": 1750.18,
+      "end": 1761.32,
+      "text": "that's driving it. One that's like improving, maybe like tuned to your thing. And also like on a sidebar too, I think. Because"
+    },
+    {
+      "start": 1758.24,
+      "end": 1767.26,
+      "text": "I think. Because these, there's like a tokenomics thing at play too, because if you are making an"
+    },
+    {
+      "start": 1765.5,
+      "end": 1773.24,
+      "text": "are making an agent for your product, like you all, sure you can put like the most expensive model you can, but ultimately you want to kind of optimize for"
+    },
+    {
+      "start": 1772.44,
+      "end": 1781.42,
+      "text": "of optimize for the output per the cost that you know, you're building per everything. So it's almost like. You want to squeeze as much juice with the little intelligence"
+    },
+    {
+      "start": 1779.82,
+      "end": 1789.86,
+      "text": "the little intelligence as you can. And that is in itself more difficult said than done. But"
+    },
+    {
+      "start": 1787.04,
+      "end": 1796.18,
+      "text": "than done. But going back to the benchmarks, being able to not only have multiple dimensions to grade on, but also like have"
+    },
+    {
+      "start": 1795.44,
+      "end": 1804.48,
+      "text": "also like have a gradient. So I was also naively just being like, is this good enough? Like, did it produce, you know, assume like the output was good as"
+    },
+    {
+      "start": 1803.74,
+      "end": 1812.08,
+      "text": "was good as what I intended it to be. But I think having a gradient on the return, like, and you'll see some of the traces actually look kind of"
+    },
+    {
+      "start": 1811.46,
+      "end": 1819.96,
+      "text": "look kind of different. But you can score based off of like 0 .5 or 0 .75. And having this gradient, I think, is going to actually produce better like"
+    },
+    {
+      "start": 1818.64,
+      "end": 1827.76,
+      "text": "produce better like metrics overall. Go ahead. Would you define gradient within the context of your product? Yeah. What? Would you define gradient within the context"
+    },
+    {
+      "start": 1826.98,
+      "end": 1836.16,
+      "text": "within the context of your product? Yeah. So gradient, as in the, how the LLM judge grades the result from the task agent. To your"
+    },
+    {
+      "start": 1835.24,
+      "end": 1844.0,
+      "text": "agent. To your benchmarks. So maybe you got like, you know, 0 .4. And the more dimensions that you add to that benchmark, then the tighter the gradient can be."
+    },
+    {
+      "start": 1843.32,
+      "end": 1851.7,
+      "text": "gradient can be. Right? Outside of just saying, if you have one dimension and it's just the output, it's like, it did it or it did not do it kind"
+    },
+    {
+      "start": 1851.3,
+      "end": 1857.24,
+      "text": "do it kind of thing. So would that be the difference between like a one, two, three, or four? And to putting it on a graph and having like a"
+    },
+    {
+      "start": 1856.84,
+      "end": 1864.74,
+      "text": "having like a scatter plot? Yes. Yes. And then being able to actually like map the trajectory of all your runs. So like as it's evolving, you know, you're seeing"
+    },
+    {
+      "start": 1864.22,
+      "end": 1871.58,
+      "text": "know, you're seeing it. You're seeing it. You're seeing it improve from like 0 .3 to like 0 .4. And some of this could be subjective. But again, the more"
+    },
+    {
+      "start": 1870.5,
+      "end": 1880.22,
+      "text": "again, the more dimensions that you have with the more like including some deterministic output, then you can start, you can actually start seeing the graph start plotting"
+    },
+    {
+      "start": 1878.9,
+      "end": 1887.16,
+      "text": "graph start plotting away at it. So you're describing like dimensions of tests and then the movement over time. Yes. Exactly. And that's something that you can always go to"
+    },
+    {
+      "start": 1886.24,
+      "end": 1895.74,
+      "text": "always go to either your product team, like the, whoever is like looking at it and saying like, look, here's the benchmarks. Here's what the gradient"
+    },
+    {
+      "start": 1894.32,
+      "end": 1902.42,
+      "text": "what the gradient over time kind of looks like. And I think we're at a good place to for this agent to do this work. And then having a baseline."
+    },
+    {
+      "start": 1901.82,
+      "end": 1910.34,
+      "text": "having a baseline. So the first test has to kind of bomb, right? Because like you need to know where you're starting at. And I think that's also important, equally"
+    },
+    {
+      "start": 1909.56,
+      "end": 1918.84,
+      "text": "also important, equally as important. So another interesting thing that came out of this"
+    },
+    {
+      "start": 1918.0,
+      "end": 1927.16,
+      "text": "out of this HarnessX paper is the way they export different artifacts per every run. And so the framework itself kind of handles a lot of this for"
+    },
+    {
+      "start": 1926.82,
+      "end": 1935.18,
+      "text": "of this for you. But this is kind of what you're alluding to with like the curves. So like how many tokens it spent, the pass rate, the cost, like"
+    },
+    {
+      "start": 1934.6,
+      "end": 1944.52,
+      "text": "the cost, like all these different things. And I think if you are, if the agent or like the AI work is really core to your product, maybe"
+    },
+    {
+      "start": 1942.52,
+      "end": 1951.58,
+      "text": "your product, maybe this is an unpopular opinion, but you should try to like almost like design your own harness or like really modify like something off the shelf."
+    },
+    {
+      "start": 1951.0,
+      "end": 1960.12,
+      "text": "off the shelf. But and. Yeah. I'll show it in the next slide or maybe the next two slides. But off the shelf like harnesses don't produce maybe"
+    },
+    {
+      "start": 1959.36,
+      "end": 1968.36,
+      "text": "don't produce maybe like this rich artifact at the end that you can grade against. They produce traces. But you might want this like multiple dimension benchmark test."
+    },
+    {
+      "start": 1967.04,
+      "end": 1976.18,
+      "text": "dimension benchmark test. You might want like all these different things that your evolving agent can just look at and say, okay, we need to tweak this lever. You"
+    },
+    {
+      "start": 1975.38,
+      "end": 1983.6,
+      "text": "this lever. You know, we need to add this. Let's see how it does. Let's do another run. And again, like with anything, with any closed loop system. Like the"
+    },
+    {
+      "start": 1982.44,
+      "end": 1991.54,
+      "text": "system. Like the more, the better the output that an evolving agent can see, you know, the better that it can like assume what it needs"
+    },
+    {
+      "start": 1991.04,
+      "end": 2000.28,
+      "text": "what it needs to do next. So yeah, like giving it all these dimensions and all of these like output artifacts, it knows,"
+    },
+    {
+      "start": 1999.16,
+      "end": 2008.24,
+      "text": "artifacts, it knows, okay, I need to tweak this skill and let's do another run. I need to add another tool. Let's do another run. And again, to"
+    },
+    {
+      "start": 2007.2,
+      "end": 2016.32,
+      "text": "And again, to just for like statistical stuff. You want to increase the amount of runs that you can possibly do without breaking the bank."
+    },
+    {
+      "start": 2015.74,
+      "end": 2025.06,
+      "text": "breaking the bank. So here's like a trace. Like here's that like custom trace. So yes,"
+    },
+    {
+      "start": 2023.14,
+      "end": 2031.92,
+      "text": "trace. So yes, it did. The traces of, you know, when a tool started, when a tool ended, what it was called, what was the output. But then there's also"
+    },
+    {
+      "start": 2031.38,
+      "end": 2040.98,
+      "text": "then there's also part of the trace that the judge will create is, you know, like here's an exit reason. Here's the dimension breakdown."
+    },
+    {
+      "start": 2039.82,
+      "end": 2048.92,
+      "text": "the dimension breakdown. For like the reward. Like did it actually input something into the database? Did it perform the action? Here's"
+    },
+    {
+      "start": 2047.22,
+      "end": 2056.24,
+      "text": "the action? Here's the expected actions. Here's like the executed actions. And then this is what's going to drive that curve of is this thing good"
+    },
+    {
+      "start": 2055.76,
+      "end": 2064.92,
+      "text": "this thing good or not? So this is an example that is, again, just came off of the paper. And it's kind of baked into this HarnessX"
+    },
+    {
+      "start": 2064.0,
+      "end": 2073.38,
+      "text": "into this HarnessX framework. But I wouldn't say HarnessX is something, is not a framework that you would use in production. Like it's purely for research purposes. And"
+    },
+    {
+      "start": 2071.72,
+      "end": 2081.72,
+      "text": "research purposes. And I would suggest like tweaking and learning and understanding what you're doing to this harness. Okay."
+    },
+    {
+      "start": 2078.98,
+      "end": 2088.08,
+      "text": "this harness. Okay. So another one is who grades? You know, I think I briefly touched on it. But, you"
+    },
+    {
+      "start": 2086.42,
+      "end": 2095.74,
+      "text": "it. But, you know, it has to be a smarter agent, right, to be able to look at these traces and understand and like assume. So there could be, this"
+    },
+    {
+      "start": 2094.66,
+      "end": 2103.68,
+      "text": "could be, this is like something to keep an eye on too. Is that, is your benchmark gameable? You know, like can an evolving agent be smart enough to kind"
+    },
+    {
+      "start": 2103.06,
+      "end": 2111.52,
+      "text": "enough to kind of game the system a little bit to make your benchmarks look good? But maybe like the field product is not as great. So there's variability in"
+    },
+    {
+      "start": 2110.28,
+      "end": 2119.34,
+      "text": "there's variability in that. And I think that also comes with, this is out of the scope of this talk, but creating, you know, deployed environments that really"
+    },
+    {
+      "start": 2118.26,
+      "end": 2127.3,
+      "text": "environments that really mimic something out on the field. And so armed with both your lab test results and plus software. Something"
+    },
+    {
+      "start": 2126.08,
+      "end": 2135.88,
+      "text": "plus software. Something that test users or alpha users can like hammer. You're going to get this delta of like, okay, is my evolving agent kind"
+    },
+    {
+      "start": 2134.3,
+      "end": 2143.44,
+      "text": "evolving agent kind of reward hacking? Or is it not? Or is it like real? So just something to keep looking"
+    },
+    {
+      "start": 2142.06,
+      "end": 2151.1,
+      "text": "to keep looking out for. If it's deterministic, like clearly it's like a yes or no. But most, as with most"
+    },
+    {
+      "start": 2150.4,
+      "end": 2161.06,
+      "text": "as with most like AI things, it's not like a one for one. There has to be some sort of subjective. Okay. View to this. And"
+    },
+    {
+      "start": 2157.8,
+      "end": 2167.6,
+      "text": "to this. And then this is kind of what I was alluding to earlier where like off the shelf harnesses."
+    },
+    {
+      "start": 2165.88,
+      "end": 2174.56,
+      "text": "the shelf harnesses. So you can actually use some of these in production. So like deep agents JS I think is like great. They are from the link chain crew."
+    },
+    {
+      "start": 2174.04,
+      "end": 2181.84,
+      "text": "link chain crew. And they give you enough knobs to really kind of tweak it however you want. So you can imagine like basically get like a Honda Civic and"
+    },
+    {
+      "start": 2181.1,
+      "end": 2188.8,
+      "text": "Honda Civic and just like supercharge it as much as you want. You just need all the controls in it. I think like other harnesses like maybe the Claude Code"
+    },
+    {
+      "start": 2188.14,
+      "end": 2197.32,
+      "text": "the Claude Code SDK gives you less variability. So like mileage varies. But when choosing the right harness, like you could think about one,"
+    },
+    {
+      "start": 2196.2,
+      "end": 2205.86,
+      "text": "think about one, am I going to get vendor locked in? Like how much knobs can I tweak? And then how can I test this? So because of"
+    },
+    {
+      "start": 2203.92,
+      "end": 2213.94,
+      "text": "So because of this harness X paper and this framework, there is more things that we added, which is like this reward annotation, this benchmark, all"
+    },
+    {
+      "start": 2211.92,
+      "end": 2220.02,
+      "text": "this benchmark, all these other things that made it easier. So I think it's going to be a much richer context than just let me use deep agents and let"
+    },
+    {
+      "start": 2219.48,
+      "end": 2229.14,
+      "text": "agents and let me just run it. But besides the vendor, the majority issue about the deep agents, the system, does"
+    },
+    {
+      "start": 2227.34,
+      "end": 2236.72,
+      "text": "the system, does the deep agent ecosystem give you more support on creating all"
+    },
+    {
+      "start": 2235.5,
+      "end": 2245.82,
+      "text": "on creating all sorts of reward functions and all the things that you are tracing? Because I heard that Dan Smith was part of that. Yes. Yeah. Yeah."
+    },
+    {
+      "start": 2243.4,
+      "end": 2252.58,
+      "text": "Yes. Yeah. Yeah. So for the group, like deep agency is an open source"
+    },
+    {
+      "start": 2250.72,
+      "end": 2260.06,
+      "text": "an open source harness and they're trying to make it as open as possible, as modifiable as possible from the lane chain crew. They have a paid"
+    },
+    {
+      "start": 2257.96,
+      "end": 2267.04,
+      "text": "have a paid thing that can, Lank Smith, which helps you tune these agents and these harnesses as best as they can. And that's"
+    },
+    {
+      "start": 2266.38,
+      "end": 2275.74,
+      "text": "can. And that's great. Like I don't know if they give you all of it, but their product is built around like how best you can evolve that. So I"
+    },
+    {
+      "start": 2272.8,
+      "end": 2281.86,
+      "text": "that. So I think that they're doing great. I actually, I like that harness. You can even use it yourself for coding if you really"
+    },
+    {
+      "start": 2281.3,
+      "end": 2290.9,
+      "text": "if you really want. But as a product harness, I think it makes for a very good go. All right. Let me wrap up here. Let"
+    },
+    {
+      "start": 2289.7,
+      "end": 2298.9,
+      "text": "up here. Let me see how much I have. Okay. That's basically it. So what we discovered is grading choices decide everything."
+    },
+    {
+      "start": 2297.72,
+      "end": 2303.4,
+      "text": "choices decide everything. Obviously, the gradient is important. I was able to get like a gradient of, like, a hundred percent of the gradient that I was So I had"
+    },
+    {
+      "start": 2303.4,
+      "end": 2312.56,
+      "text": "So I had to get like a scatter plot, get a baseline, see like what's going on. I had some wonkiness going on with my laptop on actually running"
+    },
+    {
+      "start": 2311.44,
+      "end": 2320.16,
+      "text": "on actually running some of these models and running some of these tests. So I had to get over this like infrastructure problem. But yeah, I'll stop there and just"
+    },
+    {
+      "start": 2319.66,
+      "end": 2328.74,
+      "text": "there and just like let you guys digest that. Yep. So like, because I always try to look at things from like a perspective of"
+    },
+    {
+      "start": 2328.0,
+      "end": 2335.66,
+      "text": "a perspective of is it necessary, is it not? I get there's some use cases where it is, some use cases where it's not. For the instance with your medical"
+    },
+    {
+      "start": 2334.18,
+      "end": 2342.7,
+      "text": "with your medical thing that you were talking about. Yeah. You were saying that you were building an agent for them. Yeah. On that side. So if I'm understanding correctly,"
+    },
+    {
+      "start": 2342.04,
+      "end": 2349.24,
+      "text": "I'm understanding correctly, they have health records. They need to have those health records turned into some form of notes. Yeah. And then they want it to be that if"
+    },
+    {
+      "start": 2348.8,
+      "end": 2355.38,
+      "text": "be that if the, is it a doctor or a nurse, like, type something in, they can get the notes back to them. Yeah. That was kind of like the,"
+    },
+    {
+      "start": 2354.84,
+      "end": 2363.36,
+      "text": "of like the, what the use case was for that specific one. Yeah. And there's like a few more dimensions. Like the notes had to include like something like a"
+    },
+    {
+      "start": 2363.28,
+      "end": 2372.0,
+      "text": "something like a lab work, had to include like some other stuff, had to include like a certain template that the doctor preferred the soap notes in. Okay. So like"
+    },
+    {
+      "start": 2371.4,
+      "end": 2380.56,
+      "text": "Okay. So like these are some other dimensions that was outside of just like, you know, request coming in being like, here's, create the soap note,"
+    },
+    {
+      "start": 2380.0,
+      "end": 2386.7,
+      "text": "the soap note, right? So if you have the words of the soap notes and all that, it's, this is data that's being put in from the doctors after they"
+    },
+    {
+      "start": 2385.62,
+      "end": 2393.34,
+      "text": "doctors after they have an appointment. Yeah. And then from there it's in a database, and then from there, a week down the road, when the client's asking for something,"
+    },
+    {
+      "start": 2392.76,
+      "end": 2395.88,
+      "text": "asking for something, it's like, okay, I'm going to do this, I'm going to do this. Or whatever. They're filing something. They want to be able to go give me"
+    },
+    {
+      "start": 2395.36,
+      "end": 2402.42,
+      "text": "go give me Stacy's thing. And then it will give them everything in the exact format that they want. Yeah. Exactly. So when I'm looking at that, like the way"
+    },
+    {
+      "start": 2401.9,
+      "end": 2409.26,
+      "text": "like the way I view it is I'm like, okay, there's a specific set of steps that have to happen the exact same way every single time. I guess like"
+    },
+    {
+      "start": 2408.46,
+      "end": 2415.24,
+      "text": "I guess like how I've been viewing agents lately is like, I don't use that as like an agent. I use it as like a workflow. Maybe the agent is"
+    },
+    {
+      "start": 2414.36,
+      "end": 2422.58,
+      "text": "the agent is reporting to me and telling me what happened. Maybe if something breaks, it's troubleshooting it. But I'm just viewing it as a workflow. And so I'm just"
+    },
+    {
+      "start": 2422.04,
+      "end": 2427.92,
+      "text": "so I'm just going, okay, well, this is the data. let's do step one successfully. And I get step one successfully, and then I'll be like, okay, do that 100"
+    },
+    {
+      "start": 2427.5,
+      "end": 2433.58,
+      "text": "do that 100 times, and I want you to run a test. Does it succeed or not? And then it does it. And then I go, okay, step one, good."
+    },
+    {
+      "start": 2432.88,
+      "end": 2441.08,
+      "text": "step one, good. And I'll move to step two, step three, step four, and I'll do that for step one through step eight, whatever it is, until it's running successfully."
+    },
+    {
+      "start": 2440.34,
+      "end": 2447.52,
+      "text": "it's running successfully. Even with, like, formatting stuff and PDFs and stuff like that, getting it to look the way we want it to, I've found that I can do"
+    },
+    {
+      "start": 2447.14,
+      "end": 2454.98,
+      "text": "I can do all of this in just, like, a chat with it. So I have that end product, and it's just this workflow, and then we just build that"
+    },
+    {
+      "start": 2454.22,
+      "end": 2463.5,
+      "text": "just build that workflow into whatever the UI, UX is for it to run. Where exactly are you seeing that there's, like, an agentic element to it? Because"
+    },
+    {
+      "start": 2462.64,
+      "end": 2469.84,
+      "text": "to it? Because it's kind of, it's not even a thing. It's just, like, grabbing stuff and putting stuff in there. Yeah, there's some, I think this also brings up"
+    },
+    {
+      "start": 2469.0,
+      "end": 2477.7,
+      "text": "also brings up a good point of, like, understanding the domain enough to know which sections should be deterministic in, like, a workflow, and then which things can be, like,"
+    },
+    {
+      "start": 2477.08,
+      "end": 2486.12,
+      "text": "can be, like, fully agentic. Like, the model that we ended up using was, like, we would create, like, a sandbox, you know, like, the same thing as, like, it"
+    },
+    {
+      "start": 2485.74,
+      "end": 2492.54,
+      "text": "as, like, it would create code, but we needed to, like, crunch a lot of numbers, and all of that stuff is, like, variable as far as, like, the kind"
+    },
+    {
+      "start": 2492.18,
+      "end": 2500.52,
+      "text": "like, the kind of data that, like, data is messy. So, like, instead of super cleaning everything, we would inject everything into a sandbox and, like, let it run code"
+    },
+    {
+      "start": 2500.04,
+      "end": 2509.46,
+      "text": "it run code against that sandbox to grab some of these numbers. So, like, to us, that felt like a very agentic flow where no matter what type of results,"
+    },
+    {
+      "start": 2508.48,
+      "end": 2517.38,
+      "text": "type of results, no matter what type of different types of data we were coming in, it can reason against it and, like, create code to, like, query it. And"
+    },
+    {
+      "start": 2516.4,
+      "end": 2524.92,
+      "text": "query it. And then, so that was, like, part one. And then, you know, using skills and stuff, like the formatting of the SOAP node, all this stuff. So, there's"
+    },
+    {
+      "start": 2523.78,
+      "end": 2532.84,
+      "text": "stuff. So, there's certain subsections that can be deterministic, but there's certain things that, yeah, they're subjective. Like, when"
+    },
+    {
+      "start": 2531.62,
+      "end": 2540.08,
+      "text": "subjective. Like, when it looks at it, like, you know, comparing these two different numbers that might look different every single time it runs, like, you know, it's not going"
+    },
+    {
+      "start": 2540.08,
+      "end": 2547.4,
+      "text": "it's not going to be the same. So, it's almost like that's doing, like, an LLM call to whatever, in that case, the agent, whatever you're using there, to, I"
+    },
+    {
+      "start": 2546.4,
+      "end": 2553.24,
+      "text": "there, to, I want you to give me the subjective view on this based on whatever parameters we've set of, like, you know, we don't want it to return to"
+    },
+    {
+      "start": 2552.76,
+      "end": 2558.3,
+      "text": "to return to us and say, purple grist. Like, we want it to say exactly what we want it to say. So, that's kind of, you have it where it's,"
+    },
+    {
+      "start": 2557.84,
+      "end": 2565.8,
+      "text": "it where it's, like, a workflow and you have an agentic property to it that the work is flowing through that and then coming back into the workflow to get"
+    },
+    {
+      "start": 2564.62,
+      "end": 2572.8,
+      "text": "workflow to get to the end goal. Yeah, yeah, there's definitely certain sections that are deterministic, some that are not. And that's, like, that's just, like, a design decision that"
+    },
+    {
+      "start": 2571.9,
+      "end": 2581.04,
+      "text": "design decision that we decided to take with where it's, like, this part gets really messy, we can trust an LLM to, like, you know, crunch all these numbers and"
+    },
+    {
+      "start": 2580.2,
+      "end": 2587.6,
+      "text": "these numbers and be able to, like, grab all these PDFs and grab the information that we need. And then there's other parts where it's just as simple as, like,"
+    },
+    {
+      "start": 2587.08,
+      "end": 2595.24,
+      "text": "simple as, like, okay, here's, like, the output, let's keep refining this. So, then, in regards to what you put out here, and then I'll help shut up. So, all"
+    },
+    {
+      "start": 2594.1,
+      "end": 2602.8,
+      "text": "up. So, all of this stuff here, with this, where is the, you said, use case for it to go to this degree of, like, everything you said today? Because"
+    },
+    {
+      "start": 2602.16,
+      "end": 2610.42,
+      "text": "said today? Because I'm looking at it as, like, my philosophy has always been, like, what's the simplest way to get it done? And if I can't solve the problem"
+    },
+    {
+      "start": 2609.78,
+      "end": 2617.32,
+      "text": "solve the problem the simplest way, I'm gonna hire someone who needs the more complex way. So, where is the use case for this stuff specifically versus what you and"
+    },
+    {
+      "start": 2616.76,
+      "end": 2624.5,
+      "text": "what you and I just discussed, getting it done that way? So, like, when data is kind of messy, or, like, you don't know what the input's gonna be like,"
+    },
+    {
+      "start": 2624.02,
+      "end": 2631.8,
+      "text": "gonna be like, we have to grab, like, a certain subset of what it could be, and then that's when we were doing a lot of the tuning for, of,"
+    },
+    {
+      "start": 2630.88,
+      "end": 2637.7,
+      "text": "tuning for, of, like, is it putting in the right sandbox? Is it grabbing the right PDFs from the right thing? Is it grabbing from, like, the previous soap notes?"
+    },
+    {
+      "start": 2636.68,
+      "end": 2645.68,
+      "text": "previous soap notes? Like, how can we ingest all of that? And that's so non -deterministic that that's where we were doing a lot of creating our"
+    },
+    {
+      "start": 2644.5,
+      "end": 2653.52,
+      "text": "of creating our own light benchmarks, and then putting it in a loop, and then seeing, like, the other end of the output. And then our confidence would go"
+    },
+    {
+      "start": 2652.72,
+      "end": 2660.34,
+      "text": "confidence would go up to say, okay, whenever, you know, Dr. X, you know, asks me, like, what's the best way to do this for X amount of patients, you"
+    },
+    {
+      "start": 2659.16,
+      "end": 2666.32,
+      "text": "of patients, you know, comparing, like, the symptoms and all the stuff, can it grab the right soap notes from the previous things? Can it go to the ground source"
+    },
+    {
+      "start": 2665.44,
+      "end": 2674.82,
+      "text": "the ground source and, like, look at some of the stuff? So, yeah, like, I think it also, going to this nth degree is"
+    },
+    {
+      "start": 2673.3,
+      "end": 2682.86,
+      "text": "nth degree is just when you want, like, your product to be extremely tailored to, like, a certain use case. And, like, the more that your use case is tailored"
+    },
+    {
+      "start": 2681.8,
+      "end": 2688.86,
+      "text": "case is tailored to, like, then the better output you're gonna kinda get. You're saying that the accuracy of things that it's not like, you know, like, it's not hallucinating,"
+    },
+    {
+      "start": 2688.4,
+      "end": 2696.7,
+      "text": "it's not hallucinating, it's not pulling the wrong things, it's not actively doing it correctly. This is all designed to be able to get the premier accuracy from what we"
+    },
+    {
+      "start": 2695.94,
+      "end": 2705.92,
+      "text": "from what we want. Yeah, in, like, a non -deterministic system. I think you had your hand up. So, speaking with the example, so, the healthcare center, like,"
+    },
+    {
+      "start": 2704.12,
+      "end": 2713.3,
+      "text": "healthcare center, like, if somebody gets into the doctor's office with a blue hand, they would go, find me all the soap notes that somebody reported with"
+    },
+    {
+      "start": 2712.16,
+      "end": 2721.16,
+      "text": "somebody reported with a blue hand, that's a workflow example. But if you go, like, there's a patient that has a blue hand, what could"
+    },
+    {
+      "start": 2719.92,
+      "end": 2728.5,
+      "text": "hand, what could this be related to? And should we similar examples? And this would be one of the messy ones? Yes. Okay. Yes, that's a good, that's actually a"
+    },
+    {
+      "start": 2728.08,
+      "end": 2737.56,
+      "text": "that's actually a really good example. We didn't get to the blue hand section, but that is a good example. Yeah. Okay, enough. It"
+    },
+    {
+      "start": 2734.6,
+      "end": 2743.8,
+      "text": "Okay, enough. It doesn't need to search anything. It just says, you need to see a doctor, like, right away. So, if I understand correctly, which you did in"
+    },
+    {
+      "start": 2743.0,
+      "end": 2752.48,
+      "text": "you did in these cases, is that this example would be more, like, static, kind of workflow, whereas yours are dynamic, much more based"
+    },
+    {
+      "start": 2751.3,
+      "end": 2760.54,
+      "text": "much more based on your input, your harness framework, with automatic and non -deterministic, and non -deterministic, and just automatic, and more"
+    },
+    {
+      "start": 2758.68,
+      "end": 2767.72,
+      "text": "automatic, and more flexible. So, the static case might be variant with a specific case, but if things change, it could be"
+    },
+    {
+      "start": 2767.0,
+      "end": 2776.0,
+      "text": "it could be brittle, whereas your case are much more dynamic, and can survive when things do change. Absolutely, and another interesting, non -deterministic use"
+    },
+    {
+      "start": 2774.64,
+      "end": 2783.98,
+      "text": "non -deterministic use case for this kind of work, is agents are, like, models are just really good at writing code. So, like, my personal thesis"
+    },
+    {
+      "start": 2782.62,
+      "end": 2788.6,
+      "text": "my personal thesis is, like, you should try to let them write as much code as you can for whatever use case. So, if they're crunching a lot of data,"
+    },
+    {
+      "start": 2788.2,
+      "end": 2796.56,
+      "text": "lot of data, you should let it write Python to, like, actually parse through all the stuff. So, like, that is another, like, benchmark test that you want to make"
+    },
+    {
+      "start": 2795.98,
+      "end": 2805.02,
+      "text": "want to make sure, like, it's always writing the same. Yeah, exactly, exactly. So, part of the orchestration is, like, is it writing the right"
+    },
+    {
+      "start": 2804.44,
+      "end": 2811.66,
+      "text": "writing the right code in order to parse these, kind of, documents in a way that makes sense? So, that's, like, one of the other things. We made, like, a"
+    },
+    {
+      "start": 2811.2,
+      "end": 2820.28,
+      "text": "made, like, a few skills for that, too. But. Yeah, so I have a quick question. Amazing presentation, by the way. I love your references."
+    },
+    {
+      "start": 2819.52,
+      "end": 2828.6,
+      "text": "love your references. Harness X, I found that to be super useful. I wanted to, like, address the crowd"
+    },
+    {
+      "start": 2827.7,
+      "end": 2836.7,
+      "text": "address the crowd by saying, if you're new to harness engineering, and you just haven't touched anything just yet, the best way to do it is to"
+    },
+    {
+      "start": 2836.28,
+      "end": 2845.46,
+      "text": "it is to go to a white paper. Yeah. Like Harness X, drop it into chat GBT, Claude, whatever your, you know, tool"
+    },
+    {
+      "start": 2844.66,
+      "end": 2853.46,
+      "text": "you know, tool of choice is, and say, tell me about this in layman's terms. Yeah. Right? Yeah. That's a good. Break it down to be like a cable. Yeah,"
+    },
+    {
+      "start": 2852.6,
+      "end": 2862.66,
+      "text": "a cable. Yeah, there you go. So, anything on top of that, Esteban, would you say for someone who's, they're"
+    },
+    {
+      "start": 2859.1,
+      "end": 2868.38,
+      "text": "someone who's, they're newer to tweaking a harness. Yeah. And they're getting away from Frontier model, and"
+    },
+    {
+      "start": 2867.1,
+      "end": 2876.3,
+      "text": "Frontier model, and coding agents, and now they're ready to kind of be introduced to this stuff. What would you say would be a first step to approaching that?"
+    },
+    {
+      "start": 2874.46,
+      "end": 2883.74,
+      "text": "to approaching that? I think, yeah, like reading the white papers is really good. And I also had it, I"
+    },
+    {
+      "start": 2883.0,
+      "end": 2892.06,
+      "text": "had it, I was like multiple chats deep, and with Claude to like bring on my ideas, like how to tweak this like paper, like understanding like"
+    },
+    {
+      "start": 2891.14,
+      "end": 2900.32,
+      "text": "like understanding like certain things. Because sometimes papers kind of deviate a little bit, because it's too research focused. But for like practicality reasons,"
+    },
+    {
+      "start": 2899.24,
+      "end": 2908.36,
+      "text": "like practicality reasons, like those off the shelf harnesses have great documentations. They have great examples. The Langsmith that automatically kind of evolves the"
+    },
+    {
+      "start": 2907.82,
+      "end": 2917.22,
+      "text": "of evolves the agent is like a great place too. I think that there's off the shelf simple solutions first that you can try. And the documentation for"
+    },
+    {
+      "start": 2915.84,
+      "end": 2924.92,
+      "text": "the documentation for these harnesses, harness companies are very good. Is it also fair to say if I'm a business owner, and"
+    },
+    {
+      "start": 2924.12,
+      "end": 2933.62,
+      "text": "business owner, and I'm trying to wrap my head around this, Yeah. would you say that it's worth the struggle in initially"
+    },
+    {
+      "start": 2931.24,
+      "end": 2940.4,
+      "text": "struggle in initially understanding and learning this stuff, so that you have an advantage over someone who's not technical, or"
+    },
+    {
+      "start": 2938.04,
+      "end": 2947.86,
+      "text": "not technical, or they're intimidated in approaching it? Yeah, I think so from the business person perspective, I"
+    },
+    {
+      "start": 2945.96,
+      "end": 2955.34,
+      "text": "person perspective, I think the big takeaway from this talk is the fact that you want to model like your use case. You have"
+    },
+    {
+      "start": 2954.08,
+      "end": 2961.36,
+      "text": "case. You have to understand like, because it's your use case and it's very vertical, you want to tune that as best as you can if it's going to go"
+    },
+    {
+      "start": 2961.0,
+      "end": 2967.7,
+      "text": "going to go into your product. So like understanding if there's an engineer that's working on an agent, if they have any kind of benchmarks, like kind of what I"
+    },
+    {
+      "start": 2967.46,
+      "end": 2974.54,
+      "text": "of what I showed you, like can we model, like can I get enough data for the engineering team to like be able to accurately produce some of the same"
+    },
+    {
+      "start": 2974.22,
+      "end": 2982.02,
+      "text": "of the same results? And then can I see like a gradient, like let's create a benchmark from scratch, and like let's see how it does. And then that'll give"
+    },
+    {
+      "start": 2981.42,
+      "end": 2988.42,
+      "text": "then that'll give you, everything's like on a confidence score, right? Because like before you put it out to like a customer, you want to make sure it doesn't fully"
+    },
+    {
+      "start": 2987.76,
+      "end": 2996.84,
+      "text": "it doesn't fully hallucinate. So just like being aware that every use case is slightly different and you want to just make sure that you create like these"
+    },
+    {
+      "start": 2996.38,
+      "end": 3006.0,
+      "text": "create like these benchmarks that accurately represent what you're trying to build. And then you'll see a nice little plot graph and you'll be like, oh, we're at 80"
+    },
+    {
+      "start": 3004.84,
+      "end": 3014.88,
+      "text": "we're at 80 % for all these tasks in 1 ,000 runs. That should give you some like mapping of where you are. Yeah,"
+    },
+    {
+      "start": 3012.48,
+      "end": 3021.66,
+      "text": "you are. Yeah, because right now I think for the most part, everything's like based on vibes. So it's like, oh, I chatted with this agent. It's like, yeah,"
+    },
+    {
+      "start": 3020.84,
+      "end": 3029.9,
+      "text": "It's like, yeah, this is good. This is good. It's working. But when you run that like 1 ,000 times, like are you always going to say like,"
+    },
+    {
+      "start": 3029.44,
+      "end": 3036.48,
+      "text": "to say like, is this good? Or it hallucinates a little bit and like you lose that trust a little bit with your users, and then that might impact stuff."
+    },
+    {
+      "start": 3035.7,
+      "end": 3044.68,
+      "text": "might impact stuff. So like creating a lab or like kind of looking at it from this lens of like you're just probing around how it's improving will go a"
+    },
+    {
+      "start": 3043.66,
+      "end": 3052.9,
+      "text": "will go a long way. Awesome. Anybody? Anybody? Any other questions, folks? I think we're going to take a quick bathroom break."
+    },
+    {
+      "start": 3051.6,
+      "end": 3062.38,
+      "text": "quick bathroom break. First, I want to give it up for Esteban. Amazing. Amazing."
+    }
+  ],
+  "widgets": []
+}

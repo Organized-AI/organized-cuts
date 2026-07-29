@@ -5,15 +5,1082 @@
   "media_url": null,
   "twelvelabs": {
     "index_name": "session-4a-michael",
-    "index_id": null,
-    "video_id": null
+    "index_id": "6a558f8c2ca158187cd663be",
+    "video_id": "6a558f99b4e567cd48016003"
   },
   "masters": {
     "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 4A Michael/JORDAN_S001_S001_T004_ISO1.MOV",
     "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 4A Michael/JORDAN_S001_S001_T004_ISO2.MOV"
   },
-  "clips": [],
-  "transcript": [],
+  "clips": [
+    {
+      "id": "01",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 18,
+      "hook": "Scrape LinkedIn pros in seconds",
+      "caption": "Watch how I automate finding the perfect contacts for sponsorships—just input your goal, and the tool does the rest. #Automation #LinkedInHacks #DeveloperTools",
+      "start": 108.96,
+      "end": 128.96,
+      "duration": 20.0,
+      "crop_cx": 0.512,
+      "crop_x0": 680,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_01.mp4",
+      "still_person": "reels/compare/01_person.jpg",
+      "still_screen": "reels/compare/01_screen.jpg",
+      "transcript": "by by like like understanding understanding the the goals goals of of who who I'm I'm trying trying to to find find and and then then it it will will generate generate a a search search query query for for the the fuzzy fuzzy search search on on the the LinkedIn LinkedIn company company scraper scraper actor actor and and then then be be able able to to scrape scrape the the employees employees and and then then it it will will scrape scrape the the employee's employee's individual individual LinkedIns LinkedIns and and then then it it should should give give me me like like a a list list of of maybe maybe like like five five to to six six people people that that are are you you know know these these are are the the top top people people you you should should",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Automated LinkedIn Research Workflow Demo"
+    },
+    {
+      "id": "02",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 12,
+      "hook": "Code + Cloud = Power",
+      "caption": "Your skill lives in Claude, the actor runs on Appify’s cloud—lean, scalable, and seamless. #AIautomation #Appify #DeveloperTools",
+      "start": 150.0,
+      "end": 170.08,
+      "duration": 20.08,
+      "crop_cx": 0.509,
+      "crop_x0": 674,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_02.mp4",
+      "still_person": "reels/compare/02_person.jpg",
+      "still_screen": "reels/compare/02_screen.jpg",
+      "transcript": "the the skill skill lives lives inside inside of of Claude Claude and and the the actor actor lives lives on on the the cloud cloud with with Api Api and and so so if if I I was was using using Claude Claude Code Code which which you you are are using using Cloud Cloud Code Code my my code code base base owns owns the the skill skill but but the the actual actual actor actor is is outside outside of of my my code code base base which which means means my my code code base base",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Skill vs. Actor Architecture Explained"
+    },
+    {
+      "id": "03",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 15,
+      "hook": "Automate LinkedIn Outreach in Seconds",
+      "caption": "Watch how a simple skill pulls data from LinkedIn to find the perfect contacts—no coding needed. #AIautomation #DeveloperTools #WorkflowHacks",
+      "start": 233.72,
+      "end": 253.96,
+      "duration": 20.24,
+      "crop_cx": 0.497,
+      "crop_x0": 650,
+      "demo_lead_s": null,
+      "reel": "reels/reel_03.mp4",
+      "still_person": "reels/compare/03_person.jpg",
+      "still_screen": null,
+      "transcript": "them for me and so I have the skill created already so it should pick up on the intent and run the skill yes yep a",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Targeting the Right Person: Eric Dong Example"
+    },
+    {
+      "id": "04",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 25,
+      "hook": "Automate LinkedIn Prospecting",
+      "caption": "Run npm start, input your LinkedIn URL, and let the workflow auto-scout top talent. Perfect for hackathon sponsors & outreach. #AIautomation #DeveloperTools #LinkedInScraping",
+      "start": 265.96,
+      "end": 286.28,
+      "duration": 20.32,
+      "crop_cx": 0.522,
+      "crop_x0": 698,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_04.mp4",
+      "still_person": "reels/compare/04_person.jpg",
+      "still_screen": "reels/compare/04_screen.jpg",
+      "transcript": "run NPM start and then pass it in the LinkedIn URL with the thing that I asked for and then it'll go through the entire workflow by like understanding the goals of who I'm trying to find and then it will generate a search query for the fuzzy search on the LinkedIn company scraper actor and then be able to scrape the employees and then",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Emotional Messaging Strategy Revealed"
+    },
+    {
+      "id": "05",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 12,
+      "hook": "Code + Cloud = Seamless Power",
+      "caption": "Your skill lives in Claude, the actor runs on Appify’s cloud—no bloated code, just smart, scalable automation. #AI #Automation #Appify",
+      "start": 306.68,
+      "end": 327.24,
+      "duration": 20.56,
+      "crop_cx": 0.521,
+      "crop_x0": 696,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_05.mp4",
+      "still_person": "reels/compare/05_person.jpg",
+      "still_screen": "reels/compare/05_screen.jpg",
+      "transcript": "the actor in this case the significance I want to point out for the crowd in that is that the skill lives inside of Claude and the actor lives on the cloud with Api and so if I was using Claude Code which you are using Cloud Code my",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Dynamic Gesture During Key Insight"
+    },
+    {
+      "id": "06",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 15,
+      "hook": "Keep code lean, scale smart",
+      "caption": "When your actor lives outside your codebase, you get a lightweight, powerful workflow. Perfect for scaling without the bloat. #DevTools #Automation #CodeEfficiency",
+      "start": 330.68,
+      "end": 350.76,
+      "duration": 20.08,
+      "crop_cx": 0.5,
+      "crop_x0": 656,
+      "demo_lead_s": null,
+      "reel": "reels/reel_06.mp4",
+      "still_person": "reels/compare/06_person.jpg",
+      "still_screen": null,
+      "transcript": "actual actor is outside of my code base which means my code base won't be freaking huge and you can run a really lean situation if you wanted to yeah I think so I mean like the the way it set up now too like like the the the the workflow workflow is is local local and and that's that's so so so so like like the the way way that that it's it's",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Free $100 Platform Credit Offer"
+    },
+    {
+      "id": "07",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 17,
+      "hook": "Build workflows that scale",
+      "caption": "Learn how to abstract away complexity and let agents run your logic—no code, just results. #AIautomation #NoCodeFuture #DeveloperTools",
+      "start": 342.68,
+      "end": 362.76,
+      "duration": 20.08,
+      "crop_cx": 0.511,
+      "crop_x0": 676,
+      "demo_lead_s": null,
+      "reel": "reels/reel_07.mp4",
+      "still_person": "reels/compare/07_person.jpg",
+      "still_screen": null,
+      "transcript": "like the the way it set up now too like like the the the the workflow workflow is is local local and and that's that's so so so so like like the the way way that that it's it's calling calling the the actors actors is is the same the same every every time time and and so so I I always always try try to to think think about about how how much much I I can can develop abstract abstract like community away developers away from from that are able to publish the the and agent monetize agent actually their own needing actors to like make and so some of a them decision have found aside work from arounds just running to get the tool past LinkedIn so like I'm and a big fan of",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Expansive Arm Movements for Big Ideas"
+    },
+    {
+      "id": "08",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 19,
+      "hook": "Abstract the grind, not the genius",
+      "caption": "Turn developer workflows into plug-and-play magic. Let AI handle the heavy lifting while you focus on what matters—creating value. #AIautomation #DeveloperTools #FutureOfWork",
+      "start": 351.96,
+      "end": 372.04,
+      "duration": 20.08,
+      "crop_cx": 0.52,
+      "crop_x0": 694,
+      "demo_lead_s": null,
+      "reel": "reels/reel_08.mp4",
+      "still_person": "reels/compare/08_person.jpg",
+      "still_screen": null,
+      "transcript": "same every every time time and and so so I I always always try try to to think think about about how how much much I I can can develop abstract abstract like community away developers away from from that are able to publish the the and agent monetize agent actually their own needing actors to like make and so some of a them decision have found aside work from arounds just running to get the tool past LinkedIn so like I'm and a big fan of like our stance just on it abstracting again I'm not all the the lawyer business at the logic company of everything but I know all I I want want to say is we are as much as possible hands off and then just but telling if there's the agent, like a here you go DMCA and or just there's run somebody's it like, hey because if there's a problem at the end of you the guys day have this",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Why Only Appify-Maintained Actors Qualify"
+    },
+    {
+      "id": "09",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 18,
+      "hook": "Hackathon Hacks: Target Developers Right",
+      "caption": "Learn how to tailor your outreach to developers and sponsors by understanding their psychology—perfect for hackathons and product integrations. #DeveloperEngagement #HackathonTips #ProductGrowth",
+      "start": 423.72,
+      "end": 443.88,
+      "duration": 20.16,
+      "crop_cx": 0.486,
+      "crop_x0": 628,
+      "demo_lead_s": null,
+      "reel": "reels/reel_09.mp4",
+      "still_person": "reels/compare/09_person.jpg",
+      "still_screen": null,
+      "transcript": "like and I could run say the from skill the output could you go into more detail about the person's yes background to really like understand their psychology of like yep how I should approach them you know like hey a little you're bit more on the go to market team like you guys are trying to get new users like we're doing a hack as so on as you can would see you it's love to like do going a product to that actual like get like your product in directory the hands of where developers I have the versus workflow already created hey I see you've been in the hackathon space for a while you",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Public Data Only: Ethical Scraping Policy"
+    },
+    {
+      "id": "10",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 18,
+      "hook": "Test emails before sending!",
+      "caption": "Pro tip: Always test your automated emails on a personal account first. One accidental send can ruin your pitch. #AutomationTips #EmailMarketing #ProductivityHacks",
+      "start": 477.72,
+      "end": 497.72,
+      "duration": 20.0,
+      "crop_cx": 0.516,
+      "crop_x0": 686,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_10.mp4",
+      "still_person": "reels/compare/10_person.jpg",
+      "still_screen": "reels/compare/10_screen.jpg",
+      "transcript": "the past and just say what's up can I copy give that you and just a question while email it that's running I would so test it from a few what times I'm before understanding because I the skill did accidentally invokes send some the like unaccident actor and they were like not good in this emails case the so significance I would be I a want little to careful point out for the send crowd it to your in personal that first is that the skill but lives yeah so now inside this will of be the opportunity for everybody",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Residential Proxies for Human-Like Requests"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 5.94,
+      "text": "data, but there are creators on the... Hold on."
+    },
+    {
+      "start": 8.38,
+      "end": 12.2,
+      "text": "There are creators, like community developers, that are able to publish and"
+    },
+    {
+      "start": 12.2,
+      "end": 15.16,
+      "text": "monetize their own actors, and so some of them have found workarounds"
+    },
+    {
+      "start": 15.16,
+      "end": 19.64,
+      "text": "to get past LinkedIn, and our stance on it, again, I'm not"
+    },
+    {
+      "start": 19.64,
+      "end": 22.34,
+      "text": "the lawyer at the company, but all I want to say is"
+    },
+    {
+      "start": 22.34,
+      "end": 25.92,
+      "text": "we are hands -off, but if there's like a DMCA, or there's"
+    },
+    {
+      "start": 25.92,
+      "end": 28.2,
+      "text": "somebody who's like, hey, there's a problem, you guys have this tool"
+    },
+    {
+      "start": 28.2,
+      "end": 32.7,
+      "text": "on your platform, we will address it then, but we don't necessarily,"
+    },
+    {
+      "start": 32.96,
+      "end": 38.96,
+      "text": "I want to say, like preemptively take down actors if they're not"
+    },
+    {
+      "start": 38.96,
+      "end": 41.72,
+      "text": "causing an issue for the company that they're getting data from."
+    },
+    {
+      "start": 43.78,
+      "end": 48.0,
+      "text": "So the way I do this, like in the workflow that I"
+    },
+    {
+      "start": 48.0,
+      "end": 51.18,
+      "text": "have, because I know the companies, like I'll be on LinkedIn, I"
+    },
+    {
+      "start": 51.18,
+      "end": 52.92,
+      "text": "just want to go and grab the company and say, like, I"
+    },
+    {
+      "start": 52.92,
+      "end": 60.68,
+      "text": "want to find people that... Would be relevant to talk to about"
+    },
+    {
+      "start": 60.68,
+      "end": 68.62,
+      "text": "sponsoring a hackathon or conference at Google, and I'll say, like, you"
+    },
+    {
+      "start": 68.62,
+      "end": 71.6,
+      "text": "know, could you find them for me?"
+    },
+    {
+      "start": 73.22,
+      "end": 77.14,
+      "text": "And so I have the skill created already, so it should pick"
+    },
+    {
+      "start": 77.14,
+      "end": 80.74,
+      "text": "up on the intent and run the skill."
+    },
+    {
+      "start": 83.14,
+      "end": 83.62,
+      "text": "Yes."
+    },
+    {
+      "start": 86.44,
+      "end": 86.84,
+      "text": "Yep."
+    },
+    {
+      "start": 89.16,
+      "end": 89.94,
+      "text": "A little bit more."
+    },
+    {
+      "start": 92.6,
+      "end": 95.42,
+      "text": "So as you can see, it's like going to that actual, like,"
+    },
+    {
+      "start": 95.42,
+      "end": 100.52,
+      "text": "directory where I have the workflow already created, and all it knows"
+    },
+    {
+      "start": 100.52,
+      "end": 103.04,
+      "text": "to do is it just has to run npm start and then"
+    },
+    {
+      "start": 103.04,
+      "end": 106.32,
+      "text": "pass it in the LinkedIn URL with the thing that I asked"
+    },
+    {
+      "start": 106.32,
+      "end": 110.02,
+      "text": "for, and then it will go through the entire workflow by, like,"
+    },
+    {
+      "start": 110.02,
+      "end": 113.16,
+      "text": "understanding the goals of who I'm trying to find, and then it"
+    },
+    {
+      "start": 113.16,
+      "end": 116.54,
+      "text": "will generate a search query for the fuzzy search. So it's like,"
+    },
+    {
+      "start": 116.54,
+      "end": 119.02,
+      "text": "I'm going to do a search on the LinkedIn company scraper actor,"
+    },
+    {
+      "start": 119.2,
+      "end": 122.3,
+      "text": "and then be able to scrape the employees, and then it will"
+    },
+    {
+      "start": 122.3,
+      "end": 126.38,
+      "text": "scrape the employees' individual LinkedIns, and then it should give me, like,"
+    },
+    {
+      "start": 126.42,
+      "end": 128.58,
+      "text": "a list of maybe, like, five to six people that are, you"
+    },
+    {
+      "start": 128.58,
+      "end": 130.42,
+      "text": "know, these are the top people you should talk to for x,"
+    },
+    {
+      "start": 130.5,
+      "end": 133.1,
+      "text": "y, z reason. Give me their link and stuff like that."
+    },
+    {
+      "start": 134.38,
+      "end": 138.04,
+      "text": "Yeah, what's up? Can I give you a question while that's running?"
+    },
+    {
+      "start": 138.7,
+      "end": 144.14,
+      "text": "So from what I'm understanding, the skill invokes the actor in this"
+    },
+    {
+      "start": 144.14,
+      "end": 148.12,
+      "text": "case. Yeah. And so the... The significance I want to point out"
+    },
+    {
+      "start": 148.12,
+      "end": 152.72,
+      "text": "for the crowd in that is that the skill lives inside of"
+    },
+    {
+      "start": 153.96,
+      "end": 158.64,
+      "text": "Claude, and the actor lives on the cloud with Apify. Yes. And"
+    },
+    {
+      "start": 158.64,
+      "end": 161.94,
+      "text": "so if I was using Claude Code, which you are using Claude"
+    },
+    {
+      "start": 161.94,
+      "end": 167.72,
+      "text": "Code, my code base owns the skill, but the actual actor is"
+    },
+    {
+      "start": 167.72,
+      "end": 171.22,
+      "text": "outside of my code base, which means my code base won't be"
+    },
+    {
+      "start": 171.22,
+      "end": 176.76,
+      "text": "freaking huge, and you can run a really lean situation. If you"
+    },
+    {
+      "start": 176.76,
+      "end": 179.72,
+      "text": "wanted to. Yeah, I think so. I mean, like, the way it's"
+    },
+    {
+      "start": 179.72,
+      "end": 184.36,
+      "text": "set up now, too, like, the workflow is local, and that's so,"
+    },
+    {
+      "start": 184.36,
+      "end": 188.04,
+      "text": "like, the way that it's calling the actors is the same every"
+    },
+    {
+      "start": 188.04,
+      "end": 190.28,
+      "text": "time. And so I always try to think about how much I"
+    },
+    {
+      "start": 190.28,
+      "end": 194.1,
+      "text": "can abstract away from the agent actually needing to, like, make a"
+    },
+    {
+      "start": 194.1,
+      "end": 198.22,
+      "text": "decision aside from just running the tool. So, like, I'm a big"
+    },
+    {
+      "start": 198.22,
+      "end": 201.52,
+      "text": "fan of, like, just abstracting all the business logic of everything I"
+    },
+    {
+      "start": 201.52,
+      "end": 204.3,
+      "text": "know I want as much as possible, and then just telling the"
+    },
+    {
+      "start": 204.3,
+      "end": 206.76,
+      "text": "agent, here you go. And just running the tool. Run it. Because"
+    },
+    {
+      "start": 206.76,
+      "end": 209.28,
+      "text": "at the end of the day, the usefulness for me is that"
+    },
+    {
+      "start": 209.28,
+      "end": 212.24,
+      "text": "it's able to do this for me now, because I've given it"
+    },
+    {
+      "start": 212.24,
+      "end": 216.98,
+      "text": "this tool that has all the business logic, and I don't have"
+    },
+    {
+      "start": 216.98,
+      "end": 219.82,
+      "text": "to do it myself. Like, that's kind of the... But yeah, aside"
+    },
+    {
+      "start": 219.82,
+      "end": 222.64,
+      "text": "from that, you could just make a skill to call actors and"
+    },
+    {
+      "start": 222.64,
+      "end": 224.32,
+      "text": "just say, like, call this actor, and it would be able to"
+    },
+    {
+      "start": 224.32,
+      "end": 227.42,
+      "text": "call the actor. As long as you have the API key for"
+    },
+    {
+      "start": 227.42,
+      "end": 231.0,
+      "text": "Apify in your environment somewhere or export it globally, you'd be able"
+    },
+    {
+      "start": 231.0,
+      "end": 231.42,
+      "text": "to do that."
+    },
+    {
+      "start": 233.88,
+      "end": 236.94,
+      "text": "So, yeah, right here. So we've got Eric Dong, engineer. Developer advocate"
+    },
+    {
+      "start": 236.94,
+      "end": 241.02,
+      "text": "at Google Cloud. Most relevant of the three. He's also a mentor"
+    },
+    {
+      "start": 241.02,
+      "end": 243.88,
+      "text": "for Google for Startups, so he's close to the developer events world"
+    },
+    {
+      "start": 243.88,
+      "end": 245.36,
+      "text": "where hackathon sponsorships are champion."
+    },
+    {
+      "start": 246.66,
+      "end": 249.88,
+      "text": "And I'll show you just to... You know, I'll give you proof,"
+    },
+    {
+      "start": 249.98,
+      "end": 251.8,
+      "text": "like, he actually... This guy works at Google."
+    },
+    {
+      "start": 255.84,
+      "end": 258.9,
+      "text": "And maybe, like, I could, in the skill, make it a bit"
+    },
+    {
+      "start": 258.9,
+      "end": 262.34,
+      "text": "more, like... Like, I could say, from the output, could you go"
+    },
+    {
+      "start": 262.34,
+      "end": 265.76,
+      "text": "into more detail about the person's background to really, like, understand their"
+    },
+    {
+      "start": 265.76,
+      "end": 269.56,
+      "text": "psychology? Of, like, how I should approach them? You know, like, hey,"
+    },
+    {
+      "start": 269.66,
+      "end": 271.54,
+      "text": "you're on the go -to -market team. Like, you guys are trying"
+    },
+    {
+      "start": 271.54,
+      "end": 273.62,
+      "text": "to get new users. Like, we're doing a hackathon. Would you love"
+    },
+    {
+      "start": 273.62,
+      "end": 276.04,
+      "text": "to do a product? Like, get your product in the hands of"
+    },
+    {
+      "start": 276.04,
+      "end": 279.22,
+      "text": "developers versus, hey, I see you've been in the hackathon space for"
+    },
+    {
+      "start": 279.22,
+      "end": 281.4,
+      "text": "a while. You got a passion, a love for the game. Like,"
+    },
+    {
+      "start": 281.42,
+      "end": 283.62,
+      "text": "kind of play into the, like, the emotional side of it. And"
+    },
+    {
+      "start": 283.62,
+      "end": 285.58,
+      "text": "that does make a difference when you're reaching out to people. So"
+    },
+    {
+      "start": 285.58,
+      "end": 288.9,
+      "text": "that is something I could add to the skill just as a,"
+    },
+    {
+      "start": 288.92,
+      "end": 295.46,
+      "text": "like, an aside. Even better if. Huh? Even better if. Yeah. Yeah."
+    },
+    {
+      "start": 295.6,
+      "end": 295.88,
+      "text": "Yeah."
+    },
+    {
+      "start": 302.32,
+      "end": 304.28,
+      "text": "Yeah. Yeah."
+    },
+    {
+      "start": 309.58,
+      "end": 312.56,
+      "text": "Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "start": 318.94,
+      "end": 321.72,
+      "text": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "start": 326.56,
+      "end": 329.22,
+      "text": "So I would be a little careful. Send it to your personal"
+    },
+    {
+      "start": 329.22,
+      "end": 329.52,
+      "text": "first."
+    },
+    {
+      "start": 331.2,
+      "end": 333.7,
+      "text": "But yeah, so now this will be the opportunity for everybody to"
+    },
+    {
+      "start": 333.7,
+      "end": 335.96,
+      "text": "try it themselves. First, I do want to give everybody here,"
+    },
+    {
+      "start": 337.4,
+      "end": 343.36,
+      "text": "this is $100 in platform usage for Apify. I will say that"
+    },
+    {
+      "start": 343.36,
+      "end": 346.2,
+      "text": "the coupon that you apply, I'll also show you how to apply"
+    },
+    {
+      "start": 346.2,
+      "end": 349.58,
+      "text": "it here on the screen as well. It only works for Apify"
+    },
+    {
+      "start": 349.58,
+      "end": 352.32,
+      "text": "-maintained actors. And when I say that, like I mentioned, we have"
+    },
+    {
+      "start": 352.32,
+      "end": 356.26,
+      "text": "a lot of community developers. And we paid out like $1 .2"
+    },
+    {
+      "start": 356.26,
+      "end": 359.7,
+      "text": "million to creators on the platform last month. So if we took"
+    },
+    {
+      "start": 359.7,
+      "end": 362.96,
+      "text": "away any of their money, they would be very upset. And I'm"
+    },
+    {
+      "start": 362.96,
+      "end": 366.46,
+      "text": "also technically on the community team, so I would be receiving the"
+    },
+    {
+      "start": 366.46,
+      "end": 368.44,
+      "text": "brunt of that. So I do want to just explain it a"
+    },
+    {
+      "start": 368.44,
+      "end": 370.98,
+      "text": "little bit because people might get a little upset, like why does"
+    },
+    {
+      "start": 370.98,
+      "end": 373.1,
+      "text": "it not work for all actors? But there's a lot of people"
+    },
+    {
+      "start": 373.1,
+      "end": 376.86,
+      "text": "that make their livelihoods off of this and support their families. So"
+    },
+    {
+      "start": 376.86,
+      "end": 380.34,
+      "text": "it's just for the Apify -maintained actors. That being said, though,"
+    },
+    {
+      "start": 381.54,
+      "end": 384.02,
+      "text": "we have plenty of actors who are going to be able to"
+    },
+    {
+      "start": 384.02,
+      "end": 386.74,
+      "text": "apply it to their community. That you should be able to use."
+    },
+    {
+      "start": 386.88,
+      "end": 390.2,
+      "text": "So if I go over to the store and I show you"
+    },
+    {
+      "start": 390.2,
+      "end": 390.44,
+      "text": "like,"
+    },
+    {
+      "start": 391.8,
+      "end": 393.16,
+      "text": "I got to find one that's Apify."
+    },
+    {
+      "start": 399.56,
+      "end": 399.88,
+      "text": "No."
+    },
+    {
+      "start": 407.0,
+      "end": 409.76,
+      "text": "So most of the, so this is all, again, these are like"
+    },
+    {
+      "start": 409.76,
+      "end": 412.88,
+      "text": "Apify where you do like Facebook ads, scrape like Amazon. We have"
+    },
+    {
+      "start": 412.88,
+      "end": 415.98,
+      "text": "like a generic, like website content crawler, which is like very robust."
+    },
+    {
+      "start": 416.22,
+      "end": 420.88,
+      "text": "We have like an AI stagehand actor. The reason that you don't"
+    },
+    {
+      "start": 420.88,
+      "end": 424.78,
+      "text": "need to log into your accounts for the social media stuff, it's"
+    },
+    {
+      "start": 424.78,
+      "end": 427.12,
+      "text": "like a pro, but also could be a limitation depending on what"
+    },
+    {
+      "start": 427.12,
+      "end": 429.92,
+      "text": "you're trying to do. Like somebody was saying, would I be able"
+    },
+    {
+      "start": 429.92,
+      "end": 433.8,
+      "text": "to scrape like my mutuals or other people that follow a company?"
+    },
+    {
+      "start": 433.98,
+      "end": 435.94,
+      "text": "And it's like, you'd have to log into your account probably to"
+    },
+    {
+      "start": 435.94,
+      "end": 439.82,
+      "text": "be able to see that. But we only focus on scraping data"
+    },
+    {
+      "start": 440.36,
+      "end": 443.2,
+      "text": "that's accessible to the public. So if it was a private, private"
+    },
+    {
+      "start": 443.2,
+      "end": 447.44,
+      "text": "Instagram account, we wouldn't scrape it. We can't scrape it. Like we"
+    },
+    {
+      "start": 447.44,
+      "end": 449.76,
+      "text": "probably could, but we won't is the idea."
+    },
+    {
+      "start": 455.28,
+      "end": 459.44,
+      "text": "I thought that was true, but again, the actor that I'm using"
+    },
+    {
+      "start": 459.44,
+      "end": 462.78,
+      "text": "is not maintained by us. I don't know how Harvest API did"
+    },
+    {
+      "start": 462.78,
+      "end": 463.04,
+      "text": "that."
+    },
+    {
+      "start": 464.8,
+      "end": 466.88,
+      "text": "We could maybe do like an interview with him. I feel like"
+    },
+    {
+      "start": 466.88,
+      "end": 471.08,
+      "text": "that'd be interesting because LinkedIn is very hard to get by. And"
+    },
+    {
+      "start": 471.08,
+      "end": 474.14,
+      "text": "then aside from that, we also manage like the proxies. So like"
+    },
+    {
+      "start": 474.14,
+      "end": 476.12,
+      "text": "when you're making a request to the site, you know, you have"
+    },
+    {
+      "start": 476.12,
+      "end": 478.9,
+      "text": "your IP address and it's like, this is coming from this person."
+    },
+    {
+      "start": 479.14,
+      "end": 481.02,
+      "text": "If you send a thousand of those, they're probably going to say"
+    },
+    {
+      "start": 481.02,
+      "end": 484.64,
+      "text": "you're blocked. And we have a really cool proxy called the residential"
+    },
+    {
+      "start": 484.64,
+      "end": 488.84,
+      "text": "proxies where we'll route the requests through different residential IP addresses to"
+    },
+    {
+      "start": 488.84,
+      "end": 491.14,
+      "text": "make it look even more human. So that's usually what people will"
+    },
+    {
+      "start": 491.14,
+      "end": 495.66,
+      "text": "use for getting to like the social media stuff without triggering. I"
+    },
+    {
+      "start": 495.66,
+      "end": 497.96,
+      "text": "just want to give you guys the goods. Like that's what we"
+    },
+    {
+      "start": 497.96,
+      "end": 498.12,
+      "text": "do."
+    },
+    {
+      "start": 500.22,
+      "end": 503.12,
+      "text": "So the way to apply the code, I just want to say,"
+    },
+    {
+      "start": 503.12,
+      "end": 505.02,
+      "text": "I just want to show you because it is a bit sneaky."
+    },
+    {
+      "start": 505.4,
+      "end": 510.08,
+      "text": "It's in billing. And then you want to go to subscription"
+    },
+    {
+      "start": 512.08,
+      "end": 516.22,
+      "text": "and you add, you apply the promo code just like that. So"
+    },
+    {
+      "start": 516.22,
+      "end": 518.72,
+      "text": "you will need to sign up for Apify. That is the only"
+    },
+    {
+      "start": 518.72,
+      "end": 521.12,
+      "text": "gotcha. If you like don't want to sign up, you won't be"
+    },
+    {
+      "start": 521.12,
+      "end": 524.68,
+      "text": "able to follow the workshop, but it's a good platform. Like I"
+    },
+    {
+      "start": 524.68,
+      "end": 527.22,
+      "text": "used Apify before I even joined. So that was like one of"
+    },
+    {
+      "start": 527.22,
+      "end": 528.52,
+      "text": "the reasons I was excited to join them."
+    },
+    {
+      "start": 530.22,
+      "end": 533.24,
+      "text": "And then I, everybody's gotten a picture of the coupon."
+    },
+    {
+      "start": 534.72,
+      "end": 539.44,
+      "text": "Okay. This is the QR code for the GitHub repo. The way"
+    },
+    {
+      "start": 539.44,
+      "end": 541.92,
+      "text": "it's going to work, this is going to be self -paced. Each"
+    },
+    {
+      "start": 541.92,
+      "end": 545.16,
+      "text": "lesson is just like a step in the process. I will be"
+    },
+    {
+      "start": 545.16,
+      "end": 548.42,
+      "text": "basically doing it from scratch with you guys on the big screen."
+    },
+    {
+      "start": 548.98,
+      "end": 552.46,
+      "text": "And when I hit like a certain checkpoint, I will ask people"
+    },
+    {
+      "start": 552.46,
+      "end": 555.24,
+      "text": "if they are running into any issues or if they have any"
+    },
+    {
+      "start": 555.24,
+      "end": 555.66,
+      "text": "questions."
+    },
+    {
+      "start": 557.2,
+      "end": 559.24,
+      "text": "And then we'll just keep going from there. But the goal is"
+    },
+    {
+      "start": 559.24,
+      "end": 563.08,
+      "text": "you should be able to recreate the workflow that I made. If"
+    },
+    {
+      "start": 563.08,
+      "end": 566.32,
+      "text": "you would like to try to find Apify actors yourself and come"
+    },
+    {
+      "start": 566.32,
+      "end": 570.7,
+      "text": "up with your own workflow, feel free. I will just give you"
+    },
+    {
+      "start": 570.7,
+      "end": 573.1,
+      "text": "a warning that you'll be maybe more in the deep end because"
+    },
+    {
+      "start": 573.1,
+      "end": 576.26,
+      "text": "if you use an actor I have never used before, I may"
+    },
+    {
+      "start": 576.26,
+      "end": 578.54,
+      "text": "not know how to debug it as much. There's like 40 ,000"
+    },
+    {
+      "start": 578.54,
+      "end": 579.1,
+      "text": "different actors."
+    },
+    {
+      "start": 580.5,
+      "end": 585.66,
+      "text": "But that's up to you. So that is like the presentation part."
+    },
+    {
+      "start": 585.82,
+      "end": 588.62,
+      "text": "Maybe do we want to do Q &A before the workshop or"
+    },
+    {
+      "start": 588.62,
+      "end": 592.88,
+      "text": "after the workshop? Let's do a quick Q &A. Then the workshop."
+    },
+    {
+      "start": 592.88,
+      "end": 594.76,
+      "text": "What's up?"
+    }
+  ],
   "widgets": [],
   "assets": {
     "reels_dir": "session-4a-michael/reels",

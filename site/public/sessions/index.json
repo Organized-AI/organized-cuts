@@ -6,5 +6,61 @@
     "duration": 2537.0,
     "chapters": 4,
     "widgets": 4
+  },
+  {
+    "name": "vault-ct-tokenomics",
+    "title": "CT - Tokenomics",
+    "speaker": "CT - Tokenomics",
+    "duration": 1677.0,
+    "chapters": 10,
+    "widgets": 0
+  },
+  {
+    "name": "vault-esteban-mastering-harness-engineering",
+    "title": "Esteban - Mastering Harness Engineering",
+    "speaker": "Esteban - Mastering Harness Engineering",
+    "duration": 3062.8,
+    "chapters": 24,
+    "widgets": 0
+  },
+  {
+    "name": "vault-henry-mastering-ai-loops",
+    "title": "Henry - Mastering AI Loops",
+    "speaker": "Henry - Mastering AI Loops",
+    "duration": 1717.87,
+    "chapters": 24,
+    "widgets": 0
+  },
+  {
+    "name": "vault-jordaaan-observability",
+    "title": "Jordaaan - Observability",
+    "speaker": "Jordaaan - Observability",
+    "duration": 1918.93,
+    "chapters": 10,
+    "widgets": 0
+  },
+  {
+    "name": "vault-michael-real-time-web-data-for-agents",
+    "title": "Michael - Real-Time Web Data for Agents",
+    "speaker": "Michael - Real-Time Web Data for Agents",
+    "duration": 2267.6,
+    "chapters": 40,
+    "widgets": 0
+  },
+  {
+    "name": "vault-rohit-local-ai-without-the-cloud",
+    "title": "Rohit - Local AI Without the Cloud",
+    "speaker": "Rohit - Local AI Without the Cloud",
+    "duration": 1140.9,
+    "chapters": 17,
+    "widgets": 0
+  },
+  {
+    "name": "vault-shep-build-your-second-brain",
+    "title": "Shep - Build Your Second Brain",
+    "speaker": "Shep - Build Your Second Brain",
+    "duration": 2115.63,
+    "chapters": 20,
+    "widgets": 0
   }
 ]

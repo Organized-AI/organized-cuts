@@ -5,15 +5,797 @@
   "media_url": null,
   "twelvelabs": {
     "index_name": "session-3-rohit",
-    "index_id": null,
-    "video_id": null
+    "index_id": "6a54f1fd6ca01e685ca0dc90",
+    "video_id": "6a54f20903d291c7a1a7c760"
   },
   "masters": {
     "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 3 Rohit/JORDAN_S001_S001_T001_ISO1.MOV",
     "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 3 Rohit/JORDAN_S001_S001_T001_ISO2.MOV"
   },
-  "clips": [],
-  "transcript": [],
+  "clips": [
+    {
+      "id": "01",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 11,
+      "hook": "Run AI Locally, Own Your Data",
+      "caption": "Rohit from WebAI shows how local AI gives you control, saves costs, and keeps your data private—no cloud, no surprises. #AI #LocalAI #DataPrivacy",
+      "start": 154.88,
+      "end": 174.96,
+      "duration": 20.08,
+      "crop_cx": 0.588,
+      "crop_x0": 824,
+      "demo_lead_s": null,
+      "reel": "reels/reel_01.mp4",
+      "still_person": "reels/compare/01_person.jpg",
+      "still_screen": null,
+      "transcript": "right right now now thank thank you you uh uh hey hey guys guys uh uh thank thank you you thank thank you you all all for for being being here here and and I'm I'm Rohit Rohit and and I'm I'm a a machine machine learning learning engineer engineer here here at at Webai Webai where where I I basically basically work work on on running running AI AI locally locally byte. as as mentioned mentioned and and the the example example that that he he exactly exactly stated stated is is something something which which we we worked worked on on",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Rohit Introduces Himself and WebAI"
+    },
+    {
+      "id": "02",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 16,
+      "hook": "Clap clap—time to wrap up!",
+      "caption": "Got 5 minutes to spare? Let’s hit four o’clock and call it a day. Snacks stay, focus stays—no food theft, just vibes. #WorkSmart #LocalAI #TeamEnergy",
+      "start": 205.96,
+      "end": 226.92,
+      "duration": 20.96,
+      "crop_cx": 0.598,
+      "crop_x0": 844,
+      "demo_lead_s": null,
+      "reel": "reels/reel_02.mp4",
+      "still_person": "reels/compare/02_person.jpg",
+      "still_screen": null,
+      "transcript": "to hit that four o'clock so I can get y'all out of here if I can get everybody's attention real quick clap clap clap I'm not saying I'm not going to take your food",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Local AI as a Hidden Advantage"
+    },
+    {
+      "id": "03",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 11,
+      "hook": "First heard of local AI at Austin Tech Week",
+      "caption": "Three years ago, a talk at Capital Factory changed everything—showing how local AI in cameras could revolutionize data privacy. #LocalAI #TechInnovation #AustinTechWeek",
+      "start": 247.0,
+      "end": 268.36,
+      "duration": 21.36,
+      "crop_cx": 0.595,
+      "crop_x0": 838,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_03.mp4",
+      "still_person": "reels/compare/03_person.jpg",
+      "still_screen": "reels/compare/03_screen.jpg",
+      "transcript": "first place I ever heard about local models. And that was gosh three years ago at a Austin Tech Week talk at Capital Factory their CEO David was given a talk and showing how uh they use cameras with local AI at an",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Agents Multiply Costs—Not Just Add Them"
+    },
+    {
+      "id": "04",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 15,
+      "hook": "Run AI locally. Own your data.",
+      "caption": "No more cloud dependency. With local AI, your data stays private, your costs drop, and you keep full control—right from your closet or server room. #LocalAI #DataPrivacy #OnPremAI",
+      "start": 277.96,
+      "end": 297.96,
+      "duration": 20.0,
+      "crop_cx": 0.604,
+      "crop_x0": 854,
+      "demo_lead_s": null,
+      "reel": "reels/reel_04.mp4",
+      "still_person": "reels/compare/04_person.jpg",
+      "still_screen": null,
+      "transcript": "lot better than that but essentially they are an outfit that is all about local models and being able to have your own little data center, miniature data center in a closet server room on prem so you have data sovereignty you don't have to worry about privacy things",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "GPT-5.6 vs. Opus 4.8: Twice the Cost, Twice the Time"
+    },
+    {
+      "id": "05",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 9,
+      "hook": "The unseen advantage of local AI",
+      "caption": "Roy from WebAI reveals how running AI locally gives you total data control—no cloud, no surprises, just power in your hands. #LocalAI #DataPrivacy #WebAI",
+      "start": 309.08,
+      "end": 329.16,
+      "duration": 20.08,
+      "crop_cx": 0.596,
+      "crop_x0": 840,
+      "demo_lead_s": null,
+      "reel": "reels/reel_05.mp4",
+      "still_person": "reels/compare/05_person.jpg",
+      "still_screen": null,
+      "transcript": "will never know anything about it right the unseen advantage is what I like to call that anyways Roy's going to talk a little bit about WebAI so if you will uh give him some attention right now thank you uh hey guys uh thank you thank you all for being here and I'm",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Every Cloud Call Sends Your Data to Others"
+    },
+    {
+      "id": "06",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 11,
+      "hook": "Run AI Locally, Own Your Data",
+      "caption": "Rohit from Webei explains how local AI lets you keep data private, cut costs, and use existing hardware—no cloud needed. #AI #LocalAI #MachineLearning",
+      "start": 329.88,
+      "end": 350.92,
+      "duration": 21.04,
+      "crop_cx": 0.597,
+      "crop_x0": 842,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_06.mp4",
+      "still_person": "reels/compare/06_person.jpg",
+      "still_screen": "reels/compare/06_screen.jpg",
+      "transcript": "and I'm a machine learning engineer here at Webei where I basically work on running AI locally as mentioned and the example that he exactly stated is something which we worked on like even before I joined the company and these days everything is all everything is Everything about is about LLM LLM, so so that's that's where where I I come in come in, and and the the previous previous presentation presentation by",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Local AI: You Own the Data, Not the Cloud"
+    },
+    {
+      "id": "07",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 13,
+      "hook": "Local AI: The Hidden Advantage",
+      "caption": "CT’s setup proves that routing cheap work to local models saves cost and keeps data private. Power your AI on-prem—no cloud fees, no surprises. #LocalAI #PrivacyFirst #OnPremAI",
+      "start": 351.0,
+      "end": 371.0,
+      "duration": 20.0,
+      "crop_cx": 0.598,
+      "crop_x0": 844,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_07.mp4",
+      "still_person": "reels/compare/07_person.jpg",
+      "still_screen": "reels/compare/07_screen.jpg",
+      "transcript": "by CT CT was was the the perfect perfect setup setup for for this this where where he he just just showed showed you you a a fix fix for for the the dying dying plan plan where where you you need need to to send send everything everything to to the the best best model model and and route route the the cheap cheap work work to to the the cheaper cheaper models models, and and you you can can have have the the right judgment. judgment now extended on the fable all right you okay And I want",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Hardware Is the Only Real Cost"
+    },
+    {
+      "id": "08",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 13,
+      "hook": "Your laptop, your AI advantage",
+      "caption": "The future of AI is local—run powerful models on your existing hardware, keep data private, and cut costs. #LocalAI #PrivacyFirst #FutureOfTech",
+      "start": 360.92,
+      "end": 381.48,
+      "duration": 20.56,
+      "crop_cx": 0.597,
+      "crop_x0": 842,
+      "demo_lead_s": null,
+      "reel": "reels/reel_08.mp4",
+      "still_person": "reels/compare/08_person.jpg",
+      "still_screen": null,
+      "transcript": "models models, and and you you can can have have the the right judgment. judgment now extended on the fable all right you okay And I want I to was take like that I exact know you idea know I and know make you that know I know one you step further know because all right hey the cheaper uh everybody's tyrant is in the attention high queue, real quick real quick and it's the model that's running on your laptop in front of you, or if you have any other",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Cost Per Call Drops with Usage"
+    },
+    {
+      "id": "09",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 13,
+      "hook": "Roll Servers at Home, Not Cloud",
+      "caption": "Use old laptops & GPUs to run AI locally—zero extra cost, full data control. #LocalAI #CostSaving #SmartTech",
+      "start": 382.36,
+      "end": 402.6,
+      "duration": 20.24,
+      "crop_cx": 0.597,
+      "crop_x0": 842,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_09.mp4",
+      "still_person": "reels/compare/09_person.jpg",
+      "still_screen": "reels/compare/09_screen.jpg",
+      "transcript": "server setups in your home we or gotta any other keep older rolling laptops we gotta or keep some rolling GPUs to hit that that you have four lying o'clock so around, I can get y'all out of here and the work that he called two dumb to need fable if I can get is everybody's exactly where attention the local real model quick does it for zero clap marginal clap cost clap for all for the amount that you have already paid for your laptops or existing infra that you might be having, and",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Right Model for Your Hardware: MLX, OLAMA, Lama CPP"
+    },
+    {
+      "id": "10",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 12,
+      "hook": "Local AI = No Hidden Costs",
+      "caption": "WebAI’s local models cut agent costs by running on your existing hardware—no more surprise bills. #AI #LocalAI #CostEfficiency",
+      "start": 411.88,
+      "end": 432.04,
+      "duration": 20.16,
+      "crop_cx": 0.608,
+      "crop_x0": 864,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_10.mp4",
+      "still_person": "reels/compare/10_person.jpg",
+      "still_screen": "reels/compare/10_screen.jpg",
+      "transcript": "this case, making a quick announcement continue agents eating just doesn't please add the cost, the usual multiply it they Roy plan from call tools, WebAI is kind read enough to the be results, here WebAI reflect, is retry, a and huge spawn multiples um subagents uh startup here and in town one action it's quitely literally the becomes first place I ten ever to heard fifty about calls local under the hood models. without you actually realizing it, And that was and the",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "SGLang for Agentic Workflows and RAG"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 3.09,
+      "end": 4.95,
+      "text": "Hope you're not mid -bite"
+    },
+    {
+      "start": 10.46,
+      "end": 12.98,
+      "text": "We got to get you on the you"
+    },
+    {
+      "start": 16.47,
+      "end": 18.89,
+      "text": "might be on like extended display or something right now"
+    },
+    {
+      "start": 20.59,
+      "end": 20.95,
+      "text": "extend"
+    },
+    {
+      "start": 23.12,
+      "end": 23.48,
+      "text": "you"
+    },
+    {
+      "start": 26.04,
+      "end": 28.58,
+      "text": "Okay, I was like, I know, you know, I know, you know,"
+    },
+    {
+      "start": 28.64,
+      "end": 32.92,
+      "text": "I know, you know All right. Hey Everybody's attention real quick real"
+    },
+    {
+      "start": 32.92,
+      "end": 33.14,
+      "text": "quick"
+    },
+    {
+      "start": 38.97,
+      "end": 41.71,
+      "text": "We got to keep rolling. We got to keep rolling to hit"
+    },
+    {
+      "start": 41.71,
+      "end": 43.57,
+      "text": "that four o 'clock so I can get y 'all out of"
+    },
+    {
+      "start": 43.57,
+      "end": 43.73,
+      "text": "here"
+    },
+    {
+      "start": 47.06,
+      "end": 51.32,
+      "text": "If I can get everybody's attention real quick Clap clap clap."
+    },
+    {
+      "start": 60.34,
+      "end": 63.0,
+      "text": "I'm not saying I'm not going to take your food. Don't look"
+    },
+    {
+      "start": 63.0,
+      "end": 65.14,
+      "text": "at me like that You're good"
+    },
+    {
+      "start": 66.54,
+      "end": 70.0,
+      "text": "I'm just making a quick announcement continue eating, please"
+    },
+    {
+      "start": 72.1,
+      "end": 76.04,
+      "text": "Right from web AI is kind enough to be here web AI"
+    },
+    {
+      "start": 76.04,
+      "end": 77.76,
+      "text": "is a huge"
+    },
+    {
+      "start": 79.64,
+      "end": 84.42,
+      "text": "Startup here in town. It's literally the first place I ever heard"
+    },
+    {
+      "start": 84.42,
+      "end": 90.52,
+      "text": "about local models and that was gosh three years ago at a"
+    },
+    {
+      "start": 91.36,
+      "end": 96.66,
+      "text": "Austin tech week talk at Capital Factory their CEO David was given"
+    },
+    {
+      "start": 96.66,
+      "end": 103.9,
+      "text": "a talk and showing how they use cameras with local AI at"
+    },
+    {
+      "start": 103.9,
+      "end": 108.42,
+      "text": "an airport to then track the bags that get transferred from plane"
+    },
+    {
+      "start": 108.42,
+      "end": 112.46,
+      "text": "the plane and Some things like isn't that what it is? Pretty"
+    },
+    {
+      "start": 112.46,
+      "end": 116.16,
+      "text": "much. He's gonna explain a lot better than that But essentially they"
+    },
+    {
+      "start": 116.16,
+      "end": 122.2,
+      "text": "are an outfit that Is all about? Local models and being able"
+    },
+    {
+      "start": 122.2,
+      "end": 126.08,
+      "text": "to have your own little data center miniature data center in a"
+    },
+    {
+      "start": 126.08,
+      "end": 132.44,
+      "text": "closet server room on -prem So you have data sovereignty? You don't"
+    },
+    {
+      "start": 132.44,
+      "end": 136.46,
+      "text": "have to worry about privacy things you can make a custom harness"
+    },
+    {
+      "start": 136.46,
+      "end": 140.76,
+      "text": "to go with a custom LLM and merge them together and have"
+    },
+    {
+      "start": 140.76,
+      "end": 146.62,
+      "text": "AI capabilities on -prem and your competitors will never know Anything about"
+    },
+    {
+      "start": 146.62,
+      "end": 149.76,
+      "text": "it, right? The unseen advantage is what I like to call that"
+    },
+    {
+      "start": 150.3,
+      "end": 153.12,
+      "text": "Anyways, what's going to talk a little bit about web AI? So"
+    },
+    {
+      "start": 153.12,
+      "end": 156.38,
+      "text": "if you will give him some attention right now. Thank you"
+    },
+    {
+      "start": 160.12,
+      "end": 164.88,
+      "text": "Hey guys, thank you. Thank you all for being here and I'm"
+    },
+    {
+      "start": 164.88,
+      "end": 168.12,
+      "text": "Rohit and I'm a machine learning engineer here at web AI where"
+    },
+    {
+      "start": 168.12,
+      "end": 172.76,
+      "text": "basically work on running a locally as mentioned and The example that"
+    },
+    {
+      "start": 172.76,
+      "end": 176.88,
+      "text": "he exactly stated is something which we worked on like even before"
+    },
+    {
+      "start": 176.88,
+      "end": 181.04,
+      "text": "I joined the company and These days everything is all everything is"
+    },
+    {
+      "start": 181.04,
+      "end": 186.3,
+      "text": "about LLM. So that's where I come in and The previous presentation"
+    },
+    {
+      "start": 186.3,
+      "end": 190.18,
+      "text": "by CT was the perfect setup for this where he just showed"
+    },
+    {
+      "start": 190.18,
+      "end": 192.9,
+      "text": "you a fix for the dying plan where you need to send"
+    },
+    {
+      "start": 192.9,
+      "end": 196.28,
+      "text": "everything to the best model and all the cheap work to the"
+    },
+    {
+      "start": 196.28,
+      "end": 201.36,
+      "text": "cheaper models and You can have the judgment on the fable the"
+    },
+    {
+      "start": 201.36,
+      "end": 204.14,
+      "text": "the top most top tier model by Claude at this point and"
+    },
+    {
+      "start": 204.14,
+      "end": 207.36,
+      "text": "you can delegate the labor and I want to take that exactly"
+    },
+    {
+      "start": 207.36,
+      "end": 211.4,
+      "text": "idea and make that a one step further because the cheaper tyrant"
+    },
+    {
+      "start": 211.4,
+      "end": 214.72,
+      "text": "is in the high queue and It's the model that's running on"
+    },
+    {
+      "start": 214.72,
+      "end": 217.28,
+      "text": "your laptop in front of you or if you have any other"
+    },
+    {
+      "start": 217.82,
+      "end": 221.28,
+      "text": "server setups in your home or any other older laptops or some"
+    },
+    {
+      "start": 221.28,
+      "end": 225.46,
+      "text": "GPUs that you have lying around and The work that he called"
+    },
+    {
+      "start": 225.46,
+      "end": 229.76,
+      "text": "to dump to need fable is exactly where the local model does"
+    },
+    {
+      "start": 229.76,
+      "end": 233.6,
+      "text": "it for zero marginal costs for all? For the amount that you"
+    },
+    {
+      "start": 233.6,
+      "end": 236.76,
+      "text": "have already paid for your laptops or existing in front that you"
+    },
+    {
+      "start": 236.76,
+      "end": 240.3,
+      "text": "might be having And I'm coming at this as a developer standpoint"
+    },
+    {
+      "start": 240.3,
+      "end": 244.44,
+      "text": "and everything I show you is open source and runs on hardware"
+    },
+    {
+      "start": 244.44,
+      "end": 250.44,
+      "text": "you already own so in this case Agents just doesn't add the"
+    },
+    {
+      "start": 250.44,
+      "end": 255.1,
+      "text": "cost they usually multiply it they plan call tools read the results"
+    },
+    {
+      "start": 255.1,
+      "end": 261.88,
+      "text": "reflect retry and more and spawn multiple sub agents and One action"
+    },
+    {
+      "start": 261.88,
+      "end": 266.14,
+      "text": "quietly becomes ten to fifty calls under the hood without you actually"
+    },
+    {
+      "start": 266.14,
+      "end": 270.76,
+      "text": "realizing it And the build scales with the amount of time steps"
+    },
+    {
+      "start": 270.76,
+      "end": 275.24,
+      "text": "that it runs And in my own use case since GPT has"
+    },
+    {
+      "start": 275.24,
+      "end": 280.82,
+      "text": "released GPT 5.6 two days ago I Want to test how long"
+    },
+    {
+      "start": 280.82,
+      "end": 283.98,
+      "text": "it goes when it compares to the already existing model that I"
+    },
+    {
+      "start": 283.98,
+      "end": 287.3,
+      "text": "am mostly using which is focus 4.8 and I gave the exact"
+    },
+    {
+      "start": 287.3,
+      "end": 290.58,
+      "text": "same prompt it and it has access to the exact same repository"
+    },
+    {
+      "start": 290.58,
+      "end": 294.38,
+      "text": "that you that you have and It took twice the more twice"
+    },
+    {
+      "start": 294.38,
+      "end": 298.26,
+      "text": "the time and twice the cost that is needed over The regular"
+    },
+    {
+      "start": 298.26,
+      "end": 305.32,
+      "text": "Opus 4.8 and it basically ran multiple reasoning passes Sometimes needed but"
+    },
+    {
+      "start": 305.32,
+      "end": 308.14,
+      "text": "most of the times we definitely do not need all those reasoning"
+    },
+    {
+      "start": 308.14,
+      "end": 312.7,
+      "text": "steps and every call ships that goes off your machine and"
+    },
+    {
+      "start": 314.1,
+      "end": 321.02,
+      "text": "Basically everyone else like the cloud or the Open AI they get"
+    },
+    {
+      "start": 321.02,
+      "end": 326.64,
+      "text": "to see your data and locally is basically a simple flip in"
+    },
+    {
+      "start": 326.64,
+      "end": 331.08,
+      "text": "your Regular use case or beat the business model if you have"
+    },
+    {
+      "start": 331.08,
+      "end": 337.2,
+      "text": "existing setups instead of renting the intelligence for token by token you"
+    },
+    {
+      "start": 337.2,
+      "end": 341.34,
+      "text": "definitely get to own the asset and on the cloud you pay"
+    },
+    {
+      "start": 341.34,
+      "end": 345.12,
+      "text": "per token or you get a You get a plan and the"
+    },
+    {
+      "start": 345.12,
+      "end": 350.7,
+      "text": "cost claims more cost claims as you keep using it more and"
+    },
+    {
+      "start": 350.7,
+      "end": 354.46,
+      "text": "the local and comes in like the biggest cost is the hardware"
+    },
+    {
+      "start": 354.46,
+      "end": 359.9,
+      "text": "that you own and The cost per call drops with usage and"
+    },
+    {
+      "start": 359.9,
+      "end": 364.34,
+      "text": "in this case data never leaves works offline and don't then there"
+    },
+    {
+      "start": 364.34,
+      "end": 367.86,
+      "text": "are no surprise in terms of the price changes and The habit"
+    },
+    {
+      "start": 367.86,
+      "end": 371.56,
+      "text": "that matters is picking the right model for the right use case"
+    },
+    {
+      "start": 371.56,
+      "end": 375.6,
+      "text": "and You definitely do not need a frontier model to rewrite an"
+    },
+    {
+      "start": 375.6,
+      "end": 378.12,
+      "text": "email or to send proofread your messages"
+    },
+    {
+      "start": 379.82,
+      "end": 385.4,
+      "text": "so this This slide will help you in understanding the engine That"
+    },
+    {
+      "start": 385.4,
+      "end": 388.96,
+      "text": "you can pick based on the hardware that you have and if"
+    },
+    {
+      "start": 388.96,
+      "end": 393.66,
+      "text": "you have a MacBook MLX or Ollama or llama.cpp is something which"
+    },
+    {
+      "start": 393.66,
+      "end": 396.82,
+      "text": "you can definitely rely on and if you want to run anything"
+    },
+    {
+      "start": 396.82,
+      "end": 405.28,
+      "text": "on CPU or just phone llama.cpp runs everywhere via gguf and when"
+    },
+    {
+      "start": 405.28,
+      "end": 409.18,
+      "text": "it comes to the Nvidia or AMD GPUs vLLM is the safest"
+    },
+    {
+      "start": 409.18,
+      "end": 414.24,
+      "text": "default and if you have any kind of agentic workflows or the"
+    },
+    {
+      "start": 414.24,
+      "end": 419.94,
+      "text": "rag with shareware context SGLang pulls ahead And definitely there is no"
+    },
+    {
+      "start": 419.94,
+      "end": 424.54,
+      "text": "single best engine it totally depends on the right one that you"
+    },
+    {
+      "start": 424.54,
+      "end": 428.8,
+      "text": "want for your hardware and The best part about this if you"
+    },
+    {
+      "start": 428.8,
+      "end": 431.72,
+      "text": "have anything any kind of workflows that are already set up You"
+    },
+    {
+      "start": 431.72,
+      "end": 434.44,
+      "text": "definitely do not need to rebuild all you need to do is"
+    },
+    {
+      "start": 434.44,
+      "end": 439.44,
+      "text": "route your requests to the already exposed to open a compatible endpoints"
+    },
+    {
+      "start": 440.02,
+      "end": 444.16,
+      "text": "provided by these inference engines Launch the right model in the background"
+    },
+    {
+      "start": 444.16,
+      "end": 449.06,
+      "text": "point your existing Claude to the local endpoint and It essentially is"
+    },
+    {
+      "start": 449.06,
+      "end": 452.32,
+      "text": "a single URL swap and you will get to see the results"
+    },
+    {
+      "start": 453.1,
+      "end": 456.62,
+      "text": "varies by use case but I can confidently say for most of"
+    },
+    {
+      "start": 456.62,
+      "end": 460.0,
+      "text": "the use cases you definitely do not need a frontier model and"
+    },
+    {
+      "start": 460.0,
+      "end": 462.56,
+      "text": "It has been backed up by the data and the previous presentation"
+    },
+    {
+      "start": 462.56,
+      "end": 465.72,
+      "text": "like 80 % of the requests got routed to the Hiku model"
+    },
+    {
+      "start": 465.72,
+      "end": 470.72,
+      "text": "which is the smallest tier that Claude has offers and"
+    },
+    {
+      "start": 472.16,
+      "end": 476.24,
+      "text": "For a little bit of more technical details on What is paged"
+    },
+    {
+      "start": 476.24,
+      "end": 477.9,
+      "text": "attention and radix attention? you"
+    }
+  ],
   "widgets": [],
   "assets": {
     "reels_dir": "session-3-rohit/reels",

@@ -5,15 +5,4227 @@
   "media_url": null,
   "twelvelabs": {
     "index_name": "session-1-esteban",
-    "index_id": null,
-    "video_id": null
+    "index_id": "6a55a21db4e567cd48020cf2",
+    "video_id": "6a55a280b4e567cd48020fd6"
   },
   "masters": {
     "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 1 Esteban/JORDAN_S001_S001_T002_ISO1.MOV",
     "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 1 Esteban/JORDAN_S001_S001_T002_ISO2.MOV"
   },
-  "clips": [],
-  "transcript": [],
+  "clips": [
+    {
+      "id": "01",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 24,
+      "hook": "Building AI agents for infra",
+      "caption": "Esteban shares his journey from founder to engineering leader, blending DevOps roots with cutting-edge AI to build smarter infrastructure tools. #AIEngineering #DevTools #CloudInfra",
+      "start": 130.0,
+      "end": 159.68,
+      "duration": 29.68,
+      "crop_cx": 0.449,
+      "crop_x0": 558,
+      "demo_lead_s": null,
+      "reel": "reels/reel_01.mp4",
+      "still_person": "reels/compare/01_person.jpg",
+      "still_screen": null,
+      "transcript": "hear hear me? me? All All right, right, okay okay well well uh uh so so my my name's name's Espan Espan like like Jordan Jordan mentioned mentioned you you know know I I went went through through this this cohort cohort so so I I was was previously previously a a founder founder was was building building some some devtools devtools I I was was trying trying to to build build agents agents for for infrastructure infrastructure specifically specifically combining combining some some of of my my previous previous background background and and all all of of the the new new jazz jazz that that was was happening happening in in AI AI now now I'm I'm leading leading engineering engineering at at a a startup startup called called Standard Standard Electron Electron trying trying to to bring bring the the same same skills skills like like applied applied AI AI and and Cloud Cloud Infra Infra mesh mesh together together in in there there so so",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Introducing Harness Engineering: From Theory to Practice"
+    },
+    {
+      "id": "02",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 15,
+      "hook": "Level Up Your Agent",
+      "caption": "Turn your AI agent into a powerhouse with a reproducible workshop using Quinn, an 8B-parameter model. #AI #AgentEngineering #OpenSource",
+      "start": 347.72,
+      "end": 369.96,
+      "duration": 22.24,
+      "crop_cx": 0.478,
+      "crop_x0": 614,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_02.mp4",
+      "still_person": "reels/compare/02_person.jpg",
+      "still_screen": "reels/compare/02_screen.jpg",
+      "transcript": "make make my my agent agent better better and smarter and smarter and and perform perform better better work work, so so this this is is also also part of part of that that GitHub GitHub repo repo. if If you guys are like looking at it, there's a workshop it's reproducible hi and like the way the way this workshop I reproduced was I grabbed like a Quinn alright eight billion so parameter we got model",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "The Difference Between a Harness and a Product Agent"
+    },
+    {
+      "id": "03",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 24,
+      "hook": "Day 2 vibes: energy & insights",
+      "caption": "Saturday morning, full focus, and the energy is electric. Ready to dive into the deep end of AI innovation. #AI #Innovation #TechTalk",
+      "start": 536.76,
+      "end": 566.68,
+      "duration": 29.92,
+      "crop_cx": 0.488,
+      "crop_x0": 632,
+      "demo_lead_s": null,
+      "reel": "reels/reel_03.mp4",
+      "still_person": "reels/compare/03_person.jpg",
+      "still_screen": null,
+      "transcript": "if hi alright so we got some folks finishing up in the interview. We're gonna let that. All right, anyways, how's it going everybody? Everybody, thank you so much for being here Saturday morning, day number two",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Closed-Loop Systems: The Key to Agent Evolution"
+    },
+    {
+      "id": "04",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 18,
+      "hook": "Evolve Your AI Agent",
+      "caption": "Discover how engineering levers like skills and harnesses can make your AI smarter, faster, and more precise. #AIEngineering #HarnessX #AppliedAI",
+      "start": 680.84,
+      "end": 710.04,
+      "duration": 29.2,
+      "crop_cx": 0.536,
+      "crop_x0": 724,
+      "demo_lead_s": null,
+      "reel": "reels/reel_04.mp4",
+      "still_person": "reels/compare/04_person.jpg",
+      "still_screen": null,
+      "transcript": "skills like applied AI and Cloud Infra mesh together in there so what this talk is about is around evolving harnesses so uh there's a lot of different uh strategies for evolving models right like reinforcement learning is like a really hot topic and it's trying to bring some of those same strategies into some of the engineering flows like being able to like um what levers I think can in I my head pull I kind of think from of them an as engineering different side things that I can make my agent better and smarter",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "The Four Levers of Harness Engineering"
+    },
+    {
+      "id": "05",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 31,
+      "hook": "Evolving Agents Like RL",
+      "caption": "How harness engineering uses reinforcement learning principles to make agents smarter, faster, and more reliable. #AI #AgentEngineering #HarnessX",
+      "start": 867.8,
+      "end": 909.24,
+      "duration": 41.44,
+      "crop_cx": 0.5,
+      "crop_x0": 656,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_05.mp4",
+      "still_person": "reels/compare/05_person.jpg",
+      "still_screen": "reels/compare/05_screen.jpg",
+      "transcript": "so around evolving harnesses so uh there's part of what a lot why of different I'm interested in this uh is strategies because for evolving models right like for reinforcement a while learning while is I like was a really hot developing topic these agents and it's trying to bring some of those same I would have strategies this closed loop kind into of pattern where some I of the would engineering flows wire it up like to Langfuse being able to like if you um what levers can I pull from an engineering side that I can make my agent better and smarter and perform better work so this is also part of that GitHub repo if hi alright",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Benchmarking for Real-World Impact"
+    },
+    {
+      "id": "06",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 33,
+      "hook": "Deep dive into AI harness engineering",
+      "caption": "Esteban breaks down how domain-specific benchmarks and harness engineering unlock true AI agent performance. #AI #HarnessEngineering #CloudInfra",
+      "start": 1142.04,
+      "end": 1182.76,
+      "duration": 40.72,
+      "crop_cx": 0.512,
+      "crop_x0": 678,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_06.mp4",
+      "still_person": "reels/compare/06_person.jpg",
+      "still_screen": "reels/compare/06_screen.jpg",
+      "transcript": "heard much more specific uh one of his talks and we can see about this too um in cloud engineering and infrastuff whenever and he a new model he's comes out actually the it's like guy who oh introduced me to tell in this benchmark open and software so when engineer it was you time know it for me to reached put together like this speaker you uh know lineup point I was like man let me eighty eight percent see if I can get him right and the and thing have is him talk those about benchmarks harness are specific engineering to that specific domain this one's gonna be a so deep one um i think most in of the the next talks evolution today of are this going to be designing like the right really benchmark high level will make and the idea that is loop and this trace have your um better your laptop out have your phone out Google so things I'll find just these go buzzwords over this these things that you keep very briefly hearing but the idea is pull that it you up would run find tasks out about it you would ask find your a agent starting to go place perform a the certain best task way that to you're get building the most out whether of it's these things for your is product finding or not a starting place those will emit so that traces you can",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Why Healthcare Agents Must Be Grounded in Real Use Cases"
+    },
+    {
+      "id": "07",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 26,
+      "hook": "Evolve AI Agents Like RL",
+      "caption": "Harness engineering blends reinforcement learning with agent development to optimize performance. #AI #MachineLearning #AgentEngineering",
+      "start": 1413.88,
+      "end": 1455.56,
+      "duration": 41.68,
+      "crop_cx": 0.649,
+      "crop_x0": 942,
+      "demo_lead_s": null,
+      "reel": "reels/reel_07.mp4",
+      "still_person": "reels/compare/07_person.jpg",
+      "still_screen": null,
+      "transcript": "uh strategies for evolving models right like reinforcement learning is like a really hot topic and it's trying to bring some of those same strategies into some of the engineering flows like being able to like um what levers actually can do I it, pull from an engineering side that the I can reward make function my agent is better taken and smarter from RL, and perform better but work it's the idea that you have a benchmark score, so and this some of these is also rewards part of could be that GitHub repo if a combination of different like things hi that's like the worst word. Like a word you might be looking alright at like so the we got database some folks action finishing that up in it the created interview. plus the tool We're that gonna it used let plus that. another",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Skills Are the Highest Leverage Tool in Harness Engineering"
+    },
+    {
+      "id": "08",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 35,
+      "hook": "The secret to smarter AI agents",
+      "caption": "Harness engineering unlocks the real power of AI—tweak the right levers, build better results. #AI #HarnessEngineering #AgentDevelopment",
+      "start": 1510.44,
+      "end": 1551.0,
+      "duration": 40.56,
+      "crop_cx": 0.653,
+      "crop_x0": 950,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_08.mp4",
+      "still_person": "reels/compare/08_person.jpg",
+      "still_screen": "reels/compare/08_screen.jpg",
+      "transcript": "and so when it was time for me to put together speaker uh lineup I was like man let me see if I can get him and have him talk about harness engineering this one's gonna be a deep and I one kind of jumped ahead most of the but talks these today are are like going the to be four levers like that you can tweak really high level so and the idea is harness engineering is really just have a combination your of your laptop getting these out have knobs your phone right out specifically Google things for find whatever these it buzzwords is you guys are these things trying that to you do keep hearing and this is different from pull the it up cloud code right find because out about cloud it code is already find tuned a like starting that's place your driver the best but way you want to get the whatever most out of these things agent is finding is a trying starting to be place as part of your so product that you can it wants to do ask an questions action at maybe the it's end of internal the talk. maybe it's So this is customer going to be facing one of those ones these are anyways the things that I'm talking a you lot should be on the lookout for without further and these ado are the things here's that Esoban. uh you",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "The Power of Multi-Dimensional Benchmarks"
+    },
+    {
+      "id": "09",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 22,
+      "hook": "Find your starting place",
+      "caption": "Stop guessing. Start researching. The best way to master AI is to dive into the buzzwords and build your foundation. #AI #LearnAI #HustleSmart",
+      "start": 1708.92,
+      "end": 1739.64,
+      "duration": 30.72,
+      "crop_cx": 0.504,
+      "crop_x0": 664,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_09.mp4",
+      "still_person": "reels/compare/09_person.jpg",
+      "still_screen": "reels/compare/09_screen.jpg",
+      "transcript": "out Google things find these buzzwords these things that you keep hearing pull it up find out about it find a starting place the best way to get the most out of these things is finding a starting place so that you can ask questions at the end of the talk. So this is going to be one of those ones anyways I'm talking a lot without further ado here's Esoban. All right, testing testing. Can guys you hear me? All right, okay well uh so my name's Espan",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Why the Evolving Agent Must Be Smarter Than the Task Agent"
+    },
+    {
+      "id": "10",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 35,
+      "hook": "Designing the Right Benchmark",
+      "caption": "The real secret to better AI agents? Building custom benchmarks that match your use case. #AI #HarnessEngineering #Benchmarking",
+      "start": 1801.88,
+      "end": 1844.84,
+      "duration": 42.96,
+      "crop_cx": 0.576,
+      "crop_x0": 802,
+      "demo_lead_s": null,
+      "reel": "reels/reel_10.mp4",
+      "still_person": "reels/compare/10_person.jpg",
+      "still_screen": null,
+      "transcript": "hi and these are all off the shelf right some are specific to like telecoms some are specific for different use cases alright so but we got um some folks and the second half of this finishing is like up in the how interview. you should be designing your benchmark We're gonna and this is let like the big that. takeaway that I got from the paper itself All right, anyways, so adding like better reasoning how's it going everybody? tuning Everybody, the system prompt adding like thank you so much for the being right skill here or policy Saturday morning, day number two improve this model's baseline from zero point sixty really, five really excited to zero point nine seven for today. We've got five speakers, so we've got this jam packed okay we will so be like getting out of here T two like Tau two four thirty the telecom promise benchmark that's the goal with tool and use I'm going to went keep from that zero promise point five zero to zero point seventy five so we're gonna run through it pretty good and this here is",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "The Value of Gradient Scoring Over Binary Pass/Fail"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 3.72,
+      "end": 6.52,
+      "text": "We have a mic. We have a mic."
+    },
+    {
+      "start": 17.02,
+      "end": 17.86,
+      "text": "Hi, hi."
+    },
+    {
+      "start": 23.86,
+      "end": 30.06,
+      "text": "All right, so we got some folks finishing up an interview. We're"
+    },
+    {
+      "start": 30.06,
+      "end": 30.7,
+      "text": "going to let that."
+    },
+    {
+      "start": 33.52,
+      "end": 34.24,
+      "text": "All right."
+    },
+    {
+      "start": 36.44,
+      "end": 40.46,
+      "text": "Anyways, how's it going, everybody? Everybody, thank you so much for being"
+    },
+    {
+      "start": 40.46,
+      "end": 42.42,
+      "text": "here Saturday morning, day number two."
+    },
+    {
+      "start": 44.78,
+      "end": 49.16,
+      "text": "Really, really excited for today. We've got five speakers, so we've got"
+    },
+    {
+      "start": 49.16,
+      "end": 53.94,
+      "text": "this jam -packed. We will be getting out of here 4, 4"
+    },
+    {
+      "start": 53.94,
+      "end": 58.06,
+      "text": ".30. Promise, that's the goal. And I'm going to keep that promise."
+    },
+    {
+      "start": 58.52,
+      "end": 62.58,
+      "text": "So we're going to run through it pretty good here. Anyways, I"
+    },
+    {
+      "start": 62.58,
+      "end": 69.3,
+      "text": "wanted to bring Esteban in here. He's a guy I met here"
+    },
+    {
+      "start": 69.3,
+      "end": 74.76,
+      "text": "at Antler, has went through the cohort, and he's one of the"
+    },
+    {
+      "start": 74.76,
+      "end": 78.84,
+      "text": "first guys that stood out to me whenever I heard one of"
+    },
+    {
+      "start": 78.84,
+      "end": 83.7,
+      "text": "his talks about cloud engineering and infra stuff. And he's actually the"
+    },
+    {
+      "start": 83.7,
+      "end": 87.04,
+      "text": "guy who introduced me to Telescale. And so when it was time"
+    },
+    {
+      "start": 87.04,
+      "end": 88.5,
+      "text": "for me to put together a speaker, we were able to do"
+    },
+    {
+      "start": 88.5,
+      "end": 89.16,
+      "text": "it. And so when it was time for me to put together"
+    },
+    {
+      "start": 89.16,
+      "end": 90.84,
+      "text": "a speaker, I was like, man, let me see if I can"
+    },
+    {
+      "start": 90.84,
+      "end": 95.56,
+      "text": "get him and have him talk about harness engineering. This one's going"
+    },
+    {
+      "start": 95.56,
+      "end": 98.16,
+      "text": "to be a deep one. Most of the talks today are going"
+    },
+    {
+      "start": 98.16,
+      "end": 102.88,
+      "text": "to be, like, really high level. And the idea is have your"
+    },
+    {
+      "start": 102.88,
+      "end": 107.64,
+      "text": "laptop out, have your phone out, Google things, find these buzzwords, these"
+    },
+    {
+      "start": 107.64,
+      "end": 111.54,
+      "text": "things that you keep hearing, pull it up, find out about it,"
+    },
+    {
+      "start": 111.6,
+      "end": 115.14,
+      "text": "find a starting place. The best way to get the most out"
+    },
+    {
+      "start": 115.14,
+      "end": 118.66,
+      "text": "of these things is finding a starting place. So that you can"
+    },
+    {
+      "start": 118.66,
+      "end": 121.48,
+      "text": "ask questions at the end of the talk. So this is going"
+    },
+    {
+      "start": 121.48,
+      "end": 124.88,
+      "text": "to be one of those ones. Anyways, I'm talking a lot. Without"
+    },
+    {
+      "start": 124.88,
+      "end": 126.32,
+      "text": "further ado, here's Esteban."
+    },
+    {
+      "start": 127.7,
+      "end": 128.28,
+      "text": "All right."
+    },
+    {
+      "start": 129.52,
+      "end": 134.3,
+      "text": "Testing, testing. Can you guys hear me? All right. Okay, well, so"
+    },
+    {
+      "start": 134.3,
+      "end": 138.36,
+      "text": "my name's Esteban. Like Jordan mentioned, you know, I went through this"
+    },
+    {
+      "start": 138.36,
+      "end": 140.16,
+      "text": "cohort, so I was previously a founder."
+    },
+    {
+      "start": 141.7,
+      "end": 144.32,
+      "text": "Was building some dev tools. I was trying to build agents for"
+    },
+    {
+      "start": 144.32,
+      "end": 148.68,
+      "text": "infrastructure specifically. Combining some of my previous projects. Background and all of"
+    },
+    {
+      "start": 148.68,
+      "end": 153.08,
+      "text": "the new jazz that was happening in AI. Now I'm leading engineering"
+    },
+    {
+      "start": 153.08,
+      "end": 156.9,
+      "text": "at a startup called Standard Electron. Trying to bring the same skills"
+    },
+    {
+      "start": 156.9,
+      "end": 161.44,
+      "text": "like applied AI and cloud infra mesh together in there. So what"
+    },
+    {
+      "start": 161.44,
+      "end": 168.44,
+      "text": "this talk is about is around evolving harnesses. So there's a lot"
+    },
+    {
+      "start": 168.44,
+      "end": 172.4,
+      "text": "of different strategies for evolving models, right? Like reinforcement learning is like"
+    },
+    {
+      "start": 172.4,
+      "end": 174.46,
+      "text": "a really hot topic. And it's trying to bring some of those"
+    },
+    {
+      "start": 174.46,
+      "end": 179.04,
+      "text": "same strategies into some of the. Engineering flows like being able to"
+    },
+    {
+      "start": 179.04,
+      "end": 183.04,
+      "text": "like what levers can I pull from an engineering side that I"
+    },
+    {
+      "start": 183.04,
+      "end": 186.96,
+      "text": "could make my agent better and smarter and perform better work."
+    },
+    {
+      "start": 188.78,
+      "end": 192.88,
+      "text": "So this is also part of that GitHub repo. If you guys"
+    },
+    {
+      "start": 192.88,
+      "end": 197.78,
+      "text": "are like looking at it, there's a workshop. It's reproducible. And like"
+    },
+    {
+      "start": 197.78,
+      "end": 203.84,
+      "text": "the way the way this workshop I reproduced was I grabbed like"
+    },
+    {
+      "start": 203.84,
+      "end": 209.26,
+      "text": "a Qwen eight billion parameter model and a 32. And you know,"
+    },
+    {
+      "start": 209.26,
+      "end": 214.26,
+      "text": "decided to improve the harness to get better results. So this is"
+    },
+    {
+      "start": 214.26,
+      "end": 218.26,
+      "text": "based off of this paper. It's called harness X. And they're doing"
+    },
+    {
+      "start": 218.26,
+      "end": 220.3,
+      "text": "a lot of really good work on trying to combine some of"
+    },
+    {
+      "start": 220.3,
+      "end": 227.2,
+      "text": "the same strategies between model reinforcement learning and then harness engineering and"
+    },
+    {
+      "start": 227.2,
+      "end": 231.24,
+      "text": "what that actually all means. So I think you guys had a"
+    },
+    {
+      "start": 231.24,
+      "end": 235.92,
+      "text": "talk yesterday around like looping and loop engineering. I think some of"
+    },
+    {
+      "start": 235.92,
+      "end": 238.56,
+      "text": "the same principles are going to spill over. Where what you really"
+    },
+    {
+      "start": 238.56,
+      "end": 242.36,
+      "text": "want is to find this closed loop system that can actually, you"
+    },
+    {
+      "start": 242.36,
+      "end": 245.22,
+      "text": "know, see the output of an agent and then tweak the right"
+    },
+    {
+      "start": 245.22,
+      "end": 248.98,
+      "text": "levers and then benchmark and test again. And then until you start"
+    },
+    {
+      "start": 248.98,
+      "end": 252.66,
+      "text": "getting better results. And the reason why this is kind of important"
+    },
+    {
+      "start": 252.66,
+      "end": 257.78,
+      "text": "is because every vertical has very specific needs. You know, like if"
+    },
+    {
+      "start": 257.78,
+      "end": 260.64,
+      "text": "you're designing something for a product that's in health care, like, you"
+    },
+    {
+      "start": 260.64,
+      "end": 263.76,
+      "text": "know, off the shelf models and harnesses are probably going to get"
+    },
+    {
+      "start": 263.76,
+      "end": 267.78,
+      "text": "you demo ready, but maybe not production ready. So. It's trying to"
+    },
+    {
+      "start": 267.78,
+      "end": 270.16,
+      "text": "find this like balance of how do you make it your own"
+    },
+    {
+      "start": 270.16,
+      "end": 273.62,
+      "text": "and get the results that you kind of want. So."
+    },
+    {
+      "start": 275.34,
+      "end": 281.68,
+      "text": "Yeah, this is me, my background. So for 10 years I've been"
+    },
+    {
+      "start": 281.68,
+      "end": 286.5,
+      "text": "pretty much in DevOps infrastructure, large scale and for last two and"
+    },
+    {
+      "start": 286.5,
+      "end": 288.64,
+      "text": "a half years, mainly all related."
+    },
+    {
+      "start": 290.3,
+      "end": 292.82,
+      "text": "Now I'm leading the charge for cloud and applied."
+    },
+    {
+      "start": 295.02,
+      "end": 299.04,
+      "text": "So in order to reproduce this. Here's some of the specs. If"
+    },
+    {
+      "start": 299.04,
+      "end": 302.02,
+      "text": "you guys have an available laptop, you guys can reproduce it."
+    },
+    {
+      "start": 304.88,
+      "end": 307.9,
+      "text": "I used Qwen 3B, but feel free to use whatever other model"
+    },
+    {
+      "start": 307.9,
+      "end": 308.26,
+      "text": "you want."
+    },
+    {
+      "start": 310.42,
+      "end": 310.9,
+      "text": "OK."
+    },
+    {
+      "start": 316.24,
+      "end": 320.44,
+      "text": "And there's some finicky stuff with like running this lab locally. So"
+    },
+    {
+      "start": 320.44,
+      "end": 323.54,
+      "text": "there's a few gotchas that kind of got me. Maybe this will"
+    },
+    {
+      "start": 323.54,
+      "end": 327.58,
+      "text": "help. I used Olamada to run the models on my laptop. They"
+    },
+    {
+      "start": 327.58,
+      "end": 331.7,
+      "text": "each take around like 20 minutes to run. So I'm not going"
+    },
+    {
+      "start": 331.7,
+      "end": 333.46,
+      "text": "to do it live right now or else we're just going to"
+    },
+    {
+      "start": 333.46,
+      "end": 336.82,
+      "text": "be staring at a screen for 20 minutes waiting for waiting for"
+    },
+    {
+      "start": 336.82,
+      "end": 337.22,
+      "text": "it to finish."
+    },
+    {
+      "start": 339.44,
+      "end": 344.06,
+      "text": "OK. So like vanilla harnesses I think are good and like when"
+    },
+    {
+      "start": 344.06,
+      "end": 346.9,
+      "text": "I mean one who's who's kind of been building agents."
+    },
+    {
+      "start": 349.3,
+      "end": 353.72,
+      "text": "Everyone. Some people. OK. Everyone. And then how many of you guys"
+    },
+    {
+      "start": 353.72,
+      "end": 357.66,
+      "text": "have been playing with like harnesses in a product and like. If"
+    },
+    {
+      "start": 357.66,
+      "end": 360.98,
+      "text": "anyone knows the distinction between the two or like I think in"
+    },
+    {
+      "start": 360.98,
+      "end": 362.56,
+      "text": "my head I kind of think of them as different things."
+    },
+    {
+      "start": 367.5,
+      "end": 369.36,
+      "text": "Cool. Yeah."
+    },
+    {
+      "start": 370.74,
+      "end": 374.8,
+      "text": "So the harness is more around like the you have the agent"
+    },
+    {
+      "start": 374.8,
+      "end": 377.66,
+      "text": "loop that calls tools and calls the model and keeps going around"
+    },
+    {
+      "start": 377.66,
+      "end": 380.82,
+      "text": "and around. And then the harness is more around the other things"
+    },
+    {
+      "start": 380.82,
+      "end": 385.78,
+      "text": "that can improve it. So like compaction memory skills things that you"
+    },
+    {
+      "start": 385.78,
+      "end": 389.64,
+      "text": "can inject at runtime that. Actually. You know not just tweaking the"
+    },
+    {
+      "start": 389.64,
+      "end": 394.34,
+      "text": "system prompt like back in. You know a year ago. So this"
+    },
+    {
+      "start": 394.34,
+      "end": 396.64,
+      "text": "is what I'm referring to when I say a harness where it's"
+    },
+    {
+      "start": 396.64,
+      "end": 401.76,
+      "text": "like the other parts of the agent that's that can manage maybe"
+    },
+    {
+      "start": 401.76,
+      "end": 406.58,
+      "text": "like long running horizons. The memory the skills all that other stuff."
+    },
+    {
+      "start": 408.1,
+      "end": 411.98,
+      "text": "Now the more vertical that your use case like the more you"
+    },
+    {
+      "start": 411.98,
+      "end": 415.96,
+      "text": "have to actually evolve this harness so that the big takeaway here"
+    },
+    {
+      "start": 415.96,
+      "end": 418.7,
+      "text": "is like while some of these times. Are going to be. Very"
+    },
+    {
+      "start": 418.7,
+      "end": 423.34,
+      "text": "like obvious I think that there's some good interesting things that you"
+    },
+    {
+      "start": 423.34,
+      "end": 426.2,
+      "text": "can pull out of this like designing the right benchmark is going"
+    },
+    {
+      "start": 426.2,
+      "end": 428.9,
+      "text": "to be very crucial to like knowing what your domain is and"
+    },
+    {
+      "start": 428.9,
+      "end": 432.7,
+      "text": "what your vertical use cases. And then how to get that running"
+    },
+    {
+      "start": 432.7,
+      "end": 433.02,
+      "text": "in a loop."
+    },
+    {
+      "start": 435.16,
+      "end": 438.76,
+      "text": "So your coding agent which I'm sure you guys all use like"
+    },
+    {
+      "start": 438.76,
+      "end": 443.28,
+      "text": "a lot code open code pie like there they're technically a vertical"
+    },
+    {
+      "start": 443.28,
+      "end": 447.3,
+      "text": "harness like they're just very vertical for coding right. So now. You"
+    },
+    {
+      "start": 447.3,
+      "end": 450.3,
+      "text": "know. The question is like how do I get that into my"
+    },
+    {
+      "start": 450.3,
+      "end": 455.2,
+      "text": "product or if I'm running it in the background like like how"
+    },
+    {
+      "start": 455.2,
+      "end": 457.86,
+      "text": "can I design my harness that makes it feel my way for"
+    },
+    {
+      "start": 457.86,
+      "end": 462.1,
+      "text": "you know if it's in health care whether it's you know doing"
+    },
+    {
+      "start": 462.1,
+      "end": 465.18,
+      "text": "taxes if you're bold enough."
+    },
+    {
+      "start": 466.98,
+      "end": 467.46,
+      "text": "But."
+    },
+    {
+      "start": 469.12,
+      "end": 470.22,
+      "text": "Yeah I'll stop right there."
+    },
+    {
+      "start": 472.7,
+      "end": 476.34,
+      "text": "So off the shelf plateaus like who's ran into the issue with"
+    },
+    {
+      "start": 476.34,
+      "end": 479.44,
+      "text": "you know. You. It's very easy to spin up an agent for"
+    },
+    {
+      "start": 479.44,
+      "end": 482.3,
+      "text": "a demo but then like when you actually start putting it in"
+    },
+    {
+      "start": 482.3,
+      "end": 484.72,
+      "text": "production becomes harder and harder and maybe it doesn't quite hit the"
+    },
+    {
+      "start": 484.72,
+      "end": 484.92,
+      "text": "demo."
+    },
+    {
+      "start": 486.24,
+      "end": 489.9,
+      "text": "Expectation if anybody's felt that pain OK that that's a very common"
+    },
+    {
+      "start": 489.9,
+      "end": 492.62,
+      "text": "pain and I think this is where this kind of talk dives"
+    },
+    {
+      "start": 492.62,
+      "end": 495.22,
+      "text": "into where it's like how to take it to the next level"
+    },
+    {
+      "start": 495.22,
+      "end": 498.74,
+      "text": "of like OK this is actually working exactly the way that I"
+    },
+    {
+      "start": 498.74,
+      "end": 502.44,
+      "text": "want. And so off the shelf harnesses are a good starting point"
+    },
+    {
+      "start": 502.44,
+      "end": 506.52,
+      "text": "but they're really not going to get you something that is like"
+    },
+    {
+      "start": 506.52,
+      "end": 509.32,
+      "text": "10 X better. Or you know very noticeably different."
+    },
+    {
+      "start": 510.74,
+      "end": 514.44,
+      "text": "And again there's the agent that are the harness that you're using"
+    },
+    {
+      "start": 514.44,
+      "end": 517.14,
+      "text": "to code it and there's a harness that you put in production"
+    },
+    {
+      "start": 517.14,
+      "end": 520.7,
+      "text": "so like this is like tied into your application that your users"
+    },
+    {
+      "start": 520.7,
+      "end": 521.8,
+      "text": "are like interfacing with."
+    },
+    {
+      "start": 523.04,
+      "end": 523.34,
+      "text": "So."
+    },
+    {
+      "start": 527.22,
+      "end": 531.46,
+      "text": "Part of what I miss I'm interested in this is because for"
+    },
+    {
+      "start": 531.46,
+      "end": 535.16,
+      "text": "a while while I was developing these agents I would have this"
+    },
+    {
+      "start": 535.16,
+      "end": 538.52,
+      "text": "closed loop kind of pattern where I. Would. Wired up to Lang"
+    },
+    {
+      "start": 538.52,
+      "end": 541.18,
+      "text": "fuse if you guys know where that is it's just like a"
+    },
+    {
+      "start": 541.18,
+      "end": 544.56,
+      "text": "tracing it's a it's a place that the harness can emit traces"
+    },
+    {
+      "start": 544.56,
+      "end": 547.3,
+      "text": "and then I can see and then just say OK if all"
+    },
+    {
+      "start": 547.3,
+      "end": 550.4,
+      "text": "of this kind of trajectory it looked at use these tools you"
+    },
+    {
+      "start": 550.4,
+      "end": 553.02,
+      "text": "know I called this at this time and for a while I"
+    },
+    {
+      "start": 553.02,
+      "end": 556.62,
+      "text": "think that that works pretty well and so the I'll talk about"
+    },
+    {
+      "start": 556.62,
+      "end": 560.14,
+      "text": "like what I was doing and then what I'm thinking about now"
+    },
+    {
+      "start": 560.14,
+      "end": 564.34,
+      "text": "so the closed loop is the idea of you know you have"
+    },
+    {
+      "start": 564.34,
+      "end": 567.28,
+      "text": "the harness that is on your product. And so the I'll talk"
+    },
+    {
+      "start": 567.28,
+      "end": 567.28,
+      "text": "about like what I was doing and then what I'm thinking about"
+    },
+    {
+      "start": 567.28,
+      "end": 567.28,
+      "text": "now so the closed loop is the idea of you know you"
+    },
+    {
+      "start": 567.28,
+      "end": 568.2,
+      "text": "have the harness that is on your product. And then you have"
+    },
+    {
+      "start": 568.2,
+      "end": 571.48,
+      "text": "your Claude Code and what I would do is like you know"
+    },
+    {
+      "start": 571.48,
+      "end": 575.42,
+      "text": "pick you know any kind of framework out there like deep agents"
+    },
+    {
+      "start": 575.42,
+      "end": 579.68,
+      "text": "J .S. or. Claude Code SDK or any one of those and"
+    },
+    {
+      "start": 579.68,
+      "end": 585.36,
+      "text": "I would start iterating with you know feeding it. Like use cases"
+    },
+    {
+      "start": 585.36,
+      "end": 588.22,
+      "text": "as a user would and then it would emit traces to Lang"
+    },
+    {
+      "start": 588.22,
+      "end": 591.12,
+      "text": "fuse and then I would go and have Claude look at the"
+    },
+    {
+      "start": 591.12,
+      "end": 594.94,
+      "text": "traces and then you know see if it can improve where went"
+    },
+    {
+      "start": 594.94,
+      "end": 597.1,
+      "text": "wrong maybe we need to add a tool maybe we got to"
+    },
+    {
+      "start": 597.1,
+      "end": 601.52,
+      "text": "remove it. Like the the efficiency of it and so this is"
+    },
+    {
+      "start": 601.52,
+      "end": 605.82,
+      "text": "the basis of you know this kind of next set of engineering"
+    },
+    {
+      "start": 605.82,
+      "end": 608.1,
+      "text": "where you want to find these like closed loop systems but it's"
+    },
+    {
+      "start": 608.1,
+      "end": 611.1,
+      "text": "a very naive way of looking at it because I at the"
+    },
+    {
+      "start": 611.1,
+      "end": 616.24,
+      "text": "time like I didn't create the right benchmarks so like maybe there's"
+    },
+    {
+      "start": 616.24,
+      "end": 619.54,
+      "text": "certain type of benchmarks that are much more specific and we can"
+    },
+    {
+      "start": 619.54,
+      "end": 623.82,
+      "text": "see this too and. And whenever a new model comes out it's"
+    },
+    {
+      "start": 623.82,
+      "end": 627.58,
+      "text": "like oh in this benchmark open software engineer you know it. Reached"
+    },
+    {
+      "start": 627.58,
+      "end": 632.02,
+      "text": "like this you know point eighty eight percent right and the thing"
+    },
+    {
+      "start": 632.02,
+      "end": 635.42,
+      "text": "is those benchmarks are specific to that specific domain so."
+    },
+    {
+      "start": 636.67,
+      "end": 639.74,
+      "text": "I think in the next evolution of this designing the right benchmark"
+    },
+    {
+      "start": 639.74,
+      "end": 643.28,
+      "text": "will make that loop in this trace better."
+    },
+    {
+      "start": 645.68,
+      "end": 650.04,
+      "text": "So I'll just go over this very briefly but the idea is"
+    },
+    {
+      "start": 650.04,
+      "end": 652.66,
+      "text": "that you would run tasks you would ask your agent to go"
+    },
+    {
+      "start": 652.66,
+      "end": 656.12,
+      "text": "perform a certain task that you're building whether it's for your product"
+    },
+    {
+      "start": 656.12,
+      "end": 660.66,
+      "text": "or not. Those will emit traces then your Claude can like read"
+    },
+    {
+      "start": 660.66,
+      "end": 664.7,
+      "text": "and judge and evaluate based off of what those traces were then"
+    },
+    {
+      "start": 664.7,
+      "end": 668.44,
+      "text": "it can start writing code to start evolving that agent right and"
+    },
+    {
+      "start": 668.44,
+      "end": 671.86,
+      "text": "that that works pretty well especially the smarter models that you go."
+    },
+    {
+      "start": 672.34,
+      "end": 676.4,
+      "text": "And this is pretty. This is pretty solid as a good state"
+    },
+    {
+      "start": 676.4,
+      "end": 677.34,
+      "text": "so."
+    },
+    {
+      "start": 678.68,
+      "end": 685.86,
+      "text": "Some. Some different like verbiage here. In specifically to this paper. They"
+    },
+    {
+      "start": 685.86,
+      "end": 689.8,
+      "text": "use some of the same vocabulary. As reinforcement learning does which is"
+    },
+    {
+      "start": 689.8,
+      "end": 694.54,
+      "text": "somewhat confusing because it kind of doesn't but you can imagine as"
+    },
+    {
+      "start": 694.54,
+      "end": 697.76,
+      "text": "like a certain set of levers that you have access to when"
+    },
+    {
+      "start": 697.76,
+      "end": 701.9,
+      "text": "you're creating an agent right so you have like the state like"
+    },
+    {
+      "start": 701.9,
+      "end": 705.74,
+      "text": "you know the config that is static as soon as it boots"
+    },
+    {
+      "start": 705.74,
+      "end": 711.24,
+      "text": "up. You have like the action statements are like anything that involves"
+    },
+    {
+      "start": 711.24,
+      "end": 713.68,
+      "text": "tools anything that can perform action so this is like your tool"
+    },
+    {
+      "start": 713.68,
+      "end": 718.96,
+      "text": "list. Your policy which in. This case it's like skills something that"
+    },
+    {
+      "start": 718.96,
+      "end": 723.06,
+      "text": "you can inject that runtime that can actually do it. The reward"
+    },
+    {
+      "start": 723.06,
+      "end": 727.54,
+      "text": "function is taken from our L but it's the idea that you"
+    },
+    {
+      "start": 727.54,
+      "end": 732.32,
+      "text": "have a benchmark score and some of these rewards could be a"
+    },
+    {
+      "start": 732.32,
+      "end": 734.46,
+      "text": "combination of different."
+    },
+    {
+      "start": 736.36,
+      "end": 740.6,
+      "text": "Like things that's like the worst word to use for that but"
+    },
+    {
+      "start": 740.6,
+      "end": 745.34,
+      "text": "it's. So like a word you might be looking at like the"
+    },
+    {
+      "start": 745.34,
+      "end": 745.72,
+      "text": "database."
+    },
+    {
+      "start": 747.2,
+      "end": 751.28,
+      "text": "Action that it created plus the tool that it used plus another"
+    },
+    {
+      "start": 751.28,
+      "end": 755.14,
+      "text": "dimension and so it's like multi dimensional. Thing can provide like a"
+    },
+    {
+      "start": 755.14,
+      "end": 758.52,
+      "text": "very good reward for your judging agent to say oh it actually"
+    },
+    {
+      "start": 758.52,
+      "end": 761.34,
+      "text": "did the test exactly how I wanted to or maybe you didn't."
+    },
+    {
+      "start": 761.66,
+      "end": 765.66,
+      "text": "And so I'll talk a little bit in depth into that."
+    },
+    {
+      "start": 767.12,
+      "end": 772.12,
+      "text": "And then just like the update like how how often you want"
+    },
+    {
+      "start": 772.12,
+      "end": 777.02,
+      "text": "to see as you're of all your. Your main agent is evolving."
+    },
+    {
+      "start": 777.02,
+      "end": 780.54,
+      "text": "This task agent you want to see the trajectory of like the"
+    },
+    {
+      "start": 780.54,
+      "end": 784.32,
+      "text": "improvement so like maybe on the first run it tweak like. A"
+    },
+    {
+      "start": 784.32,
+      "end": 786.92,
+      "text": "system prompt maybe it added a skill but then you want to"
+    },
+    {
+      "start": 786.92,
+      "end": 789.82,
+      "text": "see the next time when it looked at the trajectory said actually"
+    },
+    {
+      "start": 789.82,
+      "end": 792.1,
+      "text": "we need to we need to add another tool or we need"
+    },
+    {
+      "start": 792.1,
+      "end": 795.12,
+      "text": "to add another skill you could see the diff you know the"
+    },
+    {
+      "start": 795.12,
+      "end": 797.28,
+      "text": "diff of that trajectory for your task."
+    },
+    {
+      "start": 800.58,
+      "end": 804.06,
+      "text": "And let me let me know if. You slow down here."
+    },
+    {
+      "start": 815.16,
+      "end": 818.08,
+      "text": "Yeah. Yeah and I kind of jump ahead but these are like"
+    },
+    {
+      "start": 818.08,
+      "end": 822.34,
+      "text": "the four levers that you can tweak so harness engineering is really"
+    },
+    {
+      "start": 822.34,
+      "end": 827.04,
+      "text": "just a combination of getting these knobs right specifically for whatever it"
+    },
+    {
+      "start": 827.04,
+      "end": 830.08,
+      "text": "is you guys are trying to do. And this is different from"
+    },
+    {
+      "start": 830.08,
+      "end": 832.62,
+      "text": "the Claude Code right because Claude Code is already tuned like that's"
+    },
+    {
+      "start": 832.62,
+      "end": 837.02,
+      "text": "your driver but you want whatever agent is trying to do. to"
+    },
+    {
+      "start": 837.02,
+      "end": 839.88,
+      "text": "be as part of your product, it wants to do an action,"
+    },
+    {
+      "start": 839.96,
+      "end": 843.24,
+      "text": "maybe it's internal, maybe it's customer facing, these are the things that"
+    },
+    {
+      "start": 843.24,
+      "end": 845.96,
+      "text": "you should be on the lookout for, and these are the things"
+    },
+    {
+      "start": 845.96,
+      "end": 847.92,
+      "text": "that you want to have a benchmark against."
+    },
+    {
+      "start": 853.3,
+      "end": 855.94,
+      "text": "And I can also share these slides afterwards as well."
+    },
+    {
+      "start": 858.0,
+      "end": 866.8,
+      "text": "So what did this workshop experiment kind of do with these basic"
+    },
+    {
+      "start": 866.8,
+      "end": 872.12,
+      "text": "QN models and a basic harness? So you could see by just"
+    },
+    {
+      "start": 872.12,
+      "end": 875.32,
+      "text": "adding another tool that it needed off these benchmarks, I was able"
+    },
+    {
+      "start": 875.32,
+      "end": 880.18,
+      "text": "to evolve it clearly from zero because it did not understand this"
+    },
+    {
+      "start": 880.18,
+      "end": 883.56,
+      "text": "to it now adds a new capability and then it can actually"
+    },
+    {
+      "start": 883.56,
+      "end": 886.9,
+      "text": "perform the query search. So this is a very basic. Clearly, like"
+    },
+    {
+      "start": 886.9,
+      "end": 889.1,
+      "text": "if you give it a tool and it needs a tool, then"
+    },
+    {
+      "start": 889.1,
+      "end": 893.82,
+      "text": "it will work. But this is a good metric of seeing the"
+    },
+    {
+      "start": 893.82,
+      "end": 896.86,
+      "text": "curve of improvement. And this is kind of what you want to"
+    },
+    {
+      "start": 896.86,
+      "end": 900.68,
+      "text": "show too, like in order to as new versions start rolling out,"
+    },
+    {
+      "start": 900.76,
+      "end": 903.16,
+      "text": "as new use cases are coming out, you have something to point"
+    },
+    {
+      "start": 903.16,
+      "end": 907.88,
+      "text": "against to say, look, here's the baseline. It was horrible. And then"
+    },
+    {
+      "start": 907.88,
+      "end": 910.62,
+      "text": "here's how much it's improving for every iteration of what I'm trying"
+    },
+    {
+      "start": 910.62,
+      "end": 910.86,
+      "text": "to do."
+    },
+    {
+      "start": 912.72,
+      "end": 915.8,
+      "text": "There's other type of benchmarks that I also added in there. Like"
+    },
+    {
+      "start": 915.8,
+      "end": 921.44,
+      "text": "GSM 8K. These are all off the shelf. Some are specific to"
+    },
+    {
+      "start": 921.44,
+      "end": 927.0,
+      "text": "like telecom. Some are specific for different use cases. And the second"
+    },
+    {
+      "start": 927.0,
+      "end": 929.96,
+      "text": "half of this is like how you should be designing your benchmark."
+    },
+    {
+      "start": 930.14,
+      "end": 932.18,
+      "text": "And this is like the big takeaway that I got from the"
+    },
+    {
+      "start": 932.18,
+      "end": 932.88,
+      "text": "paper itself."
+    },
+    {
+      "start": 935.18,
+      "end": 940.24,
+      "text": "So adding like better reasoning, tuning the system prompt, adding like the"
+    },
+    {
+      "start": 940.24,
+      "end": 941.22,
+      "text": "right skill or policy."
+    },
+    {
+      "start": 942.58,
+      "end": 945.62,
+      "text": "Improve this model's baseline from 0 .65. And then I added a"
+    },
+    {
+      "start": 945.62,
+      "end": 946.36,
+      "text": "new model. 0 .95 to 0 .97."
+    },
+    {
+      "start": 951.42,
+      "end": 956.76,
+      "text": "Okay. So like T2, like Tau2, the telecom benchmark with tool use"
+    },
+    {
+      "start": 956.76,
+      "end": 960.86,
+      "text": "went from 0 .50 to 0 .75. And this is on a"
+    },
+    {
+      "start": 960.86,
+      "end": 968.04,
+      "text": "QN32. And a QN, yeah, QN32. So one thing to note on"
+    },
+    {
+      "start": 968.04,
+      "end": 971.7,
+      "text": "all of these numbers is that there's a lot of variation on"
+    },
+    {
+      "start": 971.7,
+      "end": 975.96,
+      "text": "the amount of times that you run the actual like process. So"
+    },
+    {
+      "start": 975.96,
+      "end": 981.2,
+      "text": "the more that your lab can be more tightly closed, then you"
+    },
+    {
+      "start": 981.2,
+      "end": 983.28,
+      "text": "can run as many iterations as you want. And you want to"
+    },
+    {
+      "start": 983.28,
+      "end": 986.88,
+      "text": "like move that variation number from like, you know, a variation of"
+    },
+    {
+      "start": 986.88,
+      "end": 990.6,
+      "text": "five to like two standard deviations away from what you actually want."
+    },
+    {
+      "start": 990.94,
+      "end": 994.6,
+      "text": "And yeah, because if you run it like five times, like you"
+    },
+    {
+      "start": 994.6,
+      "end": 997.2,
+      "text": "might get false signals. So that's something to also look out for."
+    },
+    {
+      "start": 997.28,
+      "end": 1000.98,
+      "text": "Where it's like, you know, if you run a loop against a"
+    },
+    {
+      "start": 1000.98,
+      "end": 1004.18,
+      "text": "benchmark, you know, 100 times or 1 ,000 times. You're going to"
+    },
+    {
+      "start": 1004.18,
+      "end": 1010.88,
+      "text": "get much more accurate numbers as to like the actual capabilities of"
+    },
+    {
+      "start": 1010.88,
+      "end": 1011.84,
+      "text": "the agents that you're designing."
+    },
+    {
+      "start": 1013.54,
+      "end": 1013.94,
+      "text": "Yeah."
+    },
+    {
+      "start": 1018.9,
+      "end": 1019.3,
+      "text": "Yeah."
+    },
+    {
+      "start": 1024.52,
+      "end": 1027.54,
+      "text": "So that would be like a very specific use case for a"
+    },
+    {
+      "start": 1027.54,
+      "end": 1031.78,
+      "text": "benchmark. The T2 telecom one is one that's off the shelf. It's"
+    },
+    {
+      "start": 1031.78,
+      "end": 1033.5,
+      "text": "used to like as like a. Yeah. I mean, I think it's"
+    },
+    {
+      "start": 1033.5,
+      "end": 1037.56,
+      "text": "a baseline benchmark for testing some of these models. And I just"
+    },
+    {
+      "start": 1037.56,
+      "end": 1039.9,
+      "text": "grabbed the ones that are most standard. So it's easy to reproduce."
+    },
+    {
+      "start": 1040.22,
+      "end": 1045.04,
+      "text": "I didn't go into designing my own benchmark. But exactly to your"
+    },
+    {
+      "start": 1045.04,
+      "end": 1049.14,
+      "text": "point, like if you wanted to create a benchmark that tests like"
+    },
+    {
+      "start": 1049.14,
+      "end": 1053.22,
+      "text": "certain configurations of telecom and stuff like that, the key here is"
+    },
+    {
+      "start": 1053.22,
+      "end": 1056.88,
+      "text": "like being able to design it with like, you know, the right"
+    },
+    {
+      "start": 1056.88,
+      "end": 1060.16,
+      "text": "rewards. And this is the part that's probably the most manual and"
+    },
+    {
+      "start": 1060.16,
+      "end": 1064.46,
+      "text": "the most intent driven. Like, you have to know the domain. Right?"
+    },
+    {
+      "start": 1064.58,
+      "end": 1070.14,
+      "text": "Like, so these are off the shelf for example purposes to recreate"
+    },
+    {
+      "start": 1070.14,
+      "end": 1073.8,
+      "text": "the lab to just show that, you know, by adding different policies,"
+    },
+    {
+      "start": 1074.0,
+      "end": 1079.06,
+      "text": "tweaking the system prompt, tweaking this, even a very basic small model"
+    },
+    {
+      "start": 1079.06,
+      "end": 1083.44,
+      "text": "can improve. At this stage, we have specific benchmarks for each industry,"
+    },
+    {
+      "start": 1083.6,
+      "end": 1088.26,
+      "text": "right? Yeah. Which is some theoretical mathematics or physics kind of benchmark."
+    },
+    {
+      "start": 1088.38,
+      "end": 1096.18,
+      "text": "But specific industries. Yes. You mean like the telecom, financial, all the"
+    },
+    {
+      "start": 1096.18,
+      "end": 1100.9,
+      "text": "different industries. Yeah. There's definitely benchmarks out there for a lot of"
+    },
+    {
+      "start": 1100.9,
+      "end": 1103.76,
+      "text": "the different industries. I don't know if all of them. But even"
+    },
+    {
+      "start": 1103.76,
+      "end": 1107.36,
+      "text": "within each industry, depending on what you want your agent to do,"
+    },
+    {
+      "start": 1107.5,
+      "end": 1108.52,
+      "text": "it's going to change."
+    },
+    {
+      "start": 1109.72,
+      "end": 1113.96,
+      "text": "Because an agent might be good at broad telecom stuff. But maybe"
+    },
+    {
+      "start": 1113.96,
+      "end": 1117.0,
+      "text": "you want to put an agent that can look at the triaging"
+    },
+    {
+      "start": 1117.0,
+      "end": 1123.28,
+      "text": "errors of telecom equipment. Which could produce totally different results. So I"
+    },
+    {
+      "start": 1123.28,
+      "end": 1129.72,
+      "text": "think, yeah. Yeah. Go ahead. So for someone who is just taking"
+    },
+    {
+      "start": 1129.72,
+      "end": 1136.52,
+      "text": "a very specific, like eighth grade version. Yeah. So can you give"
+    },
+    {
+      "start": 1136.52,
+      "end": 1140.52,
+      "text": "me an example of like a very not smart person who's under"
+    },
+    {
+      "start": 1140.52,
+      "end": 1145.9,
+      "text": "the ban? Yeah. Fifth grade. Okay. Yeah. Second grade. Let's go lower."
+    },
+    {
+      "start": 1146.2,
+      "end": 1152.54,
+      "text": "Yeah. Yeah. So these topics are pretty abstract. But so I was"
+    },
+    {
+      "start": 1152.54,
+      "end": 1156.58,
+      "text": "doing some consulting work earlier this year for a startup that was"
+    },
+    {
+      "start": 1156.58,
+      "end": 1160.48,
+      "text": "doing like an EHR. So like they were in healthcare. Yeah. So"
+    },
+    {
+      "start": 1160.48,
+      "end": 1163.5,
+      "text": "they were doing like they wanted to make an agent that was"
+    },
+    {
+      "start": 1163.5,
+      "end": 1167.68,
+      "text": "tailored to like medical stuff. And while the models are really good,"
+    },
+    {
+      "start": 1167.8,
+      "end": 1172.9,
+      "text": "there's like specific use cases around like, you know, turning things into"
+    },
+    {
+      "start": 1172.9,
+      "end": 1177.06,
+      "text": "soap notes. Like how good those things actually can be. Yeah. Sorry."
+    },
+    {
+      "start": 1177.48,
+      "end": 1183.12,
+      "text": "So many acronyms. Like, yeah. Soap notes in the healthcare world is"
+    },
+    {
+      "start": 1183.12,
+      "end": 1186.92,
+      "text": "just like the notes that a doctor might do after they meet"
+    },
+    {
+      "start": 1186.92,
+      "end": 1189.96,
+      "text": "with you. And so they want to they have they're very particular"
+    },
+    {
+      "start": 1189.96,
+      "end": 1193.32,
+      "text": "on like how they want that to be done. It can't hallucinate."
+    },
+    {
+      "start": 1193.4,
+      "end": 1197.9,
+      "text": "So it has to be grounded on something. So it when you"
+    },
+    {
+      "start": 1197.9,
+      "end": 1200.52,
+      "text": "say like, you know, I want an agent to go do the"
+    },
+    {
+      "start": 1200.52,
+      "end": 1204.94,
+      "text": "soap notes like it. There's a lot of variability on what the"
+    },
+    {
+      "start": 1204.94,
+      "end": 1206.8,
+      "text": "output could be. And it's like, you know, I want an agent"
+    },
+    {
+      "start": 1206.8,
+      "end": 1208.18,
+      "text": "to go do the soap notes. And it's like, when I say"
+    },
+    {
+      "start": 1208.18,
+      "end": 1212.16,
+      "text": "about being able to design benchmarks, you know, grabbing like some maybe"
+    },
+    {
+      "start": 1212.16,
+      "end": 1216.26,
+      "text": "real use cases, being able to like, trying to mimic that situation"
+    },
+    {
+      "start": 1216.26,
+      "end": 1220.68,
+      "text": "as close to as possible, and then seeing how that agent, you"
+    },
+    {
+      "start": 1220.68,
+      "end": 1224.06,
+      "text": "know, maybe there's a skill of like, there's this specific soap note"
+    },
+    {
+      "start": 1224.06,
+      "end": 1226.22,
+      "text": "version thing that you want. And before you do this, you have"
+    },
+    {
+      "start": 1226.22,
+      "end": 1229.54,
+      "text": "to ground yourself, use this tool for this kind of thing. And"
+    },
+    {
+      "start": 1229.54,
+      "end": 1233.0,
+      "text": "it's almost like narrowing the scope of capability for this agent to"
+    },
+    {
+      "start": 1233.0,
+      "end": 1235.54,
+      "text": "just do be really good at this one thing."
+    },
+    {
+      "start": 1237.76,
+      "end": 1240.78,
+      "text": "So, yeah, like, if you ask Claude to give you a soap"
+    },
+    {
+      "start": 1240.78,
+      "end": 1243.9,
+      "text": "note, it will give you a soap note. But it might not"
+    },
+    {
+      "start": 1243.9,
+      "end": 1247.48,
+      "text": "be exactly how your product works or how your customers are expecting"
+    },
+    {
+      "start": 1247.48,
+      "end": 1247.72,
+      "text": "it."
+    },
+    {
+      "start": 1253.36,
+      "end": 1254.58,
+      "text": "Yeah. Yeah."
+    },
+    {
+      "start": 1257.14,
+      "end": 1257.42,
+      "text": "Yeah."
+    },
+    {
+      "start": 1258.92,
+      "end": 1259.4,
+      "text": "Yeah."
+    },
+    {
+      "start": 1261.52,
+      "end": 1265.52,
+      "text": "And there's always, I think the hard part with, you know, with"
+    },
+    {
+      "start": 1265.52,
+      "end": 1267.92,
+      "text": "the tools that we're using, all of this engineering and this area"
+    },
+    {
+      "start": 1267.92,
+      "end": 1272.62,
+      "text": "of the field is that it's by nature like non -deterministic. So"
+    },
+    {
+      "start": 1272.62,
+      "end": 1275.5,
+      "text": "like, your guess is as good as mine what this thing is"
+    },
+    {
+      "start": 1275.5,
+      "end": 1278.44,
+      "text": "going to do. Like, we're just trying to put it as good"
+    },
+    {
+      "start": 1278.44,
+      "end": 1281.96,
+      "text": "in a lab as possible to produce the best outcome. And then"
+    },
+    {
+      "start": 1281.96,
+      "end": 1286.34,
+      "text": "we're testing against it. So there is by nature like non -determinism"
+    },
+    {
+      "start": 1286.34,
+      "end": 1290.44,
+      "text": "throughout the whole process. But then it's our job to like point"
+    },
+    {
+      "start": 1290.44,
+      "end": 1294.5,
+      "text": "back to these metrics and say, look, on this benchmark, it's getting"
+    },
+    {
+      "start": 1294.5,
+      "end": 1298.06,
+      "text": "87%. And maybe that's good enough to pass like certain things that"
+    },
+    {
+      "start": 1298.06,
+      "end": 1302.3,
+      "text": "are non -critical. But maybe not like surgery level."
+    },
+    {
+      "start": 1306.86,
+      "end": 1311.58,
+      "text": "So here's another snapshot view of like the improvement. From a basic"
+    },
+    {
+      "start": 1311.58,
+      "end": 1318.3,
+      "text": "model on GSM 8K. And the interesting part between the different between"
+    },
+    {
+      "start": 1318.3,
+      "end": 1323.16,
+      "text": "the different benchmarks is that I leverage different controls in order to"
+    },
+    {
+      "start": 1323.16,
+      "end": 1325.68,
+      "text": "get the better output. So some I needed better resources. Some I"
+    },
+    {
+      "start": 1325.68,
+      "end": 1327.2,
+      "text": "needed better reasoning. Some I needed extra tools."
+    },
+    {
+      "start": 1328.54,
+      "end": 1333.36,
+      "text": "Some I needed something else. But ultimately, every this kind of illustrates"
+    },
+    {
+      "start": 1333.36,
+      "end": 1337.58,
+      "text": "that every benchmark is slightly different than the next. And so if"
+    },
+    {
+      "start": 1337.58,
+      "end": 1341.66,
+      "text": "there's one big takeaway is that designing like the test and understanding"
+    },
+    {
+      "start": 1341.66,
+      "end": 1346.5,
+      "text": "the domain is probably like 70 to 80 % of the actual"
+    },
+    {
+      "start": 1346.5,
+      "end": 1346.92,
+      "text": "work."
+    },
+    {
+      "start": 1351.81,
+      "end": 1357.26,
+      "text": "I mean, this is very obvious. But obvious might not be so"
+    },
+    {
+      "start": 1357.26,
+      "end": 1362.88,
+      "text": "obvious where agents might be throttling because you're just flat out missing"
+    },
+    {
+      "start": 1362.88,
+      "end": 1366.12,
+      "text": "a tool that they need. Right? So I think that there's a"
+    },
+    {
+      "start": 1366.12,
+      "end": 1370.3,
+      "text": "bottom layer to all of this where it's like understanding the semantic"
+    },
+    {
+      "start": 1370.3,
+      "end": 1374.46,
+      "text": "things that the agent can access. So another big part of this"
+    },
+    {
+      "start": 1374.46,
+      "end": 1378.52,
+      "text": "is like, again, just understanding your product well enough. Understanding like what"
+    },
+    {
+      "start": 1378.52,
+      "end": 1383.14,
+      "text": "you have available to play with. And then does the agent or"
+    },
+    {
+      "start": 1383.14,
+      "end": 1386.14,
+      "text": "can AI like actually grab for the things that it needs at"
+    },
+    {
+      "start": 1386.14,
+      "end": 1390.46,
+      "text": "the right time? So this is like a very subjective art at"
+    },
+    {
+      "start": 1390.46,
+      "end": 1394.78,
+      "text": "this point. But it's, you know, understanding. Like, do I have all"
+    },
+    {
+      "start": 1394.78,
+      "end": 1397.92,
+      "text": "of the pieces that I need in order to give this model"
+    },
+    {
+      "start": 1397.92,
+      "end": 1400.22,
+      "text": "the best opportunity it can to produce the best result?"
+    },
+    {
+      "start": 1404.1,
+      "end": 1408.62,
+      "text": "So which components kind of make the most difference based off of"
+    },
+    {
+      "start": 1408.62,
+      "end": 1409.08,
+      "text": "my tests?"
+    },
+    {
+      "start": 1410.82,
+      "end": 1415.32,
+      "text": "I think it the answer to almost all of these is like"
+    },
+    {
+      "start": 1415.32,
+      "end": 1420.92,
+      "text": "it depends. But I think that using better models, like these are"
+    },
+    {
+      "start": 1420.92,
+      "end": 1425.96,
+      "text": "very not great. Like, the smaller they are, like, the more chance"
+    },
+    {
+      "start": 1425.96,
+      "end": 1430.32,
+      "text": "they hallucinate, they choose the wrong tool. But I think if you're"
+    },
+    {
+      "start": 1430.32,
+      "end": 1433.92,
+      "text": "talking about like building something for a product and in the wild,"
+    },
+    {
+      "start": 1434.06,
+      "end": 1439.94,
+      "text": "and even anecdotally, I think that skills are probably like the one"
+    },
+    {
+      "start": 1439.94,
+      "end": 1445.44,
+      "text": "that drives the most lever on being better. Because they can be"
+    },
+    {
+      "start": 1445.44,
+      "end": 1450.6,
+      "text": "ingested at run time for specific use cases. And they actually steer"
+    },
+    {
+      "start": 1450.6,
+      "end": 1454.1,
+      "text": "the model in like a better way. So, yeah. So, just completely"
+    },
+    {
+      "start": 1454.1,
+      "end": 1459.26,
+      "text": "anecdotally, but some of it supports it. I think skills or anything"
+    },
+    {
+      "start": 1459.26,
+      "end": 1462.28,
+      "text": "that can be injected at run time as the agent is working"
+    },
+    {
+      "start": 1462.28,
+      "end": 1465.66,
+      "text": "give it a better and I'm sure you guys have also felt"
+    },
+    {
+      "start": 1465.66,
+      "end": 1469.04,
+      "text": "this with like Claude skills. You know, like the more Claude skills"
+    },
+    {
+      "start": 1469.04,
+      "end": 1472.24,
+      "text": "that you create, the better, like the more it feels like it"
+    },
+    {
+      "start": 1472.24,
+      "end": 1475.72,
+      "text": "knows your workflow, it might create tickets in a certain way. Like"
+    },
+    {
+      "start": 1475.72,
+      "end": 1480.3,
+      "text": "it knows how to progress in your style and your taste. So,"
+    },
+    {
+      "start": 1480.38,
+      "end": 1482.36,
+      "text": "both anecdotally and in the wild, it's a good thing. But anecdotally"
+    },
+    {
+      "start": 1482.36,
+      "end": 1485.78,
+      "text": "and in some benchmarks, being able to inject something at run time"
+    },
+    {
+      "start": 1485.78,
+      "end": 1490.34,
+      "text": "for a certain use case produces, I think, the highest leverage result."
+    },
+    {
+      "start": 1494.48,
+      "end": 1496.52,
+      "text": "Okay. So, now to the benchmark piece."
+    },
+    {
+      "start": 1499.9,
+      "end": 1503.68,
+      "text": "So, designing the benchmark is really like most of the work in"
+    },
+    {
+      "start": 1503.68,
+      "end": 1507.1,
+      "text": "order to grab like a baseline of here's where it is right"
+    },
+    {
+      "start": 1507.1,
+      "end": 1511.36,
+      "text": "now with vanilla off the shelf stuff. And then here is where"
+    },
+    {
+      "start": 1511.36,
+      "end": 1513.88,
+      "text": "it's working. It's just getting better over time."
+    },
+    {
+      "start": 1518.18,
+      "end": 1522.72,
+      "text": "It's just getting better over time. It's just getting better over time."
+    },
+    {
+      "start": 1522.72,
+      "end": 1522.88,
+      "text": "It's just getting better over time. It's just getting better over time."
+    },
+    {
+      "start": 1522.88,
+      "end": 1523.86,
+      "text": "It's just getting better over time. It's just getting better over time."
+    },
+    {
+      "start": 1523.88,
+      "end": 1527.48,
+      "text": "It's just getting better over time. It's just getting better over time."
+    },
+    {
+      "start": 1527.48,
+      "end": 1530.72,
+      "text": "It's just getting better over time. It's just getting better over time."
+    },
+    {
+      "start": 1530.8,
+      "end": 1541.86,
+      "text": "It's just getting better over time. And I found it pretty interesting"
+    },
+    {
+      "start": 1541.86,
+      "end": 1546.54,
+      "text": "that one thing that really helps the benchmark is if you can"
+    },
+    {
+      "start": 1546.54,
+      "end": 1552.0,
+      "text": "create like some dimensions that aggregate it, aggregated produces like a good,"
+    },
+    {
+      "start": 1552.08,
+      "end": 1556.4,
+      "text": "they call this like a reward function. So like not only are"
+    },
+    {
+      "start": 1556.4,
+      "end": 1559.76,
+      "text": "the traces good, but like maybe a reward function is calling these"
+    },
+    {
+      "start": 1559.76,
+      "end": 1563.2,
+      "text": "three tools for this use case at this time. And so now"
+    },
+    {
+      "start": 1563.2,
+      "end": 1566.1,
+      "text": "when Claude is looking at it, it can actually grade it upon"
+    },
+    {
+      "start": 1566.1,
+      "end": 1569.58,
+      "text": "many different things, not just the output. So like the naive way"
+    },
+    {
+      "start": 1569.58,
+      "end": 1572.74,
+      "text": "is just looking at the output and being like, that looks good,"
+    },
+    {
+      "start": 1572.9,
+      "end": 1577.48,
+      "text": "right? But the next version of this is being able to grade"
+    },
+    {
+      "start": 1577.48,
+      "end": 1580.38,
+      "text": "it against, you know, did it call this tool at the right"
+    },
+    {
+      "start": 1580.38,
+      "end": 1584.98,
+      "text": "time as I'm expecting? Did it, you know, produce like these assertions?"
+    },
+    {
+      "start": 1585.12,
+      "end": 1590.32,
+      "text": "Did it do this? And every benchmark is different because as it"
+    },
+    {
+      "start": 1590.32,
+      "end": 1594.56,
+      "text": "depends, there's certain things that you might just want an exact match,"
+    },
+    {
+      "start": 1594.74,
+      "end": 1596.8,
+      "text": "right? Where?"
+    },
+    {
+      "start": 1598.0,
+      "end": 1601.28,
+      "text": "You want an agent to just do something and then it should"
+    },
+    {
+      "start": 1601.28,
+      "end": 1606.7,
+      "text": "exactly reproduce the same thing. So deciding on what benchmark you want"
+    },
+    {
+      "start": 1606.7,
+      "end": 1611.34,
+      "text": "to create and design is pretty much all of it. But creating"
+    },
+    {
+      "start": 1611.34,
+      "end": 1614.62,
+      "text": "multiple dimensions of something that's a little bit more complicated is going"
+    },
+    {
+      "start": 1614.62,
+      "end": 1615.22,
+      "text": "to take you further."
+    },
+    {
+      "start": 1618.82,
+      "end": 1623.38,
+      "text": "So another thing with like creating a good benchmark that I took"
+    },
+    {
+      "start": 1623.38,
+      "end": 1626.96,
+      "text": "away from this paper, and I could also just quickly show you"
+    },
+    {
+      "start": 1626.96,
+      "end": 1632.56,
+      "text": "like it was this paper. If anybody wants to take a look."
+    },
+    {
+      "start": 1636.16,
+      "end": 1640.92,
+      "text": "Sorry. And this HarnessX, also a little bit about this, is that"
+    },
+    {
+      "start": 1640.92,
+      "end": 1643.4,
+      "text": "they also have a GitHub repo. So you can actually try to"
+    },
+    {
+      "start": 1643.4,
+      "end": 1648.1,
+      "text": "reproduce their thing. The difference that I did for this paper is"
+    },
+    {
+      "start": 1648.1,
+      "end": 1652.7,
+      "text": "that they, HarnessX uses, you need, you technically need two agents to"
+    },
+    {
+      "start": 1652.7,
+      "end": 1655.78,
+      "text": "produce all of this. Which is one, you need one that is"
+    },
+    {
+      "start": 1655.78,
+      "end": 1658.82,
+      "text": "like the verifier, the LLM judge. And the one that's going to"
+    },
+    {
+      "start": 1658.82,
+      "end": 1662.06,
+      "text": "tweak the task agent. And then the task agent is the one"
+    },
+    {
+      "start": 1662.06,
+      "end": 1666.4,
+      "text": "that is doing the actual work. So by nature, you need to"
+    },
+    {
+      "start": 1666.4,
+      "end": 1671.06,
+      "text": "have a smarter like verifier and LLM. Or else they're both going"
+    },
+    {
+      "start": 1671.06,
+      "end": 1671.5,
+      "text": "to get confused."
+    },
+    {
+      "start": 1673.18,
+      "end": 1676.96,
+      "text": "So in this, instead of burning tokens, I switched it to my"
+    },
+    {
+      "start": 1676.96,
+      "end": 1682.8,
+      "text": "clod being the verifier, the source of truth, like the evolving agent."
+    },
+    {
+      "start": 1683.72,
+      "end": 1687.08,
+      "text": "So that's one thing that I deviated a little bit from in"
+    },
+    {
+      "start": 1687.08,
+      "end": 1690.7,
+      "text": "this paper. Purely because I didn't want to waste tokens and pay"
+    },
+    {
+      "start": 1690.7,
+      "end": 1691.38,
+      "text": "for API cost."
+    },
+    {
+      "start": 1693.04,
+      "end": 1693.58,
+      "text": "Yeah."
+    },
+    {
+      "start": 1696.76,
+      "end": 1697.3,
+      "text": "Yeah."
+    },
+    {
+      "start": 1700.14,
+      "end": 1700.68,
+      "text": "Yeah."
+    },
+    {
+      "start": 1705.14,
+      "end": 1705.68,
+      "text": "Yeah."
+    },
+    {
+      "start": 1709.28,
+      "end": 1714.58,
+      "text": "So you can. I think like whoever's observing and whoever's like evolving"
+    },
+    {
+      "start": 1714.58,
+      "end": 1717.88,
+      "text": "has to be, you have to, it has to be better. Than."
+    },
+    {
+      "start": 1718.0,
+      "end": 1722.18,
+      "text": "Than whatever. Or at the same par. I used the same one."
+    },
+    {
+      "start": 1722.32,
+      "end": 1726.08,
+      "text": "So I used, I shifted it to where my clod code with"
+    },
+    {
+      "start": 1726.08,
+      "end": 1729.3,
+      "text": "Opus 4 .8 or maybe Fable 5 is like the smartest thing"
+    },
+    {
+      "start": 1729.3,
+      "end": 1732.16,
+      "text": "I can have. So that's, that was what I used for my"
+    },
+    {
+      "start": 1732.16,
+      "end": 1737.38,
+      "text": "evolving agent and my judge agent, things like that. Looking at a"
+    },
+    {
+      "start": 1737.38,
+      "end": 1741.24,
+      "text": "Qwen 3 .32b. So it's like night and day."
+    },
+    {
+      "start": 1743.62,
+      "end": 1747.02,
+      "text": "But yeah, that's, that's kind of like the, the setup for like"
+    },
+    {
+      "start": 1747.02,
+      "end": 1748.22,
+      "text": "the actual lab of how you do it. And how you kind"
+    },
+    {
+      "start": 1748.22,
+      "end": 1750.46,
+      "text": "of evolve. You need, you need one that's really smart. One that's"
+    },
+    {
+      "start": 1750.46,
+      "end": 1755.28,
+      "text": "driving it. One that's like improving, maybe like tuned to your thing."
+    },
+    {
+      "start": 1755.42,
+      "end": 1758.56,
+      "text": "And also like on a sidebar too, I think."
+    },
+    {
+      "start": 1760.96,
+      "end": 1765.24,
+      "text": "Because these, there's like a tokenomics thing at play too, because if"
+    },
+    {
+      "start": 1765.24,
+      "end": 1769.24,
+      "text": "you are making an agent for your product, like you all, sure"
+    },
+    {
+      "start": 1769.24,
+      "end": 1771.98,
+      "text": "you can put like the most expensive model you can, but ultimately"
+    },
+    {
+      "start": 1771.98,
+      "end": 1775.08,
+      "text": "you want to kind of optimize for the output per the cost"
+    },
+    {
+      "start": 1775.08,
+      "end": 1778.1,
+      "text": "that you know, you're building per everything. So it's almost like. You"
+    },
+    {
+      "start": 1778.1,
+      "end": 1781.76,
+      "text": "want to squeeze as much juice with the little intelligence as you"
+    },
+    {
+      "start": 1781.76,
+      "end": 1787.48,
+      "text": "can. And that is in itself more difficult said than done."
+    },
+    {
+      "start": 1789.38,
+      "end": 1793.42,
+      "text": "But going back to the benchmarks, being able to not only have"
+    },
+    {
+      "start": 1793.42,
+      "end": 1797.4,
+      "text": "multiple dimensions to grade on, but also like have a gradient. So"
+    },
+    {
+      "start": 1797.4,
+      "end": 1800.8,
+      "text": "I was also naively just being like, is this good enough? Like,"
+    },
+    {
+      "start": 1800.92,
+      "end": 1804.48,
+      "text": "did it produce, you know, assume like the output was good as"
+    },
+    {
+      "start": 1804.48,
+      "end": 1808.62,
+      "text": "what I intended it to be. But I think having a gradient"
+    },
+    {
+      "start": 1808.62,
+      "end": 1811.46,
+      "text": "on the return, like, and you'll see some of the traces actually"
+    },
+    {
+      "start": 1811.46,
+      "end": 1814.4,
+      "text": "look kind of different. But you can score based off of like"
+    },
+    {
+      "start": 1814.4,
+      "end": 1818.32,
+      "text": "0 .5 or 0 .75. And having this gradient, I think, is"
+    },
+    {
+      "start": 1818.32,
+      "end": 1822.34,
+      "text": "going to actually produce better like metrics overall. Go ahead. Would you"
+    },
+    {
+      "start": 1822.34,
+      "end": 1826.36,
+      "text": "define gradient within the context of your product? Yeah. What? Would you"
+    },
+    {
+      "start": 1826.36,
+      "end": 1829.42,
+      "text": "define gradient within the context of your product? Yeah. So gradient, as"
+    },
+    {
+      "start": 1829.42,
+      "end": 1835.24,
+      "text": "in the, how the LLM judge grades the result from the task"
+    },
+    {
+      "start": 1835.24,
+      "end": 1839.04,
+      "text": "agent. To your benchmarks. So maybe you got like, you know, 0"
+    },
+    {
+      "start": 1839.04,
+      "end": 1842.4,
+      "text": ".4. And the more dimensions that you add to that benchmark, then"
+    },
+    {
+      "start": 1842.4,
+      "end": 1847.16,
+      "text": "the tighter the gradient can be. Right? Outside of just saying, if"
+    },
+    {
+      "start": 1847.16,
+      "end": 1850.26,
+      "text": "you have one dimension and it's just the output, it's like, it"
+    },
+    {
+      "start": 1850.26,
+      "end": 1852.2,
+      "text": "did it or it did not do it kind of thing. So"
+    },
+    {
+      "start": 1852.2,
+      "end": 1854.42,
+      "text": "would that be the difference between like a one, two, three, or"
+    },
+    {
+      "start": 1854.42,
+      "end": 1857.24,
+      "text": "four? And to putting it on a graph and having like a"
+    },
+    {
+      "start": 1857.24,
+      "end": 1860.92,
+      "text": "scatter plot? Yes. Yes. And then being able to actually like map"
+    },
+    {
+      "start": 1860.92,
+      "end": 1864.22,
+      "text": "the trajectory of all your runs. So like as it's evolving, you"
+    },
+    {
+      "start": 1864.22,
+      "end": 1866.68,
+      "text": "know, you're seeing it. You're seeing it. You're seeing it improve from"
+    },
+    {
+      "start": 1866.68,
+      "end": 1869.52,
+      "text": "like 0 .3 to like 0 .4. And some of this could"
+    },
+    {
+      "start": 1869.52,
+      "end": 1873.66,
+      "text": "be subjective. But again, the more dimensions that you have with the"
+    },
+    {
+      "start": 1873.66,
+      "end": 1878.16,
+      "text": "more like including some deterministic output, then you can start, you can"
+    },
+    {
+      "start": 1878.16,
+      "end": 1881.2,
+      "text": "actually start seeing the graph start plotting away at it. So you're"
+    },
+    {
+      "start": 1881.2,
+      "end": 1884.36,
+      "text": "describing like dimensions of tests and then the movement over time. Yes."
+    },
+    {
+      "start": 1884.5,
+      "end": 1888.34,
+      "text": "Exactly. And that's something that you can always go to either your"
+    },
+    {
+      "start": 1888.34,
+      "end": 1892.46,
+      "text": "product team, like the, whoever is like looking at it and saying"
+    },
+    {
+      "start": 1892.46,
+      "end": 1896.38,
+      "text": "like, look, here's the benchmarks. Here's what the gradient over time kind"
+    },
+    {
+      "start": 1896.38,
+      "end": 1898.14,
+      "text": "of looks like. And I think we're at a good place to"
+    },
+    {
+      "start": 1898.14,
+      "end": 1899.84,
+      "text": "for this agent to do this work."
+    },
+    {
+      "start": 1901.24,
+      "end": 1903.72,
+      "text": "And then having a baseline. So the first test has to kind"
+    },
+    {
+      "start": 1903.72,
+      "end": 1907.38,
+      "text": "of bomb, right? Because like you need to know where you're starting"
+    },
+    {
+      "start": 1907.38,
+      "end": 1910.84,
+      "text": "at. And I think that's also important, equally as important."
+    },
+    {
+      "start": 1915.64,
+      "end": 1919.88,
+      "text": "So another interesting thing that came out of this HarnessX paper is"
+    },
+    {
+      "start": 1919.88,
+      "end": 1925.36,
+      "text": "the way they export different artifacts per every run. And so the"
+    },
+    {
+      "start": 1925.36,
+      "end": 1927.66,
+      "text": "framework itself kind of handles a lot of this for you. But"
+    },
+    {
+      "start": 1927.66,
+      "end": 1930.54,
+      "text": "this is kind of what you're alluding to with like the curves."
+    },
+    {
+      "start": 1931.64,
+      "end": 1934.96,
+      "text": "So like how many tokens it spent, the pass rate, the cost,"
+    },
+    {
+      "start": 1935.12,
+      "end": 1939.14,
+      "text": "like all these different things. And I think if you are, if"
+    },
+    {
+      "start": 1939.14,
+      "end": 1942.58,
+      "text": "the agent or like the AI work is really core to your"
+    },
+    {
+      "start": 1942.58,
+      "end": 1946.74,
+      "text": "product, maybe this is an unpopular opinion, but you should try to"
+    },
+    {
+      "start": 1946.74,
+      "end": 1950.82,
+      "text": "like almost like design your own harness or like really modify like"
+    },
+    {
+      "start": 1950.82,
+      "end": 1954.16,
+      "text": "something off the shelf. But and. Yeah. I'll show it in the"
+    },
+    {
+      "start": 1954.16,
+      "end": 1957.14,
+      "text": "next slide or maybe the next two slides. But off the shelf"
+    },
+    {
+      "start": 1957.14,
+      "end": 1961.94,
+      "text": "like harnesses don't produce maybe like this rich artifact at the end"
+    },
+    {
+      "start": 1961.94,
+      "end": 1966.08,
+      "text": "that you can grade against. They produce traces. But you might want"
+    },
+    {
+      "start": 1966.08,
+      "end": 1969.76,
+      "text": "this like multiple dimension benchmark test. You might want like all these"
+    },
+    {
+      "start": 1969.76,
+      "end": 1973.92,
+      "text": "different things that your evolving agent can just look at and say,"
+    },
+    {
+      "start": 1974.02,
+      "end": 1976.7,
+      "text": "okay, we need to tweak this lever. You know, we need to"
+    },
+    {
+      "start": 1976.7,
+      "end": 1978.92,
+      "text": "add this. Let's see how it does. Let's do another run."
+    },
+    {
+      "start": 1980.34,
+      "end": 1983.6,
+      "text": "And again, like with anything, with any closed loop system. Like the"
+    },
+    {
+      "start": 1983.6,
+      "end": 1988.06,
+      "text": "more, the better the output that an evolving agent can see, you"
+    },
+    {
+      "start": 1988.06,
+      "end": 1991.66,
+      "text": "know, the better that it can like assume what it needs to"
+    },
+    {
+      "start": 1991.66,
+      "end": 1998.26,
+      "text": "do next. So yeah, like giving it all these dimensions and all"
+    },
+    {
+      "start": 1998.26,
+      "end": 2001.16,
+      "text": "of these like output artifacts, it knows, okay, I need to tweak"
+    },
+    {
+      "start": 2001.16,
+      "end": 2004.52,
+      "text": "this skill and let's do another run. I need to add another"
+    },
+    {
+      "start": 2004.52,
+      "end": 2005.74,
+      "text": "tool. Let's do another run."
+    },
+    {
+      "start": 2007.2,
+      "end": 2012.48,
+      "text": "And again, to just for like statistical stuff. You want to increase"
+    },
+    {
+      "start": 2012.48,
+      "end": 2016.14,
+      "text": "the amount of runs that you can possibly do without breaking the"
+    },
+    {
+      "start": 2016.14,
+      "end": 2016.32,
+      "text": "bank."
+    },
+    {
+      "start": 2019.68,
+      "end": 2024.4,
+      "text": "So here's like a trace. Like here's that like custom trace. So"
+    },
+    {
+      "start": 2024.4,
+      "end": 2027.94,
+      "text": "yes, it did. The traces of, you know, when a tool started,"
+    },
+    {
+      "start": 2028.1,
+      "end": 2030.68,
+      "text": "when a tool ended, what it was called, what was the output."
+    },
+    {
+      "start": 2030.94,
+      "end": 2035.74,
+      "text": "But then there's also part of the trace that the judge will"
+    },
+    {
+      "start": 2035.74,
+      "end": 2040.32,
+      "text": "create is, you know, like here's an exit reason. Here's the dimension"
+    },
+    {
+      "start": 2040.32,
+      "end": 2046.22,
+      "text": "breakdown. For like the reward. Like did it actually input something into"
+    },
+    {
+      "start": 2046.22,
+      "end": 2050.6,
+      "text": "the database? Did it perform the action? Here's the expected actions. Here's"
+    },
+    {
+      "start": 2050.6,
+      "end": 2053.52,
+      "text": "like the executed actions. And then this is what's going to drive"
+    },
+    {
+      "start": 2053.52,
+      "end": 2056.54,
+      "text": "that curve of is this thing good or not?"
+    },
+    {
+      "start": 2059.1,
+      "end": 2062.76,
+      "text": "So this is an example that is, again, just came off of"
+    },
+    {
+      "start": 2062.76,
+      "end": 2066.26,
+      "text": "the paper. And it's kind of baked into this HarnessX framework. But"
+    },
+    {
+      "start": 2066.26,
+      "end": 2069.4,
+      "text": "I wouldn't say HarnessX is something, is not a framework that you"
+    },
+    {
+      "start": 2069.4,
+      "end": 2073.52,
+      "text": "would use in production. Like it's purely for research purposes. And I"
+    },
+    {
+      "start": 2073.52,
+      "end": 2078.98,
+      "text": "would suggest like tweaking and learning and understanding what you're doing to"
+    },
+    {
+      "start": 2078.98,
+      "end": 2079.4,
+      "text": "this harness."
+    },
+    {
+      "start": 2081.24,
+      "end": 2085.52,
+      "text": "Okay. So another one is who grades? You know, I think I"
+    },
+    {
+      "start": 2085.52,
+      "end": 2089.5,
+      "text": "briefly touched on it. But, you know, it has to be a"
+    },
+    {
+      "start": 2089.5,
+      "end": 2092.48,
+      "text": "smarter agent, right, to be able to look at these traces and"
+    },
+    {
+      "start": 2092.48,
+      "end": 2096.32,
+      "text": "understand and like assume. So there could be, this is like something"
+    },
+    {
+      "start": 2096.32,
+      "end": 2100.04,
+      "text": "to keep an eye on too. Is that, is your benchmark gameable?"
+    },
+    {
+      "start": 2100.64,
+      "end": 2103.68,
+      "text": "You know, like can an evolving agent be smart enough to kind"
+    },
+    {
+      "start": 2103.68,
+      "end": 2106.02,
+      "text": "of game the system a little bit to make your benchmarks look"
+    },
+    {
+      "start": 2106.02,
+      "end": 2110.28,
+      "text": "good? But maybe like the field product is not as great. So"
+    },
+    {
+      "start": 2110.28,
+      "end": 2114.34,
+      "text": "there's variability in that. And I think that also comes with, this"
+    },
+    {
+      "start": 2114.34,
+      "end": 2117.96,
+      "text": "is out of the scope of this talk, but creating, you know,"
+    },
+    {
+      "start": 2117.96,
+      "end": 2122.04,
+      "text": "deployed environments that really mimic something out on the field. And so"
+    },
+    {
+      "start": 2122.04,
+      "end": 2127.6,
+      "text": "armed with both your lab test results and plus software. Something that"
+    },
+    {
+      "start": 2127.6,
+      "end": 2131.74,
+      "text": "test users or alpha users can like hammer. You're going to get"
+    },
+    {
+      "start": 2131.74,
+      "end": 2136.2,
+      "text": "this delta of like, okay, is my evolving agent kind of reward"
+    },
+    {
+      "start": 2136.2,
+      "end": 2138.76,
+      "text": "hacking? Or is it not? Or is it like real?"
+    },
+    {
+      "start": 2140.82,
+      "end": 2147.14,
+      "text": "So just something to keep looking out for. If it's deterministic, like"
+    },
+    {
+      "start": 2147.14,
+      "end": 2151.1,
+      "text": "clearly it's like a yes or no. But most, as with most"
+    },
+    {
+      "start": 2151.1,
+      "end": 2155.5,
+      "text": "like AI things, it's not like a one for one. There has"
+    },
+    {
+      "start": 2155.5,
+      "end": 2158.2,
+      "text": "to be some sort of subjective. Okay. View to this."
+    },
+    {
+      "start": 2160.7,
+      "end": 2163.34,
+      "text": "And then this is kind of what I was alluding to earlier"
+    },
+    {
+      "start": 2163.34,
+      "end": 2168.58,
+      "text": "where like off the shelf harnesses. So you can actually use some"
+    },
+    {
+      "start": 2168.58,
+      "end": 2171.64,
+      "text": "of these in production. So like deep agents JS I think is"
+    },
+    {
+      "start": 2171.64,
+      "end": 2175.44,
+      "text": "like great. They are from the link chain crew. And they give"
+    },
+    {
+      "start": 2175.44,
+      "end": 2178.82,
+      "text": "you enough knobs to really kind of tweak it however you want."
+    },
+    {
+      "start": 2178.96,
+      "end": 2181.84,
+      "text": "So you can imagine like basically get like a Honda Civic and"
+    },
+    {
+      "start": 2181.84,
+      "end": 2184.74,
+      "text": "just like supercharge it as much as you want. You just need"
+    },
+    {
+      "start": 2184.74,
+      "end": 2188.14,
+      "text": "all the controls in it. I think like other harnesses like maybe"
+    },
+    {
+      "start": 2188.14,
+      "end": 2192.8,
+      "text": "the Claude Code SDK gives you less variability. So like mileage varies."
+    },
+    {
+      "start": 2193.2,
+      "end": 2197.32,
+      "text": "But when choosing the right harness, like you could think about one,"
+    },
+    {
+      "start": 2197.5,
+      "end": 2199.76,
+      "text": "am I going to get vendor locked in? Like how much knobs"
+    },
+    {
+      "start": 2199.76,
+      "end": 2201.22,
+      "text": "can I tweak? And then how can I test this?"
+    },
+    {
+      "start": 2203.92,
+      "end": 2208.12,
+      "text": "So because of this harness X paper and this framework, there is"
+    },
+    {
+      "start": 2208.12,
+      "end": 2212.14,
+      "text": "more things that we added, which is like this reward annotation, this"
+    },
+    {
+      "start": 2212.14,
+      "end": 2215.94,
+      "text": "benchmark, all these other things that made it easier. So I think"
+    },
+    {
+      "start": 2215.94,
+      "end": 2219.12,
+      "text": "it's going to be a much richer context than just let me"
+    },
+    {
+      "start": 2219.12,
+      "end": 2222.92,
+      "text": "use deep agents and let me just run it. But besides the"
+    },
+    {
+      "start": 2222.92,
+      "end": 2230.5,
+      "text": "vendor, the majority issue about the deep agents, the system, does the"
+    },
+    {
+      "start": 2230.5,
+      "end": 2237.18,
+      "text": "deep agent ecosystem give you more support on creating all sorts of"
+    },
+    {
+      "start": 2237.18,
+      "end": 2240.46,
+      "text": "reward functions and all the things that you are tracing? Because I"
+    },
+    {
+      "start": 2240.46,
+      "end": 2243.7,
+      "text": "heard that Dan Smith was part of that. Yes. Yeah."
+    },
+    {
+      "start": 2245.38,
+      "end": 2252.58,
+      "text": "Yeah. So for the group, like deep agency is an open source"
+    },
+    {
+      "start": 2252.58,
+      "end": 2255.4,
+      "text": "harness and they're trying to make it as open as possible, as"
+    },
+    {
+      "start": 2255.4,
+      "end": 2260.06,
+      "text": "modifiable as possible from the lane chain crew. They have a paid"
+    },
+    {
+      "start": 2260.06,
+      "end": 2265.22,
+      "text": "thing that can, Lank Smith, which helps you tune these agents and"
+    },
+    {
+      "start": 2265.22,
+      "end": 2268.26,
+      "text": "these harnesses as best as they can. And that's great. Like I"
+    },
+    {
+      "start": 2268.26,
+      "end": 2270.44,
+      "text": "don't know if they give you all of it, but their product"
+    },
+    {
+      "start": 2270.44,
+      "end": 2273.42,
+      "text": "is built around like how best you can evolve that."
+    },
+    {
+      "start": 2274.78,
+      "end": 2278.6,
+      "text": "So I think that they're doing great. I actually, I like that"
+    },
+    {
+      "start": 2278.6,
+      "end": 2281.86,
+      "text": "harness. You can even use it yourself for coding if you really"
+    },
+    {
+      "start": 2281.86,
+      "end": 2286.02,
+      "text": "want. But as a product harness, I think it makes for a"
+    },
+    {
+      "start": 2286.02,
+      "end": 2291.0,
+      "text": "very good go. All right. Let me wrap up here. Let me"
+    },
+    {
+      "start": 2291.0,
+      "end": 2293.04,
+      "text": "see how much I have. Okay. That's basically it."
+    },
+    {
+      "start": 2294.82,
+      "end": 2300.74,
+      "text": "So what we discovered is grading choices decide everything. Obviously, the gradient"
+    },
+    {
+      "start": 2300.74,
+      "end": 2303.4,
+      "text": "is important. I was able to get like a gradient of, like,"
+    },
+    {
+      "start": 2303.4,
+      "end": 2303.4,
+      "text": "a hundred percent of the gradient that I was So I had"
+    },
+    {
+      "start": 2303.4,
+      "end": 2306.06,
+      "text": "to get like a scatter plot, get a baseline, see like what's"
+    },
+    {
+      "start": 2306.06,
+      "end": 2311.72,
+      "text": "going on. I had some wonkiness going on with my laptop on"
+    },
+    {
+      "start": 2311.72,
+      "end": 2313.94,
+      "text": "actually running some of these models and running some of these tests."
+    },
+    {
+      "start": 2314.06,
+      "end": 2316.3,
+      "text": "So I had to get over this like infrastructure problem."
+    },
+    {
+      "start": 2318.46,
+      "end": 2321.72,
+      "text": "But yeah, I'll stop there and just like let you guys digest"
+    },
+    {
+      "start": 2321.72,
+      "end": 2322.02,
+      "text": "that."
+    },
+    {
+      "start": 2324.02,
+      "end": 2327.86,
+      "text": "Yep. So like, because I always try to look at things from"
+    },
+    {
+      "start": 2327.86,
+      "end": 2330.32,
+      "text": "like a perspective of is it necessary, is it not? I get"
+    },
+    {
+      "start": 2330.32,
+      "end": 2333.22,
+      "text": "there's some use cases where it is, some use cases where it's"
+    },
+    {
+      "start": 2333.22,
+      "end": 2336.46,
+      "text": "not. For the instance with your medical thing that you were talking"
+    },
+    {
+      "start": 2336.46,
+      "end": 2339.5,
+      "text": "about. Yeah. You were saying that you were building an agent for"
+    },
+    {
+      "start": 2339.5,
+      "end": 2343.18,
+      "text": "them. Yeah. On that side. So if I'm understanding correctly, they have"
+    },
+    {
+      "start": 2343.18,
+      "end": 2346.48,
+      "text": "health records. They need to have those health records turned into some"
+    },
+    {
+      "start": 2346.48,
+      "end": 2349.04,
+      "text": "form of notes. Yeah. And then they want it to be that"
+    },
+    {
+      "start": 2349.04,
+      "end": 2351.7,
+      "text": "if the, is it a doctor or a nurse, like, type something"
+    },
+    {
+      "start": 2351.7,
+      "end": 2354.66,
+      "text": "in, they can get the notes back to them. Yeah. That was"
+    },
+    {
+      "start": 2354.66,
+      "end": 2358.08,
+      "text": "kind of like the, what the use case was for that specific"
+    },
+    {
+      "start": 2358.08,
+      "end": 2362.3,
+      "text": "one. Yeah. And there's like a few more dimensions. Like the notes"
+    },
+    {
+      "start": 2362.3,
+      "end": 2365.16,
+      "text": "had to include like something like a lab work, had to include"
+    },
+    {
+      "start": 2365.16,
+      "end": 2369.02,
+      "text": "like some other stuff, had to include like a certain template that"
+    },
+    {
+      "start": 2369.02,
+      "end": 2372.32,
+      "text": "the doctor preferred the soap notes in. Okay. So like these are"
+    },
+    {
+      "start": 2372.32,
+      "end": 2377.78,
+      "text": "some other dimensions that was outside of just like, you know, request"
+    },
+    {
+      "start": 2377.78,
+      "end": 2381.46,
+      "text": "coming in being like, here's, create the soap note, right? So if"
+    },
+    {
+      "start": 2381.46,
+      "end": 2383.7,
+      "text": "you have the words of the soap notes and all that, it's,"
+    },
+    {
+      "start": 2383.7,
+      "end": 2386.7,
+      "text": "this is data that's being put in from the doctors after they"
+    },
+    {
+      "start": 2386.7,
+      "end": 2389.18,
+      "text": "have an appointment. Yeah. And then from there it's in a database,"
+    },
+    {
+      "start": 2389.32,
+      "end": 2392.76,
+      "text": "and then from there, a week down the road, when the client's"
+    },
+    {
+      "start": 2392.76,
+      "end": 2393.34,
+      "text": "asking for something, it's like, okay, I'm going to do this, I'm"
+    },
+    {
+      "start": 2393.34,
+      "end": 2395.08,
+      "text": "going to do this. Or whatever. They're filing something. They want to"
+    },
+    {
+      "start": 2395.08,
+      "end": 2397.6,
+      "text": "be able to go give me Stacy's thing. And then it will"
+    },
+    {
+      "start": 2397.6,
+      "end": 2400.38,
+      "text": "give them everything in the exact format that they want. Yeah. Exactly."
+    },
+    {
+      "start": 2400.62,
+      "end": 2402.94,
+      "text": "So when I'm looking at that, like the way I view it"
+    },
+    {
+      "start": 2402.94,
+      "end": 2405.7,
+      "text": "is I'm like, okay, there's a specific set of steps that have"
+    },
+    {
+      "start": 2405.7,
+      "end": 2409.26,
+      "text": "to happen the exact same way every single time. I guess like"
+    },
+    {
+      "start": 2409.26,
+      "end": 2412.1,
+      "text": "how I've been viewing agents lately is like, I don't use that"
+    },
+    {
+      "start": 2412.1,
+      "end": 2414.36,
+      "text": "as like an agent. I use it as like a workflow. Maybe"
+    },
+    {
+      "start": 2414.36,
+      "end": 2417.54,
+      "text": "the agent is reporting to me and telling me what happened. Maybe"
+    },
+    {
+      "start": 2417.54,
+      "end": 2421.12,
+      "text": "if something breaks, it's troubleshooting it. But I'm just viewing it as"
+    },
+    {
+      "start": 2421.12,
+      "end": 2423.32,
+      "text": "a workflow. And so I'm just going, okay, well, this is the"
+    },
+    {
+      "start": 2423.32,
+      "end": 2426.72,
+      "text": "data. let's do step one successfully. And I get step one successfully,"
+    },
+    {
+      "start": 2426.88,
+      "end": 2428.84,
+      "text": "and then I'll be like, okay, do that 100 times, and I"
+    },
+    {
+      "start": 2428.84,
+      "end": 2431.5,
+      "text": "want you to run a test. Does it succeed or not? And"
+    },
+    {
+      "start": 2431.5,
+      "end": 2433.58,
+      "text": "then it does it. And then I go, okay, step one, good."
+    },
+    {
+      "start": 2433.94,
+      "end": 2437.16,
+      "text": "And I'll move to step two, step three, step four, and I'll"
+    },
+    {
+      "start": 2437.16,
+      "end": 2440.34,
+      "text": "do that for step one through step eight, whatever it is, until"
+    },
+    {
+      "start": 2440.34,
+      "end": 2444.1,
+      "text": "it's running successfully. Even with, like, formatting stuff and PDFs and stuff"
+    },
+    {
+      "start": 2444.1,
+      "end": 2445.94,
+      "text": "like that, getting it to look the way we want it to,"
+    },
+    {
+      "start": 2446.44,
+      "end": 2448.62,
+      "text": "I've found that I can do all of this in just, like,"
+    },
+    {
+      "start": 2448.62,
+      "end": 2452.56,
+      "text": "a chat with it. So I have that end product, and it's"
+    },
+    {
+      "start": 2452.56,
+      "end": 2456.48,
+      "text": "just this workflow, and then we just build that workflow into whatever"
+    },
+    {
+      "start": 2456.48,
+      "end": 2460.52,
+      "text": "the UI, UX is for it to run. Where exactly are you"
+    },
+    {
+      "start": 2460.52,
+      "end": 2463.86,
+      "text": "seeing that there's, like, an agentic element to it? Because it's kind"
+    },
+    {
+      "start": 2463.86,
+      "end": 2466.46,
+      "text": "of, it's not even a thing. It's just, like, grabbing stuff and"
+    },
+    {
+      "start": 2466.46,
+      "end": 2469.68,
+      "text": "putting stuff in there. Yeah, there's some, I think this also brings"
+    },
+    {
+      "start": 2469.68,
+      "end": 2472.9,
+      "text": "up a good point of, like, understanding the domain enough to know"
+    },
+    {
+      "start": 2472.9,
+      "end": 2476.78,
+      "text": "which sections should be deterministic in, like, a workflow, and then which"
+    },
+    {
+      "start": 2476.78,
+      "end": 2478.72,
+      "text": "things can be, like, fully agentic. Like,"
+    },
+    {
+      "start": 2480.02,
+      "end": 2483.06,
+      "text": "the model that we ended up using was, like, we would create,"
+    },
+    {
+      "start": 2483.12,
+      "end": 2486.12,
+      "text": "like, a sandbox, you know, like, the same thing as, like, it"
+    },
+    {
+      "start": 2486.12,
+      "end": 2488.6,
+      "text": "would create code, but we needed to, like, crunch a lot of"
+    },
+    {
+      "start": 2488.6,
+      "end": 2492.14,
+      "text": "numbers, and all of that stuff is, like, variable as far as,"
+    },
+    {
+      "start": 2492.18,
+      "end": 2495.1,
+      "text": "like, the kind of data that, like, data is messy. So, like,"
+    },
+    {
+      "start": 2495.16,
+      "end": 2499.48,
+      "text": "instead of super cleaning everything, we would inject everything into a sandbox"
+    },
+    {
+      "start": 2499.48,
+      "end": 2503.06,
+      "text": "and, like, let it run code against that sandbox to grab some"
+    },
+    {
+      "start": 2503.06,
+      "end": 2505.52,
+      "text": "of these numbers. So, like, to us, that felt like a very"
+    },
+    {
+      "start": 2505.52,
+      "end": 2510.34,
+      "text": "agentic flow where no matter what type of results, no matter what"
+    },
+    {
+      "start": 2510.34,
+      "end": 2514.14,
+      "text": "type of different types of data we were coming in, it can"
+    },
+    {
+      "start": 2514.14,
+      "end": 2517.38,
+      "text": "reason against it and, like, create code to, like, query it. And"
+    },
+    {
+      "start": 2517.38,
+      "end": 2520.7,
+      "text": "then, so that was, like, part one. And then, you know, using"
+    },
+    {
+      "start": 2520.7,
+      "end": 2523.78,
+      "text": "skills and stuff, like the formatting of the SOAP node, all this"
+    },
+    {
+      "start": 2523.78,
+      "end": 2529.06,
+      "text": "stuff. So, there's certain subsections that can be deterministic, but there's certain"
+    },
+    {
+      "start": 2529.06,
+      "end": 2533.5,
+      "text": "things that, yeah, they're subjective. Like, when it looks at it, like,"
+    },
+    {
+      "start": 2533.56,
+      "end": 2537.52,
+      "text": "you know, comparing these two different numbers that might look different every"
+    },
+    {
+      "start": 2537.52,
+      "end": 2540.08,
+      "text": "single time it runs, like, you know, it's not going to be"
+    },
+    {
+      "start": 2540.08,
+      "end": 2543.04,
+      "text": "the same. So, it's almost like that's doing, like, an LLM call"
+    },
+    {
+      "start": 2543.7,
+      "end": 2547.1,
+      "text": "to whatever, in that case, the agent, whatever you're using there, to,"
+    },
+    {
+      "start": 2547.24,
+      "end": 2549.52,
+      "text": "I want you to give me the subjective view on this based"
+    },
+    {
+      "start": 2549.52,
+      "end": 2552.66,
+      "text": "on whatever parameters we've set of, like, you know, we don't want"
+    },
+    {
+      "start": 2552.66,
+      "end": 2554.74,
+      "text": "it to return to us and say, purple grist. Like, we want"
+    },
+    {
+      "start": 2554.74,
+      "end": 2557.2,
+      "text": "it to say exactly what we want it to say. So, that's"
+    },
+    {
+      "start": 2557.2,
+      "end": 2559.4,
+      "text": "kind of, you have it where it's, like, a workflow and you"
+    },
+    {
+      "start": 2559.4,
+      "end": 2563.28,
+      "text": "have an agentic property to it that the work is flowing through"
+    },
+    {
+      "start": 2563.28,
+      "end": 2566.02,
+      "text": "that and then coming back into the workflow to get to the"
+    },
+    {
+      "start": 2566.02,
+      "end": 2569.66,
+      "text": "end goal. Yeah, yeah, there's definitely certain sections that are deterministic, some"
+    },
+    {
+      "start": 2569.66,
+      "end": 2572.42,
+      "text": "that are not. And that's, like, that's just, like, a design decision"
+    },
+    {
+      "start": 2572.42,
+      "end": 2575.54,
+      "text": "that we decided to take with where it's, like, this part gets"
+    },
+    {
+      "start": 2575.54,
+      "end": 2580.04,
+      "text": "really messy, we can trust an LLM to, like, you know, crunch"
+    },
+    {
+      "start": 2580.04,
+      "end": 2582.58,
+      "text": "all these numbers and be able to, like, grab all these PDFs"
+    },
+    {
+      "start": 2582.58,
+      "end": 2586.1,
+      "text": "and grab the information that we need. And then there's other parts"
+    },
+    {
+      "start": 2586.1,
+      "end": 2588.98,
+      "text": "where it's just as simple as, like, okay, here's, like, the output,"
+    },
+    {
+      "start": 2589.1,
+      "end": 2592.68,
+      "text": "let's keep refining this. So, then, in regards to what you put"
+    },
+    {
+      "start": 2592.68,
+      "end": 2595.58,
+      "text": "out here, and then I'll help shut up. So, all of this"
+    },
+    {
+      "start": 2595.58,
+      "end": 2599.48,
+      "text": "stuff here, with this, where is the, you said, use case for"
+    },
+    {
+      "start": 2599.48,
+      "end": 2602.58,
+      "text": "it to go to this degree of, like, everything you said today?"
+    },
+    {
+      "start": 2602.7,
+      "end": 2603.92,
+      "text": "Because I'm looking at it as, like,"
+    },
+    {
+      "start": 2605.4,
+      "end": 2607.96,
+      "text": "my philosophy has always been, like, what's the simplest way to get"
+    },
+    {
+      "start": 2607.96,
+      "end": 2611.16,
+      "text": "it done? And if I can't solve the problem the simplest way,"
+    },
+    {
+      "start": 2611.24,
+      "end": 2614.08,
+      "text": "I'm gonna hire someone who needs the more complex way. So, where"
+    },
+    {
+      "start": 2614.08,
+      "end": 2617.32,
+      "text": "is the use case for this stuff specifically versus what you and"
+    },
+    {
+      "start": 2617.32,
+      "end": 2621.32,
+      "text": "I just discussed, getting it done that way? So, like, when data"
+    },
+    {
+      "start": 2621.32,
+      "end": 2624.02,
+      "text": "is kind of messy, or, like, you don't know what the input's"
+    },
+    {
+      "start": 2624.02,
+      "end": 2628.24,
+      "text": "gonna be like, we have to grab, like, a certain subset of"
+    },
+    {
+      "start": 2628.24,
+      "end": 2630.64,
+      "text": "what it could be, and then that's when we were doing a"
+    },
+    {
+      "start": 2630.64,
+      "end": 2632.98,
+      "text": "lot of the tuning for, of, like, is it putting in the"
+    },
+    {
+      "start": 2632.98,
+      "end": 2635.52,
+      "text": "right sandbox? Is it grabbing the right PDFs from the right thing?"
+    },
+    {
+      "start": 2635.66,
+      "end": 2638.7,
+      "text": "Is it grabbing from, like, the previous soap notes? Like, how can"
+    },
+    {
+      "start": 2638.7,
+      "end": 2643.2,
+      "text": "we ingest all of that? And that's so non -deterministic that that's"
+    },
+    {
+      "start": 2643.2,
+      "end": 2647.16,
+      "text": "where we were doing a lot of creating our own light benchmarks,"
+    },
+    {
+      "start": 2647.32,
+      "end": 2650.46,
+      "text": "and then putting it in a loop, and then seeing, like, the"
+    },
+    {
+      "start": 2650.46,
+      "end": 2653.78,
+      "text": "other end of the output. And then our confidence would go up"
+    },
+    {
+      "start": 2653.78,
+      "end": 2658.42,
+      "text": "to say, okay, whenever, you know, Dr. X, you know, asks me,"
+    },
+    {
+      "start": 2658.42,
+      "end": 2659.28,
+      "text": "like, what's the best way to do this for X amount of"
+    },
+    {
+      "start": 2659.28,
+      "end": 2662.98,
+      "text": "patients, you know, comparing, like, the symptoms and all the stuff, can"
+    },
+    {
+      "start": 2662.98,
+      "end": 2665.06,
+      "text": "it grab the right soap notes from the previous things? Can it"
+    },
+    {
+      "start": 2665.06,
+      "end": 2667.22,
+      "text": "go to the ground source and, like, look at some of the"
+    },
+    {
+      "start": 2667.22,
+      "end": 2667.42,
+      "text": "stuff?"
+    },
+    {
+      "start": 2668.96,
+      "end": 2673.86,
+      "text": "So, yeah, like, I think it also, going to this nth degree"
+    },
+    {
+      "start": 2673.86,
+      "end": 2678.06,
+      "text": "is just when you want, like, your product to be extremely tailored"
+    },
+    {
+      "start": 2678.06,
+      "end": 2681.6,
+      "text": "to, like, a certain use case. And, like, the more that your"
+    },
+    {
+      "start": 2681.6,
+      "end": 2685.38,
+      "text": "use case is tailored to, like, then the better output you're gonna"
+    },
+    {
+      "start": 2685.38,
+      "end": 2688.24,
+      "text": "kinda get. You're saying that the accuracy of things that it's not"
+    },
+    {
+      "start": 2688.24,
+      "end": 2690.28,
+      "text": "like, you know, like, it's not hallucinating, it's not pulling the wrong"
+    },
+    {
+      "start": 2690.28,
+      "end": 2693.9,
+      "text": "things, it's not actively doing it correctly. This is all designed to"
+    },
+    {
+      "start": 2693.9,
+      "end": 2697.08,
+      "text": "be able to get the premier accuracy from what we want. Yeah,"
+    },
+    {
+      "start": 2697.26,
+      "end": 2699.96,
+      "text": "in, like, a non -deterministic system. I think you had your hand"
+    },
+    {
+      "start": 2699.96,
+      "end": 2702.4,
+      "text": "up. So, speaking with the example, so,"
+    },
+    {
+      "start": 2703.68,
+      "end": 2708.4,
+      "text": "the healthcare center, like, if somebody gets into the doctor's office with"
+    },
+    {
+      "start": 2708.4,
+      "end": 2711.9,
+      "text": "a blue hand, they would go, find me all the soap notes"
+    },
+    {
+      "start": 2711.9,
+      "end": 2716.12,
+      "text": "that somebody reported with a blue hand, that's a workflow example. But"
+    },
+    {
+      "start": 2716.12,
+      "end": 2720.18,
+      "text": "if you go, like, there's a patient that has a blue hand,"
+    },
+    {
+      "start": 2720.48,
+      "end": 2724.18,
+      "text": "what could this be related to? And should we similar examples? And"
+    },
+    {
+      "start": 2724.18,
+      "end": 2727.88,
+      "text": "this would be one of the messy ones? Yes. Okay. Yes, that's"
+    },
+    {
+      "start": 2727.88,
+      "end": 2729.78,
+      "text": "a good, that's actually a really good example. We didn't get to"
+    },
+    {
+      "start": 2729.78,
+      "end": 2735.0,
+      "text": "the blue hand section, but that is a good example. Yeah. Okay,"
+    },
+    {
+      "start": 2735.06,
+      "end": 2735.32,
+      "text": "enough."
+    },
+    {
+      "start": 2737.16,
+      "end": 2739.18,
+      "text": "It doesn't need to search anything. It just says, you need to"
+    },
+    {
+      "start": 2739.18,
+      "end": 2743.0,
+      "text": "see a doctor, like, right away. So, if I understand correctly, which"
+    },
+    {
+      "start": 2743.0,
+      "end": 2747.44,
+      "text": "you did in these cases, is that this example would be more,"
+    },
+    {
+      "start": 2747.52,
+      "end": 2752.48,
+      "text": "like, static, kind of workflow, whereas yours are dynamic, much more based"
+    },
+    {
+      "start": 2752.48,
+      "end": 2757.16,
+      "text": "on your input, your harness framework, with automatic and non -deterministic, and"
+    },
+    {
+      "start": 2757.16,
+      "end": 2763.18,
+      "text": "non -deterministic, and just automatic, and more flexible. So, the static case"
+    },
+    {
+      "start": 2763.18,
+      "end": 2767.34,
+      "text": "might be variant with a specific case, but if things change, it"
+    },
+    {
+      "start": 2767.34,
+      "end": 2770.58,
+      "text": "could be brittle, whereas your case are much more dynamic, and can"
+    },
+    {
+      "start": 2770.58,
+      "end": 2776.0,
+      "text": "survive when things do change. Absolutely, and another interesting, non -deterministic use"
+    },
+    {
+      "start": 2776.0,
+      "end": 2780.52,
+      "text": "case for this kind of work, is agents are, like, models are"
+    },
+    {
+      "start": 2780.52,
+      "end": 2784.22,
+      "text": "just really good at writing code. So, like, my personal thesis is,"
+    },
+    {
+      "start": 2784.26,
+      "end": 2785.98,
+      "text": "like, you should try to let them write as much code as"
+    },
+    {
+      "start": 2785.98,
+      "end": 2788.3,
+      "text": "you can for whatever use case. So, if they're crunching a lot"
+    },
+    {
+      "start": 2788.3,
+      "end": 2792.14,
+      "text": "of data, you should let it write Python to, like, actually parse"
+    },
+    {
+      "start": 2792.14,
+      "end": 2795.66,
+      "text": "through all the stuff. So, like, that is another, like, benchmark test"
+    },
+    {
+      "start": 2795.66,
+      "end": 2798.08,
+      "text": "that you want to make sure, like, it's always writing the same."
+    },
+    {
+      "start": 2800.22,
+      "end": 2804.44,
+      "text": "Yeah, exactly, exactly. So, part of the orchestration is, like, is it"
+    },
+    {
+      "start": 2804.44,
+      "end": 2808.4,
+      "text": "writing the right code in order to parse these, kind of, documents"
+    },
+    {
+      "start": 2808.4,
+      "end": 2810.78,
+      "text": "in a way that makes sense? So, that's, like, one of the"
+    },
+    {
+      "start": 2810.78,
+      "end": 2813.76,
+      "text": "other things. We made, like, a few skills for that, too. But."
+    },
+    {
+      "start": 2814.5,
+      "end": 2819.34,
+      "text": "Yeah, so I have a quick question. Amazing presentation, by the way."
+    },
+    {
+      "start": 2819.42,
+      "end": 2824.62,
+      "text": "I love your references. Harness X, I found that to be super"
+    },
+    {
+      "start": 2824.62,
+      "end": 2824.94,
+      "text": "useful."
+    },
+    {
+      "start": 2826.3,
+      "end": 2830.32,
+      "text": "I wanted to, like, address the crowd by saying, if you're new"
+    },
+    {
+      "start": 2830.32,
+      "end": 2835.38,
+      "text": "to harness engineering, and you just haven't touched anything just yet, the"
+    },
+    {
+      "start": 2835.38,
+      "end": 2837.88,
+      "text": "best way to do it is to go to a white paper."
+    },
+    {
+      "start": 2838.08,
+      "end": 2844.6,
+      "text": "Yeah. Like Harness X, drop it into chat GBT, Claude, whatever your,"
+    },
+    {
+      "start": 2844.66,
+      "end": 2847.84,
+      "text": "you know, tool of choice is, and say, tell me about this"
+    },
+    {
+      "start": 2847.84,
+      "end": 2852.3,
+      "text": "in layman's terms. Yeah. Right? Yeah. That's a good. Break it down"
+    },
+    {
+      "start": 2852.3,
+      "end": 2856.52,
+      "text": "to be like a cable. Yeah, there you go. So, anything on"
+    },
+    {
+      "start": 2856.52,
+      "end": 2862.98,
+      "text": "top of that, Esteban, would you say for someone who's, they're newer"
+    },
+    {
+      "start": 2862.98,
+      "end": 2867.94,
+      "text": "to tweaking a harness. Yeah. And they're getting away from Frontier model,"
+    },
+    {
+      "start": 2867.94,
+      "end": 2871.34,
+      "text": "and coding agents, and now they're ready to kind of be introduced"
+    },
+    {
+      "start": 2871.34,
+      "end": 2874.46,
+      "text": "to this stuff. What would you say would be a first step"
+    },
+    {
+      "start": 2874.46,
+      "end": 2880.96,
+      "text": "to approaching that? I think, yeah, like reading the white papers is"
+    },
+    {
+      "start": 2880.96,
+      "end": 2885.28,
+      "text": "really good. And I also had it, I was like multiple chats"
+    },
+    {
+      "start": 2885.28,
+      "end": 2890.18,
+      "text": "deep, and with Claude to like bring on my ideas, like how"
+    },
+    {
+      "start": 2890.18,
+      "end": 2895.78,
+      "text": "to tweak this like paper, like understanding like certain things. Because sometimes"
+    },
+    {
+      "start": 2895.78,
+      "end": 2898.42,
+      "text": "papers kind of deviate a little bit, because it's too research focused."
+    },
+    {
+      "start": 2898.64,
+      "end": 2902.94,
+      "text": "But for like practicality reasons, like those off the shelf harnesses have"
+    },
+    {
+      "start": 2902.94,
+      "end": 2907.94,
+      "text": "great documentations. They have great examples. The Langsmith that automatically kind of"
+    },
+    {
+      "start": 2907.94,
+      "end": 2911.12,
+      "text": "evolves the agent is like a great place too. I think that"
+    },
+    {
+      "start": 2911.12,
+      "end": 2915.84,
+      "text": "there's off the shelf simple solutions first that you can try. And"
+    },
+    {
+      "start": 2915.84,
+      "end": 2922.16,
+      "text": "the documentation for these harnesses, harness companies are very good. Is it"
+    },
+    {
+      "start": 2922.16,
+      "end": 2925.22,
+      "text": "also fair to say if I'm a business owner, and I'm trying"
+    },
+    {
+      "start": 2925.22,
+      "end": 2929.96,
+      "text": "to wrap my head around this, Yeah. would you say that it's"
+    },
+    {
+      "start": 2929.96,
+      "end": 2936.16,
+      "text": "worth the struggle in initially understanding and learning this stuff, so that"
+    },
+    {
+      "start": 2936.16,
+      "end": 2941.64,
+      "text": "you have an advantage over someone who's not technical, or they're intimidated"
+    },
+    {
+      "start": 2941.64,
+      "end": 2946.88,
+      "text": "in approaching it? Yeah, I think so from the business person perspective,"
+    },
+    {
+      "start": 2947.28,
+      "end": 2951.64,
+      "text": "I think the big takeaway from this talk is the fact that"
+    },
+    {
+      "start": 2951.64,
+      "end": 2955.74,
+      "text": "you want to model like your use case. You have to understand"
+    },
+    {
+      "start": 2955.74,
+      "end": 2959.06,
+      "text": "like, because it's your use case and it's very vertical, you want"
+    },
+    {
+      "start": 2959.06,
+      "end": 2961.2,
+      "text": "to tune that as best as you can if it's going to"
+    },
+    {
+      "start": 2961.2,
+      "end": 2964.48,
+      "text": "go into your product. So like understanding if there's an engineer that's"
+    },
+    {
+      "start": 2964.48,
+      "end": 2967.18,
+      "text": "working on an agent, if they have any kind of benchmarks, like"
+    },
+    {
+      "start": 2967.18,
+      "end": 2969.6,
+      "text": "kind of what I showed you, like can we model, like can"
+    },
+    {
+      "start": 2969.6,
+      "end": 2972.6,
+      "text": "I get enough data for the engineering team to like be able"
+    },
+    {
+      "start": 2972.6,
+      "end": 2976.48,
+      "text": "to accurately produce some of the same results? And then can I"
+    },
+    {
+      "start": 2976.48,
+      "end": 2979.88,
+      "text": "see like a gradient, like let's create a benchmark from scratch, and"
+    },
+    {
+      "start": 2979.88,
+      "end": 2983.3,
+      "text": "like let's see how it does. And then that'll give you, everything's"
+    },
+    {
+      "start": 2983.3,
+      "end": 2985.9,
+      "text": "like on a confidence score, right? Because like before you put it"
+    },
+    {
+      "start": 2985.9,
+      "end": 2988.02,
+      "text": "out to like a customer, you want to make sure it doesn't"
+    },
+    {
+      "start": 2988.02,
+      "end": 2993.68,
+      "text": "fully hallucinate. So just like being aware that every use case is"
+    },
+    {
+      "start": 2993.68,
+      "end": 2996.56,
+      "text": "slightly different and you want to just make sure that you create"
+    },
+    {
+      "start": 2996.56,
+      "end": 3001.7,
+      "text": "like these benchmarks that accurately represent what you're trying to build. And"
+    },
+    {
+      "start": 3001.7,
+      "end": 3004.68,
+      "text": "then you'll see a nice little plot graph and you'll be like,"
+    },
+    {
+      "start": 3004.74,
+      "end": 3008.82,
+      "text": "oh, we're at 80 % for all these tasks in 1 ,000"
+    },
+    {
+      "start": 3008.82,
+      "end": 3012.84,
+      "text": "runs. That should give you some like mapping of where you are."
+    },
+    {
+      "start": 3014.52,
+      "end": 3017.12,
+      "text": "Yeah, because right now I think for the most part, everything's like"
+    },
+    {
+      "start": 3017.12,
+      "end": 3020.74,
+      "text": "based on vibes. So it's like, oh, I chatted with this agent."
+    },
+    {
+      "start": 3020.84,
+      "end": 3025.78,
+      "text": "It's like, yeah, this is good. This is good. It's working. But"
+    },
+    {
+      "start": 3025.78,
+      "end": 3029.28,
+      "text": "when you run that like 1 ,000 times, like are you always"
+    },
+    {
+      "start": 3029.28,
+      "end": 3032.14,
+      "text": "going to say like, is this good? Or it hallucinates a little"
+    },
+    {
+      "start": 3032.14,
+      "end": 3034.4,
+      "text": "bit and like you lose that trust a little bit with your"
+    },
+    {
+      "start": 3034.4,
+      "end": 3039.08,
+      "text": "users, and then that might impact stuff. So like creating a lab"
+    },
+    {
+      "start": 3039.08,
+      "end": 3040.9,
+      "text": "or like kind of looking at it from this lens of like"
+    },
+    {
+      "start": 3040.9,
+      "end": 3045.0,
+      "text": "you're just probing around how it's improving will go a long way."
+    },
+    {
+      "start": 3045.4,
+      "end": 3050.58,
+      "text": "Awesome. Anybody? Anybody? Any other questions, folks? I think we're going to"
+    },
+    {
+      "start": 3050.58,
+      "end": 3056.54,
+      "text": "take a quick bathroom break. First, I want to give it up"
+    },
+    {
+      "start": 3056.54,
+      "end": 3057.06,
+      "text": "for Esteban."
+    },
+    {
+      "start": 3058.46,
+      "end": 3058.98,
+      "text": "Amazing."
+    },
+    {
+      "start": 3061.86,
+      "end": 3062.38,
+      "text": "Amazing."
+    }
+  ],
   "widgets": [],
   "assets": {
     "reels_dir": "session-1-esteban/reels",

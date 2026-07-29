@@ -5,15 +5,967 @@
   "media_url": null,
   "twelvelabs": {
     "index_name": "session-5-michael",
-    "index_id": null,
-    "video_id": null
+    "index_id": "6a558c512ca158187cd64a26",
+    "video_id": "6a558c62177f1b1871dec2e8"
   },
   "masters": {
     "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 5 Michael/JORDAN_S001_S001_T007_ISO1.MOV",
     "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 5 Michael/JORDAN_S001_S001_T007_ISO2.MOV"
   },
-  "clips": [],
-  "transcript": [],
+  "clips": [
+    {
+      "id": "01",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 11,
+      "hook": "Let’s get this workshop started!",
+      "caption": "Energy is high and the vibe is electric—ready to dive into building powerful AI workflows? #AIWorkshop #DeveloperLife #TechTalk",
+      "start": 9.92,
+      "end": 31.92,
+      "duration": 22.0,
+      "crop_cx": 0.508,
+      "crop_x0": 670,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_01.mp4",
+      "still_person": "reels/compare/01_person.jpg",
+      "still_screen": "reels/compare/01_screen.jpg",
+      "transcript": "four four probably probably just just check check in in with with people people and and if if you you have have questions questions I'll I'll like like walk walk around around the the room room a a little little bit bit all all right right get get some some background background music music going going maybe maybe everybody everybody excited excited give give me me a a heck heck yeah yeah let's let's go go it's it's",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Audience Energy Boost: 'Give me a heck yeah! Let's go!'"
+    },
+    {
+      "id": "02",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 15,
+      "hook": "Speedrunning my own workshop 😅",
+      "caption": "I made this workshop, so I’m basically speedrunning it—just follow along and don’t skip the readme! #WorkshopTips #AIWorkflow #DeveloperLife",
+      "start": 31.92,
+      "end": 55.2,
+      "duration": 23.28,
+      "crop_cx": 0.508,
+      "crop_x0": 670,
+      "demo_lead_s": null,
+      "reel": "reels/reel_02.mp4",
+      "still_person": "reels/compare/02_person.jpg",
+      "still_screen": null,
+      "transcript": "it's it's funny funny because because I I made made the the workshop workshop so so I I might might be be speedrunning speedrunning it'd it'd be be like like I I like like I I know know exactly exactly where where what what I'm I'm doing doing but but uh uh you you just just follow follow along along uh. uh please please read read the the read read me me the the read read me me is is very very important important for for the the setup setup sometimes sometimes people people miss miss the the read read me me what what",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Confessional Humor: 'I made the workshop, so I might be speedrunning it.'"
+    },
+    {
+      "id": "03",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 15,
+      "hook": "Read the README — it’s crucial!",
+      "caption": "Don’t skip the setup steps! Missing the readme can cost you time. Always check it first. #DevTips #WorkshopHack #SetupRight",
+      "start": 41.52,
+      "end": 62.4,
+      "duration": 20.88,
+      "crop_cx": 0.511,
+      "crop_x0": 678,
+      "demo_lead_s": null,
+      "reel": "reels/reel_03.mp4",
+      "still_person": "reels/compare/03_person.jpg",
+      "still_screen": null,
+      "transcript": "very very important important for for the the setup setup sometimes sometimes people people miss miss the the read read me me what what you you do do yeah yeah okay okay",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Critical Tip: 'Please read the readme. The readme is very important.'"
+    },
+    {
+      "id": "04",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 13,
+      "hook": "Build AI Workflows Like a Pro",
+      "caption": "Turn Codex, Claude, or Cloud Code into your daily driver with custom workflows. Just need an Anthropic API key to get started. #AI #Productivity #DeveloperTools",
+      "start": 116.96,
+      "end": 137.92,
+      "duration": 20.96,
+      "crop_cx": 0.514,
+      "crop_x0": 682,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_04.mp4",
+      "still_person": "reels/compare/04_person.jpg",
+      "still_screen": "reels/compare/04_screen.jpg",
+      "transcript": "like like codecs Codex or or Claude claud code Code as as your your daily daily driver driver and and just just giving giving you you a a way way to to set set up up workflows workflows on on your your device device and and build build up up this this library library so so that's that's kind kind of of the the big big idea idea uh it it will will require require an an anthropic anthropic API API key key I I believe believe so so if if you you don't don't have have anthropic anthropic API API key key I I apologize apologize I'll I'll",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Core Idea Reveal: 'Give you a way to set up workflows on your device...'"
+    },
+    {
+      "id": "05",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 18,
+      "hook": "Naming the Toolbox?",
+      "caption": "What should we call this new toolkit? Drop your best name below! #AItools #WorkflowAutomation #TechTips",
+      "start": 140.8,
+      "end": 160.8,
+      "duration": 20.0,
+      "crop_cx": 0.51,
+      "crop_x0": 676,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_05.mp4",
+      "still_person": "reels/compare/05_person.jpg",
+      "still_screen": "reels/compare/05_screen.jpg",
+      "transcript": "this this later later really really like like you you could could honestly honestly just just ask ask like like claude claude code code or or codecs codecs if if I I don't don't want want to to use use the the anthropic anthropic API API key, key, can can you you just just like like switch switch it it out out for for Gemini Gemini or or something something like like that that so so next next thing thing I'm I'm doing doing is is I'm I'm creating creating I'm I'm just just calling calling it it the the toolbox toolbox if if anybody anybody has has a a better better name name for for it it this this is is what what I'm I'm calling calling it it so so this this is is going going to to be be",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Audience Question Anticipation: 'Can you switch it out for Gemini?'"
+    },
+    {
+      "id": "06",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 20,
+      "hook": "Read the README—seriously!",
+      "caption": "Don’t skip the setup steps! The README holds all the key info to avoid headaches. #DevTips #WorkshopVibes",
+      "start": 201.88,
+      "end": 227.4,
+      "duration": 25.52,
+      "crop_cx": 0.529,
+      "crop_x0": 712,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_06.mp4",
+      "still_person": "reels/compare/06_person.jpg",
+      "still_screen": "reels/compare/06_screen.jpg",
+      "transcript": "but uh you just follow along uh please read the read me the read me is very important for the setup sometimes people miss the read me what you do yeah okay",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Workflow Mindset Shift: 'Write out the process... then identify where a good chunk of this I will consider like a step.'"
+    },
+    {
+      "id": "07",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 19,
+      "hook": "Build AI tools that work *for* you",
+      "caption": "Learn how to set up custom AI workflows on your device using tools like Codex or Cloud Code—your daily driver, upgraded. #AIWorkflow #DeveloperTools #Automation",
+      "start": 268.68,
+      "end": 288.92,
+      "duration": 20.24,
+      "crop_cx": 0.52,
+      "crop_x0": 694,
+      "demo_lead_s": null,
+      "reel": "reels/reel_07.mp4",
+      "still_person": "reels/compare/07_person.jpg",
+      "still_screen": null,
+      "transcript": "uh yeah like the lesson ones really just talking through kind of like what the the preface of the presentation was about too where the big idea here is just to give you a solution for setting up custom tools for agents that are very widely used like Codex or Claude Code as your daily driver and just giving you a way to set up workflows on your device and",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Cost vs. Speed Insight: 'Three dollars for a thousand results... money loves speed.'"
+    },
+    {
+      "id": "08",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 17,
+      "hook": "Less overwhelmed, more in control",
+      "caption": "Breaking down complex workflows into simple, manageable steps makes building AI tools feel effortless. #WorkflowDesign #AIProductivity #DeveloperTips",
+      "start": 370.92,
+      "end": 391.0,
+      "duration": 20.08,
+      "crop_cx": 0.533,
+      "crop_x0": 718,
+      "demo_lead_s": null,
+      "reel": "reels/reel_08.mp4",
+      "still_person": "reels/compare/08_person.jpg",
+      "still_screen": null,
+      "transcript": "I'm less overwhelmed let's by go it because I know let me just write out the process I want and then I can start to identify it's where funny because I made the a workshop good chunk so of I this might be speedrunning it'd I be will like consider I like I like know exactly a where step what I'm and doing I'll make but that a worker uh you just follow and so along then it's just going uh to be like please this read the read file me the of read the workflow me is very important where it's like boom boom for boom the boom setup sometimes and people miss the each read me of the",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Outreach Wisdom: 'I want someone who’s been in the business... not just fresh.'"
+    },
+    {
+      "id": "09",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 19,
+      "hook": "Stop the spaghetti code chaos",
+      "caption": "Learn how to build clean, modular workflows that make debugging easy—and save hours. #WorkflowDesign #AIProductivity #DeveloperTips",
+      "start": 401.96,
+      "end": 422.2,
+      "duration": 20.24,
+      "crop_cx": 0.536,
+      "crop_x0": 724,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_09.mp4",
+      "still_person": "reels/compare/09_person.jpg",
+      "still_screen": "reels/compare/09_screen.jpg",
+      "transcript": "know where it's going wrong so this is just like talking you okay through the mindset sweet of like creating the workflow yeah I'm just yeah and I'm for just this setting workflow up everything we will be using so I'm like these two actors I'm which I here right can probably now also show you uh uh if I oh go to well my runs the I'm gonna have to because probably I just ran actually it delete my uh cause we have II the ran through this already LinkedIn so",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Time-Saving Principle: 'Go straight to the person... instead of going through three layers.'"
+    },
+    {
+      "id": "10",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 11,
+      "hook": "Build AI Workflows Like a Pro",
+      "caption": "Learn how to set up custom AI tools and automate tasks with Codex, Claude, LinkedIn Bot, and more—right from your device. #AIWorkflow #Automation #Productivity",
+      "start": 453.08,
+      "end": 473.16,
+      "duration": 20.08,
+      "crop_cx": 0.51,
+      "crop_x0": 676,
+      "demo_lead_s": null,
+      "reel": "reels/reel_10.mp4",
+      "still_person": "reels/compare/10_person.jpg",
+      "still_screen": null,
+      "transcript": "I was also about work for too Api where so you don't have the to take big my word idea for it here but is that's just to my give you a that's solution my opinion for setting up uh so custom tools we'll be using for this one and then we'll agents also that are be using very widely the used like Codex LinkedIn or Claude profile Code scraper as your daily driver so and just if giving I go you back a to way this to run set up workflows on your device and build up this library so this that's was like kind of the the big input idea that was generated so when",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Actionable Next Step: 'I'm just creating like a working directory so I can copy this example.'"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 4.9,
+      "text": "I'm just going to start if I go here. And I'm just"
+    },
+    {
+      "start": 4.9,
+      "end": 6.78,
+      "text": "going to go along with you guys. And then I think I'll"
+    },
+    {
+      "start": 6.78,
+      "end": 11.9,
+      "text": "probably, at step three or four, probably just check in with people."
+    },
+    {
+      "start": 12.04,
+      "end": 14.18,
+      "text": "And if you have questions, I'll walk around the room a little"
+    },
+    {
+      "start": 14.18,
+      "end": 14.38,
+      "text": "bit."
+    },
+    {
+      "start": 18.36,
+      "end": 18.98,
+      "text": "All right."
+    },
+    {
+      "start": 20.78,
+      "end": 25.1,
+      "text": "Get some background music going, maybe. Everybody excited? Give me a heck"
+    },
+    {
+      "start": 25.1,
+      "end": 25.4,
+      "text": "yeah."
+    },
+    {
+      "start": 27.04,
+      "end": 27.52,
+      "text": "Let's go."
+    },
+    {
+      "start": 32.26,
+      "end": 34.66,
+      "text": "It's funny because I made the workshop, so I might be speed"
+    },
+    {
+      "start": 34.66,
+      "end": 39.56,
+      "text": "running it. I know exactly what I'm doing. But you just follow"
+    },
+    {
+      "start": 39.56,
+      "end": 42.5,
+      "text": "along. Please read the read me. The read me is very important"
+    },
+    {
+      "start": 42.5,
+      "end": 46.84,
+      "text": "for the setup. Sometimes people miss the read me. Okay."
+    },
+    {
+      "start": 51.48,
+      "end": 55.52,
+      "text": "Hey, Michael. Do you mind just, as you're going around, talking to"
+    },
+    {
+      "start": 55.52,
+      "end": 59.02,
+      "text": "me what you're doing? Yeah. I have to see what you're doing."
+    },
+    {
+      "start": 59.1,
+      "end": 59.4,
+      "text": "Yeah."
+    },
+    {
+      "start": 62.44,
+      "end": 63.48,
+      "text": "Okay. Sweet."
+    },
+    {
+      "start": 65.28,
+      "end": 70.1,
+      "text": "Yeah. I'm just setting up everything. So I'm like, I'm here right"
+    },
+    {
+      "start": 70.1,
+      "end": 71.64,
+      "text": "now. Oh."
+    },
+    {
+      "start": 73.3,
+      "end": 76.38,
+      "text": "Well, I'm going to have to probably actually delete my, because I"
+    },
+    {
+      "start": 76.38,
+      "end": 78.34,
+      "text": "ran through this already. So I have to."
+    },
+    {
+      "start": 80.78,
+      "end": 81.88,
+      "text": "Let's just delete that."
+    },
+    {
+      "start": 86.78,
+      "end": 91.96,
+      "text": "And just new terminal, bro. All right. So I'm just going to"
+    },
+    {
+      "start": 91.96,
+      "end": 94.2,
+      "text": "start by cloning the repo."
+    },
+    {
+      "start": 96.88,
+      "end": 98.52,
+      "text": "And so now I'm in the project."
+    },
+    {
+      "start": 104.44,
+      "end": 106.92,
+      "text": "Yeah. Like the lesson one is really just talking through kind of"
+    },
+    {
+      "start": 106.92,
+      "end": 110.44,
+      "text": "like what the preface of the presentation was about to where the"
+    },
+    {
+      "start": 110.44,
+      "end": 113.84,
+      "text": "big idea here is just to give you a solution for setting"
+    },
+    {
+      "start": 113.84,
+      "end": 118.42,
+      "text": "up custom tools for agents that are very widely used, like Codex."
+    },
+    {
+      "start": 118.42,
+      "end": 121.9,
+      "text": "Or Claude Code as your daily driver and just giving you a"
+    },
+    {
+      "start": 121.9,
+      "end": 125.26,
+      "text": "way to set up workflows on your device and build up this"
+    },
+    {
+      "start": 125.26,
+      "end": 126.78,
+      "text": "library. So that's kind of the big idea."
+    },
+    {
+      "start": 130.18,
+      "end": 134.72,
+      "text": "It will require an anthropic API key, I believe. So if you"
+    },
+    {
+      "start": 134.72,
+      "end": 136.68,
+      "text": "don't have anthropic API key, I apologize."
+    },
+    {
+      "start": 137.96,
+      "end": 140.78,
+      "text": "I'll walk through this. You still have the example. And if you"
+    },
+    {
+      "start": 140.78,
+      "end": 143.88,
+      "text": "want to go and try this later, really, like you could honestly"
+    },
+    {
+      "start": 143.88,
+      "end": 148.7,
+      "text": "just ask like, like Claude Code or Codex. If I don't want"
+    },
+    {
+      "start": 148.7,
+      "end": 150.86,
+      "text": "to use the anthropic API key, can you just like switch it"
+    },
+    {
+      "start": 150.86,
+      "end": 155.9,
+      "text": "out for Gemini or something like that? So next thing I'm doing"
+    },
+    {
+      "start": 155.9,
+      "end": 158.58,
+      "text": "is I'm creating I'm just calling it the toolbox. If anybody has"
+    },
+    {
+      "start": 158.58,
+      "end": 161.0,
+      "text": "a better name for it, this is what I'm calling it. So"
+    },
+    {
+      "start": 161.0,
+      "end": 165.18,
+      "text": "this is going to be the like the global directory of like"
+    },
+    {
+      "start": 165.18,
+      "end": 168.9,
+      "text": "all the tools that I start to build for my workflows. And"
+    },
+    {
+      "start": 168.9,
+      "end": 171.34,
+      "text": "now my agent will have access to it because it's just on"
+    },
+    {
+      "start": 171.34,
+      "end": 171.76,
+      "text": "my device."
+    },
+    {
+      "start": 173.8,
+      "end": 175.96,
+      "text": "All right. It's going to get might give me the same issue."
+    },
+    {
+      "start": 176.08,
+      "end": 179.08,
+      "text": "It did not give me the same issue. Love it. Lovely. Okay."
+    },
+    {
+      "start": 179.12,
+      "end": 181.88,
+      "text": "So that's just creating like the parent and the one I'm building"
+    },
+    {
+      "start": 181.88,
+      "end": 183.98,
+      "text": "right now is going to be the find people at company, which"
+    },
+    {
+      "start": 183.98,
+      "end": 188.18,
+      "text": "I already have built, but I will rebuild it again."
+    },
+    {
+      "start": 191.34,
+      "end": 196.16,
+      "text": "And so lesson three is like I guess like the mindset of"
+    },
+    {
+      "start": 196.16,
+      "end": 198.92,
+      "text": "this, like I do find it helpful, at least for the way"
+    },
+    {
+      "start": 198.92,
+      "end": 202.9,
+      "text": "I think about it with the workflow plus the worker paradigm. I"
+    },
+    {
+      "start": 202.9,
+      "end": 207.24,
+      "text": "do like it because it really helps me. Like I'm less overwhelmed"
+    },
+    {
+      "start": 207.24,
+      "end": 209.9,
+      "text": "by it. Because I know let me just write out the process"
+    },
+    {
+      "start": 209.9,
+      "end": 213.7,
+      "text": "I want and then I can start to identify where a good"
+    },
+    {
+      "start": 213.7,
+      "end": 217.66,
+      "text": "chunk of this I will consider like a step and I'll make"
+    },
+    {
+      "start": 217.66,
+      "end": 220.66,
+      "text": "that a worker. And so then it's just going to be like"
+    },
+    {
+      "start": 220.66,
+      "end": 224.18,
+      "text": "this file of the workflow where it's like boom, boom, boom, boom."
+    },
+    {
+      "start": 224.92,
+      "end": 228.24,
+      "text": "And each of the steps I can actually go in and inspect"
+    },
+    {
+      "start": 228.24,
+      "end": 230.04,
+      "text": "if something is going wrong. And so I do kind of like"
+    },
+    {
+      "start": 230.04,
+      "end": 233.54,
+      "text": "making it modular like that because I've had that experience in the"
+    },
+    {
+      "start": 233.54,
+      "end": 236.48,
+      "text": "past where you just write this huge spaghetti file. And it's like"
+    },
+    {
+      "start": 236.48,
+      "end": 238.8,
+      "text": "this big thing. And you don't know where it's going wrong."
+    },
+    {
+      "start": 240.08,
+      "end": 244.12,
+      "text": "So this is just like talking you through the mindset of like"
+    },
+    {
+      "start": 244.12,
+      "end": 249.04,
+      "text": "creating the workflow. And for this workflow, we will be using these"
+    },
+    {
+      "start": 249.04,
+      "end": 252.82,
+      "text": "two actors, which I can probably also show you if I go"
+    },
+    {
+      "start": 252.82,
+      "end": 257.78,
+      "text": "to my runs because I just ran it. We have the LinkedIn"
+    },
+    {
+      "start": 257.78,
+      "end": 262.74,
+      "text": "company profile scraper. So scraping the employees."
+    },
+    {
+      "start": 264.98,
+      "end": 266.56,
+      "text": "Um. Okay."
+    },
+    {
+      "start": 267.8,
+      "end": 270.08,
+      "text": "So. I guess I do kind of want to show you how"
+    },
+    {
+      "start": 270.08,
+      "end": 272.34,
+      "text": "cheap it is. So like it would be $3 for like a"
+    },
+    {
+      "start": 272.34,
+      "end": 272.94,
+      "text": "thousand results."
+    },
+    {
+      "start": 274.94,
+      "end": 276.98,
+      "text": "Like if you're a business and you're trying to get people really"
+    },
+    {
+      "start": 276.98,
+      "end": 281.1,
+      "text": "fast. Like I think there's a bigger premium on time, especially with"
+    },
+    {
+      "start": 281.1,
+      "end": 283.3,
+      "text": "AI now. Like money loves speed. So if I have to pay"
+    },
+    {
+      "start": 283.3,
+      "end": 286.38,
+      "text": "three bucks to get a thousand people, but it's going to help"
+    },
+    {
+      "start": 286.38,
+      "end": 287.06,
+      "text": "me get there faster."
+    },
+    {
+      "start": 288.56,
+      "end": 290.6,
+      "text": "I also work for Apify, so you don't have to take my"
+    },
+    {
+      "start": 290.6,
+      "end": 292.52,
+      "text": "word for it. But that's my opinion."
+    },
+    {
+      "start": 293.98,
+      "end": 296.8,
+      "text": "So we'll be using this one. And then we'll also be using."
+    },
+    {
+      "start": 296.8,
+      "end": 302.54,
+      "text": "The LinkedIn profile scraper. So if I go back to this run."
+    },
+    {
+      "start": 305.48,
+      "end": 309.62,
+      "text": "This was like the input that was generated. So when from the"
+    },
+    {
+      "start": 309.62,
+      "end": 311.72,
+      "text": "first step, when we actually like said, like, I want to find"
+    },
+    {
+      "start": 311.72,
+      "end": 314.76,
+      "text": "people to talk about for sponsors for hackathons. The first worker was"
+    },
+    {
+      "start": 314.76,
+      "end": 318.26,
+      "text": "in charge of just creating like these like these job titles."
+    },
+    {
+      "start": 320.04,
+      "end": 323.46,
+      "text": "And using that as part of the input for when we're scraping"
+    },
+    {
+      "start": 323.46,
+      "end": 327.4,
+      "text": "their profile. And then in the output. These are like the three"
+    },
+    {
+      "start": 327.4,
+      "end": 330.22,
+      "text": "profiles we got. And you can see here. Each of them have"
+    },
+    {
+      "start": 330.22,
+      "end": 334.8,
+      "text": "a LinkedIn URL. And so we are taking that. And we're going"
+    },
+    {
+      "start": 334.8,
+      "end": 339.6,
+      "text": "to pass it into the LinkedIn profile scraper. So for example, we"
+    },
+    {
+      "start": 339.6,
+      "end": 340.02,
+      "text": "were scraping."
+    },
+    {
+      "start": 341.44,
+      "end": 342.84,
+      "text": "I don't know what his name is."
+    },
+    {
+      "start": 347.54,
+      "end": 349.1,
+      "text": "Victor. We were scraping Victor."
+    },
+    {
+      "start": 350.38,
+      "end": 354.2,
+      "text": "And that gives us like his like. It's probably easier to read"
+    },
+    {
+      "start": 354.2,
+      "end": 358.88,
+      "text": "in JSON. Like, you know. His headline. His location. His current position."
+    },
+    {
+      "start": 359.92,
+      "end": 361.76,
+      "text": "Then also like his education."
+    },
+    {
+      "start": 364.9,
+      "end": 370.3,
+      "text": "I believe it shows your past. Your experience. So like, again, this"
+    },
+    {
+      "start": 370.3,
+      "end": 372.48,
+      "text": "would be useful. Like, oh, you've been doing this a while. So"
+    },
+    {
+      "start": 372.48,
+      "end": 375.66,
+      "text": "I maybe want to approach you a different way versus somebody that's"
+    },
+    {
+      "start": 375.66,
+      "end": 376.24,
+      "text": "like super fresh."
+    },
+    {
+      "start": 378.64,
+      "end": 379.08,
+      "text": "No."
+    },
+    {
+      "start": 380.7,
+      "end": 386.42,
+      "text": "No. Like super fresh. Like, let's say like you're a. It's like"
+    },
+    {
+      "start": 386.42,
+      "end": 389.84,
+      "text": "your first role is like a go to market person. I found"
+    },
+    {
+      "start": 389.84,
+      "end": 394.46,
+      "text": "in my experience like it's easier to have a conversation, but they"
+    },
+    {
+      "start": 394.46,
+      "end": 397.82,
+      "text": "generally have like less authority or know the right person to like"
+    },
+    {
+      "start": 397.82,
+      "end": 401.08,
+      "text": "connect to. So I'm trying to find somebody that like if I'm"
+    },
+    {
+      "start": 401.08,
+      "end": 403.52,
+      "text": "going to spend my time reaching out to someone, I want to"
+    },
+    {
+      "start": 403.52,
+      "end": 406.26,
+      "text": "make sure that they're like they've been in the business and they"
+    },
+    {
+      "start": 406.26,
+      "end": 410.04,
+      "text": "understand it much more than somebody that just joined. Because that's not"
+    },
+    {
+      "start": 410.04,
+      "end": 412.64,
+      "text": "going to waste my time. And I can get a faster answer"
+    },
+    {
+      "start": 412.64,
+      "end": 415.46,
+      "text": "of like, are you interested? Instead of going through like three layers"
+    },
+    {
+      "start": 415.46,
+      "end": 418.52,
+      "text": "and I feel like it's like pseudo productive because I'm like, yeah,"
+    },
+    {
+      "start": 418.62,
+      "end": 421.2,
+      "text": "like I'm getting to this conversation. I'm almost to the person. But"
+    },
+    {
+      "start": 421.2,
+      "end": 423.06,
+      "text": "then that person was going to say no anyway. So might as"
+    },
+    {
+      "start": 423.06,
+      "end": 424.56,
+      "text": "well just go straight to the person."
+    },
+    {
+      "start": 428.4,
+      "end": 431.06,
+      "text": "That's not about AI. That's just like my like rambling is about"
+    },
+    {
+      "start": 431.06,
+      "end": 432.8,
+      "text": "like my how I think about the outreach."
+    },
+    {
+      "start": 435.6,
+      "end": 438.22,
+      "text": "So those are the two actions we'll be building. And for defining"
+    },
+    {
+      "start": 438.22,
+      "end": 441.38,
+      "text": "workers, again, this is a workshop. And I wanted to do this"
+    },
+    {
+      "start": 441.38,
+      "end": 443.74,
+      "text": "for the sake of time. The entire exam. I'm going to do"
+    },
+    {
+      "start": 443.74,
+      "end": 444.44,
+      "text": "this. I want to give you an example of what I made"
+    },
+    {
+      "start": 444.44,
+      "end": 446.74,
+      "text": "is here already. And the goal was really just for you guys"
+    },
+    {
+      "start": 446.74,
+      "end": 450.7,
+      "text": "to copy and just like read through the the workflow to get"
+    },
+    {
+      "start": 450.7,
+      "end": 453.62,
+      "text": "a better understanding. So I can kind of go through the code"
+    },
+    {
+      "start": 453.62,
+      "end": 456.48,
+      "text": "of that because that would probably be more helpful."
+    },
+    {
+      "start": 459.24,
+      "end": 462.42,
+      "text": "So first, I'm just creating like a working directory so I can"
+    },
+    {
+      "start": 462.42,
+      "end": 465.28,
+      "text": "copy this example."
+    },
+    {
+      "start": 468.46,
+      "end": 471.94,
+      "text": "You can do the whole process. Yeah. Yeah."
+    },
+    {
+      "start": 474.18,
+      "end": 477.88,
+      "text": "What's that movie where they're like Zoom? Do you know that movie?"
+    },
+    {
+      "start": 478.94,
+      "end": 481.9,
+      "text": "No, there's like a movie that are like Zoom, Zoom. And they're"
+    },
+    {
+      "start": 481.9,
+      "end": 485.12,
+      "text": "like keep going. Do you need an Anthropo key to use Amplify"
+    },
+    {
+      "start": 485.12,
+      "end": 487.68,
+      "text": "in general or is this? Just for the workflow."
+    },
+    {
+      "start": 489.74,
+      "end": 491.32,
+      "text": "Like for the workshop, yeah."
+    },
+    {
+      "start": 492.62,
+      "end": 496.9,
+      "text": "The only thing you need for Amplify is the API key. And"
+    },
+    {
+      "start": 496.9,
+      "end": 500.66,
+      "text": "sometimes depending, there may be an actor that will say like oh,"
+    },
+    {
+      "start": 500.7,
+      "end": 503.54,
+      "text": "we'll do this for you, but you also need to put your,"
+    },
+    {
+      "start": 503.72,
+      "end": 506.2,
+      "text": "like it's a self -service, like bring your own API key type"
+    },
+    {
+      "start": 506.2,
+      "end": 509.98,
+      "text": "actor, which is fine. We do allow you to pass in secrets"
+    },
+    {
+      "start": 509.98,
+      "end": 512.52,
+      "text": "and it's stored in a trusted way."
+    },
+    {
+      "start": 514.16,
+      "end": 517.18,
+      "text": "But I would generally just, I think you could probably like remade."
+    }
+  ],
   "widgets": [],
   "assets": {
     "reels_dir": "session-5-michael/reels",

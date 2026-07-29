@@ -1,0 +1,1207 @@
+{
+  "name": "vault-ct-tokenomics",
+  "title": "CT - Tokenomics",
+  "speaker": "CT - Tokenomics",
+  "media_url": "https://recordings.organizedai.vip/media/03%20-%20CT%20-%20Tokenomics.mp4",
+  "duration": 1677.0,
+  "chapters": [
+    {
+      "id": "Session 2-1",
+      "title": "Introduction to Harness",
+      "kind": "chapter",
+      "start": 0.0,
+      "end": 124.0,
+      "caption": "The speaker introduces the concept of a 'harness' as a system of tools, prompts, and skills, comparing it to a video game loadout, and emphasizes its importance in building AI agents."
+    },
+    {
+      "id": "Session 2-2",
+      "title": "Introducing CT",
+      "kind": "chapter",
+      "start": 124.0,
+      "end": 204.0,
+      "caption": "The speaker introduces CT, a colleague with expertise in tokenomics and a skill called Even Better If, highlighting his contributions to efficient AI workflows."
+    },
+    {
+      "id": "Session 2-3",
+      "title": "Tokenomics Challenge",
+      "kind": "chapter",
+      "start": 204.0,
+      "end": 338.0,
+      "caption": "CT shares his experience of hitting API usage limits, burning through tokens, and facing high costs, prompting a deep dive into optimizing AI usage."
+    },
+    {
+      "id": "Session 2-4",
+      "title": "Building Conductor",
+      "kind": "chapter",
+      "start": 338.0,
+      "end": 568.0,
+      "caption": "CT explains how he developed 'Conductor,' a system to audit and optimize token usage by analyzing model selection, caching, and task routing."
+    },
+    {
+      "id": "Session 2-5",
+      "title": "Five Levers of Optimization",
+      "kind": "chapter",
+      "start": 568.0,
+      "end": 885.0,
+      "caption": "The speaker outlines five key levers for cost control: model selection, caching, routing, task decomposition, and delegation to cheaper models."
+    },
+    {
+      "id": "Session 2-6",
+      "title": "Routing and Delegation",
+      "kind": "chapter",
+      "start": 885.0,
+      "end": 1009.0,
+      "caption": "CT details how he implemented a conductor system that delegates routine tasks to cheaper models like Haiku and Sonnet while reserving Fable 5 for high-level judgment."
+    },
+    {
+      "id": "Session 2-7",
+      "title": "EBI Skill Framework",
+      "kind": "chapter",
+      "start": 1009.0,
+      "end": 1141.0,
+      "caption": "The speaker introduces the EBI skill—'Even Better If'—a feedback loop for continuous improvement, which he integrated into his agent system for iterative refinement."
+    },
+    {
+      "id": "Session 2-8",
+      "title": "Recursive Improvement",
+      "kind": "chapter",
+      "start": 1141.0,
+      "end": 1304.0,
+      "caption": "CT demonstrates how the EBI skill runs multiple rounds of feedback, identifying high-impact improvements and synthesizing actionable insights across projects."
+    },
+    {
+      "id": "Session 2-9",
+      "title": "Orchestration and Transparency",
+      "kind": "chapter",
+      "start": 1304.0,
+      "end": 1540.0,
+      "caption": "The conductor system is described as cache-friendly and transparent, allowing real-time monitoring of agent transcripts and delegation processes."
+    },
+    {
+      "id": "Session 2-10",
+      "title": "Results and Impact",
+      "kind": "chapter",
+      "start": 1540.0,
+      "end": 1675.0,
+      "caption": "CT reports up to 80% reduction in plan usage and 31% cost savings after implementing the conductor system, with sustained efficiency over time."
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0.72,
+      "end": 9.78,
+      "text": "Okay. Hello, hello, hello. Check, check, check. Can you guys hear me? All"
+    },
+    {
+      "start": 7.42,
+      "end": 17.64,
+      "text": "hear me? All right. How's everybody doing? We're good? All right. Perfect. So I"
+    },
+    {
+      "start": 14.8,
+      "end": 23.98,
+      "text": "Perfect. So I kind of stacked this group of talks in a very specific order, just like I did yesterday's,"
+    },
+    {
+      "start": 22.34,
+      "end": 31.72,
+      "text": "I did yesterday's, right? So first thing, harness engineering. Somebody, I'm going to clear this up because someone's asking me, what"
+    },
+    {
+      "start": 29.86,
+      "end": 39.14,
+      "text": "asking me, what is a harness? Does everybody here know what a harness is? Do you feel clear about it right now? Kind of. Okay."
+    },
+    {
+      "start": 38.28,
+      "end": 47.28,
+      "text": "Kind of. Okay. So Codex is a harness. Quad Code is a harness. Harness is the tools and system prompts and skills, the"
+    },
+    {
+      "start": 46.38,
+      "end": 55.84,
+      "text": "and skills, the whole set. Has anybody here played Call of Duty or any video games like that? So sometimes when you have a loadout for"
+    },
+    {
+      "start": 54.3,
+      "end": 63.34,
+      "text": "a loadout for Call of Duty, it's a very specific set of tools for your character to use, right? That's what a harness is. It comprises of all"
+    },
+    {
+      "start": 62.22,
+      "end": 71.44,
+      "text": "comprises of all the tools, system prompts, skills, et cetera. Now, harness here, LLM is the driver of that vehicle."
+    },
+    {
+      "start": 70.22,
+      "end": 79.26,
+      "text": "of that vehicle. You combine them, now you have an agent. So you can tune your harness. You can also"
+    },
+    {
+      "start": 78.44,
+      "end": 87.68,
+      "text": "You can also tune your LLM, but you can tune your harness, combine it with the right LLM in your vertical subject matter expert. Now you have an"
+    },
+    {
+      "start": 86.88,
+      "end": 96.86,
+      "text": "you have an unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased,"
+    },
+    {
+      "start": 91.54,
+      "end": 101.12,
+      "text": "unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased,"
+    },
+    {
+      "start": 98.1,
+      "end": 107.16,
+      "text": "unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased,"
+    },
+    {
+      "start": 105.3,
+      "end": 115.58,
+      "text": "unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased,"
+    },
+    {
+      "start": 109.6,
+      "end": 119.18,
+      "text": "unbiased, unbiased, unbiased, unbiased, I'm"
+    },
+    {
+      "start": 112.7,
+      "end": 122.68,
+      "text": "unbiased, unbiased, I'm introducing let's"
+    },
+    {
+      "start": 118.6,
+      "end": 127.7,
+      "text": "I'm introducing let's go alright come see me afterwards or during break and we can talk more I'm more than happy to"
+    },
+    {
+      "start": 127.22,
+      "end": 134.48,
+      "text": "than happy to do that I just want to be able to go deep with people that I look up to and know have a ton to offer on the"
+    },
+    {
+      "start": 133.24,
+      "end": 142.24,
+      "text": "offer on the technical side that said CT is a guy that I met recently with his buddy"
+    },
+    {
+      "start": 140.8,
+      "end": 150.28,
+      "text": "with his buddy Pedro who just started here at Antler in the cohort or he got funded rather but essentially"
+    },
+    {
+      "start": 147.9,
+      "end": 156.94,
+      "text": "rather but essentially CT is part of their crew and I found out his friend told on him about how"
+    },
+    {
+      "start": 156.2,
+      "end": 165.26,
+      "text": "him about how good he is with tokenomics even better if which is a skill that allows you to essentially run a loop"
+    },
+    {
+      "start": 164.54,
+      "end": 172.0,
+      "text": "run a loop as a skill which is a really cool intro way to do that maybe he'll talk about that a little bit and he's got this really cool"
+    },
+    {
+      "start": 171.38,
+      "end": 180.98,
+      "text": "this really cool thing called conductor as well I don't want to over talk it there's a lot to learn about tokenomics tokenomics"
+    },
+    {
+      "start": 177.64,
+      "end": 186.78,
+      "text": "about tokenomics tokenomics is one of those things where you need to start caring about how much things cost you need"
+    },
+    {
+      "start": 185.32,
+      "end": 194.54,
+      "text": "cost you need to be caring about how you can use local models to I forget the word but kind of balance it out"
+    },
+    {
+      "start": 193.72,
+      "end": 202.82,
+      "text": "balance it out and there is a golden ratio if you will between quality and cost and we're going to get into it alright you guys give"
+    },
+    {
+      "start": 202.16,
+      "end": 211.78,
+      "text": "you guys give it up for CT applause applause so by show of hands who here has had reached their usage"
+    },
+    {
+      "start": 209.58,
+      "end": 219.88,
+      "text": "reached their usage limit within the last 30 days and if you've reached that limit within the last week alright"
+    },
+    {
+      "start": 217.32,
+      "end": 226.36,
+      "text": "last week alright so yeah that was my experience I really resonated a lot with what Nick was sharing was like how"
+    },
+    {
+      "start": 225.42,
+      "end": 234.44,
+      "text": "was like how do I keep things as simple as possible in all of my workflow yet as I'm building of course I always want to use the smartest"
+    },
+    {
+      "start": 233.68,
+      "end": 242.16,
+      "text": "use the smartest models to do that but I think it's really important to do the best work and so I when Fable 5 first came out I got really"
+    },
+    {
+      "start": 241.25,
+      "end": 248.4,
+      "text": "I got really excited I jumped into it and I started just like working on one of my projects and within like a day and a half I just like"
+    },
+    {
+      "start": 247.92,
+      "end": 257.26,
+      "text": "I just like maxed out and like hit the limit and so I at that same point it was like now I started using overages"
+    },
+    {
+      "start": 256.26,
+      "end": 264.4,
+      "text": "started using overages I started like actually using API costs and started going a bit over so what I realized was that the you know the plan that I was"
+    },
+    {
+      "start": 263.98,
+      "end": 270.86,
+      "text": "that I was running with was you know the was ultimately not really effective for what I wanted to do it was like really cool but I was just like"
+    },
+    {
+      "start": 270.48,
+      "end": 279.2,
+      "text": "was just like really just at the edge of it so the max plan really didn't really cover what I could do so the wall that we like really find"
+    },
+    {
+      "start": 278.64,
+      "end": 287.14,
+      "text": "like really find ourselves in was that it's the plan so I was trying to figure out how do I just like get the best use of what I'm doing"
+    },
+    {
+      "start": 286.04,
+      "end": 295.62,
+      "text": "what I'm doing and within the plan usage and so just a little bit about me with the just my usage I have done"
+    },
+    {
+      "start": 294.32,
+      "end": 303.34,
+      "text": "I have done the last 30 days about 24 billion tokens tokens so that's super heavy was like I just kept like hitting those API"
+    },
+    {
+      "start": 302.38,
+      "end": 309.42,
+      "text": "hitting those API usage like put the credit card in again like keep like doing it my limits and I was like just having so much fun yet I was"
+    },
+    {
+      "start": 308.96,
+      "end": 317.98,
+      "text": "yet I was feeling a little bit throttled because I was having to spend more money and so like the reality is like you know hardware is not"
+    },
+    {
+      "start": 316.7,
+      "end": 325.76,
+      "text": "hardware is not getting cheaper but tokens have really never been cheaper today so in fact there's about about 280x cheaper inference"
+    },
+    {
+      "start": 323.18,
+      "end": 332.32,
+      "text": "280x cheaper inference today compared to what GPT 3 .5 was. And then, so that's today. We're talking a little bit about"
+    },
+    {
+      "start": 331.98,
+      "end": 340.02,
+      "text": "little bit about tokenomics. So it's, at the end of the day, the thing that I'm going to, that I'll share with you is like I started building out what"
+    },
+    {
+      "start": 339.2,
+      "end": 347.56,
+      "text": "building out what I called a conductor. And today I'll explain a little bit more about how I get into that. So yeah, Fable 5 was like the best model."
+    },
+    {
+      "start": 346.98,
+      "end": 356.12,
+      "text": "the best model. I know there was some opinions from Nick of like it's not that cool. But I really started to take it at its edge, like really try"
+    },
+    {
+      "start": 355.36,
+      "end": 363.84,
+      "text": "like really try to figure out what I can do. But when I was doing so, I found out like, you know, just burning through all my tokens. And so"
+    },
+    {
+      "start": 361.36,
+      "end": 370.58,
+      "text": "tokens. And so like, based on a lot of what I've been here observing today is like we've talked a lot about the planning, a lot about data,"
+    },
+    {
+      "start": 370.04,
+      "end": 382.16,
+      "text": "lot about data, a lot about loops, harness. And today is talking about a budget. Like how do you really, how do you figure that out? Yes, adult supervision. So"
+    },
+    {
+      "start": 378.2,
+      "end": 387.36,
+      "text": "adult supervision. So I'll start out by doing a little bit of an audit. So if you want to do a QR code or you can type"
+    },
+    {
+      "start": 386.94,
+      "end": 395.66,
+      "text": "you can type in the URL, what this is going to do is actually just all runs local. It does an audit. In fact, I'll show once you guys all"
+    },
+    {
+      "start": 395.3,
+      "end": 403.04,
+      "text": "you guys all get a chance to type it in. It just is really quick. It's going to run through a terminal. It'll let you copy and paste it. It'll"
+    },
+    {
+      "start": 402.24,
+      "end": 411.24,
+      "text": "paste it. It'll actually go to a page. Let me know when you guys are done. But it'll go to a"
+    },
+    {
+      "start": 410.94,
+      "end": 420.22,
+      "text": "go to a page and let you copy a curl script that you can just run in your terminal. 1 .6 billion. 1"
+    },
+    {
+      "start": 418.48,
+      "end": 427.5,
+      "text": ".6 billion. 1 .6 billion. Great. It even says my top model is five people five. Yeah, even though you don't like it."
+    },
+    {
+      "start": 427.1,
+      "end": 436.24,
+      "text": "don't like it. Even though I don't like it. Isn't that funny? Yeah, so what it'll do is it'll run. Six billion. Six billion, all right. I gotta step"
+    },
+    {
+      "start": 435.48,
+      "end": 444.58,
+      "text": "I gotta step it up, bro. Yeah. Six billion. You gotta go, bro. We need more. You guys get the link? Cash return 92 %"
+    },
+    {
+      "start": 443.5,
+      "end": 454.36,
+      "text": "return 92 % . 92%, OK. What does that mean, a cash return? We'll get into that, yeah. All"
+    },
+    {
+      "start": 448.76,
+      "end": 457.76,
+      "text": "that, yeah. All set? So yeah, it'll take you to this page. Basically, it's"
+    },
+    {
+      "start": 456.52,
+      "end": 465.56,
+      "text": "page. Basically, it's going to give you a token receipt. And so, for example, mine's 4 .7. And that's what's run there. And it'll give you a bunch"
+    },
+    {
+      "start": 465.32,
+      "end": 472.76,
+      "text": "you a bunch of details, talk about which ones you're running. But it kind of gives you a little bit of receipt. Pretty cool just to kind of see the"
+    },
+    {
+      "start": 472.4,
+      "end": 479.74,
+      "text": "of see the information. So for me, I just started going down this rabbit hole of, like, I just felt like I was at my edge, where I was wanting"
+    },
+    {
+      "start": 479.04,
+      "end": 483.88,
+      "text": "I was wanting to do it, but then I got to pay for it. And I was spending 1 ,000 bucks on tokens. And then I was like, I got"
+    },
+    {
+      "start": 483.48,
+      "end": 492.54,
+      "text": "like, I got to figure this out. And so yeah, there's this paradox of, like, well, what do I do? I want to"
+    },
+    {
+      "start": 492.02,
+      "end": 500.08,
+      "text": "I want to do more, but it's costing a lot of money. And so really, where we're at today is that it's actually, you know, we're at most of the"
+    },
+    {
+      "start": 499.64,
+      "end": 509.02,
+      "text": "most of the cheapest, but also have the priciest. So like, you know, $1 for a million tokens. And even the GPT 5 .6"
+    },
+    {
+      "start": 507.66,
+      "end": 516.76,
+      "text": "GPT 5 .6 just launched on Thursday. And so we're really at this place where we're getting access to these frontier models that have really advanced intelligence,"
+    },
+    {
+      "start": 515.0,
+      "end": 523.34,
+      "text": "really advanced intelligence, but also you got to pay for it. And so that's kind of where everyone's kind of fighting at with that. I think the cutoff tomorrow with"
+    },
+    {
+      "start": 522.56,
+      "end": 530.3,
+      "text": "cutoff tomorrow with Fable 5 is tomorrow. So yeah, it's really been like, I was like, I'm going to do this. I was really trying to dive into where that's"
+    },
+    {
+      "start": 529.28,
+      "end": 537.54,
+      "text": "into where that's at. What's funny is that on July 2, there was this big thing that went out. There was Anthropic accidentally shipped the thesis of this workshop in"
+    },
+    {
+      "start": 536.64,
+      "end": 546.24,
+      "text": "this workshop in a log string. It was too dumb to need Fable. Basically, there was this, in terms of these logs of the"
+    },
+    {
+      "start": 544.34,
+      "end": 553.7,
+      "text": "logs of the different session transactions, it was downgrading. And it was tagged by that. And it went a little bit viral. And the developer"
+    },
+    {
+      "start": 552.82,
+      "end": 561.42,
+      "text": "And the developer said, I didn't expect you to actually look at the logs. So. So that was kind of funny. So where does the money actually go? And what"
+    },
+    {
+      "start": 560.46,
+      "end": 569.5,
+      "text": "go? And what do you actually do about it? So there's five levers. The first one, it's really about just which model is hearing you."
+    },
+    {
+      "start": 568.64,
+      "end": 577.66,
+      "text": "is hearing you. So depending on how you're using this, I'm primarily in Claude most of the time. I also use Codex, kind of switch back and forth."
+    },
+    {
+      "start": 577.12,
+      "end": 584.0,
+      "text": "back and forth. And a lot of that was because of the token usage. I'd hit my limit. I'd go over to Codex. I'd run two max plans, two of"
+    },
+    {
+      "start": 582.34,
+      "end": 591.1,
+      "text": "plans, two of these plans to try to get the most of what I can, try to figure out, figure that out. But yeah, basically, the Claude Fable 5 is"
+    },
+    {
+      "start": 590.28,
+      "end": 599.22,
+      "text": "Fable 5 is the most expensive model. It's the frontier model. It's the one, but it just basically blows through that in terms of the max plan. So the one"
+    },
+    {
+      "start": 598.54,
+      "end": 607.02,
+      "text": "So the one is which one you're selecting. And in this case, I was really excited in June. Also last week when it came back on the first, it came"
+    },
+    {
+      "start": 605.86,
+      "end": 614.86,
+      "text": "first, it came back on. I just went full bore and was like, put it on all my projects and kept blowing through all my credits, all my usage. So"
+    },
+    {
+      "start": 613.18,
+      "end": 622.12,
+      "text": "my usage. So this is kind of what you were speaking to. The next lever. The next lever is caching. So you get a 90 % discount on your usage"
+    },
+    {
+      "start": 620.12,
+      "end": 629.14,
+      "text": "on your usage for caching. And what caching means is every time you send a prompt, even if you ask a question and you ask"
+    },
+    {
+      "start": 628.88,
+      "end": 637.92,
+      "text": "and you ask the question again, it's actually sending an entire session context every single time. And so if you send a follow up question, like three different"
+    },
+    {
+      "start": 637.28,
+      "end": 646.34,
+      "text": "like three different messages, like you're messaging a friend, hello, hello, hello, it's actually resending the same message over and over again. So what these models do"
+    },
+    {
+      "start": 644.62,
+      "end": 653.64,
+      "text": "these models do is they're actually will do caching. So they'll actually pull in and keep and store the actual context in that period of"
+    },
+    {
+      "start": 652.86,
+      "end": 660.5,
+      "text": "that period of time. So you can get like 90 % of that is discounted because they're running what they already have. And they're just kind of taking what you"
+    },
+    {
+      "start": 659.9,
+      "end": 669.24,
+      "text": "taking what you just brought in with a little bit of difference. And so it does actually for with the OAuth,"
+    },
+    {
+      "start": 665.3,
+      "end": 674.44,
+      "text": "with the OAuth, which is the subscription plans, those are one hour. So if you're running a goal or"
+    },
+    {
+      "start": 673.34,
+      "end": 680.8,
+      "text": "a goal or you're running your keep, as long as you keep working with it, it stays for an hour. That's the time to live. If you're using the API,"
+    },
+    {
+      "start": 680.3,
+      "end": 689.1,
+      "text": "using the API, it's only five minutes. So it's something to keep in mind is that that is a significant lift. And I'll show you an example of mine later"
+    },
+    {
+      "start": 688.4,
+      "end": 698.02,
+      "text": "of mine later on. So things tomorrow, as you mentioned, like a lot of these rules keep changing. But it does not change"
+    },
+    {
+      "start": 696.2,
+      "end": 704.74,
+      "text": "does not change the fact that we are at this point where it is about your usage and your weekly limit. Like for $200, what can you get with that?"
+    },
+    {
+      "start": 704.16,
+      "end": 711.92,
+      "text": "get with that? And so that's something that we're going to be working on. And so I believe even Anthropic, one of the developers, posted that they do plan to"
+    },
+    {
+      "start": 710.88,
+      "end": 717.78,
+      "text": "do plan to bring it back, Fable, back in the plan. They're just trying to throttle the demand and try to figure out how they can bring it back, but"
+    },
+    {
+      "start": 716.54,
+      "end": 723.1,
+      "text": "it back, but it's supposed to cut off tomorrow. And I found that I was hoping that they would make a mistake and just reset the limits. And I was"
+    },
+    {
+      "start": 722.94,
+      "end": 728.0,
+      "text": "And I was waiting for a reset. And I was trying to always do something where I can't, I'm sure they're going to do a reset now. So I kept"
+    },
+    {
+      "start": 727.26,
+      "end": 734.46,
+      "text": "So I kept doing that. But I was just kind of playing with that, is that at the end of the day, it came down to, like when I was"
+    },
+    {
+      "start": 733.62,
+      "end": 742.9,
+      "text": "when I was jumping into it, I was using Fable 5, and it was just kind of, I was doing the audits. And so I realized at the point"
+    },
+    {
+      "start": 741.98,
+      "end": 750.98,
+      "text": "at the point that it's really up to me is that I'm the conductor. And if I'm ultimately the one that's bringing in what"
+    },
+    {
+      "start": 750.14,
+      "end": 758.94,
+      "text": "bringing in what I'm asking to be done, and I'm choosing Fable 5 because I want the smartest model, I realized that I was going down this rabbit hole of"
+    },
+    {
+      "start": 758.04,
+      "end": 767.62,
+      "text": "rabbit hole of what I'm doing to interact with the agent. And then as you know, we talk about all these harnesses and all these advanced"
+    },
+    {
+      "start": 766.34,
+      "end": 775.12,
+      "text": "all these advanced ways to then route things. It became like, that's the unlock. I was like, there's got to be a way to figure that out. So I started"
+    },
+    {
+      "start": 773.62,
+      "end": 781.66,
+      "text": "So I started to go down this rabbit hole. One of them was I started to just run those receipts, like what I give you guys, that little script of"
+    },
+    {
+      "start": 780.82,
+      "end": 789.88,
+      "text": "little script of us. I started doing that on a granular label to the point where I put in my CloudMD to actually take every single session, and I wanted"
+    },
+    {
+      "start": 789.32,
+      "end": 795.72,
+      "text": "and I wanted to understand what it was doing. So when I was running workflows, I was running goal, I started doing that. And then I was like, I'm going"
+    },
+    {
+      "start": 795.72,
+      "end": 800.38,
+      "text": "like, I'm going to do this. I'm going to do that. And I started actually measuring, what was it actually doing? And so then that started giving me the idea"
+    },
+    {
+      "start": 799.76,
+      "end": 808.14,
+      "text": "me the idea of how can I expand on that and try to iterate on it. So one long build, like Fable 5 did every single step, it just would"
+    },
+    {
+      "start": 807.76,
+      "end": 816.26,
+      "text": "it just would blow through all my tokens. And so the understanding was that when I was running Fable and it was doing all of those steps, that was the"
+    },
+    {
+      "start": 815.9,
+      "end": 825.0,
+      "text": "that was the problem. And so getting that information coming back, I was really able to see how much was really there. So when I'm doing"
+    },
+    {
+      "start": 823.64,
+      "end": 830.24,
+      "text": "when I'm doing one of these, I'm going to be able to do this. And so when I was having Fable do the task, when I was realizing it was"
+    },
+    {
+      "start": 829.08,
+      "end": 837.9,
+      "text": "realizing it was doing different tasks like graphing and just doing little edits, it was burning all the tokens. And so I realized that was the fix. There was something"
+    },
+    {
+      "start": 837.52,
+      "end": 846.3,
+      "text": "There was something there that I needed to figure out, which was the aspect of choosing the right model. And so the analogy that I was sharing before is that"
+    },
+    {
+      "start": 845.08,
+      "end": 854.1,
+      "text": "before is that you don't want to take a semi truck to get a gallon of milk at the grocery store. And I realized that I was showing up"
+    },
+    {
+      "start": 852.86,
+      "end": 862.44,
+      "text": "was showing up and asking a question, and by default, I was selecting. I had a couple of moments where even I opened up a new session, and"
+    },
+    {
+      "start": 861.18,
+      "end": 869.14,
+      "text": "new session, and it was by default Fable 5 high. And I realized, and it hit send, I came back, and I was like, man, I realized how many times"
+    },
+    {
+      "start": 868.6,
+      "end": 877.66,
+      "text": "how many times I was just, why did I do that? And so the point being is, what do I really need Opus for this? Do I need Opus,"
+    },
+    {
+      "start": 876.82,
+      "end": 885.32,
+      "text": "I need Opus, or what do I do? Which one should I set up? And so the mechanism really side by side here is that it comes down to routing."
+    },
+    {
+      "start": 884.7,
+      "end": 894.12,
+      "text": "down to routing. And so the idea of the task here is without routing, is the task arrives, and then you have, well, it's reading files,"
+    },
+    {
+      "start": 893.4,
+      "end": 902.58,
+      "text": "it's reading files, it's writing boilerplates, it's spawning subagents, then the subagent inherits that primary model. And so it just was really heavy in usage. The session burn was"
+    },
+    {
+      "start": 901.8,
+      "end": 910.84,
+      "text": "session burn was just going super fast. And then when I set up with a conduction of, well, what if I were to set it up, and I said,"
+    },
+    {
+      "start": 909.8,
+      "end": 917.82,
+      "text": "and I said, hey, you're the conductor, I want you to actually figure out what are the cheaper models. And then just in real time, I started doing that in"
+    },
+    {
+      "start": 917.22,
+      "end": 926.3,
+      "text": "doing that in the beginning of, let's separate this. And so Scout, Critic, having different"
+    },
+    {
+      "start": 923.98,
+      "end": 933.04,
+      "text": "Critic, having different builders, the ones that actually build the code, those didn't need to be the primary model. So like Haiku and Sonnet,"
+    },
+    {
+      "start": 932.14,
+      "end": 941.3,
+      "text": "Haiku and Sonnet, much cheaper models, it can be routed through that. And so I started doing some experiments with that, and then found that when"
+    },
+    {
+      "start": 939.92,
+      "end": 946.5,
+      "text": "found that when I was setting up, I was like, oh, this is a good idea. And then I was still getting those receipts. I had significant lower rates. And"
+    },
+    {
+      "start": 944.18,
+      "end": 953.3,
+      "text": "lower rates. And so I just kind of started building this doctrine, which was keeping the judgment and delegating the labor. So all"
+    },
+    {
+      "start": 951.58,
+      "end": 961.16,
+      "text": "labor. So all of the intent, the decomposition, routing, adjudication, synthesis, all of that really important work,"
+    },
+    {
+      "start": 959.44,
+      "end": 968.46,
+      "text": "really important work, I was keeping with Fable. And then everything else can be just delegated out. So you really want to reserve"
+    },
+    {
+      "start": 968.02,
+      "end": 977.0,
+      "text": "want to reserve the primary model for the hardest 10%. And the 90 % can really just be delegated out, so to speak. And so this is kind of a"
+    },
+    {
+      "start": 976.64,
+      "end": 986.22,
+      "text": "kind of a visual of what that looks like. And so I started to actually build very specific separate agents with their own. I had Fable build out these agent"
+    },
+    {
+      "start": 984.52,
+      "end": 993.7,
+      "text": "out these agent markdown files that was specific for a builder, a Scout, a Critic, and an Architect. And so based off of my prompting"
+    },
+    {
+      "start": 992.84,
+      "end": 1002.0,
+      "text": "of my prompting and a built -in doctrine, it sets up when I'm, it has deterministic understanding of like when I'm. I'm building a project,"
+    },
+    {
+      "start": 1001.4,
+      "end": 1008.14,
+      "text": "building a project, or when I'm asking for a goal, it then has a doctrine to actually determine, all right, I'm going to set up a builder, I'm going to"
+    },
+    {
+      "start": 1007.98,
+      "end": 1015.6,
+      "text": "I'm going to set up a Scout, whatever is needed for my particular prompt. And then when they're done, each one of those agents has their own rules. They have"
+    },
+    {
+      "start": 1014.36,
+      "end": 1023.42,
+      "text": "rules. They have their own ways to set a verdict and make a determination on that. And then I'll mention it"
+    },
+    {
+      "start": 1020.88,
+      "end": 1029.96,
+      "text": "I'll mention it a little bit later, but then there was this, I developed a skill called EBI skill. And the EBI"
+    },
+    {
+      "start": 1028.82,
+      "end": 1038.0,
+      "text": "And the EBI skill stands for. Even Better If. It was a methodology that I worked with my team, which was when you're developing things and"
+    },
+    {
+      "start": 1036.94,
+      "end": 1045.94,
+      "text": "developing things and you share things with the team, so many times you would, I would share something out and ask for feedback, and people would just say it's great"
+    },
+    {
+      "start": 1045.38,
+      "end": 1053.78,
+      "text": "say it's great or it's awesome. And I always was like, but I'm looking for actual feedback. I want to find some improvements. And so I developed this framework. It"
+    },
+    {
+      "start": 1052.66,
+      "end": 1061.02,
+      "text": "this framework. It was called EBI, Even Better If. And it's like, what's working well, what's not working well, and what would be even better if. And we started that"
+    },
+    {
+      "start": 1060.44,
+      "end": 1067.06,
+      "text": "we started that just like offline, just as a team, found that like so many people were like, hey, do you have any, can you, do you have any EBIs?"
+    },
+    {
+      "start": 1066.46,
+      "end": 1074.48,
+      "text": "have any EBIs? So people get straight to sometimes the idea of, OK, I don't want to just tell you it's great. I don't want to tell you what's wrong."
+    },
+    {
+      "start": 1073.7,
+      "end": 1081.6,
+      "text": "you what's wrong. We're like, hey, it could be even better if. And that really unlocked a lot for me and my team. And so when I was, when we"
+    },
+    {
+      "start": 1080.62,
+      "end": 1089.86,
+      "text": "was, when we started understanding skills, I developed a skill called EBI skill that builds that out. And so that's not what this talk is about, but I actually"
+    },
+    {
+      "start": 1089.04,
+      "end": 1098.4,
+      "text": "but I actually built into each one of these agents the aspect of running their own individual improvement loop after"
+    },
+    {
+      "start": 1096.12,
+      "end": 1106.1,
+      "text": "improvement loop after they're done to bring it to the synthesis. And then it brings it back to the judge in the primary. So this conductor methodology"
+    },
+    {
+      "start": 1103.72,
+      "end": 1112.8,
+      "text": "this conductor methodology was the ability to get the best work for that top 10%. And the 90 % of the things"
+    },
+    {
+      "start": 1112.4,
+      "end": 1121.24,
+      "text": "of the things that are being done outside of that, they all have their own rules. They all can individually do the task. And then I was getting a receipt"
+    },
+    {
+      "start": 1120.66,
+      "end": 1129.22,
+      "text": "getting a receipt off of every one of my sessions. Every time it's running something, it gives me a little log. I delegated these. Here's two sonnets. And there's a"
+    },
+    {
+      "start": 1128.9,
+      "end": 1135.62,
+      "text": "And there's a builder. There's this. And it was really cool to just see that in real time. And so I actually made that part of the standard now so"
+    },
+    {
+      "start": 1134.58,
+      "end": 1143.34,
+      "text": "standard now so that when it's running things, I'm able to actually have the better understanding of that. The EBI thing, is that something that you're delegating to one of"
+    },
+    {
+      "start": 1142.78,
+      "end": 1150.9,
+      "text": "to one of these skills, or is it to the people on your team? Sorry, yeah. The it was an offline. Yeah. The it was an offline methodology that worked"
+    },
+    {
+      "start": 1149.92,
+      "end": 1157.96,
+      "text": "methodology that worked so well that I was wondering a few months ago, was like, could I build this as a skill? Yeah, what model would you run that one?"
+    },
+    {
+      "start": 1157.54,
+      "end": 1168.02,
+      "text": "run that one? Would that be a judgment thing? So yeah, right. So it's a separate skill. And if you want, I'll share that. It's just ebiskill .com. It"
+    },
+    {
+      "start": 1164.94,
+      "end": 1173.98,
+      "text": "ebiskill .com. It is probably one of my favorite skills ever. Of course, I'm biased, but I have shared this out. It's"
+    },
+    {
+      "start": 1173.36,
+      "end": 1182.22,
+      "text": "this out. It's probably one of the skills that I know that people will use regularly every single day. Highly recommend this. But basically, you can run through different surfaces."
+    },
+    {
+      "start": 1181.16,
+      "end": 1190.16,
+      "text": "through different surfaces. Each round, it'll take each one of those and run it through. So whether it's an email copy,"
+    },
+    {
+      "start": 1189.48,
+      "end": 1197.64,
+      "text": "an email copy, or whether it's a website design, or it's a project, or it's a planning phase, or it's a spec, I will run it through an EBI round,"
+    },
+    {
+      "start": 1196.74,
+      "end": 1206.02,
+      "text": "an EBI round, five deep EBI rounds. And it will literally try to go and uncover. It will try to go find all the different"
+    },
+    {
+      "start": 1204.94,
+      "end": 1212.88,
+      "text": "all the different steps. It'll go try and find all of them. And it will actually find all of the different level. It breaks it down by impact, which is"
+    },
+    {
+      "start": 1211.82,
+      "end": 1221.14,
+      "text": "impact, which is high, medium, and low, and also the level of effort. And so when it runs through this, it will actually find 8, 10"
+    },
+    {
+      "start": 1219.38,
+      "end": 1228.46,
+      "text": "find 8, 10 on each round, high to medium impact. And then it'll keep going based on that until there is no more"
+    },
+    {
+      "start": 1227.72,
+      "end": 1236.24,
+      "text": "is no more high impact. And then when it's done with its full synthesis, it can come back with 42 different improvements and how it will implement that. And so"
+    },
+    {
+      "start": 1235.22,
+      "end": 1244.5,
+      "text": "that. And so that was this huge unlock. Of course. I used the EBI skill on itself so many times until it was. Yeah, until it was. You"
+    },
+    {
+      "start": 1243.7,
+      "end": 1252.86,
+      "text": "it was. You made this whole thing EBI skill .com? Yeah. I love it. Yeah. It's great. It's free. Download it. Everyone that I know uses this. It becomes"
+    },
+    {
+      "start": 1251.54,
+      "end": 1260.62,
+      "text": "this. It becomes part of your workflow. You're just like, run EBI rounds. And it's really cool. Better than the grill me thing I was talking about. It's like after"
+    },
+    {
+      "start": 1259.66,
+      "end": 1266.44,
+      "text": "It's like after grill me, do an EBI on the grill me. Yes. Actually, when you were talking about that yesterday, I was talking about that. It's great. But what's"
+    },
+    {
+      "start": 1265.54,
+      "end": 1274.56,
+      "text": "great. But what's great about this is that, also, I built it into the doctrine of the conductor to where each one of those agents also runs a very"
+    },
+    {
+      "start": 1273.78,
+      "end": 1282.56,
+      "text": "runs a very simple, where it runs its own version of how can I make this better. And it runs its own verdict. And it never degrades. That's the other"
+    },
+    {
+      "start": 1281.92,
+      "end": 1290.36,
+      "text": "That's the other big, big rule. It's not just trying to improve and try to do something. It then looks back and says, is this actually better? And it's like,"
+    },
+    {
+      "start": 1289.98,
+      "end": 1299.0,
+      "text": "And it's like, if it's not, it will move past it. It's actually, I've been running this for several months. And a lot of people are using this now. And"
+    },
+    {
+      "start": 1296.44,
+      "end": 1304.96,
+      "text": "this now. And it's like, I'm going to do this. Anyway, this wasn't what this talk is about. But it's one of the coolest skills. Yep. I wanted to ask"
+    },
+    {
+      "start": 1304.02,
+      "end": 1313.24,
+      "text": "wanted to ask one more question about the EBI. Is that mostly for planning, like when you're trying to plan something out? Because you pointed"
+    },
+    {
+      "start": 1311.1,
+      "end": 1320.52,
+      "text": "Because you pointed at something like a writing piece, like writing a post or something, or just a chunk of code that's small enough. How"
+    },
+    {
+      "start": 1318.68,
+      "end": 1327.9,
+      "text": "small enough. How can it be easier? The reality is, even when you have challenges, there are obstacles. Right? So if"
+    },
+    {
+      "start": 1326.84,
+      "end": 1335.98,
+      "text": "Right? So if I've said, here's what I'm trying to achieve. I feel like there's a better way to do this. I will run it through"
+    },
+    {
+      "start": 1335.44,
+      "end": 1342.22,
+      "text": "run it through there. And it just takes such a different angle of like, all right, well, here's what you're doing. Here's what's working well. Here's what's not working well."
+    },
+    {
+      "start": 1341.7,
+      "end": 1350.9,
+      "text": "not working well. Well, here's an opportunity for improvement. And so that recursive loop, as it's running through that, it just gives"
+    },
+    {
+      "start": 1350.12,
+      "end": 1360.2,
+      "text": "it just gives so many lists of features. What's cool about the skill is that, in the install, with"
+    },
+    {
+      "start": 1356.94,
+      "end": 1366.0,
+      "text": "the install, with the markdown, when it runs, it tries to take your most recent project and figures out one that it thinks it should"
+    },
+    {
+      "start": 1365.48,
+      "end": 1374.64,
+      "text": "thinks it should run. And it will immediately run an improvement. And you'll see a list. And you're like, wow, that's great. And so I highly recommend. But"
+    },
+    {
+      "start": 1373.34,
+      "end": 1382.56,
+      "text": "highly recommend. But yes, I find that it works for anything. Because it's using a framework of asking it,"
+    },
+    {
+      "start": 1381.48,
+      "end": 1390.66,
+      "text": "of asking it, how can it be better than that? So I love when people tell me"
+    },
+    {
+      "start": 1390.02,
+      "end": 1398.2,
+      "text": "people tell me an example of something that they've done and love it. So if you do download it, install it, please let me know. All right, so back to"
+    },
+    {
+      "start": 1397.82,
+      "end": 1406.88,
+      "text": "so back to this. I did build EBI into this process. So as I was going through and understanding with these different agents, and I was"
+    },
+    {
+      "start": 1405.62,
+      "end": 1415.12,
+      "text": "and I was really trying to, again, take the very simple approach, building this within the actual cloud. Within"
+    },
+    {
+      "start": 1412.3,
+      "end": 1421.48,
+      "text": "actual cloud. Within my cloud infrastructure, I also have this set up within Codex, too, because I do switch back and forth. And so I've"
+    },
+    {
+      "start": 1420.34,
+      "end": 1429.58,
+      "text": "And so I've set up the conductor to run in its own scenario versus obviously building out. I'm not working. This"
+    },
+    {
+      "start": 1428.82,
+      "end": 1437.92,
+      "text": "not working. This is not a full -on harness. This is not work with local models, et cetera. This is just set up specifically for my workflow within Cloud"
+    },
+    {
+      "start": 1436.4,
+      "end": 1446.22,
+      "text": "workflow within Cloud and Codex. And so this breaks down a little bit more details on the actual builders."
+    },
+    {
+      "start": 1443.58,
+      "end": 1453.02,
+      "text": "the actual builders. So it sets up a builder, which does all feature fixes, refactors, tests, scripts, drafts,"
+    },
+    {
+      "start": 1451.84,
+      "end": 1460.94,
+      "text": "tests, scripts, drafts, scout, which does all greps, inventories, config dumps, status checks, read -only, even research,"
+    },
+    {
+      "start": 1459.14,
+      "end": 1468.0,
+      "text": "-only, even research, and some other things like that that just can be, depending on what it is, can be done through there. And then the critic, which is also"
+    },
+    {
+      "start": 1467.46,
+      "end": 1474.22,
+      "text": "which is also running, especially when Sonnet 5 came out, it does actually run. This is a little bit more complicated than the other models. It's below 4 .8, but"
+    },
+    {
+      "start": 1473.38,
+      "end": 1483.18,
+      "text": "4 .8, but it's actually pretty good. It runs. Sonnet 5 in this setup was working really well. And then I bring back to Opus"
+    },
+    {
+      "start": 1480.54,
+      "end": 1489.66,
+      "text": "back to Opus 4 .8 as the architect. So it's also really kind of measured and done based on bringing"
+    },
+    {
+      "start": 1488.44,
+      "end": 1497.66,
+      "text": "based on bringing that back and setting up the scaffolding, so to speak. And then, yeah, every model is pinned down in its own config file. So every"
+    },
+    {
+      "start": 1496.68,
+      "end": 1505.64,
+      "text": "file. So every single one has its own set of rules, its own very specific rules. So I think that's a really good way to approach what they're being delegated"
+    },
+    {
+      "start": 1504.82,
+      "end": 1513.84,
+      "text": "they're being delegated and how they bring it back. So then orchestration is also cache -friendly, so almost by accident. Because as"
+    },
+    {
+      "start": 1512.48,
+      "end": 1521.88,
+      "text": "accident. Because as it's going and as it's running and it's doing its orchestration, obviously it's keeping the session alive. So here's an example of my token"
+    },
+    {
+      "start": 1519.3,
+      "end": 1528.68,
+      "text": "of my token usage is that 90 % of all my token usage that was running, because it's running it, is now through an orchestration run. The"
+    },
+    {
+      "start": 1527.16,
+      "end": 1536.22,
+      "text": "orchestration run. The main orchestrator, the main conductor, is now like, I, you know, I'm running this organization. And it runs all these background tasks. And everything's going."
+    },
+    {
+      "start": 1535.26,
+      "end": 1543.38,
+      "text": "And everything's going. And it's like, hey, I'm here. What's also cool about that is that when it's not thinking and running, I'm able to like, you know, obviously, like,"
+    },
+    {
+      "start": 1542.82,
+      "end": 1550.86,
+      "text": "know, obviously, like, I can, it'll like, hey, it's in flight. Here's what's running. Here's who I'm delegating to. And then I'm able to actually monitor and watch all of"
+    },
+    {
+      "start": 1549.82,
+      "end": 1559.2,
+      "text": "watch all of the different agents as they're running. I can view their transcripts. And I used to actually use, I'll just kind of give an example here. But"
+    },
+    {
+      "start": 1557.96,
+      "end": 1567.1,
+      "text": "example here. But like, as I was doing with this specific workshop, is that, you know, it has all these background tasks. So you know, here's all of the stuff"
+    },
+    {
+      "start": 1566.64,
+      "end": 1575.78,
+      "text": "of the stuff that was running all of these different agents and all of their orchestration running through the system that I was just demonstrating. So you can actually"
+    },
+    {
+      "start": 1574.92,
+      "end": 1583.28,
+      "text": "you can actually click and watch every single transcript. I have the settings set up to be very verbose transcripts. I like to see everything that is going on. And"
+    },
+    {
+      "start": 1581.82,
+      "end": 1588.94,
+      "text": "going on. And I can stop it in real time. But what's great is that you'll see here at the very bottom, this is what I was talking about, is"
+    },
+    {
+      "start": 1588.28,
+      "end": 1597.36,
+      "text": "talking about, is like, here's what, it gives me this little like hair, like I ran basically, Fable ran these very specific things. Otherwise, it would say like, all right,"
+    },
+    {
+      "start": 1596.54,
+      "end": 1605.7,
+      "text": "like, all right, it'll show me the delegation. It'll show me the delegation process. So it has that transparency. And of course, all of this is measured"
+    },
+    {
+      "start": 1605.12,
+      "end": 1614.42,
+      "text": "this is measured and tracked within the receipts as well. So so yeah,"
+    },
+    {
+      "start": 1608.72,
+      "end": 1617.74,
+      "text": "So so yeah, so you can, I built this out as also its"
+    },
+    {
+      "start": 1616.3,
+      "end": 1625.82,
+      "text": "as also its own skill. So two things. One, this is something that does modify your Cloud .md file. And"
+    },
+    {
+      "start": 1624.6,
+      "end": 1633.7,
+      "text": ".md file. And so you will, it is something that also you can uninstall. So I would recommend, as always, because it's modifying your Cloud .md"
+    },
+    {
+      "start": 1632.7,
+      "end": 1640.12,
+      "text": "your Cloud .md file. I built it to where you can install it. You can run it. But for any reason you want to uninstall it, you can uninstall it."
+    },
+    {
+      "start": 1639.28,
+      "end": 1648.3,
+      "text": "can uninstall it. But I've been running this now for the last like 10, 12 days. I haven't made any modifications to it. I'm finding"
+    },
+    {
+      "start": 1647.14,
+      "end": 1656.3,
+      "text": "it. I'm finding that it's become very efficient. And so yeah, a little bit of results on that. As I'm seeing about up to 80 %"
+    },
+    {
+      "start": 1655.76,
+      "end": 1666.82,
+      "text": "to 80 % less plan usage from before I had had it installed. I've been tracking it. Seeing about, again, seeing about a 31 % cost reduction. And"
+    },
+    {
+      "start": 1663.62,
+      "end": 1674.08,
+      "text": "cost reduction. And it's all been measured since I've been running this. And so yeah. All"
+    },
+    {
+      "start": 1669.66,
+      "end": 1674.44,
+      "text": "so yeah. All right, that's it."
+    }
+  ],
+  "widgets": []
+}

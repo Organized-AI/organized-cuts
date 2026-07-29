@@ -1,0 +1,2273 @@
+{
+  "name": "session-7-twitch",
+  "title": "Session 7 Twitch",
+  "speaker": "Jordan",
+  "media_url": null,
+  "twelvelabs": {
+    "index_name": "session-7-twitch",
+    "index_id": "6a67cf88da782c8cae534d29",
+    "video_id": "6a67d17ad2f35809715cc78d"
+  },
+  "masters": {
+    "ISO1": "/Users/supabowl/organized-cuts/session-7-twitch/masters/twitch_2830516286.mp4"
+  },
+  "clips": [
+    {
+      "id": "01",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 12,
+      "hook": "Dream house goals? 🏡",
+      "caption": "Living simply in a traditional 5-bedroom home with lake views, pools, and natural light—my ultimate dream. #DreamHome #SimpleLiving #HouseGoals",
+      "start": 129.96,
+      "end": 150.04,
+      "duration": 20.08,
+      "crop_cx": 0.587,
+      "crop_x0": 822,
+      "demo_lead_s": null,
+      "reel": "reels/reel_01.mp4",
+      "still_person": "reels/compare/01_person.jpg",
+      "still_screen": null,
+      "transcript": "can fail like this no crazy back and forth floor none can of fail that. like this It's just I'm uh looking for a simple the traditional ability to house create it's memes always been my is what dream I to call have this. a This two is like story house with how five can bedrooms I quickly I'd also love for it to have get lots something of windows, out tons of based natural on an light idea that I come and across a nice while yard I'm scrolling on if social. it has a pool So now even better my and if it has a lake view downtime that will",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "The Power of Rapid Content Creation from Social Scrolling"
+    },
+    {
+      "id": "02",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 12,
+      "hook": "Turns $2K/month into a business",
+      "caption": "No down payment, no research funds—just AI, memes, and private local investors. This is how I’m building my business from scratch. #SideHustle #AIEntrepreneur #NoMoneyNoProblem",
+      "start": 152.84,
+      "end": 173.56,
+      "duration": 20.72,
+      "crop_cx": 0.58,
+      "crop_x0": 810,
+      "demo_lead_s": null,
+      "reel": "reels/reel_02.mp4",
+      "still_person": "reels/compare/02_person.jpg",
+      "still_screen": null,
+      "transcript": "time percent turns financing into because I don't have research any money for a and down the ability payment to create right now memes I'm for making my business about two thousand dollars a month depending or relevant on the month to the and topic well I wouldn't at want hand the house to be more than one hundred and fifty thousand dollars either it so should yeah let me know we what want you can a find private for local me AI brain it should I'm remember looking for everything all right it so should work I found across Slack that WhatsApp, email.",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Using AI to Ingest and Repurpose Ideas at Scale"
+    },
+    {
+      "id": "03",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 11,
+      "hook": "Dream house with zero down?",
+      "caption": "Natural light, pool, lake view, and 100% financing—this is how I’m building my ideal home without a down payment. #RealEstateHacks #ZeroDownDreams",
+      "start": 263.0,
+      "end": 283.08,
+      "duration": 20.08,
+      "crop_cx": 0.58,
+      "crop_x0": 810,
+      "demo_lead_s": null,
+      "reel": "reels/reel_03.mp4",
+      "still_person": "reels/compare/03_person.jpg",
+      "still_screen": null,
+      "transcript": "lots help me of plan windows, to use this tons style of of content natural light and a nice yard if it has all a pool in Hermes even better and uh if it because has my a Hermes lake view agent that will is be perfect is powerful enough the for only it thing is I need so a hundred percent it worked financing out really because well I don't have any money for a down payment right now but yeah I'm just making wanted to about show you guys two that thousand dollars a month and then depending on the month uh and well let's I see wouldn't want the house to be more than one hundred and fifty",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Creating a 'Restaurant at Home' Tool from a Personal Idea"
+    },
+    {
+      "id": "04",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 14,
+      "hook": "26 leads in 4 hours? 🔥",
+      "caption": "How I turned a simple video into 26 high-quality leads using AI-powered content creation. Swipe to see the magic. #LeadGeneration #AITools #ContentMarketing",
+      "start": 349.0,
+      "end": 369.48,
+      "duration": 20.48,
+      "crop_cx": 0.58,
+      "crop_x0": 810,
+      "demo_lead_s": null,
+      "reel": "reels/reel_04.mp4",
+      "still_person": "reels/compare/04_person.jpg",
+      "still_screen": null,
+      "transcript": "I'm looking for all right so I found that and then I went and created this go um video, All let's right, go so um, I uh wanted to show style you guys this. I think it's pretty interesting and see what pops uh up. types of leads I I got twenty get one in twenty matches twenty six so I saw this video your",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Automated Recipe Planning with AI Integration"
+    },
+    {
+      "id": "05",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 12,
+      "hook": "Leads in 2026? Mind-blowing.",
+      "caption": "How I'm generating high-value leads in 2026 using AI-powered funnels—no fluff, just results. #AIMarketing #LeadGeneration #FutureOfSales",
+      "start": 653.96,
+      "end": 674.44,
+      "duration": 20.48,
+      "crop_cx": 0.871,
+      "crop_x0": 1312,
+      "demo_lead_s": null,
+      "reel": "reels/reel_05.mp4",
+      "still_person": "reels/compare/05_person.jpg",
+      "still_screen": null,
+      "transcript": "nationality then I went and created this All right, so um, I wanted to show you guys this. I think it's pretty interesting uh types of leads I get in twenty twenty six so I saw this video your floor can fail like this floor can fail like this I'm",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Turning Tutorial Videos into Functional Code with One Prompt"
+    },
+    {
+      "id": "06",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 12,
+      "hook": "100% financing? $150K max?",
+      "caption": "Looking for a dream home under $150K with zero down payment? I’m making $2K/month and need help finding the perfect match. Let’s make it happen. #HomeBuying #RealEstateTips #FirstTimeBuyer",
+      "start": 811.96,
+      "end": 832.28,
+      "duration": 20.32,
+      "crop_cx": 0.58,
+      "crop_x0": 810,
+      "demo_lead_s": null,
+      "reel": "reels/reel_06.mp4",
+      "still_person": "reels/compare/06_person.jpg",
+      "still_screen": null,
+      "transcript": "I need a hundred percent financing because I don't have any money for a down payment right now I'm making about two thousand dollars a month depending on the month and well I wouldn't want the house to be more than one hundred and fifty thousand dollars either so yeah let me know what you can find for me I'm looking for all right so I found that",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "One-Prompt Deployment of a Full Marketing Funnel"
+    },
+    {
+      "id": "07",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 12,
+      "hook": "Leads in 2026? Mind-blowing.",
+      "caption": "This is the future of lead generation—AI-powered, hyper-targeted, and ready for 2026. #FutureOfSales #LeadGen #AIRevolution",
+      "start": 954.92,
+      "end": 975.16,
+      "duration": 20.24,
+      "crop_cx": 0.58,
+      "crop_x0": 810,
+      "demo_lead_s": null,
+      "reel": "reels/reel_07.mp4",
+      "still_person": "reels/compare/07_person.jpg",
+      "still_screen": null,
+      "transcript": "this All right, so um, I wanted to show you guys this. I think it's pretty interesting uh types of leads I get in twenty twenty six so I saw this video your floor can fail like this floor can fail like this I'm looking for a",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Instant Deployment via Cloudflare Worker"
+    },
+    {
+      "id": "08",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 9,
+      "hook": "Dream house in 2026? Here’s how.",
+      "caption": "A simple traditional two-story home with five bedrooms, endless windows, and natural light—my vision for the future. #FutureHome #DreamHouse #SmartDesign",
+      "start": 1145.0,
+      "end": 1165.4,
+      "duration": 20.4,
+      "crop_cx": 0.58,
+      "crop_x0": 810,
+      "demo_lead_s": null,
+      "reel": "reels/reel_08.mp4",
+      "still_person": "reels/compare/08_person.jpg",
+      "still_screen": null,
+      "transcript": "I get in twenty twenty six so I saw this video your floor can fail like this floor can fail like this I'm looking for a simple traditional house it's always been my dream to have a two story house with five bedrooms I'd also love for it to have lots of windows, tons of natural light",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Building a Custom Quiz Funnel in Minutes"
+    },
+    {
+      "id": "09",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 13,
+      "hook": "This one video made me $1M",
+      "caption": "Turned a single YouTube video into 30+ viral clips—automatically. No filming, no editing. Just pure content leverage. #ContentHacking #ViralClips #AIProductivity",
+      "start": 1201.0,
+      "end": 1221.72,
+      "duration": 20.72,
+      "crop_cx": 0.808,
+      "crop_x0": 1246,
+      "demo_lead_s": null,
+      "reel": "reels/reel_09.mp4",
+      "still_person": "reels/compare/09_person.jpg",
+      "still_screen": null,
+      "transcript": "views, you guys not these, this. but I think yesterday's it's pretty interesting and it uh clips types of them leads up I automatically get in twenty into twenty six thirty second segments so you get a so I ton saw of this bang video for your buck, your floor can fail like but this sometimes um like yesterday floor can I fail created like this this entire I'm project looking for based a simple on traditional someone else's house project. it's always been my dream to have a two So story this house YouTuber with five bedrooms I'd",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Automated A/B Testing with 'Generate Challenger'"
+    },
+    {
+      "id": "10",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 10,
+      "hook": "Dream house, zero down payment?",
+      "caption": "Looking for a home with lots of windows, natural light, a pool, and lake views—on a $2K monthly budget with 100% financing. This is how I’m making it happen. #DreamHome #RealEstateTips #NoDownPayment",
+      "start": 1402.92,
+      "end": 1422.92,
+      "duration": 20.0,
+      "crop_cx": 0.58,
+      "crop_x0": 810,
+      "demo_lead_s": null,
+      "reel": "reels/reel_10.mp4",
+      "still_person": "reels/compare/10_person.jpg",
+      "still_screen": null,
+      "transcript": "lots of windows, tons of natural light and a nice yard if it has a pool even better and if it has a lake view that will be perfect the only thing is I need a hundred percent financing because I don't have any money for a down payment right now I'm making about two thousand dollars a month depending on the month and well I wouldn't want the house to be more than one hundred",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Real-Time Access to AI-Generated Project Home"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 3.92,
+      "end": 8.04,
+      "text": "All right, so I wanted to show you guys this. I think"
+    },
+    {
+      "start": 8.04,
+      "end": 11.74,
+      "text": "it's pretty interesting types of leads I get in 2026."
+    },
+    {
+      "start": 13.56,
+      "end": 16.28,
+      "text": "So I saw this video. Your floor can fail like this."
+    },
+    {
+      "start": 17.82,
+      "end": 21.68,
+      "text": "Your floor can fail like this. I'm looking for a simple, traditional"
+    },
+    {
+      "start": 21.68,
+      "end": 25.14,
+      "text": "house. It's always been my dream to have a two -story house"
+    },
+    {
+      "start": 25.14,
+      "end": 29.08,
+      "text": "with five bedrooms. I'd also love for it to have lots of"
+    },
+    {
+      "start": 29.08,
+      "end": 33.22,
+      "text": "windows, tons of natural light, and a nice yard. If it has"
+    },
+    {
+      "start": 33.22,
+      "end": 35.64,
+      "text": "a pool, even better. And if it has a lake view, that"
+    },
+    {
+      "start": 35.64,
+      "end": 39.26,
+      "text": "would be perfect. The only thing is I need 100 % financing"
+    },
+    {
+      "start": 39.26,
+      "end": 42.2,
+      "text": "because I don't have any money for a down payment. Right now,"
+    },
+    {
+      "start": 42.32,
+      "end": 46.14,
+      "text": "I'm making about $2 ,000 a month, depending on the month. And,"
+    },
+    {
+      "start": 46.2,
+      "end": 49.4,
+      "text": "well, I wouldn't want the house to be more than $150 ,000"
+    },
+    {
+      "start": 49.4,
+      "end": 52.52,
+      "text": "either. So, yeah, let me know what you can find for me."
+    },
+    {
+      "start": 54.5,
+      "end": 59.5,
+      "text": "I'm looking for a simple... All right. So I found that. And"
+    },
+    {
+      "start": 59.5,
+      "end": 60.96,
+      "text": "then I went and created this."
+    },
+    {
+      "start": 62.18,
+      "end": 64.86,
+      "text": "Let me see if I can find the clip."
+    },
+    {
+      "start": 66.92,
+      "end": 70.14,
+      "text": "It's this one. Boom, right to it."
+    },
+    {
+      "start": 71.54,
+      "end": 74.86,
+      "text": "So, mind you, this is first pass."
+    },
+    {
+      "start": 76.06,
+      "end": 81.88,
+      "text": "No crazy back and forth. None of that. It's just the ability"
+    },
+    {
+      "start": 81.88,
+      "end": 85.9,
+      "text": "to create memes is what I call this. This is like... How"
+    },
+    {
+      "start": 85.9,
+      "end": 90.82,
+      "text": "can I... How can I quickly get something out based on an"
+    },
+    {
+      "start": 90.82,
+      "end": 93.82,
+      "text": "idea that I come across while I'm scrolling on social? So now"
+    },
+    {
+      "start": 93.82,
+      "end": 99.44,
+      "text": "my downtime where I'm scrolling on social, just burning time turns into"
+    },
+    {
+      "start": 99.44,
+      "end": 105.28,
+      "text": "research. And the ability to create memes for my business or relevant"
+    },
+    {
+      "start": 105.28,
+      "end": 107.16,
+      "text": "to the topic at hand."
+    },
+    {
+      "start": 110.54,
+      "end": 117.06,
+      "text": "We want a private local AI brain. It should remember everything. It"
+    },
+    {
+      "start": 117.06,
+      "end": 123.14,
+      "text": "should work across Slack, WhatsApp, email, docs, and code. It cannot hallucinate."
+    },
+    {
+      "start": 123.94,
+      "end": 127.84,
+      "text": "We need it this week. Budget is basically zero."
+    },
+    {
+      "start": 130.12,
+      "end": 132.84,
+      "text": "He didn't do the last frame where he looks at the phone."
+    },
+    {
+      "start": 134.06,
+      "end": 139.08,
+      "text": "Like, what the heck? But, yeah, this is the power that, like,"
+    },
+    {
+      "start": 139.08,
+      "end": 144.78,
+      "text": "I'm able to ingest videos and create this. So, basically..."
+    },
+    {
+      "start": 146.54,
+      "end": 150.22,
+      "text": "I can ingest, understand, and help me plan to use this style"
+    },
+    {
+      "start": 150.22,
+      "end": 150.8,
+      "text": "of content."
+    },
+    {
+      "start": 152.64,
+      "end": 157.18,
+      "text": "All in Hermes because my Hermes agent is powerful enough for it."
+    },
+    {
+      "start": 157.36,
+      "end": 159.82,
+      "text": "So, it worked out really well."
+    },
+    {
+      "start": 161.86,
+      "end": 164.88,
+      "text": "But, yeah, I just wanted to show you guys that. And then..."
+    },
+    {
+      "start": 166.12,
+      "end": 166.86,
+      "text": "Let's see."
+    },
+    {
+      "start": 169.48,
+      "end": 176.52,
+      "text": "This is what that same brain that's ingesting these ideas that I'm"
+    },
+    {
+      "start": 176.52,
+      "end": 178.84,
+      "text": "creating. This looks like... So, you got all your nodes and your"
+    },
+    {
+      "start": 178.84,
+      "end": 181.24,
+      "text": "different sections. So, I can go..."
+    },
+    {
+      "start": 183.32,
+      "end": 186.52,
+      "text": "Video. Let's go... Style."
+    },
+    {
+      "start": 188.62,
+      "end": 191.5,
+      "text": "Let's see what pops up. I got 21 matches."
+    },
+    {
+      "start": 194.82,
+      "end": 197.34,
+      "text": "I think it's gonna give me, like, the..."
+    },
+    {
+      "start": 199.48,
+      "end": 203.78,
+      "text": "Open in chat. What did I do here? I messed it up."
+    },
+    {
+      "start": 209.16,
+      "end": 210.14,
+      "text": "Let's try that again."
+    },
+    {
+      "start": 215.96,
+      "end": 217.22,
+      "text": "Or I could go Mean."
+    },
+    {
+      "start": 230.26,
+      "end": 231.6,
+      "text": "I got 7 shapes."
+    },
+    {
+      "start": 233.22,
+      "end": 236.42,
+      "text": "I don't know why it's not popping up like it was. Uh..."
+    },
+    {
+      "start": 236.52,
+      "end": 237.1,
+      "text": "Style."
+    },
+    {
+      "start": 243.0,
+      "end": 243.68,
+      "text": "What's this?"
+    },
+    {
+      "start": 246.4,
+      "end": 249.38,
+      "text": "Turn it into a Loop Factory. That's not what I'm looking for."
+    },
+    {
+      "start": 252.32,
+      "end": 255.22,
+      "text": "Video. Let's see what it says when I just tell you video"
+    },
+    {
+      "start": 255.22,
+      "end": 255.58,
+      "text": "on YouTube."
+    },
+    {
+      "start": 258.82,
+      "end": 262.9,
+      "text": "This is all my Hami stuff that I used to create this"
+    },
+    {
+      "start": 262.9,
+      "end": 265.7,
+      "text": "rich artist idea."
+    },
+    {
+      "start": 267.1,
+      "end": 272.72,
+      "text": "There's my video. I got this thing called... Mmm Food."
+    },
+    {
+      "start": 274.14,
+      "end": 277.04,
+      "text": "So, if you're a Doom fan, that one's for you."
+    },
+    {
+      "start": 278.6,
+      "end": 283.16,
+      "text": "But it's a tool that I created called Restaurant at Home. And"
+    },
+    {
+      "start": 283.16,
+      "end": 286.64,
+      "text": "that's a phrase that me and my wife have thrown around over"
+    },
+    {
+      "start": 286.64,
+      "end": 290.7,
+      "text": "the past three years. Where we're like, hey, we gotta stop eating"
+    },
+    {
+      "start": 290.7,
+      "end": 296.36,
+      "text": "out so much. Let's create a restaurant at home. And the finished"
+    },
+    {
+      "start": 296.36,
+      "end": 299.4,
+      "text": "product is going to be... This project... Product of that looks like"
+    },
+    {
+      "start": 299.4,
+      "end": 307.04,
+      "text": "this. And so yesterday... Or not yesterday. Friday. We were distinctly trying"
+    },
+    {
+      "start": 307.04,
+      "end": 310.46,
+      "text": "to make a chicken dish. And so that's why that's there. But"
+    },
+    {
+      "start": 310.46,
+      "end": 316.66,
+      "text": "basically every single dish that's inside of an Apple Note is organized"
+    },
+    {
+      "start": 316.66,
+      "end": 322.42,
+      "text": "and categorized alongside how long it takes. What the..."
+    },
+    {
+      "start": 325.72,
+      "end": 331.96,
+      "text": "Ingredients look like. The equipment involved. So, pretty much whatever you would"
+    },
+    {
+      "start": 331.96,
+      "end": 338.92,
+      "text": "need to make the dish. And so the next step for this"
+    },
+    {
+      "start": 338.92,
+      "end": 342.84,
+      "text": "tool... And this all happened from Hermes as well."
+    },
+    {
+      "start": 344.2,
+      "end": 348.96,
+      "text": "Ingested from Apple Notes. And then created. I can show you guys"
+    },
+    {
+      "start": 348.96,
+      "end": 350.02,
+      "text": "that in a bit here."
+    },
+    {
+      "start": 352.42,
+      "end": 354.98,
+      "text": "But this is really dope. Because it gives you like a time"
+    },
+    {
+      "start": 354.98,
+      "end": 360.32,
+      "text": "estimate. It gives you the ingredients. It tells you the nationality. And"
+    },
+    {
+      "start": 360.32,
+      "end": 364.48,
+      "text": "then it gives you a tier score for like how easy or"
+    },
+    {
+      "start": 364.48,
+      "end": 366.9,
+      "text": "how hard it is. The next thing I need to add is"
+    },
+    {
+      "start": 366.9,
+      "end": 372.28,
+      "text": "a reference back to the video that it's from. Sushi Bake 45"
+    },
+    {
+      "start": 372.28,
+      "end": 372.8,
+      "text": "minutes."
+    },
+    {
+      "start": 374.86,
+      "end": 378.08,
+      "text": "And this is because I used 12 labs to ingest everything. I"
+    },
+    {
+      "start": 378.08,
+      "end": 381.3,
+      "text": "didn't have to write any of this down. All this pulled directly"
+    },
+    {
+      "start": 381.3,
+      "end": 384.16,
+      "text": "from the video. Because you know you watch cooking videos and they"
+    },
+    {
+      "start": 384.16,
+      "end": 388.3,
+      "text": "tell you what's in it. Pretty much. Let me go see if"
+    },
+    {
+      "start": 388.3,
+      "end": 392.16,
+      "text": "I can find the thread. I do need to figure out a"
+    },
+    {
+      "start": 392.16,
+      "end": 392.46,
+      "text": "way."
+    },
+    {
+      "start": 396.62,
+      "end": 401.3,
+      "text": "Did I do it on Saturday? Or Friday? I thought I did"
+    },
+    {
+      "start": 401.3,
+      "end": 401.8,
+      "text": "it on Friday."
+    },
+    {
+      "start": 408.96,
+      "end": 410.28,
+      "text": "Yeah, that's kind of weird."
+    },
+    {
+      "start": 415.56,
+      "end": 419.78,
+      "text": "And then these were messed up because of everything I'd done earlier."
+    },
+    {
+      "start": 421.8,
+      "end": 422.54,
+      "text": "Let's see."
+    },
+    {
+      "start": 424.9,
+      "end": 429.5,
+      "text": "It might be one of these joints. Those are other memes that"
+    },
+    {
+      "start": 429.5,
+      "end": 431.2,
+      "text": "I had ingested."
+    },
+    {
+      "start": 437.14,
+      "end": 441.04,
+      "text": "This is probably, yeah, this is the,"
+    },
+    {
+      "start": 446.62,
+      "end": 448.74,
+      "text": "real crazy one so that"
+    },
+    {
+      "start": 452.0,
+      "end": 456.1,
+      "text": "and then this is all stuff from today let's go back to"
+    },
+    {
+      "start": 456.1,
+      "end": 456.96,
+      "text": "to"
+    },
+    {
+      "start": 462.46,
+      "end": 464.82,
+      "text": "where did i ingest the apple note"
+    },
+    {
+      "start": 468.74,
+      "end": 474.32,
+      "text": "it might be in claude i thought i ingested it on"
+    },
+    {
+      "start": 475.7,
+      "end": 476.52,
+      "text": "um"
+    },
+    {
+      "start": 497.38,
+      "end": 498.46,
+      "text": "it's not these"
+    },
+    {
+      "start": 506.4,
+      "end": 511.94,
+      "text": "i saw me uh that i didn't find it immediately but uh"
+    },
+    {
+      "start": 511.94,
+      "end": 515.72,
+      "text": "that's okay let's still take a look real quick"
+    },
+    {
+      "start": 517.2,
+      "end": 522.54,
+      "text": "i already used focus 5 now my mcp server is trying to"
+    },
+    {
+      "start": 522.54,
+      "end": 523.62,
+      "text": "connect stape"
+    },
+    {
+      "start": 524.82,
+      "end": 527.66,
+      "text": "i don't want that um let's see if i can find it"
+    },
+    {
+      "start": 527.66,
+      "end": 528.02,
+      "text": "real quick"
+    },
+    {
+      "start": 531.2,
+      "end": 531.64,
+      "text": "boom"
+    },
+    {
+      "start": 535.38,
+      "end": 538.76,
+      "text": "so it's inside of claude so that's on me that's my bad"
+    },
+    {
+      "start": 539.48,
+      "end": 539.92,
+      "text": "um"
+    },
+    {
+      "start": 542.08,
+      "end": 546.06,
+      "text": "i want to look at the mm food project of apple notes"
+    },
+    {
+      "start": 546.06,
+      "end": 548.96,
+      "text": "and find a chicken related dish please ingest all the video content"
+    },
+    {
+      "start": 548.96,
+      "end": 550.84,
+      "text": "in the 12 labs index and make sense of it"
+    },
+    {
+      "start": 552.12,
+      "end": 556.78,
+      "text": "that's kind of how we started and um you know it took"
+    },
+    {
+      "start": 556.78,
+      "end": 559.86,
+      "text": "a little bit of back and forth but eventually we got to"
+    },
+    {
+      "start": 560.38,
+      "end": 565.86,
+      "text": "a pretty good spot so it's not it's not that i can't"
+    },
+    {
+      "start": 565.86,
+      "end": 569.58,
+      "text": "do this quickly through like one or two prompts um"
+    },
+    {
+      "start": 571.5,
+      "end": 574.82,
+      "text": "a lot of these types of projects that are just kind of"
+    },
+    {
+      "start": 574.82,
+      "end": 578.56,
+      "text": "fun uh for me at least i don't"
+    },
+    {
+      "start": 579.88,
+      "end": 584.18,
+      "text": "treat them like that's the only thing i'm working on this is"
+    },
+    {
+      "start": 584.18,
+      "end": 588.4,
+      "text": "like a side project that I'm that I've got going on in"
+    },
+    {
+      "start": 588.4,
+      "end": 593.08,
+      "text": "the background and then I'm able to get what I want out"
+    },
+    {
+      "start": 593.08,
+      "end": 597.98,
+      "text": "of it um another thing that I'm experimenting with is I've been"
+    },
+    {
+      "start": 597.98,
+      "end": 607.42,
+      "text": "posting content on Facebook and getting lots of views not these but"
+    },
+    {
+      "start": 607.42,
+      "end": 613.3,
+      "text": "yesterday's and it clips them up automatically into 30 second segments so"
+    },
+    {
+      "start": 613.3,
+      "end": 617.62,
+      "text": "you get a ton of bang for your buck but sometimes like"
+    },
+    {
+      "start": 617.62,
+      "end": 624.78,
+      "text": "yesterday I created this entire project based on someone else's project so"
+    },
+    {
+      "start": 624.78,
+      "end": 630.98,
+      "text": "this youtuber right here or this Facebook guy in just this capture"
+    },
+    {
+      "start": 630.98,
+      "end": 635.46,
+      "text": "and the entire strategy and prompts then spin up the codec CLI"
+    },
+    {
+      "start": 635.46,
+      "end": 638.34,
+      "text": "so it's one of those instructional videos you're about to see it"
+    },
+    {
+      "start": 638.34,
+      "end": 645.1,
+      "text": "but I wanted to you ! challenge myself to ingest everything make"
+    },
+    {
+      "start": 645.1,
+      "end": 650.72,
+      "text": "sense of it through 12 labs on Hermes then use that ingested"
+    },
+    {
+      "start": 650.72,
+      "end": 657.26,
+      "text": "material to spin up the codec CLI and actually code what it's"
+    },
+    {
+      "start": 657.26,
+      "end": 664.0,
+      "text": "suggesting suggesting to then give me a finished product this one happened"
+    },
+    {
+      "start": 664.0,
+      "end": 668.34,
+      "text": "to use the post log SDK as well which is kind of"
+    },
+    {
+      "start": 668.34,
+      "end": 674.76,
+      "text": "cool so now I've got a finished not finished but like an"
+    },
+    {
+      "start": 674.76,
+      "end": 681.88,
+      "text": "MVP with post hog analytics connected to it and just so happened"
+    },
+    {
+      "start": 681.88,
+      "end": 687.68,
+      "text": "this one also has an RSI for the questions that are inside"
+    },
+    {
+      "start": 687.68,
+      "end": 693.56,
+      "text": "of the survey so it's you'll see I'll just show you so"
+    },
+    {
+      "start": 693.56,
+      "end": 699.76,
+      "text": "I had a voiceover but I didn't take marketing gurus are disappearing"
+    },
+    {
+      "start": 699.76,
+      "end": 703.88,
+      "text": "from the internet! gurus gurus gurus gur gur gur gur gur gur"
+    },
+    {
+      "start": 703.88,
+      "end": 708.32,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 708.32,
+      "end": 708.98,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 708.98,
+      "end": 710.52,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 710.52,
+      "end": 712.6,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 712.6,
+      "end": 715.5,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 715.5,
+      "end": 715.68,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 715.68,
+      "end": 715.68,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 715.68,
+      "end": 715.68,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 715.68,
+      "end": 715.68,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 715.68,
+      "end": 715.68,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 715.68,
+      "end": 715.68,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 715.68,
+      "end": 719.84,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 719.84,
+      "end": 719.84,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 719.84,
+      "end": 719.86,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 719.86,
+      "end": 719.86,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 719.86,
+      "end": 719.92,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 719.92,
+      "end": 720.76,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 720.76,
+      "end": 729.52,
+      "text": "gur gur gur gur gur and they were able to make a"
+    },
+    {
+      "start": 729.52,
+      "end": 732.36,
+      "text": "lot of money because they're charging people like you just saw um"
+    },
+    {
+      "start": 732.36,
+      "end": 736.64,
+      "text": "a couple hundred bucks a month to have access to this platform"
+    },
+    {
+      "start": 736.64,
+      "end": 744.2,
+      "text": "but now with today i mean you shouldn't vibe code first of"
+    },
+    {
+      "start": 744.2,
+      "end": 747.18,
+      "text": "all you know vibe coding in general is probably not the play"
+    },
+    {
+      "start": 747.18,
+      "end": 749.9,
+      "text": "but you don't have to um"
+    },
+    {
+      "start": 754.72,
+      "end": 758.6,
+      "text": "vibe code you can agentic engineer you can learn engineering you can"
+    },
+    {
+      "start": 758.6,
+      "end": 762.96,
+      "text": "do a good job you can create mvps you can stack on"
+    },
+    {
+      "start": 762.96,
+      "end": 764.72,
+      "text": "top of them like i'm going to show you in a bit"
+    },
+    {
+      "start": 764.72,
+      "end": 769.9,
+      "text": "but this was really interesting to me as a concept like i"
+    },
+    {
+      "start": 769.9,
+      "end": 773.96,
+      "text": "could take someone else's video where they're explaining so a tutorial video"
+    },
+    {
+      "start": 775.18,
+      "end": 778.08,
+      "text": "and instead of doing what i used to do which is i'd"
+    },
+    {
+      "start": 778.08,
+      "end": 782.24,
+      "text": "take a tutorial video open up cloud follow along and build it"
+    },
+    {
+      "start": 782.24,
+      "end": 787.64,
+      "text": "manually I can just ingest the video and then tell my agent"
+    },
+    {
+      "start": 787.64,
+      "end": 791.92,
+      "text": "to take what was ingested and build it and that's exactly what"
+    },
+    {
+      "start": 791.92,
+      "end": 793.74,
+      "text": "worked from start to finish."
+    },
+    {
+      "start": 812.62,
+      "end": 816.06,
+      "text": "So that's what we did and then I go on to show"
+    },
+    {
+      "start": 816.06,
+      "end": 820.66,
+      "text": "you what it looks like for me inside of Hermes."
+    },
+    {
+      "start": 824.32,
+      "end": 827.2,
+      "text": "But yeah that's my agent that's the prompt that I used and"
+    },
+    {
+      "start": 827.2,
+      "end": 831.98,
+      "text": "it one -shotted it. I had some back and forth I had"
+    },
+    {
+      "start": 831.98,
+      "end": 837.78,
+      "text": "to do around like setting up post log programmatically but you know"
+    },
+    {
+      "start": 837.78,
+      "end": 844.56,
+      "text": "this is all happening while I'm making a brisket on yesterday and"
+    },
+    {
+      "start": 844.56,
+      "end": 849.2,
+      "text": "just kind of doing my thing with this running in the background"
+    },
+    {
+      "start": 849.2,
+      "end": 853.84,
+      "text": "and that's the beauty of it in my opinion is it's not"
+    },
+    {
+      "start": 853.84,
+      "end": 858.6,
+      "text": "so much about getting it 100 % right and doing it quickly"
+    },
+    {
+      "start": 858.6,
+      "end": 865.1,
+      "text": "or even one -shotting it it's more so the fact that I"
+    },
+    {
+      "start": 865.1,
+      "end": 870.58,
+      "text": "could have you know 10 20 of these running at any given"
+    },
+    {
+      "start": 870.58,
+      "end": 874.44,
+      "text": "time the only real limitation is me juggling the idea and understanding"
+    },
+    {
+      "start": 875.2,
+      "end": 880.68,
+      "text": "how the system that I'm sending the idea to works but the"
+    },
+    {
+      "start": 880.68,
+      "end": 884.26,
+      "text": "system itself is where the power is at it has nothing to"
+    },
+    {
+      "start": 884.26,
+      "end": 891.68,
+      "text": "do with the LLM has little to do with the harness in"
+    },
+    {
+      "start": 891.68,
+      "end": 896.32,
+      "text": "this case and it has everything to do with how I'm able"
+    },
+    {
+      "start": 896.32,
+      "end": 898.88,
+      "text": "to set up a combination of the system and"
+    },
+    {
+      "start": 911.38,
+      "end": 913.22,
+      "text": "I'm actually gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 913.22,
+      "end": 915.82,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 915.82,
+      "end": 915.82,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 915.82,
+      "end": 915.92,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 915.92,
+      "end": 916.06,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 916.06,
+      "end": 916.06,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 916.06,
+      "end": 916.06,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 916.06,
+      "end": 916.06,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 916.06,
+      "end": 916.18,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 916.18,
+      "end": 916.3,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 916.3,
+      "end": 916.3,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 916.3,
+      "end": 916.3,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 916.3,
+      "end": 916.62,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 916.62,
+      "end": 917.48,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 917.48,
+      "end": 918.94,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 918.94,
+      "end": 919.92,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 919.92,
+      "end": 922.46,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 922.46,
+      "end": 922.46,
+      "text": "gur gur gur"
+    },
+    {
+      "start": 929.06,
+      "end": 934.6,
+      "text": "desktop some things i need my dev box cranking on not everything"
+    },
+    {
+      "start": 934.6,
+      "end": 938.74,
+      "text": "else and some things i can have all the compute that i"
+    },
+    {
+      "start": 938.74,
+      "end": 943.6,
+      "text": "need and just kick everything off with local models so a smaller"
+    },
+    {
+      "start": 943.6,
+      "end": 947.44,
+      "text": "model that's cheap as a best practice and that's where i'm going"
+    },
+    {
+      "start": 947.44,
+      "end": 952.78,
+      "text": "that's what's next for me is digging into that but basically i"
+    },
+    {
+      "start": 952.78,
+      "end": 957.48,
+      "text": "sat here and waited for it to produce you're going to see"
+    },
+    {
+      "start": 957.48,
+      "end": 961.88,
+      "text": "at the very bottom of the screen it says deployed check mark"
+    },
+    {
+      "start": 961.88,
+      "end": 967.22,
+      "text": "deployed and then public uh cloud flare worker asset url that's how"
+    },
+    {
+      "start": 967.22,
+      "end": 972.74,
+      "text": "i deploy my my pages and all my domain stuff is all"
+    },
+    {
+      "start": 972.74,
+      "end": 977.9,
+      "text": "there so i can like use custom domains even um but i"
+    },
+    {
+      "start": 977.9,
+      "end": 982.34,
+      "text": "was really excited about this and you know click on it and"
+    },
+    {
+      "start": 982.34,
+      "end": 986.1,
+      "text": "it opens up a funnel the same funnel that i was just"
+    },
+    {
+      "start": 986.1,
+      "end": 992.84,
+      "text": "working on you and all that's happened since that day yesterday is"
+    },
+    {
+      "start": 992.84,
+      "end": 995.78,
+      "text": "i've just made it a little bit tighter so it looks like"
+    },
+    {
+      "start": 995.78,
+      "end": 1000.28,
+      "text": "this now and so this one is in mock mode right now"
+    },
+    {
+      "start": 1000.28,
+      "end": 1004.92,
+      "text": "but it's about building out a conversion tracking plan um and you"
+    },
+    {
+      "start": 1004.92,
+      "end": 1008.84,
+      "text": "can personalize it in 90 seconds and that's because i built the"
+    },
+    {
+      "start": 1008.84,
+      "end": 1015.34,
+      "text": "entire thing uh here so again my external dev box is where"
+    },
+    {
+      "start": 1015.34,
+      "end": 1017.58,
+      "text": "i did all the work through cloud connection and i'm going to"
+    },
+    {
+      "start": 1017.58,
+      "end": 1017.58,
+      "text": "go ahead and do that in a second and i'm going to"
+    },
+    {
+      "start": 1017.58,
+      "end": 1029.32,
+      "text": "go ahead and do a gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1029.32,
+      "end": 1029.32,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1029.32,
+      "end": 1029.36,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1029.36,
+      "end": 1029.4,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1029.4,
+      "end": 1033.58,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1033.58,
+      "end": 1033.6,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1033.6,
+      "end": 1033.6,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1033.6,
+      "end": 1034.66,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1034.66,
+      "end": 1035.94,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1035.94,
+      "end": 1035.94,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1035.94,
+      "end": 1035.94,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1035.94,
+      "end": 1035.94,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1035.94,
+      "end": 1036.3,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1036.3,
+      "end": 1037.42,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1037.42,
+      "end": 1037.62,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1037.62,
+      "end": 1037.62,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1037.62,
+      "end": 1038.32,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1038.32,
+      "end": 1038.32,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1038.32,
+      "end": 1043.22,
+      "text": "gur gur gur gur gur gur gur gur there but i don't"
+    },
+    {
+      "start": 1043.22,
+      "end": 1049.22,
+      "text": "use that anyways but it's possible um but right now this is"
+    },
+    {
+      "start": 1049.22,
+      "end": 1052.1,
+      "text": "what i have access to as well as this guy so these"
+    },
+    {
+      "start": 1052.1,
+      "end": 1057.26,
+      "text": "are both mac minis um m4 mac minis that i can access"
+    },
+    {
+      "start": 1057.26,
+      "end": 1064.48,
+      "text": "from my laptop uh i'm on my m1 macbook pro at home"
+    },
+    {
+      "start": 1064.48,
+      "end": 1073.4,
+      "text": "and i can access my machines uh that i am not near"
+    },
+    {
+      "start": 1073.4,
+      "end": 1078.54,
+      "text": "they are downtown at the office and i'm able to access and"
+    },
+    {
+      "start": 1078.54,
+      "end": 1083.42,
+      "text": "use them right now so it's like remote access to all the"
+    },
+    {
+      "start": 1083.42,
+      "end": 1089.14,
+      "text": "local files to the coding agent uh obviously to codex so i"
+    },
+    {
+      "start": 1089.14,
+      "end": 1092.92,
+      "text": "can do everything i need to in codex on that machine here"
+    },
+    {
+      "start": 1092.92,
+      "end": 1098.16,
+      "text": "and where that matters is when you have dedicated devices and you're"
+    },
+    {
+      "start": 1098.16,
+      "end": 1103.36,
+      "text": "trying to get things done anyways long story short um i went"
+    },
+    {
+      "start": 1103.36,
+      "end": 1110.04,
+      "text": "and created this so i've got a big meeting tomorrow with i"
+    },
+    {
+      "start": 1110.04,
+      "end": 1113.1,
+      "text": "don't know why i didn't want to work right there let's see"
+    },
+    {
+      "start": 1113.1,
+      "end": 1120.46,
+      "text": "it's just not going to show i might need to reconnect it"
+    },
+    {
+      "start": 1120.46,
+      "end": 1120.8,
+      "text": "or something"
+    },
+    {
+      "start": 1123.44,
+      "end": 1125.34,
+      "text": "i've got a uh"
+    },
+    {
+      "start": 1126.54,
+      "end": 1133.78,
+      "text": "big meeting tomorrow around um conversion tracking work that i do and"
+    },
+    {
+      "start": 1133.78,
+      "end": 1137.54,
+      "text": "i just wanted to compare and contrast that and and build something"
+    },
+    {
+      "start": 1137.54,
+      "end": 1141.58,
+      "text": "out um so i could show as an example and i was"
+    },
+    {
+      "start": 1141.58,
+      "end": 1148.3,
+      "text": "able to do the entire thing uh on my dev box locally"
+    },
+    {
+      "start": 1148.3,
+      "end": 1156.94,
+      "text": "right because it's connected to uh this codex connections thing so that's"
+    },
+    {
+      "start": 1156.94,
+      "end": 1175.34,
+      "text": "kind of cool um so i'm actually gur gur gur gur gur"
+    },
+    {
+      "start": 1175.34,
+      "end": 1176.54,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1176.54,
+      "end": 1176.54,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1176.54,
+      "end": 1176.54,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1176.54,
+      "end": 1176.54,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1176.54,
+      "end": 1176.54,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1176.54,
+      "end": 1176.54,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1176.54,
+      "end": 1176.58,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1176.58,
+      "end": 1176.64,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1176.64,
+      "end": 1176.64,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1176.64,
+      "end": 1176.64,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1176.64,
+      "end": 1176.94,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1176.94,
+      "end": 1176.94,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1176.94,
+      "end": 1177.64,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1177.64,
+      "end": 1177.64,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1177.64,
+      "end": 1178.76,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1178.76,
+      "end": 1178.76,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1178.76,
+      "end": 1178.76,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1178.76,
+      "end": 1183.42,
+      "text": "gur gur gur gur gur gur gur then you can send yourself"
+    },
+    {
+      "start": 1183.42,
+      "end": 1187.5,
+      "text": "the results. Obviously there's some design choices that are kind of strange"
+    },
+    {
+      "start": 1187.5,
+      "end": 1187.9,
+      "text": "here."
+    },
+    {
+      "start": 1190.36,
+      "end": 1193.68,
+      "text": "I want these details used to prepare my measurement plan. Do not"
+    },
+    {
+      "start": 1193.68,
+      "end": 1195.72,
+      "text": "include sensitive customer data. Boom."
+    },
+    {
+      "start": 1197.32,
+      "end": 1201.06,
+      "text": "And then I can click send me this plan. And then this"
+    },
+    {
+      "start": 1201.06,
+      "end": 1205.7,
+      "text": "is kind of like just seeing what happened here. Goal, audience, traffic."
+    },
+    {
+      "start": 1206.42,
+      "end": 1208.46,
+      "text": "You can kind of see promote the winner."
+    },
+    {
+      "start": 1211.06,
+      "end": 1212.06,
+      "text": "Generate challenger."
+    },
+    {
+      "start": 1213.72,
+      "end": 1218.78,
+      "text": "Boom. And then you can log the result. So that's really cool."
+    },
+    {
+      "start": 1219.42,
+      "end": 1224.54,
+      "text": "This is more for like obviously operator console. I can remove this"
+    },
+    {
+      "start": 1224.54,
+      "end": 1232.22,
+      "text": "at any time. But this is a really cool version of what"
+    },
+    {
+      "start": 1232.22,
+      "end": 1235.04,
+      "text": "it looks like to be able to spin up a marketing asset"
+    },
+    {
+      "start": 1235.04,
+      "end": 1239.14,
+      "text": "quickly. A quiz funnel is a marketing asset for any business, right?"
+    },
+    {
+      "start": 1239.28,
+      "end": 1242.7,
+      "text": "I can spin that up quickly with all the logic behind it."
+    },
+    {
+      "start": 1242.7,
+      "end": 1247.08,
+      "text": "So that it's usable connected to an actual domain that I own."
+    },
+    {
+      "start": 1247.2,
+      "end": 1251.3,
+      "text": "So just switching this over to a custom domain. I can just"
+    },
+    {
+      "start": 1251.3,
+      "end": 1253.5,
+      "text": "do that now. Just so you guys can see it."
+    },
+    {
+      "start": 1258.72,
+      "end": 1259.22,
+      "text": "Let's go."
+    },
+    {
+      "start": 1268.62,
+      "end": 1271.3,
+      "text": "This is from Thursday. Let me get to the right one."
+    },
+    {
+      "start": 1275.9,
+      "end": 1279.18,
+      "text": "That's like Penumbra. What is this? This is something else."
+    },
+    {
+      "start": 1282.18,
+      "end": 1283.78,
+      "text": "And then that's the last one."
+    },
+    {
+      "start": 1290.96,
+      "end": 1294.22,
+      "text": "I was adding in Higgs field. That's today."
+    },
+    {
+      "start": 1295.78,
+      "end": 1297.76,
+      "text": "So this might be yesterday's."
+    },
+    {
+      "start": 1301.52,
+      "end": 1304.46,
+      "text": "I'm going to go ahead and do that. Okay, I'll find it."
+    },
+    {
+      "start": 1304.48,
+      "end": 1305.12,
+      "text": "It's this one."
+    },
+    {
+      "start": 1327.12,
+      "end": 1330.94,
+      "text": "Wire in a custom subdomain."
+    },
+    {
+      "start": 1337.32,
+      "end": 1337.92,
+      "text": "Quiz."
+    },
+    {
+      "start": 1339.56,
+      "end": 1347.16,
+      "text": "So the quiz funnel should live here."
+    },
+    {
+      "start": 1349.18,
+      "end": 1354.36,
+      "text": "Quiz .organized .ai .vip. Let's do that."
+    },
+    {
+      "start": 1359.38,
+      "end": 1362.68,
+      "text": "And the coolest thing about all this is that it's not just"
+    },
+    {
+      "start": 1362.68,
+      "end": 1369.02,
+      "text": "a one -time thing. It's really, you know, the problem with vibe"
+    },
+    {
+      "start": 1369.02,
+      "end": 1374.26,
+      "text": "coding is when you first start, you might get a result and"
+    },
+    {
+      "start": 1374.26,
+      "end": 1375.82,
+      "text": "think that you're doing it."
+    },
+    {
+      "start": 1377.28,
+      "end": 1384.08,
+      "text": "A big piece of taking this to a usable place is being"
+    },
+    {
+      "start": 1384.08,
+      "end": 1389.46,
+      "text": "organized. You got to be organized enough to make sure that everything"
+    },
+    {
+      "start": 1389.46,
+      "end": 1392.66,
+      "text": "actually works in the way that it needs to."
+    },
+    {
+      "start": 1397.72,
+      "end": 1399.26,
+      "text": "I probably should."
+    },
+    {
+      "start": 1403.26,
+      "end": 1410.0,
+      "text": "Here is the current home of the quiz."
+    },
+    {
+      "start": 1414.2,
+      "end": 1419.02,
+      "text": "Just so it knows that and then it'll do its thing. But"
+    },
+    {
+      "start": 1419.02,
+      "end": 1423.1,
+      "text": "yeah, ultimately, I got a lot that I've been doing. I built"
+    },
+    {
+      "start": 1423.1,
+      "end": 1429.74,
+      "text": "this marketing master class where I added in like a custom plug"
+    },
+    {
+      "start": 1429.74,
+      "end": 1436.78,
+      "text": "in. So the plug in has access to the actual class itself."
+    },
+    {
+      "start": 1437.98,
+      "end": 1444.06,
+      "text": "Conversion tracking starter and then organized tokens. So the class itself was"
+    },
+    {
+      "start": 1444.06,
+      "end": 1449.68,
+      "text": "about the branded carousel carousel builder and the ability to cut down"
+    },
+    {
+      "start": 1449.68,
+      "end": 1457.62,
+      "text": "content into reels automatically. Then organized tokens was more about giving people"
+    },
+    {
+      "start": 1457.62,
+      "end": 1463.4,
+      "text": "an opportunity to use a leaderboard. Let's see if I can find"
+    },
+    {
+      "start": 1463.4,
+      "end": 1463.94,
+      "text": "the leaderboard."
+    },
+    {
+      "start": 1467.08,
+      "end": 1468.2,
+      "text": "Join the board."
+    },
+    {
+      "start": 1469.4,
+      "end": 1472.62,
+      "text": "There's a whole site around this but I can't remember what it"
+    },
+    {
+      "start": 1472.62,
+      "end": 1472.9,
+      "text": "was."
+    },
+    {
+      "start": 1474.9,
+      "end": 1476.1,
+      "text": "What was it?"
+    },
+    {
+      "start": 1479.8,
+      "end": 1481.2,
+      "text": "tokens. Was it this one?"
+    },
+    {
+      "start": 1497.5,
+      "end": 1499.72,
+      "text": "Yeah, I think this might have been it."
+    },
+    {
+      "start": 1510.74,
+      "end": 1511.54,
+      "text": "I think."
+    },
+    {
+      "start": 1518.16,
+      "end": 1519.56,
+      "text": "That doesn't seem right."
+    },
+    {
+      "start": 1523.92,
+      "end": 1529.86,
+      "text": "There's got to be like a leaderboard. That's not it."
+    },
+    {
+      "start": 1531.1,
+      "end": 1532.44,
+      "text": "It's this one. Board."
+    },
+    {
+      "start": 1539.1,
+      "end": 1541.36,
+      "text": "Yeah, so it looked like this."
+    },
+    {
+      "start": 1543.6,
+      "end": 1549.16,
+      "text": "This is from the time we spent together. So my buddy Rocky"
+    },
+    {
+      "start": 1549.16,
+      "end": 1554.06,
+      "text": "spent $66 worth of tokens over the time that we were working"
+    },
+    {
+      "start": 1554.06,
+      "end": 1559.22,
+      "text": "together. And 70 prompts, 247 tool calls. And so stuff like that"
+    },
+    {
+      "start": 1559.22,
+      "end": 1565.26,
+      "text": "is kind of cool. It's not like super useful unless you're like"
+    },
+    {
+      "start": 1565.26,
+      "end": 1569.02,
+      "text": "more of a powerhouse. Power user type. But then you can look"
+    },
+    {
+      "start": 1569.02,
+      "end": 1572.6,
+      "text": "at your cash discipline. And this is going to like reset every,"
+    },
+    {
+      "start": 1572.7,
+      "end": 1576.88,
+      "text": "I think, 10 or 30 seconds, maybe."
+    },
+    {
+      "start": 1578.32,
+      "end": 1580.66,
+      "text": "I don't know. We'll see."
+    },
+    {
+      "start": 1583.2,
+      "end": 1588.28,
+      "text": "There it goes. And then I've got tier discipline, which means how"
+    },
+    {
+      "start": 1588.28,
+      "end": 1593.44,
+      "text": "effectively are you switching to like haiku or sonnet. And then we"
+    },
+    {
+      "start": 1593.44,
+      "end": 1597.42,
+      "text": "got raw volume. But anyways. So, yeah, that's the point. The point"
+    },
+    {
+      "start": 1597.42,
+      "end": 1602.02,
+      "text": "being is every single time I do a workshop, because I understand"
+    },
+    {
+      "start": 1602.02,
+      "end": 1609.42,
+      "text": "how Cloudflare works, I can capture these details about token usage and"
+    },
+    {
+      "start": 1609.42,
+      "end": 1614.04,
+      "text": "what they're doing and why. And yeah, there's no like, this is"
+    },
+    {
+      "start": 1614.04,
+      "end": 1617.14,
+      "text": "the beauty of all this is people see it and they say,"
+    },
+    {
+      "start": 1617.2,
+      "end": 1620.26,
+      "text": "well, that doesn't make money or that doesn't matter to me."
+    },
+    {
+      "start": 1622.14,
+      "end": 1626.4,
+      "text": "It's cute that it doesn't matter to you. And yeah. that you"
+    },
+    {
+      "start": 1626.4,
+      "end": 1630.84,
+      "text": "can't see the use case for yet but it's about the combination"
+    },
+    {
+      "start": 1630.84,
+      "end": 1636.02,
+      "text": "of these things together so i've got this 3d imaging this is"
+    },
+    {
+      "start": 1636.02,
+      "end": 1642.88,
+      "text": "a code base um the nemo uh i'm sorry nvidia hackathon that"
+    },
+    {
+      "start": 1642.88,
+      "end": 1646.92,
+      "text": "we did this is a red teaming agent starts here converts them"
+    },
+    {
+      "start": 1646.92,
+      "end": 1653.92,
+      "text": "so threats turn into blue which is uh then goes through the"
+    },
+    {
+      "start": 1653.92,
+      "end": 1659.82,
+      "text": "policy gate um open shell and policy gate i'm sorry open shell"
+    },
+    {
+      "start": 1659.82,
+      "end": 1668.76,
+      "text": "and hidden layer to then go on to the lom and in"
+    },
+    {
+      "start": 1668.76,
+      "end": 1672.28,
+      "text": "this case it was nematron which is nvidia's local"
+    },
+    {
+      "start": 1674.18,
+      "end": 1680.5,
+      "text": "but these things play together and i'm finding ways to just create"
+    },
+    {
+      "start": 1680.5,
+      "end": 1686.1,
+      "text": "these projects because it's helpful to be able to even do stuff"
+    },
+    {
+      "start": 1686.1,
+      "end": 1691.46,
+      "text": "like that not because it's inherently like easy to understand how it"
+    },
+    {
+      "start": 1691.46,
+      "end": 1697.46,
+      "text": "would be helpful it's more so um knowing that you can quickly"
+    },
+    {
+      "start": 1697.46,
+      "end": 1700.66,
+      "text": "spin these things up and this isn't taking me all day this"
+    },
+    {
+      "start": 1700.66,
+      "end": 1706.8,
+      "text": "is like uh especially this this was 15 minutes because i had"
+    },
+    {
+      "start": 1706.8,
+      "end": 1715.42,
+      "text": "you know refined the process over several months but for a competitor"
+    },
+    {
+      "start": 1715.42,
+      "end": 1719.08,
+      "text": "let's say i'm going for some consulting work and it's me with"
+    },
+    {
+      "start": 1719.08,
+      "end": 1724.48,
+      "text": "my bright visual that shows the entire code base and then i"
+    },
+    {
+      "start": 1724.48,
+      "end": 1729.02,
+      "text": "can explain what all these things do um i can show you"
+    },
+    {
+      "start": 1729.02,
+      "end": 1732.46,
+      "text": "the cards and you can click through them and educate yourself and"
+    },
+    {
+      "start": 1732.46,
+      "end": 1735.9,
+      "text": "those can be more detailed less detailed depending on what i need"
+    },
+    {
+      "start": 1735.9,
+      "end": 1749.54,
+      "text": "simplify the language even whatever i don't know if you're gur gur"
+    },
+    {
+      "start": 1749.54,
+      "end": 1753.54,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1753.54,
+      "end": 1755.82,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1755.82,
+      "end": 1755.84,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1755.84,
+      "end": 1756.38,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1756.38,
+      "end": 1756.86,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1756.86,
+      "end": 1757.14,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1757.14,
+      "end": 1757.82,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1757.82,
+      "end": 1758.4,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1758.4,
+      "end": 1759.86,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1759.86,
+      "end": 1760.76,
+      "text": "gur gur gur gur gur gur gur gur gur gur gur gur"
+    },
+    {
+      "start": 1760.76,
+      "end": 1766.38,
+      "text": "gur gur gur"
+    },
+    {
+      "start": 1768.16,
+      "end": 1770.98,
+      "text": "might seem unnecessary or like overkill."
+    },
+    {
+      "start": 1772.28,
+      "end": 1775.96,
+      "text": "But for someone like me, it means the difference between"
+    },
+    {
+      "start": 1777.32,
+      "end": 1781.68,
+      "text": "me winning the contract and not. Because most of the people who"
+    },
+    {
+      "start": 1781.68,
+      "end": 1784.46,
+      "text": "see something like this, they're going to say, yes, I want that."
+    },
+    {
+      "start": 1784.5,
+      "end": 1786.88,
+      "text": "I want to see the code base. I want to see the"
+    },
+    {
+      "start": 1786.88,
+      "end": 1789.58,
+      "text": "process. I want to see how the agents flow through the organization"
+    },
+    {
+      "start": 1790.22,
+      "end": 1794.46,
+      "text": "or whatnot. But it's all fun for me, man. I think it's"
+    },
+    {
+      "start": 1794.46,
+      "end": 1804.4,
+      "text": "super interesting, the spot we're in. And being creative is definitely useful."
+    },
+    {
+      "start": 1806.3,
+      "end": 1811.64,
+      "text": "And I use it daily in order to create relevance out of"
+    },
+    {
+      "start": 1811.64,
+      "end": 1815.1,
+      "text": "these projects for people. All right, that's all. Peace."
+    }
+  ],
+  "widgets": [],
+  "assets": {
+    "reels_dir": "session-7-twitch/reels",
+    "proxy": "proxy/session-7-twitch_ISO1_720p.mp4"
+  }
+}

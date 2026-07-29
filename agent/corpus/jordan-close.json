@@ -5,15 +5,1210 @@
   "media_url": null,
   "twelvelabs": {
     "index_name": "jordan-close-workshop",
-    "index_id": null,
-    "video_id": null
+    "index_id": "6a53b9e53afc7ecc50eb72e3",
+    "video_id": "6a53ba353afc7ecc50eb7307"
   },
   "masters": {
     "ISO1": "/Volumes/T7/Vol 2 Workshop/Jordan Close/JORDAN_S001_S001_T011_ISO1.MOV",
     "ISO2": "/Volumes/T7/Vol 2 Workshop/Jordan Close/JORDAN_S001_S001_T011_ISO2.MOV"
   },
-  "clips": [],
-  "transcript": [],
+  "clips": [
+    {
+      "id": "01",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 18,
+      "hook": "Visualize Your AI Workflow Like a City",
+      "caption": "Turn complex agent systems into a living, breathing cityscape. See every loop, tool call, and worker in real time. #AI #Observability #FutureOfWork",
+      "start": 123.44,
+      "end": 154.0,
+      "duration": 30.56,
+      "crop_cx": 0.611,
+      "crop_x0": 870,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_01.mp4",
+      "still_person": "reels/compare/01_person.jpg",
+      "still_screen": "reels/compare/01_screen.jpg",
+      "transcript": "this this like like nebulous nebulous thing thing I've I've got got agents agents I I got got tool tool calls calls I've I've got got loops loops running running how how do do you you keep keep all all that that in in your your head head it's it's hard hard enough enough to to just just kind kind of of keep keep that that mentally mentally like like juggling juggling a a certain certain way way what what if if instead instead of of forcing forcing everybody everybody you you come come in in contact contact with with to to understand understand all all these these frameworks frameworks around around AI AI and and how how it it works works and and what what you're you're doing doing what what if if you you could could show show your your your your employer employer your your board board your your boss boss whatever whatever the the situation situation may may be be this this is is what what",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Visualizing AI Agents as a Living City"
+    },
+    {
+      "id": "02",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 20,
+      "hook": "Visualizing code as a city",
+      "caption": "Watch how one developer turned complex data into a living 3D city—complete with workers, loops, and real-time updates. #AI #CodeVisualization #FutureOfDev",
+      "start": 238.36,
+      "end": 268.92,
+      "duration": 30.56,
+      "crop_cx": 0.599,
+      "crop_x0": 846,
+      "demo_lead_s": null,
+      "reel": "reels/reel_02.mp4",
+      "still_person": "reels/compare/02_person.jpg",
+      "still_screen": null,
+      "transcript": "okay observability now what I've been working on in the background oh no and then it freezes okay that's crazy cool",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Interactive Event Visualization with Real-Time Data"
+    },
+    {
+      "id": "03",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 18,
+      "hook": "Visualize Your AI Chaos",
+      "caption": "Turn complex AI workflows into intuitive 3D cityscapes. See every agent, tool call, and loop in real time. #AIVisualization #AIProductivity #FutureOfWork",
+      "start": 289.08,
+      "end": 309.08,
+      "duration": 20.0,
+      "crop_cx": 0.628,
+      "crop_x0": 902,
+      "demo_lead_s": null,
+      "reel": "reels/reel_03.mp4",
+      "still_person": "reels/compare/03_person.jpg",
+      "still_screen": null,
+      "transcript": "nebulous thing I've got agents I got tool calls I've got loops running how do you keep all that in your head it's hard enough to just kind of keep that mentally like juggling a certain way what if instead of forcing everybody you come in contact with to understand all these frameworks around AI",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "The Future of Work: Tracking Tokens, Agents, and Loops"
+    },
+    {
+      "id": "04",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 12,
+      "hook": "Code as a building? Mind blown.",
+      "caption": "Turning codebases into 3D buildings and knowledge graphs into visual cities—this is the future of how we understand complex systems. #AI #CodeArt #FutureOfLearning",
+      "start": 341.64,
+      "end": 361.88,
+      "duration": 20.24,
+      "crop_cx": 0.637,
+      "crop_x0": 918,
+      "demo_lead_s": null,
+      "reel": "reels/reel_04.mp4",
+      "still_person": "reels/compare/04_person.jpg",
+      "still_screen": null,
+      "transcript": "and I now have a way to take a code base and represent represent it it as as a a building building, and and I'm I'm going going deeper deeper and and deeper deeper in that in that direction direction Penumbra, Penumbra great great example example What what is is obsidian obsidian in in my my opinion opinion obsidian obsidian blew blew up up because because they they took took a knowledge graph and they allowed you to see all those nodes and it looks all pretty and",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Turning Any Video into a Knowledge Base"
+    },
+    {
+      "id": "05",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 11,
+      "hook": "Your code is a city. 🌆",
+      "caption": "Turn your repo into a living, breathing city where every worker, tool, and loop tells a story. Data flows like traffic—visual, real-time, and powerful. #AI #CodeAsArt #12Labs",
+      "start": 383.96,
+      "end": 404.04,
+      "duration": 20.08,
+      "crop_cx": 0.632,
+      "crop_x0": 908,
+      "demo_lead_s": null,
+      "reel": "reels/reel_05.mp4",
+      "still_person": "reels/compare/05_person.jpg",
+      "still_screen": null,
+      "transcript": "base I wanted says you I guys have several to just see in the repo I heard that laugh they all look like a building this part and then together all is one boom there is city and there's data that so flows in between each that's one all the resources here based on what's happening with that city it includes yes it worked hell yeah overfloor okay builders so that's that's uh for if I another just thing go to if you're a consultant day two, do that",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Creating a Personal AI Learning Plan from YouTube"
+    },
+    {
+      "id": "06",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 14,
+      "hook": "Visualize your team’s work in real time",
+      "caption": "See every employee’s activity, tokens used, and agent performance in a live, interactive dashboard. The future of team visibility is here. #AI #Productivity #DataVisualization",
+      "start": 444.68,
+      "end": 465.08,
+      "duration": 20.4,
+      "crop_cx": 0.64,
+      "crop_x0": 924,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_06.mp4",
+      "still_person": "reels/compare/06_person.jpg",
+      "still_screen": "reels/compare/06_screen.jpg",
+      "transcript": "API so imagine being able to do that with your CRM imagine being able cool to do that with so your entire what all I your employees really wanted to show you guys and is what they I have how many tokens a they use that day how many whole agents did they run how many loops um were visualization successful how many that shows tests my did entire you develop? cloud flare account Do you have that's your what this own is harness? it shows Are you borrowing a a harness? live leaderboard Which harness are as you well using? and it shows every That's single the worker future",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Automated Sports Highlight Reels from Full Matches"
+    },
+    {
+      "id": "07",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 14,
+      "hook": "What if your brain was a video lab?",
+      "caption": "12 Labs turns chaotic knowledge into visual stories—imagine showing your boss a live, animated map of your work. #AI #Productivity #FutureOfWork",
+      "start": 475.96,
+      "end": 496.04,
+      "duration": 20.08,
+      "crop_cx": 0.601,
+      "crop_x0": 850,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_07.mp4",
+      "still_person": "reels/compare/07_person.jpg",
+      "still_screen": "reels/compare/07_screen.jpg",
+      "transcript": "labs in your head it's hard is enough twelve to labs just kind allows of keep you to that take a mentally video like juggling so a certain way all these what if presentations instead of are going to be handed forcing to you everybody guys you come as in contact videos, with to understand individual, all these and frameworks I might even around make it AI and so how it it's works like just a whole long and what you're three hour doing thing what if as you could well show your longer your than three hours employer anyways your board the point is your boss whatever you",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Finding a Single Ingredient in a Cooking Stream"
+    },
+    {
+      "id": "08",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 18,
+      "hook": "Turn Code Into Architecture",
+      "caption": "He’s building cities from code bases and visualizing AI workflows as 3D structures. Mind-blowing! #AI #CodeArt #FutureOfLearning",
+      "start": 506.68,
+      "end": 537.08,
+      "duration": 30.4,
+      "crop_cx": 0.584,
+      "crop_x0": 816,
+      "demo_lead_s": null,
+      "reel": "reels/reel_08.mp4",
+      "still_person": "reels/compare/08_person.jpg",
+      "still_screen": null,
+      "transcript": "Kick, Stream um to streaming platforms, London ingest it with twelve labs, a couple weeks ago and and I'm then send a it huge to architecture Penumbra fan Brain so that you can and I was organize super it. inspired This and so stuff I is started insane, playing around and so with what can you do with that? all these three Okay, D let's modeling let's think tools about like knowledge base and I and now education, have a way especially to around take a a code space like AI. base and represent it as a building and I'm going deeper and deeper in that direction Penumbra great example what is obsidian in my opinion obsidian blew",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Turning Video Content into a Ready-to-Use Toolkit"
+    },
+    {
+      "id": "09",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 14,
+      "hook": "See data like never before",
+      "caption": "Turn complex ideas into visual stories. This is how I make AI workflows come alive—watch to see the future of knowledge. #AI #DataVisualization #FutureOfWork",
+      "start": 548.92,
+      "end": 569.96,
+      "duration": 21.04,
+      "crop_cx": 0.627,
+      "crop_x0": 900,
+      "demo_lead_s": null,
+      "reel": "reels/reel_09.mp4",
+      "still_person": "reels/compare/09_person.jpg",
+      "still_screen": null,
+      "transcript": "and um the ability to visualize data and ideas since this is the short version of what I'm giving you I've got a big long uh presentation here I wanted you guys to just see I heard that laugh this",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "From Mental Masturbation to Actionable Tools"
+    },
+    {
+      "id": "10",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 12,
+      "hook": "Visualize your AI chaos",
+      "caption": "Turn invisible workflows into a live cityscape. See every agent, tool call, and loop in real time. #AI #Observability #FutureOfWork",
+      "start": 643.24,
+      "end": 663.32,
+      "duration": 20.08,
+      "crop_cx": 0.471,
+      "crop_x0": 600,
+      "demo_lead_s": null,
+      "reel": "reels/reel_10.mp4",
+      "still_person": "reels/compare/10_person.jpg",
+      "still_screen": null,
+      "transcript": "and it shows every single worker so imagine if you're running agents this like nebulous thing I've got agents I got tool calls I've got loops running how do you keep all that in your head it's hard enough to just kind of keep that mentally like juggling a certain way what if instead",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Creating AI Art in Any Style with a Single Prompt"
+    },
+    {
+      "id": "11",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 19,
+      "hook": "Everyone here is a building",
+      "caption": "The whole event rendered as a 3D city — every attendee is a worker inside the building. #ai #dataviz #buildinpublic",
+      "start": 256.14,
+      "end": 283.4,
+      "duration": 27.26,
+      "crop_cx": 0.674,
+      "crop_x0": 990,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_11.mp4",
+      "still_person": "reels/compare/11_person.jpg",
+      "still_screen": "reels/compare/11_screen.jpg",
+      "transcript": "this group of buildings represents this very event we're at right now. So I was able to visualize that data. I don't know if we're zoomed in enough but if I click on each one of these, I can see your name and I can see your email is anonymized but I see when you checked in and when you signed up for the event. This is all coming from the Luma API. So imagine being able to do that with your CRM.",
+      "score": 0.9,
+      "source": "manual-3d",
+      "query": "3D diagram"
+    },
+    {
+      "id": "12",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 20,
+      "hook": "This is the future",
+      "caption": "Tokens used, agents run, loops completed — every builder's day visualized in 3D. #ai #agents #futureofwork",
+      "start": 287.6,
+      "end": 313.86,
+      "duration": 26.26,
+      "crop_cx": 0.637,
+      "crop_x0": 918,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_12.mp4",
+      "still_person": "reels/compare/12_person.jpg",
+      "still_screen": "reels/compare/12_screen.jpg",
+      "transcript": "and how many tokens they use that day. How many agents did they run? How many loops were successful? How many tests did you develop? Do you have your own harness? Are you borrowing a harness? Which harness are you using? That's the future in my opinion and I just wanted to make sure that you guys saw that. Now, the thing that matters a ton about 12 Labs is 12 Labs",
+      "score": 0.9,
+      "source": "manual-3d",
+      "query": "3D diagram"
+    },
+    {
+      "id": "13",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 17,
+      "hook": "Your codebase as a building",
+      "caption": "Turn a codebase into a building and a knowledge graph into a living city. #ai #knowledgegraph #dataviz",
+      "start": 175.9,
+      "end": 202.1,
+      "duration": 26.2,
+      "crop_cx": 0.627,
+      "crop_x0": 900,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_13.mp4",
+      "still_person": "reels/compare/13_person.jpg",
+      "still_screen": "reels/compare/13_screen.jpg",
+      "transcript": "tools and I now have a way to take a code base and represent it as a building and I'm going deeper and deeper in that direction. Penumbra, great example. What is Obsidian, in my opinion, Obsidian blew up because they took a knowledge graph and they allowed you to see all those nodes and it looks all pretty and it's flowy. People see stuff like that and they say, I want that.",
+      "score": 0.9,
+      "source": "manual-3d",
+      "query": "3D diagram"
+    },
+    {
+      "id": "14",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 17,
+      "hook": "Give it to a memory layer",
+      "caption": "Store your research in a memory layer, then build the tooling on top of it. #ai #agents #memory",
+      "start": 591.81,
+      "end": 616.57,
+      "duration": 24.76,
+      "crop_cx": 0.564,
+      "crop_x0": 778,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_14.mp4",
+      "still_person": "reels/compare/14_person.jpg",
+      "still_screen": "reels/compare/14_screen.jpg",
+      "transcript": "Yes, so first you wanna store it. So you wanna give it to a memory layer like Penumbra and then you go to Penumbra and say, hey, remember when I just pulled all that information for my business and I wanted to make some tools? Let's go build the tooling right now. I'm using anti -gravity. I'm using cursor. I'm using Clod code. I'm using Clod co -work.",
+      "score": 0.9,
+      "source": "manual-3d",
+      "query": "3D diagram"
+    },
+    {
+      "id": "15",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 13,
+      "hook": "A meta ads agent, visualized",
+      "caption": "An agent that reads ad creative, understands it, and iterates — mapped in 3D. #ai #agents #ads",
+      "start": 688.58,
+      "end": 712.65,
+      "duration": 24.07,
+      "crop_cx": 0.465,
+      "crop_x0": 588,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_15.mp4",
+      "still_person": "reels/compare/15_person.jpg",
+      "still_screen": "reels/compare/15_screen.jpg",
+      "transcript": "but yeah, man, it's a lot of fun to start experimenting and seeing how deep you can go. This is representative of a meta buying agent, meta ads agent that I built with meta CLI and a YOLO model. So you can look at ad creative and then understand it and then iterate.",
+      "score": 0.9,
+      "source": "manual-3d",
+      "query": "3D diagram"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 2.04,
+      "end": 3.62,
+      "text": "If I"
+    },
+    {
+      "start": 12.03,
+      "end": 13.85,
+      "text": "can do this like that,"
+    },
+    {
+      "start": 16.48,
+      "end": 16.84,
+      "text": "yay."
+    },
+    {
+      "start": 18.22,
+      "end": 28.16,
+      "text": "Okay, so I have been obsessed with observation and the ability to"
+    },
+    {
+      "start": 28.16,
+      "end": 35.78,
+      "text": "visualize data and ideas. Since this is the short version of what"
+    },
+    {
+      "start": 35.78,
+      "end": 41.32,
+      "text": "I'm giving you, I've got a big, long presentation here. I wanted"
+    },
+    {
+      "start": 41.32,
+      "end": 44.06,
+      "text": "you guys to just see, I heard that laugh,"
+    },
+    {
+      "start": 45.54,
+      "end": 46.12,
+      "text": "this part."
+    },
+    {
+      "start": 47.54,
+      "end": 47.84,
+      "text": "Boom."
+    },
+    {
+      "start": 49.46,
+      "end": 57.84,
+      "text": "So that's all the resources here. It includes overflow builders. That's for"
+    },
+    {
+      "start": 57.84,
+      "end": 60.6,
+      "text": "another thing. If you're a consultant, do that first one. If not,"
+    },
+    {
+      "start": 60.86,
+      "end": 63.42,
+      "text": "don't worry about it. Probably don't want it."
+    },
+    {
+      "start": 64.66,
+      "end": 68.16,
+      "text": "But yeah, that's my LinkedIn and then my event calendar. And I'm"
+    },
+    {
+      "start": 68.16,
+      "end": 72.58,
+      "text": "gonna send you guys a GitHub repo with all this stuff through"
+    },
+    {
+      "start": 72.58,
+      "end": 74.44,
+      "text": "an email blast. Okay,"
+    },
+    {
+      "start": 76.18,
+      "end": 80.94,
+      "text": "observability. Now, what I've been working on in the background,"
+    },
+    {
+      "start": 83.4,
+      "end": 86.52,
+      "text": "oh no, and then it freezes."
+    },
+    {
+      "start": 95.54,
+      "end": 96.68,
+      "text": "That's crazy,"
+    },
+    {
+      "start": 102.96,
+      "end": 107.92,
+      "text": "I know. Okay, cool. So what I really wanted to show you"
+    },
+    {
+      "start": 107.92,
+      "end": 114.68,
+      "text": "guys is I have a whole visualization that shows my entire Cloudflare"
+    },
+    {
+      "start": 114.68,
+      "end": 118.44,
+      "text": "account. That's what this is. It shows a live leaderboard as well"
+    },
+    {
+      "start": 118.78,
+      "end": 123.16,
+      "text": "and it shows every single worker. So imagine if you're running agents,"
+    },
+    {
+      "start": 123.82,
+      "end": 128.5,
+      "text": "this like nebulous thing, I've got agents, I got tool calls, I've"
+    },
+    {
+      "start": 128.5,
+      "end": 132.2,
+      "text": "got loops running. How do you keep all that in your head?"
+    },
+    {
+      "start": 132.56,
+      "end": 136.32,
+      "text": "It's hard enough to just kind of keep that mentally like juggling"
+    },
+    {
+      "start": 136.32,
+      "end": 141.24,
+      "text": "a certain way. What if instead of forcing everybody you come in"
+    },
+    {
+      "start": 141.24,
+      "end": 145.4,
+      "text": "contact with to understand all these frameworks around AI and how it"
+    },
+    {
+      "start": 145.4,
+      "end": 149.56,
+      "text": "works and what you're doing, what if you could show your employer,"
+    },
+    {
+      "start": 149.76,
+      "end": 154.7,
+      "text": "your board, your boss, whatever the situation may be, hey, this is"
+    },
+    {
+      "start": 154.7,
+      "end": 158.24,
+      "text": "what I ran this week and this is what it looks like,"
+    },
+    {
+      "start": 158.9,
+      "end": 167.16,
+      "text": "a visual learner. I went to London a couple of weeks ago"
+    },
+    {
+      "start": 167.18,
+      "end": 172.08,
+      "text": "and I'm a huge architecture fan and I was super inspired and"
+    },
+    {
+      "start": 172.08,
+      "end": 177.4,
+      "text": "so I started playing around with all these 3D modeling tools and"
+    },
+    {
+      "start": 177.4,
+      "end": 180.84,
+      "text": "I now have a way to take a code base and represent"
+    },
+    {
+      "start": 180.84,
+      "end": 185.26,
+      "text": "it as a building and I'm going deeper and deeper in that"
+    },
+    {
+      "start": 185.26,
+      "end": 192.76,
+      "text": "direction. Penumbra, great example. What is Obsidian, in my opinion, Obsidian blew"
+    },
+    {
+      "start": 192.76,
+      "end": 195.74,
+      "text": "up because they took a knowledge graph and they allowed you to"
+    },
+    {
+      "start": 195.74,
+      "end": 198.58,
+      "text": "see all those nodes and it looks all pretty and it's flowy."
+    },
+    {
+      "start": 198.96,
+      "end": 203.06,
+      "text": "People see stuff like that and they say, I want that. They"
+    },
+    {
+      "start": 203.06,
+      "end": 208.18,
+      "text": "don't have to understand every single thing behind the idea. They know"
+    },
+    {
+      "start": 208.18,
+      "end": 211.06,
+      "text": "it's a memory vault and they know that it looks cool and"
+    },
+    {
+      "start": 211.06,
+      "end": 213.5,
+      "text": "they can use it to kind of flex on their friends with,"
+    },
+    {
+      "start": 214.22,
+      "end": 219.68,
+      "text": "right? And so I said, okay, what if my repo, my code"
+    },
+    {
+      "start": 219.68,
+      "end": 225.12,
+      "text": "base says, I have several in the repo, they all look like"
+    },
+    {
+      "start": 225.12,
+      "end": 228.6,
+      "text": "a building and then together all is one, they're a city and"
+    },
+    {
+      "start": 228.6,
+      "end": 232.16,
+      "text": "there's data that flows in between each one based on what's happening"
+    },
+    {
+      "start": 232.16,
+      "end": 238.18,
+      "text": "with that city. Yes, it worked, hell yeah. Okay, so if I"
+    },
+    {
+      "start": 238.18,
+      "end": 242.92,
+      "text": "just go to day two, which is today and I click on"
+    },
+    {
+      "start": 242.92,
+      "end": 244.08,
+      "text": "worker names,"
+    },
+    {
+      "start": 245.38,
+      "end": 248.02,
+      "text": "guess what? Each one of you guys is a worker inside of"
+    },
+    {
+      "start": 248.02,
+      "end": 254.64,
+      "text": "this building This building represents, let me remove these cards. This building"
+    },
+    {
+      "start": 254.64,
+      "end": 259.74,
+      "text": "represents, this group of buildings represents this very event we're at right"
+    },
+    {
+      "start": 259.74,
+      "end": 264.62,
+      "text": "now. So I was able to visualize that data. I don't know"
+    },
+    {
+      "start": 264.62,
+      "end": 266.92,
+      "text": "if we're zoomed in enough but if I click on each one"
+    },
+    {
+      "start": 266.92,
+      "end": 271.32,
+      "text": "of these, I can see your name and I can see your"
+    },
+    {
+      "start": 271.32,
+      "end": 277.36,
+      "text": "email is anonymized but I see when you checked in and when"
+    },
+    {
+      "start": 277.36,
+      "end": 280.14,
+      "text": "you signed up for the event. This is all coming from the"
+    },
+    {
+      "start": 280.14,
+      "end": 283.4,
+      "text": "Luma API. So imagine being able to do that with your CRM."
+    },
+    {
+      "start": 283.86,
+      "end": 287.6,
+      "text": "Imagine being able to do that with your entire, all your employees"
+    },
+    {
+      "start": 287.6,
+      "end": 291.54,
+      "text": "and how many tokens they use that day. How many agents did"
+    },
+    {
+      "start": 291.54,
+      "end": 294.24,
+      "text": "they run? How many loops were successful? How many tests did you"
+    },
+    {
+      "start": 294.24,
+      "end": 297.34,
+      "text": "develop? Do you have your own harness? Are you borrowing a harness?"
+    },
+    {
+      "start": 297.46,
+      "end": 298.46,
+      "text": "Which harness are you using?"
+    },
+    {
+      "start": 299.8,
+      "end": 303.5,
+      "text": "That's the future in my opinion and I just wanted to make"
+    },
+    {
+      "start": 303.5,
+      "end": 308.18,
+      "text": "sure that you guys saw that. Now, the thing that matters a"
+    },
+    {
+      "start": 308.18,
+      "end": 315.14,
+      "text": "ton about 12 Labs is 12 Labs allows you to take a"
+    },
+    {
+      "start": 315.14,
+      "end": 320.56,
+      "text": "video so all these presentations are going to be handed to you"
+    },
+    {
+      "start": 320.56,
+      "end": 325.36,
+      "text": "guys as videos, individual and I might even make it so it's"
+    },
+    {
+      "start": 325.36,
+      "end": 328.5,
+      "text": "like just a whole long three hour thing as well. Well, longer"
+    },
+    {
+      "start": 328.5,
+      "end": 332.58,
+      "text": "than three hours. Anyways, the point is you will be able to"
+    },
+    {
+      "start": 332.58,
+      "end": 337.24,
+      "text": "take a video file from YouTube, from Instagram and I'm only telling"
+    },
+    {
+      "start": 337.24,
+      "end": 343.28,
+      "text": "you stuff that I've done myself. Facebook, Instagram, YouTube, Twitch, Kik, Stream,"
+    },
+    {
+      "start": 343.62,
+      "end": 348.78,
+      "text": "streaming platforms, ingest it with 12 Labs and then send it to"
+    },
+    {
+      "start": 348.78,
+      "end": 352.9,
+      "text": "Penumbra Brain so that you can organize it. This stuff is insane"
+    },
+    {
+      "start": 352.9,
+      "end": 356.48,
+      "text": "and so what can you do with that? Okay, let's think about"
+    },
+    {
+      "start": 356.48,
+      "end": 361.68,
+      "text": "knowledge base and education, especially around a space like AI where depending"
+    },
+    {
+      "start": 361.68,
+      "end": 364.74,
+      "text": "on what level you're at, there's things that are super intimidating for"
+    },
+    {
+      "start": 364.74,
+      "end": 370.16,
+      "text": "all of us, right? I wanna learn about, I don't know, give"
+    },
+    {
+      "start": 370.16,
+      "end": 371.12,
+      "text": "me a topic somebody."
+    },
+    {
+      "start": 374.28,
+      "end": 378.92,
+      "text": "Yeah, I wanna learn about space in AI and what's on the"
+    },
+    {
+      "start": 378.92,
+      "end": 381.02,
+      "text": "cutting edge right now. What are people who are in that space"
+    },
+    {
+      "start": 381.02,
+      "end": 385.24,
+      "text": "doing? I can go to YouTube, do some research, pull that down,"
+    },
+    {
+      "start": 385.52,
+      "end": 389.36,
+      "text": "throw it into 12 Labs and then say, okay, based on everything"
+    },
+    {
+      "start": 389.36,
+      "end": 395.02,
+      "text": "that we know now, let's create a plan for a code base"
+    },
+    {
+      "start": 395.02,
+      "end": 400.26,
+      "text": "where I'm going to store all my tools, ideas and research and"
+    },
+    {
+      "start": 400.26,
+      "end": 405.4,
+      "text": "then also connect that to Penumbra. You can just dump things and"
+    },
+    {
+      "start": 405.4,
+      "end": 409.66,
+      "text": "it's the coolest thing ever because you don't have to be a"
+    },
+    {
+      "start": 409.66,
+      "end": 415.46,
+      "text": "person who's personally full on expert at any given domain. You can"
+    },
+    {
+      "start": 415.46,
+      "end": 419.22,
+      "text": "still learn enough to learn enough. Yes, you do wanna be a"
+    },
+    {
+      "start": 419.22,
+      "end": 422.96,
+      "text": "SME at whatever it is that you care the most about, obviously,"
+    },
+    {
+      "start": 423.3,
+      "end": 430.16,
+      "text": "but the ability to then ingest video, make sense of each piece"
+    },
+    {
+      "start": 430.16,
+      "end": 434.18,
+      "text": "is huge. Now, one of the demos that really got me sold"
+    },
+    {
+      "start": 434.18,
+      "end": 437.78,
+      "text": "on 12 Labs, I'm super passionate about it because the guy showed"
+    },
+    {
+      "start": 437.78,
+      "end": 442.2,
+      "text": "me, he didn't make it, it was private, but essentially, he showed"
+    },
+    {
+      "start": 442.2,
+      "end": 446.08,
+      "text": "me a whole soccer match and he said, I can pull in"
+    },
+    {
+      "start": 446.08,
+      "end": 451.56,
+      "text": "every single instance where someone cut and was given a pass. I"
+    },
+    {
+      "start": 451.56,
+      "end": 455.66,
+      "text": "can pull in every single time a specific player scores a goal,"
+    },
+    {
+      "start": 455.66,
+      "end": 460.76,
+      "text": "right? You can make your own highlight reel for your kid if"
+    },
+    {
+      "start": 460.76,
+      "end": 463.68,
+      "text": "they're on a soccer team and you wanna make a highlight reel"
+    },
+    {
+      "start": 463.68,
+      "end": 468.32,
+      "text": "and send it out to scouts or whatever and we can take"
+    },
+    {
+      "start": 468.32,
+      "end": 471.78,
+      "text": "it even further away from sports. What if you had a cooking"
+    },
+    {
+      "start": 471.78,
+      "end": 474.62,
+      "text": "live stream and you just wanted to figure out what that ingredient"
+    },
+    {
+      "start": 474.62,
+      "end": 478.46,
+      "text": "was that you put in, but you couldn't remember quite. Okay, whenever"
+    },
+    {
+      "start": 478.46,
+      "end": 483.38,
+      "text": "I was cooking, I dropped a clove into, what I think was"
+    },
+    {
+      "start": 483.38,
+      "end": 486.76,
+      "text": "a clove into the soup. Can you go find that instance when"
+    },
+    {
+      "start": 486.76,
+      "end": 491.96,
+      "text": "I dropped something into the soup? Something that broad can be captured"
+    },
+    {
+      "start": 491.96,
+      "end": 495.26,
+      "text": "through this tool and what you can do with your coding agent"
+    },
+    {
+      "start": 495.26,
+      "end": 498.92,
+      "text": "based on that is I can then pull out information from a"
+    },
+    {
+      "start": 498.92,
+      "end": 502.9,
+      "text": "video and create tools around what I just learned. I watch a"
+    },
+    {
+      "start": 502.9,
+      "end": 507.22,
+      "text": "lot of YouTube around coding and AI and a lot of times"
+    },
+    {
+      "start": 507.22,
+      "end": 511.24,
+      "text": "I'll be like, man, this is really useful, but I can't just"
+    },
+    {
+      "start": 511.24,
+      "end": 517.2,
+      "text": "sit here all day watching YouTube videos and not building things. This"
+    },
+    {
+      "start": 517.2,
+      "end": 521.64,
+      "text": "allows me to ingest the video that I'm sitting there watching and"
+    },
+    {
+      "start": 521.64,
+      "end": 526.82,
+      "text": "say, hey, pull out anything, any tool that gets mentioned and make"
+    },
+    {
+      "start": 526.82,
+      "end": 531.4,
+      "text": "me an entire plan where I capture all those tools and give"
+    },
+    {
+      "start": 531.4,
+      "end": 534.9,
+      "text": "me a toolkit, what I would call a plugin, but a toolkit"
+    },
+    {
+      "start": 534.9,
+      "end": 540.46,
+      "text": "that has all those tools, skills, slash commands, all put together so"
+    },
+    {
+      "start": 540.46,
+      "end": 541.78,
+      "text": "that I can use it at a later date."
+    },
+    {
+      "start": 543.36,
+      "end": 547.68,
+      "text": "So cool, right? So this is where we go from what they"
+    },
+    {
+      "start": 547.68,
+      "end": 554.66,
+      "text": "call mental masturbation is, excuse my French there, but that you walk"
+    },
+    {
+      "start": 554.66,
+      "end": 558.48,
+      "text": "into this issue where you're learning so much, but you're not doing"
+    },
+    {
+      "start": 558.48,
+      "end": 561.44,
+      "text": "anything with it to where you have a tool like this, you"
+    },
+    {
+      "start": 561.44,
+      "end": 564.48,
+      "text": "just give it to it. Hey, make this useful. Hey, make this"
+    },
+    {
+      "start": 564.48,
+      "end": 568.88,
+      "text": "useful. Every single thing I consume from now on can be made"
+    },
+    {
+      "start": 568.88,
+      "end": 573.1,
+      "text": "useful through tools like this. That's it. Yep,"
+    },
+    {
+      "start": 582.67,
+      "end": 582.87,
+      "text": "yep."
+    },
+    {
+      "start": 591.81,
+      "end": 595.87,
+      "text": "Yes, so first you wanna store it. So you wanna give it"
+    },
+    {
+      "start": 595.87,
+      "end": 600.15,
+      "text": "to a memory layer like Penumbra and then you go to Penumbra"
+    },
+    {
+      "start": 600.15,
+      "end": 604.17,
+      "text": "and say, hey, remember when I just pulled all that information for"
+    },
+    {
+      "start": 604.17,
+      "end": 607.23,
+      "text": "my business and I wanted to make some tools? Let's go build"
+    },
+    {
+      "start": 607.23,
+      "end": 613.61,
+      "text": "the tooling right now. I'm using anti -gravity. I'm using cursor. I'm"
+    },
+    {
+      "start": 613.61,
+      "end": 619.01,
+      "text": "using Clod code. I'm using Clod co -work. I'm using insert thing"
+    },
+    {
+      "start": 619.01,
+      "end": 623.17,
+      "text": "that you wanna use it with and then you start building that"
+    },
+    {
+      "start": 623.17,
+      "end": 629.95,
+      "text": "idea made for that use case. For me, that looks like idea,"
+    },
+    {
+      "start": 630.71,
+      "end": 636.77,
+      "text": "memory layer, Hermes agent. I built all these animations on Hermes which"
+    },
+    {
+      "start": 636.77,
+      "end": 642.03,
+      "text": "means I only either talk to it or type to it which"
+    },
+    {
+      "start": 642.03,
+      "end": 646.41,
+      "text": "is crazy to me because with 12 Labs, I give it an"
+    },
+    {
+      "start": 646.41,
+      "end": 652.89,
+      "text": "example and say, hey, you see this visually? Let's name this style"
+    },
+    {
+      "start": 652.89,
+      "end": 656.85,
+      "text": "so I can use it as future reference. I could pull down"
+    },
+    {
+      "start": 656.85,
+      "end": 661.73,
+      "text": "a Jackson Pollock or a Van Gogh or a Rembrandt and say,"
+    },
+    {
+      "start": 661.81,
+      "end": 666.39,
+      "text": "hey, I wanna make something in this style visually. Let's name it"
+    },
+    {
+      "start": 666.39,
+      "end": 670.31,
+      "text": "and then let's go build it Hermes agent. Save it to memory"
+    },
+    {
+      "start": 670.31,
+      "end": 672.11,
+      "text": "by the way. So cool."
+    },
+    {
+      "start": 673.69,
+      "end": 676.23,
+      "text": "Anyways, I just wanted to share that real quick. I'm gonna go"
+    },
+    {
+      "start": 676.23,
+      "end": 680.63,
+      "text": "much, much deeper on my actual talk that you guys will be"
+    },
+    {
+      "start": 680.63,
+      "end": 685.81,
+      "text": "getting a recording of and I've done things with factories. This represents"
+    },
+    {
+      "start": 685.81,
+      "end": 686.39,
+      "text": "loops"
+    },
+    {
+      "start": 688.58,
+      "end": 692.99,
+      "text": "but yeah, man, it's a lot of fun to start experimenting and"
+    },
+    {
+      "start": 692.99,
+      "end": 696.89,
+      "text": "seeing how deep you can go. This is representative of a meta"
+    },
+    {
+      "start": 696.89,
+      "end": 698.07,
+      "text": "buying agent,"
+    },
+    {
+      "start": 699.59,
+      "end": 704.91,
+      "text": "meta ads agent that I built with meta CLI and a YOLO"
+    },
+    {
+      "start": 704.91,
+      "end": 711.17,
+      "text": "model. So you can look at ad creative and then understand it"
+    },
+    {
+      "start": 711.17,
+      "end": 716.23,
+      "text": "and then iterate. So imagine A, B, C, D, E, F, G,"
+    },
+    {
+      "start": 716.47,
+      "end": 721.31,
+      "text": "H, I, J, K. A million ad A, B tests."
+    },
+    {
+      "start": 733.28,
+      "end": 739.68,
+      "text": "Exactly. Thank you for that. The layup. Now that's so crazy what"
+    },
+    {
+      "start": 739.68,
+      "end": 743.84,
+      "text": "you can do once you start. First you find the way to"
+    },
+    {
+      "start": 743.84,
+      "end": 747.46,
+      "text": "stack these things and you start thinking about the dominoes and then"
+    },
+    {
+      "start": 747.46,
+      "end": 751.26,
+      "text": "you just insert pieces that make sense to you at that time"
+    },
+    {
+      "start": 751.26,
+      "end": 755.58,
+      "text": "into your business. And through doing that, you just keep going. You"
+    },
+    {
+      "start": 755.58,
+      "end": 757.74,
+      "text": "never stop. It's the best."
+    },
+    {
+      "start": 759.8,
+      "end": 763.78,
+      "text": "All right. But with that said, it is four o 'clock. Guys,"
+    },
+    {
+      "start": 764.52,
+      "end": 768.96,
+      "text": "thank you so much for coming and listening to us all. Rant"
+    },
+    {
+      "start": 768.96,
+      "end": 771.12,
+      "text": "and rave. We really appreciate you guys."
+    },
+    {
+      "start": 777.45,
+      "end": 780.43,
+      "text": "And the last little note, I'm gonna say please take your trash"
+    },
+    {
+      "start": 780.43,
+      "end": 784.05,
+      "text": "as far as resources and."
+    }
+  ],
   "widgets": [],
   "assets": {
     "reels_dir": "jordan-close/reels",

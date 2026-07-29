@@ -5,15 +5,2482 @@
   "media_url": null,
   "twelvelabs": {
     "index_name": "session-2-ct",
-    "index_id": null,
-    "video_id": null
+    "index_id": "6a5598b26ca01e685ca30119",
+    "video_id": "6a5598e3a79abae34f978734"
   },
   "masters": {
     "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 2 CT/JORDAN_S001_S001_T004_ISO1.MOV",
     "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 2 CT/JORDAN_S001_S001_T004_ISO2.MOV"
   },
-  "clips": [],
-  "transcript": [],
+  "clips": [
+    {
+      "id": "01",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 35,
+      "hook": "Cost vs. Quality: The Golden Ratio",
+      "caption": "Discover the sweet spot between AI performance and expenses. Learn how local models and smart routing can slash costs by 80% while boosting results. #AIProductivity #Tokenomics #CostEfficiency",
+      "start": 347.8,
+      "end": 392.52,
+      "duration": 44.72,
+      "crop_cx": 0.576,
+      "crop_x0": 802,
+      "demo_lead_s": null,
+      "reel": "reels/reel_01.mp4",
+      "still_person": "reels/compare/01_person.jpg",
+      "still_screen": null,
+      "transcript": "start caring caring about about how how much much things things cost. cost You you need need to to be be carrying caring about about how how you you can can use use local local models models to to All right, um um how's everybody doing? uh uh I I forget the We're word good. but kind of balance it All out, right, perfect. and there is a So golden ratio, I kind of stacked if you will this. between group quality of talks and cost. uh in a very specific order, just like I did uh yesterday's right harness engineering So Baisho somebody of hands, I'm who gonna here clear has this up had because someone's asking me reached their usage what is limit the harness within the last thirty days. Raise does your everybody hand, here know what a harness and is? if you've reached Do that you feel limit clear within about the it last right week, now? Kind of okay so all right, um so yeah, Codex that was my is a harness experience clad code is a harness I really harnesses resonated a lot with the what tools Nick was sharing was like and system how prompts do I keep things and skills as the simple whole as set possible",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "The 'Semi-Truck for Milk' Analogy"
+    },
+    {
+      "id": "02",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 38,
+      "hook": "Your AI agent needs a loadout",
+      "caption": "Just like in Call of Duty, your AI harness is the ultimate toolkit—combine tools, prompts, and skills to build a smarter agent. #AI #Harness #AgentDevelopment",
+      "start": 568.2,
+      "end": 613.0,
+      "duration": 44.8,
+      "crop_cx": 0.568,
+      "crop_x0": 788,
+      "demo_lead_s": null,
+      "reel": "reels/reel_02.mp4",
+      "still_person": "reels/compare/02_person.jpg",
+      "still_screen": null,
+      "transcript": "harnesses the tools and system prompts and skills the whole set uh. has anybody here played Call of Duty or any like video games like that so sometimes when you have a loadout for Call of Duty it's a very specific set of tools for your character to use right that's what a harness is it comprises of all the tools uh system prompts skills et cetera now harness here LLM is the driver of that vehicle you combine them now have you an agent so you can tune your harness you can also tune your LLM but you can tune your harness combine it with the right LLM in your vertical subject matter expert now you have an unseen advantage",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "The Five Levers of Tokenomics"
+    },
+    {
+      "id": "03",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 16,
+      "hook": "Tokenomics: The New Frontier",
+      "caption": "CT dives into the real cost of cutting-edge AI models and how smart routing can save you 80% on token usage. #AI #Tokenomics #Productivity",
+      "start": 845.0,
+      "end": 865.96,
+      "duration": 20.96,
+      "crop_cx": 0.57,
+      "crop_x0": 790,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_03.mp4",
+      "still_person": "reels/compare/03_person.jpg",
+      "still_screen": "reels/compare/03_screen.jpg",
+      "transcript": "but also um with his have buddy the pricet Pedro so like who just you started know one here dollar at for Antler a million tokens in the um cohort you know or and you even got funded uh GPT rather five point six but just um launched on Thursday essentially and so like earlier CT at this place is where part of their crew we're getting access to these and frontier I found models out that have his really friend advanced told on him about intelligence how good he but is also you with got to pay for uh it Toconomics and so that's kind of like where everyone's kind of fighting even at better with that",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Default Model Trap: 'Why Did I Do That?'"
+    },
+    {
+      "id": "04",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 20,
+      "hook": "Your secret weapon is a harness",
+      "caption": "Combine LLMs, system prompts, and skills into a tuned harness. The right setup gives you an unseen advantage in your business. #AI #Harness #AgentDevelopment",
+      "start": 947.8,
+      "end": 977.88,
+      "duration": 30.08,
+      "crop_cx": 0.573,
+      "crop_x0": 796,
+      "demo_lead_s": null,
+      "reel": "reels/reel_04.mp4",
+      "still_person": "reels/compare/04_person.jpg",
+      "still_screen": null,
+      "transcript": "tools uh system prompts skills et cetera now harness here LLM is the driver of that vehicle you combine them now have you an agent so you can tune your harness you can also tune your LLM but you can tune your harness combine it with the right LLM in your vertical subject matter expert now you have an unseen advantage in your business I know I know this stuff is at first it's a lot",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Keep Judgment, Delegate Labor"
+    },
+    {
+      "id": "05",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 26,
+      "hook": "CT’s tokenomics game is next level",
+      "caption": "Discovered a hidden gem in the Antler cohort—CT’s mastery of tokenomics and his killer tool, Conductor, are redefining efficiency. #AI #Tokenomics #Conductor",
+      "start": 1029.0,
+      "end": 1059.64,
+      "duration": 30.64,
+      "crop_cx": 0.579,
+      "crop_x0": 808,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_05.mp4",
+      "still_person": "reels/compare/05_person.jpg",
+      "still_screen": "reels/compare/05_screen.jpg",
+      "transcript": "Antler in the the cohort or you got funded rather but um essentially CT is part of their crew and I found out his friend told on him about how good he is with uh tokenomics even better if which is a skill that allows you to essentially run a loop as a skill which is a really cool intro way to do that maybe you'll talk about that a little bit and he's got this really cool thing called conductor as well I don't want to over talk it",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "EBI Skill: 'Even Better If' Framework"
+    },
+    {
+      "id": "06",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 26,
+      "hook": "Tune Your Harness, Save 90%",
+      "caption": "Optimize your LLM usage with strategic caching and harness tuning—cut costs by up to 80% while boosting performance. #AIProductivity #Tokenomics #LLMoptimization",
+      "start": 1141.0,
+      "end": 1172.04,
+      "duration": 31.04,
+      "crop_cx": 0.624,
+      "crop_x0": 894,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_06.mp4",
+      "still_person": "reels/compare/06_person.jpg",
+      "still_screen": "reels/compare/06_screen.jpg",
+      "transcript": "is tune uh your harness caching so you get you can a also tune ninety percent your LLM discount on your but you can tune your harness uh usage combine it with the for right caching LLM in and what your vertical caching means is like every subject time you matter send a expert prompt, even if feel you like now you you have an unseen ask advantage a question in and you your ask business a question again, it's actually I sending know I know this stuff is entire session at first context it's a lot it's every it's single time, beyond and so the if firehose you send drinking a follow up question it's like like three different messages I like don't know I can't you're messaging think of a anything friend like way hello hello worse than hello that maybe it's uh actually uh Igoazu resending falls the same or something message with over the and over crazy again so what waterfall the what anyways these models do is they actually will do caching",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "EBI Skill in Action: 42 Improvements"
+    },
+    {
+      "id": "07",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 22,
+      "hook": "Tokenomics hack: 80% less usage",
+      "caption": "CT reveals how he slashed API costs by 31% using smart model routing and the EBI skill. Perfect for devs running heavy workflows. #AI #Tokenomics #DevTips",
+      "start": 1203.96,
+      "end": 1233.96,
+      "duration": 30.0,
+      "crop_cx": 0.571,
+      "crop_x0": 792,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_07.mp4",
+      "still_person": "reels/compare/07_person.jpg",
+      "still_screen": "reels/compare/07_screen.jpg",
+      "transcript": "recently if you're using the API it's um only with five minutes his buddy so it's Pedro something to who just keep started in mind here is that at Antler that is a significant in the cohort lift or you and got I'll funded show you an example rather of mine later on but um so essentially you know things CT is part tomorrow of their crew as you mentioned like a lot of these and I rules keep found changing out but his uh friend told it on does him about how it does good he is not change the with fact that uh like we are Toconomics at this point where it is about even your usage better if and your weekly which is limited a skill like for that allows two hundred bucks you what to what can you get essentially with that run a loop as a and so skill, you know which is i a i really believe cool even anthropic intro way one of the to developers do that. Maybe posted he'll",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Recursive EBI Loops: Deep Iteration"
+    },
+    {
+      "id": "08",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 19,
+      "hook": "Worth every second",
+      "caption": "The journey’s tough, but the payoff? Totally worth it. Dive into the white papers and level up your game. #AI #Tokenomics #LearnAndGrow",
+      "start": 1347.96,
+      "end": 1376.92,
+      "duration": 28.96,
+      "crop_cx": 0.555,
+      "crop_x0": 762,
+      "demo_lead_s": null,
+      "reel": "reels/reel_08.mp4",
+      "still_person": "reels/compare/08_person.jpg",
+      "still_screen": null,
+      "transcript": "the crazy waterfall anyways the point is it's worth it trust me it's worth it get the white papers read about them, learn about them okay enough of that I'm interested I'm introducing let's go all right come see me afterwards or during break and we can talk more I'm more than happy to do that I just want to be able to go deep with people that I look up to and know have",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Self-Improvement Loop: EBI on Itself"
+    },
+    {
+      "id": "09",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 18,
+      "hook": "He built a tokenomics conductor",
+      "caption": "Turns out, the secret to beating API costs isn’t more money—it’s smarter routing. Meet the tool that cut his usage by 80% and saved him $1k+ monthly. #Tokenomics #AIProductivity #ConductorTool",
+      "start": 1399.8,
+      "end": 1429.96,
+      "duration": 30.16,
+      "crop_cx": 0.566,
+      "crop_x0": 782,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_09.mp4",
+      "still_person": "reels/compare/09_person.jpg",
+      "still_screen": "reels/compare/09_screen.jpg",
+      "transcript": "friend told on him about how good he is with uh tokenomics even better if which is a skill that allows you to essentially run a loop as a skill which is a really cool intro way to do that maybe you'll talk about that a little bit and he's got this really cool thing called conductor as well I don't want to over talk it there's a lot to learn about tokenomics tokenomics hoping that they is would make one of a mistake those things and just reset where the limits you and I need was waiting to for start a reset caring and I was trying about to how always much do something things what I can cost",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Conductor as a Workflow Standard"
+    },
+    {
+      "id": "10",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 26,
+      "hook": "I was burning tokens like it was nothing",
+      "caption": "Turns out, the real hack isn’t using the smartest model—it’s knowing when NOT to. #Tokenomics #AIProductivity #SmartAI",
+      "start": 1523.88,
+      "end": 1553.96,
+      "duration": 30.08,
+      "crop_cx": 0.568,
+      "crop_x0": 786,
+      "demo_lead_s": null,
+      "reel": "reels/reel_10.mp4",
+      "still_person": "reels/compare/10_person.jpg",
+      "still_screen": null,
+      "transcript": "coming back like way I was really worse able than to that see maybe uh that how uh much Igoazu was was really there falls or something with the so crazy when I'm waterfall doing anyways when I was having fable do the task when it the was point is when I was realizing it was doing different tasks it's like grapping worth it and just doing a little edits trust like me it was it's worth burning it all the tokens get the white and papers so I realized read about that them, was learn about them the fixed okay enough there of was that something there that I needed to figure out I'm which was interested the uh the I'm aspect introducing of choosing the right model let's go so all the right analogy come see that me I afterwards was I was sharing or during before break is and we that can talk more I'm more than happy to do that you don't want I to take just a want semi truck to get to a be able gallon to of go",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Real-Time Agent Monitoring"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0.72,
+      "end": 1.18,
+      "text": "Okay."
+    },
+    {
+      "start": 3.84,
+      "end": 7.94,
+      "text": "Hello, hello, hello. Check, check, check. Can you guys hear me?"
+    },
+    {
+      "start": 9.32,
+      "end": 17.64,
+      "text": "All right. How's everybody doing? We're good? All right. Perfect. So I"
+    },
+    {
+      "start": 17.64,
+      "end": 21.94,
+      "text": "kind of stacked this group of talks in a very specific order,"
+    },
+    {
+      "start": 22.0,
+      "end": 28.08,
+      "text": "just like I did yesterday's, right? So first thing, harness engineering. Somebody,"
+    },
+    {
+      "start": 28.08,
+      "end": 31.86,
+      "text": "I'm going to clear this up because someone's asking me, what is"
+    },
+    {
+      "start": 31.86,
+      "end": 32.12,
+      "text": "a harness?"
+    },
+    {
+      "start": 33.54,
+      "end": 37.1,
+      "text": "Does everybody here know what a harness is? Do you feel clear"
+    },
+    {
+      "start": 37.1,
+      "end": 42.08,
+      "text": "about it right now? Kind of. Okay. So Codex is a harness."
+    },
+    {
+      "start": 42.4,
+      "end": 46.38,
+      "text": "Quad Code is a harness. Harness is the tools and system prompts"
+    },
+    {
+      "start": 46.38,
+      "end": 50.4,
+      "text": "and skills, the whole set. Has anybody here played Call of Duty"
+    },
+    {
+      "start": 50.4,
+      "end": 54.58,
+      "text": "or any video games like that? So sometimes when you have a"
+    },
+    {
+      "start": 54.58,
+      "end": 58.18,
+      "text": "loadout for Call of Duty, it's a very specific set of tools"
+    },
+    {
+      "start": 58.18,
+      "end": 62.22,
+      "text": "for your character to use, right? That's what a harness is. It"
+    },
+    {
+      "start": 62.22,
+      "end": 67.96,
+      "text": "comprises of all the tools, system prompts, skills, et cetera. Now, harness"
+    },
+    {
+      "start": 67.96,
+      "end": 73.16,
+      "text": "here, LLM is the driver of that vehicle. You combine them, now"
+    },
+    {
+      "start": 73.16,
+      "end": 79.08,
+      "text": "you have an agent. So you can tune your harness. You can"
+    },
+    {
+      "start": 79.08,
+      "end": 82.68,
+      "text": "also tune your LLM, but you can tune your harness, combine it"
+    },
+    {
+      "start": 82.68,
+      "end": 87.12,
+      "text": "with the right LLM in your vertical subject matter expert. Now you"
+    },
+    {
+      "start": 87.12,
+      "end": 88.98,
+      "text": "have an unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased,"
+    },
+    {
+      "start": 88.98,
+      "end": 93.72,
+      "text": "unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased,"
+    },
+    {
+      "start": 96.2,
+      "end": 103.4,
+      "text": "unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased,"
+    },
+    {
+      "start": 103.4,
+      "end": 107.16,
+      "text": "unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased,"
+    },
+    {
+      "start": 107.16,
+      "end": 115.58,
+      "text": "unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased, unbiased,"
+    },
+    {
+      "start": 115.76,
+      "end": 119.6,
+      "text": "unbiased, I'm introducing"
+    },
+    {
+      "start": 122.1,
+      "end": 126.1,
+      "text": "let's go alright come see me afterwards or during break and we"
+    },
+    {
+      "start": 126.1,
+      "end": 128.4,
+      "text": "can talk more I'm more than happy to do that I just"
+    },
+    {
+      "start": 128.4,
+      "end": 131.3,
+      "text": "want to be able to go deep with people that I look"
+    },
+    {
+      "start": 131.3,
+      "end": 134.9,
+      "text": "up to and know have a ton to offer on the technical"
+    },
+    {
+      "start": 134.9,
+      "end": 141.38,
+      "text": "side that said CT is a guy that I met recently with"
+    },
+    {
+      "start": 141.38,
+      "end": 146.44,
+      "text": "his buddy Pedro who just started here at Antler in the cohort"
+    },
+    {
+      "start": 146.44,
+      "end": 152.58,
+      "text": "or he got funded rather but essentially CT is part of their"
+    },
+    {
+      "start": 152.58,
+      "end": 156.94,
+      "text": "crew and I found out his friend told on him about how"
+    },
+    {
+      "start": 156.94,
+      "end": 159.38,
+      "text": "good he is with tokenomics"
+    },
+    {
+      "start": 160.64,
+      "end": 164.54,
+      "text": "even better if which is a skill that allows you to essentially"
+    },
+    {
+      "start": 164.54,
+      "end": 168.62,
+      "text": "run a loop as a skill which is a really cool intro"
+    },
+    {
+      "start": 168.62,
+      "end": 170.56,
+      "text": "way to do that maybe he'll talk about that a little bit"
+    },
+    {
+      "start": 170.56,
+      "end": 174.46,
+      "text": "and he's got this really cool thing called conductor as well I"
+    },
+    {
+      "start": 174.46,
+      "end": 178.18,
+      "text": "don't want to over talk it there's a lot to learn about"
+    },
+    {
+      "start": 178.18,
+      "end": 183.78,
+      "text": "tokenomics tokenomics is one of those things where you need to start"
+    },
+    {
+      "start": 183.78,
+      "end": 187.8,
+      "text": "caring about how much things cost you need to be caring about"
+    },
+    {
+      "start": 187.8,
+      "end": 193.34,
+      "text": "how you can use local models to I forget the word but"
+    },
+    {
+      "start": 193.34,
+      "end": 198.16,
+      "text": "kind of balance it out and there is a golden ratio if"
+    },
+    {
+      "start": 198.16,
+      "end": 201.6,
+      "text": "you will between quality and cost and we're going to get into"
+    },
+    {
+      "start": 201.6,
+      "end": 204.94,
+      "text": "it alright you guys give it up for CT applause applause"
+    },
+    {
+      "start": 206.76,
+      "end": 211.78,
+      "text": "so by show of hands who here has had reached their usage"
+    },
+    {
+      "start": 211.78,
+      "end": 216.98,
+      "text": "limit within the last 30 days and if you've reached that limit"
+    },
+    {
+      "start": 216.98,
+      "end": 217.84,
+      "text": "within the last week"
+    },
+    {
+      "start": 219.38,
+      "end": 224.62,
+      "text": "alright so yeah that was my experience I really resonated a lot"
+    },
+    {
+      "start": 224.62,
+      "end": 226.96,
+      "text": "with what Nick was sharing was like how do I keep things"
+    },
+    {
+      "start": 226.96,
+      "end": 232.38,
+      "text": "as simple as possible in all of my workflow yet as I'm"
+    },
+    {
+      "start": 232.38,
+      "end": 235.46,
+      "text": "building of course I always want to use the smartest models to"
+    },
+    {
+      "start": 235.46,
+      "end": 236.08,
+      "text": "do that but I think it's really important to do the best"
+    },
+    {
+      "start": 236.08,
+      "end": 241.92,
+      "text": "work and so I when Fable 5 first came out I got"
+    },
+    {
+      "start": 241.92,
+      "end": 245.98,
+      "text": "really excited I jumped into it and I started just like working"
+    },
+    {
+      "start": 245.98,
+      "end": 247.76,
+      "text": "on one of my projects and within like a day and a"
+    },
+    {
+      "start": 247.76,
+      "end": 251.74,
+      "text": "half I just like maxed out and like hit the limit and"
+    },
+    {
+      "start": 251.74,
+      "end": 256.44,
+      "text": "so I at that same point it was like now I started"
+    },
+    {
+      "start": 256.44,
+      "end": 260.26,
+      "text": "using overages I started like actually using API costs and started going"
+    },
+    {
+      "start": 260.26,
+      "end": 263.66,
+      "text": "a bit over so what I realized was that the you know"
+    },
+    {
+      "start": 263.66,
+      "end": 265.5,
+      "text": "the plan that I was running with was you know the was"
+    },
+    {
+      "start": 265.5,
+      "end": 269.48,
+      "text": "ultimately not really effective for what I wanted to do it was"
+    },
+    {
+      "start": 269.48,
+      "end": 272.16,
+      "text": "like really cool but I was just like really just at the"
+    },
+    {
+      "start": 272.16,
+      "end": 275.72,
+      "text": "edge of it so the max plan really didn't really cover what"
+    },
+    {
+      "start": 275.72,
+      "end": 279.42,
+      "text": "I could do so the wall that we like really find ourselves"
+    },
+    {
+      "start": 279.42,
+      "end": 282.68,
+      "text": "in was that it's the plan so I was trying to figure"
+    },
+    {
+      "start": 282.68,
+      "end": 286.5,
+      "text": "out how do I just like get the best use of what"
+    },
+    {
+      "start": 286.5,
+      "end": 292.12,
+      "text": "I'm doing and within the plan usage and so just a little"
+    },
+    {
+      "start": 292.12,
+      "end": 295.82,
+      "text": "bit about me with the just my usage I have done the"
+    },
+    {
+      "start": 295.82,
+      "end": 300.76,
+      "text": "last 30 days about 24 billion tokens tokens so that's super heavy"
+    },
+    {
+      "start": 300.76,
+      "end": 304.6,
+      "text": "was like I just kept like hitting those API usage like put"
+    },
+    {
+      "start": 304.6,
+      "end": 307.5,
+      "text": "the credit card in again like keep like doing it my limits"
+    },
+    {
+      "start": 307.5,
+      "end": 309.42,
+      "text": "and I was like just having so much fun yet I was"
+    },
+    {
+      "start": 309.84,
+      "end": 312.7,
+      "text": "feeling a little bit throttled because I was having to spend more"
+    },
+    {
+      "start": 312.7,
+      "end": 317.56,
+      "text": "money and so like the reality is like you know hardware is"
+    },
+    {
+      "start": 317.56,
+      "end": 322.08,
+      "text": "not getting cheaper but tokens have really never been cheaper today so"
+    },
+    {
+      "start": 322.08,
+      "end": 326.94,
+      "text": "in fact there's about about 280x cheaper inference today compared to what"
+    },
+    {
+      "start": 326.94,
+      "end": 331.98,
+      "text": "GPT 3 .5 was. And then, so that's today. We're talking a"
+    },
+    {
+      "start": 331.98,
+      "end": 334.7,
+      "text": "little bit about tokenomics. So it's, at the end of the day,"
+    },
+    {
+      "start": 334.78,
+      "end": 338.7,
+      "text": "the thing that I'm going to, that I'll share with you is"
+    },
+    {
+      "start": 338.7,
+      "end": 342.36,
+      "text": "like I started building out what I called a conductor. And today"
+    },
+    {
+      "start": 342.36,
+      "end": 344.22,
+      "text": "I'll explain a little bit more about how I get into that."
+    },
+    {
+      "start": 345.36,
+      "end": 347.84,
+      "text": "So yeah, Fable 5 was like the best model. I know there"
+    },
+    {
+      "start": 347.84,
+      "end": 352.1,
+      "text": "was some opinions from Nick of like it's not that cool. But"
+    },
+    {
+      "start": 352.1,
+      "end": 356.12,
+      "text": "I really started to take it at its edge, like really try"
+    },
+    {
+      "start": 356.12,
+      "end": 357.96,
+      "text": "to figure out what I can do. But when I was doing"
+    },
+    {
+      "start": 357.96,
+      "end": 361.36,
+      "text": "so, I found out like, you know, just burning through all my"
+    },
+    {
+      "start": 361.36,
+      "end": 361.6,
+      "text": "tokens."
+    },
+    {
+      "start": 363.04,
+      "end": 367.28,
+      "text": "And so like, based on a lot of what I've been here"
+    },
+    {
+      "start": 367.28,
+      "end": 370.04,
+      "text": "observing today is like we've talked a lot about the planning, a"
+    },
+    {
+      "start": 370.04,
+      "end": 374.02,
+      "text": "lot about data, a lot about loops, harness. And today is talking"
+    },
+    {
+      "start": 374.02,
+      "end": 376.74,
+      "text": "about a budget. Like how do you really, how do you figure"
+    },
+    {
+      "start": 376.74,
+      "end": 379.0,
+      "text": "that out? Yes, adult supervision."
+    },
+    {
+      "start": 381.8,
+      "end": 384.1,
+      "text": "So I'll start out by doing a little bit of an audit."
+    },
+    {
+      "start": 384.22,
+      "end": 387.16,
+      "text": "So if you want to do a QR code or you can"
+    },
+    {
+      "start": 387.16,
+      "end": 389.82,
+      "text": "type in the URL, what this is going to do is actually"
+    },
+    {
+      "start": 389.82,
+      "end": 394.46,
+      "text": "just all runs local. It does an audit. In fact, I'll show"
+    },
+    {
+      "start": 394.46,
+      "end": 398.24,
+      "text": "once you guys all get a chance to type it in. It"
+    },
+    {
+      "start": 398.24,
+      "end": 401.48,
+      "text": "just is really quick. It's going to run through a terminal. It'll"
+    },
+    {
+      "start": 401.48,
+      "end": 406.12,
+      "text": "let you copy and paste it. It'll actually go to a page."
+    },
+    {
+      "start": 407.42,
+      "end": 408.52,
+      "text": "Let me know when you guys are done."
+    },
+    {
+      "start": 410.36,
+      "end": 412.6,
+      "text": "But it'll go to a page and let you copy a curl"
+    },
+    {
+      "start": 412.6,
+      "end": 415.04,
+      "text": "script that you can just run in your terminal."
+    },
+    {
+      "start": 418.04,
+      "end": 423.88,
+      "text": "1 .6 billion. 1 .6 billion. Great. It even says my top"
+    },
+    {
+      "start": 423.88,
+      "end": 427.5,
+      "text": "model is five people five. Yeah, even though you don't like it."
+    },
+    {
+      "start": 427.54,
+      "end": 430.36,
+      "text": "Even though I don't like it. Isn't that funny? Yeah, so what"
+    },
+    {
+      "start": 430.36,
+      "end": 435.92,
+      "text": "it'll do is it'll run. Six billion. Six billion, all right. I"
+    },
+    {
+      "start": 435.92,
+      "end": 440.04,
+      "text": "gotta step it up, bro. Yeah. Six billion. You gotta go, bro."
+    },
+    {
+      "start": 440.18,
+      "end": 444.58,
+      "text": "We need more. You guys get the link? Cash return 92 %"
+    },
+    {
+      "start": 444.58,
+      "end": 448.6,
+      "text": ". 92%, OK. What does that mean, a cash return? We'll get"
+    },
+    {
+      "start": 448.6,
+      "end": 449.3,
+      "text": "into that, yeah."
+    },
+    {
+      "start": 453.96,
+      "end": 457.76,
+      "text": "All set? So yeah, it'll take you to this page. Basically, it's"
+    },
+    {
+      "start": 457.76,
+      "end": 460.32,
+      "text": "going to give you a token receipt. And so, for example, mine's"
+    },
+    {
+      "start": 460.32,
+      "end": 460.92,
+      "text": "4 .7."
+    },
+    {
+      "start": 462.14,
+      "end": 465.66,
+      "text": "And that's what's run there. And it'll give you a bunch of"
+    },
+    {
+      "start": 465.66,
+      "end": 469.1,
+      "text": "details, talk about which ones you're running. But it kind of gives"
+    },
+    {
+      "start": 469.1,
+      "end": 469.84,
+      "text": "you a little bit of receipt."
+    },
+    {
+      "start": 471.46,
+      "end": 474.14,
+      "text": "Pretty cool just to kind of see the information. So for me,"
+    },
+    {
+      "start": 474.16,
+      "end": 477.36,
+      "text": "I just started going down this rabbit hole of, like, I just"
+    },
+    {
+      "start": 477.36,
+      "end": 479.92,
+      "text": "felt like I was at my edge, where I was wanting to"
+    },
+    {
+      "start": 479.92,
+      "end": 481.58,
+      "text": "do it, but then I got to pay for it. And I"
+    },
+    {
+      "start": 481.58,
+      "end": 483.62,
+      "text": "was spending 1 ,000 bucks on tokens. And then I was like,"
+    },
+    {
+      "start": 483.68,
+      "end": 489.16,
+      "text": "I got to figure this out. And so yeah, there's this paradox"
+    },
+    {
+      "start": 489.16,
+      "end": 492.86,
+      "text": "of, like, well, what do I do? I want to do more,"
+    },
+    {
+      "start": 493.04,
+      "end": 496.76,
+      "text": "but it's costing a lot of money. And so really, where we're"
+    },
+    {
+      "start": 496.76,
+      "end": 499.96,
+      "text": "at today is that it's actually, you know, we're at most of"
+    },
+    {
+      "start": 499.96,
+      "end": 503.82,
+      "text": "the cheapest, but also have the priciest. So like, you know, $1"
+    },
+    {
+      "start": 503.82,
+      "end": 509.72,
+      "text": "for a million tokens. And even the GPT 5 .6 just launched"
+    },
+    {
+      "start": 509.72,
+      "end": 513.14,
+      "text": "on Thursday. And so we're really at this place where we're getting"
+    },
+    {
+      "start": 513.14,
+      "end": 517.72,
+      "text": "access to these frontier models that have really advanced intelligence, but also"
+    },
+    {
+      "start": 517.72,
+      "end": 520.16,
+      "text": "you got to pay for it. And so that's kind of where"
+    },
+    {
+      "start": 520.16,
+      "end": 523.1,
+      "text": "everyone's kind of fighting at with that. I think the cutoff tomorrow"
+    },
+    {
+      "start": 523.1,
+      "end": 524.64,
+      "text": "with Fable 5 is tomorrow."
+    },
+    {
+      "start": 526.02,
+      "end": 528.2,
+      "text": "So yeah, it's really been like, I was like, I'm going to"
+    },
+    {
+      "start": 528.2,
+      "end": 530.48,
+      "text": "do this. I was really trying to dive into where that's at."
+    },
+    {
+      "start": 530.78,
+      "end": 533.54,
+      "text": "What's funny is that on July 2, there was this big thing"
+    },
+    {
+      "start": 533.54,
+      "end": 536.8,
+      "text": "that went out. There was Anthropic accidentally shipped the thesis of this"
+    },
+    {
+      "start": 536.8,
+      "end": 541.4,
+      "text": "workshop in a log string. It was too dumb to need Fable."
+    },
+    {
+      "start": 542.0,
+      "end": 546.62,
+      "text": "Basically, there was this, in terms of these logs of the different"
+    },
+    {
+      "start": 546.62,
+      "end": 550.94,
+      "text": "session transactions, it was downgrading. And it was tagged by that. And"
+    },
+    {
+      "start": 550.94,
+      "end": 554.8,
+      "text": "it went a little bit viral. And the developer said, I didn't"
+    },
+    {
+      "start": 554.8,
+      "end": 558.32,
+      "text": "expect you to actually look at the logs. So. So that was"
+    },
+    {
+      "start": 558.32,
+      "end": 561.42,
+      "text": "kind of funny. So where does the money actually go? And what"
+    },
+    {
+      "start": 561.42,
+      "end": 565.2,
+      "text": "do you actually do about it? So there's five levers. The first"
+    },
+    {
+      "start": 565.2,
+      "end": 570.78,
+      "text": "one, it's really about just which model is hearing you. So depending"
+    },
+    {
+      "start": 570.78,
+      "end": 575.7,
+      "text": "on how you're using this, I'm primarily in Claude most of the"
+    },
+    {
+      "start": 575.7,
+      "end": 577.9,
+      "text": "time. I also use Codex, kind of switch back and forth. And"
+    },
+    {
+      "start": 577.9,
+      "end": 580.1,
+      "text": "a lot of that was because of the token usage. I'd hit"
+    },
+    {
+      "start": 580.1,
+      "end": 582.66,
+      "text": "my limit. I'd go over to Codex. I'd run two max plans,"
+    },
+    {
+      "start": 582.84,
+      "end": 585.74,
+      "text": "two of these plans to try to get the most of what"
+    },
+    {
+      "start": 585.74,
+      "end": 588.6,
+      "text": "I can, try to figure out, figure that out. But yeah, basically,"
+    },
+    {
+      "start": 588.78,
+      "end": 592.92,
+      "text": "the Claude Fable 5 is the most expensive model. It's the frontier"
+    },
+    {
+      "start": 592.92,
+      "end": 597.46,
+      "text": "model. It's the one, but it just basically blows through that in"
+    },
+    {
+      "start": 597.46,
+      "end": 600.24,
+      "text": "terms of the max plan. So the one is which one you're"
+    },
+    {
+      "start": 600.24,
+      "end": 604.4,
+      "text": "selecting. And in this case, I was really excited in June. Also"
+    },
+    {
+      "start": 604.4,
+      "end": 607.18,
+      "text": "last week when it came back on the first, it came back"
+    },
+    {
+      "start": 607.18,
+      "end": 609.46,
+      "text": "on. I just went full bore and was like, put it on"
+    },
+    {
+      "start": 609.46,
+      "end": 613.3,
+      "text": "all my projects and kept blowing through all my credits, all my"
+    },
+    {
+      "start": 613.3,
+      "end": 616.06,
+      "text": "usage. So this is kind of what you were speaking to. The"
+    },
+    {
+      "start": 616.06,
+      "end": 619.4,
+      "text": "next lever. The next lever is caching. So you get a 90"
+    },
+    {
+      "start": 619.4,
+      "end": 624.86,
+      "text": "% discount on your usage for caching. And what caching means is"
+    },
+    {
+      "start": 624.86,
+      "end": 628.88,
+      "text": "every time you send a prompt, even if you ask a question"
+    },
+    {
+      "start": 628.88,
+      "end": 632.64,
+      "text": "and you ask the question again, it's actually sending an entire session"
+    },
+    {
+      "start": 632.64,
+      "end": 636.74,
+      "text": "context every single time. And so if you send a follow up"
+    },
+    {
+      "start": 636.74,
+      "end": 640.56,
+      "text": "question, like three different messages, like you're messaging a friend, hello, hello,"
+    },
+    {
+      "start": 640.56,
+      "end": 644.42,
+      "text": "hello, it's actually resending the same message over and over again. So"
+    },
+    {
+      "start": 644.42,
+      "end": 648.02,
+      "text": "what these models do is they're actually will do caching. So they'll"
+    },
+    {
+      "start": 648.02,
+      "end": 653.02,
+      "text": "actually pull in and keep and store the actual context in that"
+    },
+    {
+      "start": 653.02,
+      "end": 656.26,
+      "text": "period of time. So you can get like 90 % of that"
+    },
+    {
+      "start": 656.26,
+      "end": 659.6,
+      "text": "is discounted because they're running what they already have. And they're just"
+    },
+    {
+      "start": 659.6,
+      "end": 661.92,
+      "text": "kind of taking what you just brought in with a little bit"
+    },
+    {
+      "start": 661.92,
+      "end": 669.46,
+      "text": "of difference. And so it does actually for with the OAuth, which"
+    },
+    {
+      "start": 669.46,
+      "end": 673.34,
+      "text": "is the subscription plans, those are one hour. So if you're running"
+    },
+    {
+      "start": 673.34,
+      "end": 676.38,
+      "text": "a goal or you're running your keep, as long as you keep"
+    },
+    {
+      "start": 676.38,
+      "end": 679.06,
+      "text": "working with it, it stays for an hour. That's the time to"
+    },
+    {
+      "start": 679.06,
+      "end": 682.82,
+      "text": "live. If you're using the API, it's only five minutes. So it's"
+    },
+    {
+      "start": 682.82,
+      "end": 687.3,
+      "text": "something to keep in mind is that that is a significant lift."
+    },
+    {
+      "start": 687.36,
+      "end": 691.5,
+      "text": "And I'll show you an example of mine later on. So things"
+    },
+    {
+      "start": 691.5,
+      "end": 694.66,
+      "text": "tomorrow, as you mentioned, like a lot of these rules keep changing."
+    },
+    {
+      "start": 694.9,
+      "end": 699.44,
+      "text": "But it does not change the fact that we are at this"
+    },
+    {
+      "start": 699.44,
+      "end": 702.74,
+      "text": "point where it is about your usage and your weekly limit. Like"
+    },
+    {
+      "start": 702.74,
+      "end": 705.94,
+      "text": "for $200, what can you get with that? And so that's something"
+    },
+    {
+      "start": 705.94,
+      "end": 708.08,
+      "text": "that we're going to be working on. And so I believe even"
+    },
+    {
+      "start": 708.08,
+      "end": 712.08,
+      "text": "Anthropic, one of the developers, posted that they do plan to bring"
+    },
+    {
+      "start": 712.08,
+      "end": 714.66,
+      "text": "it back, Fable, back in the plan. They're just trying to throttle"
+    },
+    {
+      "start": 714.66,
+      "end": 716.62,
+      "text": "the demand and try to figure out how they can bring it"
+    },
+    {
+      "start": 716.62,
+      "end": 719.88,
+      "text": "back, but it's supposed to cut off tomorrow. And I found that"
+    },
+    {
+      "start": 719.88,
+      "end": 722.44,
+      "text": "I was hoping that they would make a mistake and just reset"
+    },
+    {
+      "start": 722.44,
+      "end": 724.24,
+      "text": "the limits. And I was waiting for a reset. And I was"
+    },
+    {
+      "start": 724.24,
+      "end": 726.28,
+      "text": "trying to always do something where I can't, I'm sure they're going"
+    },
+    {
+      "start": 726.28,
+      "end": 729.24,
+      "text": "to do a reset now. So I kept doing that. But I"
+    },
+    {
+      "start": 729.24,
+      "end": 731.98,
+      "text": "was just kind of playing with that, is that at the end"
+    },
+    {
+      "start": 731.98,
+      "end": 734.68,
+      "text": "of the day, it came down to, like when I was jumping"
+    },
+    {
+      "start": 734.68,
+      "end": 737.58,
+      "text": "into it, I was using Fable 5, and it was just kind"
+    },
+    {
+      "start": 737.58,
+      "end": 742.58,
+      "text": "of, I was doing the audits. And so I realized at the"
+    },
+    {
+      "start": 742.58,
+      "end": 747.0,
+      "text": "point that it's really up to me is that I'm the conductor."
+    },
+    {
+      "start": 747.44,
+      "end": 751.62,
+      "text": "And if I'm ultimately the one that's bringing in what I'm asking"
+    },
+    {
+      "start": 751.62,
+      "end": 755.18,
+      "text": "to be done, and I'm choosing Fable 5 because I want the"
+    },
+    {
+      "start": 755.18,
+      "end": 758.54,
+      "text": "smartest model, I realized that I was going down this rabbit hole"
+    },
+    {
+      "start": 758.54,
+      "end": 764.94,
+      "text": "of what I'm doing to interact with the agent. And then as"
+    },
+    {
+      "start": 764.94,
+      "end": 767.62,
+      "text": "you know, we talk about all these harnesses and all these advanced"
+    },
+    {
+      "start": 767.62,
+      "end": 771.9,
+      "text": "ways to then route things. It became like, that's the unlock. I"
+    },
+    {
+      "start": 771.9,
+      "end": 773.5,
+      "text": "was like, there's got to be a way to figure that out."
+    },
+    {
+      "start": 773.62,
+      "end": 776.66,
+      "text": "So I started to go down this rabbit hole. One of them"
+    },
+    {
+      "start": 776.66,
+      "end": 780.32,
+      "text": "was I started to just run those receipts, like what I give"
+    },
+    {
+      "start": 780.32,
+      "end": 782.84,
+      "text": "you guys, that little script of us. I started doing that on"
+    },
+    {
+      "start": 782.84,
+      "end": 785.94,
+      "text": "a granular label to the point where I put in my CloudMD"
+    },
+    {
+      "start": 785.94,
+      "end": 791.12,
+      "text": "to actually take every single session, and I wanted to understand what"
+    },
+    {
+      "start": 791.12,
+      "end": 794.0,
+      "text": "it was doing. So when I was running workflows, I was running"
+    },
+    {
+      "start": 794.0,
+      "end": 795.72,
+      "text": "goal, I started doing that. And then I was like, I'm going"
+    },
+    {
+      "start": 795.72,
+      "end": 796.34,
+      "text": "to do this. I'm going to do that. And I started actually"
+    },
+    {
+      "start": 796.34,
+      "end": 799.76,
+      "text": "measuring, what was it actually doing? And so then that started giving"
+    },
+    {
+      "start": 799.76,
+      "end": 803.06,
+      "text": "me the idea of how can I expand on that and try"
+    },
+    {
+      "start": 803.06,
+      "end": 806.66,
+      "text": "to iterate on it. So one long build, like Fable 5 did"
+    },
+    {
+      "start": 806.66,
+      "end": 809.58,
+      "text": "every single step, it just would blow through all my tokens. And"
+    },
+    {
+      "start": 809.58,
+      "end": 814.64,
+      "text": "so the understanding was that when I was running Fable and it"
+    },
+    {
+      "start": 814.64,
+      "end": 817.7,
+      "text": "was doing all of those steps, that was the problem. And so"
+    },
+    {
+      "start": 817.7,
+      "end": 821.52,
+      "text": "getting that information coming back, I was really able to see how"
+    },
+    {
+      "start": 821.52,
+      "end": 825.7,
+      "text": "much was really there. So when I'm doing one of these, I'm"
+    },
+    {
+      "start": 825.7,
+      "end": 826.2,
+      "text": "going to be able to do this. And so when I was"
+    },
+    {
+      "start": 826.2,
+      "end": 830.5,
+      "text": "having Fable do the task, when I was realizing it was doing"
+    },
+    {
+      "start": 830.5,
+      "end": 834.5,
+      "text": "different tasks like graphing and just doing little edits, it was burning"
+    },
+    {
+      "start": 834.5,
+      "end": 837.64,
+      "text": "all the tokens. And so I realized that was the fix. There"
+    },
+    {
+      "start": 837.64,
+      "end": 839.64,
+      "text": "was something there that I needed to figure out, which was the"
+    },
+    {
+      "start": 839.64,
+      "end": 844.38,
+      "text": "aspect of choosing the right model. And so the analogy that I"
+    },
+    {
+      "start": 844.38,
+      "end": 848.76,
+      "text": "was sharing before is that you don't want to take a semi"
+    },
+    {
+      "start": 848.76,
+      "end": 851.6,
+      "text": "truck to get a gallon of milk at the grocery store. And"
+    },
+    {
+      "start": 851.6,
+      "end": 855.42,
+      "text": "I realized that I was showing up and asking a question, and"
+    },
+    {
+      "start": 855.42,
+      "end": 859.22,
+      "text": "by default, I was selecting. I had a couple of moments where"
+    },
+    {
+      "start": 859.22,
+      "end": 863.28,
+      "text": "even I opened up a new session, and it was by default"
+    },
+    {
+      "start": 863.28,
+      "end": 867.02,
+      "text": "Fable 5 high. And I realized, and it hit send, I came"
+    },
+    {
+      "start": 867.02,
+      "end": 869.28,
+      "text": "back, and I was like, man, I realized how many times I"
+    },
+    {
+      "start": 869.28,
+      "end": 872.84,
+      "text": "was just, why did I do that? And so the point being"
+    },
+    {
+      "start": 872.84,
+      "end": 877.24,
+      "text": "is, what do I really need Opus for this? Do I need"
+    },
+    {
+      "start": 877.24,
+      "end": 879.74,
+      "text": "Opus, or what do I do? Which one should I set up?"
+    },
+    {
+      "start": 880.04,
+      "end": 884.22,
+      "text": "And so the mechanism really side by side here is that it"
+    },
+    {
+      "start": 884.22,
+      "end": 888.96,
+      "text": "comes down to routing. And so the idea of the task here"
+    },
+    {
+      "start": 888.96,
+      "end": 893.34,
+      "text": "is without routing, is the task arrives, and then you have, well,"
+    },
+    {
+      "start": 893.4,
+      "end": 897.7,
+      "text": "it's reading files, it's writing boilerplates, it's spawning subagents, then the subagent"
+    },
+    {
+      "start": 897.7,
+      "end": 901.28,
+      "text": "inherits that primary model. And so it just was really heavy in"
+    },
+    {
+      "start": 901.28,
+      "end": 905.3,
+      "text": "usage. The session burn was just going super fast. And then when"
+    },
+    {
+      "start": 905.3,
+      "end": 909.12,
+      "text": "I set up with a conduction of, well, what if I were"
+    },
+    {
+      "start": 909.12,
+      "end": 913.02,
+      "text": "to set it up, and I said, hey, you're the conductor, I"
+    },
+    {
+      "start": 913.02,
+      "end": 916.0,
+      "text": "want you to actually figure out what are the cheaper models. And"
+    },
+    {
+      "start": 916.0,
+      "end": 918.28,
+      "text": "then just in real time, I started doing that in the beginning"
+    },
+    {
+      "start": 918.28,
+      "end": 927.4,
+      "text": "of, let's separate this. And so Scout, Critic, having different builders, the"
+    },
+    {
+      "start": 927.4,
+      "end": 930.3,
+      "text": "ones that actually build the code, those didn't need to be the"
+    },
+    {
+      "start": 930.3,
+      "end": 935.28,
+      "text": "primary model. So like Haiku and Sonnet, much cheaper models, it can"
+    },
+    {
+      "start": 935.28,
+      "end": 939.3,
+      "text": "be routed through that. And so I started doing some experiments with"
+    },
+    {
+      "start": 939.3,
+      "end": 941.62,
+      "text": "that, and then found that when I was setting up, I was"
+    },
+    {
+      "start": 941.62,
+      "end": 942.02,
+      "text": "like, oh, this is a good idea. And then I was still"
+    },
+    {
+      "start": 942.02,
+      "end": 947.72,
+      "text": "getting those receipts. I had significant lower rates. And so I just"
+    },
+    {
+      "start": 947.72,
+      "end": 951.06,
+      "text": "kind of started building this doctrine, which was keeping the judgment and"
+    },
+    {
+      "start": 951.06,
+      "end": 955.72,
+      "text": "delegating the labor. So all of the intent, the decomposition, routing,"
+    },
+    {
+      "start": 956.98,
+      "end": 962.58,
+      "text": "adjudication, synthesis, all of that really important work, I was keeping with"
+    },
+    {
+      "start": 962.58,
+      "end": 967.88,
+      "text": "Fable. And then everything else can be just delegated out. So you"
+    },
+    {
+      "start": 967.88,
+      "end": 971.9,
+      "text": "really want to reserve the primary model for the hardest 10%. And"
+    },
+    {
+      "start": 971.9,
+      "end": 975.54,
+      "text": "the 90 % can really just be delegated out, so to speak."
+    },
+    {
+      "start": 975.8,
+      "end": 978.2,
+      "text": "And so this is kind of a visual of what that looks"
+    },
+    {
+      "start": 978.2,
+      "end": 982.76,
+      "text": "like. And so I started to actually build very specific separate agents"
+    },
+    {
+      "start": 982.76,
+      "end": 987.28,
+      "text": "with their own. I had Fable build out these agent markdown files"
+    },
+    {
+      "start": 987.28,
+      "end": 990.98,
+      "text": "that was specific for a builder, a Scout, a Critic, and an"
+    },
+    {
+      "start": 990.98,
+      "end": 994.12,
+      "text": "Architect. And so based off of my prompting and a built -in"
+    },
+    {
+      "start": 994.12,
+      "end": 1000.7,
+      "text": "doctrine, it sets up when I'm, it has deterministic understanding of like"
+    },
+    {
+      "start": 1000.7,
+      "end": 1002.84,
+      "text": "when I'm. I'm building a project, or when I'm asking for a"
+    },
+    {
+      "start": 1002.84,
+      "end": 1006.98,
+      "text": "goal, it then has a doctrine to actually determine, all right, I'm"
+    },
+    {
+      "start": 1006.98,
+      "end": 1008.4,
+      "text": "going to set up a builder, I'm going to set up a"
+    },
+    {
+      "start": 1008.4,
+      "end": 1012.34,
+      "text": "Scout, whatever is needed for my particular prompt. And then when they're"
+    },
+    {
+      "start": 1012.34,
+      "end": 1015.6,
+      "text": "done, each one of those agents has their own rules. They have"
+    },
+    {
+      "start": 1015.6,
+      "end": 1019.88,
+      "text": "their own ways to set a verdict and make a determination on"
+    },
+    {
+      "start": 1019.88,
+      "end": 1024.96,
+      "text": "that. And then I'll mention it a little bit later, but then"
+    },
+    {
+      "start": 1024.96,
+      "end": 1027.12,
+      "text": "there was this, I developed a skill called EBI skill."
+    },
+    {
+      "start": 1028.82,
+      "end": 1032.5,
+      "text": "And the EBI skill stands for. Even Better If. It was a"
+    },
+    {
+      "start": 1032.5,
+      "end": 1037.38,
+      "text": "methodology that I worked with my team, which was when you're developing"
+    },
+    {
+      "start": 1037.38,
+      "end": 1039.86,
+      "text": "things and you share things with the team, so many times you"
+    },
+    {
+      "start": 1039.86,
+      "end": 1040.12,
+      "text": "would,"
+    },
+    {
+      "start": 1042.76,
+      "end": 1045.28,
+      "text": "I would share something out and ask for feedback, and people would"
+    },
+    {
+      "start": 1045.28,
+      "end": 1048.06,
+      "text": "just say it's great or it's awesome. And I always was like,"
+    },
+    {
+      "start": 1048.14,
+      "end": 1051.42,
+      "text": "but I'm looking for actual feedback. I want to find some improvements."
+    },
+    {
+      "start": 1051.78,
+      "end": 1055.4,
+      "text": "And so I developed this framework. It was called EBI, Even Better"
+    },
+    {
+      "start": 1055.4,
+      "end": 1059.32,
+      "text": "If. And it's like, what's working well, what's not working well, and"
+    },
+    {
+      "start": 1059.32,
+      "end": 1061.38,
+      "text": "what would be even better if. And we started that just like"
+    },
+    {
+      "start": 1061.38,
+      "end": 1064.6,
+      "text": "offline, just as a team, found that like so many people were"
+    },
+    {
+      "start": 1064.6,
+      "end": 1066.68,
+      "text": "like, hey, do you have any, can you, do you have any"
+    },
+    {
+      "start": 1066.68,
+      "end": 1071.92,
+      "text": "EBIs? So people get straight to sometimes the idea of, OK, I"
+    },
+    {
+      "start": 1071.92,
+      "end": 1073.54,
+      "text": "don't want to just tell you it's great. I don't want to"
+    },
+    {
+      "start": 1073.54,
+      "end": 1075.98,
+      "text": "tell you what's wrong. We're like, hey, it could be even better"
+    },
+    {
+      "start": 1075.98,
+      "end": 1078.92,
+      "text": "if. And that really unlocked a lot for me and my team."
+    },
+    {
+      "start": 1079.04,
+      "end": 1083.8,
+      "text": "And so when I was, when we started understanding skills, I developed"
+    },
+    {
+      "start": 1083.8,
+      "end": 1088.06,
+      "text": "a skill called EBI skill that builds that out. And so that's"
+    },
+    {
+      "start": 1088.06,
+      "end": 1091.08,
+      "text": "not what this talk is about, but I actually built into each"
+    },
+    {
+      "start": 1091.08,
+      "end": 1096.88,
+      "text": "one of these agents the aspect of running their own individual improvement"
+    },
+    {
+      "start": 1096.88,
+      "end": 1100.86,
+      "text": "loop after they're done to bring it to the synthesis. And then"
+    },
+    {
+      "start": 1100.86,
+      "end": 1103.98,
+      "text": "it brings it back to the judge in the primary. So this"
+    },
+    {
+      "start": 1103.98,
+      "end": 1109.84,
+      "text": "conductor methodology was the ability to get the best work for that"
+    },
+    {
+      "start": 1109.84,
+      "end": 1113.12,
+      "text": "top 10%. And the 90 % of the things that are being"
+    },
+    {
+      "start": 1113.12,
+      "end": 1115.98,
+      "text": "done outside of that, they all have their own rules. They all"
+    },
+    {
+      "start": 1115.98,
+      "end": 1121.24,
+      "text": "can individually do the task. And then I was getting a receipt"
+    },
+    {
+      "start": 1121.24,
+      "end": 1124.12,
+      "text": "off of every one of my sessions. Every time it's running something,"
+    },
+    {
+      "start": 1124.32,
+      "end": 1128.82,
+      "text": "it gives me a little log. I delegated these. Here's two sonnets."
+    },
+    {
+      "start": 1128.9,
+      "end": 1130.98,
+      "text": "And there's a builder. There's this. And it was really cool to"
+    },
+    {
+      "start": 1130.98,
+      "end": 1134.06,
+      "text": "just see that in real time. And so I actually made that"
+    },
+    {
+      "start": 1134.06,
+      "end": 1137.28,
+      "text": "part of the standard now so that when it's running things, I'm"
+    },
+    {
+      "start": 1137.28,
+      "end": 1140.58,
+      "text": "able to actually have the better understanding of that. The EBI thing,"
+    },
+    {
+      "start": 1140.74,
+      "end": 1144.44,
+      "text": "is that something that you're delegating to one of these skills, or"
+    },
+    {
+      "start": 1144.44,
+      "end": 1148.28,
+      "text": "is it to the people on your team? Sorry, yeah. The it"
+    },
+    {
+      "start": 1148.28,
+      "end": 1150.9,
+      "text": "was an offline. Yeah. The it was an offline methodology that worked"
+    },
+    {
+      "start": 1150.9,
+      "end": 1154.3,
+      "text": "so well that I was wondering a few months ago, was like,"
+    },
+    {
+      "start": 1154.38,
+      "end": 1157.54,
+      "text": "could I build this as a skill? Yeah, what model would you"
+    },
+    {
+      "start": 1157.54,
+      "end": 1161.36,
+      "text": "run that one? Would that be a judgment thing? So yeah, right."
+    },
+    {
+      "start": 1161.58,
+      "end": 1164.72,
+      "text": "So it's a separate skill. And if you want, I'll share that."
+    },
+    {
+      "start": 1164.8,
+      "end": 1165.9,
+      "text": "It's just ebiskill .com."
+    },
+    {
+      "start": 1167.6,
+      "end": 1171.52,
+      "text": "It is probably one of my favorite skills ever. Of course, I'm"
+    },
+    {
+      "start": 1171.52,
+      "end": 1174.7,
+      "text": "biased, but I have shared this out. It's probably one of the"
+    },
+    {
+      "start": 1174.7,
+      "end": 1177.94,
+      "text": "skills that I know that people will use regularly every single day."
+    },
+    {
+      "start": 1178.74,
+      "end": 1182.22,
+      "text": "Highly recommend this. But basically, you can run through different surfaces."
+    },
+    {
+      "start": 1184.04,
+      "end": 1187.84,
+      "text": "Each round, it'll take each one of those and run it through."
+    },
+    {
+      "start": 1188.0,
+      "end": 1191.98,
+      "text": "So whether it's an email copy, or whether it's a website design,"
+    },
+    {
+      "start": 1192.28,
+      "end": 1195.08,
+      "text": "or it's a project, or it's a planning phase, or it's a"
+    },
+    {
+      "start": 1195.08,
+      "end": 1199.06,
+      "text": "spec, I will run it through an EBI round, five deep EBI"
+    },
+    {
+      "start": 1199.06,
+      "end": 1201.4,
+      "text": "rounds. And it will literally try to go and uncover."
+    },
+    {
+      "start": 1203.38,
+      "end": 1208.64,
+      "text": "It will try to go find all the different steps. It'll go"
+    },
+    {
+      "start": 1208.64,
+      "end": 1209.72,
+      "text": "try and find all of them. And it will actually find all"
+    },
+    {
+      "start": 1209.72,
+      "end": 1212.88,
+      "text": "of the different level. It breaks it down by impact, which is"
+    },
+    {
+      "start": 1212.88,
+      "end": 1217.38,
+      "text": "high, medium, and low, and also the level of effort. And so"
+    },
+    {
+      "start": 1217.38,
+      "end": 1221.6,
+      "text": "when it runs through this, it will actually find 8, 10 on"
+    },
+    {
+      "start": 1221.6,
+      "end": 1226.68,
+      "text": "each round, high to medium impact. And then it'll keep going based"
+    },
+    {
+      "start": 1226.68,
+      "end": 1230.26,
+      "text": "on that until there is no more high impact. And then when"
+    },
+    {
+      "start": 1230.26,
+      "end": 1232.58,
+      "text": "it's done with its full synthesis, it can come back with 42"
+    },
+    {
+      "start": 1232.58,
+      "end": 1236.66,
+      "text": "different improvements and how it will implement that. And so that was"
+    },
+    {
+      "start": 1236.66,
+      "end": 1240.0,
+      "text": "this huge unlock. Of course. I used the EBI skill on itself"
+    },
+    {
+      "start": 1240.0,
+      "end": 1244.58,
+      "text": "so many times until it was. Yeah, until it was. You made"
+    },
+    {
+      "start": 1244.58,
+      "end": 1248.26,
+      "text": "this whole thing EBI skill .com? Yeah. I love it. Yeah. It's"
+    },
+    {
+      "start": 1248.26,
+      "end": 1252.3,
+      "text": "great. It's free. Download it. Everyone that I know uses this. It"
+    },
+    {
+      "start": 1252.3,
+      "end": 1256.12,
+      "text": "becomes part of your workflow. You're just like, run EBI rounds. And"
+    },
+    {
+      "start": 1256.12,
+      "end": 1259.22,
+      "text": "it's really cool. Better than the grill me thing I was talking"
+    },
+    {
+      "start": 1259.22,
+      "end": 1262.66,
+      "text": "about. It's like after grill me, do an EBI on the grill"
+    },
+    {
+      "start": 1262.66,
+      "end": 1264.72,
+      "text": "me. Yes. Actually, when you were talking about that yesterday, I was"
+    },
+    {
+      "start": 1264.72,
+      "end": 1267.36,
+      "text": "talking about that. It's great. But what's great about this is that,"
+    },
+    {
+      "start": 1267.36,
+      "end": 1272.74,
+      "text": "also, I built it into the doctrine of the conductor to where"
+    },
+    {
+      "start": 1272.74,
+      "end": 1275.76,
+      "text": "each one of those agents also runs a very simple, where it"
+    },
+    {
+      "start": 1275.76,
+      "end": 1278.7,
+      "text": "runs its own version of how can I make this better. And"
+    },
+    {
+      "start": 1278.7,
+      "end": 1282.56,
+      "text": "it runs its own verdict. And it never degrades. That's the other"
+    },
+    {
+      "start": 1282.56,
+      "end": 1285.76,
+      "text": "big, big rule. It's not just trying to improve and try to"
+    },
+    {
+      "start": 1285.76,
+      "end": 1289.8,
+      "text": "do something. It then looks back and says, is this actually better?"
+    },
+    {
+      "start": 1289.98,
+      "end": 1293.64,
+      "text": "And it's like, if it's not, it will move past it. It's"
+    },
+    {
+      "start": 1293.64,
+      "end": 1295.98,
+      "text": "actually, I've been running this for several months. And a lot of"
+    },
+    {
+      "start": 1295.98,
+      "end": 1296.84,
+      "text": "people are using this now."
+    },
+    {
+      "start": 1298.52,
+      "end": 1300.02,
+      "text": "And it's like, I'm going to do this. Anyway, this wasn't what"
+    },
+    {
+      "start": 1300.02,
+      "end": 1303.92,
+      "text": "this talk is about. But it's one of the coolest skills. Yep."
+    },
+    {
+      "start": 1303.98,
+      "end": 1307.36,
+      "text": "I wanted to ask one more question about the EBI. Is that"
+    },
+    {
+      "start": 1307.36,
+      "end": 1311.28,
+      "text": "mostly for planning, like when you're trying to plan something out? Because"
+    },
+    {
+      "start": 1311.28,
+      "end": 1316.02,
+      "text": "you pointed at something like a writing piece, like writing a post"
+    },
+    {
+      "start": 1316.02,
+      "end": 1320.52,
+      "text": "or something, or just a chunk of code that's small enough. How"
+    },
+    {
+      "start": 1320.52,
+      "end": 1325.52,
+      "text": "can it be easier? The reality is, even when you have challenges,"
+    },
+    {
+      "start": 1325.54,
+      "end": 1331.88,
+      "text": "there are obstacles. Right? So if I've said, here's what I'm trying"
+    },
+    {
+      "start": 1331.88,
+      "end": 1334.7,
+      "text": "to achieve. I feel like there's a better way to do this."
+    },
+    {
+      "start": 1334.82,
+      "end": 1337.58,
+      "text": "I will run it through there. And it just takes such a"
+    },
+    {
+      "start": 1337.58,
+      "end": 1340.58,
+      "text": "different angle of like, all right, well, here's what you're doing. Here's"
+    },
+    {
+      "start": 1340.58,
+      "end": 1344.48,
+      "text": "what's working well. Here's what's not working well. Well, here's an opportunity"
+    },
+    {
+      "start": 1344.48,
+      "end": 1349.94,
+      "text": "for improvement. And so that recursive loop, as it's running through that,"
+    },
+    {
+      "start": 1350.12,
+      "end": 1354.42,
+      "text": "it just gives so many lists of features. What's cool about the"
+    },
+    {
+      "start": 1354.42,
+      "end": 1361.58,
+      "text": "skill is that, in the install, with the markdown, when it runs,"
+    },
+    {
+      "start": 1361.78,
+      "end": 1365.18,
+      "text": "it tries to take your most recent project and figures out one"
+    },
+    {
+      "start": 1365.18,
+      "end": 1368.24,
+      "text": "that it thinks it should run. And it will immediately run an"
+    },
+    {
+      "start": 1368.24,
+      "end": 1371.7,
+      "text": "improvement. And you'll see a list. And you're like, wow, that's great."
+    },
+    {
+      "start": 1372.14,
+      "end": 1376.64,
+      "text": "And so I highly recommend. But yes, I find that it works"
+    },
+    {
+      "start": 1376.64,
+      "end": 1377.0,
+      "text": "for anything."
+    },
+    {
+      "start": 1379.48,
+      "end": 1384.26,
+      "text": "Because it's using a framework of asking it, how can it be"
+    },
+    {
+      "start": 1384.26,
+      "end": 1391.28,
+      "text": "better than that? So I love when people tell me an example"
+    },
+    {
+      "start": 1391.28,
+      "end": 1393.78,
+      "text": "of something that they've done and love it. So if you do"
+    },
+    {
+      "start": 1393.78,
+      "end": 1398.06,
+      "text": "download it, install it, please let me know. All right, so back"
+    },
+    {
+      "start": 1398.06,
+      "end": 1402.64,
+      "text": "to this. I did build EBI into this process. So as I"
+    },
+    {
+      "start": 1402.64,
+      "end": 1406.88,
+      "text": "was going through and understanding with these different agents, and I was"
+    },
+    {
+      "start": 1406.88,
+      "end": 1411.4,
+      "text": "really trying to, again, take the very simple approach, building this within"
+    },
+    {
+      "start": 1411.4,
+      "end": 1417.46,
+      "text": "the actual cloud. Within my cloud infrastructure, I also have this set"
+    },
+    {
+      "start": 1417.46,
+      "end": 1420.82,
+      "text": "up within Codex, too, because I do switch back and forth. And"
+    },
+    {
+      "start": 1420.82,
+      "end": 1426.98,
+      "text": "so I've set up the conductor to run in its own scenario"
+    },
+    {
+      "start": 1426.98,
+      "end": 1430.38,
+      "text": "versus obviously building out. I'm not working. This is not a full"
+    },
+    {
+      "start": 1430.38,
+      "end": 1433.74,
+      "text": "-on harness. This is not work with local models, et cetera. This"
+    },
+    {
+      "start": 1433.74,
+      "end": 1438.92,
+      "text": "is just set up specifically for my workflow within Cloud and Codex."
+    },
+    {
+      "start": 1440.6,
+      "end": 1444.34,
+      "text": "And so this breaks down a little bit more details on the"
+    },
+    {
+      "start": 1444.34,
+      "end": 1450.26,
+      "text": "actual builders. So it sets up a builder, which does all feature"
+    },
+    {
+      "start": 1450.26,
+      "end": 1456.78,
+      "text": "fixes, refactors, tests, scripts, drafts, scout, which does all greps, inventories, config"
+    },
+    {
+      "start": 1456.78,
+      "end": 1462.42,
+      "text": "dumps, status checks, read -only, even research, and some other things like"
+    },
+    {
+      "start": 1462.42,
+      "end": 1465.28,
+      "text": "that that just can be, depending on what it is, can be"
+    },
+    {
+      "start": 1465.28,
+      "end": 1469.68,
+      "text": "done through there. And then the critic, which is also running, especially"
+    },
+    {
+      "start": 1469.68,
+      "end": 1473.3,
+      "text": "when Sonnet 5 came out, it does actually run. This is a"
+    },
+    {
+      "start": 1473.3,
+      "end": 1474.12,
+      "text": "little bit more complicated than the other models. It's below 4 .8,"
+    },
+    {
+      "start": 1474.18,
+      "end": 1477.78,
+      "text": "but it's actually pretty good. It runs. Sonnet 5 in this setup"
+    },
+    {
+      "start": 1477.78,
+      "end": 1483.68,
+      "text": "was working really well. And then I bring back to Opus 4"
+    },
+    {
+      "start": 1483.68,
+      "end": 1488.24,
+      "text": ".8 as the architect. So it's also really kind of measured and"
+    },
+    {
+      "start": 1488.24,
+      "end": 1491.86,
+      "text": "done based on bringing that back and setting up the scaffolding, so"
+    },
+    {
+      "start": 1491.86,
+      "end": 1492.12,
+      "text": "to speak."
+    },
+    {
+      "start": 1493.6,
+      "end": 1496.68,
+      "text": "And then, yeah, every model is pinned down in its own config"
+    },
+    {
+      "start": 1496.68,
+      "end": 1499.4,
+      "text": "file. So every single one has its own set of rules, its"
+    },
+    {
+      "start": 1499.4,
+      "end": 1501.98,
+      "text": "own very specific rules."
+    },
+    {
+      "start": 1503.3,
+      "end": 1505.0,
+      "text": "So I think that's a really good way to approach what they're"
+    },
+    {
+      "start": 1505.0,
+      "end": 1506.5,
+      "text": "being delegated and how they bring it back."
+    },
+    {
+      "start": 1508.32,
+      "end": 1513.1,
+      "text": "So then orchestration is also cache -friendly, so almost by accident. Because"
+    },
+    {
+      "start": 1513.1,
+      "end": 1516.2,
+      "text": "as it's going and as it's running and it's doing its orchestration,"
+    },
+    {
+      "start": 1516.3,
+      "end": 1520.12,
+      "text": "obviously it's keeping the session alive. So here's an example of my"
+    },
+    {
+      "start": 1520.12,
+      "end": 1524.7,
+      "text": "token usage is that 90 % of all my token usage that"
+    },
+    {
+      "start": 1524.7,
+      "end": 1527.96,
+      "text": "was running, because it's running it, is now through an orchestration run."
+    },
+    {
+      "start": 1528.24,
+      "end": 1533.44,
+      "text": "The main orchestrator, the main conductor, is now like, I, you know,"
+    },
+    {
+      "start": 1533.44,
+      "end": 1535.32,
+      "text": "I'm running this organization. And it runs all these background tasks. And"
+    },
+    {
+      "start": 1535.32,
+      "end": 1538.34,
+      "text": "everything's going. And it's like, hey, I'm here. What's also cool about"
+    },
+    {
+      "start": 1538.34,
+      "end": 1542.04,
+      "text": "that is that when it's not thinking and running, I'm able to"
+    },
+    {
+      "start": 1542.04,
+      "end": 1545.1,
+      "text": "like, you know, obviously, like, I can, it'll like, hey, it's in"
+    },
+    {
+      "start": 1545.1,
+      "end": 1548.68,
+      "text": "flight. Here's what's running. Here's who I'm delegating to. And then I'm"
+    },
+    {
+      "start": 1548.68,
+      "end": 1551.94,
+      "text": "able to actually monitor and watch all of the different agents as"
+    },
+    {
+      "start": 1551.94,
+      "end": 1555.98,
+      "text": "they're running. I can view their transcripts. And I used to actually"
+    },
+    {
+      "start": 1555.98,
+      "end": 1559.9,
+      "text": "use, I'll just kind of give an example here. But like, as"
+    },
+    {
+      "start": 1559.9,
+      "end": 1563.02,
+      "text": "I was doing with this specific workshop, is that, you know, it"
+    },
+    {
+      "start": 1563.02,
+      "end": 1566.9,
+      "text": "has all these background tasks. So you know, here's all of the"
+    },
+    {
+      "start": 1566.9,
+      "end": 1571.02,
+      "text": "stuff that was running all of these different agents and all of"
+    },
+    {
+      "start": 1571.02,
+      "end": 1574.92,
+      "text": "their orchestration running through the system that I was just demonstrating. So"
+    },
+    {
+      "start": 1574.92,
+      "end": 1578.52,
+      "text": "you can actually click and watch every single transcript. I have the"
+    },
+    {
+      "start": 1578.52,
+      "end": 1581.16,
+      "text": "settings set up to be very verbose transcripts. I like to see"
+    },
+    {
+      "start": 1581.16,
+      "end": 1584.36,
+      "text": "everything that is going on. And I can stop it in real"
+    },
+    {
+      "start": 1584.36,
+      "end": 1587.48,
+      "text": "time. But what's great is that you'll see here at the very"
+    },
+    {
+      "start": 1587.48,
+      "end": 1590.08,
+      "text": "bottom, this is what I was talking about, is like, here's what,"
+    },
+    {
+      "start": 1590.14,
+      "end": 1593.26,
+      "text": "it gives me this little like hair, like I ran basically, Fable"
+    },
+    {
+      "start": 1593.26,
+      "end": 1597.36,
+      "text": "ran these very specific things. Otherwise, it would say like, all right,"
+    },
+    {
+      "start": 1598.1,
+      "end": 1601.52,
+      "text": "it'll show me the delegation. It'll show me the delegation process. So"
+    },
+    {
+      "start": 1601.52,
+      "end": 1602.26,
+      "text": "it has that transparency."
+    },
+    {
+      "start": 1603.7,
+      "end": 1607.34,
+      "text": "And of course, all of this is measured and tracked within the"
+    },
+    {
+      "start": 1607.34,
+      "end": 1616.12,
+      "text": "receipts as well. So so yeah, so you can, I built this"
+    },
+    {
+      "start": 1616.12,
+      "end": 1618.1,
+      "text": "out as also its own skill."
+    },
+    {
+      "start": 1619.52,
+      "end": 1624.6,
+      "text": "So two things. One, this is something that does modify your Cloud"
+    },
+    {
+      "start": 1624.6,
+      "end": 1627.92,
+      "text": ".md file. And so you will, it is something that also you"
+    },
+    {
+      "start": 1627.92,
+      "end": 1633.12,
+      "text": "can uninstall. So I would recommend, as always, because it's modifying your"
+    },
+    {
+      "start": 1633.12,
+      "end": 1636.38,
+      "text": "Cloud .md file. I built it to where you can install it."
+    },
+    {
+      "start": 1636.46,
+      "end": 1638.62,
+      "text": "You can run it. But for any reason you want to uninstall"
+    },
+    {
+      "start": 1638.62,
+      "end": 1642.08,
+      "text": "it, you can uninstall it. But I've been running this now for"
+    },
+    {
+      "start": 1642.08,
+      "end": 1647.14,
+      "text": "the last like 10, 12 days. I haven't made any modifications to"
+    },
+    {
+      "start": 1647.14,
+      "end": 1650.66,
+      "text": "it. I'm finding that it's become very efficient."
+    },
+    {
+      "start": 1652.52,
+      "end": 1655.06,
+      "text": "And so yeah, a little bit of results on that. As I'm"
+    },
+    {
+      "start": 1655.06,
+      "end": 1658.34,
+      "text": "seeing about up to 80 % less plan usage from before I"
+    },
+    {
+      "start": 1658.34,
+      "end": 1662.32,
+      "text": "had had it installed. I've been tracking it. Seeing about, again, seeing"
+    },
+    {
+      "start": 1662.32,
+      "end": 1664.72,
+      "text": "about a 31 % cost reduction."
+    },
+    {
+      "start": 1666.34,
+      "end": 1669.92,
+      "text": "And it's all been measured since I've been running this. And so"
+    },
+    {
+      "start": 1669.92,
+      "end": 1671.12,
+      "text": "yeah."
+    },
+    {
+      "start": 1673.6,
+      "end": 1674.44,
+      "text": "All right, that's it."
+    }
+  ],
   "widgets": [],
   "assets": {
     "reels_dir": "session-2-ct/reels",

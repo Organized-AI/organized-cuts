@@ -1,0 +1,1338 @@
+{
+  "name": "vault-henry-mastering-ai-loops",
+  "title": "Henry - Mastering AI Loops",
+  "speaker": "Henry - Mastering AI Loops",
+  "media_url": null,
+  "vault_key": "07 - Henry - Mastering AI Loops.mp4",
+  "duration": 1717.87,
+  "twelvelabs": {
+    "index_name": null,
+    "index_id": null,
+    "video_id": null
+  },
+  "twelvelabs_parts": [
+    {
+      "label": "Part 1",
+      "offset": 0.0,
+      "index_id": "6a57fc22616efc4733f90b44",
+      "video_id": "6a58023e64280805ba2b044d"
+    },
+    {
+      "label": "Part 2",
+      "offset": 1286.76,
+      "index_id": "6a57fc22616efc4733f90b44",
+      "video_id": "6a580440616efc4733f90ed1"
+    }
+  ],
+  "masters": {},
+  "clips": [
+    {
+      "id": "Part 1-1",
+      "hook": "Anatomy of a Loop",
+      "kind": "chapter",
+      "start": 0.0,
+      "end": 82.0,
+      "caption": "Trigger, action, stop condition — goal, verification, and what 'done' objectively means."
+    },
+    {
+      "id": "Part 1-2",
+      "hook": "When You Need a Loop",
+      "kind": "chapter",
+      "start": 82.0,
+      "end": 124.0,
+      "caption": "Most tasks don't need loops; use one when work repeats and AI can check what done means."
+    },
+    {
+      "id": "Part 1-3",
+      "hook": "Loop Structures",
+      "kind": "chapter",
+      "start": 124.0,
+      "end": 165.0,
+      "caption": "Solo loops, major + checker, and manager loops that orchestrate subagents."
+    },
+    {
+      "id": "Part 1-4",
+      "hook": "Five Loop Patterns",
+      "kind": "chapter",
+      "start": 165.0,
+      "end": 227.0,
+      "caption": "Stateless, self-learning, multi-agent, verification, and workflow-improvement loops."
+    },
+    {
+      "id": "Part 1-5",
+      "hook": "Retrospectives & Matching",
+      "kind": "chapter",
+      "start": 227.0,
+      "end": 290.0,
+      "caption": "End every loop by asking how to improve it; match the pattern to the task's shape."
+    },
+    {
+      "id": "Part 1-6",
+      "hook": "Stateless & Skill Examples",
+      "kind": "chapter",
+      "start": 290.0,
+      "end": 373.0,
+      "caption": "Get every test passing with a Haiku checker; a reusable skill that improves each run."
+    },
+    {
+      "id": "Part 1-7",
+      "hook": "Four-Reviewer Multi-Agent",
+      "kind": "chapter",
+      "start": 373.0,
+      "end": 457.0,
+      "caption": "One orchestrator, four persona lenses reviewing the same work across multiple rounds."
+    },
+    {
+      "id": "Part 1-8",
+      "hook": "Super Loops",
+      "kind": "chapter",
+      "start": 457.0,
+      "end": 521.0,
+      "caption": "A manager loop spawning worker loops with shared memory handoffs between subagents."
+    },
+    {
+      "id": "Part 1-9",
+      "hook": "Parallelism & Isolation",
+      "kind": "chapter",
+      "start": 521.0,
+      "end": 562.0,
+      "caption": "Fold time by running scoped worker loops in parallel, each isolated to its own scope."
+    },
+    {
+      "id": "Part 1-10",
+      "hook": "Five-Part Prompt Formula",
+      "kind": "chapter",
+      "start": 562.0,
+      "end": 624.0,
+      "caption": "Goal, done-when, tools, verify, unveil — the prompt skeleton for every loop."
+    },
+    {
+      "id": "Part 1-11",
+      "hook": "Stop-Condition Pitfalls",
+      "kind": "chapter",
+      "start": 624.0,
+      "end": 770.0,
+      "caption": "'Until satisfied' burns infinite tokens; visual checks — does the 3D plane actually render?"
+    },
+    {
+      "id": "Part 1-12",
+      "hook": "Eight Reliability Rules",
+      "kind": "chapter",
+      "start": 770.0,
+      "end": 852.0,
+      "caption": "Checkable goals, separate checkers, logging, memory, hard stops — and the 8.5M-token cautionary tale."
+    },
+    {
+      "id": "Part 1-13",
+      "hook": "Token-Efficiency Tips",
+      "kind": "chapter",
+      "start": 852.0,
+      "end": 978.0,
+      "caption": "Summarize context, Headroom compression, caching, memory hygiene, clean agent handoffs."
+    },
+    {
+      "id": "Part 1-14",
+      "hook": "Q&A: Harness & Hygiene",
+      "kind": "chapter",
+      "start": 978.0,
+      "end": 1286.76,
+      "caption": "Waves, creative use cases, goal discipline, and observing many loops at once."
+    },
+    {
+      "id": "Part 2-1",
+      "hook": "Introduction to Agents",
+      "kind": "chapter",
+      "start": 1286.76,
+      "end": 1326.76,
+      "caption": "The speaker begins by reflecting on a past project involving 700 agents, emphasizing the value of iterative learning despite unexpected duration."
+    },
+    {
+      "id": "Part 2-2",
+      "hook": "Model Orchestration",
+      "kind": "chapter",
+      "start": 1326.76,
+      "end": 1371.76,
+      "caption": "He explains his system of using multiple models like Haiku, One, and LightLM, routing tasks based on specific needs and delegating to specialized models."
+    },
+    {
+      "id": "Part 2-3",
+      "hook": "Automated Validation",
+      "kind": "chapter",
+      "start": 1371.76,
+      "end": 1421.76,
+      "caption": "The speaker describes a process where multiple models act as validators, simulating a consortium to judge outputs and improve over time."
+    },
+    {
+      "id": "Part 2-4",
+      "hook": "Iterative Learning",
+      "kind": "chapter",
+      "start": 1421.76,
+      "end": 1471.76,
+      "caption": "He highlights the importance of self-learning loops, prompting variations, and refining processes based on what works across iterations."
+    },
+    {
+      "id": "Part 2-5",
+      "hook": "Data Serialization",
+      "kind": "chapter",
+      "start": 1471.76,
+      "end": 1521.76,
+      "caption": "The speaker outlines his approach to logging and storing data using vector databases and .md files for redundancy and traceability."
+    },
+    {
+      "id": "Part 2-6",
+      "hook": "Task Management",
+      "kind": "chapter",
+      "start": 1521.76,
+      "end": 1571.76,
+      "caption": "He recommends using tools like Notion or Asana with open tickets and memory IDs to preserve context across long-term projects."
+    },
+    {
+      "id": "Part 2-7",
+      "hook": "Personal Motivation",
+      "kind": "chapter",
+      "start": 1571.76,
+      "end": 1601.76,
+      "caption": "The speaker shares that this talk is tied to his upcoming birthday and a personal challenge to grow through discomfort."
+    },
+    {
+      "id": "Part 2-8",
+      "hook": "QR Code & Connection",
+      "kind": "chapter",
+      "start": 1601.76,
+      "end": 1641.76,
+      "caption": "He presents a QR code linking to his website, offering contact options and a discount, encouraging audience engagement."
+    },
+    {
+      "id": "Part 2-9",
+      "hook": "Closing Remarks",
+      "kind": "chapter",
+      "start": 1641.76,
+      "end": 1671.76,
+      "caption": "The speaker thanks the audience and previews the next day’s session, emphasizing deep dives into tokenization, observability, and agent systems."
+    },
+    {
+      "id": "Part 2-10",
+      "hook": "Networking Call",
+      "kind": "chapter",
+      "start": 1671.76,
+      "end": 1709.76,
+      "caption": "He invites attendees to network, reiterates the next day’s schedule, and reminds them to clean up after themselves before leaving."
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0.24,
+      "end": 7.72,
+      "text": "So a couple of things, I'm just going to go straight to the meat of it all. A loop is pretty much three things. You trigger it, it has an"
+    },
+    {
+      "start": 7.26,
+      "end": 16.4,
+      "text": "it has an action and a stop condition. This is pretty much a light wireframe of what the entire process is. Yes, you can put memory nodes,"
+    },
+    {
+      "start": 15.28,
+      "end": 24.8,
+      "text": "put memory nodes, yes, you can put checks and balances, but the core essence is what's your goal, the reason from the goal, is the goal done, done. It's"
+    },
+    {
+      "start": 23.36,
+      "end": 34.06,
+      "text": "done, done. It's not an app, use a tool, observe, and then loop until it hits that. That's the essence of the loop. As"
+    },
+    {
+      "start": 31.7,
+      "end": 41.38,
+      "text": "the loop. As loops progress, individual prompts get worse over time because context wastes time, wastes iterations, but"
+    },
+    {
+      "start": 39.88,
+      "end": 49.04,
+      "text": "wastes iterations, but self -learning loops get better over time and essentially as you learn, as the AI loop learns, it self -iterates. So"
+    },
+    {
+      "start": 47.62,
+      "end": 56.8,
+      "text": "self -iterates. So it's a lot less of your input to make those loops better. So the people learn on every"
+    },
+    {
+      "start": 56.04,
+      "end": 65.08,
+      "text": "learn on every loop. The goal, the verification, what does done actually mean? The state and end result as an objective, objectively a"
+    },
+    {
+      "start": 63.72,
+      "end": 73.54,
+      "text": "objective, objectively a process, a metric, not a feeling, iterate until x equals y, keep going until it looks good. The"
+    },
+    {
+      "start": 72.36,
+      "end": 81.56,
+      "text": "looks good. The verification, how does it check that? Define exactly how the loop tests its own work. A screenshot comparison, a passing"
+    },
+    {
+      "start": 79.62,
+      "end": 88.98,
+      "text": "comparison, a passing test, a rubric score, no check, no real stop condition. You always want the verification to understand what the goal is. We'll"
+    },
+    {
+      "start": 87.74,
+      "end": 97.9,
+      "text": "goal is. We'll go through that a little bit more. I'm going for a little bit fast here, so at any time, tell me to slow down. Well,"
+    },
+    {
+      "start": 96.1,
+      "end": 105.28,
+      "text": "slow down. Well, most tasks really don't need loops, right? So you'll start a task, does it repeat or take many unknown steps?"
+    },
+    {
+      "start": 104.36,
+      "end": 113.52,
+      "text": "many unknown steps? Just fine. If it does, can AI check what done means for the loop itself? Do it yourself or build a loop, right?"
+    },
+    {
+      "start": 112.84,
+      "end": 122.42,
+      "text": "a loop, right? Can you validate or set instructions for an AI agent to understand what done actually is? There's"
+    },
+    {
+      "start": 118.24,
+      "end": 127.52,
+      "text": "actually is? There's a couple loop structures. You have a solo loop, a major checker, a"
+    },
+    {
+      "start": 126.32,
+      "end": 136.06,
+      "text": "major checker, a manager, and an out. A solo loop is essentially one looped agent that goes through the loop process on its own. A"
+    },
+    {
+      "start": 134.38,
+      "end": 143.44,
+      "text": "its own. A major and checker is essentially an orchestrator where it has the instructions of what the loop's success rate is, and it'll start"
+    },
+    {
+      "start": 142.48,
+      "end": 152.92,
+      "text": "and it'll start sub -agenting out the actual work, and then loop around itself, itself to make sure the end result boots back. And"
+    },
+    {
+      "start": 150.42,
+      "end": 159.54,
+      "text": "boots back. And then the management helpers. One orchestrate coordinates subagents can lead to add its own piece of the goal, right?"
+    },
+    {
+      "start": 158.9,
+      "end": 168.08,
+      "text": "the goal, right? So bigger swarm, multiple parallel processes, and yeah. So sorry about the nervous, by the way. Now you're"
+    },
+    {
+      "start": 166.64,
+      "end": 176.58,
+      "text": "way. Now you're doing great. I appreciate it. Happy birthday. Ah, thank you. Yeah. Thank you. Woo. Yeah. So five"
+    },
+    {
+      "start": 174.24,
+      "end": 183.34,
+      "text": "Yeah. So five groups of patterns. Every group fits one of the five patterns. It's either stateless, no memory, runs the check, goes through, and iterates"
+    },
+    {
+      "start": 182.58,
+      "end": 191.58,
+      "text": "through, and iterates quickly. Self -learning loops. These are tasks that you will probably reuse or re -architect. So it's like, hey, split testing. Which of these variants"
+    },
+    {
+      "start": 190.92,
+      "end": 200.18,
+      "text": "of these variants actually won? Why? And then reiterate and learn what the best is or best version of that last test is, and iterate, iterate on"
+    },
+    {
+      "start": 199.14,
+      "end": 208.2,
+      "text": "iterate, iterate on top of the learnings. Multi -agents, same thing. You will split multiple subagents to orchestrate the work on each. Sub"
+    },
+    {
+      "start": 207.26,
+      "end": 216.34,
+      "text": "on each. Sub -loop. And then the verification loops. These are the goal. Has the goal been done? How has it"
+    },
+    {
+      "start": 215.78,
+      "end": 225.16,
+      "text": "How has it been done? Can it actually verify that the goal's been done? And then workflow improvements. That's the overall architecture, right? You create a loop. Then"
+    },
+    {
+      "start": 224.14,
+      "end": 233.8,
+      "text": "a loop. Then a lot of us don't do this. We do this at developers at an early age. But it's retrospective. When you're done with the loop, ask"
+    },
+    {
+      "start": 232.7,
+      "end": 241.76,
+      "text": "the loop, ask your AI, how can we make this better? Right? That's the workflow improvement process. So at the end of everything, even though it's completed,"
+    },
+    {
+      "start": 241.06,
+      "end": 250.94,
+      "text": "though it's completed, write down your notes, your gotchas, your understanding, and tips and tricks to make that whole loop better over time. All"
+    },
+    {
+      "start": 248.96,
+      "end": 258.54,
+      "text": "over time. All right. Let's see. Match the loop to what you actually need. A checkable one -time feature? Stateless."
+    },
+    {
+      "start": 256.96,
+      "end": 266.56,
+      "text": "-time feature? Stateless. A skill workflow you'll need to reuse a lot? Learning. So self -improve the more you use it. A review with more than one lens? Multi"
+    },
+    {
+      "start": 265.18,
+      "end": 274.28,
+      "text": "one lens? Multi -agent. Then agent loops? Factual safety style and parallel? Each individual task? Get audited and"
+    },
+    {
+      "start": 272.64,
+      "end": 281.68,
+      "text": "Get audited and dished out to your sub -agents. Output quality matters? Work speed? Verification? Verification, I"
+    },
+    {
+      "start": 279.3,
+      "end": 288.4,
+      "text": "Verification? Verification, I would suggest every loop has a verification loop in its own. Can it iterate? Can it create a task? Can it take a screenshot?"
+    },
+    {
+      "start": 287.8,
+      "end": 297.14,
+      "text": "take a screenshot? Can it validate? The process itself needs to get a workflow improvement loop, a third agent on it, and an agent loop entirely. That's"
+    },
+    {
+      "start": 295.8,
+      "end": 305.0,
+      "text": "loop entirely. That's a retrospective of what I was mentioning earlier. All right. A couple of examples. Right. Real world examples on stateless"
+    },
+    {
+      "start": 303.92,
+      "end": 313.08,
+      "text": "examples on stateless loops. The goal? Get every test in the suite to pass. The goal command sets this directly from the prompt. The stop condition?"
+    },
+    {
+      "start": 312.08,
+      "end": 321.14,
+      "text": "The stop condition? A smaller model like a Haiku, as if you're using different models to save on tokens, double checks and work against requirements before it stops."
+    },
+    {
+      "start": 320.14,
+      "end": 329.64,
+      "text": "before it stops. What happened? Fogged roof code? Re -ran the suite? Kept fixing tailors until all tests pass, then market will complete. The"
+    },
+    {
+      "start": 328.44,
+      "end": 337.76,
+      "text": "will complete. The lesson? Verification process. Add a rollback line to your agent's instructions file, so a broken run can revert itself and"
+    },
+    {
+      "start": 336.54,
+      "end": 346.52,
+      "text": "revert itself and keep iterating until the entire loop is done. What's up? Let's see. A skill that gets better over time as"
+    },
+    {
+      "start": 344.72,
+      "end": 354.38,
+      "text": "over time as it runs. Make a reusable skill, manageable, better each time the skill loops and commands it runs. Stop"
+    },
+    {
+      "start": 352.84,
+      "end": 362.26,
+      "text": "it runs. Stop condition? The skill improver keeps running until it finds no more improvements to make. What happens? Each round? Ran"
+    },
+    {
+      "start": 360.58,
+      "end": 370.02,
+      "text": "Each round? Ran the task with and without the skill, compared the result, wrote the difference into learning files, and re -iterated."
+    },
+    {
+      "start": 369.0,
+      "end": 378.98,
+      "text": "and re -iterated. Take the highlights, you understand, and then keep itself improvement until there are no more improvements. Four"
+    },
+    {
+      "start": 375.86,
+      "end": 385.06,
+      "text": "more improvements. Four reviewers, one orchestrator, no bias maps. Review one piece of work, from"
+    },
+    {
+      "start": 384.18,
+      "end": 393.6,
+      "text": "of work, from four angles, at once, instead of one agent covering everything. This one's actually one of my favorites. So, like, let's say, you're"
+    },
+    {
+      "start": 391.76,
+      "end": 400.92,
+      "text": "let's say, you're creating a feature, right? When you create a feature, you want to say, four different personas, your D2C"
+    },
+    {
+      "start": 397.86,
+      "end": 407.02,
+      "text": "personas, your D2C mom and pop shop, your dentistry, your enterprise. Have an agentic subagent"
+    },
+    {
+      "start": 404.9,
+      "end": 414.18,
+      "text": "an agentic subagent test your product, aim those four lenses, get each individual results, and then see what comes,"
+    },
+    {
+      "start": 413.38,
+      "end": 423.88,
+      "text": "see what comes, and then nominate each of them to have. Four agents, back to web search, explain relevance, safety, clarity, and independence. What"
+    },
+    {
+      "start": 421.1,
+      "end": 430.38,
+      "text": "and independence. What happens? The orchestrator ran every agent around, let me get some water. Alright,"
+    },
+    {
+      "start": 427.6,
+      "end": 436.94,
+      "text": "some water. Alright, so, the"
+    },
+    {
+      "start": 429.9,
+      "end": 439.02,
+      "text": "Alright, so, the orchestrator ran every agent around, and"
+    },
+    {
+      "start": 437.78,
+      "end": 446.98,
+      "text": "agent around, and applied. Round one fixes, and then re -ran four, four, four, two rounds. So, four subagents ran twice,"
+    },
+    {
+      "start": 445.74,
+      "end": 455.58,
+      "text": "subagents ran twice, multiple rounds, talking about eight rounds, between two subagents, making each previous round better than the last. Let's"
+    },
+    {
+      "start": 453.22,
+      "end": 462.56,
+      "text": "the last. Let's see. A loop can spawn its own loops. So now, this is what we call super loops. A"
+    },
+    {
+      "start": 460.74,
+      "end": 469.74,
+      "text": "super loops. A super loop is a manager loop that handles worker loops that self -iterate the entire loop itself. Right,"
+    },
+    {
+      "start": 467.92,
+      "end": 477.36,
+      "text": "loop itself. Right, so can a orchestrator manage a loop? Here's the end goal. This is how we want to validate the goal. And here's"
+    },
+    {
+      "start": 476.24,
+      "end": 485.52,
+      "text": "goal. And here's subagents to then create subgoals. Right, so a developer, QA, did a verifier for that feature set, while manager"
+    },
+    {
+      "start": 483.9,
+      "end": 493.6,
+      "text": "set, while manager loop loops itself. Right, so a super loop, it's a bigger, a loop within the loop. A"
+    },
+    {
+      "start": 491.56,
+      "end": 500.88,
+      "text": "the loop. A couple things, essentially that. So that's the manager loop. It'll reason, delegate, observe. You have a worker loop, owns,"
+    },
+    {
+      "start": 499.5,
+      "end": 508.68,
+      "text": "worker loop, owns, reason, acts, and observe. And then you have another worker loop. And then you'll have a shared memory source as a handoff, right? Whatever lessons"
+    },
+    {
+      "start": 507.48,
+      "end": 516.66,
+      "text": "right? Whatever lessons the subworker loop learns, the rest of the workers also get that lesson across each subworker. And it'll"
+    },
+    {
+      "start": 514.88,
+      "end": 525.0,
+      "text": "subworker. And it'll reiterate, right? Let's see. To pay off speed and containment. Parallelism"
+    },
+    {
+      "start": 522.44,
+      "end": 531.5,
+      "text": "and containment. Parallelism and isolation. So parallelism, I like folding time on itself. We don't have a lot of time"
+    },
+    {
+      "start": 531.06,
+      "end": 540.82,
+      "text": "lot of time in life. So if you can make things faster, more efficient, you're saving a lot more time for yourself, right? We have a very small"
+    },
+    {
+      "start": 539.58,
+      "end": 549.9,
+      "text": "a very small window of time before AI replaces all of us. So let's get there faster before that happens. Same"
+    },
+    {
+      "start": 545.84,
+      "end": 554.9,
+      "text": "that happens. Same thing in clinical, isolation. Each worker runs its own scope. Feature sets, things like"
+    },
+    {
+      "start": 553.86,
+      "end": 562.92,
+      "text": "sets, things like individual scope, things that don't depend on other loops. You want them to run in isolation and then maybe throw errorization"
+    },
+    {
+      "start": 562.08,
+      "end": 571.52,
+      "text": "maybe throw errorization on top of that. Yeah. I know I'm going super fast and kind of dense, so bear with me. Five parts"
+    },
+    {
+      "start": 569.06,
+      "end": 578.2,
+      "text": "me. Five parts in order. So always if you have a goal, done when, tools, verify, unveil. Right? So let's get all"
+    },
+    {
+      "start": 577.56,
+      "end": 586.56,
+      "text": "let's get all 40 unit tests passing. Done when, tests, zero. Meaning all 40 tests are going to be done. What are tools that you need to run"
+    },
+    {
+      "start": 586.14,
+      "end": 595.26,
+      "text": "need to run and how do you verify that this is done? Unveil, read the error, make one fix, Right?"
+    },
+    {
+      "start": 593.16,
+      "end": 603.19,
+      "text": "one fix, Right? So that's in the prompt that you want. Save"
+    },
+    {
+      "start": 597.94,
+      "end": 607.01,
+      "text": "you want. Save five parts, but who doesn't want to try this test? So the first one was"
+    },
+    {
+      "start": 606.51,
+      "end": 613.01,
+      "text": "first one was the original loop. This is what we call a super loop or like an orchestrated loop within it. The goal will be to find a couple of"
+    },
+    {
+      "start": 612.75,
+      "end": 621.69,
+      "text": "a couple of APIs to the new error pattern that went off until five was maxed and passed. One worker per five, up to four self agents at a time,"
+    },
+    {
+      "start": 620.91,
+      "end": 630.11,
+      "text": "at a time, re -looping the entire loop individually. So these are four individual workers in conflict where"
+    },
+    {
+      "start": 627.83,
+      "end": 637.23,
+      "text": "in conflict where the top full orchestrates all parallel work. Thumbnail"
+    },
+    {
+      "start": 631.65,
+      "end": 641.41,
+      "text": "parallel work. Thumbnail scoring, marketing, make 10 thumbnail"
+    },
+    {
+      "start": 638.51,
+      "end": 647.55,
+      "text": "make 10 thumbnail concepts. Score each against a rubric. Keep your rubric until the strongest one. Stop"
+    },
+    {
+      "start": 646.13,
+      "end": 655.21,
+      "text": "strongest one. Stop condition, until satisfied. Too objective for a real world stop. You can't really, creativity, you can't measure creativity unless you"
+    },
+    {
+      "start": 654.07,
+      "end": 663.13,
+      "text": "creativity unless you like split task metrics. So that's not a real good stop condition. So I will keep iterating on something that is like"
+    },
+    {
+      "start": 661.99,
+      "end": 670.99,
+      "text": "that is like tangible or scoreable. And then keep, something like this will keep iterating without a hard ceiling"
+    },
+    {
+      "start": 670.19,
+      "end": 679.25,
+      "text": "a hard ceiling and just keep going. You'll burn tons of tokens. It's like an infinite loop. Let's go next. So"
+    },
+    {
+      "start": 677.07,
+      "end": 686.19,
+      "text": "go next. So this one will be pretty simple. It's like build a 3D plane, then open a browser, spin it, and then check that"
+    },
+    {
+      "start": 685.27,
+      "end": 694.43,
+      "text": "then check that it actually renders. That's the goal. The stop condition is visually check, actually validate this. In the browser, the plane"
+    },
+    {
+      "start": 692.69,
+      "end": 701.97,
+      "text": "browser, the plane renders, spins as expected. What happens? A visual plus function verification and not just does"
+    },
+    {
+      "start": 701.03,
+      "end": 710.43,
+      "text": "not just does the code compile, right? You want the visual validation that it works. Lesson not perfect, but far ahead as a single prompt. And"
+    },
+    {
+      "start": 709.09,
+      "end": 718.31,
+      "text": "single prompt. And checking the actual rendering output catches what reading code alone does. So you always want a visual and a code like does the task"
+    },
+    {
+      "start": 717.53,
+      "end": 726.09,
+      "text": "does the task unit task cool? Does it actually work and does what you want it to do on the UI level? And you want two validation points on something"
+    },
+    {
+      "start": 724.89,
+      "end": 734.41,
+      "text": "points on something like that. What was it? Recreating a loop. Dabby, photo, and QHTML, CSS screenshots,"
+    },
+    {
+      "start": 732.81,
+      "end": 742.07,
+      "text": "QHTML, CSS screenshots, each version and compare. So essentially recreating an image with CSS and does it keep work?"
+    },
+    {
+      "start": 741.31,
+      "end": 750.81,
+      "text": "it keep work? The first pass is always the worst. So by pass nine or 10, you'll get a better image. Same thing, score is better than nine, hard"
+    },
+    {
+      "start": 749.71,
+      "end": 759.37,
+      "text": "than nine, hard cap at eight passes. Essentially, you run it nine times, by the eighth iteration of that, it's actually better than the first iteration. The"
+    },
+    {
+      "start": 757.51,
+      "end": 766.55,
+      "text": "first iteration. The loop ran past seven passes then stopped at the cap. The results still didn't match the source code."
+    },
+    {
+      "start": 765.77,
+      "end": 775.19,
+      "text": "the source code. Lesson, proof is only as good as its chance. A hard cap prevents runaway costs, but"
+    },
+    {
+      "start": 773.57,
+      "end": 782.83,
+      "text": "runaway costs, but doesn't prevent a validation step that can truly judge the results. So something like this, where, let's say, you do call"
+    },
+    {
+      "start": 781.71,
+      "end": 790.77,
+      "text": "you do call hard limit on your subagent's loops at nine, and it still doesn't pass, you'll rerun the entire loop again. So you'll do a compound"
+    },
+    {
+      "start": 790.11,
+      "end": 799.39,
+      "text": "do a compound nine on nine on nine until you get the results. Eight things every reliable"
+    },
+    {
+      "start": 797.85,
+      "end": 807.03,
+      "text": "things every reliable loop needs. Checkable goals, good verification tools, a separate checker. You've got a subagent or a whole different"
+    },
+    {
+      "start": 806.13,
+      "end": 815.19,
+      "text": "a whole different model that validates. Logging every pass, making sure your to -do list, your final segments, your structured code gets checked off on every step"
+    },
+    {
+      "start": 814.49,
+      "end": 824.03,
+      "text": "on every step and never skipping any step. Hard stop condition, how do you know when a loop is done? Whether it's a swarm count, validation,"
+    },
+    {
+      "start": 821.99,
+      "end": 831.29,
+      "text": "swarm count, validation, QA or checks, and then memory across iterations. When a subagent learns something, you"
+    },
+    {
+      "start": 830.09,
+      "end": 839.81,
+      "text": "learns something, you don't want to lose that context. You want all the rest of your subagents within that loop to also learn from that previous pass. Plan"
+    },
+    {
+      "start": 837.75,
+      "end": 846.87,
+      "text": "previous pass. Plan before act. Everything we do really should be planned before execution. The cost of that work. So"
+    },
+    {
+      "start": 846.09,
+      "end": 855.25,
+      "text": "that work. So this one's actually interesting. This one I created a loop and went out. It ran for three days"
+    },
+    {
+      "start": 854.45,
+      "end": 863.89,
+      "text": "for three days and 8 .5 million tokens and about 700 subagents. So be very cautious"
+    },
+    {
+      "start": 862.61,
+      "end": 872.57,
+      "text": "be very cautious with that one. Quick tips to make loops run leaner. Token usage. Summarize"
+    },
+    {
+      "start": 870.55,
+      "end": 880.33,
+      "text": "Token usage. Summarize old contacts instead of resending a full history pass. Or something like this if you guys are really token aware. Headroom."
+    },
+    {
+      "start": 877.29,
+      "end": 886.61,
+      "text": "token aware. Headroom. If you guys don't know that, check it out. They'll compress your prompts so it's more efficient on the LLM."
+    },
+    {
+      "start": 885.77,
+      "end": 895.05,
+      "text": "on the LLM. That saves about 70 -80 % of your token usage. Headroom AI. It's open source. You can pull it up. So,"
+    },
+    {
+      "start": 893.85,
+      "end": 902.85,
+      "text": "it up. So, trim the output to whatever the next steps needs. Now they're probably no special characters, no emojis. Make it as lean as possible so you're token efficient."
+    },
+    {
+      "start": 902.17,
+      "end": 911.45,
+      "text": "you're token efficient. Cache, stable context, system prompts, schemas instead of rebuilding. This is mostly like vectoring your database, vectoring your input, vectoring"
+    },
+    {
+      "start": 910.35,
+      "end": 919.47,
+      "text": "your input, vectoring your output. Same thing with memory. Write short terms fast fast and not a priority transcript. Gotchas, understanding, learning"
+    },
+    {
+      "start": 917.79,
+      "end": 926.89,
+      "text": "Gotchas, understanding, learning should be individual files and not concentrated in one big giant file. Promote only two or three long term memory, not"
+    },
+    {
+      "start": 925.89,
+      "end": 934.91,
+      "text": "term memory, not every given media set. A lot of people's Claude files are a mess for no reason. You'll"
+    },
+    {
+      "start": 932.97,
+      "end": 942.15,
+      "text": "no reason. You'll want to take your big files and then segment them out by context aware knowledge and then reuse only those"
+    },
+    {
+      "start": 940.93,
+      "end": 950.19,
+      "text": "reuse only those files when you need them. You have each loop to install namespace so memories won't be crossed. Agent handoff,"
+    },
+    {
+      "start": 947.33,
+      "end": 956.67,
+      "text": "crossed. Agent handoff, fast instruction result, gold output, not a raw chat log. So, that's pretty simple. Name"
+    },
+    {
+      "start": 955.55,
+      "end": 964.65,
+      "text": "pretty simple. Name the stop condition explicitly so that the next agent knows what that means. Log every handoff so a stuck"
+    },
+    {
+      "start": 963.61,
+      "end": 972.95,
+      "text": "so a stuck chain is easy to trace back and resume. Logging testing is the developer's bane of existence but it's"
+    },
+    {
+      "start": 971.07,
+      "end": 980.97,
+      "text": "existence but it's very useful. And that's about it. I have a"
+    },
+    {
+      "start": 977.49,
+      "end": 986.65,
+      "text": "I have a question for you. So, how do you set up your harness for, this"
+    },
+    {
+      "start": 985.97,
+      "end": 993.61,
+      "text": "harness for, this is awesome information by the way, how do you set up your harness for this? Are you driving all this through agents .ind files or are you"
+    },
+    {
+      "start": 992.83,
+      "end": 1001.89,
+      "text": "or are you setting up skills? Do you have a repo to reference? Yeah, so everything's slightly different. It's a lot of research that comes into it from"
+    },
+    {
+      "start": 1001.41,
+      "end": 1009.63,
+      "text": "into it from the beginning. Whether it's a small loop or a giant orchestrated loop, it's the same five steps that I give you. Like what the goal is, how"
+    },
+    {
+      "start": 1009.11,
+      "end": 1016.85,
+      "text": "goal is, how to stop it and I would just keep it simple. A lot of it, it has contextual understanding. That's not what you want in your prompt. You"
+    },
+    {
+      "start": 1016.31,
+      "end": 1025.93,
+      "text": "your prompt. You want contextual understanding in your memory or your vector database, right? So as simple as you possibly can and how many of you guys use workflows in"
+    },
+    {
+      "start": 1024.23,
+      "end": 1033.95,
+      "text": "use workflows in Claude? All right, so yeah, so a lot of you should definitely use workflows a lot more. They'll give you a visual element"
+    },
+    {
+      "start": 1032.57,
+      "end": 1042.09,
+      "text": "a visual element to handle and manage loops essentially. So you have an orchestrator, and you'll see all their tasks and"
+    },
+    {
+      "start": 1040.67,
+      "end": 1049.77,
+      "text": "their tasks and add, if you, honestly it takes about three or four iterations to perfect it the way you want it. Does that"
+    },
+    {
+      "start": 1047.87,
+      "end": 1056.95,
+      "text": "it. Does that answer your question? Kind of, yeah. I could, a couple of shots I'd be less nervous we'll go. No, no, no. I"
+    },
+    {
+      "start": 1055.57,
+      "end": 1064.57,
+      "text": "no, no. I guess I'm just curious, you have some specific ideas in there. How do you enforce those?"
+    },
+    {
+      "start": 1063.71,
+      "end": 1072.79,
+      "text": "you enforce those? Are you enforcing them conceptually under your prompt? Surely not. You've got them in practice, right? So, I do have skills. I"
+    },
+    {
+      "start": 1072.03,
+      "end": 1080.05,
+      "text": "have skills. I call them waves. I don't, I was doing this before they were called waves. So it's a genetic wave. So each wave has its set of criteria"
+    },
+    {
+      "start": 1079.47,
+      "end": 1088.43,
+      "text": "set of criteria and then each wave will spin up sub -agents within that wave. Cool. Thanks. Do you have like a, what's a typical use case for like, hey,"
+    },
+    {
+      "start": 1087.83,
+      "end": 1096.99,
+      "text": "for like, hey, it's perfect for this type of thing? Be creative. I'm not trying to say what that is really. It's like images, especially now with GLM 5"
+    },
+    {
+      "start": 1095.93,
+      "end": 1105.17,
+      "text": "with GLM 5 .2, you do a lot of video, images, anything that you can do a creative input, measured output, and iterative"
+    },
+    {
+      "start": 1103.55,
+      "end": 1113.03,
+      "text": "output, and iterative exchange. Like with the emails, split testing, ideas, creative ads. So it's like if you tie"
+    },
+    {
+      "start": 1112.09,
+      "end": 1121.69,
+      "text": "if you tie in your Facebook manager and say, hey, here's my winning ads. Create five iterations on these winning ads every Tuesday. And"
+    },
+    {
+      "start": 1119.95,
+      "end": 1128.25,
+      "text": "every Tuesday. And then the loop doesn't have to be a one session loop, like a one day. It could be It could be a monthly loop. It's how big"
+    },
+    {
+      "start": 1127.37,
+      "end": 1136.66,
+      "text": "It's how big you visualize what the loop looks like. This is great, by the way. Thank you so much for doing this. Is there a common"
+    },
+    {
+      "start": 1135.44,
+      "end": 1145.54,
+      "text": "there a common place that someone like me who doesn't know any of this can just go in their like website or somewhere and just go off"
+    },
+    {
+      "start": 1143.78,
+      "end": 1154.24,
+      "text": "just go off and just . I'll just call your number in a bit. Call my number and I'll do that. That was good. Thank you. Yeah. There"
+    },
+    {
+      "start": 1152.18,
+      "end": 1161.68,
+      "text": "you. Yeah. There you go. I have two questions about loops. I've been working with them as well. And how do you make it so that a feature doesn't"
+    },
+    {
+      "start": 1160.7,
+      "end": 1169.96,
+      "text": "a feature doesn't vary the goal to pause the scene when they do the loop and they're actually just a goal so they can just ."
+    },
+    {
+      "start": 1168.92,
+      "end": 1179.92,
+      "text": "can just . Yeah. I do that based off the whole plot. So it's like never skip, never iterate, go through I"
+    },
+    {
+      "start": 1176.62,
+      "end": 1185.96,
+      "text": "go through I call that . Yeah. Instead of a suggested this is what we want, no, this is a . Again,"
+    },
+    {
+      "start": 1184.28,
+      "end": 1193.84,
+      "text": "a . Again, I want it just a goal. Sometimes it really depends on how late you're running those models because as we know it hallucinates"
+    },
+    {
+      "start": 1192.5,
+      "end": 1201.9,
+      "text": "know it hallucinates based off the velocity of people using this as the model at the same time. And yeah. So it does but"
+    },
+    {
+      "start": 1200.5,
+      "end": 1209.92,
+      "text": "it does but that's what the verification happens. Why does it pause? Did it actually pause because of"
+    },
+    {
+      "start": 1206.28,
+      "end": 1215.46,
+      "text": "pause because of that? And how do you make good goals? Because that's like a hard thing to do like pause and fail criteria"
+    },
+    {
+      "start": 1214.74,
+      "end": 1224.62,
+      "text": "and fail criteria for goals like a little bit . Like it's like make a good book or something like that. . I was like hey or create"
+    },
+    {
+      "start": 1222.88,
+      "end": 1232.1,
+      "text": "hey or create five different goal methods which one of these would be best or even create some verification sub -agents and have a one"
+    },
+    {
+      "start": 1230.68,
+      "end": 1240.08,
+      "text": "have a one pair by the other by a different lens. Right? Is it a visual lens? Is it a test lens? Is it a user test?"
+    },
+    {
+      "start": 1238.86,
+      "end": 1248.48,
+      "text": "a user test? And then if all three of those sub -agents validate then the goal gets reached. . So"
+    },
+    {
+      "start": 1245.14,
+      "end": 1254.18,
+      "text": "reached. . So I have two questions. One's around like loop hygiene in general. Like how do you"
+    },
+    {
+      "start": 1253.6,
+      "end": 1262.9,
+      "text": "how do you make sure what happened when you went out and there was 700 sub -agents spawned and so much spin? How"
+    },
+    {
+      "start": 1261.98,
+      "end": 1271.34,
+      "text": "much spin? How do you prevent against that? And what did you learn through that process? And then the last thing I would say is how do you"
+    },
+    {
+      "start": 1268.78,
+      "end": 1278.46,
+      "text": "how do you observe all your loops that are running at any given time? Because I imagine when you're juggling that much you might something"
+    },
+    {
+      "start": 1277.0,
+      "end": 1286.04,
+      "text": "you might something might slip your mind unless you have something in place to keep that in check. So two things. The first question what was the first"
+    },
+    {
+      "start": 1285.7,
+      "end": 1286.28,
+      "text": "was the first question?"
+    },
+    {
+      "start": 1286.78,
+      "end": 1296.0,
+      "text": "I'm trying to remember. Hygiene, yeah. So, the 700 agent really wasn't a bad thing."
+    },
+    {
+      "start": 1295.38,
+      "end": 1304.48,
+      "text": "a bad thing. The end results were great, I was just not expecting that. I figured it would run for maybe an hour, it ran for three days"
+    },
+    {
+      "start": 1303.52,
+      "end": 1312.92,
+      "text": "for three days over the weekend. The results of that were actually pretty good. It kept iterating, kept iterating, kept iterating. And"
+    },
+    {
+      "start": 1311.6,
+      "end": 1321.12,
+      "text": "kept iterating. And I validated logs. It was worth it. But at the same time, it's a learning experience. We're right now on the frontier of test,"
+    },
+    {
+      "start": 1319.62,
+      "end": 1328.82,
+      "text": "frontier of test, try, validate. And the retrospect, at the end of it, is the self -learning of it. It's like, okay, from these 700 agents, how"
+    },
+    {
+      "start": 1327.2,
+      "end": 1336.4,
+      "text": "700 agents, how could we have made this more efficient and reached the goal faster? So, as you compound your loops, you're learning to compound. And I'm guessing"
+    },
+    {
+      "start": 1335.8,
+      "end": 1342.98,
+      "text": "And I'm guessing you're routing for cost considerations as well, because I know you run... Yeah, yeah. So, I have local models that I use. I have my own server."
+    },
+    {
+      "start": 1342.32,
+      "end": 1351.52,
+      "text": "my own server. I have, like, 758 gigs of unified memory. I use cloud computers. I use a LiteLLM as"
+    },
+    {
+      "start": 1350.32,
+      "end": 1359.7,
+      "text": "a LiteLLM as a router. So, it really... I also use multiple models, right? So, it's a Haiku. One, I use Claude."
+    },
+    {
+      "start": 1358.52,
+      "end": 1367.58,
+      "text": "I use Claude. I use... What was the other one? Anything that I need it for that's really tuned"
+    },
+    {
+      "start": 1366.3,
+      "end": 1375.1,
+      "text": "that's really tuned for that specific task, I delegate it to that model as I do it. You do that manually. Manually, or is it through your process? I've done"
+    },
+    {
+      "start": 1373.2,
+      "end": 1382.24,
+      "text": "process? I've done it manually in the beginning, but it's now baked into, hey, if this is this kind of project, you look at the top three models, and"
+    },
+    {
+      "start": 1381.1,
+      "end": 1390.72,
+      "text": "three models, and then run one subagent on one model, another subagent on another, and then let the validator validate which model. It's like the consortium"
+    },
+    {
+      "start": 1388.24,
+      "end": 1397.28,
+      "text": "like the consortium of the console. Okay. Having three models validate the work based off three different lenses. Is that kind of like LLM as a"
+    },
+    {
+      "start": 1396.64,
+      "end": 1405.64,
+      "text": "LLM as a judge type situation? Yeah. Okay. Nice. So, you do it that way, and over time, the retrospect says, hey,"
+    },
+    {
+      "start": 1404.2,
+      "end": 1413.32,
+      "text": "retrospect says, hey, based off these three models, and we're executing this, this is the better model. So, the first couple loops,"
+    },
+    {
+      "start": 1411.06,
+      "end": 1420.16,
+      "text": "first couple loops, it's always going to be an experiment. It's always what worked, what didn't work, how you optimize it, and it's also based off how you"
+    },
+    {
+      "start": 1419.5,
+      "end": 1428.72,
+      "text": "off how you prompt. I have a different style of prompting. Everyone here has a different style of writing. The end results are widely going to be different. But it's"
+    },
+    {
+      "start": 1426.68,
+      "end": 1435.88,
+      "text": "different. But it's ultimately a self -learning process. It's iterating the process. Thanks. Any other questions? Yes. Have you ever tried"
+    },
+    {
+      "start": 1434.98,
+      "end": 1444.1,
+      "text": "you ever tried to implement your ideas in a whole, rather than manually, but to do it programmatically, like using and deep"
+    },
+    {
+      "start": 1442.2,
+      "end": 1451.2,
+      "text": "using and deep agents to kind of like orchestrate some business workflow kind of situation, but you"
+    },
+    {
+      "start": 1450.36,
+      "end": 1457.4,
+      "text": "situation, but you don't want to do it manually, you want to automate it a little bit? And is it like deep agents and those kind of things, like using"
+    },
+    {
+      "start": 1456.64,
+      "end": 1462.86,
+      "text": "things, like using these methods that you try to use? Yeah. So, I have a couple of examples. I have one that runs every Tuesday, one that runs every Wednesday,"
+    },
+    {
+      "start": 1462.12,
+      "end": 1471.38,
+      "text": "runs every Wednesday, or reiterating or pulling new data in from ads, landing page, split testing optimization pages, which one's winning, why it's winning, and it'll run through that entire"
+    },
+    {
+      "start": 1470.68,
+      "end": 1480.08,
+      "text": "through that entire protocol. You talked about the discipline and"
+    },
+    {
+      "start": 1477.98,
+      "end": 1486.7,
+      "text": "the discipline and letting them watch the sub -agents. What do you use for serialization of the I .O. between the different agents to make sure that it's loggable and"
+    },
+    {
+      "start": 1485.88,
+      "end": 1494.98,
+      "text": "it's loggable and you go back? There's two paths. Vector databases, memory, MTPs are great. An MD file is actually"
+    },
+    {
+      "start": 1493.92,
+      "end": 1504.28,
+      "text": "file is actually pretty good, too. It really depends on how you orchestrate your own system. I do both. I do, because throughput's"
+    },
+    {
+      "start": 1502.04,
+      "end": 1511.1,
+      "text": "do, because throughput's a bitch and disconnections happen. So, I'll vectorize it first on a database, a SQL, I'll use that"
+    },
+    {
+      "start": 1510.6,
+      "end": 1519.2,
+      "text": "I'll use that as a memory, and then if something can't find that, I'll back it up on an MD file. So, it's a simple MD file, and then I'll"
+    },
+    {
+      "start": 1518.4,
+      "end": 1527.62,
+      "text": "and then I'll break that up into learnings, understanding, gotchas, and at the end of every loop, they'll update each file. Why use a vector database instead of just"
+    },
+    {
+      "start": 1526.5,
+      "end": 1535.58,
+      "text": "instead of just dropping it into a ticketing system or something? You could. I have my own task manager, so it moves the task through each"
+    },
+    {
+      "start": 1534.6,
+      "end": 1543.88,
+      "text": "task through each swim lane, and then you can visualize that. I do that. It's just more work overall."
+    },
+    {
+      "start": 1540.7,
+      "end": 1549.82,
+      "text": "more work overall. I highly recommend something like that, like a Notion or a Sana, that then you MTP up, you"
+    },
+    {
+      "start": 1548.9,
+      "end": 1557.92,
+      "text": "MTP up, you put your Cliff Notes, and even there, I would put the memory IDs in that ticket, so that if another one picks it up, and one"
+    },
+    {
+      "start": 1556.64,
+      "end": 1564.44,
+      "text": "up, and one thing if you do that, like Notion or a Sana, never close out the tickets. Put them in a whole different swim lane, because the moment you"
+    },
+    {
+      "start": 1564.0,
+      "end": 1573.02,
+      "text": "the moment you close out tickets, they're considered done. So, if you ever come back a month later, you can then get all that memory, all that understanding, without losing"
+    },
+    {
+      "start": 1571.78,
+      "end": 1580.81,
+      "text": "understanding, without losing context when they retouch a component in that segment. I love the"
+    },
+    {
+      "start": 1580.07,
+      "end": 1590.23,
+      "text": "I love the way that you've designed this talk. I think it's awesome, and later we should chat about neurosymbolic loops. Let's go. Did"
+    },
+    {
+      "start": 1587.37,
+      "end": 1598.98,
+      "text": "Let's go. Did you say you had a number or something? Oh, shit. Let's"
+    },
+    {
+      "start": 1592.17,
+      "end": 1602.08,
+      "text": "Oh, shit. Let's see. That's the QR code. That's"
+    },
+    {
+      "start": 1600.14,
+      "end": 1609.18,
+      "text": "QR code. That's my website. There's a contact button and a calendar. Reach out, book an appointment. Yeah, I didn't even pay for"
+    },
+    {
+      "start": 1608.58,
+      "end": 1617.74,
+      "text": "even pay for it. Yeah, not bad. Not bad. I'll also give you guys a discount, because you're Danes. And a little background"
+    },
+    {
+      "start": 1616.32,
+      "end": 1625.34,
+      "text": "a little background on your day. So, my birthday is next week, and the reason I'm doing this talk is, as you grow, like, the only"
+    },
+    {
+      "start": 1624.46,
+      "end": 1633.32,
+      "text": "like, the only way you grow is putting yourself in an uncomfortable situation. And I'm in an uncomfortable situation. So, I'm going to give it to myself for my birthday."
+    },
+    {
+      "start": 1632.1,
+      "end": 1643.9,
+      "text": "for my birthday. So, thank you, Jordan. Thank you, bro. Thank you for the knowledge. Everybody give it up for Henry. All"
+    },
+    {
+      "start": 1638.22,
+      "end": 1647.46,
+      "text": "for Henry. All right, so that's going to conclude today's talk."
+    },
+    {
+      "start": 1645.36,
+      "end": 1654.64,
+      "text": "conclude today's talk. We've got, man, what, like five minutes before they start kicking us out of here? You"
+    },
+    {
+      "start": 1653.74,
+      "end": 1662.9,
+      "text": "of here? You guys can, you know, network a little bit, talk to people. Come back tomorrow. Tomorrow at 11 o 'clock, we can restart everything. We've got four"
+    },
+    {
+      "start": 1662.38,
+      "end": 1671.88,
+      "text": "We've got four speakers, myself included. And we're going to go deep the entire time. So, I really want you guys to come back for those. It's"
+    },
+    {
+      "start": 1670.86,
+      "end": 1680.2,
+      "text": "for those. It's going to be awesome. We've got tokenization. We've got observability. We've got Shep doing second brain. And"
+    },
+    {
+      "start": 1678.72,
+      "end": 1688.0,
+      "text": "second brain. And then I've got Michael Daigler from Apify, currently working at Apify. And he's going to talk about giving data"
+    },
+    {
+      "start": 1686.6,
+      "end": 1695.68,
+      "text": "about giving data to agents through an Apify actor. So, if any of those things are interesting to you or you're not 100 %"
+    },
+    {
+      "start": 1695.04,
+      "end": 1704.38,
+      "text": "not 100 % sure what they are, come see me. But otherwise, I'll see you all tomorrow. Don't quit housekeeping. Please pick"
+    },
+    {
+      "start": 1702.14,
+      "end": 1711.22,
+      "text": "housekeeping. Please pick up your trash. I don't want to. See you tomorrow. Thank"
+    },
+    {
+      "start": 1709.78,
+      "end": 1716.84,
+      "text": "you tomorrow. Thank you. Bye -bye. Thank you very much. Thank you. Thank you for tuning in. Thank you. Bye -bye. Bye -bye."
+    }
+  ],
+  "widgets": [],
+  "assets": {
+    "stream": "https://recordings.organizedai.vip/media/07%20-%20Henry%20-%20Mastering%20AI%20Loops.mp4"
+  }
+}

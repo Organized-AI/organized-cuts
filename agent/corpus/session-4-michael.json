@@ -5,15 +5,1297 @@
   "media_url": null,
   "twelvelabs": {
     "index_name": "session-4-michael",
-    "index_id": null,
-    "video_id": null
+    "index_id": "6a559364a79abae34f975b5b",
+    "video_id": "6a5593756ca01e685ca2d769"
   },
   "masters": {
     "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 4 Michael/JORDAN_S001_S001_T003_ISO1.MOV",
     "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 4 Michael/JORDAN_S001_S001_T003_ISO2.MOV"
   },
-  "clips": [],
-  "transcript": [],
+  "clips": [
+    {
+      "id": "01",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 20,
+      "hook": "Real-Time Web Data for Your Agents",
+      "caption": "Unlock seamless web data access for your AI agents with Appify’s powerful tools. Perfect for developers and creators building smarter workflows. #AI #WebScraping #Appify",
+      "start": 168.16,
+      "end": 189.08,
+      "duration": 20.92,
+      "crop_cx": 0.512,
+      "crop_x0": 678,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_01.mp4",
+      "still_person": "reels/compare/01_person.jpg",
+      "still_screen": "reels/compare/01_screen.jpg",
+      "transcript": "everyone everyone yeah yeah so so uh uh yeah yeah so so today today I'm I'm going to going to be be talking talking about about giving giving real real time time web web data data for for your your agents agents go up there and and like like Jordan Jordan said said I'm I'm a a developer developer advocate advocate appli I'm also the co founder of Itx Alrighty moving right along so",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Michael’s Intro: Real-Time Web Data for Agents"
+    },
+    {
+      "id": "02",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 16,
+      "hook": "First hackathon nerves? Relatable.",
+      "caption": "That moment you walk in, clueless but ready to learn—ended up meeting future mentors and co-founders. #HackathonJourney #YCAlumni #StartupLife",
+      "start": 249.88,
+      "end": 270.28,
+      "duration": 20.4,
+      "crop_cx": 0.521,
+      "crop_x0": 696,
+      "demo_lead_s": null,
+      "reel": "reels/reel_02.mp4",
+      "still_person": "reels/compare/02_person.jpg",
+      "still_screen": null,
+      "transcript": "up and be very shy while i look around and try to figure out what the hell this even is but it was a Olama hackathon that meadow was putting on so super dope ended up meeting some people uh that ended up going through YC and he was uh a mentor of mine for a bit and",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "The Problem: Web Scraping Limitations"
+    },
+    {
+      "id": "03",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 23,
+      "hook": "Holy crap, this changed everything",
+      "caption": "When Michael showed me Appify Actors, I realized cheap, reliable tool calling was finally possible. No more MCP headaches. #AI #ToolCalling #Appify",
+      "start": 301.08,
+      "end": 321.24,
+      "duration": 20.16,
+      "crop_cx": 0.512,
+      "crop_x0": 680,
+      "demo_lead_s": null,
+      "reel": "reels/reel_03.mp4",
+      "still_person": "reels/compare/03_person.jpg",
+      "still_screen": null,
+      "transcript": "high I was like oh this is the end all be all this is how we do the things with tool calls from now on and then he showed me Appli actors and I was like holy crap I can do tool calling at a very very cheap way with reliability because MCP if you know you know that",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "The 'Hammer' Analogy: Tools as Repeatable Workflows"
+    },
+    {
+      "id": "04",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 19,
+      "hook": "Build AI agents that fetch real-time web data",
+      "caption": "Discover how to create repeatable, reliable workflows for your agents using Appify and real-time web data. Perfect for hackathons, sponsorships, and more. #AI #WebScraping #DeveloperTools",
+      "start": 343.0,
+      "end": 363.96,
+      "duration": 20.96,
+      "crop_cx": 0.521,
+      "crop_x0": 696,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_04.mp4",
+      "still_person": "reels/compare/04_person.jpg",
+      "still_screen": "reels/compare/04_screen.jpg",
+      "transcript": "applic I'm also the co founder of AITX community so so you you might might know know me me from from AITX AntiX or maybe or you've maybe you've seen seen me at me at the the Apple App five Five events events I'm I'm doing doing here here um and and this this is is going gonna to be be kind kind of of an interactive an interactive portion portion too too at at the the end end I I did did make make like like a a workshop workshop to to help help you you sort sort of of copy copy a go a workflow up workflow there that that I I created created so if you have GitHub you have no installed Alrighty you can probably follow along but moving I'll get right into it right",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Applying Workflow & Worker Paradigm"
+    },
+    {
+      "id": "05",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 18,
+      "hook": "Build Your Agent's Web Data Superpower",
+      "caption": "Michael Daigler shows how to create repeatable, real-time web data workflows for agents using Appify and the worker paradigm. #AI #Automation #WebScraping",
+      "start": 373.88,
+      "end": 393.96,
+      "duration": 20.08,
+      "crop_cx": 0.524,
+      "crop_x0": 702,
+      "demo_lead_s": null,
+      "reel": "reels/reel_05.mp4",
+      "still_person": "reels/compare/05_person.jpg",
+      "still_screen": null,
+      "transcript": "paradigm waiting and so just I a was little thinking bit about how I could start to apply that into you my good day you're to day good use and I use Yeah we're claude back we're coding back we're codecs back we're a back lot for like okay my daily so activities guys and I'm also a big fan of Api when because it gives it comes me access to to all these folks different sources that have on the done internet this and so what a million I was thinking of was gajillion like why not freaking try times to create like and can give you a I'm a gonna call real it",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Why Move Away from MCP?"
+    },
+    {
+      "id": "06",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 16,
+      "hook": "Web data? Not so fast.",
+      "caption": "Why native web tools fail on LinkedIn & Reddit — and how to bypass them with smart automation. #AI #WebScraping #DeveloperTools",
+      "start": 424.68,
+      "end": 445.08,
+      "duration": 20.4,
+      "crop_cx": 0.518,
+      "crop_x0": 690,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_06.mp4",
+      "still_person": "reels/compare/06_person.jpg",
+      "still_screen": "reels/compare/06_screen.jpg",
+      "transcript": "before like bro I don't even know what that means so it does work but but it's yes i native i will webfetch show up tool is not and as powerful be very to get by shy certain sites like while LinkedIn i look around or and Reddit try to figure out or things what the hell where there's this a lot of even very is valuable information but it that we'd was like to get a Olama and that usually ends hackathon up that in meadow like was this putting on where it's like let me in so super dope ended up meeting and some people he can't get in there uh that ended up going through so I'm just YC gonna it's kind",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Appify: The Solution in Action"
+    },
+    {
+      "id": "07",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 20,
+      "hook": "Waste Less Tokens, Build Smarter Tools",
+      "caption": "Turn repetitive tasks into reusable workflows with Appify and MCP—like having a hammer for every nail. #AIautomation #MCP #Appify",
+      "start": 465.88,
+      "end": 485.96,
+      "duration": 20.08,
+      "crop_cx": 0.522,
+      "crop_x0": 698,
+      "demo_lead_s": null,
+      "reel": "reels/reel_07.mp4",
+      "still_person": "reels/compare/07_person.jpg",
+      "still_screen": null,
+      "transcript": "wasting my mental energy it's is wasting the tokens man and so and what I'm he looking for is works like a for repeatable Apify task that I can just tell and he Claude to do will or Claud show Code you to do guys some really cool things and so that's anybody what we're going to familiar be solving with MCP with the idea or has and I've have kind of used talked about MCP this before servers with so making around tools the time I think that of that it was as like extremely a hammer you can high think of it like a I car was like too like oh this is the if somebody told end me all hammer be all this nail this is how we they do gave the me the hammer and they things said",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Real-World Use Case: Finding Hackathon Sponsors"
+    },
+    {
+      "id": "08",
+      "kind": "talk",
+      "treatment": "ISO1 talking-head",
+      "sources": [
+        "ISO1"
+      ],
+      "captions": 16,
+      "hook": "Real-time web data for agents",
+      "caption": "Michael Daigler reveals how he built a repeatable workflow using Appify and Jordan's worker paradigm to power real-time web data for AI agents. #AI #WebScraping #DeveloperTools",
+      "start": 507.0,
+      "end": 527.0,
+      "duration": 20.0,
+      "crop_cx": 0.517,
+      "crop_x0": 688,
+      "demo_lead_s": null,
+      "reel": "reels/reel_08.mp4",
+      "still_person": "reels/compare/08_person.jpg",
+      "still_screen": null,
+      "transcript": "right so and that's Michael kind of the solution that I've Digler come up with applying is it on Jordan's workflow and worker paradigm everyone and so have did you guys kind of get the gist yeah of it so from yesterday uh where you hear yesterday yeah so today you I'm going to be talking like about the giving workflow real is time essentially web like data for your agents your start and to end like Jordan said and then I'm the workers a developer are going to advocate be the subcomponents applic I'm also that the co founder define of like AITX a tighter community so you might know me from AITX or maybe you've",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Workflow Breakdown: From Goal to Search Query"
+    },
+    {
+      "id": "09",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 18,
+      "hook": "We're back — and ready to level up",
+      "caption": "Michael Daigler, a veteran in the AI space, drops real-time web data magic for agents. Perfect for devs who want to stop reinventing the wheel. #AI #WebScraping #DeveloperTools",
+      "start": 557.96,
+      "end": 578.52,
+      "duration": 20.56,
+      "crop_cx": 0.523,
+      "crop_x0": 700,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_09.mp4",
+      "still_person": "reels/compare/09_person.jpg",
+      "still_screen": "reels/compare/09_screen.jpg",
+      "transcript": "good Yeah we're back we're back we're back we're back okay so guys when it comes to folks that have done this a million gajillion freaking times and can give you a real good hands on representation Michael",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Fuzzy Search & Employee Scraping"
+    },
+    {
+      "id": "10",
+      "kind": "demo",
+      "treatment": "ISO1 lead 2.0s → ISO2 screen + presenter PiP",
+      "sources": [
+        "ISO1",
+        "ISO2"
+      ],
+      "captions": 18,
+      "hook": "He changed my life at a hackathon",
+      "caption": "Meet the mentor who gave me the courage to attend my first hackathon—two and a half years ago, it all began with a simple 'hey, wanna join?' #HackathonJourney #MentorMoment #TechGrowth",
+      "start": 578.28,
+      "end": 598.36,
+      "duration": 20.08,
+      "crop_cx": 0.521,
+      "crop_x0": 696,
+      "demo_lead_s": 2.0,
+      "reel": "reels/reel_10.mp4",
+      "still_person": "reels/compare/10_person.jpg",
+      "still_screen": "reels/compare/10_screen.jpg",
+      "transcript": "Michael Digler is up there at the top so he is the guy who helped me um even gain the courage to go to my first hackathon i i met him uh God what was that two and a half years ago or something like that it was a meta hackathon and I was just going to",
+      "score": 0.85,
+      "source": "highlight",
+      "query": "Scraping Profiles for Context"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 0.44,
+      "text": "Can you guys?"
+    },
+    {
+      "start": 9.32,
+      "end": 12.48,
+      "text": "Go up there. Go up there. Yeah, yeah, yeah."
+    },
+    {
+      "start": 16.12,
+      "end": 17.46,
+      "text": "Alrighty. Alrighty."
+    },
+    {
+      "start": 18.76,
+      "end": 20.28,
+      "text": "Moving right along."
+    },
+    {
+      "start": 23.84,
+      "end": 24.36,
+      "text": "So."
+    },
+    {
+      "start": 29.04,
+      "end": 35.34,
+      "text": "I'm waiting. Just a little bit. You're good. You're good. Yeah, we're"
+    },
+    {
+      "start": 35.34,
+      "end": 38.22,
+      "text": "back. We're back. We're back. We're back. Okay. So, guys."
+    },
+    {
+      "start": 40.06,
+      "end": 45.64,
+      "text": "When it comes to folks that have done this a million, gajillion"
+    },
+    {
+      "start": 45.64,
+      "end": 51.4,
+      "text": "freaking times. And can give you a real good hands -on representation."
+    },
+    {
+      "start": 53.78,
+      "end": 59.68,
+      "text": "Michael Deigler is up there at the top. So. So, he is"
+    },
+    {
+      "start": 59.68,
+      "end": 64.92,
+      "text": "the guy who helped me even gain the courage to go to"
+    },
+    {
+      "start": 64.92,
+      "end": 66.72,
+      "text": "my first hackathon. I met him."
+    },
+    {
+      "start": 68.36,
+      "end": 71.28,
+      "text": "God. What was that? Two and a half years ago? Something like"
+    },
+    {
+      "start": 71.28,
+      "end": 74.2,
+      "text": "that? It was a meta hackathon. And I was just going to,"
+    },
+    {
+      "start": 74.26,
+      "end": 76.88,
+      "text": "like, the meet and greet event. And he was like, hey, they"
+    },
+    {
+      "start": 76.88,
+      "end": 79.26,
+      "text": "actually have open spots if you want to go to the actual"
+    },
+    {
+      "start": 79.26,
+      "end": 82.14,
+      "text": "hackathon. And I was like, bro, I don't even know what that"
+    },
+    {
+      "start": 82.14,
+      "end": 88.64,
+      "text": "means. But, yes, I will show up and be very shy. While"
+    },
+    {
+      "start": 88.64,
+      "end": 91.16,
+      "text": "I look around and try to figure out what the hell this"
+    },
+    {
+      "start": 91.16,
+      "end": 95.22,
+      "text": "even is. But it was a Lama hackathon that Meta was putting"
+    },
+    {
+      "start": 95.22,
+      "end": 99.74,
+      "text": "on. So, super dope. Ended up meeting some people that ended up"
+    },
+    {
+      "start": 99.74,
+      "end": 103.28,
+      "text": "going through YC. And he was a mentor of mine for a"
+    },
+    {
+      "start": 103.28,
+      "end": 103.46,
+      "text": "bit."
+    },
+    {
+      "start": 105.28,
+      "end": 108.9,
+      "text": "And it just led to this awesome crew of folks, including the"
+    },
+    {
+      "start": 108.9,
+      "end": 113.6,
+      "text": "AITX crew. Which is what Michael is a part of. And that's"
+    },
+    {
+      "start": 113.6,
+      "end": 117.84,
+      "text": "how I even got my start in the event space. Co -hosting"
+    },
+    {
+      "start": 117.84,
+      "end": 122.34,
+      "text": "events. And other stuff. You guys don't care about that. Michael is"
+    },
+    {
+      "start": 122.34,
+      "end": 128.36,
+      "text": "the man. And he works for Apify. And he will show you"
+    },
+    {
+      "start": 128.36,
+      "end": 133.04,
+      "text": "guys some really cool things. Anybody familiar with MCP? Or have used"
+    },
+    {
+      "start": 133.04,
+      "end": 137.36,
+      "text": "MCP servers? So, around the time that that was extremely hot, I"
+    },
+    {
+      "start": 137.36,
+      "end": 140.32,
+      "text": "was like, oh, this is the end all, be all. This is"
+    },
+    {
+      "start": 140.32,
+      "end": 144.1,
+      "text": "how we do the things with tool calls from now on. And"
+    },
+    {
+      "start": 144.1,
+      "end": 147.78,
+      "text": "then he showed me Apify Actors. And I was like, holy crap."
+    },
+    {
+      "start": 148.36,
+      "end": 152.72,
+      "text": "I can do tool calling at a very, very, very, very cheap"
+    },
+    {
+      "start": 152.72,
+      "end": 157.66,
+      "text": "way with reliability. Because MCP, if you know, you know that connectivity"
+    },
+    {
+      "start": 157.66,
+      "end": 158.58,
+      "text": "is a bitch."
+    },
+    {
+      "start": 160.0,
+      "end": 164.28,
+      "text": "Anyways, probably shouldn't say that live on stage. All right. So, Michael"
+    },
+    {
+      "start": 164.28,
+      "end": 168.8,
+      "text": "Daigler. Is it on? All right. What's up, everyone?"
+    },
+    {
+      "start": 171.1,
+      "end": 174.5,
+      "text": "Yeah. So, today I'm going to be talking about giving real -time"
+    },
+    {
+      "start": 174.5,
+      "end": 177.62,
+      "text": "web data for your agents. And like Jordan said, I'm a developer"
+    },
+    {
+      "start": 177.62,
+      "end": 181.14,
+      "text": "advocate. I'm also the co -founder of the ITX community. So, you"
+    },
+    {
+      "start": 181.14,
+      "end": 182.94,
+      "text": "might know me from the ITX or maybe you've seen me at"
+    },
+    {
+      "start": 182.94,
+      "end": 186.22,
+      "text": "the Apify events I'm doing here. And this is going to be"
+    },
+    {
+      "start": 186.22,
+      "end": 188.62,
+      "text": "kind of an interactive portion, too, at the end. I did make"
+    },
+    {
+      "start": 188.62,
+      "end": 191.72,
+      "text": "like a workshop to help you sort of copy a workflow that"
+    },
+    {
+      "start": 191.72,
+      "end": 197.0,
+      "text": "I created. So, if you have GitHub, you have Node installed, you"
+    },
+    {
+      "start": 197.0,
+      "end": 202.3,
+      "text": "can probably follow along. But I'll get right into it. So, what"
+    },
+    {
+      "start": 202.3,
+      "end": 203.74,
+      "text": "I kind of want to show you today, I was kind of"
+    },
+    {
+      "start": 203.74,
+      "end": 207.28,
+      "text": "inspired by what Jordan was putting together for this weekend. And kind"
+    },
+    {
+      "start": 207.28,
+      "end": 207.92,
+      "text": "of talking about, like, the web. And kind of talking about, like,"
+    },
+    {
+      "start": 207.92,
+      "end": 211.8,
+      "text": "the workflow and worker paradigm. And so, I was thinking about how"
+    },
+    {
+      "start": 211.8,
+      "end": 213.98,
+      "text": "I could start to apply that into my day -to -day use."
+    },
+    {
+      "start": 214.1,
+      "end": 216.88,
+      "text": "And I use Claude Code and Codex a lot for, like, my"
+    },
+    {
+      "start": 216.88,
+      "end": 220.88,
+      "text": "daily activities. And I'm also a big fan of Apify because it"
+    },
+    {
+      "start": 220.88,
+      "end": 224.46,
+      "text": "gives me access to all these different sources on the Internet. And"
+    },
+    {
+      "start": 224.46,
+      "end": 226.64,
+      "text": "so, what I was thinking of was, like, why not try to"
+    },
+    {
+      "start": 226.64,
+      "end": 230.42,
+      "text": "create, like, a I'm going to call it, like, a spell book."
+    },
+    {
+      "start": 230.6,
+      "end": 233.78,
+      "text": "Like, a global directory on my device because I just need Claude"
+    },
+    {
+      "start": 233.78,
+      "end": 237.08,
+      "text": "Code to have access to it of repeatable tools and workflows that"
+    },
+    {
+      "start": 237.08,
+      "end": 239.44,
+      "text": "I can use. And I find it very useful to me. So,"
+    },
+    {
+      "start": 239.46,
+      "end": 241.78,
+      "text": "my goal is that by the end of this, you have some"
+    },
+    {
+      "start": 241.78,
+      "end": 244.24,
+      "text": "idea of how you can do this in the way that I"
+    },
+    {
+      "start": 244.24,
+      "end": 247.3,
+      "text": "did it. If you like it, please let me know."
+    },
+    {
+      "start": 248.86,
+      "end": 251.94,
+      "text": "But first, I want to talk about the problem. So, the main"
+    },
+    {
+      "start": 251.94,
+      "end": 255.32,
+      "text": "problem that I want to talk about is, like, getting the web"
+    },
+    {
+      "start": 255.32,
+      "end": 258.16,
+      "text": "data to your agent. How many people have used Claude Code or"
+    },
+    {
+      "start": 258.16,
+      "end": 260.54,
+      "text": "Codex or Cloud for, like, searching the Internet before?"
+    },
+    {
+      "start": 261.94,
+      "end": 266.18,
+      "text": "So, it does work. But its native web fetch tool is not"
+    },
+    {
+      "start": 266.18,
+      "end": 270.12,
+      "text": "as powerful to get by certain sites. Like, LinkedIn or Reddit or"
+    },
+    {
+      "start": 270.12,
+      "end": 272.9,
+      "text": "things where there's a lot of very valuable information that we'd like"
+    },
+    {
+      "start": 272.9,
+      "end": 275.52,
+      "text": "to get. And that usually ends up in, like, this where it's,"
+    },
+    {
+      "start": 275.54,
+      "end": 278.54,
+      "text": "like, let me in. And it can't get in there."
+    },
+    {
+      "start": 279.84,
+      "end": 281.96,
+      "text": "So, I'm just going to it's kind of distracting. So, I'll take"
+    },
+    {
+      "start": 281.96,
+      "end": 282.76,
+      "text": "it off for a second."
+    },
+    {
+      "start": 285.84,
+      "end": 288.36,
+      "text": "But the other problem is that it's, like, when it does search"
+    },
+    {
+      "start": 288.36,
+      "end": 290.14,
+      "text": "on the Internet, it's also not doing it in the same way"
+    },
+    {
+      "start": 290.14,
+      "end": 293.76,
+      "text": "every time. And there's no way for me to actually, like, audit"
+    },
+    {
+      "start": 293.76,
+      "end": 297.9,
+      "text": "what it's doing. And I want these workflows to actually be there."
+    },
+    {
+      "start": 297.92,
+      "end": 299.76,
+      "text": "And I want them to be the same. Or I'm just going"
+    },
+    {
+      "start": 299.76,
+      "end": 301.82,
+      "text": "to keep, like, reinventing the wheel every time. And that's wasting my"
+    },
+    {
+      "start": 301.82,
+      "end": 305.08,
+      "text": "mental energy. It's wasting tokens. And so, what I'm looking for is,"
+    },
+    {
+      "start": 305.1,
+      "end": 307.5,
+      "text": "like, a repeatable task that I can just tell Cloud to do"
+    },
+    {
+      "start": 307.5,
+      "end": 310.44,
+      "text": "or Claude Code to do. And so, that's what we're going to"
+    },
+    {
+      "start": 310.44,
+      "end": 313.52,
+      "text": "be solving with the idea. And I've kind of talked about this"
+    },
+    {
+      "start": 313.52,
+      "end": 316.44,
+      "text": "before with making tools. I think of it as, like, a hammer."
+    },
+    {
+      "start": 316.56,
+      "end": 318.98,
+      "text": "You can think of it like a car, too. Like, if somebody"
+    },
+    {
+      "start": 318.98,
+      "end": 321.44,
+      "text": "told me hammer this nail, they gave me the hammer and they"
+    },
+    {
+      "start": 321.44,
+      "end": 323.62,
+      "text": "said all you have to do is just hit the nail, that's"
+    },
+    {
+      "start": 323.62,
+      "end": 326.34,
+      "text": "how I think about tools and why they're useful. Because I'm not"
+    },
+    {
+      "start": 326.34,
+      "end": 327.92,
+      "text": "going to rebuild a hammer from scratch to a tool. I'm going"
+    },
+    {
+      "start": 327.92,
+      "end": 330.16,
+      "text": "to have to, like, hammer the nail every time. And so, in"
+    },
+    {
+      "start": 330.16,
+      "end": 333.28,
+      "text": "the same way, I want to make these repeatable workflows that are"
+    },
+    {
+      "start": 333.28,
+      "end": 336.84,
+      "text": "saved on my device that Claude Code and Codex have access to"
+    },
+    {
+      "start": 336.84,
+      "end": 339.82,
+      "text": "to be the hammers so it doesn't need to remake them every"
+    },
+    {
+      "start": 339.82,
+      "end": 340.92,
+      "text": "time ad hoc."
+    },
+    {
+      "start": 343.38,
+      "end": 346.36,
+      "text": "And that's kind of the solution that I've come up with applying"
+    },
+    {
+      "start": 346.36,
+      "end": 350.98,
+      "text": "Jordan's workflow and worker paradigm. And so, did you guys kind of"
+    },
+    {
+      "start": 350.98,
+      "end": 353.28,
+      "text": "get the gist of it from yesterday where you hear yesterday, like,"
+    },
+    {
+      "start": 353.28,
+      "end": 357.22,
+      "text": "the workflow is essentially, like, your start to end. And then the"
+    },
+    {
+      "start": 357.22,
+      "end": 357.92,
+      "text": "workers are going to be doing the same thing. And then the"
+    },
+    {
+      "start": 357.92,
+      "end": 359.92,
+      "text": "end is going to be the subcomponents that define, like, a tighter"
+    },
+    {
+      "start": 359.92,
+      "end": 363.26,
+      "text": "contract between the input and the output so that there's more reliability"
+    },
+    {
+      "start": 363.26,
+      "end": 366.54,
+      "text": "with the agent actually knowing what it needs to give to the"
+    },
+    {
+      "start": 366.54,
+      "end": 367.36,
+      "text": "tool for it to work."
+    },
+    {
+      "start": 369.26,
+      "end": 371.32,
+      "text": "And I did also want to ‑‑ I know Jordan talked about"
+    },
+    {
+      "start": 371.32,
+      "end": 375.44,
+      "text": "MCP as well. I have this thought a lot because Apple 5,"
+    },
+    {
+      "start": 375.6,
+      "end": 377.88,
+      "text": "we also have ‑‑ we're in, like, the top five connectors on"
+    },
+    {
+      "start": 377.88,
+      "end": 381.76,
+      "text": "Cloud for MCP. People really love us for that. And so my"
+    },
+    {
+      "start": 381.76,
+      "end": 383.76,
+      "text": "first question is, like, why wouldn't I not just use the MCP"
+    },
+    {
+      "start": 383.76,
+      "end": 387.34,
+      "text": "for getting access to this? And I will say the use and"
+    },
+    {
+      "start": 387.34,
+      "end": 389.84,
+      "text": "the value that I've come to appreciate for the MCP because I"
+    },
+    {
+      "start": 389.84,
+      "end": 394.22,
+      "text": "was a big MCP hater was that if you're, like, a developer"
+    },
+    {
+      "start": 394.22,
+      "end": 396.78,
+      "text": "and you're just trying to get experimentation done or you're just, like,"
+    },
+    {
+      "start": 396.78,
+      "end": 400.46,
+      "text": "doing a one‑off task, MCP is probably fine. But if you're trying"
+    },
+    {
+      "start": 400.46,
+      "end": 402.5,
+      "text": "to do something over and over again and you know the way"
+    },
+    {
+      "start": 402.5,
+      "end": 405.4,
+      "text": "you want it to be done, reprompting it and saying, like, use"
+    },
+    {
+      "start": 405.4,
+      "end": 407.62,
+      "text": "the MCP this way, use it this way is going to get"
+    },
+    {
+      "start": 407.62,
+      "end": 410.68,
+      "text": "very tedious and it's also wasting a lot of context. So when"
+    },
+    {
+      "start": 410.68,
+      "end": 413.62,
+      "text": "you actually have, like, a repeatable task that you know you're going"
+    },
+    {
+      "start": 413.62,
+      "end": 415.06,
+      "text": "to want to use again, that's going to be a lot of"
+    },
+    {
+      "start": 415.06,
+      "end": 416.18,
+      "text": "work. So that's when I think it's time to take it away"
+    },
+    {
+      "start": 416.18,
+      "end": 418.58,
+      "text": "from the MCP and create a tool for it."
+    },
+    {
+      "start": 421.2,
+      "end": 425.74,
+      "text": "Just really quickly, I wanted to, like, tell everybody what Apify is"
+    },
+    {
+      "start": 425.74,
+      "end": 428.7,
+      "text": "because I kind of mentioned it. But we are essentially a platform"
+    },
+    {
+      "start": 428.7,
+      "end": 432.78,
+      "text": "and marketplace of tools for web scraping and automation to get realtime"
+    },
+    {
+      "start": 432.78,
+      "end": 436.18,
+      "text": "data to your application or agents and use cases span across, like,"
+    },
+    {
+      "start": 436.2,
+      "end": 441.22,
+      "text": "social media, real estate, e‑commerce, things like that. So we do have"
+    },
+    {
+      "start": 441.22,
+      "end": 445.04,
+      "text": "tools already on the platform that get by those anti‑bot protections. So"
+    },
+    {
+      "start": 445.04,
+      "end": 445.56,
+      "text": "we're not going to be able to do that. We're going to"
+    },
+    {
+      "start": 445.56,
+      "end": 445.56,
+      "text": "be able to do that. And we're going to be able to"
+    },
+    {
+      "start": 445.56,
+      "end": 446.62,
+      "text": "do that with the solutions and that would allow your agent to"
+    },
+    {
+      "start": 446.62,
+      "end": 451.78,
+      "text": "also get that valuable data. So that is why ‑‑ Yes. So"
+    },
+    {
+      "start": 451.78,
+      "end": 453.22,
+      "text": "that's why I'm using Apify as the solution."
+    },
+    {
+      "start": 455.14,
+      "end": 457.7,
+      "text": "And so the example of the workflow that I came up with,"
+    },
+    {
+      "start": 457.78,
+      "end": 459.58,
+      "text": "this is ‑‑ I like to always, like, come up with something"
+    },
+    {
+      "start": 459.58,
+      "end": 462.22,
+      "text": "that I actually do, like, use and I want to find it"
+    },
+    {
+      "start": 462.22,
+      "end": 466.1,
+      "text": "useful. And so for me, aside from Apify, I also run AITX"
+    },
+    {
+      "start": 466.1,
+      "end": 469.1,
+      "text": "and we're always looking for sponsors for hackathons and other events because"
+    },
+    {
+      "start": 469.1,
+      "end": 473.6,
+      "text": "that's really, like, the lifeline of, like, the business and community to"
+    },
+    {
+      "start": 473.6,
+      "end": 475.04,
+      "text": "actually make it function. And so that's why I'm using Apify as"
+    },
+    {
+      "start": 475.04,
+      "end": 477.02,
+      "text": "the solution. And I spent a lot of time on LinkedIn trying"
+    },
+    {
+      "start": 477.02,
+      "end": 479.2,
+      "text": "to find the right person to reach. I know the company is"
+    },
+    {
+      "start": 479.2,
+      "end": 481.48,
+      "text": "in my head. But I don't know who I should be talking"
+    },
+    {
+      "start": 481.48,
+      "end": 484.72,
+      "text": "to or have enough context on them. And so I thought, why"
+    },
+    {
+      "start": 484.72,
+      "end": 488.9,
+      "text": "not just give Claude Code or Codex access to actually be able"
+    },
+    {
+      "start": 488.9,
+      "end": 492.52,
+      "text": "to scrape the company's profile with what I'm looking for. So, like,"
+    },
+    {
+      "start": 492.52,
+      "end": 494.9,
+      "text": "hey, could you find people that are best to talk about ‑‑"
+    },
+    {
+      "start": 494.9,
+      "end": 499.46,
+      "text": "like, talk to about doing workshops or talk to about doing hackathon"
+    },
+    {
+      "start": 499.46,
+      "end": 503.12,
+      "text": "sponsorship or speaking at a conference or something like that. And then"
+    },
+    {
+      "start": 503.12,
+      "end": 505.48,
+      "text": "carrying it through this workflow. And so I did what I wanted."
+    },
+    {
+      "start": 506.2,
+      "end": 509.76,
+      "text": "Interpret the goal that I have. And then generate, like, a search"
+    },
+    {
+      "start": 509.76,
+      "end": 513.16,
+      "text": "query, like a fuzzy search for the titles. Pass that into the"
+    },
+    {
+      "start": 513.16,
+      "end": 516.18,
+      "text": "next step, which is, like, searching the employees on the LinkedIn company's"
+    },
+    {
+      "start": 516.18,
+      "end": 520.08,
+      "text": "profile. And then scraping each of those employees that we get back"
+    },
+    {
+      "start": 520.08,
+      "end": 523.14,
+      "text": "with more context so Claude Code can tell me, like, you know,"
+    },
+    {
+      "start": 523.14,
+      "end": 526.18,
+      "text": "this person has been in DevRel for so long they'll understand the"
+    },
+    {
+      "start": 526.18,
+      "end": 530.0,
+      "text": "value immediately versus, like, this person just joined this role. They might"
+    },
+    {
+      "start": 530.0,
+      "end": 533.06,
+      "text": "not be the best person to reach out to. So that is"
+    },
+    {
+      "start": 533.06,
+      "end": 533.96,
+      "text": "kind of the workflow."
+    },
+    {
+      "start": 535.3,
+      "end": 538.0,
+      "text": "It's broken down into the three workers, which are ‑‑ the first"
+    },
+    {
+      "start": 538.0,
+      "end": 542.1,
+      "text": "one is creating the, like, the search query for the second worker."
+    },
+    {
+      "start": 542.26,
+      "end": 545.38,
+      "text": "So I'll say, hey, can you find me people that I want"
+    },
+    {
+      "start": 545.38,
+      "end": 549.14,
+      "text": "to talk to about, like, sponsors at a hackathon. We're just going"
+    },
+    {
+      "start": 549.14,
+      "end": 553.06,
+      "text": "to send a prompt to Anthropic and say, oh, return back a"
+    },
+    {
+      "start": 553.06,
+      "end": 555.66,
+      "text": "search query for titles at a company that would be most relevant"
+    },
+    {
+      "start": 555.66,
+      "end": 558.96,
+      "text": "to this. And then it's going to take that and pass it"
+    },
+    {
+      "start": 558.96,
+      "end": 561.88,
+      "text": "on to the second worker, which is going to be around wrapping"
+    },
+    {
+      "start": 561.88,
+      "end": 566.18,
+      "text": "the LinkedIn company employee scraper. And so it's just going to take"
+    },
+    {
+      "start": 566.18,
+      "end": 569.12,
+      "text": "that search query and it's going to fuzzy search all the people"
+    },
+    {
+      "start": 569.12,
+      "end": 571.44,
+      "text": "up to, like, a certain amount, like, whatever you want to clamp"
+    },
+    {
+      "start": 571.44,
+      "end": 574.9,
+      "text": "it to, like, 10 or 20. And then we're going to pass"
+    },
+    {
+      "start": 574.9,
+      "end": 577.82,
+      "text": "all of those people, all those profiles we get back to the"
+    },
+    {
+      "start": 577.82,
+      "end": 581.48,
+      "text": "scrape profiles worker to scrape their entire LinkedIn profile so I can"
+    },
+    {
+      "start": 581.48,
+      "end": 584.14,
+      "text": "see, like, their work history to see how long they've been at"
+    },
+    {
+      "start": 584.14,
+      "end": 586.76,
+      "text": "the company. Are they very familiar with the space or are they"
+    },
+    {
+      "start": 586.76,
+      "end": 589.46,
+      "text": "new? Because that also does make a difference when you're reaching out"
+    },
+    {
+      "start": 589.46,
+      "end": 589.8,
+      "text": "to people."
+    },
+    {
+      "start": 591.62,
+      "end": 594.38,
+      "text": "And like I said, the way that I'm doing this, because it's"
+    },
+    {
+      "start": 594.38,
+      "end": 597.54,
+      "text": "for my personal use, I also find it very applicable or probably"
+    },
+    {
+      "start": 597.54,
+      "end": 600.08,
+      "text": "approachable to do as a workshop because you don't have to host"
+    },
+    {
+      "start": 600.08,
+      "end": 603.62,
+      "text": "it anywhere. Just make a global directory that I'm going to call,"
+    },
+    {
+      "start": 603.68,
+      "end": 605.82,
+      "text": "like, your special toolbox or I don't know if you ever watched"
+    },
+    {
+      "start": 605.82,
+      "end": 608.62,
+      "text": "Harry Potter where Hermione had that bag and it was just, like,"
+    },
+    {
+      "start": 608.62,
+      "end": 611.4,
+      "text": "everything she pulled out. I don't know if that's too niche of"
+    },
+    {
+      "start": 611.4,
+      "end": 615.0,
+      "text": "a reference. But essentially making that the one place where you can"
+    },
+    {
+      "start": 615.0,
+      "end": 618.06,
+      "text": "start to build up this entire library. And then any time you"
+    },
+    {
+      "start": 618.06,
+      "end": 619.78,
+      "text": "make a new tool, you just have to create a skill that's"
+    },
+    {
+      "start": 619.78,
+      "end": 619.8,
+      "text": "going to be able to do that. And then you can just"
+    },
+    {
+      "start": 619.8,
+      "end": 621.94,
+      "text": "go to the tool and point the agent to that directory and"
+    },
+    {
+      "start": 621.94,
+      "end": 624.2,
+      "text": "say, like, all you have to do is run this workflow when"
+    },
+    {
+      "start": 624.2,
+      "end": 624.86,
+      "text": "I have this scenario."
+    },
+    {
+      "start": 627.0,
+      "end": 629.48,
+      "text": "It's kind of the same thing. So this is kind of redundant."
+    },
+    {
+      "start": 629.64,
+      "end": 631.78,
+      "text": "But I do just want to show you what it looks like"
+    },
+    {
+      "start": 631.78,
+      "end": 636.24,
+      "text": "here. So I'm just going to I'm in Claude Code. I also"
+    },
+    {
+      "start": 636.24,
+      "end": 638.82,
+      "text": "have been a big fan of the Claude Code chat interface now."
+    },
+    {
+      "start": 639.38,
+      "end": 643.66,
+      "text": "Like, I used to do the terminal. But I feel like I"
+    },
+    {
+      "start": 643.66,
+      "end": 645.48,
+      "text": "don't know. It's just like, oh, it's so cool. It's a terminal."
+    },
+    {
+      "start": 645.58,
+      "end": 650.84,
+      "text": "But this just feels better. So, like, I can read everything. So"
+    },
+    {
+      "start": 650.84,
+      "end": 654.72,
+      "text": "I hope I have this. Nope. I'm just going to type, like,"
+    },
+    {
+      "start": 654.84,
+      "end": 657.88,
+      "text": "let's say, like, I want to, like, what's a good company that's"
+    },
+    {
+      "start": 657.88,
+      "end": 660.16,
+      "text": "like an AI company I want to find sponsors for a hackathon?"
+    },
+    {
+      "start": 660.3,
+      "end": 662.9,
+      "text": "Like, does anybody have an idea of one that we could scrape?"
+    },
+    {
+      "start": 665.04,
+      "end": 666.34,
+      "text": "Yeah, we could do Google. Yeah."
+    },
+    {
+      "start": 667.64,
+      "end": 671.36,
+      "text": "Let's see. Let me go on my LinkedIn."
+    },
+    {
+      "start": 678.16,
+      "end": 684.72,
+      "text": "No, no, no. It's actually. So the actors that I'm using, we"
+    },
+    {
+      "start": 684.72,
+      "end": 687.82,
+      "text": "don't maintain those as Apify. We have a policy where we'll only"
+    },
+    {
+      "start": 687.82,
+      "end": 688.84,
+      "text": "scrape, like, publicly. ."
+    }
+  ],
   "widgets": [],
   "assets": {
     "reels_dir": "session-4-michael/reels",

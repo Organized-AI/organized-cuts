@@ -1,5 +1,14 @@
 [
   {
+    "name": "demo",
+    "title": "Attention & softmax, from scratch (demo)",
+    "speaker": "Michael",
+    "clips": 4,
+    "transcript_segments": 5,
+    "widgets": 4,
+    "twelvelabs_ready": false
+  },
+  {
     "name": "henry",
     "title": "Henry",
     "speaker": "Henry",
@@ -12,117 +21,180 @@
     "name": "jordan-close",
     "title": "Jordan Close",
     "speaker": "Jordan",
-    "clips": 0,
-    "transcript_segments": 0,
+    "clips": 15,
+    "transcript_segments": 165,
     "widgets": 0,
-    "twelvelabs_ready": false
+    "twelvelabs_ready": true
   },
   {
     "name": "session-1-esteban",
     "title": "Session 1 Esteban",
     "speaker": "Esteban",
-    "clips": 0,
-    "transcript_segments": 0,
+    "clips": 10,
+    "transcript_segments": 793,
     "widgets": 0,
-    "twelvelabs_ready": false
+    "twelvelabs_ready": true
   },
   {
     "name": "session-2-ct",
     "title": "Session 2 Ct",
     "speaker": "CT",
-    "clips": 0,
-    "transcript_segments": 0,
+    "clips": 10,
+    "transcript_segments": 444,
     "widgets": 0,
-    "twelvelabs_ready": false
+    "twelvelabs_ready": true
   },
   {
     "name": "session-3-rohit",
     "title": "Session 3 Rohit",
     "speaker": "Rohit",
-    "clips": 0,
-    "transcript_segments": 0,
+    "clips": 10,
+    "transcript_segments": 107,
     "widgets": 0,
-    "twelvelabs_ready": false
+    "twelvelabs_ready": true
   },
   {
     "name": "session-3a-rohit",
     "title": "Session 3A Rohit",
     "speaker": "Rohit",
-    "clips": 0,
-    "transcript_segments": 0,
+    "clips": 10,
+    "transcript_segments": 162,
     "widgets": 0,
-    "twelvelabs_ready": false
+    "twelvelabs_ready": true
   },
   {
     "name": "session-4-michael",
     "title": "Session 4 Michael",
     "speaker": "Michael",
-    "clips": 0,
-    "transcript_segments": 0,
+    "clips": 10,
+    "transcript_segments": 207,
     "widgets": 0,
-    "twelvelabs_ready": false
+    "twelvelabs_ready": true
   },
   {
     "name": "session-4a-michael",
     "title": "Session 4A Michael",
     "speaker": "Michael",
-    "clips": 0,
-    "transcript_segments": 0,
+    "clips": 10,
+    "transcript_segments": 164,
     "widgets": 0,
-    "twelvelabs_ready": false
+    "twelvelabs_ready": true
   },
   {
     "name": "session-5-michael",
     "title": "Session 5 Michael",
     "speaker": "Michael",
-    "clips": 0,
-    "transcript_segments": 0,
+    "clips": 10,
+    "transcript_segments": 141,
     "widgets": 0,
-    "twelvelabs_ready": false
+    "twelvelabs_ready": true
   },
   {
     "name": "session-5a-michael",
     "title": "Session 5A Michael",
     "speaker": "Michael",
-    "clips": 0,
-    "transcript_segments": 0,
+    "clips": 10,
+    "transcript_segments": 122,
     "widgets": 0,
-    "twelvelabs_ready": false
+    "twelvelabs_ready": true
   },
   {
     "name": "session-6-shep",
     "title": "Session 6 Shep",
     "speaker": "Shep",
     "clips": 0,
-    "transcript_segments": 0,
+    "transcript_segments": 315,
     "widgets": 0,
-    "twelvelabs_ready": false
+    "twelvelabs_ready": true
   },
   {
     "name": "session-6a-shep",
     "title": "Session 6A Shep",
     "speaker": "Shep",
-    "clips": 0,
-    "transcript_segments": 0,
+    "clips": 10,
+    "transcript_segments": 214,
     "widgets": 0,
-    "twelvelabs_ready": false
+    "twelvelabs_ready": true
+  },
+  {
+    "name": "session-7-twitch",
+    "title": "Session 7 Twitch",
+    "speaker": "Jordan",
+    "clips": 10,
+    "transcript_segments": 402,
+    "widgets": 0,
+    "twelvelabs_ready": true
   },
   {
     "name": "studio-jordan",
     "title": "Studio Jordan",
     "speaker": "Jordan",
-    "clips": 0,
-    "transcript_segments": 0,
+    "clips": 10,
+    "transcript_segments": 418,
     "widgets": 0,
-    "twelvelabs_ready": false
+    "twelvelabs_ready": true
   },
   {
-    "name": "demo",
-    "title": "Attention & softmax, from scratch (demo)",
-    "speaker": "Michael",
-    "clips": 4,
-    "transcript_segments": 5,
-    "widgets": 4,
-    "twelvelabs_ready": false
+    "name": "vault-ct-tokenomics",
+    "title": "CT - Tokenomics",
+    "speaker": "CT - Tokenomics",
+    "clips": 10,
+    "transcript_segments": 223,
+    "widgets": 0,
+    "twelvelabs_ready": true
+  },
+  {
+    "name": "vault-esteban-mastering-harness-engineering",
+    "title": "Esteban - Mastering Harness Engineering",
+    "speaker": "Esteban - Mastering Harness Engineering",
+    "clips": 24,
+    "transcript_segments": 413,
+    "widgets": 0,
+    "twelvelabs_ready": true
+  },
+  {
+    "name": "vault-henry-mastering-ai-loops",
+    "title": "Henry - Mastering AI Loops",
+    "speaker": "Henry - Mastering AI Loops",
+    "clips": 24,
+    "transcript_segments": 222,
+    "widgets": 0,
+    "twelvelabs_ready": true
+  },
+  {
+    "name": "vault-jordaaan-observability",
+    "title": "Jordaaan - Observability",
+    "speaker": "Jordaaan - Observability",
+    "clips": 10,
+    "transcript_segments": 248,
+    "widgets": 0,
+    "twelvelabs_ready": true
+  },
+  {
+    "name": "vault-michael-real-time-web-data-for-agents",
+    "title": "Michael - Real-Time Web Data for Agents",
+    "speaker": "Michael - Real-Time Web Data for Agents",
+    "clips": 40,
+    "transcript_segments": 326,
+    "widgets": 0,
+    "twelvelabs_ready": true
+  },
+  {
+    "name": "vault-rohit-local-ai-without-the-cloud",
+    "title": "Rohit - Local AI Without the Cloud",
+    "speaker": "Rohit - Local AI Without the Cloud",
+    "clips": 17,
+    "transcript_segments": 156,
+    "widgets": 0,
+    "twelvelabs_ready": true
+  },
+  {
+    "name": "vault-shep-build-your-second-brain",
+    "title": "Shep - Build Your Second Brain",
+    "speaker": "Shep - Build Your Second Brain",
+    "clips": 20,
+    "transcript_segments": 300,
+    "widgets": 0,
+    "twelvelabs_ready": true
   }
 ]

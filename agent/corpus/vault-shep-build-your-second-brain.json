@@ -1,0 +1,1696 @@
+{
+  "name": "vault-shep-build-your-second-brain",
+  "title": "Shep - Build Your Second Brain",
+  "speaker": "Shep - Build Your Second Brain",
+  "media_url": null,
+  "vault_key": "06 - Shep - Build Your Second Brain.mp4",
+  "duration": 2115.63,
+  "twelvelabs": {
+    "index_name": null,
+    "index_id": null,
+    "video_id": null
+  },
+  "twelvelabs_parts": [
+    {
+      "label": "Part 1",
+      "offset": 0.0,
+      "index_id": "6a55230203d291c7a1a7f607",
+      "video_id": "6a55232fa79abae34f958e5c"
+    },
+    {
+      "label": "Part 2",
+      "offset": 1245.87,
+      "index_id": "6a5644cb7fd488f932bb0689",
+      "video_id": "6a5644e790a8878b1d2f4c8f"
+    }
+  ],
+  "masters": {},
+  "clips": [
+    {
+      "id": "Part 1-1",
+      "hook": "Introduction to Second Brain",
+      "kind": "chapter",
+      "start": 0.0,
+      "end": 108.0,
+      "caption": "The speaker introduces the concept of a 'second brain' and sets the stage for discussing Penumbra, a tool for structured knowledge management."
+    },
+    {
+      "id": "Part 1-2",
+      "hook": "Meet Shep Bryan",
+      "kind": "chapter",
+      "start": 108.0,
+      "end": 183.0,
+      "caption": "Shep Bryan is introduced as the founder of Penumbra, sharing his background in AI and his journey into building intelligent knowledge systems."
+    },
+    {
+      "id": "Part 1-3",
+      "hook": "The Power of Structured Knowledge",
+      "kind": "chapter",
+      "start": 183.0,
+      "end": 325.0,
+      "caption": "Shep explains the limitations of unstructured markdown files and introduces knowledge graphs as a solution for organizing information efficiently."
+    },
+    {
+      "id": "Part 1-4",
+      "hook": "Penumbra's Knowledge Graph",
+      "kind": "chapter",
+      "start": 325.0,
+      "end": 510.0,
+      "caption": "The core functionality of Penumbra is explained, emphasizing how it uses structured data and type systems to enable smarter AI reasoning."
+    },
+    {
+      "id": "Part 1-5",
+      "hook": "Shapes: Expert Lenses for AI",
+      "kind": "chapter",
+      "start": 510.0,
+      "end": 634.0,
+      "caption": "The concept of 'shapes' in Penumbra is introduced as customizable expert frameworks that guide AI in extracting and organizing information."
+    },
+    {
+      "id": "Part 1-6",
+      "hook": "Free Access and Demo",
+      "kind": "chapter",
+      "start": 634.0,
+      "end": 706.0,
+      "caption": "Shep invites viewers to sign up for a free Penumbra account and demonstrates how to activate the market research shape for real-time use."
+    },
+    {
+      "id": "Part 1-7",
+      "hook": "Live Demo: Market Research",
+      "kind": "chapter",
+      "start": 706.0,
+      "end": 807.0,
+      "caption": "A live demonstration shows how Penumbra captures and structures data from web research into a well-organized, query-ready format."
+    },
+    {
+      "id": "Part 1-8",
+      "hook": "Automated Knowledge Capture",
+      "kind": "chapter",
+      "start": 807.0,
+      "end": 921.0,
+      "caption": "The speaker illustrates how agents can automatically add structured insights to the second brain using predefined shapes and rules."
+    },
+    {
+      "id": "Part 1-9",
+      "hook": "Expert vs. Novice Thinking",
+      "kind": "chapter",
+      "start": 921.0,
+      "end": 1025.0,
+      "caption": "The difference between expert and novice analysis is highlighted, showing how shapes encode expert-level judgment into AI workflows."
+    },
+    {
+      "id": "Part 1-10",
+      "hook": "Guardrails for AI Output",
+      "kind": "chapter",
+      "start": 1025.0,
+      "end": 1246.0,
+      "caption": "Penumbra’s role in ensuring high-quality, rule-compliant AI outputs is demonstrated through structured data validation and intelligent retrieval."
+    },
+    {
+      "id": "Part 2-1",
+      "hook": "The Need for a Second Brain",
+      "kind": "chapter",
+      "start": 1245.87,
+      "end": 1349.87,
+      "caption": "Introduces the concept of a 'second brain' as a tool for organizing knowledge and reasoning, contrasting it with traditional memory tools that store excessive personal details."
+    },
+    {
+      "id": "Part 2-2",
+      "hook": "Penumbra's Knowledge System",
+      "kind": "chapter",
+      "start": 1349.87,
+      "end": 1463.87,
+      "caption": "Explains how Penumbra captures and structures information, with features like commits, version control, and integration with AI agents for persistent knowledge management."
+    },
+    {
+      "id": "Part 2-3",
+      "hook": "Organizing Knowledge with Shapes",
+      "kind": "chapter",
+      "start": 1463.87,
+      "end": 1576.87,
+      "caption": "Describes the use of 'shapes' in Penumbra to structure information in a way that enables efficient reasoning, allowing agents to process data more effectively."
+    },
+    {
+      "id": "Part 2-4",
+      "hook": "Design Time vs. Run Time",
+      "kind": "chapter",
+      "start": 1576.87,
+      "end": 1698.87,
+      "caption": "Emphasizes the importance of upfront design work—'design time'—to prevent chaos during project execution, using John Wooden’s coaching philosophy as an analogy."
+    },
+    {
+      "id": "Part 2-5",
+      "hook": "Avoiding the Knowledge Dump",
+      "kind": "chapter",
+      "start": 1698.87,
+      "end": 1800.87,
+      "caption": "Warns against unstructured information accumulation, highlighting how disorganized data leads to inefficiency and high costs when using AI agents."
+    },
+    {
+      "id": "Part 2-6",
+      "hook": "From Facts to Sense-Making",
+      "kind": "chapter",
+      "start": 1800.87,
+      "end": 1871.87,
+      "caption": "Introduces the idea of layering analysis—using 'sense-making' shapes to interpret facts and generate strategies, plans, and actionable insights."
+    },
+    {
+      "id": "Part 2-7",
+      "hook": "Building Shapes with Penumbra",
+      "kind": "chapter",
+      "start": 1872.87,
+      "end": 1988.87,
+      "caption": "Demonstrates the live creation of a 'tool integration architecture' shape, showing how Penumbra automatically generates structured frameworks for complex tasks."
+    },
+    {
+      "id": "Part 2-8",
+      "hook": "Expert-Level Reasoning",
+      "kind": "chapter",
+      "start": 1988.87,
+      "end": 2051.87,
+      "caption": "Explains how the generated shape enables expert-level analysis by categorizing integration patterns, constraints, and deployment scenarios for AI tools."
+    },
+    {
+      "id": "Part 2-9",
+      "hook": "Immediate Agent Utilization",
+      "kind": "chapter",
+      "start": 2051.87,
+      "end": 2093.87,
+      "caption": "Shows how the newly created shape becomes instantly available to agents, enhancing their ability to organize and reason about complex information."
+    },
+    {
+      "id": "Part 2-10",
+      "hook": "Closing Reflections",
+      "kind": "chapter",
+      "start": 2093.87,
+      "end": 2113.87,
+      "caption": "Concludes with a summary of Penumbra’s role in enabling scalable, structured, and intelligent knowledge systems for AI collaboration."
+    }
+  ],
+  "transcript": [
+    {
+      "start": 3.0,
+      "end": 16.38,
+      "text": "Okay. Just a second. Just a second. All right, cool. Okay,"
+    },
+    {
+      "start": 11.12,
+      "end": 20.34,
+      "text": "right, cool. Okay, intro. So this is one that I've been super excited to share"
+    },
+    {
+      "start": 19.14,
+      "end": 28.2,
+      "text": "excited to share with you guys. You meet people in your life sometimes, and you're like, every single time I talk to you, I learn something new."
+    },
+    {
+      "start": 27.24,
+      "end": 36.32,
+      "text": "learn something new. And it's not even like BS. I literally learn something new every time I talk to this guy. And understanding second brain"
+    },
+    {
+      "start": 33.78,
+      "end": 43.16,
+      "text": "understanding second brain and how hot of a topic that is, I love it. I love it. I love it whenever there's something that's a really hot topic."
+    },
+    {
+      "start": 42.02,
+      "end": 51.12,
+      "text": "really hot topic. And since I've been in this community, I know somebody who's way deeper than everybody else at something that's hot at the same time."
+    },
+    {
+      "start": 50.56,
+      "end": 59.9,
+      "text": "the same time. It's like perfect storm situation. So how many of you guys have heard about second brain, obsidian, things? Things like that for AI purposes?"
+    },
+    {
+      "start": 58.48,
+      "end": 67.58,
+      "text": "for AI purposes? Or any purpose, really. Okay, cool. Most people. Penumbra is a tool"
+    },
+    {
+      "start": 66.1,
+      "end": 75.3,
+      "text": "is a tool that allows you to do a lot of things that I don't fully understand, but Shep is going to tell you about"
+    },
+    {
+      "start": 74.46,
+      "end": 84.74,
+      "text": "tell you about it. So semantic search, vector search, Postgres. It's like database plus intelligent pooling"
+    },
+    {
+      "start": 81.9,
+      "end": 91.06,
+      "text": "plus intelligent pooling of information. Only what you need, when you need. You don't need it for an agent to do what it's supposed to do"
+    },
+    {
+      "start": 90.4,
+      "end": 99.54,
+      "text": "supposed to do without all the bloat. It is the coolest thing, and I personally use it with my Hermes agent, and it has been night and"
+    },
+    {
+      "start": 98.76,
+      "end": 108.22,
+      "text": "been night and day as far as usefulness out of that thing. So the proof is in the pudding. Anyways, without further ado, I'm"
+    },
+    {
+      "start": 106.66,
+      "end": 116.42,
+      "text": "further ado, I'm going to introduce you guys now to the one and only Shep Bryan. Hey, guys. Hello. Good"
+    },
+    {
+      "start": 113.68,
+      "end": 122.68,
+      "text": "guys. Hello. Good to meet you. I'm Shep. Shep Bryan, a friend of Jordan's here. We were joking recently that he"
+    },
+    {
+      "start": 121.98,
+      "end": 131.6,
+      "text": "recently that he adds an extra A every time he launches a new agent, so eventually it'll be Jordan. Yes. So"
+    },
+    {
+      "start": 127.36,
+      "end": 136.88,
+      "text": "Jordan. Yes. So I live here in Austin. I've been working in the kind"
+    },
+    {
+      "start": 135.14,
+      "end": 144.5,
+      "text": "in the kind of AI space for the past four years. I first got into AI with MidJourney, so very early in the kind of image generation"
+    },
+    {
+      "start": 143.56,
+      "end": 152.76,
+      "text": "of image generation boom, 2022. And I immediately was like, wow, this is pretty amazing, and"
+    },
+    {
+      "start": 151.22,
+      "end": 160.78,
+      "text": "pretty amazing, and I expect that this is only going to get better, so I should probably dig into this more. Obviously, here we are, mid -2026."
+    },
+    {
+      "start": 159.46,
+      "end": 168.5,
+      "text": "are, mid -2026. LLMs are as smart as they've ever been and only getting smarter, and that capability is widely available"
+    },
+    {
+      "start": 166.62,
+      "end": 175.84,
+      "text": "is widely available to all of us, very cost -effective, and not just the intelligence from the models, but tools"
+    },
+    {
+      "start": 174.52,
+      "end": 183.58,
+      "text": "models, but tools like Appify, and other things like that. I like Michael was showing us, giving us a lot of really powerful tooling that's available that's very cost -effective,"
+    },
+    {
+      "start": 181.66,
+      "end": 190.72,
+      "text": "very cost -effective, a lot of it free. And for the work that we're doing, I assume most of us here are sitting"
+    },
+    {
+      "start": 189.26,
+      "end": 198.36,
+      "text": "here are sitting on some spectrum of software engineer to knowledge worker. That's a pretty broad spectrum, and AI touches"
+    },
+    {
+      "start": 196.9,
+      "end": 206.02,
+      "text": "and AI touches all of that. The idea of a second brain is something that as you start to use"
+    },
+    {
+      "start": 205.48,
+      "end": 236.82,
+      "text": "start to use AI regularly, you start to see that it's a little bit more of a ! It's"
+    },
+    {
+      "start": 206.8,
+      "end": 236.82,
+      "text": "a ! It's a"
+    },
+    {
+      "start": 206.82,
+      "end": 236.82,
+      "text": "! It's a little"
+    },
+    {
+      "start": 236.82,
+      "end": 245.76,
+      "text": "It's a little bit more complicated, and it's long form. A lot of the time, it's prose. It's just written. So when Claude or ChatGPT writes you a file and"
+    },
+    {
+      "start": 244.14,
+      "end": 253.7,
+      "text": "a file and it appears on the right -hand side of the interface, if you're using the web app, that is oftentimes a markdown file. And"
+    },
+    {
+      "start": 252.32,
+      "end": 261.36,
+      "text": "markdown file. And the beautiful thing about that is it's really easy to work with, but the challenging piece about that is a lot of the times"
+    },
+    {
+      "start": 260.86,
+      "end": 266.8,
+      "text": "of the times that information can be really bloated or unstructured. So if you're thinking about, you know, a lot of the time, you're going to have to do a"
+    },
+    {
+      "start": 266.8,
+      "end": 278.12,
+      "text": "to do a lot of work on the web, and you're going to have to do a lot of work on the web. I live live live"
+    },
+    {
+      "start": 267.02,
+      "end": 278.12,
+      "text": "live live live live"
+    },
+    {
+      "start": 273.82,
+      "end": 281.54,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 281.16,
+      "end": 281.54,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 281.54,
+      "end": 281.66,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 281.66,
+      "end": 281.8,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 281.8,
+      "end": 282.14,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 282.14,
+      "end": 282.34,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 282.34,
+      "end": 282.86,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 282.86,
+      "end": 293.14,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 288.36,
+      "end": 297.9,
+      "text": "live live live live are smart enough to do that now, but you're paying a lot of extra compute."
+    },
+    {
+      "start": 296.3,
+      "end": 305.46,
+      "text": "of extra compute. If you already have a monthly subscription, sometimes you're just like, eh, whatever. I have the usage to"
+    },
+    {
+      "start": 304.42,
+      "end": 313.42,
+      "text": "the usage to spare for something like this. But when you're working with AI in business or enterprise, you don't have the luxury a"
+    },
+    {
+      "start": 312.04,
+      "end": 321.04,
+      "text": "the luxury a lot of times of a fully subsidized subscription plan. And so it becomes more important to think about tokens in,"
+    },
+    {
+      "start": 319.7,
+      "end": 328.86,
+      "text": "about tokens in, tokens out, and that kind of thing. So Penumbra is the company that I run here in town. It's basically a"
+    },
+    {
+      "start": 327.42,
+      "end": 336.68,
+      "text": "It's basically a structured knowledge and context layer. I use the word substrate, which it's a bit more of a technical"
+    },
+    {
+      "start": 336.2,
+      "end": 346.2,
+      "text": "of a technical term to say context lives here. And things that pull from that context are lenses onto it. The"
+    },
+    {
+      "start": 343.72,
+      "end": 349.2,
+      "text": "onto it. The Penumbra database is a database of all the things that are in the context of the context. And so I'm going to go ahead and show you"
+    },
+    {
+      "start": 349.2,
+      "end": 353.14,
+      "text": "and show you a little bit of a picture of what that looks like. So the baseline is a knowledge graph. Is anybody here familiar with the term knowledge graph"
+    },
+    {
+      "start": 352.36,
+      "end": 361.64,
+      "text": "term knowledge graph or what that is? So if you're unfamiliar, a knowledge graph is kind of like a database, but it's a different format."
+    },
+    {
+      "start": 360.24,
+      "end": 370.08,
+      "text": "a different format. So database, like a Postgres, a common database, it's like tables, Excel spreadsheet, that sort of thing. But a graph is a"
+    },
+    {
+      "start": 368.32,
+      "end": 377.5,
+      "text": "graph is a set of entities and how they're related. So you have entities and you have relationships. And if you"
+    },
+    {
+      "start": 375.94,
+      "end": 385.1,
+      "text": "And if you think about if you had to list everything you knew and write out what are the entities and what are the relationships between these things,"
+    },
+    {
+      "start": 384.18,
+      "end": 392.4,
+      "text": "between these things, it's extremely tedious. Like I don't expect that humans would do this. But you know who doesn't care about doing it? Agents. Agents don't care about doing"
+    },
+    {
+      "start": 391.9,
+      "end": 401.2,
+      "text": "care about doing it. They will do it freely, easily, no problem. And the beautiful thing about that is it also helps them retrieve and understand"
+    },
+    {
+      "start": 399.78,
+      "end": 406.26,
+      "text": "retrieve and understand more effectively. Think about all the things that you've done in your life that you've done in your life. Think about all of the information that goes"
+    },
+    {
+      "start": 404.62,
+      "end": 413.94,
+      "text": "information that goes into training an AI model, right? It's like the soup of humanity just funneled and crystallized into"
+    },
+    {
+      "start": 411.92,
+      "end": 421.5,
+      "text": "and crystallized into Claude, into GPT 5 .6. And in that big soup of humanity is"
+    },
+    {
+      "start": 420.06,
+      "end": 429.26,
+      "text": "of humanity is a ton of priors. Like when, you know, you in your job think about solving a problem. Like you have a framework, a"
+    },
+    {
+      "start": 428.44,
+      "end": 435.3,
+      "text": "a framework, a frame of mind that you go into. Like problems in my job typically look like this. Okay. I'm going to solve a problem. When I see a"
+    },
+    {
+      "start": 435.02,
+      "end": 443.08,
+      "text": "I see a problem, I think this. You in your job, when you see a problem, it probably has a different structure of things. And when we're working with agents,"
+    },
+    {
+      "start": 442.36,
+      "end": 451.78,
+      "text": "working with agents, if we're not specific about solve this problem, then it has to sift through all of those examples of like, well, what does a problem really"
+    },
+    {
+      "start": 450.94,
+      "end": 460.26,
+      "text": "a problem really look like here? And it's using things like reasoning tokens, time. You know, it's thinking about how to"
+    },
+    {
+      "start": 459.06,
+      "end": 468.42,
+      "text": "about how to fit its response to what your agent is asking for. And that's spending money, spending time, et"
+    },
+    {
+      "start": 467.26,
+      "end": 476.48,
+      "text": "spending time, et cetera. And basically a knowledge graph, this structured representation of information that lives as a second"
+    },
+    {
+      "start": 475.24,
+      "end": 484.34,
+      "text": "as a second brain for you is putting those rules and like the grammar of how your domain works"
+    },
+    {
+      "start": 482.94,
+      "end": 492.04,
+      "text": "your domain works into an explicit checklist that agents can hook into. And so when you think, here's a problem I'm dealing"
+    },
+    {
+      "start": 491.4,
+      "end": 500.46,
+      "text": "problem I'm dealing with, it's not, you know, it's not recreating the frame of mind that you're in every time you are addressing it. It's able to pull information"
+    },
+    {
+      "start": 499.5,
+      "end": 508.64,
+      "text": "to pull information from a structured hub and utilize that to solve the problem without wasting time, without wasting tokens and"
+    },
+    {
+      "start": 507.64,
+      "end": 518.88,
+      "text": "wasting tokens and all that sort of thing. So in Penumbra, the platform itself, I'll show you guys really quickly just a"
+    },
+    {
+      "start": 515.5,
+      "end": 524.66,
+      "text": "quickly just a rough snapshot of things that are happening in this . ! This is"
+    },
+    {
+      "start": 523.54,
+      "end": 532.54,
+      "text": "! This is just like kind of originally this was my product development brain, but it since has become very much a testing ground of"
+    },
+    {
+      "start": 531.44,
+      "end": 541.22,
+      "text": "testing ground of all the different things that I'm iterating on and doing. But in the platform, Penumbra has a unique thing called shapes. And"
+    },
+    {
+      "start": 539.32,
+      "end": 548.44,
+      "text": "called shapes. And effectively, like, when I say we're working with a knowledge graph, if you work with most traditional knowledge graphs, the"
+    },
+    {
+      "start": 547.12,
+      "end": 556.04,
+      "text": "knowledge graphs, the information isn't typed. And typing, type -setting, is a very important part of the process. And so, you know, learning about learning about learning about learning about"
+    },
+    {
+      "start": 555.86,
+      "end": 564.94,
+      "text": "about learning about learning about learning about learning about learning about"
+    },
+    {
+      "start": 559.44,
+      "end": 569.82,
+      "text": "about learning about learning about learning about learning about learning"
+    },
+    {
+      "start": 565.96,
+      "end": 575.04,
+      "text": "learning about learning about learning about learning about learning about learning"
+    },
+    {
+      "start": 574.1,
+      "end": 579.06,
+      "text": "learning about learning about learning about learning about learning about learning about learning learning about learning learning learning learning learning learning learning learning like differentiation on price. I think about"
+    },
+    {
+      "start": 578.42,
+      "end": 587.68,
+      "text": "I think about these five things when I look at a competitive analysis. You can actually use a type system, which Penumbra makes very easy to build and do. You"
+    },
+    {
+      "start": 586.76,
+      "end": 596.22,
+      "text": "and do. You can turn that into a basically autopilot for AI. So when it's reading material on the web, if we scrape a bunch of competitor product profiles using"
+    },
+    {
+      "start": 594.92,
+      "end": 604.02,
+      "text": "product profiles using Apple Fi, and we have these big walls of text, markdown format version of web pages, we can feed it"
+    },
+    {
+      "start": 603.44,
+      "end": 612.1,
+      "text": "can feed it into a system like Penumbra where the agent just says, okay, cool, I've got my checklist. I'm gonna put these things into my brain, my Penumbra brain,"
+    },
+    {
+      "start": 611.1,
+      "end": 619.56,
+      "text": "my Penumbra brain, and it will auto -organize it for me. And then when you go to retrieve it, it's not looking through that massive pile of files on your"
+    },
+    {
+      "start": 619.0,
+      "end": 628.66,
+      "text": "files on your desk. It has an addressable thing, competitors, product differentiators. And"
+    },
+    {
+      "start": 625.76,
+      "end": 634.8,
+      "text": "product differentiators. And to me, this is what second brain and like AI knowledge systems,"
+    },
+    {
+      "start": 633.42,
+      "end": 642.42,
+      "text": "AI knowledge systems, ultimately are evolving into. Because markdown's amazing. You can do it locally, it's very easy. And also,"
+    },
+    {
+      "start": 640.94,
+      "end": 649.92,
+      "text": "easy. And also, getting into that next level of like, once you have a big brain of markdown files, what are you gonna do with it? Well, you gotta organize"
+    },
+    {
+      "start": 649.44,
+      "end": 658.52,
+      "text": "you gotta organize it. How are you gonna organize it? You're gonna build a type system. You're gonna build a library of information that's well organized and well labeled. And"
+    },
+    {
+      "start": 657.26,
+      "end": 666.26,
+      "text": "well labeled. And my ambition with what we're showing you guys today is that this, hopefully, is designed to"
+    },
+    {
+      "start": 664.8,
+      "end": 672.78,
+      "text": "is designed to make that a lot easier for you. You don't have to worry about any of that kind of thing. And it gives you kind of that logical"
+    },
+    {
+      "start": 672.18,
+      "end": 681.36,
+      "text": "of that logical next step for, okay, I just scraped a bunch of competitor profiles. If I'm not thinking about how to look through this, and I tell my agent"
+    },
+    {
+      "start": 680.8,
+      "end": 688.66,
+      "text": "tell my agent to look through it and structure it all, what priors is it operating from when it's extracting those? And with Penumbra, we can kind of define that"
+    },
+    {
+      "start": 688.14,
+      "end": 708.74,
+      "text": "of define that rule set. So, today, if you start to think about how"
+    },
+    {
+      "start": 694.78,
+      "end": 709.64,
+      "text": "think about how it's"
+    },
+    {
+      "start": 694.78,
+      "end": 718.4,
+      "text": "about how it's learning"
+    },
+    {
+      "start": 707.84,
+      "end": 718.76,
+      "text": "how it's learning how"
+    },
+    {
+      "start": 708.74,
+      "end": 718.76,
+      "text": "it's learning how to"
+    },
+    {
+      "start": 709.64,
+      "end": 719.44,
+      "text": "learning how to live"
+    },
+    {
+      "start": 718.4,
+      "end": 720.58,
+      "text": "how to live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 720.56,
+      "end": 720.58,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 720.58,
+      "end": 720.58,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 720.58,
+      "end": 720.6,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 720.6,
+      "end": 720.62,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 720.62,
+      "end": 720.62,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 720.62,
+      "end": 720.64,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live live live"
+    },
+    {
+      "start": 720.64,
+      "end": 721.54,
+      "text": "live live live live live live live live live live live live live live live live live live live live live live live live live live live live I've got"
+    },
+    {
+      "start": 721.32,
+      "end": 730.66,
+      "text": "live I've got two that we're walking through. Jordan, in the repo for the project, there's a pull request awaiting your approval that has a skill"
+    },
+    {
+      "start": 729.28,
+      "end": 738.56,
+      "text": "has a skill that your agent can use when you go back and look through this later that tells you, hey, add the Penumbra MCP,"
+    },
+    {
+      "start": 737.32,
+      "end": 746.32,
+      "text": "the Penumbra MCP, add these shapes from the engine, and then it will ask you, what are we researching? And"
+    },
+    {
+      "start": 744.84,
+      "end": 754.08,
+      "text": "we researching? And today we're gonna just do a quick demo of market research and then using a custom shape to reason about"
+    },
+    {
+      "start": 751.82,
+      "end": 761.24,
+      "text": "to reason about the research that we've collected as kind of a stacking thing. Once you have facts, what do you do with facts? You as the expert have"
+    },
+    {
+      "start": 760.24,
+      "end": 769.1,
+      "text": "the expert have to think about that and synthesize something out of it. You can put that on Rails with Penumbra. And at the end of this all, you guys"
+    },
+    {
+      "start": 767.16,
+      "end": 776.22,
+      "text": "all, you guys making this account will have kind of a free second brain that you can use. There's a lot of cool stuff under the hood"
+    },
+    {
+      "start": 775.72,
+      "end": 784.72,
+      "text": "under the hood in Penumbra. I won't go into that too much here. I think this is just one of the best capabilities in the platform. It's free."
+    },
+    {
+      "start": 783.06,
+      "end": 792.06,
+      "text": "platform. It's free. You guys just need to add the Penumbra MCP and log in, which you can do once you make an account here. And then everything is"
+    },
+    {
+      "start": 791.38,
+      "end": 800.56,
+      "text": "then everything is organized for you in your second brain. So I will go ahead and head"
+    },
+    {
+      "start": 796.18,
+      "end": 805.58,
+      "text": "ahead and head over to my, what was that? Oh,"
+    },
+    {
+      "start": 804.28,
+      "end": 813.42,
+      "text": "was that? Oh, sweet, thank you. OK, so we are going to have a little new chat here. And"
+    },
+    {
+      "start": 812.04,
+      "end": 821.18,
+      "text": "chat here. And we're going to say, hey, can you check out the Penumbra MCP for me? Do we"
+    },
+    {
+      "start": 819.82,
+      "end": 828.94,
+      "text": "me? Do we have the market research shape available to us? If you think about all the"
+    },
+    {
+      "start": 828.48,
+      "end": 837.26,
+      "text": "about all the chats that you have with agents, how many people have had a chat where you're like, that was really good. I'd like to do something with this."
+    },
+    {
+      "start": 836.56,
+      "end": 845.08,
+      "text": "something with this. And what do you do with it when it's done? Do you export it or put it somewhere? What's the go -to? You just leave it in"
+    },
+    {
+      "start": 844.44,
+      "end": 853.32,
+      "text": "leave it in the chat usually? I write some notes in a Google Doc and link to it and put a little quote so I can control ethically or face"
+    },
+    {
+      "start": 851.74,
+      "end": 861.2,
+      "text": "ethically or face a disaster. What about you? I saw a hand back there. I just try to remember. I"
+    },
+    {
+      "start": 858.96,
+      "end": 870.3,
+      "text": "to remember. I just try to remember. And then I got the number. And I was like, wow. I can export. This is my new junk drawer. Lovingly,"
+    },
+    {
+      "start": 867.24,
+      "end": 876.54,
+      "text": "junk drawer. Lovingly, my new junk drawer. Yeah. So we are going"
+    },
+    {
+      "start": 875.08,
+      "end": 884.46,
+      "text": "we are going to scope into a project here. Let's scope into the agentic workshop"
+    },
+    {
+      "start": 881.82,
+      "end": 890.86,
+      "text": "the agentic workshop project. For the chats that you guys have, and you've got Penumbra"
+    },
+    {
+      "start": 890.06,
+      "end": 899.2,
+      "text": "you've got Penumbra plugged in as an MCP, using any of the shapes. Yeah. So you can see the shapes that you've got. You can say to Claude or ChatGPT"
+    },
+    {
+      "start": 898.0,
+      "end": 906.42,
+      "text": "Claude or ChatGPT or Codex, like this also works in Claude code and Codex, I really liked that thing we just talked about. Can you add it to my brain?"
+    },
+    {
+      "start": 906.04,
+      "end": 913.46,
+      "text": "to my brain? And it will look at the shape and it'll say, OK, cool. We've got these five types in this shape. I think this one matches. Does that"
+    },
+    {
+      "start": 912.46,
+      "end": 921.34,
+      "text": "matches. Does that sound cool to you? You're like, yes. And it will put it in for you. So when you're doing deep research, competitor analysis, that kind of thing,"
+    },
+    {
+      "start": 920.88,
+      "end": 929.98,
+      "text": "kind of thing, we can automatically capture that. And it will look at that for you. Yes? One more time, explain why the eight"
+    },
+    {
+      "start": 928.94,
+      "end": 938.7,
+      "text": "why the eight and not the five .. Yeah. So an expert. Let's think about a seasoned expert in"
+    },
+    {
+      "start": 936.92,
+      "end": 946.36,
+      "text": "seasoned expert in their domain, right? The 20 -year veteran in the consulting firm that's been doing mergers and acquisitions for two"
+    },
+    {
+      "start": 944.92,
+      "end": 954.2,
+      "text": "acquisitions for two decades. They look at a problem space. And they see more and simultaneously, they see"
+    },
+    {
+      "start": 952.5,
+      "end": 961.62,
+      "text": "simultaneously, they see less. Because they know 70 % of this is noise. Here's the five load -bearing walls in this room"
+    },
+    {
+      "start": 959.96,
+      "end": 968.96,
+      "text": "in this room of information. And that's what I'm going to focus on. That's effectively what a shape is. It's like an expert"
+    },
+    {
+      "start": 968.28,
+      "end": 977.36,
+      "text": "like an expert lens. You can program them yourselves in the platform. But it's using a competitor type. It's using a market"
+    },
+    {
+      "start": 976.12,
+      "end": 984.94,
+      "text": "using a market trend type. So the types are just like the things, the nouns in the world. And it's just like, OK, I'm going to make this work. a"
+    },
+    {
+      "start": 984.48,
+      "end": 993.8,
+      "text": "this work. a complete noob analyst and a 20 -year veteran, they're working on the same types, right? I sit down at the chess board, I'm no Magnus Carlsen, but"
+    },
+    {
+      "start": 992.44,
+      "end": 1000.38,
+      "text": "Magnus Carlsen, but I know I've got a rook and a bishop, and I'm gonna figure out how to take some pieces. But that is kind of the, you know,"
+    },
+    {
+      "start": 999.44,
+      "end": 1008.5,
+      "text": "the, you know, a shape is when you look at the board and you see things that somebody who is not as expert as you in that domain, you"
+    },
+    {
+      "start": 1007.3,
+      "end": 1016.3,
+      "text": "that domain, you know, you see things they don't see, that's what you're able to program in the platform with those. All right, so I'm gonna go ahead"
+    },
+    {
+      "start": 1015.98,
+      "end": 1025.12,
+      "text": "gonna go ahead and walk us through some of the demo pieces here. We will activate the market research shape. Let's activate the shape. And"
+    },
+    {
+      "start": 1023.26,
+      "end": 1033.4,
+      "text": "the shape. And then let's do a little research. I'm interested in finding some agentic"
+    },
+    {
+      "start": 1030.26,
+      "end": 1039.3,
+      "text": "finding some agentic AI upskilling workshops in Austin, Texas."
+    },
+    {
+      "start": 1037.7,
+      "end": 1052.02,
+      "text": "in Austin, Texas. Cool."
+    },
+    {
+      "start": 1038.28,
+      "end": 1052.56,
+      "text": "Austin, Texas. Cool. So"
+    },
+    {
+      "start": 1038.9,
+      "end": 1053.18,
+      "text": "Texas. Cool. So with"
+    },
+    {
+      "start": 1051.46,
+      "end": 1061.74,
+      "text": "Cool. So with this shape active, and I'll show you guys really quickly if we go back over to agentic"
+    },
+    {
+      "start": 1057.84,
+      "end": 1068.52,
+      "text": "over to agentic workshop, somewhere in here. Agentic workshop, there we go. There"
+    },
+    {
+      "start": 1066.26,
+      "end": 1075.28,
+      "text": "we go. There are lots of shapes in the Penumbra library, but here, for instance, and I'll like, try, and blow this"
+    },
+    {
+      "start": 1074.42,
+      "end": 1082.16,
+      "text": "and blow this up a little bit for you guys. Each of these is a type, and this is what Claude is seeing when it says, oh, I'm gonna check"
+    },
+    {
+      "start": 1081.76,
+      "end": 1090.02,
+      "text": "I'm gonna check on the shape. What's in the shape? Okay, cool, we got these five types. Each type has a rule. And, you know, this is different than a"
+    },
+    {
+      "start": 1089.22,
+      "end": 1098.52,
+      "text": "different than a traditional, like, Obsidian markdown second brain, because the structure. Without this kind of thing, you tell Claude to add something"
+    },
+    {
+      "start": 1097.5,
+      "end": 1106.84,
+      "text": "to add something to your brain, it's just going to dump a wall of text into a markdown file and say, great job, boss. We did it. And later"
+    },
+    {
+      "start": 1105.24,
+      "end": 1113.74,
+      "text": "it. And later down the line, when it wants to go and find that, it has to go and sift through all of that material somewhat like long form. Here,"
+    },
+    {
+      "start": 1112.18,
+      "end": 1121.22,
+      "text": "long form. Here, we're giving it rules. We're like, all right, when we have a subject in the market that we're looking on, you know, we need a stable public"
+    },
+    {
+      "start": 1120.66,
+      "end": 1129.98,
+      "text": "a stable public name of the company. We need a neutral source grounded description of what the subject is and who it's for. We need to answer these"
+    },
+    {
+      "start": 1128.64,
+      "end": 1137.68,
+      "text": "to answer these questions. We need to understand what kind of thing it is in the market. We need to understand, you know, the hub, where this thing"
+    },
+    {
+      "start": 1137.04,
+      "end": 1146.36,
+      "text": "where this thing comes from, what's the canonical, like, master source of it. And for every single one of these things, the agent is getting a very"
+    },
+    {
+      "start": 1145.36,
+      "end": 1153.82,
+      "text": "getting a very clear set of instructions. And, like, part of the magic of Penumbra is that you don't have to think of any of this. Straight up, just come"
+    },
+    {
+      "start": 1152.9,
+      "end": 1161.44,
+      "text": "up, just come into the platform, use one of the public library shapes with credits. You can build your own and say, hey, I'm looking to do, you know, X,"
+    },
+    {
+      "start": 1160.88,
+      "end": 1169.98,
+      "text": "you know, X, Y, Z, and it'll design a shape for you. But this is effectively putting the output on guardrails. So agent's not allowed"
+    },
+    {
+      "start": 1169.22,
+      "end": 1178.26,
+      "text": "agent's not allowed to output trash. It's not gonna put out nonsense things because you're saying, hey, when you fill this form out, we're gonna"
+    },
+    {
+      "start": 1175.92,
+      "end": 1184.98,
+      "text": "out, we're gonna check you against these guardrails. And so when we go over here and we look at things that"
+    },
+    {
+      "start": 1183.52,
+      "end": 1192.96,
+      "text": "at things that we're finding, I'm gonna zoom this in too, we found several good options for our AI"
+    },
+    {
+      "start": 1190.62,
+      "end": 1201.76,
+      "text": "for our AI upskilling. So we're gonna go ahead and do some workshops. I'm gonna say, let's add them to our Penumbra brain. Capture"
+    },
+    {
+      "start": 1197.66,
+      "end": 1207.64,
+      "text": "Penumbra brain. Capture them for me. And we are using Sonnet"
+    },
+    {
+      "start": 1206.06,
+      "end": 1215.3,
+      "text": "are using Sonnet on Medium here. So you get more rich responses from"
+    },
+    {
+      "start": 1212.42,
+      "end": 1221.56,
+      "text": "rich responses from using a larger, smarter model, just broadly speaking, not Penumbra related. So when you're doing analysis"
+    },
+    {
+      "start": 1220.68,
+      "end": 1229.82,
+      "text": "you're doing analysis and those sorts of things, if you're trying to, you know, it's like going back through files written by a junior employee versus"
+    },
+    {
+      "start": 1228.16,
+      "end": 1237.34,
+      "text": "junior employee versus a really nice like senior dossier of like a situation or something like that. When you're using a larger model, a lot of times they"
+    },
+    {
+      "start": 1236.74,
+      "end": 1245.7,
+      "text": "of times they handle kind of these rules and stuff that the agent has to deal with more effectively. Would it be fair also to say that it's working?"
+    },
+    {
+      "start": 1256.63,
+      "end": 1265.71,
+      "text": "Yeah, so... Cool. We're going to let that ride. It's reading the shapes right now"
+    },
+    {
+      "start": 1265.09,
+      "end": 1275.35,
+      "text": "shapes right now and saying what are the rules for these things? Oh, okay, I have to fill these in, et cetera. But for memory"
+    },
+    {
+      "start": 1272.53,
+      "end": 1282.41,
+      "text": "But for memory with agents, that's one of the reasons you have a second brain is so it can remember conversations and things. This is a bit of a different"
+    },
+    {
+      "start": 1281.33,
+      "end": 1290.63,
+      "text": "of a different approach to it where we're saying, hey, you don't necessarily need to recall, like, on"
+    },
+    {
+      "start": 1288.79,
+      "end": 1297.83,
+      "text": "recall, like, on Tuesday the 12th of last month, I had a dentist appointment. There are tools that can do that. For"
+    },
+    {
+      "start": 1296.65,
+      "end": 1305.85,
+      "text": "do that. For Penumbra, this is more of like expert thinking. When you're doing market analysis, when you're building a project"
+    },
+    {
+      "start": 1304.85,
+      "end": 1315.15,
+      "text": "building a project plan, when you're doing strategic thinking for a thing, it's less important, hey, remember that I like labradoodles, right?"
+    },
+    {
+      "start": 1311.97,
+      "end": 1321.09,
+      "text": "like labradoodles, right? And I feel like a lot of today's memory tools kind of trend in that direction of, like, we'll remember everything about you."
+    },
+    {
+      "start": 1320.07,
+      "end": 1329.53,
+      "text": "everything about you. We're going to have a tiny model write every single fact that you've told us about everything. And that's noisy. My opinion"
+    },
+    {
+      "start": 1327.73,
+      "end": 1344.61,
+      "text": "noisy. My opinion is... Okay. Okay. Okay."
+    },
+    {
+      "start": 1330.01,
+      "end": 1346.03,
+      "text": "Okay. Okay. Okay. Okay."
+    },
+    {
+      "start": 1330.63,
+      "end": 1346.07,
+      "text": "Okay. Okay. Okay. Okay."
+    },
+    {
+      "start": 1344.45,
+      "end": 1354.21,
+      "text": "Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay. Okay."
+    },
+    {
+      "start": 1348.13,
+      "end": 1357.77,
+      "text": "Okay. Okay. Okay. Okay. it. For"
+    },
+    {
+      "start": 1355.69,
+      "end": 1364.93,
+      "text": "Okay. it. For you guys with your free dev accounts, Penumbra has a GitHub for knowledge baked in"
+    },
+    {
+      "start": 1362.83,
+      "end": 1372.25,
+      "text": "knowledge baked in that is helping you keep what's in your brain secure. On the free account, it just sends"
+    },
+    {
+      "start": 1371.39,
+      "end": 1380.75,
+      "text": "it just sends stuff into the brain. But on the base paid plan, it has a commit. So it allows you to analyse what's"
+    },
+    {
+      "start": 1379.65,
+      "end": 1389.33,
+      "text": "to analyse what's going in before it goes in. You can roll things back. And for this, I think we'll have to go into the app"
+    },
+    {
+      "start": 1386.87,
+      "end": 1401.29,
+      "text": "into the app here, and I'll show you guys in just a second, to see what that looks like. Okay."
+    },
+    {
+      "start": 1393.17,
+      "end": 1403.11,
+      "text": "looks like. Okay. So"
+    },
+    {
+      "start": 1393.53,
+      "end": 1403.29,
+      "text": "like. Okay. So we'll"
+    },
+    {
+      "start": 1400.85,
+      "end": 1410.03,
+      "text": "Okay. So we'll go over here, and we will look at the commit that just came in from the agent. One"
+    },
+    {
+      "start": 1408.47,
+      "end": 1417.39,
+      "text": "the agent. One of the reasons that this is useful is if you think about having multiple agents doing different things, you can give them different slices of a remit"
+    },
+    {
+      "start": 1416.57,
+      "end": 1424.09,
+      "text": "of a remit with skills. Hey, I want you to look at competitors in this space, I want you to look at competitors in that space. Add these in, and"
+    },
+    {
+      "start": 1423.07,
+      "end": 1432.21,
+      "text": "these in, and then you can have a human or an agent looking at these and reviewing them. So this is the session information that it captured from"
+    },
+    {
+      "start": 1430.97,
+      "end": 1471.37,
+      "text": "it captured from this. We've got market subjects, market sources, market findings. And it's in the ! From"
+    },
+    {
+      "start": 1439.59,
+      "end": 1471.93,
+      "text": "the ! From a"
+    },
+    {
+      "start": 1439.63,
+      "end": 1472.29,
+      "text": "! From a separate"
+    },
+    {
+      "start": 1470.81,
+      "end": 1480.25,
+      "text": "From a separate chat, we can say, hey, read my brain, find me this stuff on workshops. But if you think about the"
+    },
+    {
+      "start": 1479.15,
+      "end": 1488.27,
+      "text": "think about the conversations that you're having with AI, good conversations, long, short, whatever, if you've got a persistent way that you're capturing information,"
+    },
+    {
+      "start": 1487.21,
+      "end": 1496.39,
+      "text": "you're capturing information, you can turn it into a shape, which is kind of like a skill, in a sense, and"
+    },
+    {
+      "start": 1493.91,
+      "end": 1503.39,
+      "text": "a sense, and have your agent eat stuff from the AI. And you can go to old conversations"
+    },
+    {
+      "start": 1501.97,
+      "end": 1511.33,
+      "text": "to old conversations that you've had, things that are two months old, two years old, whatever, if you've got the MCP plugged in, and basically just say, hey, read"
+    },
+    {
+      "start": 1510.39,
+      "end": 1520.15,
+      "text": "say, hey, read my brain, use this shape, put some stuff in for me. And what Jordan, Jordan's Hermes agent, is"
+    },
+    {
+      "start": 1517.85,
+      "end": 1526.91,
+      "text": "Hermes agent, is starting to look a little bit like the one that I showed you guys with all of the nodes and stuff connected in the main"
+    },
+    {
+      "start": 1525.87,
+      "end": 1535.07,
+      "text": "in the main one. But in a nutshell, building a second brain is about keeping your information"
+    },
+    {
+      "start": 1533.51,
+      "end": 1542.03,
+      "text": "keeping your information organised and ready to work with. You don't want to just have a big dumpster fire of information that an agent has to go and sort through."
+    },
+    {
+      "start": 1541.37,
+      "end": 1550.59,
+      "text": "and sort through. You want to have that be a bit more principled. And I think working with a tool like this, plug in the MCP,"
+    },
+    {
+      "start": 1549.87,
+      "end": 1558.29,
+      "text": "in the MCP, it's easy mode for you once you get it set up. You can build your own shapes. Doesn't have to just be market research. It allows you"
+    },
+    {
+      "start": 1557.21,
+      "end": 1566.93,
+      "text": "It allows you to multiply yourself and your capabilities. And whenever you go back and look at this information, like, it's organised"
+    },
+    {
+      "start": 1564.27,
+      "end": 1573.33,
+      "text": "like, it's organised here for you. And this is highly distilled compared to a long form markdown file where"
+    },
+    {
+      "start": 1571.65,
+      "end": 1580.23,
+      "text": "markdown file where every single thing you want to put in your brain gets a markdown file. This is much more context efficient for the agent to work with. And"
+    },
+    {
+      "start": 1579.21,
+      "end": 1587.19,
+      "text": "work with. And everything you put in gets automatically indexed for text and vector search. So you can find it pretty quickly. What's up, Jordan? Jordan, you want to talk"
+    },
+    {
+      "start": 1587.19,
+      "end": 1596.13,
+      "text": "want to talk about that? One of the things I like to say about Penumbra when people start kind of mentioning brains and what I'm using is it's the difference"
+    },
+    {
+      "start": 1595.27,
+      "end": 1604.39,
+      "text": "it's the difference between me taking a Google doc and just writing in some notes and using something like Notion"
+    },
+    {
+      "start": 1602.95,
+      "end": 1612.09,
+      "text": "something like Notion where I can organise things and keep it nice and neat and tidy for future use. There is a time and a place"
+    },
+    {
+      "start": 1611.63,
+      "end": 1622.13,
+      "text": "and a place for, like, quick scratch notes. Yeah. But Penumbra is one of those things to where, you know, I'm not going to be able to do a huge"
+    },
+    {
+      "start": 1617.03,
+      "end": 1625.03,
+      "text": "do a huge presentation or not or not or not or not or not or not or not or not or not or not or not or not or not"
+    },
+    {
+      "start": 1623.29,
+      "end": 1629.63,
+      "text": "not or not or not or not or not or not or not or not or not or not or not or not or not or not or not or"
+    },
+    {
+      "start": 1628.97,
+      "end": 1631.51,
+      "text": "or not or not or not or not or not or not or not or not or not or not or not or not or not or not or not"
+    },
+    {
+      "start": 1631.51,
+      "end": 1631.51,
+      "text": "not or not or not or not or not or not or not or not or not or not or not or not or not or not or not or"
+    },
+    {
+      "start": 1631.51,
+      "end": 1631.51,
+      "text": "or not or not or not or not or not or not or not or not or not or not or not or not or not or not or not"
+    },
+    {
+      "start": 1631.51,
+      "end": 1631.55,
+      "text": "not or not or not or not or not or not or not or not or not or not or not or not or not or not or not or"
+    },
+    {
+      "start": 1631.51,
+      "end": 1631.55,
+      "text": "or not or not or not or not or not or not or not or not or not or not or not or not or not or not or not"
+    },
+    {
+      "start": 1631.55,
+      "end": 1641.27,
+      "text": "not or not or not or not or not or not or not or not or not or not or not or not or not or not or not"
+    },
+    {
+      "start": 1636.39,
+      "end": 1646.01,
+      "text": "not or not or not or not"
+    },
+    {
+      "start": 1641.57,
+      "end": 1650.57,
+      "text": "not or not or to have to do. Yeah. Like normally you have to talk your agent"
+    },
+    {
+      "start": 1649.13,
+      "end": 1658.27,
+      "text": "talk your agent through those things. And when it has the information already organized in the way that a shape declares, you've"
+    },
+    {
+      "start": 1656.59,
+      "end": 1665.05,
+      "text": "shape declares, you've basically like, and in my mind, guys, I think of this as like design time. Like if you've ever been on a project that has had a"
+    },
+    {
+      "start": 1664.65,
+      "end": 1674.01,
+      "text": "has had a really bad discovery phase upfront, and then like two months into it, everything's on fire. Like, I feel like that is what most people"
+    },
+    {
+      "start": 1672.49,
+      "end": 1681.77,
+      "text": "what most people are experiencing, but like can't label when working with their agents once they get up to speed because they haven't done the design thinking work"
+    },
+    {
+      "start": 1680.25,
+      "end": 1689.23,
+      "text": "design thinking work upfront of like, what does good look like at the end of this? We just sort of like step on the treadmill, YOLO a bunch of stuff"
+    },
+    {
+      "start": 1688.73,
+      "end": 1696.57,
+      "text": "bunch of stuff and do an agent. And then like you turn around and three weeks later, you've got an obsidian vault with 500 files. And it's like, okay, what"
+    },
+    {
+      "start": 1695.41,
+      "end": 1704.63,
+      "text": "like, okay, what do I do with this? You have to build a system for your system. And the separation that I want you guys to take"
+    },
+    {
+      "start": 1703.99,
+      "end": 1705.65,
+      "text": "guys to take away with, like whether they're going to be able to do it or not, I don't know. I don't know. I don't know. But the answer to"
+    },
+    {
+      "start": 1705.65,
+      "end": 1713.41,
+      "text": "the answer to this is Penumbra related or not, is design time and run time. Run time is like when the agent's reading stuff and thinking and putting stuff out."
+    },
+    {
+      "start": 1712.67,
+      "end": 1719.35,
+      "text": "putting stuff out. Design time is like the pre -work. You got to do a little bit of the prep work. I love the story of John Wooden, the famous"
+    },
+    {
+      "start": 1718.47,
+      "end": 1727.59,
+      "text": "Wooden, the famous basketball coach. Whenever new players would come and join the basketball team, he's a famous UCLA coach, like one of the most famous"
+    },
+    {
+      "start": 1727.11,
+      "end": 1734.67,
+      "text": "the most famous college basketball coaches of all time. The first exercise on the first day he would do with the kids is he would literally teach them how to"
+    },
+    {
+      "start": 1734.35,
+      "end": 1742.47,
+      "text": "them how to put And you'd have kids flipping their lid of, I know how to put on my socks, coach. And then after he was like, roll your socks"
+    },
+    {
+      "start": 1741.67,
+      "end": 1751.11,
+      "text": "roll your socks on like this. He teaches them how to tie their shoelaces. And these are highly regarded basketball prospects playing at one of the best basketball"
+    },
+    {
+      "start": 1750.31,
+      "end": 1759.43,
+      "text": "the best basketball college. And the reason he was doing those things is because he was making them cognizant of the prep work that goes"
+    },
+    {
+      "start": 1758.39,
+      "end": 1767.79,
+      "text": "work that goes into the success that you have on the court. I kind of think of the same thing with working with agents and context"
+    },
+    {
+      "start": 1766.67,
+      "end": 1775.95,
+      "text": "agents and context systems. Agents are so smart that they can handle like slices of things really coherently. But once you start having a bigger and bigger thing,"
+    },
+    {
+      "start": 1775.29,
+      "end": 1783.03,
+      "text": "and bigger thing, you're focusing on bigger and bigger projects, doing that upfront design time work of, I'm going to make a shape for this. I'm going to make five"
+    },
+    {
+      "start": 1782.53,
+      "end": 1787.71,
+      "text": "to make five shapes for this. I'm going to think about how two months from now this is going to blow up in my face and I'm going to solve"
+    },
+    {
+      "start": 1787.41,
+      "end": 1796.55,
+      "text": "going to solve that today. That's really, really important. And in a lot of the second brain conversations. It kind of goes unnoticed because"
+    },
+    {
+      "start": 1794.79,
+      "end": 1803.09,
+      "text": "goes unnoticed because it's really exciting to have these tools that can just eat the Internet and put it into a vault for you. And then when you're actually trying"
+    },
+    {
+      "start": 1802.11,
+      "end": 1811.93,
+      "text": "you're actually trying to put the rubber on the road, have consistency and not be spending like three dollars per request when"
+    },
+    {
+      "start": 1810.09,
+      "end": 1820.75,
+      "text": "per request when Claude is reading 100 files to figure out what the hell your request was. It's a great it's a great asset. So"
+    },
+    {
+      "start": 1817.57,
+      "end": 1828.21,
+      "text": "great asset. So the last thing. That I will share with you guys is. There"
+    },
+    {
+      "start": 1824.57,
+      "end": 1833.67,
+      "text": "guys is. There is a second shape that I set up that all that's in the skill in the project repo."
+    },
+    {
+      "start": 1832.69,
+      "end": 1841.39,
+      "text": "the project repo. One is market research and the other is market sense making when you're working with Penumbra when you're working with type systems, we can kind of have"
+    },
+    {
+      "start": 1840.77,
+      "end": 1850.31,
+      "text": "kind of have this structure where at the outset. These are facts. What do you do with facts? You interpret them, you reason over them so"
+    },
+    {
+      "start": 1849.39,
+      "end": 1858.45,
+      "text": "over them so you can build second layer shapes that look like this. You look at facts and reason over them. So in this sense, you've got"
+    },
+    {
+      "start": 1857.43,
+      "end": 1865.65,
+      "text": "sense, you've got all the research of AI upskilling workshops in Austin. What are you going to do with that? We're going to build a better AI upskilling workshop and"
+    },
+    {
+      "start": 1864.01,
+      "end": 1873.37,
+      "text": "upskilling workshop and with an upskilling, you know, with a sense making shape or something like that. You can look at that analyze what"
+    },
+    {
+      "start": 1871.79,
+      "end": 1881.51,
+      "text": "that analyze what you see here and turn that into outputs strategies plans and all that sort of thing. So last bit in"
+    },
+    {
+      "start": 1879.83,
+      "end": 1889.15,
+      "text": "last bit in Penumbra. The shape builder Lord. I hope this works live demo. This"
+    },
+    {
+      "start": 1887.11,
+      "end": 1896.53,
+      "text": "live demo. This works. This works all the time and then you know you get in front of the crowd for the live demo build me a shape for what"
+    },
+    {
+      "start": 1894.99,
+      "end": 1904.03,
+      "text": "shape for what are we going to build a shape for guys? What's one? What's something on your mind? Jordan hit me. Tool"
+    },
+    {
+      "start": 1900.05,
+      "end": 1909.57,
+      "text": "hit me. Tool calling CLI versus NCP. Okay. That's"
+    },
+    {
+      "start": 1905.35,
+      "end": 1914.37,
+      "text": "NCP. Okay. That's something better. No, it's okay. I just sent it. This is"
+    },
+    {
+      "start": 1913.73,
+      "end": 1920.57,
+      "text": "it. This is just to show you guys like the Penumbra. I know it's a lot of this can be abstract of like what the hell is a shape and"
+    },
+    {
+      "start": 1919.13,
+      "end": 1928.19,
+      "text": "a shape and you know, it's just a way of looking at information. Basically the Penumbra platform makes this"
+    },
+    {
+      "start": 1926.05,
+      "end": 1935.19,
+      "text": "platform makes this really really easy for you where you can go in and just type in. Here's the thing I'm trying to organize and it will build you"
+    },
+    {
+      "start": 1934.41,
+      "end": 1943.85,
+      "text": "will build you a shape that you can then go and use with your agents anywhere. In"
+    },
+    {
+      "start": 1938.29,
+      "end": 1948.09,
+      "text": "agents anywhere. In the brain. Or is it like? Creating"
+    },
+    {
+      "start": 1945.45,
+      "end": 1954.69,
+      "text": "it like? Creating a shape from whatever LLM is. So there's a lot of rules and like guidelines"
+    },
+    {
+      "start": 1953.51,
+      "end": 1962.57,
+      "text": "and like guidelines that we've programmed into the builder engine that is basically saying like depending on what the user is asking about come in at this"
+    },
+    {
+      "start": 1962.07,
+      "end": 1971.51,
+      "text": "in at this level make it this granular or this, you know streamlined and in this one for instance, it produced"
+    },
+    {
+      "start": 1969.65,
+      "end": 1978.93,
+      "text": "instance, it produced for ! New types and over here on the right hand side, you can see so our request was build me a shape for tool calling"
+    },
+    {
+      "start": 1978.15,
+      "end": 1987.43,
+      "text": "for tool calling CLI versus MCP analysis and the shape it proposed is a tool integration architecture shape evaluation framework for comparing"
+    },
+    {
+      "start": 1985.87,
+      "end": 1995.71,
+      "text": "framework for comparing tool calling patterns. And so what we have is integration pattern as a type exposed capability architectural constraints deployment"
+    },
+    {
+      "start": 1993.51,
+      "end": 2002.53,
+      "text": "architectural constraints deployment scenarios and this thing is designed to think like an expert. So it's going to look at a problem that you give it and just try"
+    },
+    {
+      "start": 2001.81,
+      "end": 2011.81,
+      "text": "and just try and compose. The most expert framework that it can for you and when you give it the CLI or MCP tool calling details, it's"
+    },
+    {
+      "start": 2009.97,
+      "end": 2018.97,
+      "text": "calling details, it's going to then once you print this thing into your shapes library, you know what we saw sonnet doing in the main chat. It's"
+    },
+    {
+      "start": 2017.89,
+      "end": 2025.65,
+      "text": "main chat. It's going to be able to you know, put things into a deployment scenario type where the places that we're going to be deploying this it's going to"
+    },
+    {
+      "start": 2025.15,
+      "end": 2030.57,
+      "text": "it's going to label them all and put them in this bucket. What sort of constraints do we have doesn't need to be local. Does it need to be in"
+    },
+    {
+      "start": 2030.13,
+      "end": 2037.85,
+      "text": "to be in the cloud faster slow? Do any of these things matter? It's going to be able to capture those things in here and ultimately what you get when"
+    },
+    {
+      "start": 2037.35,
+      "end": 2049.33,
+      "text": "you get when you save this is it's immediately available in the brain. Hey,"
+    },
+    {
+      "start": 2043.17,
+      "end": 2052.25,
+      "text": "the brain. Hey, can you see the tool capability shape? We"
+    },
+    {
+      "start": 2050.93,
+      "end": 2060.27,
+      "text": "capability shape? We just made tell me about it. So this is really nice synergy of like when you hit a thing"
+    },
+    {
+      "start": 2059.23,
+      "end": 2067.49,
+      "text": "hit a thing that you want to structure or like think about. Differently you can build a shape for it and then you know, it's immediately available to the agent."
+    },
+    {
+      "start": 2066.71,
+      "end": 2077.95,
+      "text": "to the agent. That's that's working on the problem and thanks"
+    },
+    {
+      "start": 2069.75,
+      "end": 2078.87,
+      "text": "problem and thanks for your help sonnet."
+    },
+    {
+      "start": 2078.13,
+      "end": 2087.57,
+      "text": "your help sonnet. Cool. So it sees all the stuff that's in here and it is"
+    },
+    {
+      "start": 2083.89,
+      "end": 2093.37,
+      "text": "and it is able to kind of use this as leverage when it's organizing the information that you're chatting with"
+    },
+    {
+      "start": 2092.45,
+      "end": 2101.73,
+      "text": "you're chatting with it about so yeah, that's a that's a number and some second brain philosophy for you guys. Thanks for so good."
+    },
+    {
+      "start": 2100.37,
+      "end": 2109.69,
+      "text": "for so good. So good. I know I was a little long -winded so question perfect. I"
+    },
+    {
+      "start": 2107.47,
+      "end": 2114.03,
+      "text": "question perfect. I do want to preface the question asking real quick. Yeah, so"
+    }
+  ],
+  "widgets": [],
+  "assets": {
+    "stream": "https://recordings.organizedai.vip/media/06%20-%20Shep%20-%20Build%20Your%20Second%20Brain.mp4"
+  }
+}

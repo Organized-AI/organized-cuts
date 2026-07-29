@@ -1,0 +1,1332 @@
+{
+  "name": "vault-jordaaan-observability",
+  "title": "Jordaaan - Observability",
+  "speaker": "Jordaaan - Observability",
+  "media_url": "https://recordings.organizedai.vip/media/05%20-%20Jordaaan%20-%20Observability.mp4",
+  "duration": 1918.93,
+  "chapters": [
+    {
+      "id": "Studio-1",
+      "title": "Introduction to Observability",
+      "kind": "chapter",
+      "start": 0.0,
+      "end": 63.0,
+      "caption": "Jordan Hill introduces the concept of agentic observability, emphasizing the need for visualizing AI agent workflows in real systems."
+    },
+    {
+      "id": "Studio-2",
+      "title": "Cloudflare Workers as Foundation",
+      "kind": "chapter",
+      "start": 63.0,
+      "end": 115.0,
+      "caption": "He explains how ephemeral Cloudflare Workers enable task execution and data reporting, forming the backbone of his observability system."
+    },
+    {
+      "id": "Studio-3",
+      "title": "Making AI Accessible",
+      "kind": "chapter",
+      "start": 115.0,
+      "end": 165.0,
+      "caption": "Jordan highlights the importance of simplifying complex AI concepts for non-technical stakeholders to ensure adoption and understanding."
+    },
+    {
+      "id": "Studio-4",
+      "title": "Data Pipeline and Storage",
+      "kind": "chapter",
+      "start": 165.0,
+      "end": 303.0,
+      "caption": "He details the architecture using Cloudflare Queue, D1, and KV for event capture, long-term storage, and fast access to leaderboard data."
+    },
+    {
+      "id": "Studio-5",
+      "title": "Standardizing AI Evaluation",
+      "kind": "chapter",
+      "start": 303.0,
+      "end": 405.0,
+      "caption": "Jordan draws parallels to horsepower in cars, advocating for measurable benchmarks to compare and improve agentic systems."
+    },
+    {
+      "id": "Studio-6",
+      "title": "Visualizing the System",
+      "kind": "chapter",
+      "start": 405.0,
+      "end": 518.0,
+      "caption": "He presents a live leaderboard and 3D diagram of his Cloudflare setup, showing real-time performance and system flow."
+    },
+    {
+      "id": "Studio-7",
+      "title": "Traceability and Real-Time Needs",
+      "kind": "chapter",
+      "start": 518.0,
+      "end": 620.0,
+      "caption": "Jordan explains how run IDs enable traceability across agents and discusses the trade-offs between real-time updates and practicality."
+    },
+    {
+      "id": "Studio-8",
+      "title": "Component-Based Architecture",
+      "kind": "chapter",
+      "start": 620.0,
+      "end": 837.0,
+      "caption": "He breaks down Cloudflare’s components—queue, D1, KV, R2, durable objects—and how they work together without complex orchestration."
+    },
+    {
+      "id": "Studio-9",
+      "title": "Interactive Visualization",
+      "kind": "chapter",
+      "start": 837.0,
+      "end": 1045.0,
+      "caption": "Jordan demonstrates an interactive, animated diagram of his system, allowing users to explore components and their relationships."
+    },
+    {
+      "id": "Studio-10",
+      "title": "Real-World Applications and Vision",
+      "kind": "chapter",
+      "start": 1045.0,
+      "end": 1915.0,
+      "caption": "He shares examples like automated media buying and event attendance tracking, concluding with a vision for standardized, visual AI workflows."
+    }
+  ],
+  "transcript": [
+    {
+      "start": 1.58,
+      "end": 10.82,
+      "text": "Hi, I'm Jordan Hill and this is Organized AI. So I wanted to make sure that I delivered what I promised. The"
+    },
+    {
+      "start": 9.4,
+      "end": 17.18,
+      "text": "I promised. The event was amazing. We ran over a little bit and I knew that that was a possibility. Still wanted to make sure you guys got out on"
+    },
+    {
+      "start": 16.64,
+      "end": 25.88,
+      "text": "got out on time. So I decided to come here to the North Shore Media Studio to record my talk and make sure that you guys understood what"
+    },
+    {
+      "start": 24.3,
+      "end": 33.34,
+      "text": "guys understood what the state of agentic observability and visualization could look like for you, your"
+    },
+    {
+      "start": 32.42,
+      "end": 41.7,
+      "text": "for you, your organization, or just a side project so that you can make sense of how agents work and move through your organization"
+    },
+    {
+      "start": 40.9,
+      "end": 50.38,
+      "text": "through your organization or any project that you're building. Without further ado, I want to talk about observing, tracing, and ranking. So"
+    },
+    {
+      "start": 48.14,
+      "end": 57.14,
+      "text": "and ranking. So the thing that I'm most interested about. And excited to show you is a 3D"
+    },
+    {
+      "start": 55.78,
+      "end": 65.06,
+      "text": "is a 3D diagram. But in order to get there, we have to have data in order to visualize. So in this case, I"
+    },
+    {
+      "start": 63.7,
+      "end": 72.84,
+      "text": "this case, I decided to do Cloudflare. So Cloudflare workers have been a secret unlock for me over the past, I'd"
+    },
+    {
+      "start": 71.76,
+      "end": 81.28,
+      "text": "the past, I'd probably say three or four months. Once I started to realize that I could use these ephemeral workers to tackle"
+    },
+    {
+      "start": 78.82,
+      "end": 87.86,
+      "text": "workers to tackle tasks and then come back and report what they did. I knew that it was going to be a central part of my workflow."
+    },
+    {
+      "start": 87.32,
+      "end": 96.44,
+      "text": "of my workflow. That said, being able to do that in a system like Cloudflare that naturally has all your traces, all your logs,"
+    },
+    {
+      "start": 95.66,
+      "end": 104.66,
+      "text": "all your logs, allows you to fine tune any data that's coming from that work, and then ultimately"
+    },
+    {
+      "start": 102.72,
+      "end": 112.02,
+      "text": "and then ultimately add it to a loop and then visualize it through like a leaderboard or obviously 3D diagrams that"
+    },
+    {
+      "start": 110.44,
+      "end": 119.44,
+      "text": "3D diagrams that show the process. It really unlocks quite a lot. One of the biggest issues I've had in this space, especially when dealing"
+    },
+    {
+      "start": 118.36,
+      "end": 127.68,
+      "text": "especially when dealing with maybe non -technical business owners. So these are smart people, C -suite, but they might not understand what agents are. And"
+    },
+    {
+      "start": 126.68,
+      "end": 135.8,
+      "text": "agents are. And then you start talking about workers and you start talking about loops and tool use and prompting and tokens and"
+    },
+    {
+      "start": 134.94,
+      "end": 144.08,
+      "text": "and tokens and all these things. It just, in totality, it goes over their heads. And we don't want that. We want to make sure"
+    },
+    {
+      "start": 143.56,
+      "end": 152.64,
+      "text": "to make sure that all these AI driven processes are usable and approachable. I think that"
+    },
+    {
+      "start": 151.5,
+      "end": 164.16,
+      "text": "I think that making it approachable is the secret unlock. That's the difference. And so I'm going to show you what that looks like. Awesome."
+    },
+    {
+      "start": 158.04,
+      "end": 170.24,
+      "text": "looks like. Awesome. So let me"
+    },
+    {
+      "start": 164.28,
+      "end": 175.2,
+      "text": "So let me see this real quick. Okay. So"
+    },
+    {
+      "start": 170.8,
+      "end": 179.86,
+      "text": "quick. Okay. So it starts with the receipts. Everything in today's leaderboard is real. It's"
+    },
+    {
+      "start": 178.48,
+      "end": 188.18,
+      "text": "is real. It's my personal Cloudflare account. I've got 188 deployed workers, 30 guides, 23"
+    },
+    {
+      "start": 185.26,
+      "end": 194.58,
+      "text": "30 guides, 23 wikis, and 12 architectural document. So live system diagrams, if"
+    },
+    {
+      "start": 193.3,
+      "end": 201.26,
+      "text": "system diagrams, if you will. So I wasn't wanting to do anything with mock data. I wanted to make sure that you guys understood how important it is to have"
+    },
+    {
+      "start": 201.26,
+      "end": 206.56,
+      "text": "is to have a leaderboard. And I'm going to show you how important it is to plug this into your real system so that you can see it. And we're"
+    },
+    {
+      "start": 204.0,
+      "end": 213.26,
+      "text": "it. And we're talking about not three different tools. We're talking about one loop that closes. So observing means every"
+    },
+    {
+      "start": 211.32,
+      "end": 220.48,
+      "text": "observing means every event is captured. The ingestion layer, if you will. So this is where Cloudflare queues async."
+    },
+    {
+      "start": 218.02,
+      "end": 227.16,
+      "text": "Cloudflare queues async. So if the system breaks or if something happens, guess what? I've got an entire queue. So a queue just like"
+    },
+    {
+      "start": 226.42,
+      "end": 235.92,
+      "text": "queue just like a line. A queue of events that are waiting for me. Once I come back online further into that idea is"
+    },
+    {
+      "start": 234.22,
+      "end": 243.48,
+      "text": "that idea is the trace. So the trace is a D1 storage bucket. So D1 is a long term storage in this case,"
+    },
+    {
+      "start": 242.82,
+      "end": 252.26,
+      "text": "in this case, and it is supplemented by KV. So KV is where my leaderboard lives and KV is like a hot path. It's"
+    },
+    {
+      "start": 250.64,
+      "end": 260.02,
+      "text": "hot path. It's the short term storage for anything that's happening in that system, in this system specifically. And"
+    },
+    {
+      "start": 258.2,
+      "end": 267.24,
+      "text": "system specifically. And that's also where we. Get off our ranking and things of that nature. So. Why does this work?"
+    },
+    {
+      "start": 266.6,
+      "end": 276.34,
+      "text": "does this work? Why does it matter? Every event as it happens can be observed. So structuring the events to have a run ID, an"
+    },
+    {
+      "start": 274.9,
+      "end": 284.08,
+      "text": "run ID, an agent, a understanding of scoring. All this matters. It's one shape for everything from"
+    },
+    {
+      "start": 282.84,
+      "end": 292.0,
+      "text": "for everything from a harness tick to a full run result. So from start to finish, you're able to see. What's happening with"
+    },
+    {
+      "start": 291.06,
+      "end": 300.1,
+      "text": "What's happening with your agentic system. Something that's very, very frustrating is when you're explaining all this and building with all this. But unless"
+    },
+    {
+      "start": 298.82,
+      "end": 307.88,
+      "text": "this. But unless someone else is using that same exact system, they might not really understand. All the nuance that goes"
+    },
+    {
+      "start": 306.56,
+      "end": 315.66,
+      "text": "nuance that goes into play in building something like this. And I think that's starting to become more and more evident. And people are starting to care"
+    },
+    {
+      "start": 315.0,
+      "end": 323.64,
+      "text": "starting to care more and more about the fact that if I have a system and I say yes to it. How do I even compare it to an alternative"
+    },
+    {
+      "start": 322.56,
+      "end": 331.62,
+      "text": "to an alternative system that should essentially do the same thing? How do we compare, you know, outputs? How do we"
+    },
+    {
+      "start": 331.32,
+      "end": 341.2,
+      "text": "How do we standardize that? One of the things that's kind of interesting is where I'm at right now is next door to a classic car restoration and mechanic place."
+    },
+    {
+      "start": 339.18,
+      "end": 348.68,
+      "text": "and mechanic place. And in that place, one of the things that I know about cars is horsepower is usually the standard"
+    },
+    {
+      "start": 346.0,
+      "end": 355.04,
+      "text": "usually the standard benchmark for understanding. How strong an engine is, right? It's not the end -all be -all,"
+    },
+    {
+      "start": 354.48,
+      "end": 363.98,
+      "text": "-all be -all, but it's one way to compare one platform or system to another. Why would I want V6 versus VA a"
+    },
+    {
+      "start": 362.5,
+      "end": 372.12,
+      "text": "versus VA a certain displacement versus another? How about just overall displacement in general? But anyways,"
+    },
+    {
+      "start": 370.9,
+      "end": 380.24,
+      "text": "general? But anyways, I don't want to get deep into that. But I want you to understand that there is a need to quantify. And quality."
+    },
+    {
+      "start": 377.42,
+      "end": 387.3,
+      "text": "quantify. And quality. Quality check your agentic systems while you're comparing which one should be used in your organization. Once"
+    },
+    {
+      "start": 385.56,
+      "end": 395.08,
+      "text": "your organization. Once it is running, going back and saying, hey, how efficiently is this running and can we make it better? And this is why this"
+    },
+    {
+      "start": 393.9,
+      "end": 403.28,
+      "text": "is why this matters the most. So Q -ingest, structured events, cheap to emit. Cloudflare is one of the biggest bargains right now. I"
+    },
+    {
+      "start": 401.98,
+      "end": 411.22,
+      "text": "right now. I spend $5 a month for access to the worker assets. And it's replayable. So"
+    },
+    {
+      "start": 410.08,
+      "end": 419.34,
+      "text": "it's replayable. So they get logged. You can rebuild the runs, the agents, the leaderboard from the event stream any time. Awesome. And so what"
+    },
+    {
+      "start": 418.62,
+      "end": 427.84,
+      "text": "And so what does that look like? This is a first, you know, pass for me in showing this system. And it"
+    },
+    {
+      "start": 426.2,
+      "end": 435.2,
+      "text": "system. And it took literally one prompt. There's not anything crazy about this. And I'm going to show you the better version. But essentially"
+    },
+    {
+      "start": 433.94,
+      "end": 443.36,
+      "text": "version. But essentially everything in blue are my worker assets. And I'm going to show you the better version. The purple is my Cloudflare queue. So all of those 180"
+    },
+    {
+      "start": 442.26,
+      "end": 451.46,
+      "text": "of those 180 plus events go in there. And then the storing stack is these"
+    },
+    {
+      "start": 448.84,
+      "end": 457.94,
+      "text": "stack is these orange ones. So QV or KV and D1. So storage is there. And then ultimately it lands"
+    },
+    {
+      "start": 456.92,
+      "end": 465.94,
+      "text": "ultimately it lands on this leaderboard, which is the source KV. And you can also see those numbers next"
+    },
+    {
+      "start": 464.44,
+      "end": 475.1,
+      "text": "those numbers next to it. So 99 is the. The scoring data for the loop itself. Packets"
+    },
+    {
+      "start": 472.4,
+      "end": 481.42,
+      "text": "loop itself. Packets are events. Queue fans in. Green node is the leaderboard. And so this is why it"
+    },
+    {
+      "start": 480.74,
+      "end": 489.34,
+      "text": "is why it matters. I could set this up for an organization. I could set this up for a project. I could set this up for, in this case, all"
+    },
+    {
+      "start": 488.58,
+      "end": 498.48,
+      "text": "this case, all my worker runs and everything in between. There is a standardization and a primitive that needs to be made around. Just"
+    },
+    {
+      "start": 495.92,
+      "end": 506.24,
+      "text": "made around. Just starting to visualize and observe this data. And I think I'm hinting on right"
+    },
+    {
+      "start": 503.84,
+      "end": 513.82,
+      "text": "hinting on right where it needs to be and what it needs to look like. So what is a trace and how does it work? Follow one run across every"
+    },
+    {
+      "start": 512.1,
+      "end": 521.14,
+      "text": "run across every agent. A run is a thread. Every event carrying the same run ID. It stitches into a traceable run. D1"
+    },
+    {
+      "start": 519.32,
+      "end": 528.32,
+      "text": "traceable run. D1 is the Q is the truth. And KV is for speed. So if I want to, I can make"
+    },
+    {
+      "start": 527.22,
+      "end": 536.3,
+      "text": "I can make sure that I'm updating at, you know, every five minutes. It could be a quicker update than that, obviously. And you run into"
+    },
+    {
+      "start": 535.78,
+      "end": 545.46,
+      "text": "you run into some compute constraints, the quicker you go. But think of telemetry. A situation like maybe the outside"
+    },
+    {
+      "start": 542.78,
+      "end": 552.06,
+      "text": "maybe the outside weather. So the temperature. You want to quickly be able to change and make adjustments to that as"
+    },
+    {
+      "start": 550.64,
+      "end": 560.02,
+      "text": "to that as it's happening in real time. We get closer and closer to that. But what I've learned, most people are operating their agents"
+    },
+    {
+      "start": 558.74,
+      "end": 568.7,
+      "text": "operating their agents without any kind of observability at all. So if I have observability that's five minutes, that's"
+    },
+    {
+      "start": 566.18,
+      "end": 575.4,
+      "text": "five minutes, that's ten times better than not having anything at all. So having it be real time doesn't"
+    },
+    {
+      "start": 573.66,
+      "end": 583.18,
+      "text": "real time doesn't necessarily matter for most use cases. And as this technology starts to advance. Obviously"
+    },
+    {
+      "start": 581.98,
+      "end": 591.34,
+      "text": "to advance. Obviously having real time data is going to matter if I'm, you know, trading or high frequency trading or"
+    },
+    {
+      "start": 590.18,
+      "end": 599.18,
+      "text": "frequency trading or doing arbitrage trading. Which we have a hackathon coming down the pipe for that. You would want something that is extremely fast."
+    },
+    {
+      "start": 597.86,
+      "end": 607.72,
+      "text": "is extremely fast. And speed would be your edge and your advantage in that case. But a lot of times when you're using it in a business, you"
+    },
+    {
+      "start": 605.94,
+      "end": 615.38,
+      "text": "a business, you don't necessarily need the fastest update in real time. So five minutes is plenty. And"
+    },
+    {
+      "start": 614.1,
+      "end": 623.14,
+      "text": "is plenty. And probably less than that even. Okay, so three tables. One reconstructable truth. We have runs, agents, events. And then we"
+    },
+    {
+      "start": 622.4,
+      "end": 632.38,
+      "text": "And then we got the event shape, which is your run ID, a score, and your TS. And then you've got your run path to KVD1. And"
+    },
+    {
+      "start": 630.0,
+      "end": 639.46,
+      "text": "to KVD1. And then your worker does it all. So the service is itself. That's"
+    },
+    {
+      "start": 636.8,
+      "end": 645.92,
+      "text": "is itself. That's pretty cool. But what does it look like? Here are all the runs. And here are the scores for each one of those runs."
+    },
+    {
+      "start": 645.42,
+      "end": 654.58,
+      "text": "of those runs. This observability talk has 99 .9. 97 .6 and so on and so forth. So as I look at each one of my projects. These"
+    },
+    {
+      "start": 653.74,
+      "end": 662.9,
+      "text": "my projects. These are real projects, by the way. I can look at it and say, okay, why are we at this level of passing?"
+    },
+    {
+      "start": 660.6,
+      "end": 669.94,
+      "text": "level of passing? This is still very, very good. But I'm at this level. And I can dig into this project. And start to understand"
+    },
+    {
+      "start": 669.1,
+      "end": 676.02,
+      "text": "start to understand why we're all here. And I can look at it and say, okay, why are we only at a 95 .4? Or even an 87 for something"
+    },
+    {
+      "start": 674.86,
+      "end": 683.88,
+      "text": "87 for something like this? And we're only capturing one event on most of these, by the way. But looking into the agents, I get an even"
+    },
+    {
+      "start": 683.5,
+      "end": 693.0,
+      "text": "get an even better score. So now I can have a very clear place to put my energy as far as building systems. That brings me to another point. The"
+    },
+    {
+      "start": 691.62,
+      "end": 700.86,
+      "text": "another point. The entire idea behind these workshops was around agentic engineering. What does it mean to go from vibe coding to agentic engineering?"
+    },
+    {
+      "start": 699.7,
+      "end": 708.92,
+      "text": "to agentic engineering? In this case, it means observability tells us which part of the system that we're building needs"
+    },
+    {
+      "start": 707.78,
+      "end": 717.12,
+      "text": "we're building needs the most attention. So everyone has weaknesses. My job"
+    },
+    {
+      "start": 712.1,
+      "end": 721.18,
+      "text": "weaknesses. My job in this case is to find that weakness and then correct that weakness."
+    },
+    {
+      "start": 720.38,
+      "end": 729.38,
+      "text": "correct that weakness. So we went from everyone prompting manually human in the loop to, okay, what does it look like to build a system"
+    },
+    {
+      "start": 728.48,
+      "end": 738.42,
+      "text": "build a system that tells us what to work on? And why we need to work on it? Where is it falling short? How do we make it better? And"
+    },
+    {
+      "start": 736.8,
+      "end": 746.82,
+      "text": "it better? And why should we spend our time and tokens, especially and tokens, on certain things? Automation"
+    },
+    {
+      "start": 743.24,
+      "end": 752.66,
+      "text": "certain things? Automation and web hooks needs the most attention here. It's clearly the laggard"
+    },
+    {
+      "start": 750.72,
+      "end": 759.92,
+      "text": "clearly the laggard of most of these. And every one of these have passed at 100%. These are agents. So"
+    },
+    {
+      "start": 758.62,
+      "end": 766.72,
+      "text": "are agents. So agents related to the system. And we're going to do this topic. 93 % pass rate for automation and web hooks. So we would start there and"
+    },
+    {
+      "start": 766.1,
+      "end": 775.46,
+      "text": "start there and work our way up to number one. Talks and decks, obviously very straightforward. So yes, we have 100 % pass there. And, you"
+    },
+    {
+      "start": 772.8,
+      "end": 782.08,
+      "text": "there. And, you know, less issues in general. Okay, awesome. So for me, a couple of ideas I"
+    },
+    {
+      "start": 781.4,
+      "end": 790.42,
+      "text": "of ideas I wanted to show you guys. Store, work, and export. And you can see how they work within the Cloudflare system. So Cloudflare is"
+    },
+    {
+      "start": 788.48,
+      "end": 797.74,
+      "text": "So Cloudflare is full of what's called components. So that means your Cloudflare queue, your durable object,"
+    },
+    {
+      "start": 796.76,
+      "end": 805.76,
+      "text": "your durable object, your D1. A durable object is like a state capture. D1 is storage."
+    },
+    {
+      "start": 803.98,
+      "end": 813.4,
+      "text": "D1 is storage. KV is the fast version of your storage. And then R2 is for exporting and moving things. And"
+    },
+    {
+      "start": 811.72,
+      "end": 820.76,
+      "text": "moving things. And your worker assets are what are created through these processes as well. So that's a combination. Six"
+    },
+    {
+      "start": 818.54,
+      "end": 828.62,
+      "text": "a combination. Six bindings recombined, solo operator economics. No Kubernetes, no service mesh. It's beautiful. No orchestration glue. Just"
+    },
+    {
+      "start": 826.56,
+      "end": 836.12,
+      "text": "orchestration glue. Just three verb names, the layers. Awesome. Okay, so I'm"
+    },
+    {
+      "start": 834.08,
+      "end": 842.72,
+      "text": "Okay, so I'm going to come back to this. I want to speed up just a little bit to show you guys this. So this is what a leaderboard looks"
+    },
+    {
+      "start": 841.66,
+      "end": 851.14,
+      "text": "a leaderboard looks like. You guys saw this already, but I have it separate as well. So you can go that way. We"
+    },
+    {
+      "start": 848.4,
+      "end": 857.4,
+      "text": "that way. We can go back and we can see examples of what this even looks like. So this"
+    },
+    {
+      "start": 855.84,
+      "end": 864.96,
+      "text": "like. So this is Cloudflare. This is my entire account visualized. And this is the main thing that I wanted"
+    },
+    {
+      "start": 864.42,
+      "end": 881.2,
+      "text": "that I wanted to get across as I show this off. Let me see. This"
+    },
+    {
+      "start": 868.28,
+      "end": 881.38,
+      "text": "me see. This is"
+    },
+    {
+      "start": 868.44,
+      "end": 881.5,
+      "text": "see. This is what"
+    },
+    {
+      "start": 880.72,
+      "end": 890.0,
+      "text": "This is what it looks like. Full display, info card for each section. Telling you about display ranking and feedback. This"
+    },
+    {
+      "start": 887.1,
+      "end": 896.1,
+      "text": "and feedback. This is one section. This is the live leaderboard. It's in green. You can see the storage caches in orange."
+    },
+    {
+      "start": 894.74,
+      "end": 904.18,
+      "text": "caches in orange. They look like this. The main database in the fast cache. We talked about this. Fast cache would be KV. Main database is D1. You"
+    },
+    {
+      "start": 902.54,
+      "end": 911.68,
+      "text": "is D1. You can see that. And then we have the different layers. Okay. So this is what this component does. Explanation. This is great for your non -technical"
+    },
+    {
+      "start": 910.98,
+      "end": 920.22,
+      "text": "your non -technical team. We can talk about agents, runs, or events. And we have a little push out for each one of those. So it takes"
+    },
+    {
+      "start": 918.96,
+      "end": 927.98,
+      "text": "So it takes the floor and animates it out. You see the workers running around. Now, what's really cool about this is this"
+    },
+    {
+      "start": 926.18,
+      "end": 935.26,
+      "text": "this is this is just showing those workers, those Cloudflare workers, and they're moving and there's data going in between. So that's"
+    },
+    {
+      "start": 934.18,
+      "end": 943.38,
+      "text": "between. So that's what these spheres are. As they go from one section to another. So we go up from"
+    },
+    {
+      "start": 942.68,
+      "end": 952.22,
+      "text": "go up from the event source to a queue buffer. So Cloudflare queue to the storage, both of these two, and then ultimately the"
+    },
+    {
+      "start": 950.8,
+      "end": 960.46,
+      "text": "then ultimately the live leaderboard. And so imagine being able to show your team all of your sales process, your CRM"
+    },
+    {
+      "start": 958.7,
+      "end": 967.7,
+      "text": "process, your CRM database, visualized in this way, your GenTik loops and that entire process visualized in this way. It"
+    },
+    {
+      "start": 966.7,
+      "end": 976.06,
+      "text": "this way. It could be super valuable. And I have a bonus at the end. I'm going to show you where you take this even further. So if"
+    },
+    {
+      "start": 973.34,
+      "end": 982.56,
+      "text": "further. So if I wanted to see that loop that I just mentioned, this is what it looks like. I have agent primitives, routing"
+    },
+    {
+      "start": 981.26,
+      "end": 991.98,
+      "text": "agent primitives, routing table, RSI loop, deployment surface, 3D graph, operator handoff, skill"
+    },
+    {
+      "start": 988.88,
+      "end": 997.9,
+      "text": "operator handoff, skill stack, your workflow harnesses, your local brain. And then this is the end of the process. And then I have subagent factory"
+    },
+    {
+      "start": 997.32,
+      "end": 1006.34,
+      "text": "have subagent factory and a browser QA. And all these things are represented. And this is a factory. This is an agent tech factory. You can see the workers moving"
+    },
+    {
+      "start": 1005.74,
+      "end": 1015.72,
+      "text": "the workers moving around. You can see how each one is connected. And you can see examples or I'm sorry component cards for each one. So"
+    },
+    {
+      "start": 1013.44,
+      "end": 1022.62,
+      "text": "each one. So this is awesome. I think that being able to show people this and have a diagram and go deeper with"
+    },
+    {
+      "start": 1021.82,
+      "end": 1031.02,
+      "text": "go deeper with each piece is super important. important. Now, this isn't meant to be a finished project. It is meant to show you"
+    },
+    {
+      "start": 1030.22,
+      "end": 1039.3,
+      "text": "to show you what is possible and where we're going with this. I have the primitives and happy to share you how I was able to build this. It's an"
+    },
+    {
+      "start": 1037.88,
+      "end": 1047.06,
+      "text": "this. It's an extensive process to actually get it visualized. However, look how valuable it could be to have"
+    },
+    {
+      "start": 1046.14,
+      "end": 1055.14,
+      "text": "be to have something like this in order to explain to your team what we're doing here. All right, so let me speed up a bit. So when"
+    },
+    {
+      "start": 1053.4,
+      "end": 1062.62,
+      "text": "bit. So when I was first starting, I just verticalized the entire process. So look, you can choose how you want to display"
+    },
+    {
+      "start": 1061.56,
+      "end": 1070.58,
+      "text": "want to display this information, allowing people to interact with it. We click on each part and it tells you about it inside of the info card."
+    },
+    {
+      "start": 1070.04,
+      "end": 1079.3,
+      "text": "the info card. This is awesome. I could even make each one of these miniature info cards within the info card, click that"
+    },
+    {
+      "start": 1078.02,
+      "end": 1084.06,
+      "text": "card, click that and it will show you what you want to display. So I'm going to go ahead and do that. And go to an external site or pull"
+    },
+    {
+      "start": 1082.12,
+      "end": 1091.96,
+      "text": "site or pull up a specific part of the CRM, et cetera, et cetera. Really, the sky's the limit on how you visualize this. Now,"
+    },
+    {
+      "start": 1090.48,
+      "end": 1100.46,
+      "text": "visualize this. Now, the last one I wanted to show you is this one. This is a media buying project that I did a while"
+    },
+    {
+      "start": 1098.08,
+      "end": 1107.2,
+      "text": "did a while back, and I just wanted to connect it to 12 Labs as well. So the Jockey Forge"
+    },
+    {
+      "start": 1105.54,
+      "end": 1114.82,
+      "text": "the Jockey Forge is what this is called. And what it does is it pulls down like this recording."
+    },
+    {
+      "start": 1111.66,
+      "end": 1120.74,
+      "text": "like this recording. Once I'm done with it, it'll pull it down and then makes it available as a asset that I can run ads"
+    },
+    {
+      "start": 1120.1,
+      "end": 1129.1,
+      "text": "can run ads to. And during that process, since it's connected to Twitch, my Google Drive, my YouTube, there's also a"
+    },
+    {
+      "start": 1127.14,
+      "end": 1136.14,
+      "text": "there's also a brain and a queue, Cloudflare worker. There's a generator, there's a media buyer, and then I can"
+    },
+    {
+      "start": 1135.7,
+      "end": 1144.5,
+      "text": "then I can take payments and then we have a feedback loop at the end. Why does this matter? Because in the future, I'll be able to take an asset,"
+    },
+    {
+      "start": 1143.32,
+      "end": 1152.46,
+      "text": "take an asset, a creative asset, say, hey, this is meant to be ran in paid ads on Meta. So Meta CLI is a part of this."
+    },
+    {
+      "start": 1151.96,
+      "end": 1161.64,
+      "text": "part of this. Meta goes in, runs the ad, has a defined budget. We score the performance"
+    },
+    {
+      "start": 1158.1,
+      "end": 1167.2,
+      "text": "score the performance of that ad, and then we update the creative. All of that happens automatically"
+    },
+    {
+      "start": 1165.92,
+      "end": 1175.52,
+      "text": "that happens automatically through this system. And I built the system. And shipped it already. It's happened. And so the beauty of that is"
+    },
+    {
+      "start": 1174.48,
+      "end": 1183.52,
+      "text": "of that is I don't have to explain the nooks and crannies of every single thing that"
+    },
+    {
+      "start": 1182.68,
+      "end": 1191.78,
+      "text": "single thing that we're doing inside of a code base or inside of a flow or a project. But I could hand this off to my team and"
+    },
+    {
+      "start": 1190.58,
+      "end": 1199.92,
+      "text": "my team and say, hey, this is what I built. This is what it looks like. Let's assume that this Stripe agent payment elevator."
+    },
+    {
+      "start": 1197.72,
+      "end": 1207.38,
+      "text": "agent payment elevator. Is a recurring piece that I use or recurring component"
+    },
+    {
+      "start": 1205.98,
+      "end": 1215.06,
+      "text": "or recurring component rather that I use. It would be great to be able to just say, OK, well, that means every single time"
+    },
+    {
+      "start": 1214.08,
+      "end": 1223.18,
+      "text": "every single time that you see that. You can feel confident. I got to make it spin here. You can feel confident"
+    },
+    {
+      "start": 1222.5,
+      "end": 1232.48,
+      "text": "can feel confident that everyone on the team that's been here since we first started showing these diagrams. They know what that means. They"
+    },
+    {
+      "start": 1230.96,
+      "end": 1240.42,
+      "text": "that means. They know what it means without a need for an extensive info card or anything like that. So"
+    },
+    {
+      "start": 1238.82,
+      "end": 1247.96,
+      "text": "like that. So over time, what I'm getting at is symbols start to mean something. So these components, as they"
+    },
+    {
+      "start": 1246.24,
+      "end": 1255.3,
+      "text": "components, as they stand, can mean something. No different than how when you look at a map and you see the index for"
+    },
+    {
+      "start": 1253.1,
+      "end": 1262.48,
+      "text": "the index for that map, like a physical map. Right. You can see a triangle. And that represents the trailhead or"
+    },
+    {
+      "start": 1260.54,
+      "end": 1270.02,
+      "text": "the trailhead or you see a stop sign. You just got to see that that shape. And you know that"
+    },
+    {
+      "start": 1269.0,
+      "end": 1278.18,
+      "text": "you know that a stop sign, that shape and color means stop. Right. Eventually, we start to create these primitives"
+    },
+    {
+      "start": 1277.2,
+      "end": 1286.34,
+      "text": "create these primitives through these diagrams that represent things in the code base. And whether the person looking at the code base"
+    },
+    {
+      "start": 1285.74,
+      "end": 1296.72,
+      "text": "the code base is familiar with that technical. Technical. Or if they're familiar with the code base, they're familiar with the code base."
+    },
+    {
+      "start": 1293.24,
+      "end": 1302.32,
+      "text": "the code base. And so they can use that to create a more So this is a way to make things more approachable"
+    },
+    {
+      "start": 1301.02,
+      "end": 1310.5,
+      "text": "things more approachable for everybody and for them to see how they work together. How are they stacked, if you will? Quite literally in this case. Right. How"
+    },
+    {
+      "start": 1309.5,
+      "end": 1318.88,
+      "text": "case. Right. How do they how does the tech stack look? And so this comes with this piece. So I just kind of had an entirely"
+    },
+    {
+      "start": 1317.3,
+      "end": 1326.72,
+      "text": "had an entirely different. Way of doing this back when I was first creating the diagram, but"
+    },
+    {
+      "start": 1324.0,
+      "end": 1333.04,
+      "text": "the diagram, but a deeper info card. So I wanted to make sure that that was available as well. So"
+    },
+    {
+      "start": 1331.84,
+      "end": 1340.9,
+      "text": "as well. So people could see that this is connected to my catalog, which serves components directly"
+    },
+    {
+      "start": 1337.7,
+      "end": 1347.46,
+      "text": "serves components directly to agents. So no different than claw mart. If you're familiar for open claw back"
+    },
+    {
+      "start": 1345.62,
+      "end": 1354.76,
+      "text": "open claw back in the day, a while back, not back in the day. Right. But a couple couple months ago. And this is what it looks like. So I"
+    },
+    {
+      "start": 1353.38,
+      "end": 1362.68,
+      "text": "like. So I just wanted to create this and show that as the ultimate North Star where we're going now. Something"
+    },
+    {
+      "start": 1361.18,
+      "end": 1370.24,
+      "text": "going now. Something to think about. Check out Austin Overflow Builders. This is a place to go if"
+    },
+    {
+      "start": 1369.2,
+      "end": 1378.58,
+      "text": "to go if you are a consultant and you want to be matched up with the best consultants and we are sharing work"
+    },
+    {
+      "start": 1376.04,
+      "end": 1385.1,
+      "text": "are sharing work that is out of scope. As well as work where we want other people to come in and help. It's a great"
+    },
+    {
+      "start": 1384.16,
+      "end": 1393.32,
+      "text": "It's a great collaborative group. So shout out to the guys over at Runpoint for that. This is my LinkedIn. Please reach out to"
+    },
+    {
+      "start": 1392.7,
+      "end": 1401.84,
+      "text": "reach out to me if you have any questions. And obviously the event calendar I've got here for Luma. So we've got a ton more events coming"
+    },
+    {
+      "start": 1400.64,
+      "end": 1409.64,
+      "text": "more events coming up. And so I wanted to take some time to show you that. But ultimately, let's go back to where we skipped. So we're on"
+    },
+    {
+      "start": 1408.9,
+      "end": 1417.42,
+      "text": "So we're on COVID. We're on Cloudflare. Four work. Four bets. Ephemeral workers. What does that mean? Every task is a worker and it exists only long enough to complete."
+    },
+    {
+      "start": 1416.88,
+      "end": 1425.88,
+      "text": "enough to complete. It completes its job and then it sends back the log to let us know that it was completed. We run a QA agent to make"
+    },
+    {
+      "start": 1425.22,
+      "end": 1435.48,
+      "text": "agent to make sure that what the worker told us is true. And then we ultimately don't need it any longer. So what does that mean? The hygiene"
+    },
+    {
+      "start": 1432.94,
+      "end": 1442.18,
+      "text": "mean? The hygiene for your code base and your processes and everything in between. Can stay a lot cleaner"
+    },
+    {
+      "start": 1441.28,
+      "end": 1451.18,
+      "text": "a lot cleaner and a lot leaner as you build in this way. Cloudflare is literally a cloud product. So"
+    },
+    {
+      "start": 1448.82,
+      "end": 1457.86,
+      "text": "cloud product. So you're using external as well as you can run things locally. But ultimately, it's"
+    },
+    {
+      "start": 1456.2,
+      "end": 1465.26,
+      "text": "But ultimately, it's really cool to be able to have that flexibility really quickly. No cleanup debt. A single use function, not a service. Auto"
+    },
+    {
+      "start": 1464.08,
+      "end": 1471.0,
+      "text": "a service. Auto docs. So I started to create docs with worker apps. And then I started to create docs with a lot of different assets. You probably noticed the"
+    },
+    {
+      "start": 1470.2,
+      "end": 1480.0,
+      "text": "probably noticed the guides, the architectural diagrams, etc. And that all lives on hub .organizedai .vip. And"
+    },
+    {
+      "start": 1476.16,
+      "end": 1485.32,
+      "text": ".organizedai .vip. And you can see it. I've got all my guides that I've built so far and there'll be many, many"
+    },
+    {
+      "start": 1484.56,
+      "end": 1494.62,
+      "text": "be many, many more. I've got a token machine. I've got telnet guide. GTM auto research. All kinds of stuff going on. This is my clipping. Portrait"
+    },
+    {
+      "start": 1492.94,
+      "end": 1503.16,
+      "text": "my clipping. Portrait captions for clipping. And then I've got wikis. Architectural and plans. And"
+    },
+    {
+      "start": 1500.98,
+      "end": 1510.0,
+      "text": "and plans. And I think I even have my talks on here. Some apps I built. Some branded stuff. Some presentations. Like I've got so"
+    },
+    {
+      "start": 1509.22,
+      "end": 1518.4,
+      "text": "I've got so much available here. I decided that it would make a lot of sense for me to not only learn as I was building, but"
+    },
+    {
+      "start": 1517.66,
+      "end": 1528.56,
+      "text": "was building, but also build guides and reference materials as it was happening in real time. So that's what that's for. Oops."
+    },
+    {
+      "start": 1525.6,
+      "end": 1534.92,
+      "text": "that's for. Oops. Didn't mean to say that. I didn't mean to show you that yet. And then lastly, your queue owns the delivery. DO owns"
+    },
+    {
+      "start": 1533.54,
+      "end": 1543.32,
+      "text": "delivery. DO owns state. Why does this matter? It's something that I didn't really get too deep into. But obviously your Cloudflare"
+    },
+    {
+      "start": 1540.78,
+      "end": 1549.88,
+      "text": "obviously your Cloudflare queue is positioned such that you don't have to worry about getting disconnected."
+    },
+    {
+      "start": 1548.06,
+      "end": 1557.14,
+      "text": "about getting disconnected. Sometimes, you know, early on I would be building on my laptop. And it's say, hey. I've got to run this process"
+    },
+    {
+      "start": 1556.42,
+      "end": 1565.58,
+      "text": "run this process for. You know. Long -standing processes. Three hours. And it's local. So my laptop has to stay open and be here. What happens if I need"
+    },
+    {
+      "start": 1564.88,
+      "end": 1572.08,
+      "text": "if I need to run or I need to go do something else and I want to use remote and I can be on my phone, but I'm limited because"
+    },
+    {
+      "start": 1571.2,
+      "end": 1580.32,
+      "text": "I'm limited because everything's processing on my laptop? Let's remove that constraint and let's start processing in the cloud. Let's start processing on our"
+    },
+    {
+      "start": 1579.14,
+      "end": 1588.22,
+      "text": "processing on our dev box. And let's also be able to go back and forth between our dev box and our cloud. So it looks something like that"
+    },
+    {
+      "start": 1587.5,
+      "end": 1597.94,
+      "text": "something like that with Qo. I'm sorry, Q. And then D .O. owns the state so that you understand exactly what's happening stateside,"
+    },
+    {
+      "start": 1594.88,
+      "end": 1603.9,
+      "text": "what's happening stateside, like as it's processing. So if we fall out, yes, we have"
+    },
+    {
+      "start": 1603.08,
+      "end": 1612.44,
+      "text": "yes, we have our Q for storing everything. But D .O. allows us to have some privacy and isolation, even more important isolation for"
+    },
+    {
+      "start": 1610.68,
+      "end": 1619.9,
+      "text": "important isolation for the process based on that state. So that's a lot of fun. I've been using D .O. I used"
+    },
+    {
+      "start": 1618.64,
+      "end": 1627.82,
+      "text": ".O. I used it where it really mattered the most for me was when I set up a WhatsApp gateway at a Hermes training that I did over at"
+    },
+    {
+      "start": 1626.98,
+      "end": 1636.18,
+      "text": "did over at HiCam. Shout out to the guys at HiCam. And doing that allowed me to ultimately use one WhatsApp gateway connected"
+    },
+    {
+      "start": 1634.38,
+      "end": 1643.68,
+      "text": "WhatsApp gateway connected to my hosted Hermes agent. And I added, I think it was eight people to that same gateway. Okay, that"
+    },
+    {
+      "start": 1641.7,
+      "end": 1650.86,
+      "text": "gateway. Okay, that sounds cool, but that just means everybody's prompting the same exact Hermes agent. You're right, but kind of not so much."
+    },
+    {
+      "start": 1650.16,
+      "end": 1659.2,
+      "text": "not so much. Why? Because I'm using durable objects, D .O., in order to create state for each phone number. So each phone number became its own user"
+    },
+    {
+      "start": 1658.38,
+      "end": 1667.68,
+      "text": "its own user ID. Therefore, I was able to then create a leaderboard that showed each person as they were prompting, their tool use, their token usage,"
+    },
+    {
+      "start": 1666.96,
+      "end": 1676.18,
+      "text": "their token usage, etc. Really, really cool stuff. You've got to trust me when it comes to Cloudflare. Like using it at the cost it is at right now"
+    },
+    {
+      "start": 1675.3,
+      "end": 1684.26,
+      "text": "at right now is going to allow you to do that. It's going to allow you to do so much more with your workflows and systems. Okay, and then R2"
+    },
+    {
+      "start": 1682.98,
+      "end": 1692.08,
+      "text": "and then R2 is great for exports. That's how I've been using it so far. Last but not least, I want to show"
+    },
+    {
+      "start": 1691.58,
+      "end": 1700.86,
+      "text": "want to show you guys this. This is the crown jewel and everything I'm proud of. So, volume two live attendance"
+    },
+    {
+      "start": 1699.7,
+      "end": 1708.78,
+      "text": "two live attendance district is what I called this. So if I remove everything, let's turn this off. Let's turn the cards off."
+    },
+    {
+      "start": 1707.18,
+      "end": 1717.44,
+      "text": "the cards off. We've just got this city that looks a lot like that other one I showed you at the very beginning. However,"
+    },
+    {
+      "start": 1714.56,
+      "end": 1724.2,
+      "text": "very beginning. However, this represents an entirely different thing. This does not represent Cloudflare. This represents my"
+    },
+    {
+      "start": 1722.76,
+      "end": 1731.98,
+      "text": "This represents my live event. So this is what happened over the weekend. And when I open this up, I can see"
+    },
+    {
+      "start": 1729.74,
+      "end": 1738.8,
+      "text": "I can see everyone's name who signed in as a guest. For the event. Now I had it"
+    },
+    {
+      "start": 1738.12,
+      "end": 1746.36,
+      "text": "I had it so that I could click on each person and get more information about them. But since I knew I'd be recording right now, I didn't want to"
+    },
+    {
+      "start": 1745.5,
+      "end": 1754.62,
+      "text": "didn't want to make that available to everyone watching live. So you've got to trust me when I say"
+    },
+    {
+      "start": 1753.22,
+      "end": 1762.32,
+      "text": "when I say I can see each person who showed up to the event. I can see if they scanned in early, midway"
+    },
+    {
+      "start": 1761.0,
+      "end": 1770.1,
+      "text": "in early, midway through or late. And you see that breakout. And I can see exactly what time that was. So there's three"
+    },
+    {
+      "start": 1769.24,
+      "end": 1778.34,
+      "text": "So there's three different waves. This was all created automatically because of how it's set up in Cloudflare. And it's all connected"
+    },
+    {
+      "start": 1776.5,
+      "end": 1785.52,
+      "text": "it's all connected to my live event through Luma. So awesome stuff. Shows my attendance rate. Gets into"
+    },
+    {
+      "start": 1784.22,
+      "end": 1793.32,
+      "text": "rate. Gets into the nitty gritty details, obviously. And this is day two Annex versus day one. We got"
+    },
+    {
+      "start": 1792.08,
+      "end": 1801.32,
+      "text": "one. We got KV and DV. We've also got the registration funnel at the very beginning. We go down to"
+    },
+    {
+      "start": 1800.66,
+      "end": 1810.28,
+      "text": "go down to the registered guest grid. The check in is where we get all that rich data. We see which workshop tracks."
+    },
+    {
+      "start": 1808.34,
+      "end": 1818.18,
+      "text": "which workshop tracks. And we can see the different tracks. So we have floors representing each one of those. Really"
+    },
+    {
+      "start": 1816.0,
+      "end": 1825.06,
+      "text": "of those. Really cool stuff. Now the idea here is I want you to start thinking about this. How could I use this? How could"
+    },
+    {
+      "start": 1824.34,
+      "end": 1833.7,
+      "text": "this? How could I use a visual inside of a business? And for me, that meant how do I visualize my actual event and people who"
+    },
+    {
+      "start": 1832.42,
+      "end": 1841.58,
+      "text": "and people who are coming to my event? Because this is a live event, so it matters. But that's the power and the beauty of taking the"
+    },
+    {
+      "start": 1840.84,
+      "end": 1849.9,
+      "text": "of taking the time to visualize a process that is very much non -visual by nature. And I think we're going to go deeper and"
+    },
+    {
+      "start": 1849.24,
+      "end": 1858.4,
+      "text": "go deeper and deeper down this rabbit hole over here at Organized AI. So I want you guys to please make sure that you're reaching"
+    },
+    {
+      "start": 1856.88,
+      "end": 1866.0,
+      "text": "that you're reaching out and you're saying something if you're interested in this type of thing. Because we are moments away from launching an"
+    },
+    {
+      "start": 1864.56,
+      "end": 1873.7,
+      "text": "from launching an online community to make sure that you can get not only the attention that you need, but also go check out a"
+    },
+    {
+      "start": 1872.58,
+      "end": 1881.78,
+      "text": "check out a backlog of proven projects with commentary from speakers like myself telling you exactly what it looks"
+    },
+    {
+      "start": 1881.12,
+      "end": 1888.68,
+      "text": "what it looks like to be a business. And I want you guys to go from zero technical capability. We all started, well, I started there for sure two years"
+    },
+    {
+      "start": 1888.0,
+      "end": 1897.06,
+      "text": "sure two years ago to where I'm at right now. And I'm here to help guide you and make sure that you guys don't succumb to some"
+    },
+    {
+      "start": 1895.26,
+      "end": 1904.5,
+      "text": "succumb to some of the marketing and hype. And what does it look like in action? How do you actually build these things? All right, guys. So, hey,"
+    },
+    {
+      "start": 1903.16,
+      "end": 1912.3,
+      "text": "guys. So, hey, I appreciate your time. Thank you for support. And it means a ton to serve this community. I'm so excited. I'm"
+    },
+    {
+      "start": 1911.16,
+      "end": 1914.78,
+      "text": "so excited. I'm excited with where we're going. All right. Peace."
+    }
+  ],
+  "widgets": []
+}
