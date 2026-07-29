@@ -14,13 +14,13 @@ component per talk (agent/corpus/vault-<slug>.json) with part offsets applied,
 so the MCP server can search/answer over the complete talks — not just the
 cut reels — with timecodes that match the vault player exactly.
 
-Auth (read-only API token is enough):
-    export CLOUDFLARE_API_TOKEN=...        # KV Storage: Read
-    export CLOUDFLARE_ACCOUNT_ID=...
-    # namespace defaults to recordings-organizedai-VAULT; override with
-    # VAULT_KV_NAMESPACE_ID if it ever moves (`wrangler kv namespace list`)
-
-    python3 agent/import_vault.py
+Auth — either works:
+  • wrangler OAuth (typical on a dev machine): just `python3 agent/import_vault.py`
+    — keys are fetched with `npx wrangler kv key get` using your login.
+  • REST: export CLOUDFLARE_API_TOKEN (KV Storage: Read) and
+    CLOUDFLARE_ACCOUNT_ID, then run the same command.
+  Namespace defaults to recordings-organizedai-VAULT; override with
+  VAULT_KV_NAMESPACE_ID if it ever moves (`wrangler kv namespace list`).
 
 The fetch and transform stages are separate so the transform is testable
 offline: `import_vault.transform(manifest, tx_by_id, chapters_by_id)`.
@@ -29,6 +29,8 @@ import json
 import os
 import pathlib
 import re
+import shutil
+import subprocess
 import sys
 import urllib.parse
 import urllib.request
@@ -101,7 +103,7 @@ def transform(manifest: dict, tx_by_id: dict, chapters_by_id: dict) -> list[dict
 
 # --- Cloudflare KV fetch ----------------------------------------------------
 
-def _kv_get(token: str, account: str, ns: str, key: str):
+def _kv_get_rest(token: str, account: str, ns: str, key: str):
     url = (f"{API}/accounts/{account}/storage/kv/namespaces/{ns}"
            f"/values/{urllib.parse.quote(key, safe='')}")
     req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"})
@@ -114,16 +116,37 @@ def _kv_get(token: str, account: str, ns: str, key: str):
         raise
 
 
-def fetch_and_build():
+def _kv_get_wrangler(ns: str, key: str):
+    """Fetch via `wrangler kv key get` (OAuth login) — no API token needed."""
+    wrangler = (["wrangler"] if shutil.which("wrangler")
+                else ["npx", "--yes", "wrangler"])
+    r = subprocess.run(wrangler + ["kv", "key", "get", key,
+                                   "--namespace-id", ns, "--remote"],
+                       capture_output=True, text=True)
+    if r.returncode != 0:
+        low = (r.stderr or "").lower()
+        if "not found" in low or "10009" in low:
+            return None
+        raise RuntimeError(f"wrangler kv get {key!r} failed:\n{r.stderr.strip()}")
+    return json.loads(r.stdout)
+
+
+def _make_getter(ns: str):
     token = os.environ.get("CLOUDFLARE_API_TOKEN")
     account = os.environ.get("CLOUDFLARE_ACCOUNT_ID")
-    ns = os.environ.get("VAULT_KV_NAMESPACE_ID", DEFAULT_VAULT_NS)
-    missing = [n for n, v in [("CLOUDFLARE_API_TOKEN", token),
-                              ("CLOUDFLARE_ACCOUNT_ID", account)] if not v]
-    if missing:
-        sys.exit(f"Missing env: {', '.join(missing)} (see module docstring).")
+    if token and account:
+        print("• auth: Cloudflare API token")
+        return lambda key: _kv_get_rest(token, account, ns, key)
+    print("• auth: wrangler login (set CLOUDFLARE_API_TOKEN + "
+          "CLOUDFLARE_ACCOUNT_ID to use the REST API instead)")
+    return lambda key: _kv_get_wrangler(ns, key)
 
-    manifest = _kv_get(token, account, ns, "tl:manifest")
+
+def fetch_and_build():
+    ns = os.environ.get("VAULT_KV_NAMESPACE_ID", DEFAULT_VAULT_NS)
+    get = _make_getter(ns)
+
+    manifest = get("tl:manifest")
     if not manifest:
         sys.exit("tl:manifest not found in the KV namespace — wrong namespace id?")
 
@@ -132,8 +155,8 @@ def fetch_and_build():
         for p in entry.get("parts", []):
             vid = p["video_id"]
             if vid not in tx_by_id:
-                tx_by_id[vid] = _kv_get(token, account, ns, f"tx:{vid}") or []
-                chapters_by_id[vid] = _kv_get(token, account, ns, f"chapters:{vid}") or []
+                tx_by_id[vid] = get(f"tx:{vid}") or []
+                chapters_by_id[vid] = get(f"chapters:{vid}") or []
     return transform(manifest, tx_by_id, chapters_by_id)
 
 
