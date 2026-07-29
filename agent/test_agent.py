@@ -61,6 +61,12 @@ def test_transform():
     check("parts kept", len(c["twelvelabs_parts"]) == 2)
     check("stream url", "recordings.organizedai.vip/media/" in c["assets"]["stream"])
 
+    s = import_vault.site_session(c)
+    check("site session chapters", len(s["chapters"]) == 2
+          and s["chapters"][0]["title"] == "Intro")
+    check("site session media is stream", s["media_url"] == c["assets"]["stream"])
+    check("site session transcript shared", s["transcript"] is c["transcript"])
+
 
 def test_corpus_files():
     print("• shipped corpus")

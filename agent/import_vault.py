@@ -137,10 +137,36 @@ def fetch_and_build():
     return transform(manifest, tx_by_id, chapters_by_id)
 
 
+def site_session(comp: dict) -> dict:
+    """Corpus component -> the site viewer's session.json shape, so vault
+    talks are browsable (chapters + transcript + timestamp jumps) in site/.
+    media_url is the vault stream: playback works when the viewer is served
+    under recordings.organizedai.vip (auth cookie is same-site); elsewhere
+    the page still shows chapters/transcript."""
+    return {
+        "name": comp["name"],
+        "title": comp["title"],
+        "speaker": comp["speaker"],
+        "media_url": comp["assets"].get("stream"),
+        "duration": comp["duration"],
+        "chapters": [
+            {"id": c["id"], "title": c["hook"], "kind": c["kind"],
+             "start": c["start"], "end": c["end"], "caption": c.get("caption", "")}
+            for c in comp["clips"]
+        ],
+        "transcript": comp["transcript"],
+        "widgets": comp["widgets"],
+    }
+
+
 def write(components: list[dict]):
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     index_path = OUT_DIR / "corpus.json"
     index = json.loads(index_path.read_text()) if index_path.exists() else []
+    site_dir = REPO / "site" / "public" / "sessions"
+    site_index_path = site_dir / "index.json"
+    site_index = (json.loads(site_index_path.read_text())
+                  if site_index_path.exists() else [])
     for comp in components:
         (OUT_DIR / f"{comp['name']}.json").write_text(
             json.dumps(comp, indent=2, ensure_ascii=False))
@@ -150,11 +176,24 @@ def write(components: list[dict]):
                       "transcript_segments": len(comp["transcript"]),
                       "widgets": 0,
                       "twelvelabs_ready": bool(comp["twelvelabs_parts"])})
+
+        s = site_session(comp)
+        (site_dir / comp["name"]).mkdir(parents=True, exist_ok=True)
+        (site_dir / comp["name"] / "session.json").write_text(
+            json.dumps(s, indent=2, ensure_ascii=False))
+        site_index = [e for e in site_index if e.get("name") != comp["name"]]
+        site_index.append({"name": comp["name"], "title": comp["title"],
+                           "speaker": comp["speaker"], "duration": comp["duration"],
+                           "chapters": len(s["chapters"]),
+                           "widgets": len(s["widgets"])})
         print(f"  {comp['name']:<40} segs={len(comp['transcript']):>5} "
               f"chapters={len(comp['clips']):>3} parts={len(comp['twelvelabs_parts'])}")
     index.sort(key=lambda e: e["name"])
     index_path.write_text(json.dumps(index, indent=2, ensure_ascii=False))
-    print(f"✓ {len(components)} vault talks -> {OUT_DIR.relative_to(REPO)}/")
+    site_index.sort(key=lambda e: e["name"])
+    site_index_path.write_text(json.dumps(site_index, indent=2, ensure_ascii=False))
+    print(f"✓ {len(components)} vault talks -> {OUT_DIR.relative_to(REPO)}/ "
+          f"+ site/public/sessions/")
 
 
 if __name__ == "__main__":
