@@ -28,6 +28,28 @@ Re-run `build_corpus.py` after any pipeline run — it's offline, deterministic,
 and safe to re-run anytime. Sessions whose analysis lives on another machine
 (see MIGRATION.md) get skeleton components until built there.
 
+## Importing the full talks from the recordings vault
+
+The recordings.organizedai.vip worker already holds TwelveLabs analysis for
+the **complete talks** (not just the cut reels) in its KV namespace:
+`tl:manifest` (per-talk parts with index/video ids + time offsets),
+`tx:<video_id>` transcripts, and `chapters:<video_id>`. Pull them into the
+corpus with:
+
+```bash
+export CLOUDFLARE_API_TOKEN=...     # needs KV Storage: Read
+export CLOUDFLARE_ACCOUNT_ID=...
+python3 agent/import_vault.py       # -> agent/corpus/vault-<talk>.json per talk
+```
+
+Vault talks carry `twelvelabs_parts` (a talk can span several indexed videos
+with offsets); `find_moments` searches every part and returns timecodes on the
+full-talk clock — the same clock as the vault player — and `ask_session` asks
+part by part, labeling each answer with its timestamp offset.
+
+Run `python3 agent/test_agent.py` to verify the stack offline (no API keys
+needed).
+
 ## Handing it to an agent
 
 **Claude Code** — already wired: `.mcp.json` at the repo root registers the

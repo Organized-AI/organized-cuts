@@ -152,19 +152,33 @@ def _dump(obj):
     return obj
 
 
+def _tl_parts(comp: dict) -> list[dict]:
+    """A session's searchable TwelveLabs parts, normalized to
+    [{label, offset, index_id, video_id}]. Reel sessions have one part at
+    offset 0; vault talks (import_vault.py) can have several."""
+    parts = [p for p in comp.get("twelvelabs_parts", [])
+             if p.get("index_id") and p.get("video_id")]
+    tl = comp.get("twelvelabs") or {}
+    if not parts and tl.get("index_id") and tl.get("video_id"):
+        parts = [{"label": None, "offset": 0.0,
+                  "index_id": tl["index_id"], "video_id": tl["video_id"]}]
+    return parts
+
+
 def _tl_sessions(session: str | None):
     names = [session] if session else [e["name"] for e in _index()]
     ready = []
     for n in names:
         comp = _session(n)
-        tl = comp.get("twelvelabs") or {}
-        if tl.get("index_id") and tl.get("video_id"):
-            ready.append((n, comp, tl))
+        parts = _tl_parts(comp)
+        if parts:
+            ready.append((n, comp, parts))
     if not ready:
         raise RuntimeError(
             "No session with TwelveLabs ids in the corpus"
             + (f" (asked for '{session}')" if session else "")
-            + ". Run the pipeline's 01_ingest first, then rebuild the corpus."
+            + ". Run the pipeline's 01_ingest (reels) or agent/import_vault.py "
+            "(full talks) first, then rebuild the corpus."
         )
     return ready
 
@@ -177,31 +191,43 @@ def find_moments(query: str, session: str | None = None, limit: int = 8) -> str:
     session unless `session` narrows it. Requires TWELVELABS_API_KEY."""
     client = _tl_client()
     results = []
-    for n, comp, tl in _tl_sessions(session):
-        try:
-            pager = client.search.query(
-                index_id=tl["index_id"],
-                search_options=["visual", "audio"],
-                query_text=query,
-                group_by="clip",
-                page_limit=limit,
-            )
-        except Exception as e:
-            results.append({"session": n, "error": str(e)})
-            continue
-        for item in pager:
-            d = _dump(item)
-            st, en = d.get("start"), d.get("end")
-            if st is None or en is None:
+    for n, comp, parts in _tl_sessions(session):
+        per_session = 0
+        for part in parts:
+            try:
+                pager = client.search.query(
+                    index_id=part["index_id"],
+                    search_options=["visual", "audio"],
+                    query_text=query,
+                    group_by="clip",
+                    page_limit=limit,
+                )
+            except Exception as e:
+                results.append({"session": n, "part": part.get("label"),
+                                "error": str(e)})
                 continue
-            score = d.get("score")
-            if score is None:
-                score = {"high": 0.9, "medium": 0.7, "low": 0.5}.get(
-                    d.get("confidence"), 0.75)
-            results.append({"session": n, "speaker": comp["speaker"],
-                            "start": float(st), "end": float(en),
-                            "tc": _fmt_tc(float(st)), "score": float(score)})
-            if sum(1 for r in results if r.get("session") == n and "start" in r) >= limit:
+            off = float(part.get("offset", 0))
+            for item in pager:
+                d = _dump(item)
+                if d.get("video_id") and d["video_id"] != part["video_id"]:
+                    continue
+                st, en = d.get("start"), d.get("end")
+                if st is None or en is None:
+                    continue
+                score = d.get("score")
+                if score is None:
+                    score = {"high": 0.9, "medium": 0.7, "low": 0.5}.get(
+                        d.get("confidence"), 0.75)
+                results.append({"session": n, "speaker": comp["speaker"],
+                                "part": part.get("label"),
+                                "start": round(off + float(st), 2),
+                                "end": round(off + float(en), 2),
+                                "tc": _fmt_tc(off + float(st)),
+                                "score": float(score)})
+                per_session += 1
+                if per_session >= limit:
+                    break
+            if per_session >= limit:
                 break
     results.sort(key=lambda r: r.get("score", 0), reverse=True)
     return json.dumps({"query": query, "moments": results[:limit]},
@@ -212,21 +238,34 @@ def find_moments(query: str, session: str | None = None, limit: int = 8) -> str:
 def ask_session(question: str, session: str, max_tokens: int = 1200) -> str:
     """Grounded Q&A over one session's video via TwelveLabs Pegasus — answers
     come from the indexed video itself (visuals + audio), not just text. Ask
-    for timestamps in the question to get timecoded citations. Requires
-    TWELVELABS_API_KEY."""
+    for timestamps in the question to get timecoded citations. Multi-part
+    vault talks are asked part by part and stitched, with each part's answer
+    labeled and its timestamp offset stated. Requires TWELVELABS_API_KEY."""
     client = _tl_client()
     ready = _tl_sessions(session)
-    n, comp, tl = ready[0]
-    prompt = (
-        f"Answer using only this video of {comp['speaker']}'s session. "
-        "Cite exact timestamps in seconds for every claim. "
-        f"Question: {question}"
-    )
-    res = _dump(client.analyze(model_name="pegasus1.2", video_id=tl["video_id"],
-                               prompt=prompt, temperature=0.2,
-                               max_tokens=max_tokens))
+    n, comp, parts = ready[0]
+    answers = []
+    for part in parts:
+        prompt = (
+            f"Answer using only this video of {comp['speaker']}'s session. "
+            "Cite exact timestamps in seconds for every claim. "
+            f"Question: {question}"
+        )
+        try:
+            res = _dump(client.analyze(model_name="pegasus1.2",
+                                       video_id=part["video_id"],
+                                       prompt=prompt, temperature=0.2,
+                                       max_tokens=max_tokens))
+            answers.append({"part": part.get("label"),
+                            "timestamp_offset": part.get("offset", 0),
+                            "answer": res.get("data") or ""})
+        except Exception as e:
+            answers.append({"part": part.get("label"), "error": str(e)})
+    note = ("Timestamps inside each answer are relative to that part; add "
+            "timestamp_offset for the position in the full talk."
+            if len(answers) > 1 else None)
     return json.dumps({"session": n, "question": question,
-                       "answer": res.get("data") or ""},
+                       "answers": answers, **({"note": note} if note else {})},
                       indent=2, ensure_ascii=False)
 
 

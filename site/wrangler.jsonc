@@ -1,0 +1,18 @@
+// Deploy the session viewer as its own Cloudflare Worker (static assets).
+//
+//   cd site && npm run build && npx wrangler deploy
+//
+// IMPORTANT: this is a SEPARATE worker from `recordings-organizedai` (the
+// paid vault at recordings.organizedai.vip — Stripe auth + R2 streaming).
+// Never deploy this config over that worker. To surface the viewer on the
+// vault domain, route a path (e.g. recordings.organizedai.vip/widgets/*) to
+// this worker from the Cloudflare dashboard, or serve it from its
+// workers.dev URL / another subdomain.
+{
+  "name": "organized-cuts-viewer",
+  "compatibility_date": "2026-07-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}

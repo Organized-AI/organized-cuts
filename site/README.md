@@ -10,8 +10,15 @@ view time.
 cd site
 npm install
 npm run dev        # local dev
-npm run build      # -> dist/ (deploy to recordings.organizedai.vip)
+npm run build      # -> dist/
+npx wrangler deploy  # -> organized-cuts-viewer worker (see wrangler.jsonc)
 ```
+
+> **Deploy note:** `recordings.organizedai.vip` itself is served by the
+> `recordings-organizedai` worker — the paid vault (Stripe auth, R2 video
+> streaming). This viewer deploys as a **separate** worker
+> (`organized-cuts-viewer`); route a path or subdomain to it rather than
+> replacing the vault.
 
 ## Layouts
 

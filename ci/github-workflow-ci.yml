@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+      - run: npm run build
+
+  agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install mcp
+      - run: python3 agent/build_corpus.py
+      - run: python3 agent/test_agent.py
+
+# NOTE: GitHub Actions only runs workflows from .github/workflows/. This file
+# is parked here because automated pushes can't create workflow files.
+# Activate it with:   git mv ci/github-workflow-ci.yml .github/workflows/ci.yml

@@ -1,0 +1,161 @@
+#!/usr/bin/env python3
+"""Import the recordings vault's TwelveLabs data into the agent corpus.
+
+The recordings.organizedai.vip worker keeps the *full-talk* analysis in its
+VAULT KV namespace:
+
+    tl:manifest              {"<video key>": {"total": s, "parts": [
+                                 {"label","offset","index_id","video_id"}]}}
+    tx:<video_id>            [[start, end, "text"], ...]      (per part)
+    chapters:<video_id>      [{"start","end","title","summary"}, ...]
+
+This script pulls those keys over the Cloudflare API and emits one corpus
+component per talk (agent/corpus/vault-<slug>.json) with part offsets applied,
+so the MCP server can search/answer over the complete talks — not just the
+cut reels — with timecodes that match the vault player exactly.
+
+Auth (read-only API token is enough):
+    export CLOUDFLARE_API_TOKEN=...        # KV Storage: Read
+    export CLOUDFLARE_ACCOUNT_ID=...
+    # namespace defaults to recordings-organizedai-VAULT; override with
+    # VAULT_KV_NAMESPACE_ID if it ever moves (`wrangler kv namespace list`)
+
+    python3 agent/import_vault.py
+
+The fetch and transform stages are separate so the transform is testable
+offline: `import_vault.transform(manifest, tx_by_id, chapters_by_id)`.
+"""
+import json
+import os
+import pathlib
+import re
+import sys
+import urllib.parse
+import urllib.request
+
+REPO = pathlib.Path(__file__).resolve().parent.parent
+OUT_DIR = REPO / "agent" / "corpus"
+
+API = "https://api.cloudflare.com/client/v4"
+# "recordings-organizedai-VAULT" namespace (from `wrangler kv namespace list`)
+DEFAULT_VAULT_NS = "077b2f50bd704953a76ba71cd219c00d"
+
+
+def slugify(key: str) -> str:
+    s = re.sub(r"\.mp4$", "", key, flags=re.I)
+    s = re.sub(r"^\d+\s*-\s*", "", s)
+    s = re.sub(r"[^a-zA-Z0-9]+", "-", s).strip("-").lower()
+    return f"vault-{s or 'talk'}"
+
+
+def title_of(key: str) -> str:
+    return re.sub(r"^\d+\s*-\s*", "", re.sub(r"\.mp4$", "", key, flags=re.I))
+
+
+def transform(manifest: dict, tx_by_id: dict, chapters_by_id: dict) -> list[dict]:
+    """KV payloads -> corpus components (offsets applied, sorted, complete)."""
+    components = []
+    for vkey, entry in sorted(manifest.items()):
+        parts = entry.get("parts", [])
+        transcript, chapters = [], []
+        for p in parts:
+            off = float(p.get("offset", 0))
+            for row in tx_by_id.get(p["video_id"], []):
+                s, e, text = row[0], row[1], row[2]
+                transcript.append({"start": round(off + float(s), 2),
+                                   "end": round(off + float(e), 2),
+                                   "text": str(text).strip()})
+            for i, c in enumerate(chapters_by_id.get(p["video_id"], []), 1):
+                chapters.append({
+                    "id": f"{p.get('label', 'p')}-{i}",
+                    "hook": c.get("title", ""),
+                    "kind": "chapter",
+                    "start": round(off + float(c.get("start", 0)), 2),
+                    "end": round(off + float(c.get("end") or c.get("start", 0)), 2),
+                    "caption": c.get("summary", ""),
+                })
+        transcript.sort(key=lambda t: t["start"])
+        chapters.sort(key=lambda c: c["start"])
+        components.append({
+            "name": slugify(vkey),
+            "title": title_of(vkey),
+            "speaker": title_of(vkey).split("—")[0].strip(),
+            "media_url": None,   # streamed via the vault (auth required)
+            "vault_key": vkey,
+            "duration": float(entry.get("total") or
+                              (transcript[-1]["end"] if transcript else 0)),
+            "twelvelabs": {"index_name": None, "index_id": None, "video_id": None},
+            "twelvelabs_parts": [
+                {"label": p.get("label"), "offset": float(p.get("offset", 0)),
+                 "index_id": p.get("index_id"), "video_id": p.get("video_id")}
+                for p in parts
+            ],
+            "masters": {},
+            "clips": chapters,
+            "transcript": transcript,
+            "widgets": [],
+            "assets": {"stream": f"https://recordings.organizedai.vip/media/{urllib.parse.quote(vkey)}"},
+        })
+    return components
+
+
+# --- Cloudflare KV fetch ----------------------------------------------------
+
+def _kv_get(token: str, account: str, ns: str, key: str):
+    url = (f"{API}/accounts/{account}/storage/kv/namespaces/{ns}"
+           f"/values/{urllib.parse.quote(key, safe='')}")
+    req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"})
+    try:
+        with urllib.request.urlopen(req) as r:
+            return json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return None
+        raise
+
+
+def fetch_and_build():
+    token = os.environ.get("CLOUDFLARE_API_TOKEN")
+    account = os.environ.get("CLOUDFLARE_ACCOUNT_ID")
+    ns = os.environ.get("VAULT_KV_NAMESPACE_ID", DEFAULT_VAULT_NS)
+    missing = [n for n, v in [("CLOUDFLARE_API_TOKEN", token),
+                              ("CLOUDFLARE_ACCOUNT_ID", account)] if not v]
+    if missing:
+        sys.exit(f"Missing env: {', '.join(missing)} (see module docstring).")
+
+    manifest = _kv_get(token, account, ns, "tl:manifest")
+    if not manifest:
+        sys.exit("tl:manifest not found in the KV namespace — wrong namespace id?")
+
+    tx_by_id, chapters_by_id = {}, {}
+    for entry in manifest.values():
+        for p in entry.get("parts", []):
+            vid = p["video_id"]
+            if vid not in tx_by_id:
+                tx_by_id[vid] = _kv_get(token, account, ns, f"tx:{vid}") or []
+                chapters_by_id[vid] = _kv_get(token, account, ns, f"chapters:{vid}") or []
+    return transform(manifest, tx_by_id, chapters_by_id)
+
+
+def write(components: list[dict]):
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    index_path = OUT_DIR / "corpus.json"
+    index = json.loads(index_path.read_text()) if index_path.exists() else []
+    for comp in components:
+        (OUT_DIR / f"{comp['name']}.json").write_text(
+            json.dumps(comp, indent=2, ensure_ascii=False))
+        index = [e for e in index if e.get("name") != comp["name"]]
+        index.append({"name": comp["name"], "title": comp["title"],
+                      "speaker": comp["speaker"], "clips": len(comp["clips"]),
+                      "transcript_segments": len(comp["transcript"]),
+                      "widgets": 0,
+                      "twelvelabs_ready": bool(comp["twelvelabs_parts"])})
+        print(f"  {comp['name']:<40} segs={len(comp['transcript']):>5} "
+              f"chapters={len(comp['clips']):>3} parts={len(comp['twelvelabs_parts'])}")
+    index.sort(key=lambda e: e["name"])
+    index_path.write_text(json.dumps(index, indent=2, ensure_ascii=False))
+    print(f"✓ {len(components)} vault talks -> {OUT_DIR.relative_to(REPO)}/")
+
+
+if __name__ == "__main__":
+    write(fetch_and_build())
