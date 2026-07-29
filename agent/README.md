@@ -19,10 +19,15 @@ pipeline outputs                 agent/build_corpus.py          agent/server.py 
 ## Quick start
 
 ```bash
-pip install -r agent/requirements.txt   # mcp (+ twelvelabs for semantic tools)
+bash agent/setup.sh                     # once: agent/.venv with the MCP SDK
 python3 agent/build_corpus.py           # package sessions -> agent/corpus/
-python3 agent/server.py                 # serve over stdio (agents mount this)
+bash agent/run_server.sh                # serve over stdio (agents mount this)
 ```
+
+(`setup.sh` exists because macOS's system/Homebrew Python rejects bare
+`pip install`; everything that launches the server — `.mcp.json`,
+`run_server.sh`, `test_agent.py` — automatically prefers `agent/.venv` and
+falls back to system `python3`.)
 
 Re-run `build_corpus.py` after any pipeline run — it's offline, deterministic,
 and safe to re-run anytime. Sessions whose analysis lives on another machine

@@ -82,9 +82,22 @@ def test_corpus_files():
     check("every index entry has a component file", True)
 
 
+def _server_python() -> str:
+    """Same interpreter resolution as run_server.sh: agent/.venv, else the
+    current interpreter."""
+    venv_py = REPO / "agent" / ".venv" / "bin" / "python"
+    return str(venv_py) if venv_py.exists() else sys.executable
+
+
 def test_server_stdio():
     print("• server.py over stdio JSON-RPC")
-    proc = subprocess.Popen([sys.executable, str(REPO / "agent" / "server.py")],
+    py = _server_python()
+    probe = subprocess.run([py, "-c", "import mcp"], capture_output=True)
+    if probe.returncode != 0:
+        check("mcp SDK installed", False,
+              "run `bash agent/setup.sh` (creates agent/.venv with the MCP SDK)")
+        return
+    proc = subprocess.Popen([py, str(REPO / "agent" / "server.py")],
                             stdin=subprocess.PIPE, stdout=subprocess.PIPE,
                             stderr=subprocess.PIPE, text=True)
 

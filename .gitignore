@@ -36,3 +36,6 @@ animated/hf/index.html
 animated/selection.json
 *.log
 *.bak
+
+# agent MCP server venv
+agent/.venv/

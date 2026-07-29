@@ -32,6 +32,7 @@ import re
 import shutil
 import subprocess
 import sys
+import time
 import urllib.parse
 import urllib.request
 
@@ -136,10 +137,23 @@ def _make_getter(ns: str):
     account = os.environ.get("CLOUDFLARE_ACCOUNT_ID")
     if token and account:
         print("• auth: Cloudflare API token")
-        return lambda key: _kv_get_rest(token, account, ns, key)
-    print("• auth: wrangler login (set CLOUDFLARE_API_TOKEN + "
-          "CLOUDFLARE_ACCOUNT_ID to use the REST API instead)")
-    return lambda key: _kv_get_wrangler(ns, key)
+        base = lambda key: _kv_get_rest(token, account, ns, key)  # noqa: E731
+    else:
+        print("• auth: wrangler login (set CLOUDFLARE_API_TOKEN + "
+              "CLOUDFLARE_ACCOUNT_ID to use the REST API instead)")
+        base = lambda key: _kv_get_wrangler(ns, key)              # noqa: E731
+
+    def get(key, attempts=3):
+        # Transient 401/5xx have been seen mid-run (token refresh); retry.
+        for i in range(attempts):
+            try:
+                return base(key)
+            except Exception as e:
+                if i == attempts - 1:
+                    raise
+                print(f"  ! {key}: {e!s:.120} — retrying in {2 ** i}s")
+                time.sleep(2 ** i)
+    return get
 
 
 def fetch_and_build():
@@ -150,13 +164,22 @@ def fetch_and_build():
     if not manifest:
         sys.exit("tl:manifest not found in the KV namespace — wrong namespace id?")
 
+    def optional(key):
+        """tx:/chapters: are enrichments — a persistent failure shouldn't
+        abort the whole import. Warn and continue with what we have."""
+        try:
+            return get(key) or []
+        except Exception as e:
+            print(f"  ! skipping {key} after retries ({e!s:.120})")
+            return []
+
     tx_by_id, chapters_by_id = {}, {}
     for entry in manifest.values():
         for p in entry.get("parts", []):
             vid = p["video_id"]
             if vid not in tx_by_id:
-                tx_by_id[vid] = get(f"tx:{vid}") or []
-                chapters_by_id[vid] = get(f"chapters:{vid}") or []
+                tx_by_id[vid] = optional(f"tx:{vid}")
+                chapters_by_id[vid] = optional(f"chapters:{vid}")
     return transform(manifest, tx_by_id, chapters_by_id)
 
 

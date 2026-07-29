@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "organized-cuts-corpus": {
-      "command": "python3",
-      "args": ["agent/server.py"]
+      "command": "bash",
+      "args": ["agent/run_server.sh"]
     }
   }
 }
