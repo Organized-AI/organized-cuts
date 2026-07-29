@@ -1,0 +1,21 @@
+{
+  "name": "henry",
+  "title": "Henry",
+  "speaker": "Henry",
+  "media_url": null,
+  "twelvelabs": {
+    "index_name": "henry-talk",
+    "index_id": null,
+    "video_id": null
+  },
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Event/henry_master_ISO1.MP4"
+  },
+  "clips": [],
+  "transcript": [],
+  "widgets": [],
+  "assets": {
+    "reels_dir": "henry/reels",
+    "proxy": "proxy/henry_ISO1_720p.mp4"
+  }
+}

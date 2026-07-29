@@ -16,6 +16,7 @@ Everything runs locally; nothing is published without you asking.
 |---------|-----------|
 | [`jordan-close/`](jordan-close/) | First pipeline: the Jordan Close workshop talk (presenter ISO1 + screen-recording ISO2 → 15 reels) |
 | [`site/`](site/) | Session viewer for [recordings.organizedai.vip](https://recordings.organizedai.vip) — chapters, transcript, and interactive widgets per session |
+| [`agent/`](agent/) | Agent corpus: session components + an MCP server so any AI agent can query the whole corpus with exact timecodes and TwelveLabs-grounded answers |
 
 ## Pipeline (per project)
 

@@ -1,0 +1,128 @@
+[
+  {
+    "name": "henry",
+    "title": "Henry",
+    "speaker": "Henry",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "jordan-close",
+    "title": "Jordan Close",
+    "speaker": "Jordan",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "session-1-esteban",
+    "title": "Session 1 Esteban",
+    "speaker": "Esteban",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "session-2-ct",
+    "title": "Session 2 Ct",
+    "speaker": "CT",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "session-3-rohit",
+    "title": "Session 3 Rohit",
+    "speaker": "Rohit",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "session-3a-rohit",
+    "title": "Session 3A Rohit",
+    "speaker": "Rohit",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "session-4-michael",
+    "title": "Session 4 Michael",
+    "speaker": "Michael",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "session-4a-michael",
+    "title": "Session 4A Michael",
+    "speaker": "Michael",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "session-5-michael",
+    "title": "Session 5 Michael",
+    "speaker": "Michael",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "session-5a-michael",
+    "title": "Session 5A Michael",
+    "speaker": "Michael",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "session-6-shep",
+    "title": "Session 6 Shep",
+    "speaker": "Shep",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "session-6a-shep",
+    "title": "Session 6A Shep",
+    "speaker": "Shep",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "studio-jordan",
+    "title": "Studio Jordan",
+    "speaker": "Jordan",
+    "clips": 0,
+    "transcript_segments": 0,
+    "widgets": 0,
+    "twelvelabs_ready": false
+  },
+  {
+    "name": "demo",
+    "title": "Attention & softmax, from scratch (demo)",
+    "speaker": "Michael",
+    "clips": 4,
+    "transcript_segments": 5,
+    "widgets": 4,
+    "twelvelabs_ready": false
+  }
+]

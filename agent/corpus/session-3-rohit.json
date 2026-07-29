@@ -1,0 +1,22 @@
+{
+  "name": "session-3-rohit",
+  "title": "Session 3 Rohit",
+  "speaker": "Rohit",
+  "media_url": null,
+  "twelvelabs": {
+    "index_name": "session-3-rohit",
+    "index_id": null,
+    "video_id": null
+  },
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 3 Rohit/JORDAN_S001_S001_T001_ISO1.MOV",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 3 Rohit/JORDAN_S001_S001_T001_ISO2.MOV"
+  },
+  "clips": [],
+  "transcript": [],
+  "widgets": [],
+  "assets": {
+    "reels_dir": "session-3-rohit/reels",
+    "proxy": "proxy/rohit_ISO1_720p.mp4"
+  }
+}

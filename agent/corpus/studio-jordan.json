@@ -1,0 +1,22 @@
+{
+  "name": "studio-jordan",
+  "title": "Studio Jordan",
+  "speaker": "Jordan",
+  "media_url": null,
+  "twelvelabs": {
+    "index_name": "studio-jordan",
+    "index_id": null,
+    "video_id": null
+  },
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Studio Jordaaan/ISO 2.mp4",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Studio Jordaaan/ISO 3.mp4"
+  },
+  "clips": [],
+  "transcript": [],
+  "widgets": [],
+  "assets": {
+    "reels_dir": "studio-jordan/reels",
+    "proxy": "proxy/studio-jordan_ISO1_720p.mp4"
+  }
+}

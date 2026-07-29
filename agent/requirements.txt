@@ -1,0 +1,2 @@
+mcp>=1.2
+twelvelabs>=0.4   # only needed for find_moments / ask_session

@@ -1,0 +1,22 @@
+{
+  "name": "session-2-ct",
+  "title": "Session 2 Ct",
+  "speaker": "CT",
+  "media_url": null,
+  "twelvelabs": {
+    "index_name": "session-2-ct",
+    "index_id": null,
+    "video_id": null
+  },
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 2 CT/JORDAN_S001_S001_T004_ISO1.MOV",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 2 CT/JORDAN_S001_S001_T004_ISO2.MOV"
+  },
+  "clips": [],
+  "transcript": [],
+  "widgets": [],
+  "assets": {
+    "reels_dir": "session-2-ct/reels",
+    "proxy": "proxy/session-2-ct_ISO1_720p.mp4"
+  }
+}

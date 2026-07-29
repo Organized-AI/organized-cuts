@@ -1,0 +1,21 @@
+{
+  "name": "session-6-shep",
+  "title": "Session 6 Shep",
+  "speaker": "Shep",
+  "media_url": null,
+  "twelvelabs": {
+    "index_name": "session-6-shep",
+    "index_id": null,
+    "video_id": null
+  },
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 6 Shep/JORDAN_S001_S001_T001_ISO1.MOV"
+  },
+  "clips": [],
+  "transcript": [],
+  "widgets": [],
+  "assets": {
+    "reels_dir": "session-6-shep/reels",
+    "proxy": "proxy/session-6-shep_ISO1_720p.mp4"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "session-5-michael",
+  "title": "Session 5 Michael",
+  "speaker": "Michael",
+  "media_url": null,
+  "twelvelabs": {
+    "index_name": "session-5-michael",
+    "index_id": null,
+    "video_id": null
+  },
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 5 Michael/JORDAN_S001_S001_T007_ISO1.MOV",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 5 Michael/JORDAN_S001_S001_T007_ISO2.MOV"
+  },
+  "clips": [],
+  "transcript": [],
+  "widgets": [],
+  "assets": {
+    "reels_dir": "session-5-michael/reels",
+    "proxy": "proxy/session-5-michael_ISO1_720p.mp4"
+  }
+}

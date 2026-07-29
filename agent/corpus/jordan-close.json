@@ -1,0 +1,22 @@
+{
+  "name": "jordan-close",
+  "title": "Jordan Close",
+  "speaker": "Jordan",
+  "media_url": null,
+  "twelvelabs": {
+    "index_name": "jordan-close-workshop",
+    "index_id": null,
+    "video_id": null
+  },
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Jordan Close/JORDAN_S001_S001_T011_ISO1.MOV",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Jordan Close/JORDAN_S001_S001_T011_ISO2.MOV"
+  },
+  "clips": [],
+  "transcript": [],
+  "widgets": [],
+  "assets": {
+    "reels_dir": "jordan-close/reels",
+    "proxy": "proxy/jordan_close_ISO1_720p.mp4"
+  }
+}
