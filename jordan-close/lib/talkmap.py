@@ -75,7 +75,9 @@ TEXT_FIXES = [
     (re.compile(r"\bAppify\b", re.I), "Apify"),
     (re.compile(r"\bCloud Code\b", re.I), "Claude Code"),
     (re.compile(r"\bQuinn\b"), "Qwen"),
+    (re.compile(r"\bQIN\b"), "Qwen"),            # Esteban, "QIN models" on the benchmark
     (re.compile(r"\bLight Alarm\b", re.I), "LiteLLM"),
+    (re.compile(r"\bLightLM\b"), "LiteLLM"),     # Henry, listing routers alongside Haiku
     (re.compile(r"\bLang ?fuse\b", re.I), "Langfuse"),
 ]
 
