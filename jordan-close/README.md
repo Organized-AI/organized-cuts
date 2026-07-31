@@ -22,6 +22,38 @@ tests/      test_widgets.py — offline checks, no API key needed
 - Proxy: `proxy/jordan_close_ISO1_720p.mp4` (analysis only)
 - Masters on T7 (final cuts): `..._ISO1.MOV`, `..._ISO2.MOV` (13:04, shared start TC)
 
+### Masters without the drive
+
+`project.json` takes an optional `masters_url` alongside `masters`. A local
+master wins whenever it is actually on disk; otherwise the hosted copy is used
+and `ffmpeg` reads it over HTTP range requests:
+
+```json
+{
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 1 Esteban/..._ISO1.MOV",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 1 Esteban/..._ISO2.MOV"
+  },
+  "masters_url": {
+    "ISO1": "https://<your-host>/session-1-esteban/iso1.mp4",
+    "ISO2": "https://<your-host>/session-1-esteban/iso2.mp4"
+  }
+}
+```
+
+So attaching the T7 silently upgrades quality with no config change, and
+detaching it keeps the pipeline running. Two things to know:
+
+- **Quality.** Hosted files are already-compressed H.264; cutting from them
+  stacks a second encode generation versus ProRes. Fine for social, not for a
+  master deliverable.
+- **Geometry.** `03_cut_reels.py` probes every source and refuses to cut unless
+  it is 1920x1080, because the 9:16 crop maths is derived from that frame size.
+  A hosted re-encode at another resolution would otherwise mis-frame silently.
+
+If only ISO1 resolves, demo clips are cut as talking-head rather than failing.
+Stages 07/08 (widgets) read no video at all and are unaffected either way.
+
 ## Run
 ```bash
 python3.13 -m venv .venv && ./.venv/bin/pip install -r requirements.txt

@@ -31,7 +31,33 @@ _DEFAULT_MASTERS = {
     "ISO2": "/Volumes/T7/Vol 2 Workshop/Jordan Close/JORDAN_S001_S001_T011_ISO2.MOV",
 }
 MASTERS = {k: v for k, v in CFG.get("masters", _DEFAULT_MASTERS).items() if v}
-ISO2_PRESENT = bool(MASTERS.get("ISO2"))
+
+# Remote fallback: when the T7 is not attached, `masters_url` in project.json
+# points at the hosted copies (Cloudflare) and ffmpeg reads them over HTTP range
+# requests. A local master always wins when it is actually on disk, so attaching
+# the drive silently upgrades quality with no config change.
+MASTERS_URL = {k: v for k, v in CFG.get("masters_url", {}).items() if v}
+
+
+def is_url(s) -> bool:
+    return str(s or "").startswith(("http://", "https://"))
+
+
+def master_source(angle: str) -> str | None:
+    """Where to actually read `angle` from: local master if present, else URL."""
+    local = MASTERS.get(angle)
+    if local and not is_url(local) and os.path.exists(local):
+        return local
+    if local and is_url(local):
+        return local
+    return MASTERS_URL.get(angle) or None
+
+
+# Angles that resolve to something readable right now. 03_cut_reels.py reads
+# these; MASTERS stays the declared config so existing callers are unaffected.
+SOURCES = {a: s for a in ("ISO1", "ISO2") if (s := master_source(a))}
+# Configured (not necessarily reachable) — preserves the original semantics.
+ISO2_PRESENT = bool(MASTERS.get("ISO2") or MASTERS_URL.get("ISO2"))
 
 _proxy = CFG.get("proxy", "proxy/jordan_close_ISO1_720p.mp4")
 PROXY = pathlib.Path(_proxy) if os.path.isabs(_proxy) else PROJECT_DIR / _proxy
@@ -153,6 +179,27 @@ def require_state(*keys) -> dict:
     if missing:
         die(f"Missing pipeline state {missing} in {STATE_PATH}. Run the earlier step first.")
     return s
+
+
+def probe_dims(src: str):
+    """(width, height) of a local file or URL, or None if ffprobe can't read it.
+
+    Doubles as the reachability check for a remote master: ffprobe pulls only the
+    header, so it is cheap even against a multi-GB hosted file.
+    """
+    import subprocess
+
+    p = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0",
+         "-show_entries", "stream=width,height", "-of", "csv=p=0:s=x", str(src)],
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=90)
+    if p.returncode != 0:
+        return None
+    try:
+        w, h = p.stdout.strip().splitlines()[0].split("x")[:2]
+        return int(w), int(h)
+    except Exception:
+        return None
 
 
 def dump(obj):

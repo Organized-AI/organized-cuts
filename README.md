@@ -67,6 +67,10 @@ Full schema in [`docs/TALK-MAP-WIDGETS.md`](docs/TALK-MAP-WIDGETS.md).
 
 ## Requirements
 
+- Source video: the ProRes masters on local disk, **or** `masters_url` in a
+  session's `project.json` pointing at hosted copies — `ffmpeg` reads those over
+  HTTP range requests, at the cost of a second encode generation. Local wins when
+  present. The widget stages (07/08) read no video at all.
 - `ffmpeg` (with `h264_videotoolbox` on Apple Silicon)
 - Python 3.13 + `pip install -r jordan-close/requirements.txt`
 - A TwelveLabs API key (see each project's `.env.example`)

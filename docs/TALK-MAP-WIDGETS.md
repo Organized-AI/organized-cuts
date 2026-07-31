@@ -189,11 +189,11 @@ OC_PROJECT_DIR=../session-2-ct ./.venv/bin/python scripts/07_widgets.py
 ```
 
 `reel_strip` is the only widget type that genuinely depends on the ProRes
-masters, because it lists reels this pipeline rendered. If you want reels without
-the T7 at all, point `masters` in `project.json` at the Cloudflare-hosted MP4s —
-`03_cut_reels.py` passes those paths straight to `ffmpeg`, which reads URLs. You
-would be cutting from already-compressed 1080p instead of ProRes, so expect
-generational loss on the re-encode; everything upstream of the cut is unaffected.
+masters, because it lists reels this pipeline rendered. To get reels without the
+T7 at all, add `masters_url` to `project.json` pointing at the hosted copies —
+see [Masters without the drive](../jordan-close/README.md#masters-without-the-drive).
+A local master still wins when the drive is attached, so the setting is safe to
+leave in place permanently.
 
 ## Transcription fixes
 
