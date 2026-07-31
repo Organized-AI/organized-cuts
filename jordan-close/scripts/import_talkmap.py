@@ -51,12 +51,27 @@ def talk_of(key: str) -> str | None:
 
 
 def load_export(path: pathlib.Path) -> tuple[list, dict]:
+    """Accept either export shape.
+
+    Full:    {"videos": [{key,title,size}], "chapters": {key: {total,chapters}}}
+    Compact: [{"key": ..., "total": ..., "chapters": [...]}, ...]
+
+    The compact form is what the one-liner in the module docstring produces; it
+    carries everything the map needs and is small enough to paste.
+    """
     doc = json.loads(path.read_text())
+    if isinstance(doc, list):
+        rows = [r for r in doc if r.get("key")]
+        if not rows:
+            raise SystemExit(f"{path}: list export has no rows with a `key`.")
+        return ([{"key": r["key"], "title": r.get("title") or r["key"]} for r in rows],
+                {r["key"]: r for r in rows})
     videos = doc.get("videos")
     if videos is None:
-        raise SystemExit(f"{path}: no `videos` array — is this a /api/videos export?")
+        raise SystemExit(
+            f"{path}: no `videos` array and not a list export — expected the "
+            "output of the console snippet, not the snippet itself.")
     chapters = doc.get("chapters") or {}
-    # Tolerate the list form: [{key, total, chapters}, ...]
     if isinstance(chapters, list):
         chapters = {c["key"]: c for c in chapters if c.get("key")}
     return videos, chapters
