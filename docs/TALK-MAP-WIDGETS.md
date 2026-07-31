@@ -164,6 +164,37 @@ If you already have chapters from the vault's own `/api/chapters`, drop them int
 verbatim rather than asking Pegasus for a second opinion — which is the point of
 "connect it to the *existing* Talk Map".
 
+## Running without the masters
+
+Stages 07 and 08 **never open a video file** — not the ProRes masters on the T7,
+not the 720p proxy. Only `03_cut_reels.py`, `prepare_media.py`,
+`demo_candidates.py` and `hf_prep.py` touch `MASTERS`. The widget stages need the
+TwelveLabs index (already analyzed) plus local analysis JSON, so they run on any
+machine with the API key — no drive attached.
+
+What each input costs you if it is absent:
+
+| Missing | Effect | Fix, no media needed |
+|---|---|---|
+| `analysis/state.json` | can't reach the index | automatic — 07 resolves index + video by `index_name` from `project.json` and writes state.json back |
+| `analysis/chapters.json` | no `chapter_map`, no `qa_index` | 07 asks Pegasus, or paste the vault's own `/api/chapters` response in |
+| `analysis/clips.json` | no `moment`, `demo_walkthrough`, `quote`, `takeaway` | re-run `02_analyze.py` — it is pure API (its transcript comes from the index) |
+| `reels/manifest.json` | no `reel_strip`; `moment.reel` is null | needs cut reels, so this one does want the masters |
+
+So on a machine with just the key and the registry:
+
+```bash
+OC_PROJECT_DIR=../session-2-ct ./.venv/bin/python scripts/02_analyze.py   # if no clips.json
+OC_PROJECT_DIR=../session-2-ct ./.venv/bin/python scripts/07_widgets.py
+```
+
+`reel_strip` is the only widget type that genuinely depends on the ProRes
+masters, because it lists reels this pipeline rendered. If you want reels without
+the T7 at all, point `masters` in `project.json` at the Cloudflare-hosted MP4s —
+`03_cut_reels.py` passes those paths straight to `ffmpeg`, which reads URLs. You
+would be cutting from already-compressed 1080p instead of ProRes, so expect
+generational loss on the re-encode; everything upstream of the cut is unaffected.
+
 ## Transcription fixes
 
 ASR reliably mangles a handful of names across these talks (`Appify` → `Apify`,

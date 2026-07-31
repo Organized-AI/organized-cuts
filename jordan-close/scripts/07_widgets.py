@@ -13,6 +13,11 @@ or determined for this asset:
 Writes <session>/analysis/widgets.json. Network responses are cached next to it
 (chapters.json, topics.json, probes.json) so re-runs cost nothing.
 
+No video files are read at any point — not the ProRes masters, not the proxy.
+This stage needs the TwelveLabs index (already analyzed) and whatever local
+analysis JSON exists. If state.json is missing, the index and video ids are
+resolved by index name rather than re-uploading anything.
+
     ./.venv/bin/python scripts/07_widgets.py                 # live: fills gaps from TwelveLabs
     ./.venv/bin/python scripts/07_widgets.py --offline       # local artifacts only
     OC_PROJECT_DIR=../session-2-ct ./.venv/bin/python scripts/07_widgets.py
@@ -119,6 +124,40 @@ class TL:
         self._c = None
         st = T.read_json(C.STATE_PATH, {}) or {}
         self.index_id, self.video_id = st.get("index_id"), st.get("video_id")
+
+    def resolve(self) -> bool:
+        """Recover index_id/video_id from TwelveLabs by index name.
+
+        state.json lives under the gitignored analysis/ dir, so a machine that
+        did not run 01_ingest has no pointer to an already-indexed asset. The
+        index name is in project.json and is stable, so look the ids up rather
+        than re-uploading anything.
+        """
+        try:
+            if not self.index_id:
+                for idx in self.client.indexes.list():
+                    d = C.dump(idx)
+                    if d.get("index_name") == C.INDEX_NAME:
+                        self.index_id = d.get("id") or d.get("_id")
+                        break
+                if not self.index_id:
+                    print(f"  ! no TwelveLabs index named {C.INDEX_NAME!r}")
+                    return False
+                print(f"  · resolved index {C.INDEX_NAME!r} -> {self.index_id}")
+            if not self.video_id:
+                vids = [C.dump(v) for v in self.client.indexes.videos.list(self.index_id)]
+                if not vids:
+                    print(f"  ! index {self.index_id} has no videos")
+                    return False
+                if len(vids) > 1:
+                    print(f"  · {len(vids)} videos in the index; using the first")
+                self.video_id = vids[0].get("id") or vids[0].get("_id")
+                print(f"  · resolved video -> {self.video_id}")
+        except Exception as e:
+            print(f"  ! resolve failed: {e}")
+            return False
+        C.save_state(index_id=self.index_id, video_id=self.video_id)
+        return True
 
     @property
     def client(self):
@@ -431,8 +470,10 @@ def main():
 
     tl = TL(args.offline)
     if not args.offline and not (tl.index_id and tl.video_id):
-        print("  ! no index_id/video_id in state.json — continuing offline")
-        tl.offline = True
+        print(f"  · no index/video in state.json — resolving {C.INDEX_NAME!r} from TwelveLabs")
+        if not tl.resolve():
+            print("  ! could not resolve the indexed asset — continuing offline")
+            tl.offline = True
 
     clips = load_clips()
     manifest = load_manifest()
