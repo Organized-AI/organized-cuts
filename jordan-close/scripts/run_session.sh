@@ -26,6 +26,7 @@ $PY scripts/03_cut_reels.py             || { echo "!! $NAME cut failed"; exit 1;
 $PY scripts/05_loudnorm.py              || true
 $PY scripts/04_pick_angle.py            || true
 $PY scripts/06_report.py                || true
+$PY scripts/07_widgets.py               || true   # Talk Map widgets; merge with 08_talkmap.py
 
 # stage with per-session names, then upload to the session's folder
 UPLOAD="$($PY -c "import sys;sys.path.insert(0,'.');from lib import common as C;print(C.UPLOAD_FOLDER)")"

@@ -1,0 +1,82 @@
+{
+  "schema": "organized-cuts/talk-registry@1",
+  "event": {
+    "name": "Vol 2 · Agentic Engineering Workshop",
+    "city": "Austin",
+    "site": "https://recordings.organizedai.vip",
+    "vault": "https://recordings.organizedai.vip/vault",
+    "workshops": "https://github.com/Organized-AI/agentic-eng-workshops"
+  },
+  "_notes": [
+    "`talks[].id` is the ?talk= id used by the vault (recordings.organizedai.vip/vault?talk=01).",
+    "`sessions` are organized-cuts project dirs (each has project.json + analysis/).",
+    "A talk with several session dirs was recorded in parts; widgets merge across them",
+    "in run order and timecodes are offset by the preceding parts' durations.",
+    "`jordan-close/` is the reference pipeline project, not a Vol 2 talk — it is",
+    "deliberately absent here.",
+    "Edit this file to re-map sessions; 07_widgets.py and 08_talkmap.py both read it."
+  ],
+  "talks": [
+    {
+      "id": "01",
+      "speaker": "Michael",
+      "title": "Real-Time Web Data for Agents",
+      "blurb": "Live Apify actor workflows — scraping LinkedIn, feeding agents fresh web data, and shipping skills that call actors.",
+      "workshop": "workshops/02-giving-agents-data",
+      "sessions": [
+        "session-4-michael",
+        "session-4a-michael",
+        "session-5-michael",
+        "session-5a-michael"
+      ]
+    },
+    {
+      "id": "02",
+      "speaker": "Esteban",
+      "title": "Mastering Harness Engineering",
+      "blurb": "Benchmarks from 0.65 → 0.97: sandboxed codegen, reward functions, and Langfuse traces for self-correcting agents.",
+      "workshop": "workshops/02-harness-eng",
+      "sessions": ["session-1-esteban"]
+    },
+    {
+      "id": "03",
+      "speaker": "CT",
+      "title": "Tokenomics",
+      "blurb": "Where your AI spend actually goes — delegating from frontier models to Sonnet/Haiku fleets, and the EBI improvement loop.",
+      "workshop": "workshops/05-tokenomics",
+      "sessions": ["session-2-ct"]
+    },
+    {
+      "id": "04",
+      "speaker": "Rohit",
+      "title": "Local AI, Without the Cloud",
+      "blurb": "MLX vs Ollama vs llama.cpp vs vLLM — picking the right engine for your hardware and owning your inference.",
+      "workshop": "workshops/04-local-ai",
+      "sessions": ["session-3-rohit", "session-3a-rohit"]
+    },
+    {
+      "id": "05",
+      "speaker": "Jordaaan",
+      "title": "Observability",
+      "blurb": "3D live views of real systems — Cloudflare workers, queues, agent factories, and event maps you can actually watch.",
+      "workshop": "workshops/07-observability",
+      "sessions": ["studio-jordan"]
+    },
+    {
+      "id": "06",
+      "speaker": "Shep",
+      "title": "Build Your Second Brain",
+      "blurb": "Penumbra, shapes, and MCP — designing a memory system your agents can search, extend, and build on live.",
+      "workshop": "workshops/06-second-brain",
+      "sessions": ["session-6-shep", "session-6a-shep"]
+    },
+    {
+      "id": "07",
+      "speaker": "Henry",
+      "title": "Mastering AI Loops",
+      "blurb": "Goal-driven loops with stop conditions, verifier models, and recursive self-improvement that needs less input every pass.",
+      "workshop": "workshops/03-agent-loops-rsi",
+      "sessions": []
+    }
+  ]
+}

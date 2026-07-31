@@ -10,10 +10,12 @@ screen feed (keeping ISO1 audio). Everything stays local.
 ## Layout
 ```
 proxy/      720p proxy — TwelveLabs analysis ONLY
-analysis/   state.json (index/video/task ids), clips.json (candidates)
+analysis/   state.json (index/video/task ids), clips.json (candidates),
+            chapters/topics/probes.json (cached TwelveLabs), widgets.json
 reels/      ISO1/ ISO2/ renders, compare/ stills, manifest.json, INDEX.md
-scripts/    00..06 numbered pipeline steps + run_all.sh
-lib/        common.py (config + helpers)
+scripts/    00..08 numbered pipeline steps + run_all.sh, widgets_all.sh
+lib/        common.py (config + helpers), talkmap.py (widget + Talk Map model)
+tests/      test_widgets.py — offline checks, no API key needed
 ```
 
 ## Inputs (already staged)
@@ -37,6 +39,13 @@ bash scripts/run_all.sh
 | 4 | `04_pick_angle.py` | QA contact sheet `reels/compare/CONTACT_SHEET.jpg` (person vs. screen per clip) |
 | 5 | `05_loudnorm.py` | Loudnorm every reel to -14 LUFS |
 | 6 | `06_report.py` | `reels/INDEX.md` + summary table |
+| 7 | `07_widgets.py` | Talk Map widgets from this session's TwelveLabs analysis (chapters, highlights, gist, search) → `analysis/widgets.json`. Caches API responses; `--offline` / `--refresh` |
+| 8 | `08_talkmap.py` | Merge every session in `talks/registry.json` into `talkmap/build/` — one bundle, a vault-compatible payload per talk, and an HTML preview |
+
+Steps 1–7 are per session; step 8 runs across all of them. `bash scripts/widgets_all.sh`
+does 7 for every registered session and then 8. See
+[`docs/TALK-MAP-WIDGETS.md`](../docs/TALK-MAP-WIDGETS.md) for the widget schema
+and how it plugs into the existing Talk Map.
 
 **Auth note:** the Infisical CLI is installed at `~/.local/bin/infisical` (and
 `/opt/homebrew/bin`). One-time: `infisical login` then `infisical init` (pick
