@@ -38,3 +38,4 @@ animated/selection.json
 
 # --- Talk Map build output (regenerate with scripts/08_talkmap.py) ---
 talkmap/build/
+talks/chapters/

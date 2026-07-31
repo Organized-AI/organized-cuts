@@ -67,6 +67,30 @@ def merge_talk(talk: dict) -> dict:
         offset += dur
         print(f"  · {name}: {len(doc.get('widgets', []))} widgets, {dur / 60:.1f} min")
 
+    # The vault serves one consolidated recording per talk, so when its map has
+    # been imported it is the authority: chapters describe the whole talk on one
+    # timeline, whereas session chapter_maps only ever describe their own part.
+    # Take the vault's, and drop the per-part spines so the map isn't doubled.
+    vault = T.load_talk_chapters(talk["id"])
+    if vault and vault.get("chapters"):
+        widgets = [w for w in widgets if w["type"] not in ("chapter_map", "qa_index")]
+        total = float(vault.get("total") or 0.0) or offset
+        widgets += T.build_chapter_map(
+            vault["chapters"], talk=talk["id"], session="",
+            wid=f"t{talk['id']}_map", title=f"{talk['speaker']} — Talk Map",
+            total=total, source="vault:/api/chapters")
+        widgets += T.build_qa_index(
+            vault["chapters"], talk=talk["id"], session="",
+            wid=f"t{talk['id']}_qa", source="vault:/api/chapters")
+        chapters = [{"start": s["start"], "end": s["end"], "title": s["title"],
+                     "summary": s["summary"], "category": s["category"],
+                     "color": s["color"], "session": ""}
+                    for s in T.chapter_segments(vault["chapters"])]
+        offset = total
+        key = (vault.get("imported_from") or {}).get("vault_key", "")
+        print(f"  · vault map: {len(chapters)} chapters, {total / 60:.0f} min"
+              + (f"  [{key}]" if key else ""))
+
     widgets.sort(key=lambda w: (w["start"], w["id"]))
     chapters.sort(key=lambda c: c["start"])
     return {

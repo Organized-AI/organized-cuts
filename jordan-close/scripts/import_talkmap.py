@@ -62,117 +62,84 @@ def load_export(path: pathlib.Path) -> tuple[list, dict]:
     return videos, chapters
 
 
-def parse_map(pairs: list) -> dict:
-    out = {}
-    for p in pairs or []:
-        if "=" not in p:
-            raise SystemExit(f"--map expects '<video key>=<session>', got {p!r}")
-        k, s = p.split("=", 1)
-        out[k.strip()] = s.strip()
-    return out
-
-
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("export", type=pathlib.Path, help="vault export JSON")
     ap.add_argument("--write", action="store_true",
-                    help="write analysis/chapters.json (default: report only)")
-    ap.add_argument("--map", action="append", default=[], metavar="KEY=SESSION",
-                    help="pair one recording with one session; repeatable")
+                    help="write talks/chapters/<id>.json (default: report only)")
     args = ap.parse_args()
 
     videos, chapters = load_export(args.export)
     reg = T.load_registry()
     by_talk = {t["id"]: t for t in reg["talks"]}
-    explicit = parse_map(args.map)
 
-    # Group the vault's recordings by the talk id in their key.
-    vault: dict[str, list] = {}
-    orphan = []
-    for v in videos:
-        tid = talk_of(v.get("key") or "")
-        if tid:
-            vault.setdefault(tid, []).append(v)
-        else:
-            orphan.append(v)
-    for tid in vault:
-        vault[tid].sort(key=lambda v: v.get("key", ""))
-
-    print(f"• {len(videos)} recordings in the export, "
+    print(f"\u2022 {len(videos)} recordings in the export, "
           f"{len(chapters)} with chapters")
-    if orphan:
-        print(f"  ! {len(orphan)} recordings have no NN talk prefix: "
-              + ", ".join(repr(v.get('key')) for v in orphan[:4]))
 
-    pairs, problems = [], []
-    for tid in sorted(set(vault) | set(by_talk)):
-        recs = vault.get(tid, [])
+    wrote, problems = 0, []
+    seen = set()
+    for v in sorted(videos, key=lambda v: v.get("key", "")):
+        key = v.get("key") or ""
+        tid = talk_of(key)
+        if not tid:
+            problems.append(f"{key!r} has no NN talk prefix — skipped")
+            continue
         talk = by_talk.get(tid)
-        sessions = list(talk["sessions"]) if talk else []
-        label = f"talk {tid}" + (f" · {talk['speaker']}" if talk else " (not in registry)")
-        print(f"\n• {label}")
         if not talk:
-            problems.append(f"talk {tid} is on the vault but absent from the registry")
-            for v in recs:
-                print(f"    vault: {v.get('key')}")
+            problems.append(f"talk {tid} ({key!r}) is on the vault but not in the registry")
             continue
-        for v in recs:
-            print(f"    vault:    {v.get('key')}")
-        for s in sessions:
-            print(f"    registry: {s}")
+        if tid in seen:
+            problems.append(f"talk {tid} has more than one recording; "
+                            "the talk-level chapter file keeps the first")
+            continue
+        seen.add(tid)
 
-        # Explicit --map wins; otherwise pair in order when the counts agree.
-        mapped = [(v, explicit[v["key"]]) for v in recs if v.get("key") in explicit]
-        rest_v = [v for v in recs if v.get("key") not in explicit]
-        rest_s = [s for s in sessions if s not in {m[1] for m in mapped}]
-        if mapped:
-            pairs += mapped
-        if len(rest_v) == len(rest_s):
-            pairs += list(zip(rest_v, rest_s))
-            if rest_v:
-                print(f"    -> paired {len(rest_v)} in order")
-        elif rest_v or rest_s:
-            problems.append(
-                f"talk {tid}: {len(recs)} vault recording(s) vs {len(sessions)} "
-                f"registry session(s) — pair them with --map, or fix the registry")
-            print(f"    ! {len(rest_v)} unpaired recording(s), "
-                  f"{len(rest_s)} unpaired session(s)")
+        doc = chapters.get(key) or {}
+        chs = doc.get("chapters") or []
+        sessions = talk.get("sessions", [])
+        print(f"\n\u2022 talk {tid} \u00b7 {talk['speaker']} \u2014 {talk['title']}")
+        print(f"    vault:    {key}  ({len(chs)} chapters, "
+              f"{(doc.get('total') or 0) / 60:.0f} min)")
+        print(f"    sessions: {', '.join(sessions) if sessions else '(none in this repo)'}")
+        if not chs:
+            problems.append(f"talk {tid}: no chapters in the export for {key!r}")
+            print("    ! no chapters — skipped")
+            continue
 
-    # Write chapters for every confidently paired session.
-    wrote, skipped = 0, 0
-    for v, session in pairs:
-        doc = chapters.get(v.get("key"))
-        if not doc or not doc.get("chapters"):
-            print(f"  · {session}: no chapters in the export for {v.get('key')!r}")
-            skipped += 1
-            continue
-        d = T.session_dir(session)
-        if not d.exists():
-            print(f"  ! {session}: no such session dir at {d}")
-            skipped += 1
-            continue
-        payload = {"total": doc.get("total"), "chapters": doc["chapters"],
-                   "imported_from": {"vault_key": v.get("key"), "title": v.get("title")}}
-        out = d / "analysis" / "chapters.json"
+        segs = T.chapter_segments(chs)
+        counts = {}
+        for sg in segs:
+            counts[sg["category"]] = counts.get(sg["category"], 0) + 1
+        print("    map:      " + ", ".join(
+            f"{T.CATEGORY_BY_ID[c]['label']} {n}" for c, n in counts.items()))
+
+        payload = {"talk": tid, "total": doc.get("total") or segs[-1]["end"],
+                   "chapters": chs,
+                   "imported_from": {"vault_key": key, "title": v.get("title"),
+                                     "endpoint": "/api/chapters"}}
+        out = T.TALK_CHAPTERS_DIR / f"{tid}.json"
         if args.write:
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(json.dumps(payload, indent=2))
         wrote += 1
-        verb = "wrote" if args.write else "would write"
-        print(f"  · {verb} {len(doc['chapters'])} chapters -> {session}/analysis/chapters.json")
+        print(f"    {'wrote' if args.write else 'would write'} -> "
+              f"talks/chapters/{tid}.json")
 
-    print(f"\n{'✓' if args.write else '·'} {wrote} session(s) "
-          f"{'updated' if args.write else 'ready (dry run)'}"
-          + (f", {skipped} skipped" if skipped else ""))
+    missing = [t["id"] for t in reg["talks"] if t["id"] not in seen]
+    if missing:
+        problems.append("no vault recording for talk(s): " + ", ".join(missing))
+
+    mark = "\u2713" if args.write else "\u00b7"
+    state = "imported" if args.write else "ready (dry run)"
+    print(f"\n{mark} {wrote} talk map(s) {state}")
     if problems:
-        print("\nUnresolved:")
-        for p in problems:
-            print(f"  - {p}")
+        print("\nNotes:")
+        for p_ in problems:
+            print(f"  - {p_}")
     if not args.write and wrote:
-        print("\nRe-run with --write to apply, then:  bash scripts/widgets_all.sh")
-    if problems:
-        sys.exit(2)
+        print("\nRe-run with --write to apply, then: "
+              "bash scripts/widgets_all.sh --offline")
 
 
 if __name__ == "__main__":

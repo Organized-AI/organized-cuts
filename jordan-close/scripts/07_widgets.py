@@ -264,49 +264,16 @@ class TL:
 
 # --- Widget builders --------------------------------------------------------
 def w_chapter_map(ctx, chapters):
-    if not chapters:
-        return []
-    segs = []
-    for i, ch in enumerate(chapters):
-        title = T.fix_text(ch.get("title") or f"Chapter {i + 1}")
-        summary = T.fix_text(ch.get("summary") or "")
-        cat = T.categorize(title, summary)
-        segs.append({"i": i, "start": ch["start"], "end": ch["end"],
-                     "t_label": T.fmt_t(ch["start"]), "title": title,
-                     "summary": summary, "category": cat["id"], "color": cat["color"]})
-    counts = {}
-    for s in segs:
-        counts[s["category"]] = counts.get(s["category"], 0) + 1
-    return [T.widget(
-        "chapter_map", talk=ctx["talk"], session=ctx["session"],
+    return T.build_chapter_map(
+        chapters, talk=ctx["talk"], session=ctx["session"],
         wid=f"{ctx['prefix']}_map", title=f"{ctx['speaker']} — Talk Map",
-        start=segs[0]["start"], end=segs[-1]["end"], category="concept",
-        source="twelvelabs:pegasus.chapters",
-        body={"views": ["spine", "orbit"], "total": ctx["duration"],
-              "segments": segs,
-              "legend": [{"id": c["id"], "label": c["label"], "color": c["color"],
-                          "count": counts.get(c["id"], 0)}
-                         for c in T.CATEGORIES if counts.get(c["id"])]},
-        actions=[{"kind": "seek", "t": segs[0]["start"]}])]
+        total=ctx["duration"], source=ctx["chapter_source"])
 
 
 def w_qa_index(ctx, chapters):
-    items = []
-    for ch in chapters or []:
-        title = T.fix_text(ch.get("title") or "")
-        summary = T.fix_text(ch.get("summary") or "")
-        if T.categorize(title, summary)["id"] != "qa":
-            continue
-        items.append({"start": ch["start"], "end": ch["end"],
-                      "t_label": T.fmt_t(ch["start"]), "title": title, "summary": summary})
-    if not items:
-        return []
-    return [T.widget(
-        "qa_index", talk=ctx["talk"], session=ctx["session"],
-        wid=f"{ctx['prefix']}_qa", title="Questions from the room",
-        start=items[0]["start"], end=items[-1]["end"], category="qa",
-        source="twelvelabs:pegasus.chapters",
-        body={"items": items, "count": len(items)})]
+    return T.build_qa_index(
+        chapters, talk=ctx["talk"], session=ctx["session"],
+        wid=f"{ctx['prefix']}_qa", source=ctx["chapter_source"])
 
 
 def w_moments(ctx, clips, manifest):
@@ -491,7 +458,9 @@ def main():
     duration = round(float(duration or 0.0), 2)
 
     ctx = {"talk": talk["id"], "session": session, "speaker": talk["speaker"],
-           "prefix": f"t{talk['id']}_{session}", "duration": duration}
+           "prefix": f"t{talk['id']}_{session}", "duration": duration,
+           "chapter_source": ("vault:/api/chapters" if ch_doc.get("imported_from")
+                              else "twelvelabs:pegasus.chapters")}
 
     widgets = []
     widgets += w_chapter_map(ctx, chapters)

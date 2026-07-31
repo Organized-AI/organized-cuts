@@ -26,6 +26,10 @@ REGISTRY_PATH = pathlib.Path(
 BUILD_DIR = pathlib.Path(
     os.environ.get("OC_TALKMAP_BUILD", str(REPO_ROOT / "talkmap" / "build"))
 )
+# The vault serves one consolidated recording per talk, so its chapters describe
+# the whole talk rather than any single session dir. They land here, keyed by
+# talk id, and 08 prefers them over anything stitched from session parts.
+TALK_CHAPTERS_DIR = REPO_ROOT / "talks" / "chapters"
 
 WIDGET_SCHEMA = "organized-cuts/talk-widgets@1"
 TALKMAP_SCHEMA = "organized-cuts/talk-map@1"
@@ -218,6 +222,58 @@ def topic_key(s: str) -> str:
     s = re.sub(r"[^a-z0-9+#. ]+", " ", s)
     words = [w for w in s.split() if w and w not in _STOP]
     return " ".join(words).strip()
+
+
+def chapter_segments(chapters: list) -> list:
+    """Normalize raw chapters into map segments (text fixed, categorized)."""
+    segs = []
+    for i, ch in enumerate(chapters or []):
+        title = fix_text(ch.get("title") or f"Chapter {i + 1}")
+        summary = fix_text(ch.get("summary") or "")
+        cat = categorize(title, summary)
+        segs.append({"i": i, "start": round(float(ch["start"]), 2),
+                     "end": round(float(ch["end"]), 2), "t_label": fmt_t(ch["start"]),
+                     "title": title, "summary": summary,
+                     "category": cat["id"], "color": cat["color"]})
+    segs.sort(key=lambda s: s["start"])
+    return segs
+
+
+def build_chapter_map(chapters, *, talk, session, wid, title, total, source):
+    """The map spine itself — SPINE/ORBIT segments plus the category legend."""
+    segs = chapter_segments(chapters)
+    if not segs:
+        return []
+    counts = {}
+    for s in segs:
+        counts[s["category"]] = counts.get(s["category"], 0) + 1
+    return [widget(
+        "chapter_map", talk=talk, session=session, wid=wid, title=title,
+        start=segs[0]["start"], end=segs[-1]["end"], category="concept",
+        source=source,
+        body={"views": ["spine", "orbit"], "total": total, "segments": segs,
+              "legend": [{"id": c["id"], "label": c["label"], "color": c["color"],
+                          "count": counts.get(c["id"], 0)}
+                         for c in CATEGORIES if counts.get(c["id"])]},
+        actions=[{"kind": "seek", "t": segs[0]["start"]}])]
+
+
+def build_qa_index(chapters, *, talk, session, wid, source):
+    items = [{"start": s["start"], "end": s["end"], "t_label": s["t_label"],
+              "title": s["title"], "summary": s["summary"]}
+             for s in chapter_segments(chapters) if s["category"] == "qa"]
+    if not items:
+        return []
+    return [widget(
+        "qa_index", talk=talk, session=session, wid=wid,
+        title="Questions from the room", start=items[0]["start"],
+        end=items[-1]["end"], category="qa", source=source,
+        body={"items": items, "count": len(items)})]
+
+
+def load_talk_chapters(talk_id: str) -> dict | None:
+    """The vault's chapters for a whole talk, if they have been imported."""
+    return read_json(TALK_CHAPTERS_DIR / f"{talk_id}.json")
 
 
 def read_json(path: pathlib.Path, default=None):
