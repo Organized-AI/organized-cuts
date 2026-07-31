@@ -74,6 +74,10 @@ bash scripts/run_all.sh
 | 7 | `07_widgets.py` | Talk Map widgets from this session's TwelveLabs analysis (chapters, highlights, gist, search) → `analysis/widgets.json`. Caches API responses; `--offline` / `--refresh` |
 | 8 | `08_talkmap.py` | Merge every session in `talks/registry.json` into `talkmap/build/` — one bundle, a vault-compatible payload per talk, and an HTML preview |
 
+`import_talkmap.py` (no number — run it before 07) pulls the vault's own
+recordings list and Talk Map chapters from an export, reconciles them against
+`talks/registry.json`, and writes `analysis/chapters.json` per session.
+
 Steps 1–7 are per session; step 8 runs across all of them. `bash scripts/widgets_all.sh`
 does 7 for every registered session and then 8. See
 [`docs/TALK-MAP-WIDGETS.md`](../docs/TALK-MAP-WIDGETS.md) for the widget schema

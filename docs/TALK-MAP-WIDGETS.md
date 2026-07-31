@@ -15,6 +15,45 @@ TwelveLabs analysis into widgets; stage 08 merges them per talk and emits a
 payload that is a **superset of what `/api/chapters` already returns**, so the
 existing SPINE/ORBIT code keeps working untouched and `widgets` rides alongside.
 
+## Importing the vault's map
+
+The vault is the authority on both halves of this: which recordings belong to
+which talk, and what the Talk Map's chapters actually are. Both endpoints are
+behind the member login (`401` without a session cookie), so `import_talkmap.py`
+takes an export rather than calling them.
+
+From a logged-in tab on the vault, in the console:
+
+```js
+copy(await (async () => {
+  const {videos} = await (await fetch("/api/videos")).json();
+  const chapters = {};
+  for (const v of videos)
+    chapters[v.key] = await (await fetch(
+      "/api/chapters?video=" + encodeURIComponent(v.key))).json();
+  return JSON.stringify({videos, chapters}, null, 2);
+})())
+```
+
+Then:
+
+```bash
+./.venv/bin/python scripts/import_talkmap.py vault-export.json           # report only
+./.venv/bin/python scripts/import_talkmap.py vault-export.json --write   # apply
+```
+
+It reconciles the vault's recordings against the registry — a recording's key
+starts with its talk id (`01 …`), which is how the vault itself selects a talk —
+and writes each session's `analysis/chapters.json` from the vault's chapters. So
+07 builds widgets on the map that is already live rather than asking Pegasus for
+a second, slightly different opinion.
+
+Where a talk's recording count and session count agree they are paired in order.
+Where they disagree the importer refuses that talk, says so, and exits non-zero;
+pair them explicitly with `--map "01 Michael part2.mp4=session-4a-michael"` or fix
+the registry. **This is what settles the open mapping questions** — the registry
+in this repo is a best guess from directory names until an export confirms it.
+
 ## Pipeline
 
 ```
