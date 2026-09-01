@@ -1,0 +1,378 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Long Cut // Organized AI</title>
+<link rel="icon" href="/assets/icon.png">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!--
+  PROOF OF CONCEPT — one continuous longform cut of the Vol 2 workshop.
+
+  The seven recordings are treated as one ~3h51m timeline: each talk gets a
+  global offset, so seeking anywhere resolves to (recording, local time) and
+  the player swaps source underneath. Who is speaking is context, not
+  navigation. Navigation is by SUBJECT: chapters are multi-coded against a
+  topic vocabulary, and picking a topic plays every segment on that subject
+  back to back, across speakers, as one thread.
+
+  Data: fetched from /api/videos + /api/chapters at load (same-origin on the
+  vault, where the member cookie exists). A preview build injects the same
+  shape into EMBEDDED so the interaction can be explored without the session —
+  in that mode the map is live but the video is not.
+-->
+<style>
+:root{--bg:#0c0b09;--bg2:#100f0c;--surface:#1a1814;--line:#2a2520;--muted:#605848;
+--t2:#a09888;--t1:#cfc7b6;--hi:#f0ece4;--accent:#f5d623;
+--mono:"JetBrains Mono",ui-monospace,monospace;--sans:"Inter",system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--t1);font-family:var(--sans);font-size:14px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.topbar{border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;
+background:rgba(12,11,9,.94);backdrop-filter:blur(8px)}
+.topnav{display:flex;align-items:center;padding:15px 0;gap:18px}
+.brand{font-family:var(--mono);font-weight:800;font-size:15px;color:var(--hi);text-decoration:none}
+.brand .y{color:var(--accent)}.brand .sec{color:var(--muted);font-weight:600}
+.who{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.08em}
+.main{padding:26px 0 70px}
+.seclabel{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.14em;
+text-transform:uppercase;color:var(--accent);margin-bottom:9px}
+h1{font-size:clamp(24px,3.4vw,34px);color:var(--hi);letter-spacing:-.5px;margin-bottom:8px;text-wrap:balance}
+.lede{color:var(--t2);max-width:64ch;margin-bottom:22px}
+.player{background:#000;border:1px solid var(--line);border-radius:13px;overflow:hidden;position:relative}
+.player video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.noplay{aspect-ratio:16/9;display:grid;place-items:center;text-align:center;padding:26px;
+background:var(--bg2)}
+.noplay div{max-width:46ch}
+.noplay b{display:block;color:var(--hi);font-size:16px;margin-bottom:7px}
+.noplay span{color:var(--muted);font-size:13px}
+.noplay a{color:var(--accent)}
+/* context strip: who/what is on screen right now — deliberately quiet */
+.ctx{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;margin:12px 0 4px}
+.ctx .now{font-family:var(--mono);font-size:12px;letter-spacing:.07em;color:var(--accent);text-transform:uppercase}
+.ctx .sub{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.ctx .thread{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--t2)}
+.ctx .thread b{color:var(--accent)}
+.ctx .thread button{background:none;border:1px solid var(--line);color:var(--muted);
+font:inherit;border-radius:5px;padding:2px 8px;margin-left:8px;cursor:pointer}
+.ctx .thread button:hover{border-color:var(--muted);color:var(--t1)}
+/* the continuous rail: one 3h51m timeline, talks are just boundaries on it */
+.railwrap{margin:14px 0 6px}
+.rail{position:relative;height:66px;background:var(--bg2);border:1px solid var(--line);
+border-radius:10px;overflow:hidden;cursor:pointer}
+.seg{position:absolute;top:0;bottom:0;background:color-mix(in srgb,var(--c) 20%,transparent);
+transition:background .15s,opacity .2s}
+.seg::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--c)}
+.seg:hover{background:color-mix(in srgb,var(--c) 52%,transparent)}
+.rail.threaded .seg:not(.on){opacity:.12}
+.bound{position:absolute;top:0;bottom:0;width:1px;background:var(--line);pointer-events:none}
+.bound b{position:absolute;top:5px;left:4px;font-family:var(--mono);font-size:9px;
+color:var(--muted);letter-spacing:.1em;font-weight:500;white-space:nowrap}
+.head{position:absolute;top:0;bottom:0;width:2px;background:var(--accent);pointer-events:none;
+box-shadow:0 0 8px var(--accent)}
+.rul{display:flex;justify-content:space-between;font-family:var(--mono);font-size:9.5px;
+color:var(--muted);letter-spacing:.08em;margin:5px 2px 0}
+/* topic widgets — the coded subjects, aggregated across every speaker */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:11px}
+.tw{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--c);
+border-radius:10px;padding:14px 15px;cursor:pointer;text-align:left;color:inherit;font:inherit;
+transition:border-color .15s,transform .12s,background .15s}
+.tw:hover{border-color:var(--c);transform:translateY(-2px)}
+.tw[aria-pressed="true"]{background:var(--bg2);border-color:var(--c);box-shadow:inset 0 0 0 1px var(--c)}
+.tw h3{font-size:14.5px;color:var(--hi);font-weight:600;margin-bottom:7px}
+.tw .fig{display:flex;gap:14px;font-family:var(--mono);font-size:11px;color:var(--t2);
+font-variant-numeric:tabular-nums}
+.tw .fig i{font-style:normal;color:var(--c);font-weight:700}
+.tw .spk{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:8px;
+letter-spacing:.05em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tw .bar{display:flex;height:4px;gap:1px;margin-top:10px;border-radius:2px;overflow:hidden;background:var(--bg)}
+.tw .bar i{display:block;background:var(--c);opacity:.75}
+.tw:focus-visible{outline:1.5px dashed var(--accent);outline-offset:2px}
+/* thread list */
+.thread-list{margin-top:20px;border:1px solid var(--line);border-radius:11px;overflow:hidden;display:none}
+.thread-list.on{display:block}
+.tl-h{display:flex;align-items:baseline;gap:12px;padding:13px 16px;background:var(--surface);
+border-bottom:1px solid var(--line);flex-wrap:wrap}
+.tl-h b{color:var(--hi);font-size:14.5px}
+.tl-h span{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.tl-r{display:grid;grid-template-columns:62px 96px 1fr;gap:12px;align-items:baseline;
+padding:9px 16px;border-top:1px solid rgba(42,37,32,.6);cursor:pointer;
+background:none;border-left:0;border-right:0;border-bottom:0;width:100%;text-align:left;
+color:inherit;font:inherit}
+.tl-r:hover{background:var(--bg2)}
+.tl-r.cur{background:var(--bg2);box-shadow:inset 3px 0 0 var(--accent)}
+.tl-r .g{font-family:var(--mono);font-size:11px;color:var(--accent);font-variant-numeric:tabular-nums}
+.tl-r .w{font-family:var(--mono);font-size:10.5px;color:var(--muted);white-space:nowrap;
+overflow:hidden;text-overflow:ellipsis}
+.tl-r .t{color:var(--hi);font-size:13px}
+.tl-r .t em{font-style:normal;color:var(--muted);display:block;font-size:11.5px;margin-top:2px}
+.msg{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px 28px;
+color:var(--t2);max-width:62ch}
+.msg h3{color:var(--hi);font-size:17px;margin-bottom:8px}.msg a{color:var(--accent)}
+.stats{display:flex;flex-wrap:wrap;gap:24px;margin:0 0 22px}
+.stats div{display:flex;flex-direction:column;gap:2px}
+.stats .n{font-family:var(--mono);font-size:20px;font-weight:700;color:var(--accent);line-height:1}
+.stats .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (max-width:640px){.tl-r{grid-template-columns:56px 1fr}.tl-r .w{display:none}}
+</style></head><body>
+
+<div class="topbar"><div class="wrap topnav">
+  <a class="brand" href="/">ORGANIZED <span class="y">AI</span> <span class="sec">// THE LONG CUT</span></a>
+  <div class="who" id="who"></div>
+</div></div>
+
+<div class="wrap main">
+  <div id="gate" style="display:none"></div>
+  <div id="app" style="display:none">
+    <div class="seclabel">Vol 2 · Agentic Engineering Workshop · Austin //</div>
+    <h1>Four hours, one cut, indexed by subject.</h1>
+    <p class="lede">Seven talks played as a single continuous session. Pick a
+      subject and it runs every moment on that topic end to end — across
+      speakers, in the order it was said.</p>
+    <div class="stats" id="stats"></div>
+
+    <div class="player" id="playerbox"><video id="player" controls playsinline preload="metadata"></video></div>
+
+    <div class="ctx">
+      <span class="now" id="now">—</span>
+      <span class="sub" id="sub"></span>
+      <span class="thread" id="threadnote"></span>
+    </div>
+
+    <div class="railwrap">
+      <div class="rail" id="rail"><div class="head" id="head" style="left:0"></div></div>
+      <div class="rul" id="rul"></div>
+    </div>
+
+    <div style="margin-top:30px" class="seclabel">Coded subjects //</div>
+    <div class="grid" id="topics"></div>
+    <div class="thread-list" id="threadlist"></div>
+  </div>
+</div>
+
+<script>
+const EMBEDDED = /*__DATA__*/null;   // preview builds inject {talks:[...]} here
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const mmss=s=>Math.floor(s/60)+":"+String(Math.floor(s%60)).padStart(2,"0");
+const hm=s=>{const h=Math.floor(s/3600),m=Math.round(s%3600/60);return h?h+"h "+m+"m":m+"m"};
+
+const tlfix=s=>(s||"").replace(/\bAppify\b/gi,"Apify").replace(/\bCloud Code\b/gi,"Claude Code")
+ .replace(/\bQuinn\b/g,"Qwen").replace(/\bQIN\b/g,"Qwen")
+ .replace(/\bLight Alarm\b/gi,"LiteLLM").replace(/\bLightLM\b/g,"LiteLLM")
+ .replace(/\bLang fuse\b/gi,"Langfuse");
+
+/* Coded subjects. Unlike the map's categories these are NOT exclusive — a
+   chapter about routing to cheaper models codes as both cost and agents, which
+   is the point: the same minute belongs to more than one thread. */
+const TOPICS=[
+ {id:"agents",  label:"Agents & orchestration", color:"#7aa2c9",
+  kw:/\bagents?\b|\bsub-?agents?\b|orchestrat\w*|\bdelegat\w*|\brouting\b|multi-?agent|\bworkers?\b|conductor/i},
+ {id:"cost",    label:"Cost & tokens", color:"#e0985a",
+  kw:/\btokens?\b|\bcosts?\b|pricing|\bspend\w*|\bcredits?\b|\bbudget\w*|\bcach\w*|\bcheaper\b|savings?/i},
+ {id:"local",   label:"Local inference", color:"#90b97e",
+  kw:/\blocal\b|\bmlx\b|\bollama\b|\bvllm\b|llama|quantiz\w*|\bhardware\b|\bgpus?\b|on-?prem|offline|\bmacbooks?\b|unified memory/i},
+ {id:"webdata", label:"Web data & scraping", color:"#c98f6a",
+  kw:/scrap\w*|\blinkedin\b|web data|\bactors?\b|\bapify\b|\bproxy\b|\bprofiles?\b|outreach/i},
+ {id:"memory",  label:"Knowledge & memory", color:"#b48ead",
+  kw:/\bmemory\b|\bknowledge\b|knowledge graph|second brain|\bshapes?\b|\bcontext\b|\bnotes?\b|structured data|\bgraphs?\b/i},
+ {id:"eval",    label:"Evaluation & benchmarks", color:"#59a5a0",
+  kw:/benchmark\w*|\beval\w*|\btests?\b|testing|verifier|validat\w*|\breward\b|pass rate|non-?determin\w*|\bjudge\b/i},
+ {id:"loops",   label:"Loops & iteration", color:"#f5d623",
+  kw:/\bloops?\b|iterat\w*|recursi\w*|feedback|retrospectiv\w*|self-?learning|improvement|\brounds?\b/i},
+ {id:"tooling", label:"Tooling, MCP & skills", color:"#9a927f",
+  kw:/\bmcp\b|\btool(?:s|box|ing)?\b|\bskills?\b|\bsdk\b|\bapis?\b|integrat\w*|\bharness\w*|\bplatform\w*/i},
+ {id:"observ",  label:"Observability", color:"#8f86c9",
+  kw:/observabilit\w*|\btraces?\b|tracing|monitor\w*|dashboard\w*|visuali[sz]\w*|langfuse|leaderboard|\btelemetry\b/i},
+ {id:"workflow",label:"Workflow design", color:"#6a9fd8",
+  kw:/\bworkflows?\b|\bpipelines?\b|determinis\w*|\barchitectures?\b|\bpatterns?\b|\bstructure[sd]?\b|abstract\w*/i},
+];
+
+let TALKS=[], SEGS=[], TOTAL=0, thread=null, ti=0, live=true;
+
+function codes(text){ return TOPICS.filter(t=>t.kw.test(text)).map(t=>t.id); }
+
+function buildTimeline(talks){
+  TALKS=talks.slice().sort((a,b)=>String(a.id).localeCompare(String(b.id)));
+  let off=0; SEGS=[];
+  for(const t of TALKS){
+    t.offset=off;
+    for(const c of t.chapters){
+      const title=tlfix(c.title), summary=tlfix(c.summary);
+      SEGS.push({g0:off+c.start, g1:off+c.end, start:c.start, end:c.end,
+                 title, summary, cat:c.category, color:c.color,
+                 talk:t.id, speaker:t.speaker, key:t.key,
+                 codes:codes(title+" "+summary)});
+    }
+    off+=t.total;
+  }
+  TOTAL=off;
+  SEGS.sort((a,b)=>a.g0-b.g0);
+}
+
+function render(){
+  const spk=new Set(TALKS.map(t=>t.speaker));
+  $("stats").innerHTML=[[hm(TOTAL),"Continuous"],[TALKS.length,"Talks"],
+    [SEGS.length,"Chapters"],[spk.size,"Speakers"],[TOPICS.length,"Coded subjects"]]
+    .map(([n,k])=>`<div><span class="n">${esc(n)}</span><span class="k">${esc(k)}</span></div>`).join("");
+
+  const rail=$("rail");
+  rail.querySelectorAll(".seg,.bound").forEach(n=>n.remove());
+  SEGS.forEach((s,i)=>{
+    const d=document.createElement("div");
+    d.className="seg"; d.dataset.i=i;
+    d.style.setProperty("--c",s.color||"#7aa2c9");
+    d.style.left=(s.g0/TOTAL*100)+"%";
+    d.style.width=(Math.max(s.g1-s.g0,TOTAL*0.0012)/TOTAL*100)+"%";
+    d.title=hm(s.g0)+" · "+s.speaker+" — "+s.title;
+    rail.appendChild(d);
+  });
+  TALKS.forEach(t=>{
+    const b=document.createElement("div");
+    b.className="bound"; b.style.left=(t.offset/TOTAL*100)+"%";
+    b.innerHTML="<b>"+esc(t.speaker.toUpperCase())+"</b>";
+    rail.appendChild(b);
+  });
+  let ticks=""; for(let m=0;m<=Math.floor(TOTAL/60);m+=30) ticks+=`<span>${Math.floor(m/60)}h${String(m%60).padStart(2,"0")}</span>`;
+  $("rul").innerHTML=ticks;
+
+  $("topics").innerHTML=TOPICS.map(t=>{
+    const hits=SEGS.filter(s=>s.codes.includes(t.id));
+    if(!hits.length) return "";
+    const secs=hits.reduce((n,s)=>n+(s.g1-s.g0),0);
+    const who=[...new Set(hits.map(s=>s.speaker))];
+    const spark=hits.map(s=>`<i style="width:${(100*(s.g1-s.g0)/secs).toFixed(2)}%"></i>`).join("");
+    return `<button class="tw" data-t="${t.id}" aria-pressed="false" style="--c:${t.color}">
+      <h3>${esc(t.label)}</h3>
+      <div class="fig"><span><i>${hits.length}</i> moments</span><span><i>${hm(secs)}</i></span></div>
+      <div class="spk">${esc(who.join(" · "))}</div>
+      <div class="bar">${spark}</div></button>`;
+  }).join("");
+}
+
+/* --- playback over the virtual continuous timeline --- */
+function locate(g){
+  let t=TALKS[0];
+  for(const x of TALKS) if(g>=x.offset) t=x;
+  return {talk:t, local:Math.max(0,g-t.offset)};
+}
+function goTo(g){
+  const {talk,local}=locate(g);
+  const p=$("player");
+  if(!live){ paint(g); return; }
+  const src="/media/"+encodeURIComponent(talk.key);
+  if(!p.src.endsWith(encodeURIComponent(talk.key))){
+    p.src=src;
+    p.addEventListener("loadedmetadata",()=>{p.currentTime=local;p.play().catch(()=>{})},{once:true});
+  } else { p.currentTime=local; p.play().catch(()=>{}); }
+  paint(g);
+}
+function globalNow(){
+  const p=$("player");
+  const t=TALKS.find(x=>p.src.endsWith(encodeURIComponent(x.key)));
+  return t? t.offset+(p.currentTime||0) : 0;
+}
+function paint(g){
+  $("head").style.left=Math.min(100,g/TOTAL*100)+"%";
+  const s=SEGS.find(x=>g>=x.g0&&g<x.g1)||SEGS[0];
+  if(!s) return;
+  $("now").textContent=s.title;
+  $("sub").textContent=s.speaker+" · "+hm(g)+" into the session · "+mmss(s.start)+" into the talk";
+  document.querySelectorAll(".tl-r").forEach(r=>r.classList.toggle("cur",+r.dataset.g===Math.round(s.g0)));
+}
+
+function openThread(id){
+  const topic=TOPICS.find(t=>t.id===id);
+  const hits=SEGS.filter(s=>s.codes.includes(id));
+  thread=hits; ti=0;
+  document.querySelectorAll(".tw").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.t===id)));
+  $("rail").classList.add("threaded");
+  document.querySelectorAll(".seg").forEach(d=>
+    d.classList.toggle("on",hits.includes(SEGS[+d.dataset.i])));
+  const secs=hits.reduce((n,s)=>n+(s.g1-s.g0),0);
+  $("threadlist").className="thread-list on";
+  $("threadlist").innerHTML=
+    `<div class="tl-h"><b>${esc(topic.label)}</b>
+       <span>${hits.length} moments · ${hm(secs)} · ${[...new Set(hits.map(s=>s.speaker))].length} speakers</span></div>`+
+    hits.map(s=>`<button class="tl-r" data-g="${Math.round(s.g0)}">
+        <span class="g">${hm(s.g0)}</span><span class="w">${esc(s.speaker)}</span>
+        <span class="t">${esc(s.title)}<em>${esc(s.summary||"")}</em></span></button>`).join("");
+  $("threadnote").innerHTML=`Thread: <b>${esc(topic.label)}</b> — plays ${hits.length} moments back to back
+    <button id="clear">clear</button>`;
+  if(hits.length) goTo(hits[0].g0);
+}
+function clearThread(){
+  thread=null;
+  document.querySelectorAll(".tw").forEach(b=>b.setAttribute("aria-pressed","false"));
+  $("rail").classList.remove("threaded");
+  $("threadlist").className="thread-list";
+  $("threadnote").textContent="";
+}
+
+document.addEventListener("click",e=>{
+  const tw=e.target.closest(".tw"), row=e.target.closest(".tl-r"), seg=e.target.closest(".seg");
+  if(e.target.id==="clear") return clearThread();
+  if(tw) return tw.getAttribute("aria-pressed")==="true"?clearThread():openThread(tw.dataset.t);
+  if(row){ const g=+row.dataset.g; if(thread) ti=Math.max(0,thread.findIndex(s=>Math.round(s.g0)===g)); return goTo(g); }
+  if(seg){ const s=SEGS[+seg.dataset.i]; if(thread) ti=Math.max(0,thread.findIndex(x=>x.g0===s.g0)); return goTo(s.g0); }
+});
+$("rail").addEventListener("click",e=>{
+  if(e.target.closest(".seg")) return;
+  const r=$("rail").getBoundingClientRect();
+  goTo((e.clientX-r.left)/r.width*TOTAL);
+});
+
+const p=$("player");
+p.addEventListener("timeupdate",()=>{
+  const g=globalNow(); paint(g);
+  if(thread&&thread[ti]&&g>=thread[ti].g1-0.25){         // hop to the next moment on this subject
+    ti++; if(ti<thread.length) goTo(thread[ti].g0); else { p.pause(); clearThread(); }
+  }
+});
+p.addEventListener("ended",()=>{                          // roll into the next talk: one continuous cut
+  const {talk}=locate(globalNow());
+  const nx=TALKS[TALKS.indexOf(talk)+1];
+  if(nx) goTo(nx.offset);
+});
+
+function gate(t,b){ $("gate").style.display="block"; $("gate").innerHTML=`<div class="msg"><h3>${t}</h3><p>${b}</p></div>`; }
+
+async function boot(){
+  let talks=null;
+  try{
+    const r=await fetch("/api/videos",{credentials:"same-origin"});
+    if(r.ok){
+      const {videos}=await r.json();
+      talks=[];
+      for(const v of videos){
+        const cr=await fetch("/api/chapters?video="+encodeURIComponent(v.key),{credentials:"same-origin"});
+        if(!cr.ok) continue;
+        const d=await cr.json();
+        const id=(v.key.match(/^\s*(\d{2})/)||[,"?"])[1];
+        const speaker=(v.title||v.key).split(/\s+[—-]\s+/)[0].replace(/^\d+\s*[—-]\s*/,"").trim();
+        talks.push({id,key:v.key,speaker,title:v.title||v.key,total:d.total||0,
+          chapters:(d.chapters||[]).map(c=>({...c,category:c.category||"concept",color:c.color||"#7aa2c9"}))});
+      }
+      fetch("/api/me",{credentials:"same-origin"}).then(x=>x.json())
+        .then(me=>{if(me&&me.email)$("who").textContent=me.email}).catch(()=>{});
+    }
+  }catch(e){/* fall through to EMBEDDED */}
+
+  if(!talks||!talks.length){
+    if(!EMBEDDED) return gate("Members only",
+      "The recordings and the talk map sit behind the vault session. Sign in at "+
+      "<a href='/vault'>recordings.organizedai.vip/vault</a> and reload.");
+    talks=EMBEDDED.talks; live=false;
+    $("playerbox").innerHTML=`<div class="noplay"><div><b>Preview — map only</b>
+      <span>The subject index below is live and fully navigable. Playback needs the
+      vault session, so this build shows where each moment sits rather than playing it.
+      <a href="https://recordings.organizedai.vip/vault">Open the vault →</a></span></div></div>`;
+    $("who").textContent="PREVIEW";
+  }
+  buildTimeline(talks);
+  $("app").style.display="block";
+  render();
+  paint(0);
+}
+boot();
+</script>
+</body></html>
