@@ -348,7 +348,8 @@ async function boot(){
         if(!cr.ok) continue;
         const d=await cr.json();
         const id=(v.key.match(/^\s*(\d{2})/)||[,"?"])[1];
-        const speaker=(v.title||v.key).split(/\s+[—-]\s+/)[0].replace(/^\d+\s*[—-]\s*/,"").trim();
+        const speaker=(v.title||v.key).replace(/\.mp4$/,"")
+          .replace(/^\s*\d+\s*[—-]\s*/,"").split(/\s+[—-]\s+/)[0].trim()||"Speaker";
         talks.push({id,key:v.key,speaker,title:v.title||v.key,total:d.total||0,
           chapters:(d.chapters||[]).map(c=>({...c,category:c.category||"concept",color:c.color||"#7aa2c9"}))});
       }

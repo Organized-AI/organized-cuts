@@ -158,6 +158,77 @@ outline:1.5px dashed var(--accent-dim);outline-offset:2px}
 .obS{font-family:var(--mono);font-size:10.5px;fill:var(--muted);letter-spacing:.1em}
 .obC{font-family:var(--mono);font-size:11px;font-weight:600}
 @media (prefers-reduced-motion:reduce){.tlpill,.rseg,.tlchip,.arc{transition:none!important}}
+
+/* ---- top-level view switch (SESSIONS | LONG CUT) ---- */
+.vhead{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.vhead h2{margin:0;flex:1 1 auto}
+.viewswitch{display:flex;border:1px solid var(--line);border-radius:7px;overflow:hidden;flex:none}
+.viewswitch button{font-family:var(--mono);font-size:10px;letter-spacing:.12em;padding:8px 14px;
+background:var(--surface);color:var(--muted);border:none;cursor:pointer;transition:background .15s,color .15s}
+.viewswitch button:hover{color:var(--text-1)}
+.viewswitch button.on{background:var(--accent);color:var(--bg);font-weight:700}
+.viewswitch button:focus-visible{outline:1.5px dashed var(--accent-dim);outline-offset:-3px}
+/* ---- long cut ---- */
+.lcwrap{display:none}
+.lcstats{display:flex;flex-wrap:wrap;gap:22px;margin:0 0 18px}
+.lcstats div{display:flex;flex-direction:column;gap:2px}
+.lcstats .n{font-family:var(--mono);font-size:19px;font-weight:700;color:var(--accent);line-height:1;
+font-variant-numeric:tabular-nums}
+.lcstats .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.lcctx{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;margin:12px 0 6px}
+.lcctx .now{font-family:var(--mono);font-size:12px;letter-spacing:.07em;color:var(--accent);text-transform:uppercase}
+.lcctx .sub{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.lcctx .th{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--text-2)}
+.lcctx .th b{color:var(--accent)}
+.lcctx .th button{background:none;border:1px solid var(--line);color:var(--muted);font:inherit;
+border-radius:5px;padding:2px 8px;margin-left:8px;cursor:pointer;width:auto}
+.lcctx .th button:hover{border-color:var(--muted);color:var(--text-1)}
+.lcrail{position:relative;height:66px;background:var(--bg-2);border:1px solid var(--line);
+border-radius:10px;overflow:hidden;cursor:pointer}
+.lcseg{position:absolute;top:0;bottom:0;background:color-mix(in srgb,var(--c) 20%,transparent);
+transition:background .15s,opacity .2s}
+.lcseg::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--c)}
+.lcseg:hover{background:color-mix(in srgb,var(--c) 52%,transparent)}
+.lcrail.threaded .lcseg:not(.on){opacity:.12}
+.lcbound{position:absolute;top:0;bottom:0;width:1px;background:var(--line);pointer-events:none}
+.lcbound b{position:absolute;top:5px;left:4px;font-family:var(--mono);font-size:9px;color:var(--muted);
+letter-spacing:.1em;font-weight:500;white-space:nowrap}
+.lchead{position:absolute;top:0;bottom:0;width:2px;background:var(--accent);pointer-events:none}
+.lcrul{display:flex;justify-content:space-between;font-family:var(--mono);font-size:9.5px;
+color:var(--muted);letter-spacing:.08em;margin:5px 2px 24px}
+.lcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));gap:11px}
+.lctopic{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--c);
+border-radius:10px;padding:14px 15px;cursor:pointer;text-align:left;color:inherit;font:inherit;width:auto;
+margin:0;text-transform:none;letter-spacing:normal;transition:border-color .15s,transform .12s,background .15s}
+.lctopic:hover{border-color:var(--c);transform:translateY(-2px)}
+.lctopic[aria-pressed="true"]{background:var(--bg-2);box-shadow:inset 0 0 0 1px var(--c)}
+.lctopic h3{font-size:14.5px;color:var(--text-hi);font-weight:600;margin-bottom:7px}
+.lctopic .fig{display:flex;gap:14px;font-family:var(--mono);font-size:11px;color:var(--text-2);
+font-variant-numeric:tabular-nums}
+.lctopic .fig i{font-style:normal;color:var(--c);font-weight:700}
+.lctopic .spk{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:8px;
+white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lctopic .bar{display:flex;height:4px;gap:1px;margin-top:10px;border-radius:2px;overflow:hidden;background:var(--bg)}
+.lctopic .bar i{display:block;background:var(--c);opacity:.75}
+.lclist{margin-top:20px;border:1px solid var(--line);border-radius:11px;overflow:hidden;display:none}
+.lclist.on{display:block}
+.lclist .h{display:flex;align-items:baseline;gap:12px;padding:13px 16px;background:var(--surface);
+border-bottom:1px solid var(--line);flex-wrap:wrap}
+.lclist .h b{color:var(--text-hi);font-size:14.5px}
+.lclist .h span{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.lcrow{display:grid;grid-template-columns:62px 96px 1fr;gap:12px;align-items:baseline;padding:9px 16px;
+border-top:1px solid rgba(42,37,32,.6);cursor:pointer;background:none;border-left:0;border-right:0;
+border-bottom:0;width:100%;text-align:left;color:inherit;font:inherit;margin:0;text-transform:none;
+letter-spacing:normal}
+.lcrow:hover{background:var(--bg-2)}
+.lcrow.cur{background:var(--bg-2);box-shadow:inset 3px 0 0 var(--accent)}
+.lcrow .g{font-family:var(--mono);font-size:11px;color:var(--accent);font-variant-numeric:tabular-nums}
+.lcrow .w{font-family:var(--mono);font-size:10.5px;color:var(--muted);white-space:nowrap;overflow:hidden;
+text-overflow:ellipsis}
+.lcrow .t{color:var(--text-hi);font-size:13px}
+.lcrow .t em{font-style:normal;color:var(--muted);display:block;font-size:11.5px;margin-top:2px}
+@media (max-width:640px){.lcrow{grid-template-columns:56px 1fr}.lcrow .w{display:none}}
+
 .tlwrap{display:none}
 </style>
 </head>
@@ -191,7 +262,13 @@ outline:1.5px dashed var(--accent-dim);outline-offset:2px}
 
 <div class="vault wrap" id="vault">
   <div class="seclabel">Full Session Recordings //</div>
-  <h2>Every talk. Uncut.</h2>
+  <div class="vhead">
+    <h2 id="vtitle">Every talk. Uncut.</h2>
+    <div class="viewswitch" id="viewswitch" aria-label="View">
+      <button type="button" data-view="talks" class="on">SESSIONS</button>
+      <button type="button" data-view="longcut">LONG CUT</button>
+    </div>
+  </div>
   <div class="pkbanner" id="pkbanner">
     <span>Skip the password next time — enable <b>Face ID / passkey</b> sign-in on this device.</span>
     <button id="pkyes">Enable</button><a id="pkno">not now</a>
@@ -216,6 +293,19 @@ outline:1.5px dashed var(--accent-dim);outline-offset:2px}
     <div class="tlorb" id="tlorb" style="display:none" aria-label="Radial talk map"></div>
     <div class="tlfan" id="tlfan"></div>
     <div class="tlcap" id="tlcap">TALK MAP · POWERED BY TWELVELABS</div>
+  </div>
+  <div class="lcwrap" id="lcwrap">
+    <div class="lcstats" id="lcstats"></div>
+    <div class="lcctx">
+      <span class="now" id="lcnow">—</span>
+      <span class="sub" id="lcsub"></span>
+      <span class="th" id="lcthread"></span>
+    </div>
+    <div class="lcrail" id="lcrail" aria-label="Continuous session timeline"><div class="lchead" id="lchead" style="left:0"></div></div>
+    <div class="lcrul" id="lcrul"></div>
+    <div class="seclabel">Coded subjects //</div>
+    <div class="lcgrid" id="lctopics"></div>
+    <div class="lclist" id="lcthreadlist"></div>
   </div>
   <div class="list" id="list"></div>
 
@@ -288,6 +378,7 @@ async function loadVault(){
   const r=await fetch("/api/videos");
   if(!r.ok) return false;
   const {videos}=await r.json();
+  VIDEOS=videos;
   $("gate").style.display="none";$("vault").style.display="block";
   const me=await fetch("/api/me").then(x=>x.json()).catch(()=>({}));
   if(me.email){ $("who").innerHTML=me.email+" · <a id='out'>sign out</a>"; oaIdentify(me.email); }
@@ -496,7 +587,7 @@ function play(v,el){
   $("np").textContent=v.title;
   curTitle=v.title;
   oaTrack("select_video",{video_title:v.title});
-  loadTL(v.key);
+  if(VIEW==="talks") loadTL(v.key);
   window.scrollTo({top:0,behavior:"smooth"});
 }
 /* ---- per-user video engagement: start / 10-25-50-75-90% / complete ---- */
@@ -565,6 +656,228 @@ async function maybeOfferPasskey(){
   $("pkyes").onclick=passkeyRegister;
   $("pkno").onclick=()=>{localStorage.setItem("pk_dismissed","1");$("pkbanner").style.display="none"};
 }
+
+/* ================= LONG CUT =================================================
+   The same seven recordings read as one continuous session. Every chapter gets
+   a global offset, so seeking anywhere resolves to (recording, local time) and
+   the player swaps source underneath — the speaker is context, not navigation.
+   Chapters are multi-coded against a subject vocabulary; picking a subject
+   plays every moment on it back to back, across speakers, in spoken order. */
+let VIDEOS=[], VIEW="talks";
+const LC={talks:[],segs:[],total:0,loaded:false,loading:false,thread:null,ti:0};
+
+const LCTOPICS=[
+ {id:"agents",label:"Agents & orchestration",color:"#7aa2c9",
+  kw:/\bagents?\b|\bsub-?agents?\b|orchestrat\w*|\bdelegat\w*|\brouting\b|multi-?agent|\bworkers?\b|conductor/i},
+ {id:"cost",label:"Cost & tokens",color:"#e0985a",
+  kw:/\btokens?\b|\bcosts?\b|pricing|\bspend\w*|\bcredits?\b|\bbudget\w*|\bcach\w*|\bcheaper\b|savings?/i},
+ {id:"local",label:"Local inference",color:"#90b97e",
+  kw:/\blocal\b|\bmlx\b|\bollama\b|\bvllm\b|llama|quantiz\w*|\bhardware\b|\bgpus?\b|on-?prem|offline|\bmacbooks?\b|unified memory/i},
+ {id:"webdata",label:"Web data & scraping",color:"#c98f6a",
+  kw:/scrap\w*|\blinkedin\b|web data|\bactors?\b|\bapify\b|\bproxy\b|\bprofiles?\b|outreach/i},
+ {id:"memory",label:"Knowledge & memory",color:"#b48ead",
+  kw:/\bmemory\b|\bknowledge\b|second brain|\bshapes?\b|\bcontext\b|\bnotes?\b|structured data|\bgraphs?\b/i},
+ {id:"eval",label:"Evaluation & benchmarks",color:"#59a5a0",
+  kw:/benchmark\w*|\beval\w*|\btests?\b|testing|verifier|validat\w*|\breward\b|pass rate|non-?determin\w*|\bjudge\b/i},
+ {id:"loops",label:"Loops & iteration",color:"#f5d623",
+  kw:/\bloops?\b|iterat\w*|recursi\w*|feedback|retrospectiv\w*|self-?learning|improvement|\brounds?\b/i},
+ {id:"tooling",label:"Tooling, MCP & skills",color:"#9a927f",
+  kw:/\bmcp\b|\btool(?:s|box|ing)?\b|\bskills?\b|\bsdk\b|\bapis?\b|integrat\w*|\bharness\w*|\bplatform\w*/i},
+ {id:"observ",label:"Observability",color:"#8f86c9",
+  kw:/observabilit\w*|\btraces?\b|tracing|monitor\w*|dashboard\w*|visuali[sz]\w*|langfuse|leaderboard|\btelemetry\b/i},
+ {id:"workflow",label:"Workflow design",color:"#6a9fd8",
+  kw:/\bworkflows?\b|\bpipelines?\b|determinis\w*|\barchitectures?\b|\bpatterns?\b|\bstructure[sd]?\b|abstract\w*/i},
+];
+const lcHM=s=>{const h=Math.floor(s/3600),m=Math.round(s%3600/60);return h?h+"h "+m+"m":m+"m"};
+const lcEsc=s=>String(s==null?"":s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+/* keys look like "01 - Michael - Real-Time…"; titles may or may not carry the
+   number, so drop a leading "NN - " BEFORE splitting or the speaker is "01". */
+const lcSpeaker=v=>(v.title||v.key).replace(/\.mp4$/,"")
+  .replace(/^\s*\d+\s*[—-]\s*/,"").split(/\s+[—-]\s+/)[0].trim()||"Speaker";
+
+async function lcLoad(){
+  if(LC.loaded||LC.loading||!VIDEOS.length) return LC.loaded;
+  LC.loading=true;
+  const talks=[];
+  for(const v of VIDEOS){
+    let d=null;
+    try{ const r=await fetch("/api/chapters?video="+encodeURIComponent(v.key)); if(r.ok) d=await r.json(); }catch(e){}
+    if(!d||!d.chapters||!d.chapters.length) continue;
+    talks.push({key:v.key,title:(v.title||v.key).replace(/\.mp4$/,""),speaker:lcSpeaker(v),
+      total:d.total||d.chapters[d.chapters.length-1].end||0,chapters:d.chapters});
+  }
+  let off=0; LC.segs=[];
+  for(const t of talks){
+    t.offset=off;
+    for(const c of t.chapters){
+      const title=tlfix(c.title), summary=tlfix(c.summary), cat=tlCat(title,summary);
+      const text=title+" "+summary;
+      LC.segs.push({g0:off+c.start,g1:off+c.end,start:c.start,title,summary,
+        color:cat.color,talk:t,codes:LCTOPICS.filter(k=>k.kw.test(text)).map(k=>k.id)});
+    }
+    off+=t.total;
+  }
+  LC.talks=talks; LC.total=off; LC.segs.sort((a,b)=>a.g0-b.g0);
+  LC.loaded=talks.length>0; LC.loading=false;
+  return LC.loaded;
+}
+
+function lcRender(){
+  const spk=new Set(LC.talks.map(t=>t.speaker));
+  $("lcstats").innerHTML=[[lcHM(LC.total),"Continuous"],[LC.talks.length,"Talks"],
+    [LC.segs.length,"Chapters"],[spk.size,"Speakers"],[LCTOPICS.length,"Subjects"]]
+    .map(([n,k])=>'<div><span class="n">'+lcEsc(n)+'</span><span class="k">'+lcEsc(k)+'</span></div>').join("");
+
+  const rail=$("lcrail");
+  rail.querySelectorAll(".lcseg,.lcbound").forEach(n=>n.remove());
+  LC.segs.forEach((s,i)=>{
+    const d=document.createElement("div");
+    d.className="lcseg"; d.dataset.i=i;
+    d.style.setProperty("--c",s.color);
+    d.style.left=(s.g0/LC.total*100)+"%";
+    d.style.width=(Math.max(s.g1-s.g0,LC.total*0.0012)/LC.total*100)+"%";
+    d.title=lcHM(s.g0)+" · "+s.talk.speaker+" — "+s.title;
+    rail.appendChild(d);
+  });
+  LC.talks.forEach(t=>{
+    const b=document.createElement("div");
+    b.className="lcbound"; b.style.left=(t.offset/LC.total*100)+"%";
+    b.innerHTML="<b>"+lcEsc(t.speaker.toUpperCase())+"</b>";
+    rail.appendChild(b);
+  });
+  let ticks=""; for(let m=0;m<=Math.floor(LC.total/60);m+=30) ticks+="<span>"+Math.floor(m/60)+"h"+String(m%60).padStart(2,"0")+"</span>";
+  $("lcrul").innerHTML=ticks;
+
+  $("lctopics").innerHTML=LCTOPICS.map(t=>{
+    const hits=LC.segs.filter(s=>s.codes.includes(t.id));
+    if(!hits.length) return "";
+    const secs=hits.reduce((n,s)=>n+(s.g1-s.g0),0);
+    const who=[...new Set(hits.map(s=>s.talk.speaker))];
+    const spark=hits.map(s=>'<i style="width:'+(100*(s.g1-s.g0)/secs).toFixed(2)+'%"></i>').join("");
+    return '<button class="lctopic" data-t="'+t.id+'" aria-pressed="false" style="--c:'+t.color+'">'+
+      "<h3>"+lcEsc(t.label)+"</h3>"+
+      '<div class="fig"><span><i>'+hits.length+"</i> moments</span><span><i>"+lcHM(secs)+"</i></span></div>"+
+      '<div class="spk">'+lcEsc(who.join(" · "))+"</div>"+
+      '<div class="bar">'+spark+"</div></button>";
+  }).join("");
+}
+
+function lcLocate(g){
+  let t=LC.talks[0];
+  for(const x of LC.talks) if(g>=x.offset) t=x;
+  return t?{talk:t,local:Math.max(0,g-t.offset)}:null;
+}
+function lcGlobalNow(){
+  const p=$("player");
+  const t=LC.talks.find(x=>p.src&&p.src.indexOf(encodeURIComponent(x.key))>=0);
+  return t?t.offset+(p.currentTime||0):0;
+}
+function lcGoTo(g){
+  const loc=lcLocate(g); if(!loc) return;
+  const p=$("player");
+  if(!p.src||p.src.indexOf(encodeURIComponent(loc.talk.key))<0){
+    document.querySelectorAll(".item").forEach(x=>
+      x.classList.toggle("active",x.dataset.key===loc.talk.key));
+    curKey=loc.talk.key; curTitle=loc.talk.title;
+    $("np").textContent=loc.talk.title;
+    p.src="/media/"+encodeURIComponent(loc.talk.key);
+    p.addEventListener("loadedmetadata",()=>{p.currentTime=loc.local;p.play().catch(()=>{})},{once:true});
+  }else{ p.currentTime=loc.local; p.play().catch(()=>{}); }
+  lcPaint(g);
+}
+function lcPaint(g){
+  if(!LC.total) return;
+  $("lchead").style.left=Math.min(100,g/LC.total*100)+"%";
+  const s=LC.segs.find(x=>g>=x.g0&&g<x.g1)||LC.segs[0];
+  if(!s) return;
+  $("lcnow").textContent=s.title;
+  $("lcsub").textContent=s.talk.speaker+" · "+lcHM(g)+" into the session · "+fmtT(s.start)+" into the talk";
+  document.querySelectorAll(".lcrow").forEach(r=>r.classList.toggle("cur",+r.dataset.g===Math.round(s.g0)));
+}
+function lcOpenThread(id){
+  const topic=LCTOPICS.find(t=>t.id===id);
+  const hits=LC.segs.filter(s=>s.codes.includes(id));
+  if(!hits.length) return;
+  LC.thread=hits; LC.ti=0;
+  document.querySelectorAll(".lctopic").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.t===id)));
+  $("lcrail").classList.add("threaded");
+  document.querySelectorAll(".lcseg").forEach(d=>d.classList.toggle("on",hits.indexOf(LC.segs[+d.dataset.i])>=0));
+  const secs=hits.reduce((n,s)=>n+(s.g1-s.g0),0);
+  $("lcthreadlist").className="lclist on";
+  $("lcthreadlist").innerHTML='<div class="h"><b>'+lcEsc(topic.label)+"</b><span>"+hits.length+
+    " moments · "+lcHM(secs)+" · "+[...new Set(hits.map(s=>s.talk.speaker))].length+" speakers</span></div>"+
+    hits.map(s=>'<button class="lcrow" data-g="'+Math.round(s.g0)+'"><span class="g">'+lcHM(s.g0)+
+      '</span><span class="w">'+lcEsc(s.talk.speaker)+'</span><span class="t">'+lcEsc(s.title)+
+      "<em>"+lcEsc(s.summary||"")+"</em></span></button>").join("");
+  $("lcthread").innerHTML="Thread: <b>"+lcEsc(topic.label)+"</b> — "+hits.length+
+    " moments back to back <button id=\"lcclear\" type=\"button\">clear</button>";
+  oaTrack("long_cut_thread",{subject:topic.label,moments:hits.length,seconds:Math.round(secs)});
+  lcGoTo(hits[0].g0);
+}
+function lcClearThread(){
+  LC.thread=null;
+  document.querySelectorAll(".lctopic").forEach(b=>b.setAttribute("aria-pressed","false"));
+  $("lcrail").classList.remove("threaded");
+  $("lcthreadlist").className="lclist";
+  $("lcthread").textContent="";
+}
+
+/* the switch itself — position is preserved because both views drive one player */
+async function setView(v){
+  if(VIEW===v) return;
+  VIEW=v;
+  $("viewswitch").querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.view===v));
+  const longcut=v==="longcut";
+  $("vtitle").textContent=longcut?"Four hours, one cut.":"Every talk. Uncut.";
+  $("list").style.display=longcut?"none":"";
+  $("tlwrap").style.display=longcut?"none":(tlCH.length?"block":"none");
+  $("lcwrap").style.display=longcut?"block":"none";
+  oaTrack("view_switch",{view:v,video_title:curTitle});
+  if(longcut){
+    if(!LC.loaded){ $("lcnow").textContent="Loading the session…"; await lcLoad(); }
+    if(!LC.loaded){ $("lcnow").textContent="Chapters unavailable."; return; }
+    lcRender();
+    lcPaint(lcGlobalNow());
+  }else{
+    lcClearThread();
+    if(curKey) loadTL(curKey);
+  }
+}
+$("viewswitch").querySelectorAll("button").forEach(b=>b.onclick=()=>setView(b.dataset.view));
+
+document.addEventListener("click",e=>{
+  if(VIEW!=="longcut") return;
+  if(e.target.id==="lcclear") return lcClearThread();
+  const tw=e.target.closest(".lctopic"), row=e.target.closest(".lcrow"), seg=e.target.closest(".lcseg");
+  if(tw) return tw.getAttribute("aria-pressed")==="true"?lcClearThread():lcOpenThread(tw.dataset.t);
+  if(row){ const g=+row.dataset.g;
+    if(LC.thread) LC.ti=Math.max(0,LC.thread.findIndex(s=>Math.round(s.g0)===g));
+    return lcGoTo(g); }
+  if(seg){ const s=LC.segs[+seg.dataset.i];
+    if(LC.thread) LC.ti=Math.max(0,LC.thread.findIndex(x=>x.g0===s.g0));
+    return lcGoTo(s.g0); }
+});
+$("lcrail").addEventListener("click",e=>{
+  if(VIEW!=="longcut"||e.target.closest(".lcseg")) return;
+  const r=$("lcrail").getBoundingClientRect();
+  lcGoTo((e.clientX-r.left)/r.width*LC.total);
+});
+$("player").addEventListener("timeupdate",()=>{
+  if(VIEW!=="longcut"||!LC.loaded) return;
+  const g=lcGlobalNow(); lcPaint(g);
+  if(LC.thread&&LC.thread[LC.ti]&&g>=LC.thread[LC.ti].g1-0.25){
+    LC.ti++;
+    if(LC.ti<LC.thread.length) lcGoTo(LC.thread[LC.ti].g0);
+    else { $("player").pause(); lcClearThread(); }
+  }
+});
+$("player").addEventListener("ended",()=>{                 /* roll into the next talk */
+  if(VIEW!=="longcut"||!LC.loaded) return;
+  const loc=lcLocate(lcGlobalNow()); if(!loc) return;
+  const nx=LC.talks[LC.talks.indexOf(loc.talk)+1];
+  if(nx) lcGoTo(nx.offset);
+});
+
 loadVault();
 </script>
 </body>
