@@ -35,3 +35,7 @@ animated/hf/index.html
 animated/selection.json
 *.log
 *.bak
+
+# --- Talk Map build output (regenerate with scripts/08_talkmap.py) ---
+talkmap/build/
+talks/chapters/

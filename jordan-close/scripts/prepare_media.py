@@ -13,16 +13,20 @@ from lib import common as C
 
 
 def main():
-    iso1 = C.MASTERS.get("ISO1")
-    if not iso1 or not pathlib.Path(iso1).exists():
-        C.die(f"ISO1 master not found: {iso1}")
+    iso1 = C.master_source("ISO1")
+    if not iso1:
+        C.die("ISO1 master not found.\n"
+              f"  Local: {C.MASTERS.get('ISO1') or '(unset)'}\n"
+              f"  URL:   {C.MASTERS_URL.get('ISO1') or '(unset)'}\n"
+              "  Attach the drive, or add `masters_url` to project.json.")
+    label = iso1 if C.is_url(iso1) else pathlib.Path(iso1).name
     C.PROXY.parent.mkdir(parents=True, exist_ok=True)
     C.ANALYSIS.mkdir(parents=True, exist_ok=True)
 
     if C.PROXY.exists():
         print(f"• proxy exists: {C.PROXY}")
     else:
-        print(f"• generating 720p proxy from {pathlib.Path(iso1).name}…")
+        print(f"• generating 720p proxy from {label}…")
         subprocess.run(["ffmpeg", "-y", "-i", iso1, "-vf", "scale=-2:720",
                         "-c:v", "h264_videotoolbox", "-b:v", "2500k",
                         "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart",

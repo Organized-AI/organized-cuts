@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All Talks // Organized AI</title>
+<link rel="icon" href="/assets/icon.png">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!--
+  One player for all seven Vol 2 talks, with the Talk Map under it.
+
+  Same-origin on recordings.organizedai.vip: /api/videos, /api/chapters and
+  /media/<key> all require the member session cookie, so this page must be
+  served from the vault's own origin (or iframed from it). Off-origin it will
+  render and then fail to play — it says so rather than showing a dead player.
+
+  Carries no chapter data: everything is fetched at load, exactly as the vault
+  does, so it cannot drift from what the map shows there.
+-->
+<style>
+:root{--bg:#0c0b09;--bg2:#100f0c;--surface:#1a1814;--line:#2a2520;--muted:#605848;
+--t2:#a09888;--t1:#cfc7b6;--hi:#f0ece4;--accent:#f5d623;
+--mono:"JetBrains Mono",ui-monospace,monospace;--sans:"Inter",system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--t1);font-family:var(--sans);min-height:100vh}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.topbar{border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;
+background:rgba(12,11,9,.94);backdrop-filter:blur(8px)}
+.topnav{display:flex;align-items:center;padding:16px 0;gap:20px}
+.brand{font-family:var(--mono);font-weight:800;font-size:16px;color:var(--hi);text-decoration:none}
+.brand .y{color:var(--accent)}.brand .sec{color:var(--muted);font-weight:600}
+.who{margin-left:auto;font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.08em}
+.main{padding:34px 0 70px}
+.seclabel{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.1em;
+text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+h2{font-size:clamp(22px,3vw,32px);color:var(--hi);letter-spacing:-.4px;margin-bottom:22px}
+.player{background:#000;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.player video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.np{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--accent);
+text-transform:uppercase;margin:12px 0 4px}
+.npx{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:22px}
+/* talk switcher: the playlist across all seven recordings */
+.talks{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:9px;margin-bottom:30px}
+.tk{background:var(--surface);border:1px solid var(--line);border-radius:9px;
+padding:11px 13px;cursor:pointer;text-align:left;color:inherit;font:inherit;
+transition:border-color .15s,background .15s}
+.tk:hover{border-color:var(--muted)}
+.tk[aria-current="true"]{border-color:var(--accent);background:var(--bg2)}
+.tk .n{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.12em}
+.tk[aria-current="true"] .n::before{content:"▶ ";color:var(--accent)}
+.tk .s{color:var(--hi);font-weight:600;font-size:13.5px;margin-top:3px}
+.tk .d{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:4px}
+.tk:focus-visible{outline:1.5px dashed var(--accent);outline-offset:2px}
+/* talk map */
+.tlleg{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 12px}
+.tlpill{font-family:var(--mono);font-size:11px;border:1px solid var(--line);background:var(--surface);
+border-radius:20px;padding:6px 12px;display:inline-flex;align-items:center;gap:7px;cursor:pointer;
+color:var(--t1);transition:border-color .15s,background .15s}
+.tlpill .dot{width:8px;height:8px;border-radius:50%}
+.tlpill .n{color:var(--muted);font-size:10px}
+.tlpill:hover{border-color:var(--muted)}
+.tlpill[aria-pressed="true"]{background:var(--bg2);border-color:currentColor}
+.tlrail{position:relative;height:62px;background:var(--bg2);border:1px solid var(--line);
+border-radius:10px;overflow:hidden}
+.rseg{position:absolute;top:0;bottom:0;cursor:pointer;border-right:1px solid var(--bg);
+background:color-mix(in srgb,var(--c) 22%,transparent);transition:background .15s,opacity .2s}
+.rseg::after{content:"";position:absolute;left:0;right:1px;bottom:0;height:4px;background:var(--c)}
+.rseg:hover,.rseg.cur{background:color-mix(in srgb,var(--c) 55%,transparent)}
+.tlrail.dimmed .rseg:not(.on){opacity:.16}
+.play-head{position:absolute;top:0;bottom:0;width:2px;background:var(--accent);
+pointer-events:none;opacity:.9;transition:left .25s linear}
+.tlrul{display:flex;justify-content:space-between;font-family:var(--mono);font-size:9.5px;
+color:var(--muted);letter-spacing:.08em;margin:5px 2px 0}
+.tlcap{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.08em;margin:12px 0 22px;min-height:14px}
+.chaps{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:9px}
+.chp{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--c);
+border-radius:8px;padding:10px 13px;cursor:pointer;text-align:left;color:inherit;font:inherit;
+transition:border-color .15s,opacity .2s}
+.chp:hover{border-color:var(--c)}
+.chaps.dimmed .chp:not(.on){opacity:.22}
+.chp b{display:block;color:var(--hi);font-size:13px;font-weight:600}
+.chp .t{font-family:var(--mono);font-size:10.5px;color:var(--c);letter-spacing:.06em}
+.chp span.sm{display:block;color:var(--muted);font-size:11.5px;margin-top:4px}
+.chp:focus-visible{outline:1.5px dashed var(--accent);outline-offset:2px}
+.msg{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+padding:26px 28px;font-size:14px;color:var(--t2);max-width:62ch}
+.msg h3{color:var(--hi);font-size:17px;margin-bottom:8px}
+.msg a{color:var(--accent)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+
+<div class="topbar"><div class="wrap topnav">
+  <a class="brand" href="/">ORGANIZED <span class="y">AI</span> <span class="sec">// ALL TALKS</span></a>
+  <div class="who" id="who"></div>
+</div></div>
+
+<div class="wrap main">
+  <div id="gate" style="display:none"></div>
+  <div id="app" style="display:none">
+    <div class="seclabel">Vol 2 · Agentic Engineering Workshop //</div>
+    <h2>Every talk, one player.</h2>
+    <div class="player"><video id="player" controls playsinline preload="metadata"></video></div>
+    <div class="np" id="np"></div>
+    <div class="npx" id="npx"></div>
+    <div class="talks" id="talks"></div>
+
+    <div class="seclabel">Talk map //</div>
+    <div class="tlleg" id="tlleg"></div>
+    <div class="tlrail" id="tlrail"><div class="play-head" id="head" style="left:0"></div></div>
+    <div class="tlrul" id="tlrul"></div>
+    <div class="tlcap" id="tlcap">TALK MAP · POWERED BY TWELVELABS</div>
+    <div class="chaps" id="chaps"></div>
+  </div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const fmtT=s=>Math.floor(s/60)+":"+String(Math.floor(s%60)).padStart(2,"0");
+
+/* Categories and scoring identical to lib/talkmap.py and the vault's own map. */
+const TLCATS=[
+ {id:"intro",label:"Intro / Wrap",color:"#9a927f",kw:/\bintro\b|\bintroduc(?:tion|ing)\b|welcome|journey|opening|closing|wrap[- ]?up|outro|recap|appreciation|thank/i},
+ {id:"qa",label:"Q&A",color:"#b48ead",kw:/q\s*&\s*a|\bquestions?\b|audience|discussion/i},
+ {id:"data",label:"Data / Tokens",color:"#e0985a",kw:/\btokens?\b|\bcosts?\b|pricing|benchmark|\bresults?\b|\bmetrics?\b|\bstat(?:s|istics)?\b|performance/i},
+ {id:"demo",label:"Live Demo",color:"#f5d623",kw:/\bdemos?\b|\bdemonstrat\w*|\blive\b|walk-?through|hands-on|\bcoding\b|\bscreen\b/i},
+ {id:"build",label:"Build / Workflow",color:"#59a5a0",kw:/\bworkflows?\b|\bworkers?\b|\bskills?\b|\bbuild(?:ing)?\b|automat\w*|\barchitectures?\b|\bpipelines?\b|orchestrat\w*/i},
+ {id:"tools",label:"Tools / Platform",color:"#90b97e",kw:/\bplatforms?\b|\bmcp\b|\bsetup\b|install\w*|integrat\w*|\bapis?\b|\bsdk\b|\bstack\b|\btool(?:s|box|ing)?\b|config\w*|deploy\w*/i},
+ {id:"concept",label:"Concepts",color:"#7aa2c9",kw:/./}
+];
+function tlCat(title,summary){
+  let best=TLCATS[TLCATS.length-1],bestScore=0;
+  for(const k of TLCATS.slice(0,-1)){
+    let score;
+    if(k.kw.test(title||"")) score=3;
+    else{const g=new RegExp(k.kw.source,"gi");
+      score=Math.min(new Set(((summary||"").match(g)||[]).map(m=>m.toLowerCase())).size,2)}
+    if(score>bestScore){best=k;bestScore=score}
+  }
+  return bestScore>=1?best:TLCATS[TLCATS.length-1];
+}
+const tlfix=s=>(s||"").replace(/\bAppify\b/gi,"Apify").replace(/\bCloud Code\b/gi,"Claude Code")
+ .replace(/\bQuinn\b/g,"Qwen").replace(/\bQIN\b/g,"Qwen")
+ .replace(/\bLight Alarm\b/gi,"LiteLLM").replace(/\bLightLM\b/g,"LiteLLM")
+ .replace(/\bLang fuse\b/gi,"Langfuse");
+
+let VIDEOS=[], cur=-1, tlCH=[], tlTotal=0, selCat=null;
+const store={
+  get(){try{return JSON.parse(localStorage.getItem("oa_all_talks")||"{}")}catch(e){return{}}},
+  set(v){try{localStorage.setItem("oa_all_talks",JSON.stringify(v))}catch(e){}}
+};
+
+function gate(title, body){
+  $("gate").style.display="block";
+  $("gate").innerHTML=`<div class="msg"><h3>${title}</h3><p>${body}</p></div>`;
+}
+
+async function boot(){
+  let r;
+  try{ r=await fetch("/api/videos",{credentials:"same-origin"}); }
+  catch(e){
+    return gate("Can't reach the vault",
+      "This page has to be served from the vault's own origin — the recordings and "+
+      "the talk map are behind the member session. Open it at "+
+      "<a href='https://recordings.organizedai.vip/vault'>recordings.organizedai.vip</a>.");
+  }
+  if(r.status===401) return gate("Members only",
+    "Sign in on <a href='/vault'>the vault</a> and reload this page to watch all seven talks here.");
+  if(!r.ok) return gate("Something went wrong", "The recordings list returned "+r.status+".");
+  VIDEOS=(await r.json()).videos||[];
+  if(!VIDEOS.length) return gate("Nothing to play yet","No recordings are available on this account.");
+  $("app").style.display="block";
+  fetch("/api/me",{credentials:"same-origin"}).then(x=>x.json())
+    .then(me=>{ if(me&&me.email) $("who").textContent=me.email; }).catch(()=>{});
+
+  $("talks").innerHTML=VIDEOS.map((v,i)=>
+    `<button class="tk" data-i="${i}" aria-current="false">
+       <div class="n">${(v.key.match(/^\s*(\d{2})/)||[,"--"])[1]}</div>
+       <div class="s">${(v.title||v.key).replace(/\.mp4$/,"")}</div>
+       <div class="d">${v.size?(v.size/1e9).toFixed(1)+" GB":""}</div></button>`).join("");
+  $("talks").addEventListener("click",e=>{
+    const b=e.target.closest(".tk"); if(b) play(+b.dataset.i,0);
+  });
+
+  const q=new URLSearchParams(location.search);
+  const want=q.get("talk"), at=parseFloat(q.get("t")||"");
+  let idx=0, seek=0;
+  if(want){ const j=VIDEOS.findIndex(v=>v.key.startsWith(want+" ")||v.key.startsWith(want+" -")); if(j>=0) idx=j; }
+  else { const s=store.get(); if(s.key){ const j=VIDEOS.findIndex(v=>v.key===s.key); if(j>=0){idx=j; seek=s.t||0} } }
+  play(idx, isFinite(at)?at:seek);
+}
+
+function play(i, at){
+  if(i<0||i>=VIDEOS.length) return;
+  cur=i; const v=VIDEOS[i];
+  document.querySelectorAll(".tk").forEach(b=>b.setAttribute("aria-current",String(+b.dataset.i===i)));
+  const p=$("player");
+  p.src="/media/"+encodeURIComponent(v.key);
+  if(at>0) p.currentTime=at;
+  p.play().catch(()=>{});
+  $("np").textContent=(v.title||v.key).replace(/\.mp4$/,"");
+  $("npx").textContent="Talk "+(i+1)+" of "+VIDEOS.length+" · "+v.key;
+  history.replaceState(null,"","?talk="+encodeURIComponent((v.key.match(/^\s*(\d{2})/)||[,""])[1]));
+  loadMap(v.key);
+}
+
+async function loadMap(key){
+  tlCH=[]; selCat=null;
+  $("tlleg").innerHTML=""; $("tlrul").innerHTML=""; $("chaps").innerHTML="";
+  $("tlrail").querySelectorAll(".rseg").forEach(n=>n.remove());
+  let d;
+  try{ const r=await fetch("/api/chapters?video="+encodeURIComponent(key),{credentials:"same-origin"});
+       if(!r.ok) return; d=await r.json(); }catch(e){ return; }
+  if(!d.chapters||!d.chapters.length) return;
+  tlTotal=d.total||d.chapters[d.chapters.length-1].end||1;
+  tlCH=d.chapters.map(c=>{const t=tlfix(c.title),s=tlfix(c.summary);
+    return {...c,title:t,summary:s,cat:tlCat(t,s)}});
+
+  const counts={};
+  tlCH.forEach(c=>counts[c.cat.id]=(counts[c.cat.id]||0)+1);
+  $("tlleg").innerHTML=TLCATS.filter(k=>counts[k.id]).map(k=>
+    `<button class="tlpill" data-cat="${k.id}" aria-pressed="false" style="color:${k.color}">
+       <span class="dot" style="background:${k.color}"></span>${k.label}
+       <span class="n">${counts[k.id]}</span></button>`).join("");
+
+  const rail=$("tlrail");
+  tlCH.forEach((c,i)=>{
+    const el=document.createElement("button");
+    el.className="rseg"; el.dataset.cat=c.cat.id; el.dataset.i=i;
+    el.style.setProperty("--c",c.cat.color);
+    el.style.left=(c.start/tlTotal*100)+"%";
+    el.style.width=(Math.max(c.end-c.start,tlTotal*0.004)/tlTotal*100)+"%";
+    el.title=fmtT(c.start)+" · "+c.title;
+    el.setAttribute("aria-label","Jump to "+fmtT(c.start)+" "+c.title);
+    rail.appendChild(el);
+  });
+  const step=tlTotal>2700?10:5; let ticks="";
+  for(let m=0;m<=Math.floor(tlTotal/60);m+=step) ticks+=`<span>${m}:00</span>`;
+  $("tlrul").innerHTML=ticks;
+
+  $("chaps").innerHTML=tlCH.map((c,i)=>
+    `<button class="chp" data-i="${i}" data-cat="${c.cat.id}" style="--c:${c.cat.color}">
+       <span class="t">${fmtT(c.start)}</span><b>${c.title}</b>
+       <span class="sm">${c.summary||""}</span></button>`).join("");
+  $("tlcap").textContent="TALK MAP · POWERED BY TWELVELABS · "+tlCH.length+" CHAPTERS";
+}
+
+function seekTo(i){
+  const c=tlCH[i]; if(!c) return;
+  const p=$("player"); p.currentTime=c.start; p.play().catch(()=>{});
+  $("tlcap").textContent=fmtT(c.start)+" · "+c.title.toUpperCase()+(c.summary?" — "+c.summary:"");
+}
+function filter(cat){
+  selCat=cat;
+  document.querySelectorAll(".tlpill").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.cat===cat)));
+  $("tlrail").classList.toggle("dimmed",!!cat);
+  $("chaps").classList.toggle("dimmed",!!cat);
+  document.querySelectorAll(".rseg,.chp").forEach(el=>el.classList.toggle("on",!!cat&&el.dataset.cat===cat));
+}
+document.addEventListener("click",e=>{
+  const seg=e.target.closest(".rseg"), chp=e.target.closest(".chp"), pill=e.target.closest(".tlpill");
+  if(seg){ seekTo(+seg.dataset.i);
+    document.querySelectorAll(".rseg").forEach(x=>x.classList.remove("cur")); seg.classList.add("cur"); }
+  else if(chp) seekTo(+chp.dataset.i);
+  else if(pill) filter(selCat===pill.dataset.cat?null:pill.dataset.cat);
+});
+
+/* play-head tracks position; remember where you were; roll into the next talk */
+const p=$("player");
+p.addEventListener("timeupdate",()=>{
+  if(tlTotal) $("head").style.left=Math.min(100,p.currentTime/tlTotal*100)+"%";
+  if(cur>=0 && p.currentTime>1) store.set({key:VIDEOS[cur].key,t:Math.floor(p.currentTime)});
+});
+p.addEventListener("ended",()=>{ if(cur+1<VIDEOS.length) play(cur+1,0); });
+boot();
+</script>
+</body></html>

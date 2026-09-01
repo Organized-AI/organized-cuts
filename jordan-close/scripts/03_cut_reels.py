@@ -12,7 +12,6 @@ Outputs reels/reel_<id>.mp4 plus compare stills, and writes reels/manifest.json.
     ./.venv/bin/python scripts/03_cut_reels.py [--only 03,05]
 """
 import json
-import os
 import subprocess
 import sys
 import tempfile
@@ -130,7 +129,7 @@ def talk_reel(start, dur, x0, lst, out):
     else:
         fc = f"[0:v]crop={C.CROP_W}:{C.MASTER_H}:{x0}:0,scale=1080:1920,setsar=1[v]"
         final = "v"
-    run(["ffmpeg", "-y", "-ss", f"{start:.3f}", "-t", f"{dur:.3f}", "-i", C.MASTERS["ISO1"]]
+    run(["ffmpeg", "-y", "-ss", f"{start:.3f}", "-t", f"{dur:.3f}", "-i", C.SOURCES["ISO1"]]
         + cin + ["-filter_complex", fc, "-map", f"[{final}]", "-map", "0:a"] + ENC + [str(out)])
 
 
@@ -149,19 +148,55 @@ def demo_reel(start, dur, x0, lead, lst, out):
         fc = core + ";[comp][2:v]overlay=0:0:shortest=1[v]"
     else:
         fc = core.replace("[comp]", "[v]")
-    run(["ffmpeg", "-y", "-ss", f"{start:.3f}", "-t", f"{dur:.3f}", "-i", C.MASTERS["ISO1"],
-         "-ss", f"{start:.3f}", "-t", f"{dur:.3f}", "-i", C.MASTERS["ISO2"]]
+    run(["ffmpeg", "-y", "-ss", f"{start:.3f}", "-t", f"{dur:.3f}", "-i", C.SOURCES["ISO1"],
+         "-ss", f"{start:.3f}", "-t", f"{dur:.3f}", "-i", C.SOURCES["ISO2"]]
         + cin + ["-filter_complex", fc, "-map", "[v]", "-map", "0:a"] + ENC + [str(out)])
 
 
 def still_person(t, x0, out):
-    run(["ffmpeg", "-y", "-ss", f"{t:.3f}", "-i", C.MASTERS["ISO1"],
+    run(["ffmpeg", "-y", "-ss", f"{t:.3f}", "-i", C.SOURCES["ISO1"],
          "-vf", f"crop={C.CROP_W}:{C.MASTER_H}:{x0}:0,scale=1080:1920", "-frames:v", "1", "-q:v", "3", str(out)])
 
 
 def still_screen(t, out):
-    run(["ffmpeg", "-y", "-ss", f"{t:.3f}", "-i", C.MASTERS["ISO2"],
+    run(["ffmpeg", "-y", "-ss", f"{t:.3f}", "-i", C.SOURCES["ISO2"],
          "-filter_complex", f"[0:v]{SCREEN_FIT}[v]", "-map", "[v]", "-frames:v", "1", "-q:v", "3", str(out)])
+
+
+def check_sources():
+    """Resolve and validate every angle before spending time on a batch.
+
+    A hosted master is read over HTTP range requests, so it is a drop-in for the
+    local file — but the crop geometry assumes a 1920x1080 frame, and a hosted
+    re-encode at another resolution would silently produce a mis-framed reel.
+    Probe once and refuse rather than cut 15 wrong reels.
+    """
+    if "ISO1" not in C.SOURCES:
+        C.die("No readable ISO1 master.\n"
+              f"  Local: {C.MASTERS.get('ISO1') or '(unset)'}\n"
+              f"  URL:   {C.MASTERS_URL.get('ISO1') or '(unset)'}\n"
+              "  Attach the drive, or add `masters_url` to project.json.")
+    for angle in ("ISO1", "ISO2"):
+        src = C.SOURCES.get(angle)
+        if not src:
+            if C.MASTERS.get(angle) or C.MASTERS_URL.get(angle):
+                print(f"• {angle}: configured but unreadable — demo clips will be "
+                      "cut as talking-head")
+            continue
+        where = "url" if C.is_url(src) else "local"
+        dims = C.probe_dims(src)
+        if dims is None:
+            C.die(f"Could not read {angle} ({where}): {src}\n"
+                  "  ffprobe failed — check the path, or that the host serves "
+                  "range requests.")
+        if dims != (C.MASTER_W, C.MASTER_H):
+            C.die(f"{angle} is {dims[0]}x{dims[1]}, expected "
+                  f"{C.MASTER_W}x{C.MASTER_H} ({where}: {src}).\n"
+                  "  The 9:16 crop geometry is derived from that frame size; "
+                  "cutting anyway would mis-frame every reel.")
+        print(f"• {angle}: {where} {dims[0]}x{dims[1]}"
+              + ("  (hosted — expect slower seeks and a second encode "
+                 "generation)" if where == "url" else ""))
 
 
 def main():
@@ -169,9 +204,7 @@ def main():
     argv = sys.argv[1:]
     only = set(argv[argv.index("--only") + 1].split(",")) if "--only" in argv else None
 
-    for angle, path in C.MASTERS.items():
-        if not os.path.exists(path):
-            C.die(f"Master not found ({angle}): {path}")
+    check_sources()
     tpath = C.ANALYSIS / "transcript.json"
     if C.CAPTIONS and tpath.exists():
         WORDS = CAP.load_words(tpath)
@@ -188,13 +221,13 @@ def main():
         s0 = max(0.0, c["start"] - C.PAD)
         dur = (c["end"] + C.PAD) - s0
         mid = (c["start"] + c["end"]) / 2.0
-        cx = subject_cx(C.MASTERS["ISO1"], c["start"], c["end"])
+        cx = subject_cx(C.SOURCES["ISO1"], c["start"], c["end"])
         x0 = crop_x(cx)
         pngs = make_caption_pngs(c["id"], s0, dur)
         lst = caption_track(c["id"], pngs, dur)
         reel = C.REEL_OUT / f"reel_{c['id']}.mp4"
         kind = c.get("kind", "talk")
-        if kind == "demo" and not C.ISO2_PRESENT:
+        if kind == "demo" and "ISO2" not in C.SOURCES:
             kind = "talk"
 
         if kind == "demo":

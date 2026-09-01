@@ -27,9 +27,32 @@ Everything runs locally; nothing is published without you asking.
 04 contact     QA contact sheet
 05 loudnorm    Normalize every reel to -14 LUFS
 06 report      INDEX.md + summary table
+07 widgets     Talk Map widgets from the TwelveLabs analysis
+08 talkmap     Merge every session into one Talk Map bundle (all sessions)
 ```
 
 See [`jordan-close/README.md`](jordan-close/README.md) for the full run guide.
+
+## Talk Map widgets
+
+The [vault](https://recordings.organizedai.vip/vault) already renders a Talk Map
+— a SPINE rail and ORBIT dial built from TwelveLabs chapters. Stages 07/08 turn
+the same analysis into **widgets** that hang off that map: chapter maps, moments
+linked to the cut reels, demo walkthroughs, quotes, takeaways, a Q&A index,
+pre-baked Marengo search probes, topic indexes, reel strips, and cross-talk links
+between speakers who covered the same ground.
+
+```bash
+bash jordan-close/scripts/widgets_all.sh            # every session, then merge
+bash jordan-close/scripts/widgets_all.sh --offline  # no API calls
+python3 jordan-close/tests/test_widgets.py          # checks, no key needed
+```
+
+[`talks/registry.json`](talks/registry.json) maps each session dir to its talk on
+recordings.organizedai.vip, and multi-part talks are stitched onto one timeline.
+The build writes `talkmap/build/talks/<id>.json`, whose `{total, chapters}` shape
+is exactly what the vault's `/api/chapters` serves today — `widgets` is additive.
+Full schema in [`docs/TALK-MAP-WIDGETS.md`](docs/TALK-MAP-WIDGETS.md).
 
 ## Highlights
 
@@ -44,6 +67,10 @@ See [`jordan-close/README.md`](jordan-close/README.md) for the full run guide.
 
 ## Requirements
 
+- Source video: the ProRes masters on local disk, **or** `masters_url` in a
+  session's `project.json` pointing at hosted copies — `ffmpeg` reads those over
+  HTTP range requests, at the cost of a second encode generation. Local wins when
+  present. The widget stages (07/08) read no video at all.
 - `ffmpeg` (with `h264_videotoolbox` on Apple Silicon)
 - Python 3.13 + `pip install -r jordan-close/requirements.txt`
 - A TwelveLabs API key (see each project's `.env.example`)

@@ -10,15 +10,49 @@ screen feed (keeping ISO1 audio). Everything stays local.
 ## Layout
 ```
 proxy/      720p proxy — TwelveLabs analysis ONLY
-analysis/   state.json (index/video/task ids), clips.json (candidates)
+analysis/   state.json (index/video/task ids), clips.json (candidates),
+            chapters/topics/probes.json (cached TwelveLabs), widgets.json
 reels/      ISO1/ ISO2/ renders, compare/ stills, manifest.json, INDEX.md
-scripts/    00..06 numbered pipeline steps + run_all.sh
-lib/        common.py (config + helpers)
+scripts/    00..08 numbered pipeline steps + run_all.sh, widgets_all.sh
+lib/        common.py (config + helpers), talkmap.py (widget + Talk Map model)
+tests/      test_widgets.py — offline checks, no API key needed
 ```
 
 ## Inputs (already staged)
 - Proxy: `proxy/jordan_close_ISO1_720p.mp4` (analysis only)
 - Masters on T7 (final cuts): `..._ISO1.MOV`, `..._ISO2.MOV` (13:04, shared start TC)
+
+### Masters without the drive
+
+`project.json` takes an optional `masters_url` alongside `masters`. A local
+master wins whenever it is actually on disk; otherwise the hosted copy is used
+and `ffmpeg` reads it over HTTP range requests:
+
+```json
+{
+  "masters": {
+    "ISO1": "/Volumes/T7/Vol 2 Workshop/Session 1 Esteban/..._ISO1.MOV",
+    "ISO2": "/Volumes/T7/Vol 2 Workshop/Session 1 Esteban/..._ISO2.MOV"
+  },
+  "masters_url": {
+    "ISO1": "https://<your-host>/session-1-esteban/iso1.mp4",
+    "ISO2": "https://<your-host>/session-1-esteban/iso2.mp4"
+  }
+}
+```
+
+So attaching the T7 silently upgrades quality with no config change, and
+detaching it keeps the pipeline running. Two things to know:
+
+- **Quality.** Hosted files are already-compressed H.264; cutting from them
+  stacks a second encode generation versus ProRes. Fine for social, not for a
+  master deliverable.
+- **Geometry.** `03_cut_reels.py` probes every source and refuses to cut unless
+  it is 1920x1080, because the 9:16 crop maths is derived from that frame size.
+  A hosted re-encode at another resolution would otherwise mis-frame silently.
+
+If only ISO1 resolves, demo clips are cut as talking-head rather than failing.
+Stages 07/08 (widgets) read no video at all and are unaffected either way.
 
 ## Run
 ```bash
@@ -37,6 +71,17 @@ bash scripts/run_all.sh
 | 4 | `04_pick_angle.py` | QA contact sheet `reels/compare/CONTACT_SHEET.jpg` (person vs. screen per clip) |
 | 5 | `05_loudnorm.py` | Loudnorm every reel to -14 LUFS |
 | 6 | `06_report.py` | `reels/INDEX.md` + summary table |
+| 7 | `07_widgets.py` | Talk Map widgets from this session's TwelveLabs analysis (chapters, highlights, gist, search) → `analysis/widgets.json`. Caches API responses; `--offline` / `--refresh` |
+| 8 | `08_talkmap.py` | Merge every session in `talks/registry.json` into `talkmap/build/` — one bundle, a vault-compatible payload per talk, and an HTML preview |
+
+`import_talkmap.py` (no number — run it before 07) pulls the vault's own
+recordings list and Talk Map chapters from an export, reconciles them against
+`talks/registry.json`, and writes `analysis/chapters.json` per session.
+
+Steps 1–7 are per session; step 8 runs across all of them. `bash scripts/widgets_all.sh`
+does 7 for every registered session and then 8. See
+[`docs/TALK-MAP-WIDGETS.md`](../docs/TALK-MAP-WIDGETS.md) for the widget schema
+and how it plugs into the existing Talk Map.
 
 **Auth note:** the Infisical CLI is installed at `~/.local/bin/infisical` (and
 `/opt/homebrew/bin`). One-time: `infisical login` then `infisical init` (pick
