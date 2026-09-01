@@ -182,6 +182,25 @@ def main():
         prev = (root / "build" / "index.html").read_text()
         assert "TALK MAP" in prev and "Talk One" in prev
 
+        # --- categorization: title beats summary, build split from tools ---
+        cat = lambda t, s="": T.categorize(t, s)["id"]
+        # a title hit outranks an earlier category's passing summary mention
+        assert cat("Workflow Overview", "audience questions came up") == "build"
+        assert cat("Configuration & Deployment", "setting API keys") == "tools"
+        # workflow/worker/skill are their own sense, no longer Tools/Platform
+        for title in ("Workflow & Workers", "Search Query Worker",
+                      "Skill and Actor Architecture", "Workflow Automation"):
+            assert cat(title) == "build", (title, cat(title))
+        # the concrete stack stays in tools
+        for title in ("Apify Platform", "API Key Requirement", "Setup and Engagement",
+                      "Global Toolbox"):
+            assert cat(title) == "tools", (title, cat(title))
+        # a lone summary word still classifies rather than dumping to concept
+        assert cat("The Problem", "native web tools for scraping") == "tools"
+        # nothing anywhere falls through
+        assert cat("Strategic Outreach", "prioritizing experienced people") == "concept"
+        assert T.CATEGORY_BY_ID["build"]["color"] == "#59a5a0"
+
         # --- registry guards --------------------------------------------------
         bad = json.loads(json.dumps(REGISTRY))
         bad["talks"][1]["sessions"].append("sess-a")

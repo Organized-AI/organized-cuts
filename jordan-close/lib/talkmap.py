@@ -35,9 +35,8 @@ WIDGET_SCHEMA = "organized-cuts/talk-widgets@1"
 TALKMAP_SCHEMA = "organized-cuts/talk-map@1"
 
 # --- Categories -------------------------------------------------------------
-# Mirrors TLCATS in the vault's inline script. Order matters: the first pattern
-# that matches the chapter title wins, then the summary, then "concept" catches
-# the rest. Keep ids/colours in sync with the site or the map re-colours itself.
+# The vault renders these; keep ids/colours/patterns in sync with its TLCATS or
+# the map re-colours itself (docs/TALK-MAP-WIDGETS.md carries the JS to paste).
 CATEGORIES = [
     {"id": "intro", "label": "Intro / Wrap", "color": "#9a927f",
      "pattern": r"\bintro\b|\bintroduc(?:tion|ing)\b|welcome|journey|opening|closing|wrap[- ]?up|outro|recap|appreciation|thank"},
@@ -46,25 +45,42 @@ CATEGORIES = [
     {"id": "data", "label": "Data / Tokens", "color": "#e0985a",
      "pattern": r"\btokens?\b|\bcosts?\b|pricing|benchmark|\bresults?\b|\bmetrics?\b|\bstat(?:s|istics)?\b|performance"},
     {"id": "demo", "label": "Live Demo", "color": "#f5d623",
-     "pattern": r"\bdemos?\b|\blive\b|walk-?through|hands-on|\bbuild(?:ing)?\b|generat|\bcoding\b|\bscreen\b"},
+     "pattern": r"\bdemos?\b|\bdemonstrat\w*|\blive\b|walk-?through|hands-on|\bcoding\b|\bscreen\b"},
+    {"id": "build", "label": "Build / Workflow", "color": "#59a5a0",
+     "pattern": r"\bworkflows?\b|\bworkers?\b|\bskills?\b|\bbuild(?:ing)?\b|automat\w*|\barchitectures?\b|\bpipelines?\b|orchestrat\w*"},
     {"id": "tools", "label": "Tools / Platform", "color": "#90b97e",
-     "pattern": r"\btool(?:s|box|ing)?\b|\bplatform\b|\bmcp\b|\bsetup\b|install|\bstack\b|integrat|\bapi\b|\bworkflows?\b|\bworkers?\b|\bskills?\b"},
+     "pattern": r"\bplatforms?\b|\bmcp\b|\bsetup\b|install\w*|integrat\w*|\bapis?\b|\bsdk\b|\bstack\b|\btool(?:s|box|ing)?\b|config\w*|deploy\w*"},
     {"id": "concept", "label": "Concepts", "color": "#7aa2c9", "pattern": r"."},
 ]
 _CAT_RX = [(c, re.compile(c["pattern"], re.I)) for c in CATEGORIES]
 CATEGORY_BY_ID = {c["id"]: c for c in CATEGORIES}
 FALLBACK_CATEGORY = CATEGORIES[-1]
 
+# Scoring, not first-match. Under first-match an earlier category's passing
+# mention in a summary beat a later category's explicit title — "Workflow
+# Overview" landed in Q&A because its summary said "questions". A title is a
+# deliberate label and now outweighs any summary; among summaries, more distinct
+# hits win. The threshold is 1 because a lone summary word is still better
+# evidence than nothing: raising it to 2 pushed 70% of Rohit's, Shep's and
+# Henry's chapters into Concepts, trading one dominant colour for another.
+TITLE_SCORE = 3
+SUMMARY_SCORE = 1
+MAX_SUMMARY_SCORE = 2
+MIN_SCORE = 1
+
 
 def categorize(title: str, summary: str = "") -> dict:
-    """Title first, summary as fallback — same precedence as the vault."""
+    """Highest-scoring category, ties going to the earlier one in CATEGORIES."""
+    best, best_score = None, 0
     for cat, rx in _CAT_RX[:-1]:
         if rx.search(title or ""):
-            return cat
-    for cat, rx in _CAT_RX[:-1]:
-        if rx.search(summary or ""):
-            return cat
-    return FALLBACK_CATEGORY
+            score = TITLE_SCORE
+        else:
+            distinct = {m.group(0).lower() for m in rx.finditer(summary or "")}
+            score = min(len(distinct) * SUMMARY_SCORE, MAX_SUMMARY_SCORE)
+        if score > best_score:
+            best, best_score = cat, score
+    return best if best_score >= MIN_SCORE else FALLBACK_CATEGORY
 
 
 # --- Transcription fixes ----------------------------------------------------

@@ -44,15 +44,15 @@ Then:
 
 It reconciles the vault's recordings against the registry — a recording's key
 starts with its talk id (`01 …`), which is how the vault itself selects a talk —
-and writes each session's `analysis/chapters.json` from the vault's chapters. So
-07 builds widgets on the map that is already live rather than asking Pegasus for
-a second, slightly different opinion.
+and writes `talks/chapters/<id>.json`. So 08 builds the map that is already live
+rather than asking Pegasus for a second, slightly different segmentation.
 
-Where a talk's recording count and session count agree they are paired in order.
-Where they disagree the importer refuses that talk, says so, and exits non-zero;
-pair them explicitly with `--map "01 Michael part2.mp4=session-4a-michael"` or fix
-the registry. **This is what settles the open mapping questions** — the registry
-in this repo is a best guess from directory names until an export confirms it.
+The vault serves **one consolidated recording per talk**, not one per session
+dir, so its chapters describe a whole talk on one timeline while
+`session-4/4a/5/5a-michael` are camera-card parts of one. That is why the import
+lands at talk level; clip-derived widgets still merge from the session parts with
+their offsets. An export is also what settles the session mapping — the registry
+is a guess from directory names until one confirms it.
 
 ## Pipeline
 
@@ -116,10 +116,9 @@ tooling, audience questions, gotchas).
 }
 ```
 
-`category` and `color` come from the same six categories the vault uses — same
-ids, same regexes, same hex values (`lib/talkmap.py: CATEGORIES` mirrors the
-site's `TLCATS`). Change them in one place and the other must follow, or the map
-re-colours itself.
+`category` and `color` come from the seven categories below. The vault derives
+its own from `TLCATS`, so the two must be changed together or the map re-colours
+itself — see [Keeping the vault in sync](#keeping-the-vault-in-sync).
 
 `actions` is what the surface can do with the widget: `seek` jumps the player,
 `search` hands a query to `/api/search`.
@@ -132,11 +131,63 @@ re-colours itself.
 | `qa` | Q&A | `#b48ead` |
 | `data` | Data / Tokens | `#e0985a` |
 | `demo` | Live Demo | `#f5d623` |
+| `build` | Build / Workflow | `#59a5a0` |
 | `tools` | Tools / Platform | `#90b97e` |
 | `concept` | Concepts | `#7aa2c9` |
 
-Classification is title-first, summary as fallback, `concept` catches the rest —
-identical precedence to the vault.
+Classification is scored, not first-match: a title hit scores 3, distinct summary
+hits score 1 each (capped at 2), highest wins, ties go to the earlier category.
+A title is a deliberate label, so it outranks any summary; under first-match an
+earlier category's passing mention beat a later category's explicit title —
+"Workflow Overview" landed in Q&A because its summary said "questions".
+
+`build` was split out of `tools` because the two were conflated: the concrete
+stack (MCP, a platform, an API key, setup, config) is a different thing from the
+workflow/worker/skill architecture a talk is *about*. On Michael's talk the
+single `tools` bucket swallowed 23 of 40 chapters, which is a monochrome map and
+useless for navigating. After the split it is 12 tools / 11 build, and no
+category exceeds 30% of that talk.
+
+The threshold for accepting a summary-only match is deliberately 1. Raising it to
+2 fixed Michael but pushed ~70% of Rohit's, Shep's and Henry's chapters into
+Concepts — trading one dominant colour for another.
+
+### Keeping the vault in sync
+
+The vault derives categories client-side from the same rules. Replace its
+`TLCATS` array and the `tlCH` mapping with this so both surfaces agree:
+
+```js
+const TLCATS=[
+ {id:"intro",label:"Intro / Wrap",color:"#9a927f",kw:/\bintro\b|\bintroduc(?:tion|ing)\b|welcome|journey|opening|closing|wrap[- ]?up|outro|recap|appreciation|thank/i},
+ {id:"qa",label:"Q&A",color:"#b48ead",kw:/q\s*&\s*a|\bquestions?\b|audience|discussion/i},
+ {id:"data",label:"Data / Tokens",color:"#e0985a",kw:/\btokens?\b|\bcosts?\b|pricing|benchmark|\bresults?\b|\bmetrics?\b|\bstat(?:s|istics)?\b|performance/i},
+ {id:"demo",label:"Live Demo",color:"#f5d623",kw:/\bdemos?\b|\bdemonstrat\w*|\blive\b|walk-?through|hands-on|\bcoding\b|\bscreen\b/i},
+ {id:"build",label:"Build / Workflow",color:"#59a5a0",kw:/\bworkflows?\b|\bworkers?\b|\bskills?\b|\bbuild(?:ing)?\b|automat\w*|\barchitectures?\b|\bpipelines?\b|orchestrat\w*/i},
+ {id:"tools",label:"Tools / Platform",color:"#90b97e",kw:/\bplatforms?\b|\bmcp\b|\bsetup\b|install\w*|integrat\w*|\bapis?\b|\bsdk\b|\bstack\b|\btool(?:s|box|ing)?\b|config\w*|deploy\w*/i},
+ {id:"concept",label:"Concepts",color:"#7aa2c9",kw:/./}
+];
+/* score: title 3, distinct summary hits 1 each (max 2); highest wins, ties to the earlier cat */
+function tlCat(t,s){
+  let best=TLCATS[TLCATS.length-1], bestScore=0;
+  for(const k of TLCATS.slice(0,-1)){
+    let score;
+    if(k.kw.test(t)) score=3;
+    else{
+      const g=new RegExp(k.kw.source,"gi");
+      score=Math.min(new Set((s||"").match(g)||[]).size,2);
+    }
+    if(score>bestScore){best=k;bestScore=score}
+  }
+  return bestScore>=1?best:TLCATS[TLCATS.length-1];
+}
+```
+
+Then in `loadTL`, replace the three-line `cat` lookup with `const cat=tlCat(t,s);`.
+
+Better still, drop the client-side work entirely: `talkmap/build/talks/<id>.json`
+already carries `category` and `color` per chapter, so the map can read them
+straight off the payload and the taxonomy lives in one place.
 
 ## The registry
 
