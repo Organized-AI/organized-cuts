@@ -873,8 +873,13 @@ $("player").addEventListener("timeupdate",()=>{
 });
 $("player").addEventListener("ended",()=>{                 /* roll into the next talk */
   if(VIEW!=="longcut"||!LC.loaded) return;
-  const loc=lcLocate(lcGlobalNow()); if(!loc) return;
-  const nx=LC.talks[LC.talks.indexOf(loc.talk)+1];
+  /* At `ended` currentTime === duration, so the global clock sits exactly on the
+     next talk's offset and lcLocate would resolve to it — then "next" skips a
+     whole talk. Identify what just finished by its source instead. */
+  const p=$("player");
+  const cur=LC.talks.find(x=>p.src&&p.src.indexOf(encodeURIComponent(x.key))>=0);
+  if(!cur) return;
+  const nx=LC.talks[LC.talks.indexOf(cur)+1];
   if(nx) lcGoTo(nx.offset);
 });
 

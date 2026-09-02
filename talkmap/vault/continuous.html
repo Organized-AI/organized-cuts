@@ -329,8 +329,9 @@ p.addEventListener("timeupdate",()=>{
   }
 });
 p.addEventListener("ended",()=>{                          // roll into the next talk: one continuous cut
-  const {talk}=locate(globalNow());
-  const nx=TALKS[TALKS.indexOf(talk)+1];
+  // at `ended` the clock sits exactly on the next offset; resolve by source, not time
+  const cur=TALKS.find(x=>p.src&&p.src.indexOf(encodeURIComponent(x.key))>=0);
+  const nx=cur?TALKS[TALKS.indexOf(cur)+1]:null;
   if(nx) goTo(nx.offset);
 });
 
