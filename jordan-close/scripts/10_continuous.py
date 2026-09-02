@@ -63,6 +63,23 @@ def build_vault_preview(talks):
               'playback is inert here. Use the <b style="color:#f5d623">SESSIONS / LONG CUT</b> '
               'switch to compare the two views.</div>')
     html = html.replace('<div class="vhead">', banner + '<div class="vhead">', 1)
+    # The <video> would otherwise sit black with a media error, which reads as a
+    # broken page. Cover it with a placeholder that says why — the element stays
+    # in the DOM so every play()/seek path still runs exactly as in production.
+    overlay = (
+        "<style>.player{position:relative}.player .pvno{position:absolute;inset:0;display:grid;"
+        "place-items:center;background:#100f0c;text-align:center;padding:24px;"
+        "font-family:Inter,system-ui,sans-serif;z-index:2}.player .pvno b{display:block;"
+        "color:#f0ece4;font-size:16px;margin-bottom:6px}.player .pvno span{display:block;"
+        "color:#605848;font-size:13px;max-width:46ch}.player .pvno a{color:#f5d623}</style>\n"
+        "<script>(function(){var pb=document.querySelector('.player');if(!pb)return;"
+        "var d=document.createElement('div');d.className='pvno';"
+        "d.innerHTML='<div><b>Preview \u2014 playback needs the vault</b><span>The map, the switch "
+        "and the subject index are live on the real chapters. The recordings stream from "
+        "<a href=\"https://recordings.organizedai.vip/vault\">recordings.organizedai.vip</a> "
+        "behind the member session, so the player is inert in this build.</span></div>';"
+        "pb.appendChild(d)})();</script>\n")
+    html = html.replace("</body>", overlay + "</body>", 1)
     out = T.BUILD_DIR / "vault-preview.html"
     out.write_text(html)
     print(f"✓ {out}  ({out.stat().st_size/1024:.0f} KB)")
