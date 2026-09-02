@@ -15,6 +15,33 @@ means redeploying the Worker with the updated asset in place.
 
 `tlcats.js` is reference only — its contents are already inside `vault.html`.
 
+## Two ways in
+
+**A. You have the wrangler project** (the folder with the `wrangler.toml` naming
+`recordings-organizedai`):
+
+```bash
+bash talkmap/vault/deploy.sh /path/to/that/folder
+```
+
+**B. You don't** — it was built on a machine you're not at, or it's gone. Rebuild
+it from what's live and deploy from that:
+
+```bash
+DRY=1 bash talkmap/vault/rebuild-and-deploy.sh      # builds ~/recordings-organizedai, stops
+bash talkmap/vault/rebuild-and-deploy.sh            # deploys
+```
+
+B is not a guess. `wrangler init --from-dash` (still a documented flag as of
+Aug 2026) downloads the Worker's *live* script with the `wrangler` login you
+already have. The config it then writes uses bindings resolved from the account,
+not inferred: KV `recordings-organizedai-VAULT` (`077b2f50…`) and R2
+`vol2-recordings`, both created the same day as the Worker. It writes no
+`routes` key, so the custom domain is left exactly as it is. The static assets
+are re-fetched from the live site — all 13 of them, plus `robots.txt` — and the
+new `vault.html` replaces the old one. `--keep-vars` preserves plain vars;
+secrets persist across deploys regardless.
+
 ## Do it from the existing project, not a fresh one
 
 Workers Assets replaces the **entire** asset set on every deploy. Deploying
